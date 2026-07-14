@@ -1,0 +1,233 @@
+{
+  "id": "chitin",
+  "slug": "chitin",
+  "name": "Chitin: The Forgotten Champion of Natural Polymers",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Linear β-(1→4)-linked N-acetylglucosamine homopolymer; a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "polysaccharide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "N-acetylglucosamine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N-Acetylglucosamine"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1884,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Heinrich Ledderhose"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- biosynthesized as the main structural component of crustacean/insect exoskeletons and fungal cell walls, and commercially extracted from crab, shrimp, and other shellfish processing byproducts. Deacetylation of chitin under alkaline conditions yields chitosan (see chitosan entry, Era 2).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Forms crystalline nanofibrils/whiskers; no single sourced percentage this session."
+    },
+    "crystal_structure": "Crystalline nanofibrils; hydrogen-bonded chain packing makes chitin very difficult to dissolve in water.",
+    "chain_flexibility_notes": "In composite with calcium carbonate (as in crustacean shells), forms much harder/stiffer structures than pure chitin.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Very difficult to dissolve (extensive intermolecular hydrogen bonding)",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-chitin"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "extraction (demineralization/deproteinization of shells)",
+      "deacetylation (to chitosan)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Biomedical",
+      "examples": [
+        "wound healing",
+        "drug delivery",
+        "tissue engineering scaffolds"
+      ]
+    },
+    {
+      "sector": "Agriculture",
+      "examples": [
+        "plant disease control",
+        "soil conditioning"
+      ]
+    },
+    {
+      "sector": "Water treatment",
+      "examples": [
+        "flocculation/heavy-metal chelation (via chitosan derivative)"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Enzymatic (chitinase) hydrolysis of the β-1,4-glycosidic bond; biodegradable.",
+    "environmental_notes": "The second most abundant natural polymer on Earth after cellulose; commercial extraction valorizes seafood-processing waste."
+  },
+  "references": [
+    "wiki-chitin"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

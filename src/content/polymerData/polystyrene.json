@@ -1,0 +1,266 @@
+{
+  "id": "polystyrene",
+  "slug": "polystyrene",
+  "name": "Polystyrene (PS): The Versatile Veteran of the Polymer World",
+  "abbreviation": [
+    "PS"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-53-6",
+  "resin_id_code": "6",
+  "repeat_unit": null,
+  "notation_note": "Poly(1-phenylethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(1-phenylethane-1,2-diyl)",
+  "synonyms": [
+    "Styrofoam (expanded-foam trade name)"
+  ],
+  "aliases": [
+    {
+      "name": "Styrofoam",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "styrenic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical",
+    "anionic"
+  ],
+  "monomer": [
+    {
+      "name": "Styrene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1933,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Eduard Simon",
+    "Hermann Staudinger",
+    "Hermann Franz Mark"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.0,
+      "range_min": 0.96,
+      "range_max": 1.05,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polystyrene",
+      "conditions": "Solid; expanded foam grades range 16-640 kg/m³."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": 1.6,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polystyrene"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical or anionic chain-growth",
+    "common_monomers": [
+      "styrene"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Eduard Simon first isolated the material from storax resin in 1839, naming it 'Styroloxyd'. IG Farben began industrial manufacture in Ludwigshafen around 1931 with pellet extrusion technology; Dow Chemical later commercialized foam variants, patenting Styrofoam in 1944. Free-radical polymerization of styrene yields chains of several thousand monomer units (MW 100,000-400,000 g/mol).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "Predominantly atactic in commercial free-radical grades (amorphous, transparent); syndiotactic PS (crystalline) is made via metallocene catalysis for higher-heat applications.",
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-polystyrene",
+      "conditions": "Atactic PS is amorphous; only syndiotactic grades crystallize."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 90,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polystyrene",
+      "conditions": "Atactic polystyrene."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Atactic PS is amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Atactic PS is brittle and does not exhibit a distinct yield region before break; see tensile_strength_at_break."
+    },
+    "tensile_strength_at_break": {
+      "value": 53,
+      "range_min": 46,
+      "range_max": 60,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polystyrene"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "expanded-bead foaming (EPS)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Packaging",
+      "examples": [
+        "foam packaging/peanuts",
+        "jewel cases"
+      ]
+    },
+    {
+      "sector": "Food service",
+      "examples": [
+        "food containers",
+        "disposable cutlery"
+      ]
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "building/board insulation (EPS/XPS)"
+      ]
+    },
+    {
+      "sector": "Laboratory",
+      "examples": [
+        "petri dishes",
+        "microplates"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Resin identification code 6; foam grades (EPS) are bulky and rarely recycled in practice despite being technically recyclable."
+  },
+  "references": [
+    "wiki-polystyrene",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

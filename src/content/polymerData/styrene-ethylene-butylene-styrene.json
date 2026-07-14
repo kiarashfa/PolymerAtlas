@@ -1,0 +1,242 @@
+{
+  "id": "styrene-ethylene-butylene-styrene",
+  "slug": "styrene-ethylene-butylene-styrene",
+  "name": "Styrene-Ethylene-Butylene-Styrene (SEBS): The Molecular Bridge Builder",
+  "abbreviation": [
+    "SEBS"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Triblock copolymer (styrene-b-(ethylene/butylene)-b-styrene), made by hydrogenating SBS (styrene-butadiene-styrene); block ratios vary by grade so no single fixed repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "styrenic",
+    "thermoplastic-elastomer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "anionic"
+  ],
+  "monomer": [
+    {
+      "name": "Styrene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    },
+    {
+      "name": "1,3-Butadiene (hydrogenated to ethylene/butylene mid-block)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,3-Butadiene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1969,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [
+    "Neil Armstrong"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "living anionic polymerization (SBS precursor), then catalytic hydrogenation",
+    "common_monomers": [
+      "styrene",
+      "1,3-butadiene"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Made by hydrogenating SBS (styrene-butadiene-styrene) triblock copolymer: the ethylene/butylene mid-block forms by eliminating the C=C double bonds in the butadiene segment. Hydrogenation (>95% degree critical for maximum thermal stability) removes most of the double bonds, sharply reducing degradation by oxygen, ozone, and UV relative to unhydrogenated SBS.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Microphase-separated triblock structure: glassy polystyrene end-blocks act as physical crosslinks, while the rubbery ethylene/butylene mid-block provides elasticity -- giving SEBS its thermoplastic-elastomer behavior (rubber-like at use temperature, moldable when hot).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous/microphase-separated block copolymer; no conventional single melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a continuous-use range of -60°C to +120°C (brittleness point to service limit), with short-term excursions to 150°C; exceeds unhydrogenated SBS's -40°C to +80°C range."
+    },
+    "decomposition_onset": {
+      "value": 400,
+      "range_min": 380,
+      "range_max": 420,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-sebs",
+      "conditions": "5% weight-loss temperature (TGA, nitrogen atmosphere)."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Thermoplastic elastomer; no distinct yield region."
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Qualitatively described as 'high tensile strength'; no specific number sourced this session."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": "Significantly improved oxidation/ozone/UV resistance vs. unhydrogenated SBS",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-sebs"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "overmolding (soft-touch grips)"
+    ],
+    "processing_temp_range": {
+      "value": 200,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-sebs",
+      "conditions": "Melt viscosity commonly characterized at 200°C."
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Consumer & industrial",
+      "examples": [
+        "soft-touch grips",
+        "adhesives"
+      ]
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "bitumen/asphalt modification"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "search-sebs"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "id": "starch",
+  "slug": "starch",
+  "name": "Starch: Nature's Energy Reservoir",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9005-25-8",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Starch is a mixture of two distinct glucose polymers -- linear amylose (α-1,4-linked) and branched amylopectin (α-1,4 with α-1,6 branch points) -- in a typical ~20-25% / 75-80% ratio by weight, so no single repeat unit represents the material as a whole.",
+  "iupac_name": null,
+  "synonyms": [
+    "amylum"
+  ],
+  "aliases": [
+    {
+      "name": "amylum",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polysaccharide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "D-glucose (α-glucopyranose)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glucose"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1834,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Anselme Payen"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder",
+      "conditions": "Reported as variable depending on botanical source and prior processing/treatment."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- biosynthesized in plants and harvested via wet milling: grinding, washing, and sieving to separate starch granules from other plant material (corn, potato, wheat, rice, cassava, and other crops), followed by drying. Enzymatic liquefaction (amylase) and saccharification convert starch into dextrins, maltose, and glucose syrups for many industrial uses.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Starch granules are semi-crystalline (concentric amorphous/crystalline layers); no single confidently-sourced percentage found this session."
+    },
+    "crystal_structure": "Semi-crystalline granules with concentric layering of amylose and amylopectin.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Decomposes rather than melting; undergoes gelatinization in warm water instead of a true melt transition."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "cold_water": {
+        "value": "Insoluble (swells); dissolves/gelatinizes on heating",
+        "status": "estimated",
+        "evidence_level": "tertiary",
+        "source": "wiki-starch"
+      },
+      "ethanol": {
+        "value": "Insoluble",
+        "status": "estimated",
+        "evidence_level": "tertiary",
+        "source": "wiki-starch"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "wet milling",
+      "gelatinization/casting",
+      "extrusion (for bioplastic blends)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Food",
+      "examples": [
+        "thickeners/stabilizers",
+        "corn syrups and sweeteners",
+        "resistant starch dietary fiber"
+      ]
+    },
+    {
+      "sector": "Paper",
+      "examples": [
+        "sizing agent",
+        "coating binder"
+      ],
+      "notes": "Largest non-food application."
+    },
+    {
+      "sector": "Adhesives",
+      "examples": [
+        "corrugated board bonding",
+        "wallpaper glue"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "warp sizing"
+      ]
+    },
+    {
+      "sector": "Bioplastics & biofuels",
+      "examples": [
+        "biodegradable polymer feedstock",
+        "PLA precursor",
+        "corn ethanol fermentation feedstock"
+      ]
+    },
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "tablet disintegrant and binder"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Enzymatic/microbial hydrolysis of glycosidic linkages; readily biodegradable.",
+    "environmental_notes": "Renewable, widely used as a biodegradable-plastics feedstock (e.g. PLA precursor)."
+  },
+  "references": [
+    "wiki-starch"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

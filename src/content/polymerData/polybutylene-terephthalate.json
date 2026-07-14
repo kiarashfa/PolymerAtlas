@@ -1,0 +1,273 @@
+{
+  "id": "polybutylene-terephthalate",
+  "slug": "polybutylene-terephthalate",
+  "name": "Polybutylene Terephthalate (PBT): The Electric Insulator",
+  "abbreviation": [
+    "PBT"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "24968-12-5",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(butylene terephthalate); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": null,
+  "synonyms": [
+    "Novaduran",
+    "Celanex",
+    "Crastin",
+    "Ultradur"
+  ],
+  "aliases": [
+    {
+      "name": "Novaduran",
+      "autolinkable": false
+    },
+    {
+      "name": "Celanex",
+      "autolinkable": false
+    },
+    {
+      "name": "Ultradur",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "1,4-Butanediol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,4-Butanediol"
+    },
+    {
+      "name": "Terephthalic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terephthalic_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1968,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "1,4-butanediol",
+      "terephthalic acid"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Developed by Imperial Chemical Industries (ICI); shares terephthalic acid chemistry with PET but uses a 4-carbon diol rather than ethylene glycol. Compared to PET, PBT crystallizes faster, has slightly lower strength/rigidity, but superior impact resistance.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Faster crystallization rate than PET makes PBT better suited to short injection-molding cycle times.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": 223,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbt"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": 150,
+      "range_min": 150,
+      "range_max": 200,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbt",
+      "conditions": "150°C unreinforced; up to 200°C with glass-fiber reinforcement."
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Described qualitatively as slightly lower strength/rigidity than PET but superior impact resistance; no specific number sourced this session."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "general_solvents": {
+        "value": "Good solvent resistance with minimal shrinkage during forming",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-pbt"
+      }
+    },
+    "weathering_uv": {
+      "value": "Requires UV protection for outdoor applications",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbt"
+    },
+    "hydrolysis_resistance": {
+      "value": "Sensitive to hot water above 60°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbt"
+    },
+    "flammability_ul94": {
+      "value": "Can be treated with flame retardants for noncombustibility",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbt"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Described qualitatively as minimal shrinkage during forming; no specific percentage sourced this session."
+    }
+  },
+  "applications": [
+    {
+      "sector": "Electrical & electronics",
+      "examples": [
+        "electrical connector/housing insulation"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "plug connectors"
+      ]
+    },
+    {
+      "sector": "Consumer goods",
+      "examples": [
+        "showerheads",
+        "irons",
+        "keyboard keycaps",
+        "toothbrush fibers",
+        "false eyelashes"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pbt"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

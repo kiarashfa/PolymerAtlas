@@ -1,0 +1,262 @@
+{
+  "id": "nylon",
+  "slug": "nylon",
+  "name": "Nylon (PA66): The Synthetic Fiber That Revolutionized Fashion and Industry",
+  "abbreviation": [
+    "PA66"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "32131-17-2",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "This hub is represented by nylon 6,6 (poly(hexamethylene adipamide)) as the archetypal nylon; other nylon variants (nylon 6, nylon 4,6, nylon 6,12, etc., mentioned in the narrative's own sub-comparisons) would need separate variant treatment for their own distinct repeat units.",
+  "iupac_name": "Poly(hexamethylene adipamide)",
+  "synonyms": [
+    "polyamide 66",
+    "PA 6,6"
+  ],
+  "aliases": [
+    {
+      "name": "PA66",
+      "autolinkable": false
+    },
+    {
+      "name": "polyamide 6,6",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyamide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Hexamethylenediamine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hexamethylenediamine"
+    },
+    {
+      "name": "Adipic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adipic_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1939,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [
+    "Wallace Carothers"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.14,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nylon66"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "hexamethylenediamine",
+      "adipic acid"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Wallace Carothers' DuPont team first made nylon 6,6 on February 28, 1935 (publicly announced October 27, 1938, after Carothers' death); commercial nylon stockings launched in 1940. Equivalent amounts of hexamethylenediamine and adipic acid are combined in water; removing water drives amide-bond formation (polymerization). The resulting polymer can be extruded into granules or directly melt-spun into fiber. ~2 million tonnes produced worldwide as of 2011.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Regular amide-hydrogen-bonding pattern along the backbone gives nylon 6,6 good mechanical strength, rigidity, and heat/chemical resistance.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": 264,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nylon66"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": 350,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "bocsci-nylon66-cas",
+      "conditions": "Reported as thermal decomposition temperature exceeding this value."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Amide linkages are hydrolyzable, and nylon is known to absorb moisture, but no specific rate/data sourced this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "melt spinning (fiber)",
+      "injection molding",
+      "extrusion"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Textiles & fibers",
+      "examples": [
+        "carpets",
+        "apparel",
+        "luggage (Cordura)",
+        "airbags"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "radiator tanks",
+        "air intake manifolds",
+        "hinges",
+        "bearing cages"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "zip ties",
+        "conveyor belts",
+        "pipes",
+        "hoses"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-nylon66",
+    "bocsci-nylon66-cas"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

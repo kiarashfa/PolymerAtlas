@@ -1,0 +1,279 @@
+{
+  "id": "polyethylene",
+  "slug": "polyethylene",
+  "name": "Polyethylene (PE): The Accidental Wonder That Changed Our World",
+  "abbreviation": [
+    "PE"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9002-88-4",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(methylene), -[CH2-CH2]n-; grade (LDPE/LLDPE/MDPE/HDPE/UHMWPE) varies by branching architecture rather than a different repeat unit, so this hub entry covers the family; individual grades may get their own variant treatment later.",
+  "iupac_name": "Polyethene",
+  "synonyms": [
+    "polyethene",
+    "poly(methylene)"
+  ],
+  "aliases": [
+    {
+      "name": "polyethene",
+      "autolinkable": true
+    },
+    {
+      "name": "LDPE",
+      "autolinkable": false
+    },
+    {
+      "name": "HDPE",
+      "autolinkable": false
+    },
+    {
+      "name": "LLDPE",
+      "autolinkable": false
+    },
+    {
+      "name": "UHMWPE",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyolefin"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical",
+    "coordination"
+  ],
+  "monomer": [
+    {
+      "name": "Ethylene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ethylene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1935,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Eric Fawcett",
+    "Reginald Gibson",
+    "Michael Perrin"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 0.92,
+      "range_min": 0.88,
+      "range_max": 0.97,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyethylene",
+      "conditions": "Spans full grade range: VLDPE 0.880-0.915, LDPE 0.910-0.940, LLDPE 0.915-0.925, MDPE 0.926-0.940, HDPE >=0.941, UHMWPE <0.935."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical (high-pressure) or coordination (Ziegler-Natta/Phillips/metallocene)",
+    "common_monomers": [
+      "ethylene"
+    ],
+    "catalysts": [
+      "Ziegler-Natta (titanium-based)",
+      "Phillips catalyst (chromium/silica)",
+      "metallocene catalysts"
+    ],
+    "industrial_process_notes": "Eric Fawcett and Reginald Gibson (ICI) accidentally discovered industrial polyethylene synthesis in 1933; Michael Perrin developed the reproducible high-pressure free-radical process by 1935, and LDPE production began in 1939. Karl Ziegler's 1953 coordination-catalyst system enabled polymerization at much milder temperatures and pressures, producing linear, more crystalline HDPE. High-pressure free-radical synthesis generates both short- and long-chain branching (LDPE); low-pressure coordination catalysis (Ziegler-Natta, Phillips, metallocene) gives linear or controlled-branching grades (HDPE, LLDPE).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Varies substantially by grade (branching density is the main driver: LDPE lower, HDPE higher)."
+    },
+    "crystal_structure": "Semi-crystalline; branching architecture (short/long-chain branches in LDPE vs. linear chains in HDPE) controls the degree of chain packing and crystallinity.",
+    "chain_flexibility_notes": "Grade-dependent: LDPE's branched chains resist packing (flexible, transparent film); HDPE's linear chains pack tightly (stiffer, stronger, translucent/opaque).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Not distinctly reported/meaningful for semi-crystalline PE grades in common usage."
+    },
+    "tm": {
+      "value": 125,
+      "range_min": 115,
+      "range_max": 135,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyethylene"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": 349,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyethylene",
+      "conditions": "Combustion temperature."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Wikipedia only describes tensile strength qualitatively by grade (LDPE lower, LLDPE higher than LDPE, HDPE high, UHMWPE very tough) without single sourced numbers this session."
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "blow molding",
+      "film extrusion",
+      "rotational molding"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Packaging & film",
+      "examples": [
+        "plastic bags",
+        "film wrap (LDPE)",
+        "packaging film, cable coverings (LLDPE)"
+      ]
+    },
+    {
+      "sector": "Containers & piping",
+      "examples": [
+        "milk jugs, detergent bottles, water pipes (HDPE)",
+        "gas pipes, shrink film (MDPE)"
+      ]
+    },
+    {
+      "sector": "Medical & protective",
+      "examples": [
+        "hip/knee implants",
+        "bulletproof vests (UHMWPE)"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "HDPE (RIC 2) and LDPE (RIC 4) are among the more commonly accepted plastics in curbside recycling programs."
+  },
+  "references": [
+    "wiki-polyethylene",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

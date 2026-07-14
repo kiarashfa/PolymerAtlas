@@ -1,0 +1,284 @@
+{
+  "id": "polyvinylidene-fluoride",
+  "slug": "polyvinylidene-fluoride",
+  "name": "Polyvinylidene fluoride (PVDF): The Piezoelectric Performer",
+  "abbreviation": [
+    "PVDF"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "24937-79-9",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(1,1-difluoroethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(1,1-difluoroethylene)",
+  "synonyms": [
+    "Kynar",
+    "Hylar",
+    "Solef",
+    "KF"
+  ],
+  "aliases": [
+    {
+      "name": "Kynar",
+      "autolinkable": false
+    },
+    {
+      "name": "Hylar",
+      "autolinkable": false
+    },
+    {
+      "name": "Solef",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "fluoropolymer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Vinylidene fluoride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vinylidene_fluoride"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1947,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.78,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "vinylidene fluoride"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Synthesized via free-radical polymerization of vinylidene fluoride monomer. Major manufacturers include Arkema (Kynar), Solvay (Hylar, Solef), and Kureha (KF). Strong piezoelectric activity in poled thin films was documented in 1969.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 55,
+      "range_min": 50,
+      "range_max": 60,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "crystal_structure": "Polymorphic: the beta phase has the highest dipolar moment per unit cell and dominates PVDF's piezoelectric/ferroelectric behavior once poled.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": -35,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "tm": {
+      "value": 177,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Insoluble",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-pvdf"
+      },
+      "acids_bases_and_aggressive_solvents": {
+        "value": "Excellent resistance; rated to 120°C for chemical-process piping",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-pvdf"
+      }
+    },
+    "weathering_uv": {
+      "value": "Resists nuclear radiation and UV damage",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "extrusion",
+      "injection molding",
+      "film casting",
+      "poling (for piezoelectric grades)"
+    ],
+    "processing_temp_range": {
+      "value": 177,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pvdf"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Piezoelectric devices",
+      "examples": [
+        "tactile sensor arrays",
+        "strain gauges",
+        "acoustic transducers"
+      ],
+      "notes": "Piezoelectric coefficient of poled thin films ~6-7 pC/N, about 10x larger than other polymers; exhibits a negative d33 (compresses under applied field)."
+    },
+    {
+      "sector": "Energy storage",
+      "examples": [
+        "lithium-ion battery electrode binder"
+      ],
+      "notes": "Standard binder material; chemically inert throughout battery operation."
+    },
+    {
+      "sector": "Chemical processing",
+      "examples": [
+        "chemical-resistant piping (rated to 120°C)"
+      ]
+    },
+    {
+      "sector": "Other",
+      "examples": [
+        "wire insulation",
+        "biomedical membranes",
+        "roofing coatings",
+        "3D printer filament"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pvdf"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

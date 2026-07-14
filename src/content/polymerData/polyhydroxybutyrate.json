@@ -1,0 +1,250 @@
+{
+  "id": "polyhydroxybutyrate",
+  "slug": "polyhydroxybutyrate",
+  "name": "Polyhydroxybutyrate (PHB): Nature's Plastic Factory",
+  "abbreviation": [
+    "PHB"
+  ],
+  "type": "variant",
+  "parent": "polyhydroxyalkanoates",
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(3-hydroxybutyrate), P3HB (the most common PHB form); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": null,
+  "synonyms": [
+    "poly-3-hydroxybutyrate",
+    "P3HB",
+    "Biopol (trade name)"
+  ],
+  "aliases": [
+    {
+      "name": "P3HB",
+      "autolinkable": false
+    },
+    {
+      "name": "Biopol",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "biodegradable-polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "3-Hydroxybutyrate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/3-Hydroxybutyric_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1976,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [
+    "Maurice Lemoigne"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Discovered by French microbiologist Maurice Lemoigne in 1926; remained largely experimental until ICI's pilot-scale work in the 1980s, commercialized as 'Biopol' but facing market challenges on cost and performance versus conventional plastics. Produced by bacterial fermentation -- microorganisms such as Cupriavidus necator synthesize and store PHB intracellularly as a carbon/energy reserve.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Water-insoluble and relatively resistant to hydrolytic degradation -- unusual for a biodegradable plastic, most of which degrade primarily via hydrolysis rather than needing microbial action.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 2,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-phb"
+    },
+    "tm": {
+      "value": 175,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-phb"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 40,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-phb",
+      "conditions": "Source reports unqualified 'tensile strength'."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Insoluble",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-phb"
+      }
+    },
+    "weathering_uv": {
+      "value": "UV resistant",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-phb"
+    },
+    "hydrolysis_resistance": {
+      "value": "Relatively resistant to hydrolytic degradation (unusual for a biodegradable plastic)",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-phb"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "fiber spinning"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Medical",
+      "examples": [
+        "absorbable, nontoxic sutures"
+      ]
+    },
+    {
+      "sector": "Packaging",
+      "examples": [
+        "biodegradable packaging alternatives"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Biodegraded by bacterial species including Bacillus, Pseudomonas, and Streptomyces; few degrade it effectively at elevated temperatures.",
+    "environmental_notes": "Oxygen-permeable and biocompatible, but historically hampered commercially by cost and performance versus conventional plastics."
+  },
+  "references": [
+    "wiki-phb"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

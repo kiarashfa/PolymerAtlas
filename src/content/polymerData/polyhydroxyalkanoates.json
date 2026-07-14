@@ -1,0 +1,108 @@
+{
+  "id": "polyhydroxyalkanoates",
+  "slug": "polyhydroxyalkanoates",
+  "name": "Polyhydroxyalkanoates (PHAs): When Bacteria Became Polymer Engineers",
+  "abbreviation": ["PHAs"],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Family classification covering 150+ possible hydroxyalkanoate monomer combinations; poly(3-hydroxybutyrate) (PHB, this hub's earliest and simplest member, already covered in its own variant entry dated 1976 -- decades before this family classification itself emerged) is the archetype, but the family as a whole has no single repeat unit.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": ["biodegradable-polyester", "polyester"],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": ["natural-biosynthesis"],
+  "monomer": [
+    { "name": "3-Hydroxybutyrate (simplest/archetypal member)", "wikipedia_url": "https://en.wikipedia.org/wiki/3-Hydroxybutyric_acid" }
+  ],
+  "polymer_class": "thermoplastic",
+
+  "year_of_origin": 2006,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "placeholder" },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "placeholder" },
+    "refractive_index": { "value": null, "unit": "", "status": "placeholder" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "placeholder" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Family of polyesters built from over 150 possible hydroxyalkanoate monomers, combinable to give materials with extremely different properties, ranging from short-chain (e.g. PHB) to medium-chain-length variants. Imperial Chemical Industries developed the copolymer poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (PHBV) during the 1980s, marketed as 'Biopol' and later distributed by Monsanto and Metabolix. Made via bacterial fermentation: microorganisms accumulate the polyester intracellularly (up to 80% of dry cell weight) as a carbon/energy reserve, then it is extracted and purified by optimizing fermentation conditions on sugar, glucose, or vegetable oil feedstocks.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "range_min": 2, "range_max": 70, "unit": "%", "status": "verified", "evidence_level": "tertiary", "source": "wiki-phas", "conditions": "Wide range depending on family member/composition." },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Side-chain length and monomer composition across the 150+ possible PHA monomers give this family an unusually wide property range within one polyester class.",
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "placeholder" },
+    "tm": { "value": 110, "range_min": 40, "range_max": 180, "unit": "°C", "status": "verified", "evidence_level": "tertiary", "source": "wiki-phas", "conditions": "Wide range depending on family member/composition." },
+    "tc": { "value": null, "unit": "°C", "status": "placeholder" },
+    "hdt": { "value": null, "unit": "°C", "status": "placeholder" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "placeholder" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },
+    "hardness": { "value": null, "unit": "Shore", "status": "placeholder" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "placeholder" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "placeholder" },
+    "hydrolysis_resistance": { "value": "Fully biodegradable", "status": "verified", "evidence_level": "tertiary", "source": "wiki-phas" },
+    "flammability_ul94": { "value": null, "status": "placeholder" }
+  },
+
+  "processing": {
+    "processing_methods": ["injection molding", "extrusion", "film blowing (PHBV grades)"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "placeholder" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "placeholder" }
+  },
+
+  "applications": [
+    { "sector": "Packaging", "examples": ["flexible bioplastic packaging (PHBV)"] },
+    { "sector": "Medical", "examples": ["sutures", "bone plates", "stents", "surgical mesh", "tissue scaffolds", "wound dressings"] }
+  ],
+
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Fully biodegradable; specific pathway depends on family member (see polyhydroxybutyrate entry for the PHB-specific case).",
+    "environmental_notes": null
+  },
+
+  "references": ["wiki-phas"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

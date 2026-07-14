@@ -1,0 +1,257 @@
+{
+  "id": "polybutylene-adipate-terephthalate",
+  "slug": "polybutylene-adipate-terephthalate",
+  "name": "Polybutylene Adipate Terephthalate (PBAT): Against Pollution",
+  "abbreviation": [
+    "PBAT"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "130479-65-1",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Random copolyester of adipic acid, 1,4-butanediol, and terephthalic acid; the random (non-block) arrangement prevents significant crystallization, so behavior varies continuously with composition rather than having one fixed repeat structure.",
+  "iupac_name": null,
+  "synonyms": [
+    "ecoflex",
+    "Origo-Bi",
+    "Eastar Bio"
+  ],
+  "aliases": [
+    {
+      "name": "ecoflex",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "biodegradable-polyester",
+    "polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Adipic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adipic_acid"
+    },
+    {
+      "name": "1,4-Butanediol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,4-Butanediol"
+    },
+    {
+      "name": "Terephthalic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terephthalic_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1992,
+  "era": "The Specialty Polymers Age (1980-1999)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "adipic acid",
+      "1,4-butanediol",
+      "terephthalic acid"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Developed to address environmental concerns about PET plastic persistence -- roughly 30% of global PET production becomes bottles, of which only 15-35% is recycled. Major manufacturers: BASF (ecoflex), Novamont (Origo-Bi), Eastman Chemical (Eastar Bio), and numerous Chinese suppliers.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Random copolymer structure prevents significant crystallization, giving a wide melting range rather than a sharp Tm."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Low elastic modulus and stiffness, but high flexibility and toughness -- properties comparable to LDPE, which is what makes it a practical drop-in replacement for LDPE film in compostable applications.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Random copolymer gives a wide melting range rather than a single sharp value; no specific range sourced this session."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Qualitatively 'low elastic modulus'; no specific number sourced this session."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": "Fully biodegradable when composted; ~90% degradation after 80 days (BASF ecoflex test)",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pbat"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "film blowing/extrusion",
+      "compostable bag manufacturing",
+      "extrusion coating (paper cups)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Packaging",
+      "examples": [
+        "cling wrap for food packaging",
+        "compostable plastic bags"
+      ]
+    },
+    {
+      "sector": "Agriculture",
+      "examples": [
+        "agricultural mulch film"
+      ]
+    },
+    {
+      "sector": "Food service",
+      "examples": [
+        "water-resistant coatings for paper cups"
+      ]
+    },
+    {
+      "sector": "Emerging",
+      "examples": [
+        "antimicrobial films"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Butylene adipate groups enable biodegradation under composting conditions (~90% degradation after 80 days per BASF ecoflex testing).",
+    "environmental_notes": "Does not degrade in marine and fresh water -- an important caveat similar to PLA's marine-litter limitation."
+  },
+  "references": [
+    "wiki-pbat"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "vitrimers",
+  "slug": "vitrimers",
+  "name": "Vitrimers: The Wolverine of Polymers",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "A structural/mechanistic class (crosslinked networks with associative dynamic covalent bond exchange) rather than one chemistry -- Leibler's original demonstration used a catalyzed epoxy/polyester network, but the vitrimer concept has since been applied to many different base chemistries; closely related to (but a distinct concept from) recyclable-thermosets.",
+  "iupac_name": null,
+  "synonyms": ["covalent adaptable network"],
+  "aliases": [
+    { "name": "covalent adaptable network", "autolinkable": true }
+  ],
+
+  "chemical_family": ["vitrimer-crosslinked-network"],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": ["step-growth-condensation"],
+  "monomer": [],
+  "polymer_class": "thermoset",
+
+  "year_of_origin": 2015,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": ["Ludwik Leibler"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "Depends on base chemistry; not a single value for the class." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": "step-growth condensation (crosslinking cure) plus a catalyzed associative exchange reaction",
+    "common_monomers": [],
+    "catalysts": ["transesterification catalysts (Leibler's original epoxy/polyester demonstration)"],
+    "industrial_process_notes": "Ludwik Leibler and coworkers at ESPCI Paris introduced the vitrimer concept in 2011, demonstrating it with a catalyzed epoxy/acid-polyester network. Made like a conventional crosslinked thermoset, but with a catalyst that enables associative bond-exchange reactions (e.g. transesterification) at elevated temperature.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": 0, "unit": "%", "status": "estimated", "evidence_level": "tertiary", "source": "search-vitrimer", "conditions": "Amorphous crosslinked network." },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "The defining mechanism: covalent bonds in the network exchange partners (associatively -- a new bond forms before the old one fully breaks) when heated, letting the network topology rearrange and flow like a viscous liquid while the total number of crosslinks, and thus network integrity, is preserved throughout. This differs from a conventional thermoset (irreversible crosslinks) and from a thermoplastic (no crosslinks at all).",
+    "tg_relation_notes": "Below the topology-freezing temperature (Tv), the network is locked in place and behaves like a normal solid thermoset; above Tv, bond-exchange reactions become fast enough for the material to be reshaped/reprocessed like a viscous liquid, without ever fully melting or dissolving."
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable", "conditions": "Vitrimers are characterized by a topology freezing transition (Tv), a distinct concept from a conventional Tg -- see structure_morphology." },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable", "conditions": "Crosslinked network; does not melt in the conventional sense even above Tv (viscosity decreases gradually rather than a sharp melt transition)." },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "placeholder" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "placeholder" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },
+    "hardness": { "value": null, "unit": "Shore", "status": "placeholder" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "placeholder" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "placeholder" },
+    "hydrolysis_resistance": { "value": null, "status": "placeholder" },
+    "flammability_ul94": { "value": null, "status": "placeholder" }
+  },
+
+  "processing": {
+    "processing_methods": ["initial crosslinking cure", "hot reprocessing/reshaping above Tv (welding, remolding, self-healing)"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "placeholder" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "placeholder" }
+  },
+
+  "applications": [
+    { "sector": "Composites", "examples": ["recyclable fiber-reinforced composites"] },
+    { "sector": "General materials", "examples": ["self-healing/reprocessable thermoset replacements"] }
+  ],
+
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": "Not biodegraded, but reprocessable/reshapable at elevated temperature via bond exchange -- giving thermoset-like materials a genuine reuse pathway instead of landfill/incineration.",
+    "environmental_notes": null
+  },
+
+  "references": ["search-vitrimer"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

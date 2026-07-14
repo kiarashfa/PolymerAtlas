@@ -1,0 +1,267 @@
+{
+  "id": "acrylonitrile-butadiene-styrene",
+  "slug": "acrylonitrile-butadiene-styrene",
+  "name": "Acrylonitrile Butadiene Styrene (ABS): The Plastic That Built Our World",
+  "abbreviation": [
+    "ABS"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-56-9",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Terpolymer: a long polybutadiene chain crisscrossed with shorter poly(styrene-co-acrylonitrile) (SAN) chains, with monomer ratios (acrylonitrile 15-35%, butadiene 5-30%, styrene 40-60%) varying by grade -- no single fixed repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "styrenic",
+    "diene-rubber",
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Acrylonitrile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acrylonitrile"
+    },
+    {
+      "name": "1,3-Butadiene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,3-Butadiene"
+    },
+    {
+      "name": "Styrene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1948,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.07,
+      "range_min": 1.06,
+      "range_max": 1.08,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical graft copolymerization",
+    "common_monomers": [
+      "acrylonitrile",
+      "1,3-butadiene",
+      "styrene"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Patented in 1948; introduced to commercial markets by Borg-Warner Corporation in 1954. Made by grafting/blending a SAN-forming mixture of styrene and acrylonitrile with polybutadiene rubber particles, giving a rubber-toughened matrix. Monomers derive from petroleum and natural gas feedstocks; production uses roughly 95.34 MJ/kg of resin.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs",
+      "conditions": "Amorphous SAN matrix with dispersed rubber phase."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Rubber particle content and SAN-matrix ratio tune the toughness/stiffness trade-off; this is the toughened successor to plain SAN.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 105,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": 400,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs",
+      "conditions": "Reported to release carcinogenic monomers above this temperature."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 43,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs",
+      "conditions": "Source reports unqualified 'tensile strength'."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": 77,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs",
+      "conditions": "Reported as flexural strength."
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": "Degrades under UV exposure",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-abs"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "FDM 3D printing"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Toys",
+      "examples": [
+        "LEGO bricks"
+      ],
+      "notes": "Primary LEGO material since 1963."
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "interior/exterior trim components"
+      ]
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "drain-waste-vent (DWV) piping"
+      ]
+    },
+    {
+      "sector": "Consumer & electronics",
+      "examples": [
+        "musical instruments",
+        "computer peripherals",
+        "3D printer filament"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Degrades under UV exposure and high temperatures, potentially releasing carcinogenic monomers above 400°C -- a real end-of-life/fire-safety consideration."
+  },
+  "references": [
+    "wiki-abs"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

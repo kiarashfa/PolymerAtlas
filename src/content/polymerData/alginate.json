@@ -1,0 +1,263 @@
+{
+  "id": "alginate",
+  "slug": "alginate",
+  "name": "Alginate: The Gel from the Sea",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9005-32-7",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Linear copolymer of β-D-mannuronic acid (M) and α-L-guluronic acid (G) residues, arranged in homopolymeric M-blocks, homopolymeric G-blocks, and alternating MG sequences whose proportions vary by algal source -- block structure/ratio is not fixed enough for one canonical repeat unit.",
+  "iupac_name": null,
+  "synonyms": [
+    "alginic acid (acid form)"
+  ],
+  "aliases": [
+    {
+      "name": "alginic acid",
+      "autolinkable": true
+    },
+    {
+      "name": "algin",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polysaccharide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "β-D-Mannuronic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mannuronic_acid"
+    },
+    {
+      "name": "α-L-Guluronic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guluronic_acid"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1881,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Edward Charles Cortis Stanford"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.601,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-alginic-acid"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- extracted from brown seaweed (Phaeophyceae), particularly giant kelp (Macrocystis pyrifera), Ascophyllum nodosum, and Laminaria species (some bacteria, e.g. Pseudomonas and Azotobacter, also produce alginates). Edward Charles Cortis Stanford discovered alginate and patented an extraction process in 1881. Modern extraction converts the seaweed's alginic acid/calcium alginate to soluble sodium alginate; newer methods under investigation include microwave-, ultrasound-, and enzyme-assisted extraction.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Hydrophilic; forms a viscous gum when hydrated and ionically crosslinked hydrogels with divalent cations (notably Ca2+, the 'egg-box' model).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous hydrocolloid; no true melting transition."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Hydrophilic; forms a viscous gum on hydration",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-alginic-acid"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "ionic gelation (Ca2+ crosslinking)",
+      "spray drying",
+      "extraction/purification"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Food",
+      "examples": [
+        "thickening/gelling agent (E400/E401)"
+      ]
+    },
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "GERD treatment formulations (e.g. Gaviscon)"
+      ]
+    },
+    {
+      "sector": "Medical",
+      "examples": [
+        "wound dressings",
+        "tissue-engineering scaffolds",
+        "cell/enzyme bioencapsulation"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "reactive dye printing thickener",
+        "waterproofing/fireproofing"
+      ]
+    },
+    {
+      "sector": "Dental",
+      "examples": [
+        "impression materials"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Enzymatic (alginate lyase) or acid hydrolysis of glycosidic linkages; biodegradable.",
+    "environmental_notes": "Harvested from renewable seaweed/algal biomass."
+  },
+  "references": [
+    "wiki-alginic-acid"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

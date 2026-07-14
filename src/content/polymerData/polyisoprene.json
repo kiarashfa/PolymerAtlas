@@ -1,0 +1,233 @@
+{
+  "id": "polyisoprene",
+  "slug": "polyisoprene",
+  "name": "Polyisoprene (IR): Nature's Bouncing Wonder",
+  "abbreviation": [
+    "IR"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Synthetic cis-1,4-polyisoprene, chemically the same repeat unit as natural rubber (see natural-rubber entry) but manufactured; cis-content varies by catalyst (90-92% via anionic Li-initiation vs. ~98.5% via Ziegler-Natta), so treated separately here as the synthetic-production entry.",
+  "iupac_name": null,
+  "synonyms": [
+    "synthetic natural rubber",
+    "IR rubber"
+  ],
+  "aliases": [
+    {
+      "name": "synthetic polyisoprene",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "diene-rubber"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "coordination",
+    "anionic"
+  ],
+  "monomer": [
+    {
+      "name": "Isoprene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isoprene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1916,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "coordination or anionic chain-growth",
+    "common_monomers": [
+      "isoprene"
+    ],
+    "catalysts": [
+      "n-butyllithium (anionic, ~90-92% cis)",
+      "Ziegler-Natta TiCl4/Al or VCl3/Al (coordination, up to ~98.5% cis)"
+    ],
+    "industrial_process_notes": "Shell Chemical began the first commercially viable stereoregular cis-polyisoprene production in 1960 using alkyllithium catalysts (90-92% cis, insufficiently crystalline for some uses); Goodyear achieved 98.5% cis polyisoprene in 1962 using a Ziegler-Natta catalyst, reaching commercial viability as a true natural-rubber substitute. ~16 million tonnes produced globally in 2020 (figure covers isoprene rubber broadly).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "cis-1,4 (90-98.5% depending on catalyst system), closely mimicking natural rubber's stereochemistry.",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Higher-cis grades better replicate natural rubber's strain-induced crystallization and elasticity.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "compounding + vulcanization"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Tires & automotive",
+      "examples": [
+        "tires",
+        "belting",
+        "hoses"
+      ]
+    },
+    {
+      "sector": "Medical & consumer",
+      "examples": [
+        "latex products",
+        "footwear",
+        "condoms"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Marketed partly as a consistent, allergen-controlled alternative to natural rubber latex."
+  },
+  "references": [
+    "wiki-polyisoprene"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

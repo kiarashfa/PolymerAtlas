@@ -1,0 +1,108 @@
+{
+  "id": "conjugated-microporous-polymers",
+  "slug": "conjugated-microporous-polymers",
+  "name": "Conjugated Microporous Polymers (CMPs): Swiss Cheese",
+  "abbreviation": ["CMPs"],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "A structural class (pi-conjugated aromatic building blocks linked into a permanently microporous 3-D network) rather than one chemistry -- building blocks and linking chemistry vary by synthesis route (Suzuki, Sonogashira, Yamamoto, Schiff base, cyclotrimerization), so no single repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": ["porous-polymer-network", "conducting-polymer"],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [],
+  "monomer": [],
+  "polymer_class": "thermoset",
+
+  "year_of_origin": 2009,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": ["Andrew Cooper"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "Highly porous, low apparent density by design; varies by monomer/synthesis route, not a single value for the class." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "placeholder", "conditions": "The pi-conjugated backbone suggests some conductivity, but no specific value sourced this session." }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": ["palladium (Suzuki, Sonogashira)", "nickel (Yamamoto)"],
+    "industrial_process_notes": "Andrew Cooper published foundational CMP work in the mid-2000s. Five primary synthesis routes: Suzuki coupling (palladium-catalyzed aryl-aryl bonding), Sonogashira coupling (alkyne cross-coupling), Yamamoto coupling (nickel-mediated C-C bond formation), Schiff base condensation (metal-free, amine-aldehyde), and cyano cyclotrimerization (ionothermal synthesis).",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "not_applicable" },
+    "crystal_structure": "Rigid aromatic building blocks (often alkyne-containing) linked through pi-conjugated pathways into a 3-D network with permanent, tunable microporosity -- surface areas typically 500-1000 m²/g, with related conjugated porous materials exceeding 5500 m²/g.",
+    "chain_flexibility_notes": "Extended pi-conjugation (unlike a typical porous polymer network) enables light absorption/energy transfer, giving CMPs optoelectronic function beyond pure gas adsorption.",
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "not_applicable" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "not_applicable" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "not_applicable" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "not_applicable" },
+    "hardness": { "value": null, "unit": "Shore", "status": "not_applicable" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "placeholder" },
+    "hydrolysis_resistance": { "value": null, "status": "placeholder" },
+    "flammability_ul94": { "value": null, "status": "not_applicable" }
+  },
+
+  "processing": {
+    "processing_methods": ["Suzuki coupling", "Sonogashira coupling", "Yamamoto coupling", "Schiff base condensation", "ionothermal cyclotrimerization"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Gas storage & capture", "examples": ["CO2 capture", "hydrogen storage"] },
+    { "sector": "Photocatalysis", "examples": ["light-driven chemical transformations"] },
+    { "sector": "Sensing", "examples": ["molecular detection via porous structure"] },
+    { "sector": "Energy", "examples": ["light harvesting", "supercapacitor electrodes"] }
+  ],
+
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+
+  "references": ["wiki-cmp"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

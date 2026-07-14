@@ -1,0 +1,287 @@
+{
+  "id": "polyethylene-terephthalate",
+  "slug": "polyethylene-terephthalate",
+  "name": "Polyethylene Terephthalate (PET): The Bottle Revolution",
+  "abbreviation": [
+    "PET"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "25038-59-9",
+  "resin_id_code": "1",
+  "repeat_unit": null,
+  "notation_note": "Poly(ethylene terephthalate); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(ethylene terephthalate)",
+  "synonyms": [
+    "PETE",
+    "Terylene",
+    "Dacron",
+    "Mylar"
+  ],
+  "aliases": [
+    {
+      "name": "PETE",
+      "autolinkable": false
+    },
+    {
+      "name": "Terylene",
+      "autolinkable": false
+    },
+    {
+      "name": "Dacron",
+      "autolinkable": false
+    },
+    {
+      "name": "Mylar",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Ethylene glycol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ethylene_glycol"
+    },
+    {
+      "name": "Terephthalic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terephthalic_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1942,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [
+    "John Rex Whinfield",
+    "James Tennant Dickson"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.38,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pet",
+      "conditions": "At 20°C."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "ethylene glycol",
+      "terephthalic acid",
+      "dimethyl terephthalate"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Patented in 1941 by John Rex Whinfield and James Tennant Dickson (Calico Printers' Association); DuPont commercialized Dacron fiber in 1950 and Mylar film in 1951. Two main industrial routes: the DMT process (transesterification of dimethyl terephthalate with ethylene glycol) and the PTA process (direct esterification of terephthalic acid with ethylene glycol). ~31 million tonnes produced globally as of 2025.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Semi-crystalline; degree of crystallinity is strongly processing-dependent (amorphous/clear in quenched bottle-grade PET vs. more crystalline/opaque in fiber or engineering grades)."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 74,
+      "range_min": 67,
+      "range_max": 81,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pet"
+    },
+    "tm": {
+      "value": 260,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pet",
+      "conditions": "Typical; reported range >250°C."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": 2950,
+      "range_min": 2800,
+      "range_max": 3100,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pet",
+      "conditions": "Young's modulus."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 65,
+      "range_min": 55,
+      "range_max": 75,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pet",
+      "conditions": "Source reports unqualified 'tensile strength'; not specified whether at yield or break."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Ester linkages are hydrolyzable at elevated temperature/moisture, a known concern in melt-processing (requires thorough pre-drying), but no specific rate data sourced this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection stretch blow molding (bottles)",
+      "melt spinning (fiber)",
+      "biaxial film extrusion (BOPET)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Rigid packaging",
+      "examples": [
+        "carbonated beverage and water bottles"
+      ]
+    },
+    {
+      "sector": "Flexible packaging",
+      "examples": [
+        "aluminized BOPET food-packaging film"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "polyester apparel",
+        "thermal wear",
+        "automotive upholstery"
+      ]
+    },
+    {
+      "sector": "Engineering",
+      "examples": [
+        "glass-fiber-reinforced electrical components"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Resin identification code 1 (PET/PETE); one of the most widely and successfully curbside-recycled plastics."
+  },
+  "references": [
+    "wiki-pet",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

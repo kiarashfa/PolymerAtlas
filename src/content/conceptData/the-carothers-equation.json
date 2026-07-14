@@ -1,0 +1,26 @@
+{
+  "id": "the-carothers-equation",
+  "slug": "the-carothers-equation",
+  "name": "The Carothers Equation: When Polymers Cross the Line",
+
+  "year_of_origin": 1936,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": ["Wallace Carothers"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "summary": "Working at DuPont's Experimental Station from 1928, Wallace Carothers worked out the mathematical theory of step-growth polymerization. The Carothers equation relates the average degree of polymerization (Xn) to the fractional monomer conversion (p): Xn = 1/(1-p). Its central, non-obvious insight is that step-growth polymerization requires extremely high conversion to reach useful molecular weights -- at 95% conversion Xn is only 20, and it takes 99%+ conversion to reach chain lengths of 100 or more. This theoretical framework guided Carothers' own team to two landmark materials: neoprene (the first synthetic rubber, synthesized April 1930) and, after Carothers shifted to polyamide research in 1934, nylon 6,6 (first made February 28, 1935; publicly announced October 27, 1938, after Carothers' death).",
+  "key_equations": [
+    {
+      "name": "Carothers equation",
+      "latex": "X_n = \\frac{1}{1-p}",
+      "variables": [
+        { "symbol": "X_n", "meaning": "Number-average degree of polymerization" },
+        { "symbol": "p", "meaning": "Fractional conversion (extent of reaction) of monomer functional groups into polymer" }
+      ],
+      "source": "wiki-wallace-carothers"
+    }
+  ],
+
+  "references": ["wiki-wallace-carothers"]
+}

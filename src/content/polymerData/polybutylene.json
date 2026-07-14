@@ -1,0 +1,248 @@
+{
+  "id": "polybutylene",
+  "slug": "polybutylene",
+  "name": "Polybutylene (PB-1): The Rise and Fall of a Promising Polymer",
+  "abbreviation": [
+    "PB-1"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Isotactic poly(1-butene); polymorphic with at least four crystal forms, so a single crystal structure/density value does not represent the material across its post-molding aging timeline (form II converts to form I over ~2-14 days).",
+  "iupac_name": "Poly(1-butene)",
+  "synonyms": [
+    "polybutene-1",
+    "poly(1-butene)",
+    "PB-1"
+  ],
+  "aliases": [
+    {
+      "name": "polybutene-1",
+      "autolinkable": true
+    },
+    {
+      "name": "poly(1-butene)",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyolefin"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "coordination"
+  ],
+  "monomer": [
+    {
+      "name": "1-Butene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1-Butene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1970,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 0.91,
+      "range_min": 0.89,
+      "range_max": 0.95,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-pb1",
+      "conditions": "Form II (metastable, freshly molded) ~0.89 g/cm³; Form I (stable, after aging) ~0.95 g/cm³."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "coordination chain-growth",
+    "common_monomers": [
+      "1-butene"
+    ],
+    "catalysts": [
+      "Ziegler-Natta type catalysts"
+    ],
+    "industrial_process_notes": "Produced by catalytic (Ziegler-Natta) polymerization of 1-butene monomer to give isotactic, semi-crystalline PB-1.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "Isotactic.",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": "Polymorphic with at least four crystal forms. Melt-solidified PB-1 first forms a metastable tetragonal phase (Form II), which irreversibly transforms to a thermodynamically stable hexagonal phase (Form I) over roughly 2-14 days at room temperature -- a slow solid-state transition that is the defining quirk of this material.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": "Tg ~-21°C."
+  },
+  "thermal": {
+    "tg": {
+      "value": -21,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-pb1"
+    },
+    "tm": {
+      "value": 127.5,
+      "range_min": 124,
+      "range_max": 135,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "search-pb1",
+      "conditions": "Form II (metastable) melts ~124°C; Form I (stable, aged) melts ~135°C."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion (pipe/fittings)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Piping",
+      "examples": [
+        "pressurized hot and cold water piping systems"
+      ],
+      "notes": "Outstanding creep, cracking, and impact resistance make PB-1 a technically preferred (if commercially niche) material for pressure piping."
+    },
+    {
+      "sector": "Medical & aerospace",
+      "examples": [
+        "medical/pharmaceutical equipment",
+        "food packaging",
+        "aviation and aerospace components"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "search-pb1"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

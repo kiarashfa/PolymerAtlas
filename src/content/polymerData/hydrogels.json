@@ -1,0 +1,230 @@
+{
+  "id": "hydrogels",
+  "slug": "hydrogels",
+  "name": "Hydrogels: The Polymers That Learned to Hold Water",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Hydrogels are a broad structural/functional class -- a crosslinked hydrophilic polymer network holding at least 10% water or biological fluid -- not a single chemistry. Base polymers vary widely (poly-HEMA, PVA, alginate, PNIPAM, etc., several of which have their own entries); crosslinking can be chemical (covalent) or physical (hydrogen bonds, hydrophobic association, chain entanglement).",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [],
+  "backbone_class": null,
+  "polymerization_mechanism": [],
+  "monomer": [],
+  "polymer_class": null,
+  "year_of_origin": 1961,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [
+    "Otto Wichterle"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "not_applicable",
+      "conditions": "Density is dominated by water content and varies continuously with swelling state; not a fixed material property for the class."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "not_applicable"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "not_applicable"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not a single synthesis route -- crosslinking method depends on base polymer: PVA hydrogels typically use freeze-thaw cycles, alginate gels form via ionic crosslinking with divalent cations (e.g. Ca2+), and photopolymerization (UV + photoinitiator) enables precise in-situ gelation for tissue engineering. The term 'hydrogel' dates to 1907, but the modern field began with Otto Wichterle and Drahoslav Lim's 1960 publication on hydrophilic gels, which enabled poly(2-hydroxyethyl methacrylate) (poly-HEMA) soft contact lenses.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Two structural categories: chemical hydrogels (covalent crosslinks, permanent network) and physical hydrogels (non-covalent crosslinks -- hydrogen bonds, hydrophobic effects, chain entanglement -- often reversible/thermoresponsive).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "not_applicable"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Mechanical properties are specific to the base polymer/crosslink density, not meaningful for the class as a whole."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Defining property: holds at least 10% water/biological fluid by absorbing into the crosslinked network without dissolving",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-hydrogel"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "freeze-thaw crosslinking (PVA)",
+      "ionic crosslinking (alginate)",
+      "UV photopolymerization (in-situ tissue engineering gels)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Ophthalmology",
+      "examples": [
+        "soft contact lenses (poly-HEMA, acrylate-siloxane hydrogels)"
+      ],
+      "notes": "Oxygen permeability is the key design driver for corneal health."
+    },
+    {
+      "sector": "Wound care",
+      "examples": [
+        "moisture-retentive wound dressings"
+      ]
+    },
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "pH/temperature/ion-triggered controlled drug release"
+      ]
+    },
+    {
+      "sector": "Tissue engineering",
+      "examples": [
+        "injectable cell-encapsulation scaffolds"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": "Biodegradability depends entirely on the base polymer chemistry -- not a single answer for the class."
+  },
+  "references": [
+    "wiki-hydrogel"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

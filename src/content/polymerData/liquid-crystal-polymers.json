@@ -1,0 +1,286 @@
+{
+  "id": "liquid-crystal-polymers",
+  "slug": "liquid-crystal-polymers",
+  "name": "Liquid Crystal Polymers (LCPs): Dance",
+  "abbreviation": [
+    "LCPs"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "LCPs are a structural class (rigid, rod-like aromatic mesogenic units in the main chain or as side chains) rather than one chemistry -- commercial grades (Vectra, Xydar, Zenite, Vectran) vary in exact monomer composition, so no single repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [
+    {
+      "name": "Vectra",
+      "autolinkable": false
+    },
+    {
+      "name": "Xydar",
+      "autolinkable": false
+    },
+    {
+      "name": "Vectran",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "liquid-crystal-polymer"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Aromatic diol/diacid mesogenic units (formulation-dependent)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liquid_crystal_polymer"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1974,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.665,
+      "range_min": 1.38,
+      "range_max": 1.95,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Rigid, rod-like aromatic mesogenic units (main-chain or side-chain) give LCPs their name -- the polymer chains self-organize into liquid-crystalline order both in the melt and in solid form. Commercial production expanded significantly in the 1980s under trade names including Vectra, Xydar, Zenite, Laperos, and Vectran. Kevlar (see aramid-fibers) is the most historically significant lyotropic (solution-processed) example.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": "Rigid rod-like mesogenic units self-align into liquid-crystalline order in the melt, which is retained (frozen in) on solidification -- giving highly oriented, anisotropic mechanical and thermal expansion properties (notably a high Z-axis, i.e. through-thickness, coefficient of thermal expansion).",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Varies by formulation/processing; no single value sourced this session."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Varies by formulation/processing; no single value sourced this session."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": 12865,
+      "range_min": 8530,
+      "range_max": 17200,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp",
+      "conditions": "Reported as 'elasticity modulus'."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 119,
+      "range_min": 52.8,
+      "range_max": 185,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp",
+      "conditions": "Source reports unqualified 'tensile strength'."
+    },
+    "elongation_at_break": {
+      "value": 3.2,
+      "range_min": 0.26,
+      "range_max": 6.2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp",
+      "conditions": "Reported as 'tensile elongation'."
+    },
+    "impact_izod": {
+      "value": 51.75,
+      "range_min": 21.0,
+      "range_max": 82.5,
+      "unit": "kJ/m²",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp",
+      "conditions": "Reported as 'notched Izod impact' -- unit as sourced is kJ/m², not the schema's typical J/m for Izod; recorded as given."
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "acids_bases_and_solvents": {
+        "value": "Extreme chemical resistance and inertness",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-lcp"
+      }
+    },
+    "weathering_uv": {
+      "value": "Good weatherability",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": "Inherently flame retardant",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lcp"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "fiber spinning (lyotropic grades)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Electronics",
+      "examples": [
+        "connectors",
+        "microwave components",
+        "MEMS packaging",
+        "coil forms"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "ignition components",
+        "heater plugs",
+        "transmission parts",
+        "sensors"
+      ]
+    },
+    {
+      "sector": "Display technology",
+      "examples": [
+        "optical retarders for 3D glasses and LCDs"
+      ]
+    },
+    {
+      "sector": "General",
+      "examples": [
+        "food containers",
+        "medical devices"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-lcp"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

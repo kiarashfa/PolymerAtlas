@@ -1,0 +1,250 @@
+{
+  "id": "polyvinylidene-chloride",
+  "slug": "polyvinylidene-chloride",
+  "name": "Polyvinylidene Chloride (PVDC): The Wrap That Wouldn't Wash Off",
+  "abbreviation": [
+    "PVDC"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9002-85-1",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(1,1-dichloroethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": null,
+  "synonyms": [
+    "Saran"
+  ],
+  "aliases": [
+    {
+      "name": "Saran",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "vinyl-polymer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Vinylidene chloride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vinylidene_chloride"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1933,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Ralph Wiley"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "vinylidene chloride (often copolymerized with vinyl chloride or acrylates)"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Ralph Wiley discovered PVDC accidentally in 1933 while working as a dishwasher in a Dow Chemical laboratory (the first product was a 'greasy, dark green film'). Dow commercialized it as Saran; Saran Wrap launched in 1953. In 2004, Saran Wrap itself was reformulated to low-density polyethylene due to environmental concerns about the chlorine content of PVDC.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Densely packed chlorine substituents give PVDC exceptionally low permeability to water, oxygen, and aroma compounds -- its defining property.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": 125,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinylidene-chloride",
+      "conditions": "Decomposes above this temperature, releasing HCl."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "oils_and_organic_solvents": {
+        "value": "Insoluble; superior resistance to alkalis and acids",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-polyvinylidene-chloride"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": "Low moisture absorption; resistant to mold, bacteria, and insects",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinylidene-chloride"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "blown/cast film extrusion",
+      "coating (as a barrier layer on other films)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Food packaging",
+      "examples": [
+        "cling wrap",
+        "barrier coatings on other films/bottles"
+      ],
+      "notes": "Exceptional O2/moisture/aroma barrier extends shelf life."
+    },
+    {
+      "sector": "Household",
+      "examples": [
+        "cleaning cloths",
+        "filters",
+        "shower curtains"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "screens",
+        "wastewater treatment media"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": "Releases HCl on thermal decomposition above 125°C.",
+    "environmental_notes": "Chlorine content raised environmental concerns significant enough that Dow reformulated retail Saran Wrap to LDPE in 2004; PVDC remains in use mainly as a thin barrier coating rather than a bulk film."
+  },
+  "references": [
+    "wiki-polyvinylidene-chloride"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

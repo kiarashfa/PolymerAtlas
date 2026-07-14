@@ -1,0 +1,256 @@
+{
+  "id": "polyvinyl-acetate",
+  "slug": "polyvinyl-acetate",
+  "name": "Polyvinyl Acetate (PVAc): Adhesive That Bound the Modern World",
+  "abbreviation": [
+    "PVAc"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-20-7",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(1-(acetyloxy)ethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly[1-(acetyloxy)ethylene]",
+  "synonyms": [
+    "wood glue resin",
+    "white glue polymer"
+  ],
+  "aliases": [
+    {
+      "name": "PVA glue",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "vinyl-polymer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Vinyl acetate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vinyl_acetate"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1913,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Fritz Klatte"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.19,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-acetate",
+      "conditions": "At 25°C."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "vinyl acetate"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Vinyl acetate monomer (itself produced industrially via palladium-catalyzed oxidative addition of acetic acid to ethylene) undergoes free-radical vinyl polymerization to yield PVAc, typically with degree of polymerization 100-5000. Discovered by Fritz Klatte in Germany, 1912-1913 (patented 1913-1914).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-acetate",
+      "conditions": "Atactic PVAc is amorphous."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": "Tg (30-45°C) depends on molecular weight; near room temperature, giving PVAc its characteristic tacky/film-forming behavior used in adhesives."
+  },
+  "thermal": {
+    "tg": {
+      "value": 37,
+      "range_min": 30,
+      "range_max": 45,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-acetate",
+      "conditions": "Dependent on molecular weight."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Predominantly atactic/amorphous; no sharp crystalline melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Ester side groups are hydrolyzable (this is the basis of the related polyvinyl alcohol production route)."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "emulsion polymerization (as adhesive/paint dispersion)",
+      "solution/hot-melt application"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Adhesives",
+      "examples": [
+        "wood/paper/cloth glue ('white glue', 'carpenter's glue')",
+        "bookbinding adhesive"
+      ]
+    },
+    {
+      "sector": "Coatings",
+      "examples": [
+        "paints",
+        "industrial coatings"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "sizing",
+        "nonwoven fiber binding"
+      ]
+    },
+    {
+      "sector": "Consumer",
+      "examples": [
+        "chewing gum base"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-polyvinyl-acetate"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

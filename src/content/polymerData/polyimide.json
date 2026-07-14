@@ -1,0 +1,243 @@
+{
+  "id": "polyimide",
+  "slug": "polyimide",
+  "name": "Polyimide (PI): The Golden Guardian of the Space Age",
+  "abbreviation": [
+    "PI"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Represented by the archetypal Kapton chemistry (pyromellitic dianhydride + 4,4'-oxydianiline); many other dianhydride/diamine combinations exist and are not modeled here.",
+  "iupac_name": null,
+  "synonyms": [
+    "Kapton"
+  ],
+  "aliases": [
+    {
+      "name": "Kapton",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyimide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Pyromellitic dianhydride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pyromellitic_dianhydride"
+    },
+    {
+      "name": "4,4'-Oxydianiline",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/4,4%27-Oxydianiline"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1964,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation (polyamic acid formation, then thermal/chemical imidization)",
+    "common_monomers": [
+      "pyromellitic dianhydride",
+      "4,4'-oxydianiline"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "The first polyimide was discovered in 1908, but the commercially significant DuPont Kapton chemistry was pioneered in the 1950s, with polyimides in mass production since 1955.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Rigid aromatic imide backbone gives exceptional thermal and dimensional stability, maintaining useful properties up to ~232°C in continuous service.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Does not exhibit a conventional melt transition in typical use; effectively infusible once cured."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": 232,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyimide",
+      "conditions": "Reported continuous-use temperature limit."
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Qualitatively described as 'high tensile strength' with 'very low creep'; no specific number sourced this session."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "polyamic acid solution casting + thermal imidization (film)",
+      "compression molding (shapes)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Aerospace",
+      "examples": [
+        "multi-layer spacecraft insulation (metal-coated polyimide film)"
+      ]
+    },
+    {
+      "sector": "Electronics",
+      "examples": [
+        "flexible printed circuits",
+        "magnet wire insulating film"
+      ]
+    },
+    {
+      "sector": "Industrial & medical",
+      "examples": [
+        "filtration membranes",
+        "medical device components"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-polyimide"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

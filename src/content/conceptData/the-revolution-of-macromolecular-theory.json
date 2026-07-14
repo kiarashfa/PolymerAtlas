@@ -1,0 +1,16 @@
+{
+  "id": "the-revolution-of-macromolecular-theory",
+  "slug": "the-revolution-of-macromolecular-theory",
+  "name": "The Revolution of Macromolecular Theory.",
+
+  "year_of_origin": 1920,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": ["Hermann Staudinger"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "summary": "In 1920, Hermann Staudinger proposed that rubber and other polymers (starch, cellulose, proteins) are long chains of repeating molecular units joined by ordinary covalent bonds -- not, as the prevailing view held, colloidal aggregates of small molecules held together by weaker physical association. Leading chemists including Emil Fischer and Heinrich Wieland initially rejected the idea. Through the 1930s, membrane osmometry and viscosity measurements confirmed genuinely high molecular weights, Hermann Mark's X-ray diffraction work demonstrated real long-chain structures, and Wallace Carothers' deliberate synthesis of nylon and polyesters from well-understood organic reactions provided further proof the theory was right. Staudinger received the 1953 Nobel Prize in Chemistry for founding macromolecular chemistry; the hypothesis is the theoretical foundation the entire modern polymer/plastics industry rests on.",
+  "key_equations": [],
+
+  "references": ["wiki-staudinger"]
+}

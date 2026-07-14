@@ -1,0 +1,263 @@
+{
+  "id": "styrene-butadiene-rubber",
+  "slug": "styrene-butadiene-rubber",
+  "name": "Styrene Butadiene Rubber (SBR): The Rubber That Kept the World Rolling",
+  "abbreviation": [
+    "SBR"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-55-8",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Random copolymer of styrene and butadiene (typically ~25:75 by weight); ratio varies by grade so no single fixed repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [
+    "GR-S (Government Rubber-Styrene, wartime name)"
+  ],
+  "aliases": [
+    {
+      "name": "GR-S",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "diene-rubber",
+    "styrenic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Styrene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    },
+    {
+      "name": "1,3-Butadiene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,3-Butadiene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1959,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical emulsion (E-SBR) or solution (S-SBR) copolymerization",
+    "common_monomers": [
+      "styrene",
+      "1,3-butadiene"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Originally developed before WWII in Germany by chemist Walter Bock in 1929; during WWII the U.S. Synthetic Rubber Program produced Government Rubber-Styrene (GR-S) at scale to replace inaccessible Southeast Asian natural rubber. Two production routes: emulsion polymerization (E-SBR, historically more widely used) and solution polymerization (S-SBR, growing share in tire applications). ~5.4 million tonnes processed worldwide in 2012.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Higher styrene content yields harder, less elastic rubber; higher butadiene content enhances flexibility.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": -57.5,
+      "range_min": -65,
+      "range_max": -50,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-sbr",
+      "conditions": "S-SBR ~-65°C, E-SBR ~-50°C."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Elastomers like SBR typically don't show a distinct yield region before break; see tensile_strength_at_break."
+    },
+    "tensile_strength_at_break": {
+      "value": 28,
+      "range_min": 20,
+      "range_max": 36,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-sbr",
+      "conditions": "S-SBR ~36 MPa, E-SBR ~20 MPa."
+    },
+    "elongation_at_break": {
+      "value": 600,
+      "range_min": 565,
+      "range_max": 635,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-sbr",
+      "conditions": "Reported as 'elongation at tear'."
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "emulsion polymerization + compounding/vulcanization",
+      "solution polymerization"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Tires",
+      "examples": [
+        "automobile tire tread/carcass compounds"
+      ],
+      "notes": "~50% of automobile tires."
+    },
+    {
+      "sector": "Footwear & industrial",
+      "examples": [
+        "shoe components",
+        "gaskets",
+        "adhesives"
+      ]
+    },
+    {
+      "sector": "Paper",
+      "examples": [
+        "coated-paper binder"
+      ],
+      "notes": "54% of dry binders used in coated paper (2010)."
+    },
+    {
+      "sector": "Energy storage",
+      "examples": [
+        "lithium-ion battery electrode binder"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-sbr"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "id": "polyacrylonitrile",
+  "slug": "polyacrylonitrile",
+  "name": "Polyacrylonitrile (PAN): The Fiber That Became the Skeleton of Flight",
+  "abbreviation": [
+    "PAN"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "25014-41-9",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1-10% vinyl comonomers, so a pure-homopolymer repeat unit doesn't represent most commercial grades.",
+  "iupac_name": "Polyacrylonitrile",
+  "synonyms": [
+    "acrylic fiber (textile form)",
+    "Orlon (early trade name)"
+  ],
+  "aliases": [
+    {
+      "name": "Orlon",
+      "autolinkable": false
+    },
+    {
+      "name": "acrylic fiber",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Acrylonitrile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acrylonitrile"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1930,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Hans Fikentscher",
+    "Claus Heuck",
+    "Herbert Rein"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.184,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyacrylonitrile"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "acrylonitrile",
+      "vinyl comonomers (1-10%, for solubility/dyeability)"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "First synthesized in 1930 by Hans Fikentscher and Claus Heuck at IG Farben (Ludwigshafen); early research stalled because PAN did not dissolve in any industrial solvent of the time until Herbert Rein identified suitable solvents in 1938, enabling fiber production. DuPont ran the first mass production of PAN fiber in 1946 (Orlon). The carbon-fiber precursor route involves thermal oxidative stabilization at ~230°C in air, then carbonization above 1000°C in an inert atmosphere.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Strong dipole-dipole interaction between nitrile groups gives PAN unusually high intermolecular cohesion for a vinyl polymer, contributing to its high Tg and insolubility in common solvents.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 95,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyacrylonitrile"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Degrades above 300°C rather than exhibiting a conventional melt transition."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": 300,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyacrylonitrile"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "common_industrial_solvents": {
+        "value": "Historically very poor -- did not dissolve in solvents available in the 1930s, delaying commercialization until dimethylformamide-type solvents were identified in 1938",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-polyacrylonitrile"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "wet/dry-jet spinning (fiber)",
+      "thermal oxidative stabilization + carbonization (carbon fiber precursor)"
+    ],
+    "processing_temp_range": {
+      "value": 230,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyacrylonitrile",
+      "conditions": "Thermal-oxidative stabilization step in carbon-fiber processing."
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Carbon fiber",
+      "examples": [
+        "aircraft structural composites",
+        "missiles",
+        "sporting goods"
+      ],
+      "notes": "PAN is the precursor for most high-quality carbon fiber produced today."
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "acrylic fiber (>=85% acrylonitrile)",
+        "modacrylic fiber"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-polyacrylonitrile"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

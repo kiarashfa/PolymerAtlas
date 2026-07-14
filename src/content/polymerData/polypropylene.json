@@ -1,0 +1,260 @@
+{
+  "id": "polypropylene",
+  "slug": "polypropylene",
+  "name": "Polypropylene (PP): The Plastic That Bent the Rules",
+  "abbreviation": [
+    "PP"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-07-0",
+  "resin_id_code": "5",
+  "repeat_unit": null,
+  "notation_note": "Poly(propylene); tacticity (isotactic/syndiotactic/atactic) is a configurational property that drastically changes behavior despite an identical repeat unit -- see the configuration-vs-conformation concept entry.",
+  "iupac_name": "Poly(propylene)",
+  "synonyms": [
+    "polypropene"
+  ],
+  "aliases": [
+    {
+      "name": "polypropene",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyolefin"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "coordination"
+  ],
+  "monomer": [
+    {
+      "name": "Propylene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Propylene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1954,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [
+    "Giulio Natta",
+    "Karl Ziegler"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 0.91,
+      "range_min": 0.895,
+      "range_max": 0.93,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polypropylene",
+      "conditions": "Lowest density among common commodity plastics."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "coordination chain-growth",
+    "common_monomers": [
+      "propylene"
+    ],
+    "catalysts": [
+      "Ziegler-Natta (TiCl4/MgCl2)",
+      "metallocene (for syndiotactic grades)"
+    ],
+    "industrial_process_notes": "Polymerization first demonstrated by Phillips Petroleum chemists in 1951; stereoselective polymerization to the isotactic form was discovered by Giulio Natta and Karl Rehn in March 1954 (building on Karl Ziegler's coordination-catalysis work), leading to commercial production by Montecatini from 1957.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "Isotactic (iPP, dominant commercial form, semi-crystalline), syndiotactic (sPP, alternating methyl orientation, slightly less crystalline, made via metallocene catalysis), and atactic (aPP, random/amorphous, used as sealant and bitumen additive).",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": 163,
+      "range_min": 160,
+      "range_max": 166,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polypropylene",
+      "conditions": "Commercial isotactic PP; perfectly isotactic PP reaches 171°C. Syndiotactic PP ranges 130-186°C depending on stereoregularity."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "film extrusion",
+      "fiber spinning",
+      "living-hinge molding"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Packaging",
+      "examples": [
+        "packaging films",
+        "food containers"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "carpets",
+        "ropes"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "interior/exterior components"
+      ]
+    },
+    {
+      "sector": "Consumer & medical",
+      "examples": [
+        "living hinges",
+        "piping systems",
+        "medical devices"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Resin identification code 5."
+  },
+  "references": [
+    "wiki-polypropylene",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

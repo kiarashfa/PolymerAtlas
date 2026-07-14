@@ -1,0 +1,9 @@
+[
+  { "id": "decoding-natures-legacy", "name": "Decoding Nature's Legacy (1833-1902)", "year_start": 1833, "year_end": 1902 },
+  { "id": "birth-of-synthetic-polymers", "name": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution", "year_start": 1907, "year_end": 1938 },
+  { "id": "wartime-innovation-period", "name": "The Wartime Innovation Period (1939-1945)", "year_start": 1939, "year_end": 1945 },
+  { "id": "post-war-boom", "name": "The Post-War Boom (1946-1960)", "year_start": 1946, "year_end": 1960 },
+  { "id": "engineering-polymers-era", "name": "The Engineering Polymers Era (1961-1979)", "year_start": 1961, "year_end": 1979 },
+  { "id": "specialty-polymers-age", "name": "The Specialty Polymers Age (1980-1999)", "year_start": 1980, "year_end": 1999 },
+  { "id": "smart-materials-era", "name": "The Smart Materials Era (2000-2015)", "year_start": 2000, "year_end": 2015 }
+]

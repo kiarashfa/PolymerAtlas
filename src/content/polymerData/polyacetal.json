@@ -1,0 +1,255 @@
+{
+  "id": "polyacetal",
+  "slug": "polyacetal",
+  "name": "Polyacetal (POM): Revolutionizing Precision",
+  "abbreviation": [
+    "POM"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9002-81-7",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(oxymethylene), (CH2O)n; a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Polyoxymethylene",
+  "synonyms": [
+    "acetal",
+    "polyformaldehyde",
+    "Delrin"
+  ],
+  "aliases": [
+    {
+      "name": "acetal",
+      "autolinkable": true
+    },
+    {
+      "name": "Delrin",
+      "autolinkable": false
+    },
+    {
+      "name": "POM",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyketone"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "ring-opening-polymerization",
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Formaldehyde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Formaldehyde"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1956,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.415,
+      "range_min": 1.41,
+      "range_max": 1.42,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pom"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "ring-opening or step-growth condensation (formaldehyde polymerization)",
+    "common_monomers": [
+      "formaldehyde"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "DuPont synthesized POM around 1952 and filed for homopolymer patent protection in 1956, commercializing it as Delrin at a Parkersburg, WV facility in 1960.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Highly crystalline -- the basis of its high stiffness and low friction, though no specific percentage sourced this session."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "High chain regularity and crystallinity give POM its combination of stiffness, low friction, and dimensional stability -- ideal for precision parts.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": 165,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pom"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": 2700,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pom"
+    },
+    "yield_strength": {
+      "value": 62,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pom",
+      "conditions": "Source explicitly reports this as tensile YIELD strength (not just generic tensile strength)."
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "precision machining"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Precision mechanical",
+      "examples": [
+        "gears",
+        "fasteners",
+        "lock systems",
+        "zippers",
+        "ski bindings"
+      ],
+      "notes": "Coefficient of friction against steel 0.31-0.37 -- low friction plus high stiffness makes POM a common metal-replacement engineering plastic."
+    },
+    {
+      "sector": "Automotive & electronics",
+      "examples": [
+        "automotive components",
+        "consumer electronics parts"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pom"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

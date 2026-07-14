@@ -1,0 +1,257 @@
+{
+  "id": "ebonite",
+  "slug": "ebonite",
+  "name": "Ebonite (Vulcanite): The Black Gold",
+  "abbreviation": [
+    "Vulcanite"
+  ],
+  "type": "variant",
+  "parent": "vulcanized-natural-rubber",
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Heavily sulfur-crosslinked polyisoprene network (25-80% sulfur by mass); a densely crosslinked thermoset has no single linear repeat unit.",
+  "iupac_name": null,
+  "synonyms": [
+    "vulcanite",
+    "hard rubber"
+  ],
+  "aliases": [
+    {
+      "name": "vulcanite",
+      "autolinkable": true
+    },
+    {
+      "name": "hard rubber",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "natural-rubber",
+    "diene-rubber"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "Isoprene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isoprene"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1851,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.15,
+      "range_min": 1.1,
+      "range_max": 1.2,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-ebonite",
+      "conditions": "Varies with sulfur/filler composition."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [
+      "sulfur (25-80% by mass)"
+    ],
+    "industrial_process_notes": "Extended, heavy sulfur vulcanization of natural rubber (25-80% sulfur, often with zinc oxide and/or linseed oil filler), pioneered by Nelson Goodyear (brother of Charles Goodyear) starting 1851. Optimal mechanical properties are reported around ~35% sulfur content, with maximum impact strength near ~30%.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "cis-1,4 backbone (inherited from natural rubber), densely crosslinked via sulfur bridges.",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Rigid at room temperature due to dense sulfur crosslinking; exhibits shape-memory behavior when reheated.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 75,
+      "range_min": 70,
+      "range_max": 80,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-ebonite",
+      "conditions": "Reported as the softening/glass-transition range."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Crosslinked thermoset; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder",
+      "conditions": "Qualitatively rigid/brittle; no single sourced Shore number this session."
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "compression molding with heavy sulfur cure",
+      "machining/turning (fountain pen and mouthpiece manufacture)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Writing instruments",
+      "examples": [
+        "fountain pen bodies and components"
+      ]
+    },
+    {
+      "sector": "Musical instruments",
+      "examples": [
+        "saxophone and clarinet mouthpieces"
+      ]
+    },
+    {
+      "sector": "Electrical",
+      "examples": [
+        "historical battery casings",
+        "electrical insulation and plugs"
+      ]
+    },
+    {
+      "sector": "Sporting goods & education",
+      "examples": [
+        "hockey pucks",
+        "static-electricity demonstration rods"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Brittleness led to replacement by modern plastics (e.g. polypropylene) in applications like battery cases."
+  },
+  "references": [
+    "wiki-ebonite"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

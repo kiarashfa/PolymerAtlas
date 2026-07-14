@@ -1,0 +1,263 @@
+{
+  "id": "cellulose",
+  "slug": "cellulose",
+  "name": "Cellulose: Nature's Master Builder",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9004-34-6",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Cellulose is a linear β(1→4)-linked D-glucose homopolymer (cellobiose repeat unit), but degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton/plant fibers ~800-10,000, bacterial cellulose up to ~10,000) so no single fixed-length notation applies.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "polysaccharide",
+    "cellulosic"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "D-glucose (β-glucopyranose)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glucose"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1835,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Anselme Payen"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.5,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-cellulose"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- biosynthesized by plants (and some bacteria) and extracted from wood pulp (kraft/sulfite pulping) or cotton fiber (~90% cellulose by mass; wood ~40-50%). Regeneration processes (viscose, cuprammonium) convert extracted cellulose into rayon/cellophane -- see viscose-rayon and cellophane entries.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": "Semi-crystalline; natural cellulose forms Iα/Iβ allomorphs, regenerated cellulose forms cellulose II, and cellulose III/IV are accessible via chemical treatment.",
+    "chain_flexibility_notes": "Extensive interchain hydrogen bonding between parallel chains forms rigid microfibrils, giving cellulose its high stiffness and insolubility in water and most organic solvents.",
+    "tg_relation_notes": "Reported to require ~320°C and 25 MPa pressure to become amorphous in water; a conventional Tg is not well-defined because the material decomposes before/near this regime under ambient pressure."
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Decomposes at 260-270°C rather than melting under ambient pressure; melting near 467°C has only been observed under pulse-heating conditions."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": 260,
+      "range_min": 260,
+      "range_max": 270,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-cellulose"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Insoluble",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-cellulose"
+      },
+      "common_organic_solvents": {
+        "value": "Insoluble in most organic solvents",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-cellulose"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "pulping/extraction",
+      "regeneration (viscose/cuprammonium process)",
+      "mechanical/chemical nanocellulose fibrillation"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Paper & paperboard",
+      "examples": [
+        "primary constituent of all paper products",
+        "electrical insulation materials"
+      ]
+    },
+    {
+      "sector": "Textiles",
+      "examples": [
+        "cotton and regenerated fibers (rayon, cellophane)"
+      ]
+    },
+    {
+      "sector": "Biofuels",
+      "examples": [
+        "cellulosic ethanol feedstock"
+      ]
+    },
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "microcrystalline cellulose as tablet filler/stabilizer"
+      ]
+    },
+    {
+      "sector": "Nanomaterials",
+      "examples": [
+        "nanocellulose fibrils/crystals for hydrogels, aerogels, nanocomposites"
+      ]
+    },
+    {
+      "sector": "Food additives",
+      "examples": [
+        "E460 thickener/texturizer"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": true,
+    "degradation_pathway": "Enzymatic (cellulase) hydrolysis of β-1,4-glycosidic bonds; biodegradable, and paper/cellulose fiber is widely mechanically recycled.",
+    "environmental_notes": "The most abundant natural polymer on Earth; central to paper recycling streams and a renewable feedstock for biofuels and nanomaterials."
+  },
+  "references": [
+    "wiki-cellulose"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

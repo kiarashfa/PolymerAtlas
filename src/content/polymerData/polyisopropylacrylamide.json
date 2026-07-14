@@ -1,0 +1,242 @@
+{
+  "id": "polyisopropylacrylamide",
+  "slug": "polyisopropylacrylamide",
+  "name": "Polyisopropylacrylamide (PNIPAM)",
+  "abbreviation": [
+    "PNIPAM"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "25189-55-3",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(N-isopropylacrylamide); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(N-isopropylacrylamide)",
+  "synonyms": [
+    "poly(N-isopropylacrylamide)"
+  ],
+  "aliases": [],
+  "chemical_family": [
+    "acrylic",
+    "stimuli-responsive-polymer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "N-isopropylacrylamide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N-Isopropylacrylamide"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1955,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.1,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pnipam"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "N-isopropylacrylamide"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "The monomer was first synthesized in 1956 (Sprecht); a 1957 patent covered its use as a rodent repellent. The polymer's distinctive thermoresponsive behavior in aqueous solution was first reported in 1968, and research interest expanded significantly in the 1980s once its applications were recognized. Made via free-radical polymerization (homo-, co-, or terpolymerization for property tuning).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Exhibits a lower critical solution temperature (LCST) around 32°C: the chain is hydrophilic and extended below this temperature, then collapses into a hydrophobic globule above it. The exact transition temperature can shift 5-10°C or more depending on concentration, molar mass, dispersity, and end-group chemistry -- see the-ucst-lcst-concept for the general phenomenon.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": 96,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pnipam"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "LCST behavior: soluble below ~32°C, insoluble/collapsed above it",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-pnipam"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "free-radical solution/emulsion polymerization",
+      "crosslinking (for microgel/hydrogel forms)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "controlled drug delivery systems",
+        "tissue engineering scaffolds"
+      ],
+      "notes": "Intramuscular formulations show 48-66 day half-life depending on molecular weight."
+    },
+    {
+      "sector": "Materials",
+      "examples": [
+        "smart hydrogels and microgels",
+        "biosensors and thin films",
+        "gel actuators"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "tertiary/enhanced oil recovery"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pnipam"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

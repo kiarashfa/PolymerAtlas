@@ -1,0 +1,274 @@
+{
+  "id": "melamine-urea-formaldehyde",
+  "slug": "melamine-urea-formaldehyde",
+  "name": "Melamine & Urea Formaldehyde (M/UF): Unsung Heroes of Polymer World",
+  "abbreviation": [
+    "M",
+    "UF"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "This entry covers two related aminoplast condensation resins -- melamine-formaldehyde (MF) and urea-formaldehyde (UF) -- both crosslinked thermoset networks with no single linear repeat unit; UF's idealized repeat is [(O)CNHCH2NH]n before crosslinking.",
+  "iupac_name": null,
+  "synonyms": [
+    "aminoplast resins"
+  ],
+  "aliases": [
+    {
+      "name": "melamine formaldehyde",
+      "autolinkable": true
+    },
+    {
+      "name": "urea formaldehyde",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "phenolic-aminoplast"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Melamine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melamine"
+    },
+    {
+      "name": "Urea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Urea"
+    },
+    {
+      "name": "Formaldehyde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Formaldehyde"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1924,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "melamine",
+      "urea",
+      "formaldehyde"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Melamine or urea is condensed with formaldehyde (idealized MF product: hexa-hydroxymethyl melamine) to form a crosslinked thermoset. Formaldehyde is more tightly bound in MF than in UF, giving MF resins lower formaldehyde emissions. UF was first synthesized (unrecognized as a polymer) by Hölzer and Bernhard Tollens in 1884; Hanns John obtained the first Austrian patent for UF resin in 1919; Carl Goldschmidt patented UF as a disinfectant in 1897. ~20 million tonnes of UF produced annually, >70% for wood-composite bonding.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-melamine-resin",
+      "conditions": "Amorphous crosslinked thermoset network."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Hard, durable, and rigid once cured; prone to chipping under conventional saws; MF surfaces are not microwave-safe and can stain/scratch over time.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Thermoset; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": 0.0358,
+      "range_min": 0.0343,
+      "range_max": 0.0373,
+      "unit": "W/(m·K)",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-urea-formaldehyde",
+      "conditions": "UF foam insulation (UFFI), not the solid resin."
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder",
+      "conditions": "Qualitatively hard and durable, resistant to breaking but prone to chipping."
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds -- a real limitation in exterior wood-composite use, not independently confirmed with a source this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "compression/injection molding (MF tableware, laminates)",
+      "adhesive application (UF wood-composite bonding)",
+      "foam-in-place insulation (UFFI)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Laminates & surfaces",
+      "examples": [
+        "high-pressure laminates (Formica, Arborite)",
+        "laminate flooring",
+        "whiteboard surfaces"
+      ]
+    },
+    {
+      "sector": "Tableware",
+      "examples": [
+        "melamine dinnerware and utensils"
+      ]
+    },
+    {
+      "sector": "Wood products",
+      "examples": [
+        "particleboard/MDF/plywood adhesive (UF)"
+      ],
+      "notes": ">70% of UF production."
+    },
+    {
+      "sector": "Insulation",
+      "examples": [
+        "urea-formaldehyde foam insulation (UFFI), 1930s-1970s"
+      ]
+    },
+    {
+      "sector": "Agriculture",
+      "examples": [
+        "slow-release nitrogen fertilizer (UF)"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "UF resins are a known formaldehyde-emission source in wood products and were historically associated with indoor air-quality concerns in UFFI installations; MF binds formaldehyde more tightly, reducing emissions."
+  },
+  "references": [
+    "wiki-melamine-resin",
+    "wiki-urea-formaldehyde"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

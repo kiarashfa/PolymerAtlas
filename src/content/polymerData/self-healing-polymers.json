@@ -1,0 +1,107 @@
+{
+  "id": "self-healing-polymers",
+  "slug": "self-healing-polymers",
+  "name": "Self-Healing Polymers: The Materials That Mend Themselves",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "A structural/functional class (any polymer engineered to autonomously or triggerably repair damage) rather than one chemistry -- mechanisms include microcapsule-based, vascular, and intrinsic/reversible-bonding systems, each built on a different host polymer.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": [],
+  "backbone_class": null,
+  "polymerization_mechanism": [],
+  "monomer": [],
+  "polymer_class": null,
+
+  "year_of_origin": 2001,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": ["Scott White", "Nancy Sottos"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "Depends entirely on the host polymer matrix; not a single value for the class." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Three main mechanism families: (1) microcapsule-based -- microscopic vessels containing a healing agent (e.g. dicyclopentadiene monomer) and a catalyst (e.g. Grubbs' catalyst) embedded in a host resin (e.g. epoxy) rupture when a crack reaches them, releasing monomer that polymerizes in the crack, achieving ~67% strength recovery; (2) vascular -- hollow channels analogous to blood vessels deliver healing agent continuously and can support repeated healing cycles; (3) intrinsic/reversible bonding -- the polymer network itself uses reversible chemistry (commonly Diels-Alder) to break down and reform under an external stimulus (heat, light). Scott White and Nancy Sottos published the foundational microcapsule-based approach in Nature in 2001; the field's first international conference was held in 2007.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "not_applicable" },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Structural principle varies entirely by mechanism family (embedded microcapsules vs. vascular channels vs. reversible covalent chemistry throughout the network) -- see industrial_process_notes.",
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "not_applicable" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "not_applicable" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "not_applicable" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "not_applicable" },
+    "hardness": { "value": null, "unit": "Shore", "status": "not_applicable" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "not_applicable" },
+    "hydrolysis_resistance": { "value": null, "status": "not_applicable" },
+    "flammability_ul94": { "value": null, "status": "not_applicable" }
+  },
+
+  "processing": {
+    "processing_methods": ["microencapsulation (extrinsic)", "microvascular network fabrication (extrinsic)", "reversible-bond network design (intrinsic)"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Aerospace", "examples": ["fiber-reinforced composite fuselages and T-joints"] },
+    { "sector": "Coatings", "examples": ["corrosion-prevention coatings on metals and microelectronics"] },
+    { "sector": "Electronics", "examples": ["self-healing screens", "electrical conductivity restoration in damaged circuits"] }
+  ],
+
+  "environmental": {
+    "recyclable": null,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": "Extending service life via self-repair is itself an environmental/sustainability argument, independent of any single polymer's own recyclability/biodegradability."
+  },
+
+  "references": ["wiki-self-healing"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

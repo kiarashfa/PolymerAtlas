@@ -1,0 +1,252 @@
+{
+  "id": "polyacrylic-acid",
+  "slug": "polyacrylic-acid",
+  "name": "Polyacrylic Acid (PAA): The Love Affair with Water",
+  "abbreviation": [
+    "PAA"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-01-4",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(1-carboxyethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(acrylic acid)",
+  "synonyms": [
+    "Carbomer",
+    "Acrysol",
+    "Acumer",
+    "Sokalan"
+  ],
+  "aliases": [
+    {
+      "name": "Carbomer",
+      "autolinkable": true
+    },
+    {
+      "name": "PAA",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Acrylic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acrylic_acid"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1929,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "acrylic acid"
+    ],
+    "catalysts": [
+      "potassium persulfate",
+      "AIBN"
+    ],
+    "industrial_process_notes": "Acrylic acid undergoes free-radical polymerization, initiated by agents such as potassium persulfate or AIBN, to give linear or (for superabsorbents) lightly crosslinked PAA networks.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Highly hydrophilic due to pendant carboxylic acid groups; crosslinked variants swell dramatically in water (superabsorbent behavior).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Highly hydrophilic; crosslinked forms absorb >100x own weight",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-polyacrylic-acid"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "solution/emulsion polymerization",
+      "crosslinking (for superabsorbent grades)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Superabsorbent polymers",
+      "examples": [
+        "disposable diapers",
+        "wound-healing bandages"
+      ],
+      "notes": "Crosslinked PAA can absorb over 100x its own weight in liquid."
+    },
+    {
+      "sector": "Water treatment & detergents",
+      "examples": [
+        "dispersants",
+        "scale inhibitors"
+      ],
+      "notes": "~25% of PAA production."
+    },
+    {
+      "sector": "Emerging",
+      "examples": [
+        "lithium-ion battery binders"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-polyacrylic-acid"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

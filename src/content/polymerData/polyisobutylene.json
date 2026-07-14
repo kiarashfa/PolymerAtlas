@@ -1,0 +1,241 @@
+{
+  "id": "polyisobutylene",
+  "slug": "polyisobutylene",
+  "name": "Polyisobutylene (PIB): The Invisible Guardian of Modern Glass",
+  "abbreviation": [
+    "PIB"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-27-4",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(isobutylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(isobutylene)",
+  "synonyms": [
+    "polyisobutene"
+  ],
+  "aliases": [
+    {
+      "name": "polyisobutene",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyolefin"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "cationic"
+  ],
+  "monomer": [
+    {
+      "name": "Isobutylene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isobutylene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1960,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "cationic chain-growth",
+    "common_monomers": [
+      "isobutylene"
+    ],
+    "catalysts": [
+      "strong Bronsted or Lewis acids"
+    ],
+    "industrial_process_notes": "Made via cationic polymerization initiated by a strong Bronsted or Lewis acid. Low molecular weight grades (Mn ~500) serve as plasticizers; medium/high molecular weight grades (Mn >= 20,000) go into adhesives. Copolymerization with a small amount of isoprene gives butyl rubber (a distinct, separately-tracked material).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Fully saturated, methyl-substituted backbone gives PIB very low gas permeability and excellent chemical inertness -- the properties underlying its 'invisible sealant' role in insulating glass.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous/gummy; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Low/medium-MW grades are gummy solids/liquids without conventional solid mechanical properties."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "cationic solution/slurry polymerization"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Consumer",
+      "examples": [
+        "chewing gum base"
+      ]
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "insulating glass sealants"
+      ]
+    },
+    {
+      "sector": "Adhesives",
+      "examples": [
+        "high-MW grades in commercial adhesives"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "low-MW grades as plasticizers",
+        "butyl rubber precursor (via isoprene copolymerization)"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-polyisobutylene"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

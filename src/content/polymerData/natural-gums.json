@@ -1,0 +1,291 @@
+{
+  "id": "natural-gums",
+  "slug": "natural-gums",
+  "name": "Natural Gums: The First Chapter in Humanity's Polymer Story",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Natural gums are a heterogeneous class of branched polysaccharide/glycoprotein complexes whose exact composition depends on botanical source (e.g. gum arabic, tragacanth, karaya, guar, locust bean gum) -- there is no single repeat unit for the hub as a whole. Gum arabic, the most historically significant member, is illustrated via its constituent monosaccharides in the monomer[] field below.",
+  "iupac_name": null,
+  "synonyms": [
+    "plant exudate gums",
+    "botanical gums",
+    "vegetable gums"
+  ],
+  "aliases": [
+    {
+      "name": "plant gums",
+      "autolinkable": true
+    },
+    {
+      "name": "vegetable gums",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polysaccharide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "D-galactose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Galactose"
+    },
+    {
+      "name": "L-arabinose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arabinose"
+    },
+    {
+      "name": "L-rhamnose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhamnose"
+    },
+    {
+      "name": "D-glucuronic acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glucuronic_acid"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1833,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Jean-Baptiste Dumas"
+  ],
+  "historical_events_referenced": [
+    "Napoleonic Wars naval blockade of France (gum arabic trade exemption)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/natural-gums/jean-baptiste-dumas-portrait.jpg",
+      "alt": "Portrait of chemist Jean-Baptiste Dumas, from a c. 1908 Félix Potin collectible card.",
+      "caption": "Jean-Baptiste Dumas (1800-1884), whose 1833 chemical analyses helped establish natural gums as distinct, well-defined organic substances.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CFP-2_Dumas,_Jean-Baptiste_(1).jpg",
+      "author": "Félix Potin (card publisher)",
+      "license": "Public Domain (CC-PD-Mark)",
+      "attribution_text": "Félix Potin trading card, c. 1908, via Wikimedia Commons (public domain)."
+    }
+  ],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder",
+      "conditions": "Multiple tertiary sources suggest 1.35-1.49 g/cm³ for gum arabic, but no single directly-read source with methodology was found this session -- see handoff.md."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Natural gums are not industrially polymerized -- they are biosynthesized in planta and then harvested. For gum arabic, the dominant commercial gum, production involves tapping Senegalia senegal / Vachellia seyal trees (stripping sections of bark to induce gum exudation), hand or mechanical collection of the hardened nodules, sun-drying, and industrial processing (cleaning, grinding, spray-drying) into standardized food/pharma-grade powders. Sudan supplies roughly 70% of global gum arabic exports.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Highly branched, largely amorphous architecture (no regular crystallizable backbone); behavior in solution is dominated by branching pattern and molecular weight rather than chain packing.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous polysaccharide -- decomposes rather than exhibiting a distinct melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "HDT is a rigid-plastic test property; not meaningful for a water-soluble hydrocolloid powder."
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Soluble / not resistant",
+        "status": "estimated",
+        "evidence_level": "tertiary",
+        "source": "wiki-gum-arabic"
+      },
+      "ethanol": {
+        "value": "Poor -- incompatible, tends to precipitate/coagulate",
+        "status": "estimated",
+        "evidence_level": "tertiary",
+        "source": "wiki-gum-arabic"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "spray drying",
+      "grinding/milling",
+      "aqueous solution blending"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Food",
+      "examples": [
+        "confectionery stabilizer/emulsifier",
+        "soft drink syrup binder",
+        "gomme syrup in beverages"
+      ],
+      "notes": "Approved food additive E414."
+    },
+    {
+      "sector": "Pharmaceutical & cosmetic",
+      "examples": [
+        "tablet binder",
+        "emulsifier",
+        "suspending agent"
+      ]
+    },
+    {
+      "sector": "Printing & graphic arts",
+      "examples": [
+        "traditional lithographic plate processing",
+        "gum bichromate photographic printing"
+      ]
+    },
+    {
+      "sector": "Art & textiles",
+      "examples": [
+        "watercolor paint binder",
+        "textile printing thickener"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Biodegrades via microbial/enzymatic hydrolysis of glycosidic linkages.",
+    "environmental_notes": "As a renewable, naturally biosynthesized material, natural gums do not carry the persistent-waste concerns associated with synthetic polymers; sustainability considerations instead center on agricultural/harvesting practices in producing regions."
+  },
+  "references": [
+    "wiki-natural-gum",
+    "wiki-gum-arabic",
+    "commons-dumas-1908"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

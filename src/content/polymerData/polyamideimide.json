@@ -1,0 +1,249 @@
+{
+  "id": "polyamideimide",
+  "slug": "polyamideimide",
+  "name": "Polyamideimide (PAI): The Polymer That Rewired Electronics",
+  "abbreviation": [
+    "PAI"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Contains both amide and imide linkages, prepared from isocyanates and trimellitic anhydride (TMA); can be thermosetting or thermoplastic depending on formulation, so no single repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [
+    "Torlon"
+  ],
+  "aliases": [
+    {
+      "name": "Torlon",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyimide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Trimellitic anhydride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trimellitic_anhydride"
+    },
+    {
+      "name": "Diisocyanate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isocyanate"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1978,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.48,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pai",
+      "conditions": "Molded PAI, per ASTM D 792."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "trimellitic anhydride",
+      "diisocyanates"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Prepared from isocyanates and trimellitic anhydride (TMA). Solvay Specialty Polymers is a prominent producer, marketed under the trademark Torlon.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-pai",
+      "conditions": "Amorphous."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Combined amide and imide linkages give PAI an unusually high strength-to-weight ratio among unreinforced thermoplastics.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous thermoplastic (or thermoset, depending on grade); no true melting point for the amorphous form."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 91.6,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pai",
+      "conditions": "Molded, unreinforced PAI, reported as 'ultimate tensile strength'. Glass- or carbon-fiber-reinforced grades reach 221 MPa."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "compression molding",
+      "machining",
+      "wire-enamel coating application"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Electrical",
+      "examples": [
+        "magnet wire enamel"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "molded or machined precision articles",
+        "decorative coatings"
+      ]
+    },
+    {
+      "sector": "Emerging",
+      "examples": [
+        "gas separation membranes"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pai"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

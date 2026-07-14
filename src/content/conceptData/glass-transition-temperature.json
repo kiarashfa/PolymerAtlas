@@ -1,0 +1,16 @@
+{
+  "id": "glass-transition-temperature",
+  "slug": "glass-transition-temperature",
+  "name": "Glass Transition Temperature (Tg): Challenger tragedy",
+
+  "year_of_origin": 1986,
+  "era": "The Specialty Polymers Age (1980-1999)",
+  "key_figures": [],
+  "historical_events_referenced": ["Space Shuttle Challenger disaster (January 28, 1986)"],
+  "historical_images": [],
+
+  "summary": "The glass transition temperature (Tg) is the temperature range over which an amorphous polymer (or the amorphous regions of a semi-crystalline one) transitions between a hard, glassy state and a softer, rubbery/viscous state, as segmental chain motion becomes thermally activated. Unlike melting (Tm), Tg is not a sharp first-order phase transition -- it is a kinetic, rate-dependent softening of the material, tied to the freezing-in of chain-segment mobility rather than a change in crystal structure. Tg is a defining engineering property: below it, a polymer is brittle and dimensionally stable; above it, it is flexible but loses stiffness. The Space Shuttle Challenger disaster (January 28, 1986) is the canonical real-world illustration: the solid rocket booster O-rings, made of a fluoroelastomer rubber, lost their resilience and sealing ability at the unusually cold launch-morning temperatures (in the 20s Fahrenheit) because the rubber approached or dropped below its glass transition temperature (known to only perform reliably above ~53°F). Physicist Richard Feynman famously demonstrated this at a televised press conference by dipping a compressed O-ring sample in ice water and showing it failed to spring back to shape -- a direct, visible demonstration of glassy embrittlement. The failed O-ring seal allowed hot gas to escape a solid rocket booster, igniting the external fuel tank and destroying the vehicle 73 seconds after launch.",
+  "key_equations": [],
+
+  "references": ["wiki-glass-transition", "search-challenger-oring"]
+}

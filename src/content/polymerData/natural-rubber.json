@@ -1,0 +1,256 @@
+{
+  "id": "natural-rubber",
+  "slug": "natural-rubber",
+  "name": "Natural Rubber (NR): The Resilient Material That Shaped Modern Society",
+  "abbreviation": [
+    "NR"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9006-04-6",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "cis-1,4-polyisoprene; a defined repeat unit exists but was not converted to BigSMILES notation this session (deferred, see §5 pipeline).",
+  "iupac_name": "cis-1,4-polyisoprene",
+  "synonyms": [
+    "India rubber",
+    "caoutchouc"
+  ],
+  "aliases": [
+    {
+      "name": "India rubber",
+      "autolinkable": false
+    },
+    {
+      "name": "caoutchouc",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "natural-rubber",
+    "diene-rubber"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "Isoprene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isoprene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1836,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- biosynthesized as latex in Hevea brasiliensis (Para rubber tree) and harvested by tapping (bark incisions collected in cups). A skilled tapper processes several hundred trees daily; collected latex is coagulated (acid or ammoniation, developed c. 1920, to preserve colloidal state) into cup lump, tree lace, or technically-specified block rubber grades (SVR/TSR).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "cis-1,4 (near-exclusively) -- gives natural rubber its elastomeric behavior; the synthetic all-cis analogue is polyisoprene (IR).",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Amorphous at rest; undergoes strain-induced crystallization on stretching (well documented qualitatively, no single % sourced this session)."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Highly flexible cis-configured chains give natural rubber its characteristic elasticity and large stretch ratio.",
+    "tg_relation_notes": "Elasticity drops sharply when cooled below the glass transition temperature (specific value not sourced this session)."
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Qualitatively described as very high with strong resilience; no single sourced number this session."
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "latex dipping",
+      "coagulation/milling",
+      "vulcanization (see vulcanized-natural-rubber)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Tires & automotive",
+      "examples": [
+        "tire treads",
+        "conveyor belts",
+        "hoses",
+        "gaskets",
+        "anti-vibration mounts"
+      ]
+    },
+    {
+      "sector": "Medical & PPE",
+      "examples": [
+        "surgical gloves",
+        "diving gear"
+      ]
+    },
+    {
+      "sector": "Consumer products",
+      "examples": [
+        "balloons",
+        "rubber bands",
+        "erasers",
+        "footwear"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "pump housings",
+        "power-transmission belting",
+        "tank linings",
+        "electrical insulation"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": "Susceptible to microbial degradation by Streptomyces, Pseudomonas, and Nocardia species but does not readily degrade under standard composting conditions.",
+    "environmental_notes": "Natural rubber cultivation is linked to deforestation and is covered by the EU's 2023 Deforestation-free Products Regulation."
+  },
+  "references": [
+    "wiki-natural-rubber",
+    "chemsrc-natural-rubber"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

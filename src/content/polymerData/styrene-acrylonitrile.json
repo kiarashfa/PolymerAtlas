@@ -1,0 +1,244 @@
+{
+  "id": "styrene-acrylonitrile",
+  "slug": "styrene-acrylonitrile",
+  "name": "Styrene-Acrylonitrile (SAN): The Clear, Tough Cousin That Paved the Way",
+  "abbreviation": [
+    "SAN"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-54-7",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Random copolymer of styrene and acrylonitrile (typically 70-80 wt% styrene, 20-30 wt% acrylonitrile); ratio-dependent composition rather than a single fixed repeat unit.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "styrenic",
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Styrene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    },
+    {
+      "name": "Acrylonitrile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acrylonitrile"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1941,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth copolymerization",
+    "common_monomers": [
+      "styrene",
+      "acrylonitrile"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Random copolymerization of styrene (70-80 wt%) and acrylonitrile (20-30 wt%). Higher acrylonitrile content improves mechanical strength and chemical resistance but introduces a yellowish tint. SAN itself later became the base resin for ABS, when polybutadiene rubber particles (10-20 micrometers) are dispersed/grafted into it to add toughness.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-san-resin",
+      "conditions": "Amorphous, transparent random copolymer."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Brittle relative to rubber-toughened ABS, which is precisely why ABS was later developed by adding polybutadiene to a SAN-like matrix.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 100,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-san-resin",
+      "conditions": "Reported as 'greater than 100°C', giving SAN boiling-water resistance that plain polystyrene lacks."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder",
+      "conditions": "Qualitatively brittle relative to rubber-toughened ABS; no number sourced this session."
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": "Resistant to boiling water (unlike plain polystyrene)",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-san-resin"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Food & consumer",
+      "examples": [
+        "food containers",
+        "water bottles",
+        "kitchenware",
+        "cosmetic jars"
+      ]
+    },
+    {
+      "sector": "Electronics",
+      "examples": [
+        "computer product housings",
+        "battery cases"
+      ]
+    },
+    {
+      "sector": "Optical",
+      "examples": [
+        "plastic optical fibers"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-san-resin"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "id": "thermoplastic-polyurethane",
+  "slug": "thermoplastic-polyurethane",
+  "name": "Thermoplastic Polyurethane (TPU): The Chameleon Polymer",
+  "abbreviation": [
+    "TPU"
+  ],
+  "type": "variant",
+  "parent": "polyurethane",
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Segmented block copolymer: hard segments (diisocyanate + short-chain diol chain extender) alternating with soft segments (diisocyanate + long-chain polyester or polyether diol) -- composition varies hugely by formulation, so no single repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "polyurethane",
+    "thermoplastic-elastomer"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Diisocyanate (e.g. MDI)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Methylene_diphenyl_diisocyanate"
+    },
+    {
+      "name": "Polyester or polyether polyol (soft segment)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polyol"
+    },
+    {
+      "name": "Short-chain diol (chain extender)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diol"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1967,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [
+    "Christiaan Barnard"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth polyaddition (segmented block copolymer)",
+    "common_monomers": [
+      "diisocyanates",
+      "polyester polyols (adipic-acid-ester-based soft segments)",
+      "polyether polyols (tetrahydrofuran-based soft segments)"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Formed from two reaction types combined in one system: diisocyanate + short-chain diol (forming rigid 'hard segments') and diisocyanate + long-chain diol (forming flexible 'soft segments'), which microphase-separate to give TPU its combination of elastomeric behavior and thermoplastic (melt-)processability -- unlike the thermoset polyurethane it succeeds.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Hard segments can crystallize/order while soft segments remain amorphous -- a microphase-separated morphology, not a single crystallinity value."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Hard/soft segment ratio and chemistry (polyester vs polyether soft segment) tune hardness, oil resistance, and hydrolysis resistance.",
+    "tg_relation_notes": "Hard and soft segments have distinct glass transitions, unlike a homogeneous single-Tg polymer."
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Distinct hard-segment and soft-segment Tg values; no single number sourced this session."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Elastomer; typically no distinct yield region."
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder",
+      "conditions": "Formulated across a wide hardness range (soft elastomer to rigid engineering grades); no single value sourced this session."
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "oils_and_greases": {
+        "value": "Good resistance",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-tpu"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Polyester-soft-segment TPU is known to be more hydrolysis-prone than polyether-soft-segment TPU -- a real, widely-cited distinction, but not independently confirmed with a source this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "FDM 3D printing",
+      "film/sheet extrusion"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Consumer electronics",
+      "examples": [
+        "mobile phone cases",
+        "flexible device casings"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "instrument panels",
+        "caster wheels",
+        "drive belts"
+      ]
+    },
+    {
+      "sector": "Medical",
+      "examples": [
+        "medical tubing",
+        "devices"
+      ]
+    },
+    {
+      "sector": "Footwear & sporting goods",
+      "examples": [
+        "footwear components",
+        "power tools",
+        "sporting goods"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Bio-based TPU variants exist (e.g. some Elastollan N grades)."
+  },
+  "references": [
+    "wiki-tpu"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "lignin",
+  "slug": "lignin",
+  "name": "Lignin: Wood's Secret Glue",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Lignin is an irregular, highly cross-linked aromatic network built from three phenylpropanoid monomers (coniferyl, sinapyl, and p-coumaryl alcohol) in ratios that vary by plant species and tissue -- there is no single repeat unit, only a family of monomers and an irregular crosslinking pattern.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "polysaccharide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "Coniferyl alcohol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coniferyl_alcohol"
+    },
+    {
+      "name": "Sinapyl alcohol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinapyl_alcohol"
+    },
+    {
+      "name": "p-Coumaryl alcohol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/P-Coumaryl_alcohol"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1875,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not industrially polymerized -- biosynthesized in plant cell walls and obtained as a byproduct of kraft and sulfite chemical pulping (delignification) in the paper industry. The Swiss botanist A. P. de Candolle first described lignin in 1813, naming it from the Latin 'lignum' (wood); it is the third most abundant natural polymer after cellulose and chitin.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-lignin",
+      "conditions": "Irregular, cross-linked, amorphous network -- essentially non-crystalline."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Hydrophobic, rigid aromatic network resistant to both acid- and base-catalyzed hydrolysis.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Cross-linked aromatic network; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": "Highly resistant -- immune to both acid- and base-catalyzed hydrolysis",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-lignin"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "kraft/sulfite pulping byproduct recovery",
+      "lignosulfonate derivatization"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Biofuels",
+      "examples": [
+        "cellulosic ethanol co-feedstock"
+      ]
+    },
+    {
+      "sector": "Specialty chemicals",
+      "examples": [
+        "aromatic compound feedstock",
+        "vanillin production"
+      ]
+    },
+    {
+      "sector": "Construction & industrial",
+      "examples": [
+        "lignosulfonate concrete dispersants",
+        "dust suppression binders"
+      ]
+    },
+    {
+      "sector": "Biomaterials",
+      "examples": [
+        "biodegradable plastic blends with cellulose"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "Resistant to hydrolysis but degraded slowly by specialized microorganisms/fungi (e.g. white-rot fungi) via oxidative enzymatic pathways.",
+    "environmental_notes": "A major renewable byproduct stream of the pulp and paper industry, increasingly explored as a feedstock for biofuels and aromatic chemicals."
+  },
+  "references": [
+    "wiki-lignin"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

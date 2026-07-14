@@ -1,0 +1,234 @@
+{
+  "id": "viscose-rayon",
+  "slug": "viscose-rayon",
+  "name": "Viscose Rayon: Nature's Makeover Artist",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Regenerated cellulose -- chemically the same β(1→4)-D-glucan backbone as cellulose (see the cellulose entry), produced via a soluble sodium cellulose xanthate intermediate rather than being a distinct chemical species.",
+  "iupac_name": null,
+  "synonyms": [
+    "viscose",
+    "rayon"
+  ],
+  "aliases": [
+    {
+      "name": "viscose",
+      "autolinkable": true
+    },
+    {
+      "name": "rayon",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "cellulosic"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "D-glucose (as the cellulose precursor)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Glucose"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1883,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Hilaire de Chardonnet",
+    "Max Fremery",
+    "Emil Bronnert"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [
+      "carbon disulfide (xanthation agent)"
+    ],
+    "industrial_process_notes": "The viscose process: wood-pulp cellulose is treated with aqueous sodium hydroxide to form alkali cellulose, reacted with carbon disulfide to form soluble sodium cellulose xanthate, then extruded through spinnerets into an acid bath, which regenerates solid cellulose fiber. Louis Marie Hilaire Bernigaut (de Chardonnet) developed an early nitrocellulose-based rayon in 1884; Charles Frederick Cross and Edward John Bevan patented the viscose process in 1892-1894; commercial viscose rayon production began in the UK (Courtaulds) in 1905.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": "Regenerated cellulose forms the cellulose II crystal allomorph, distinct from native cellulose I.",
+    "chain_flexibility_notes": "Lower elastic recovery and reduced wet strength compared to high-wet-modulus rayon variants.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "As regenerated cellulose, decomposes rather than melting (see cellulose entry)."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "wet spinning (xanthate solution extruded into acid coagulation bath)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Textiles",
+      "examples": [
+        "clothing fabric",
+        "household textiles"
+      ],
+      "notes": "Soft, smooth, highly absorbent handfeel."
+    },
+    {
+      "sector": "Film precursor",
+      "examples": [
+        "cellophane sheet production"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": true,
+    "degradation_pathway": "As regenerated cellulose, biodegrades via the same enzymatic hydrolysis pathway as native cellulose.",
+    "environmental_notes": "The viscose process itself uses carbon disulfide, a hazardous reagent with real environmental/occupational concerns distinct from the fiber's own biodegradability."
+  },
+  "references": [
+    "wiki-viscose"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

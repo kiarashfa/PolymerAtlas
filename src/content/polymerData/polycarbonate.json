@@ -1,0 +1,280 @@
+{
+  "id": "polycarbonate",
+  "slug": "polycarbonate",
+  "name": "Polycarbonate (PC): The Transparent!",
+  "abbreviation": [
+    "PC"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": "7",
+  "repeat_unit": null,
+  "notation_note": "Bisphenol A polycarbonate (the dominant commercial form) has a well-defined repeat unit, but this notation was not converted to BigSMILES this session; other polycarbonate chemistries exist and are not modeled here.",
+  "iupac_name": null,
+  "synonyms": [
+    "Makrolon",
+    "Lexan"
+  ],
+  "aliases": [
+    {
+      "name": "Makrolon",
+      "autolinkable": false
+    },
+    {
+      "name": "Lexan",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polycarbonate"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Bisphenol A",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bisphenol_A"
+    },
+    {
+      "name": "Phosgene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phosgene"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1958,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": [
+    "Hermann Schnell",
+    "Daniel Fox"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.21,
+      "range_min": 1.2,
+      "range_max": 1.22,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polycarbonate"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "bisphenol A",
+      "phosgene"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "First discovered in 1898 by Alfred Einhorn but abandoned for 30 years. Hermann Schnell (Bayer, Uerdingen) patented the first linear polycarbonate in 1953; Daniel Fox (General Electric) independently synthesized a branched variant around the same time. Bayer commercialized Makrolon in 1958; GE launched Lexan in 1960. ~1 billion kg produced annually via the phosgene route.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-polycarbonate",
+      "conditions": "Amorphous -- underlies its high transparency."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Bulky bisphenol A units and carbonate linkages give PC an unusual combination of high stiffness, high impact toughness, and optical clarity.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 147,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polycarbonate"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 65,
+      "range_min": 55,
+      "range_max": 75,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polycarbonate",
+      "conditions": "Source reports unqualified 'tensile strength'."
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": 725,
+      "range_min": 600,
+      "range_max": 850,
+      "unit": "J/m",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polycarbonate"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Carbonate linkages are hydrolyzable (a known processing concern requiring pre-drying), but no specific rate data sourced this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "blow molding"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Optical",
+      "examples": [
+        "eyeglass lenses"
+      ]
+    },
+    {
+      "sector": "Safety & security",
+      "examples": [
+        "bullet-resistant barriers",
+        "security glazing"
+      ]
+    },
+    {
+      "sector": "Data storage",
+      "examples": [
+        "CDs, DVDs, Blu-ray discs"
+      ]
+    },
+    {
+      "sector": "Packaging",
+      "examples": [
+        "food and beverage containers"
+      ]
+    },
+    {
+      "sector": "Automotive & aerospace",
+      "examples": [
+        "headlamp lenses",
+        "aircraft cockpit canopies"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Resin identification code 7 ('Other'). Bisphenol A content has drawn regulatory/consumer scrutiny in food-contact applications."
+  },
+  "references": [
+    "wiki-polycarbonate",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

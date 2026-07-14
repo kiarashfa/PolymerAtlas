@@ -1,0 +1,16 @@
+{
+  "id": "from-random-walks-to-universal-laws-in-polymer-science",
+  "slug": "from-random-walks-to-universal-laws-in-polymer-science",
+  "name": "From Random Walks to Universal Laws in Polymer Science",
+
+  "year_of_origin": 1940,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": ["Werner Kuhn", "Paul Flory", "Sam Edwards", "Pierre-Gilles de Gennes"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "summary": "This concept page traces the statistical-physics side of polymer science, distinct from the synthetic-chemistry side covered by Staudinger and Carothers. Werner Kuhn coined the term 'excluded volume' in 1934 (the idea that two chain segments cannot occupy the same space), which Paul Flory later built into a full theory: Flory-Huggins solution theory (a lattice model for polymer-solvent mixing thermodynamics), the Flory-Stockmayer theory of gelation, and the Flory exponent describing how a real chain's size scales with length once excluded volume is accounted for -- work recognized with the 1974 Nobel Prize in Chemistry. In 1971, Sam Edwards' earlier 'tube' model (in which one chain's motion is constrained by the surrounding entangled chains) was extended by Pierre-Gilles de Gennes into reptation theory -- the snake-like sliding motion by which an entangled polymer chain diffuses through a melt. Reptation gave a quantitative account of entangled polymer dynamics, both linear viscoelasticity and various non-linear flow phenomena, and was part of the work recognized by de Gennes' 1991 Nobel Prize in Physics. Together, this lineage (Kuhn to Flory to Edwards to de Gennes) turned polymer behavior from a collection of empirical observations into a predictive statistical-physics framework.",
+  "key_equations": [],
+
+  "references": ["wiki-paul-flory", "search-de-gennes-reptation"]
+}

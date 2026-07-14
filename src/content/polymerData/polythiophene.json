@@ -1,0 +1,112 @@
+{
+  "id": "polythiophene",
+  "slug": "polythiophene",
+  "name": "Polythiophene (PT): Plastic that eats sunlight for breakfast",
+  "abbreviation": ["PT"],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(thiophene-2,5-diyl); a defined repeat unit exists but was not converted to BigSMILES notation this session. Regioregularity (head-to-tail vs. random coupling in substituted derivatives like P3HT) strongly affects conductivity and is not captured by a single repeat-unit notation.",
+  "iupac_name": null,
+  "synonyms": ["PEDOT (as the 3,4-ethylenedioxythiophene derivative)"],
+  "aliases": [
+    { "name": "PEDOT", "autolinkable": false }
+  ],
+
+  "chemical_family": ["conducting-polymer"],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": ["oxidative-coupling"],
+  "monomer": [
+    { "name": "Thiophene", "wikipedia_url": "https://en.wikipedia.org/wiki/Thiophene" }
+  ],
+  "polymer_class": "thermoplastic",
+
+  "year_of_origin": 2000,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "placeholder" },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "placeholder" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "placeholder" },
+    "electrical_conductivity": { "value": 100000, "unit": "S/m", "status": "verified", "evidence_level": "tertiary", "source": "wiki-polythiophene", "conditions": "Optimally doped, approaching 1000 S/cm (=100,000 S/m); varies substantially by preparation method and doping level. For reference, copper is ~5.8e7 S/m." }
+  },
+
+  "synthesis": {
+    "polymerization_type": "oxidative coupling polymerization",
+    "common_monomers": ["thiophene"],
+    "catalysts": ["ferric chloride"],
+    "industrial_process_notes": "The 2000 Nobel Prize in Chemistry, awarded to Alan Heeger, Alan MacDiarmid, and Hideki Shirakawa, recognized the broader discovery and development of conductive polymers (a field polythiophene belongs to). Sugimoto et al. reported oxidative polymerization using ferric chloride at room temperature in 1986; electrochemical synthesis and Kumada coupling are alternative routes.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "placeholder" },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Conjugated backbone (alternating single/double bonds along the thiophene rings) is what enables electrical conductivity upon doping -- unlike a conventional saturated-backbone polymer.",
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "placeholder" },
+    "tm": { "value": null, "unit": "°C", "status": "placeholder" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "placeholder" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },
+    "hardness": { "value": null, "unit": "Shore", "status": "placeholder" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "placeholder" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "placeholder" },
+    "hydrolysis_resistance": { "value": null, "status": "placeholder" },
+    "flammability_ul94": { "value": null, "status": "placeholder" }
+  },
+
+  "processing": {
+    "processing_methods": ["chemical oxidative polymerization", "electrochemical deposition", "solution processing (spin coating, printing)"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Established", "examples": ["antistatic coatings (PEDOT-PSS on photographic film)"] },
+    { "sector": "Energy", "examples": ["organic solar cells/photovoltaics"] },
+    { "sector": "Electronics", "examples": ["OLEDs", "organic field-effect transistors", "electrochromic windows"] },
+    { "sector": "Sensing", "examples": ["chemical and biosensors"] }
+  ],
+
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+
+  "references": ["wiki-polythiophene"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

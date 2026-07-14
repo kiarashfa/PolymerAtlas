@@ -1,0 +1,275 @@
+{
+  "id": "polyvinyl-chloride",
+  "slug": "polyvinyl-chloride",
+  "name": "Polyvinyl Chloride (PVC): The Accidental Revolution",
+  "abbreviation": [
+    "PVC"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9002-86-2",
+  "resin_id_code": "3",
+  "repeat_unit": null,
+  "notation_note": "Poly(1-chloroethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(1-chloroethylene)",
+  "synonyms": [
+    "vinyl"
+  ],
+  "aliases": [
+    {
+      "name": "vinyl",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "vinyl-polymer"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Vinyl chloride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vinyl_chloride"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1932,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Waldo Semon"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.4,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "vinyl chloride monomer (VCM)"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "First synthesized by Eugen Baumann in 1872, but commercially impractical until Waldo Semon (B.F. Goodrich) developed plasticization techniques in 1926, enabling flexible PVC products by 1933 (e.g. with dibutyl phthalate). ~80% of global production uses suspension polymerization (particles ~100-180 micrometers), with emulsion (~12%) and bulk (~8%) polymerization making up the rest.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Exists in two families with very different behavior: rigid/unplasticized PVC (uPVC) and flexible PVC (can be >85% plasticizer by mass).",
+    "tg_relation_notes": "Rigid PVC's Tg (82°C) is well above room temperature, giving unplasticized PVC its stiffness; plasticizer addition lowers the effective Tg dramatically, producing flexible PVC."
+  },
+  "thermal": {
+    "tg": {
+      "value": 82,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride",
+      "conditions": "Rigid/unplasticized PVC."
+    },
+    "tm": {
+      "value": 180,
+      "range_min": 100,
+      "range_max": 260,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": 3400,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride",
+      "conditions": "Young's modulus, rigid PVC only (3.4 GPa)."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 45,
+      "range_min": 31,
+      "range_max": 60,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride",
+      "conditions": "Rigid PVC; source reports unqualified 'tensile strength', not specified whether at yield or break."
+    },
+    "elongation_at_break": {
+      "value": 30,
+      "range_min": 20,
+      "range_max": 40,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-polyvinyl-chloride",
+      "conditions": "Rigid PVC."
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "suspension polymerization + extrusion/injection molding",
+      "plasticizer compounding (flexible grades)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Piping",
+      "examples": [
+        "water/sewer pipe"
+      ],
+      "notes": "Roughly half of all PVC resin produced goes to pipe."
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "window frames",
+        "siding",
+        "gutters/downspouts"
+      ]
+    },
+    {
+      "sector": "Electrical",
+      "examples": [
+        "cable sheathing and wire insulation"
+      ]
+    },
+    {
+      "sector": "Medical",
+      "examples": [
+        "blood bags",
+        "catheters",
+        "IV tubing"
+      ],
+      "notes": "~85,000 tonnes/yr in Europe."
+    },
+    {
+      "sector": "Flooring & textiles",
+      "examples": [
+        "vinyl flooring",
+        "weather-resistant clothing"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Technically recyclable (resin identification code 3), but rarely accepted by standard curbside collection in practice. Chlorine content and plasticizer (phthalate) leaching have driven regulatory scrutiny in some applications, particularly medical and food-contact uses."
+  },
+  "references": [
+    "wiki-polyvinyl-chloride",
+    "ansi-resin-codes"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

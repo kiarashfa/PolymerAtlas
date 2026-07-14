@@ -1,0 +1,246 @@
+{
+  "id": "unsaturated-polyester",
+  "slug": "unsaturated-polyester",
+  "name": "Unsaturated Polyester (UP): a Fiberglass Revolution",
+  "abbreviation": [
+    "UP"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Copolymer of multifunctional alcohols and unsaturated dibasic acids (e.g. maleic or fumaric acid), subsequently crosslinked with styrene -- composition varies by formulation, so no single repeat unit represents the class, and the final crosslinked network has no linear repeat unit at all.",
+  "iupac_name": null,
+  "synonyms": [
+    "UPR"
+  ],
+  "aliases": [],
+  "chemical_family": [
+    "polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation",
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Maleic acid / fumaric acid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maleic_acid"
+    },
+    {
+      "name": "Styrene (crosslinking agent)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Styrene"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1943,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation (polyesterification), then free-radical crosslinking",
+    "common_monomers": [
+      "maleic acid/anhydride",
+      "fumaric acid",
+      "propylene glycol or other diols",
+      "styrene"
+    ],
+    "catalysts": [
+      "methyl ethyl ketone peroxide",
+      "benzoyl peroxide"
+    ],
+    "industrial_process_notes": "Polyester research at DuPont began in 1926 under Wallace Carothers; the unsaturated-polyester approach was patented in Britain in 1928 by General Electric. Two-stage process: (1) polycondensation of a diol with an unsaturated dicarboxylic acid to form the base unsaturated polyester, then (2) free-radical crosslinking with a vinyl monomer (typically styrene) initiated by an organic peroxide, producing a 3-D crosslinked thermoset network.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-unsaturated-polyester",
+      "conditions": "Amorphous crosslinked thermoset network once cured."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Crosslinked thermoset; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "not_applicable"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "hand lay-up / spray-up (with glass fiber reinforcement)",
+      "resin transfer molding",
+      "sheet molding compound (SMC)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Marine & automotive",
+      "examples": [
+        "fiberglass-reinforced boat hulls",
+        "car body panels"
+      ]
+    },
+    {
+      "sector": "Construction",
+      "examples": [
+        "bathtubs and shower units",
+        "cultured marble"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "casting resins",
+        "sheet molding compounds",
+        "non-metallic auto-body fillers"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "As a thermoset composite (typically glass-fiber reinforced), end-of-life disposal is difficult; mechanical grinding for use as filler is the main reuse route rather than true recycling."
+  },
+  "references": [
+    "wiki-unsaturated-polyester"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

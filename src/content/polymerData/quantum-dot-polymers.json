@@ -1,0 +1,107 @@
+{
+  "id": "quantum-dot-polymers",
+  "slug": "quantum-dot-polymers",
+  "name": "Quantum Dot Polymers: Where Nano Meets Glow",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "A hybrid nanocomposite -- inorganic semiconductor quantum dots (a few nanometers, e.g. CdSe, InP) dispersed/embedded in a polymer host matrix -- rather than a polymer chemistry itself; the host polymer varies by application (encapsulant resins, printable matrices) and the quantum dots are not a polymeric species at all.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": [],
+  "backbone_class": null,
+  "polymerization_mechanism": [],
+  "monomer": [],
+  "polymer_class": null,
+
+  "year_of_origin": 2020,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "Depends on host polymer and quantum-dot loading; not a single value for the class." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Quantum dots are colloidally synthesized semiconductor nanocrystals, typically surface-passivated with organic ligands (e.g. oleic acid), then dispersed into a polymer matrix or ink via solution processing techniques such as spin coating or inkjet printing. Their defining property is size-tunable fluorescence from quantum confinement: larger dots (5-6 nm) emit longer wavelengths (orange/red), smaller dots (2-3 nm) emit shorter wavelengths (blue/green), independent of chemical composition.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "not_applicable" },
+    "crystal_structure": "The quantum dots themselves are crystalline semiconductor nanocrystals behaving as 'artificial atoms' with discrete, size-tunable energy levels due to quantum confinement; the surrounding polymer host is typically amorphous and serves as an optically transparent, processable matrix/encapsulant rather than contributing to the optical behavior.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "not_applicable" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "not_applicable" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "not_applicable" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "not_applicable" },
+    "hardness": { "value": null, "unit": "Shore", "status": "not_applicable" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "not_applicable" },
+    "hydrolysis_resistance": { "value": null, "status": "not_applicable" },
+    "flammability_ul94": { "value": null, "status": "not_applicable" }
+  },
+
+  "processing": {
+    "processing_methods": ["colloidal synthesis (quantum dots)", "spin coating", "inkjet printing", "polymer encapsulation/lamination"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Display technology", "examples": ["QLED displays"], "notes": "Convert blue backlight into precisely tuned colors, improving color accuracy over conventional LED backlighting." },
+    { "sector": "Biomedical imaging", "examples": ["fluorescent cell tracking and medical imaging"], "notes": "Reported ~20x brighter and ~100x more photostable than traditional fluorescent reporters." },
+    { "sector": "Energy", "examples": ["quantum dot photovoltaics"], "notes": "Tunable absorption spectra; reported power conversion efficiencies up to ~10.7% in optimized configurations." }
+  ],
+
+  "environmental": {
+    "recyclable": null,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": "Some quantum dot chemistries (e.g. cadmium-based) raise toxicity/disposal concerns distinct from the host polymer's own environmental profile; cadmium-free formulations (e.g. InP-based) are an active area of development."
+  },
+
+  "references": ["wiki-quantum-dot"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

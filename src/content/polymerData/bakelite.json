@@ -1,0 +1,264 @@
+{
+  "id": "bakelite",
+  "slug": "bakelite",
+  "name": "Bakelite: The Material of a Thousand Uses",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-35-4",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Crosslinked phenol-formaldehyde thermoset network; a densely crosslinked resin has no single linear repeat unit.",
+  "iupac_name": "Polyoxybenzylmethyleneglycol anhydride",
+  "synonyms": [
+    "phenol formaldehyde resin",
+    "PF resin"
+  ],
+  "aliases": [
+    {
+      "name": "phenolic resin",
+      "autolinkable": true
+    },
+    {
+      "name": "PF resin",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "phenolic-aminoplast"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Phenol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phenol"
+    },
+    {
+      "name": "Formaldehyde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Formaldehyde"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1907,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Leo Baekeland"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.3,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-bakelite"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable",
+      "conditions": "Thermoset; does not melt/flow after cure."
+    },
+    "refractive_index": {
+      "value": 1.63,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-bakelite"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation",
+    "common_monomers": [
+      "phenol",
+      "formaldehyde"
+    ],
+    "catalysts": [
+      "hydrochloric acid",
+      "zinc chloride",
+      "ammonia"
+    ],
+    "industrial_process_notes": "Leo Baekeland developed the process in Yonkers, NY, patenting it December 7, 1909, as the first fully synthetic plastic. Phenol and formaldehyde undergo acid- or base-catalyzed condensation polymerization; Baekeland's innovation used high-pressure heating (~150°C) in a sealed 'Bakelizer' vessel to suppress foaming and produce a hard, insoluble thermoset.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-bakelite",
+      "conditions": "Amorphous, densely crosslinked thermoset network."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Rigid, non-flexible network; cannot be softened by reheating once cured (thermoset).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Thermoset; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": 0.2,
+      "unit": "W/(m·K)",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-bakelite"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder",
+      "conditions": "Qualitatively described as scratch-resistant."
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "compression molding",
+      "transfer molding"
+    ],
+    "processing_temp_range": {
+      "value": 150,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-bakelite",
+      "conditions": "Original Baekeland high-pressure cure process."
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Electrical",
+      "examples": [
+        "electrical insulators and components",
+        "radio and telephone casings"
+      ]
+    },
+    {
+      "sector": "Consumer goods",
+      "examples": [
+        "molded consumer goods",
+        "jewelry and decorative items",
+        "billiard balls",
+        "game pieces"
+      ]
+    },
+    {
+      "sector": "Automotive",
+      "examples": [
+        "automotive parts"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "As a thermoset, cannot be melt-reprocessed; historical Bakelite objects are typically kept/repaired rather than recycled."
+  },
+  "references": [
+    "wiki-bakelite"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

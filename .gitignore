@@ -1,0 +1,26 @@
+# --- Internal planning / authoring-only docs (never published; see CLAUDE.md, instructions.md §10) ---
+CLAUDE.md
+instructions.md
+handoff.md
+readme_local.md
+COMPONENTS.md
+progress.json
+document.docx
+content_manifest.json
+polymer_document_inventory.md
+
+# Authoring-only tooling (ChemDraw automation, docx-splitting scripts, local tests)
+/scripts/
+/tests/
+
+# --- Node / Astro build ---
+node_modules/
+dist/
+.astro/
+npm-debug.log*
+
+# --- Editor / OS cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

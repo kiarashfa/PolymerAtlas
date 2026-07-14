@@ -1,0 +1,293 @@
+{
+  "id": "acrylonitrile-butadiene-rubber",
+  "slug": "acrylonitrile-butadiene-rubber",
+  "name": "Acrylonitrile Butadiene Rubber (NBR): The Oil-Resistant Wonder",
+  "abbreviation": [
+    "NBR"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9003-18-3",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Random copolymer of acrylonitrile and butadiene; ACN content (commonly ~33 wt% for balanced performance) varies by grade and strongly affects properties, so no single fixed repeat-unit ratio represents the class.",
+  "iupac_name": null,
+  "synonyms": [
+    "nitrile rubber",
+    "Buna-N",
+    "nitrile butadiene rubber"
+  ],
+  "aliases": [
+    {
+      "name": "nitrile rubber",
+      "autolinkable": true
+    },
+    {
+      "name": "Buna-N",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "diene-rubber",
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Acrylonitrile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acrylonitrile"
+    },
+    {
+      "name": "1,3-Butadiene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/1,3-Butadiene"
+    }
+  ],
+  "polymer_class": "elastomer",
+  "year_of_origin": 1944,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.0,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nbr"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical emulsion copolymerization",
+    "common_monomers": [
+      "acrylonitrile",
+      "1,3-butadiene"
+    ],
+    "catalysts": [
+      "radical activators/persulfate-type initiators"
+    ],
+    "industrial_process_notes": "Developed in 1931 at BASF and Bayer, with commercial German production from 1935. Produced via emulsion polymerization at 30-40°C ('hot' NBR) or 5-15°C ('cold' NBR): emulsifier, acrylonitrile, butadiene, radical activators, and catalyst combined in water; reaction is halted at ~70% conversion by termination agents, followed by monomer recovery and coagulation into crumb rubber.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Higher acrylonitrile (ACN) content improves solvent/oil resistance but reduces low-temperature flexibility; lower ACN content gives the opposite trade-off.",
+    "tg_relation_notes": "Tg decreases with lower ACN content."
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Decreases with lower ACN content; no single number sourced this session."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Elastomers like NBR typically don't show a distinct yield region before break; see tensile_strength_at_break."
+    },
+    "tensile_strength_at_break": {
+      "value": 10.3,
+      "range_min": 3.4,
+      "range_max": 17.2,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nbr",
+      "conditions": "Converted from reported 500-2500 psi."
+    },
+    "elongation_at_break": {
+      "value": 450,
+      "range_min": 300,
+      "range_max": 600,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nbr"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": 60,
+      "range_min": 30,
+      "range_max": 90,
+      "unit": "Shore A",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nbr"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "mineral_and_vegetable_oils": {
+        "value": "Good resistance",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-nbr"
+      },
+      "fuel": {
+        "value": "Good resistance",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-nbr"
+      },
+      "benzene": {
+        "value": "Good resistance",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-nbr"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "emulsion polymerization + compounding/vulcanization"
+    ],
+    "processing_temp_range": {
+      "value": 35,
+      "range_min": 30,
+      "range_max": 40,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-nbr",
+      "conditions": "'Hot' NBR polymerization temperature; 'cold' NBR uses 5-15°C."
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Automotive",
+      "examples": [
+        "fuel and oil hoses",
+        "seals and O-rings",
+        "transmission belts"
+      ]
+    },
+    {
+      "sector": "Medical & PPE",
+      "examples": [
+        "disposable protective gloves"
+      ]
+    },
+    {
+      "sector": "Aerospace",
+      "examples": [
+        "components requiring temperature stability"
+      ]
+    },
+    {
+      "sector": "Other",
+      "examples": [
+        "synthetic leather"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "Operating temperature range reported as -40 to 108°C."
+  },
+  "references": [
+    "wiki-nbr"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

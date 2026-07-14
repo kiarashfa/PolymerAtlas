@@ -1,0 +1,235 @@
+{
+  "id": "vulcanized-natural-rubber",
+  "slug": "vulcanized-natural-rubber",
+  "name": "Vulcanized Natural Rubber (VNR): Goodyear's Sticky Path to Success",
+  "abbreviation": [
+    "VNR"
+  ],
+  "type": "variant",
+  "parent": "natural-rubber",
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Sulfur-crosslinked cis-1,4-polyisoprene network; a crosslinked thermoset network has no single linear repeat unit.",
+  "iupac_name": null,
+  "synonyms": [
+    "vulcanized rubber"
+  ],
+  "aliases": [],
+  "chemical_family": [
+    "natural-rubber",
+    "diene-rubber"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "natural-biosynthesis"
+  ],
+  "monomer": [
+    {
+      "name": "Isoprene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isoprene"
+    }
+  ],
+  "polymer_class": "thermoset",
+  "year_of_origin": 1839,
+  "era": "Decoding Nature's Legacy (1833-1902)",
+  "key_figures": [
+    "Charles Goodyear"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [
+      "sulfur"
+    ],
+    "industrial_process_notes": "Natural rubber is heated with sulfur (optimal content around 10% for general-purpose vulcanizates), forming sulfur crosslinks at allylic C-H sites adjacent to the polyisoprene double bonds. Shorter sulfur crosslinks give better heat resistance; longer polysulfidic crosslinks give better dynamic (flex) properties but less heat resistance. Charles Goodyear discovered the process accidentally in 1839 (rubber-sulfur mixture dropped on a hot stove) and patented it in 1844.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": "cis-1,4 backbone (inherited from natural rubber), now crosslinked via sulfur bridges.",
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Sulfur crosslinks form a 3-D network that increases rigidity while still allowing elastic recovery, distinguishing vulcanized from unvulcanized rubber.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Crosslinked thermoset network; does not melt."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "compression/injection molding with sulfur cure",
+      "extrusion"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Tires & automotive",
+      "examples": [
+        "tire treads and carcasses",
+        "hoses",
+        "gaskets"
+      ]
+    },
+    {
+      "sector": "Consumer & industrial",
+      "examples": [
+        "shoe soles",
+        "conveyor belts",
+        "shock absorbers"
+      ]
+    },
+    {
+      "sector": "Medical",
+      "examples": [
+        "surgical gloves (vulcanization removes ~99.9% of antigenic proteins)"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": "Sulfur crosslinking makes vulcanized rubber far more resistant to microbial degradation than raw natural rubber; not readily recyclable via reprocessing due to the thermoset network (devulcanization/ grinding into crumb rubber are the main reuse routes).",
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-vulcanization",
+    "wiki-natural-rubber"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

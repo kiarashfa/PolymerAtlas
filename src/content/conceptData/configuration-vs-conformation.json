@@ -1,0 +1,16 @@
+{
+  "id": "configuration-vs-conformation",
+  "slug": "configuration-vs-conformation",
+  "name": "Configuration vs. Conformation: Architecture of Molecules",
+
+  "year_of_origin": 1950,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": ["Odd Hassel", "Derek Barton", "Karl Ziegler", "Giulio Natta"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "summary": "Configuration and conformation are both descriptions of a molecule's 3-D arrangement, but they differ in a critical way: configuration is fixed by the connectivity of chemical bonds and can only be changed by breaking and reforming bonds (e.g. cis/trans isomerism, or the tacticity of a polymer backbone), while conformation is a transient 3-D shape reached by rotation around single bonds without breaking any bonds (e.g. a cyclohexane ring flipping between chair and boat forms). Odd Hassel confirmed the existence of cyclohexane's chair and boat conformers using electron diffraction in 1943; Derek Barton showed in 1950 that organic and steroid molecules could be assigned a preferred conformation based on Hassel's physical data, founding the field of conformational analysis. The two shared the 1969 Nobel Prize in Chemistry for this work. For polymer science specifically, the configuration/conformation distinction underpins tacticity (a configurational property, fixed at the moment of polymerization -- as in Ziegler-Natta stereoregular polypropylene and polyethylene) versus chain conformation (a dynamic property governing solution behavior, crystallization, and rubber elasticity).",
+  "key_equations": [],
+
+  "references": ["search-conformational-analysis"]
+}

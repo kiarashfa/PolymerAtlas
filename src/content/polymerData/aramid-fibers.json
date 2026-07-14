@@ -1,0 +1,262 @@
+{
+  "id": "aramid-fibers",
+  "slug": "aramid-fibers",
+  "name": "Aramid Fibers (Kevlar): Bulletproof",
+  "abbreviation": [
+    "Kevlar"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Aramids are aromatic polyamides in which >=85% of amide linkages attach directly to two aromatic rings; para-aramid (Kevlar, linkages at ring positions 1,4) and meta-aramid (Nomex-type, positions 1,3) are structurally distinct sub-families with different repeat units.",
+  "iupac_name": null,
+  "synonyms": [
+    "aramid",
+    "para-aramid"
+  ],
+  "aliases": [
+    {
+      "name": "Kevlar",
+      "autolinkable": false
+    },
+    {
+      "name": "Twaron",
+      "autolinkable": false
+    },
+    {
+      "name": "aramid",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyamide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "p-Phenylenediamine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/P-Phenylenediamine"
+    },
+    {
+      "name": "Terephthaloyl chloride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terephthaloyl_chloride"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1971,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [
+    "Stephanie Kwolek"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation (solution polycondensation, liquid-crystalline spinning dope)",
+    "common_monomers": [
+      "p-phenylenediamine",
+      "terephthaloyl chloride"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Stephanie Kwolek developed the first para-aramid fiber at DuPont, commercialized as Kevlar in 1973; the term 'aramid' was introduced in 1972 and formally recognized as a generic fiber category by the US Federal Trade Commission in 1974. Akzo introduced the competing fiber Twaron in 1978. World para-aramid production was estimated at 41,000 tonnes/year in 2002, growing 5-10% annually.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Highly crystalline/highly oriented in fiber form (liquid-crystalline spinning), but no specific percentage sourced this session."
+    },
+    "crystal_structure": "Para-aramid: linear, rod-like chains (amide linkages at para/1,4 ring positions) pack into a highly extended, hydrogen-bonded crystalline structure, giving exceptional axial strength and stiffness. Meta-aramid (1,3 linkages) is less linear and used more for heat/flame resistance than pure tensile strength.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Reported to decompose above 500°C rather than exhibiting a conventional melt transition."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": 500,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-aramid"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "High-performance fiber; behavior is dominated by tensile strength at break rather than a distinct yield point."
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder",
+      "conditions": "Qualitatively 'outstanding strength-to-weight'; no specific number sourced this session."
+    },
+    "elongation_at_break": {
+      "value": 3.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-aramid",
+      "conditions": "Para-aramids."
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": "Inherently flame-resistant",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-aramid",
+      "conditions": "Inferred from widespread use as an asbestos replacement/fireproof material; no formal UL94 rating sourced this session."
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "dry-jet wet spinning (liquid-crystalline solution spinning)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Protection",
+      "examples": [
+        "body armor",
+        "protective apparel"
+      ]
+    },
+    {
+      "sector": "Composites",
+      "examples": [
+        "composite reinforcement"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "marine cordage/ropes",
+        "cables",
+        "tire reinforcement",
+        "brake-lining asbestos replacement"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-aramid"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

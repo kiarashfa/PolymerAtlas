@@ -1,0 +1,16 @@
+{
+  "id": "dna-and-rna",
+  "slug": "dna-and-rna",
+  "name": "DNA and RNA: Nature's Information Architects",
+
+  "year_of_origin": 1953,
+  "era": "The Post-War Boom (1946-1960)",
+  "key_figures": ["James Watson", "Francis Crick", "Kary Mullis"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "summary": "DNA is a natural information-encoding biopolymer: two antiparallel polynucleotide chains coiling around each other into a double helix (pitch 34 angstroms per turn, ~10 angstrom radius), each chain a backbone of alternating phosphate and 2-deoxyribose sugar groups linked by phosphodiester bonds, with one of four nitrogenous bases (adenine, guanine, cytosine, thymine) hanging off each sugar. Complementary base pairing (A-T via two hydrogen bonds, C-G via three) both holds the two strands together and gives DNA a built-in mechanism for replication -- each strand serves as a template for a new complementary strand. James Watson and Francis Crick published the double-helix structure in 1953, building on X-ray diffraction data from other researchers (notably Rosalind Franklin and Maurice Wilkins). RNA, the polymer's single-stranded cousin (uracil replacing thymine, ribose replacing deoxyribose), carries out the actual decoding of DNA's information into proteins. In 1983, Kary Mullis invented the polymerase chain reaction (PCR), a technique using repeated heating/cooling cycles and a heat-stable DNA polymerase to copy a specific DNA sequence billions of times in a few hours -- work recognized with the 1993 Nobel Prize in Chemistry and foundational to essentially all of modern molecular biology, forensics, and diagnostics (including PCR-based COVID-19 testing).",
+  "key_equations": [],
+
+  "references": ["wiki-dna", "search-kary-mullis-pcr"]
+}

@@ -1,0 +1,250 @@
+{
+  "id": "polyurethane",
+  "slug": "polyurethane",
+  "name": "Polyurethane (PUR): The Polymer That Dreams Are Made Of",
+  "abbreviation": [
+    "PUR"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Polyurethanes are formed from many possible diisocyanate + polyol combinations (TDI/MDI with polyester or polyether polyols, etc.) joined by carbamate (urethane) linkages -- composition varies hugely by formulation, so no single repeat unit represents the class.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+  "chemical_family": [
+    "polyurethane"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Toluene diisocyanate (TDI)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toluene_diisocyanate"
+    },
+    {
+      "name": "Methylene diphenyl diisocyanate (MDI)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Methylene_diphenyl_diisocyanate"
+    },
+    {
+      "name": "Polyol",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polyol"
+    }
+  ],
+  "polymer_class": null,
+  "year_of_origin": 1937,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Otto Bayer"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": null,
+      "unit": "g/cm³",
+      "status": "placeholder",
+      "conditions": "Varies enormously by form: rigid foam, flexible foam, and solid elastomer densities differ by an order of magnitude or more; no single sourced figure this session."
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable",
+      "conditions": "Formed by reactive polyaddition/casting, not conventional melt processing, for most grades."
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "not_applicable"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth polyaddition",
+    "common_monomers": [
+      "toluene diisocyanate (TDI)",
+      "methylene diphenyl diisocyanate (MDI)",
+      "polyester or polyether polyols"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Otto Bayer and coworkers at IG Farben (Leverkusen) first made polyurethanes in 1937. Commercial polyisocyanates became available in 1952 and flexible foam production began in 1954. Industrially formed by mixing an isocyanate ('A-side') with a polyol blend containing catalysts and additives ('B-side'), then dispensing into molds/substrates to cure. Foams account for ~67% of all polyurethane produced (2016 data); ~25 million tonnes produced globally in 2019.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Rigid foams use high crosslink density (thermal insulation); flexible foams use longer chain segments with lower crosslinking; elastomers sit at an intermediate crosslink density.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder",
+      "conditions": "Rigid PUR foam is a well-known low-thermal-conductivity insulation material, but no specific number was sourced this session."
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder",
+      "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR -- a real, widely-cited distinction, but not independently confirmed with a source this session."
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "two-component reactive molding/casting",
+      "foam-in-place/spray foam",
+      "reaction injection molding (RIM)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Foams",
+      "examples": [
+        "rigid thermal insulation",
+        "flexible cushioning foam"
+      ],
+      "notes": "~67% of all PUR produced (2016)."
+    },
+    {
+      "sector": "Elastomers",
+      "examples": [
+        "shoe soles"
+      ]
+    },
+    {
+      "sector": "Coatings & adhesives",
+      "examples": [
+        "protective coatings",
+        "adhesives"
+      ]
+    },
+    {
+      "sector": "Fibers",
+      "examples": [
+        "spandex/elastane"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": "As a broad, highly formulation-dependent thermoset/elastomer family, end-of-life handling varies widely by product type; chemical recycling (e.g. glycolysis) exists for some grades but is not yet mainstream."
+  },
+  "references": [
+    "wiki-polyurethane"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

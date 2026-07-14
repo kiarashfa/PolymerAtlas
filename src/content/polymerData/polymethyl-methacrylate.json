@@ -1,0 +1,282 @@
+{
+  "id": "polymethyl-methacrylate",
+  "slug": "polymethyl-methacrylate",
+  "name": "Polymethyl Methacrylate (PMMA): The Crystal-Clear Revolution",
+  "abbreviation": [
+    "PMMA"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "9011-14-7",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Poly(methyl 2-methylpropenoate); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": "Poly(methyl 2-methylpropenoate)",
+  "synonyms": [
+    "acrylic",
+    "acrylic glass",
+    "Plexiglas",
+    "Perspex",
+    "Lucite"
+  ],
+  "aliases": [
+    {
+      "name": "Plexiglas",
+      "autolinkable": false
+    },
+    {
+      "name": "Perspex",
+      "autolinkable": false
+    },
+    {
+      "name": "Lucite",
+      "autolinkable": false
+    },
+    {
+      "name": "acrylic glass",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "acrylic"
+  ],
+  "backbone_class": "carbon-chain",
+  "polymerization_mechanism": [
+    "free-radical"
+  ],
+  "monomer": [
+    {
+      "name": "Methyl methacrylate",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Methyl_methacrylate"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1933,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "key_figures": [
+    "Otto Röhm"
+  ],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.185,
+      "range_min": 1.17,
+      "range_max": 1.2,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": 1.4905,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma",
+      "conditions": "At 589.3 nm."
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "free-radical chain-growth",
+    "common_monomers": [
+      "methyl methacrylate"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Developed in 1928 in several laboratories, including Otto Röhm's; commercialized in 1933 under the trademark Plexiglas by Röhm & Haas, with Perspex and Lucite following shortly after from other manufacturers. Produced via free-radical polymerization: emulsion, solution, or bulk processes. Cast acrylic sheet has better thermal stability, higher solvent-craze resistance, and a wider thermoforming range than extruded sheet.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma",
+      "conditions": "Amorphous; this amorphous structure plus low light scattering is what gives PMMA its optical clarity."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Unmodified PMMA is strong but brittle under load; impact modifiers are used to improve toughness in demanding applications.",
+    "tg_relation_notes": "Atactic/commercial-grade Tg ~105°C; commercial grades formulated across 85-165°C depending on application."
+  },
+  "thermal": {
+    "tg": {
+      "value": 105,
+      "range_min": 85,
+      "range_max": 165,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma",
+      "conditions": "105°C for atactic PMMA; commercial grades formulated 85-165°C."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": 460,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma",
+      "conditions": "Reported as ignition point."
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder",
+      "conditions": "Qualitatively higher impact resistance than glass and polystyrene but lower than polycarbonate; no number sourced this session."
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": "Good UV/outdoor weathering resistance relative to many commodity thermoplastics",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-pmma",
+      "conditions": "Inferred from widespread outdoor/glazing use; no explicit weathering-test data sourced this session."
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "cast sheet polymerization",
+      "extrusion",
+      "injection molding"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Aerospace",
+      "examples": [
+        "aircraft transparencies and canopies"
+      ]
+    },
+    {
+      "sector": "Optical & medical",
+      "examples": [
+        "optical lenses",
+        "intraocular implants"
+      ]
+    },
+    {
+      "sector": "Signage & displays",
+      "examples": [
+        "signage",
+        "point-of-sale displays"
+      ]
+    },
+    {
+      "sector": "Consumer & construction",
+      "examples": [
+        "aquariums",
+        "protective barriers"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": null,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pmma"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

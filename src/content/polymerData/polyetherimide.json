@@ -1,0 +1,257 @@
+{
+  "id": "polyetherimide",
+  "slug": "polyetherimide",
+  "name": "Polyetherimide (PEI): The Amber Guardian of the Electronics Age",
+  "abbreviation": [
+    "PEI"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "61128-46-9",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "Phthalimide/bisphenol-A-based repeat unit (C37H24O6N2, MW 592.61 g/mol); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "iupac_name": null,
+  "synonyms": [
+    "Ultem"
+  ],
+  "aliases": [
+    {
+      "name": "Ultem",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyimide"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "step-growth-condensation"
+  ],
+  "monomer": [
+    {
+      "name": "Bisphenol A dianhydride",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bisphenol_A"
+    },
+    {
+      "name": "m-Phenylenediamine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M-Phenylenediamine"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1975,
+  "era": "The Engineering Polymers Era (1961-1979)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.27,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "step-growth condensation (imidization)",
+    "common_monomers": [
+      "bisphenol A dianhydride",
+      "m-phenylenediamine"
+    ],
+    "catalysts": [],
+    "industrial_process_notes": "Research by J.G. Wirth's team at General Electric in the early 1970s led to commercial introduction in 1982 under the trade name Ultem. Made via imidization of a flexible dianhydride with m-phenylenediamine.",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "estimated",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei",
+      "conditions": "Amorphous -- underlies its amber transparency."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Combines aromatic imide rigidity (heat/chemical resistance) with ether linkages that improve melt-processability relative to fully rigid polyimides like Kapton.",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": 217,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": 115,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei",
+      "conditions": "Source reports unqualified 'tensile strength'."
+    },
+    "elongation_at_break": {
+      "value": 70,
+      "range_min": 60,
+      "range_max": 80,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei"
+    },
+    "impact_izod": {
+      "value": 42.5,
+      "range_min": 25,
+      "range_max": 60,
+      "unit": "J/m",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-pei"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "injection molding",
+      "extrusion",
+      "3D printing (build plates/filament)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "drying_required": true,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Aerospace",
+      "examples": [
+        "aircraft interior components"
+      ]
+    },
+    {
+      "sector": "Medical",
+      "examples": [
+        "sterilizable devices"
+      ]
+    },
+    {
+      "sector": "Electronics",
+      "examples": [
+        "components requiring stable electrical properties across frequencies",
+        "3D printer build plates"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": true,
+    "biodegradable": false,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-pei"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

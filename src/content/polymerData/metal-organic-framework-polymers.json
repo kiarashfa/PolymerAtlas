@@ -1,0 +1,110 @@
+{
+  "id": "metal-organic-framework-polymers",
+  "slug": "metal-organic-framework-polymers",
+  "name": "Metal-Organic Framework Polymers (MOFs): Swiss Army Knife",
+  "abbreviation": ["MOFs"],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "MOFs are hybrid organic-inorganic coordination networks (metal-ion clusters/secondary building units linked by organic di- or tricarboxylic-acid ligands), not a classical covalent polymer -- included in this atlas as a bordering/hybrid material class per the manifest's own framing. No single repeat unit represents the class; composition is defined by metal-node + linker choice (e.g. MOF-5 uses Zn4O clusters with terephthalate linkers).",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": ["porous-polymer-network"],
+  "backbone_class": null,
+  "polymerization_mechanism": [],
+  "monomer": [
+    { "name": "Terephthalic acid (H2bdc, a common linker example)", "wikipedia_url": "https://en.wikipedia.org/wiki/Terephthalic_acid" }
+  ],
+  "polymer_class": null,
+
+  "year_of_origin": 2012,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": ["Omar Yaghi"],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "Varies enormously by metal node/linker combination; not a single value for the class." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Omar Yaghi pioneered MOF chemistry, first crystallizing carboxylate-linker frameworks in 1995, introducing the secondary building unit (SBU) concept in 1998, and developing the landmark ultra-high-porosity material MOF-5 in 1999. Yaghi, Susumu Kitagawa, and Richard Robson were awarded the 2025 Nobel Prize in Chemistry for their MOF work. Synthesis routes include solvothermal and microwave-assisted solvothermal methods (producing micron-scale crystals in seconds to minutes), mild room-temperature routes in green solvents (e.g. MIL-100(Fe)), solvent-free mechanochemical synthesis, and chemical vapor deposition.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "not_applicable", "conditions": "Crystalline by definition (ordered coordination network), but crystallinity-percentage framing doesn't map cleanly onto this material class." },
+    "crystal_structure": "Metal-ion clusters (secondary building units, SBUs) connected by rigid organic linker ligands into a highly ordered, permanently porous crystalline network; pore size and chemistry are tunable via metal/linker selection and remain accessible (refillable with guest molecules) after activation.",
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "not_applicable" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "not_applicable" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "not_applicable" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "not_applicable" },
+    "hardness": { "value": null, "unit": "Shore", "status": "not_applicable" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "not_applicable" },
+    "hydrolysis_resistance": { "value": null, "status": "placeholder", "conditions": "Water/moisture stability varies hugely by MOF chemistry -- some (e.g. zeolitic imidazolate frameworks) are quite stable, others degrade readily; not a single answer for the class." },
+    "flammability_ul94": { "value": null, "status": "not_applicable" }
+  },
+
+  "processing": {
+    "processing_methods": ["solvothermal synthesis", "microwave-assisted solvothermal synthesis", "mechanochemical (solvent-free) synthesis", "chemical vapor deposition"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Gas storage & separation", "examples": ["hydrogen and CO2 capture with tunable selectivity"] },
+    { "sector": "Catalysis", "examples": ["heterogeneous catalysts for asymmetric synthesis and photocatalysis"] },
+    { "sector": "Drug delivery", "examples": ["pH- and temperature-responsive therapeutic release"] },
+    { "sector": "Environmental", "examples": ["carbon capture from flue gas/biogas", "water-vapor adsorption for dehumidification"] }
+  ],
+
+  "environmental": {
+    "recyclable": null,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": "Commercial MOF products exist for industrial gas-separation use (e.g. Svante)."
+  },
+
+  "references": ["wiki-mof"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

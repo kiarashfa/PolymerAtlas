@@ -1,0 +1,259 @@
+{
+  "id": "polyethylene-glycol",
+  "slug": "polyethylene-glycol",
+  "name": "Polyethylene Glycol (PEG): Stealth Polymer That Revolutionized Medicine",
+  "abbreviation": [
+    "PEG"
+  ],
+  "type": "hub",
+  "parent": null,
+  "cas_number": "25322-68-3",
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "H-(O-CH2-CH2)n-OH; commercial PEG spans a huge molecular-weight range (300 to 10,000,000 g/mol), so specific grades behave as distinctly different materials despite sharing the same repeat unit.",
+  "iupac_name": null,
+  "synonyms": [
+    "polyethylene oxide (high-MW grades)",
+    "PEO"
+  ],
+  "aliases": [
+    {
+      "name": "PEO",
+      "autolinkable": true
+    },
+    {
+      "name": "polyethylene oxide",
+      "autolinkable": true
+    }
+  ],
+  "chemical_family": [
+    "polyester"
+  ],
+  "backbone_class": "heterochain",
+  "polymerization_mechanism": [
+    "ring-opening-polymerization"
+  ],
+  "monomer": [
+    {
+      "name": "Ethylene oxide",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ethylene_oxide"
+    }
+  ],
+  "polymer_class": "thermoplastic",
+  "year_of_origin": 1944,
+  "era": "The Wartime Innovation Period (1939-1945)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+  "physical": {
+    "density": {
+      "value": 1.125,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "tertiary",
+      "source": "wiki-peg"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "placeholder"
+    },
+    "refractive_index": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "unit": "S/m",
+      "status": "placeholder"
+    }
+  },
+  "synthesis": {
+    "polymerization_type": "ring-opening polymerization",
+    "common_monomers": [
+      "ethylene oxide"
+    ],
+    "catalysts": [
+      "NaOH, KOH, Na2CO3 (low MW)",
+      "organoelement catalysts (high MW)"
+    ],
+    "industrial_process_notes": "First documented in 1859 (A. V. Lourenco and Charles Adolphe Wurtz, independently). Manufactured by ring-opening polymerization of ethylene oxide, initiated from water, ethylene glycol, or oligomers; alkaline catalysts give lower molecular weight grades (300-~20,000 g/mol) while organoelement catalysts enable much higher molecular weight synthesis (up to ~10,000,000 g/mol).",
+    "synthesis_scheme_image": null
+  },
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder",
+      "conditions": "Low-MW PEGs are semi-crystalline waxy solids/liquids; high-MW PEO is also semi-crystalline but behaves very differently in bulk."
+    },
+    "crystal_structure": null,
+    "chain_flexibility_notes": "Highly flexible, hydrophilic ether backbone; readily forms hydrogen bonds with water, underlying its use for steric shielding in drug delivery (PEGylation).",
+    "tg_relation_notes": null
+  },
+  "thermal": {
+    "tg": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder",
+      "conditions": "Varies substantially with molecular weight; low-MW PEG grades are liquid at room temperature, higher-MW grades are waxy solids."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "unit": "°C",
+      "status": "placeholder"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
+  },
+  "mechanical": {
+    "tensile_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable",
+      "conditions": "Low-MW grades are liquids/waxes without a meaningful tensile modulus; only very-high-MW PEO grades would have conventional solid mechanical properties (not sourced this session)."
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "not_applicable"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "not_applicable"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "not_applicable"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "not_applicable"
+    }
+  },
+  "chemical_resistance": {
+    "solvent_resistance": {
+      "water": {
+        "value": "Highly soluble/hydrophilic",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-peg"
+      }
+    },
+    "weathering_uv": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "not_applicable"
+    }
+  },
+  "processing": {
+    "processing_methods": [
+      "ring-opening polymerization (produced as-is, generally not further melt-processed like bulk plastics)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "drying_required": null,
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
+  },
+  "applications": [
+    {
+      "sector": "Pharmaceutical",
+      "examples": [
+        "excipient in oral/topical/parenteral products",
+        "laxative formulations",
+        "mRNA vaccine lipid-nanoparticle stabilizer",
+        "PEGylation of protein therapeutics"
+      ]
+    },
+    {
+      "sector": "Industrial",
+      "examples": [
+        "wood preservation",
+        "artifact conservation",
+        "chromatography",
+        "missile propellant components"
+      ]
+    },
+    {
+      "sector": "Biological research",
+      "examples": [
+        "protein crystallization",
+        "cell fusion",
+        "virus concentration",
+        "gene-therapy vector modification"
+      ]
+    }
+  ],
+  "environmental": {
+    "recyclable": false,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": null
+  },
+  "references": [
+    "wiki-peg"
+  ],
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}

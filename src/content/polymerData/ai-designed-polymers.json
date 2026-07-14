@@ -1,0 +1,106 @@
+{
+  "id": "ai-designed-polymers",
+  "slug": "ai-designed-polymers",
+  "name": "AI-Designed Polymers: When Machines Learned to Build Molecules",
+  "abbreviation": [],
+  "type": "hub",
+  "parent": null,
+  "cas_number": null,
+  "resin_id_code": null,
+  "repeat_unit": null,
+  "notation_note": "A design methodology (machine-learning-guided property prediction and generative molecular design applied to polymers) rather than a single chemistry -- the polymers ultimately produced/recommended by these methods are conventional polymer chemistries (existing or novel), so there is no repeat unit for the methodology itself.",
+  "iupac_name": null,
+  "synonyms": [],
+  "aliases": [],
+
+  "chemical_family": [],
+  "backbone_class": null,
+  "polymerization_mechanism": [],
+  "monomer": [],
+  "polymer_class": null,
+
+  "year_of_origin": 2020,
+  "era": "The Smart Materials Era (2000-2015)",
+  "key_figures": [],
+  "historical_events_referenced": [],
+  "historical_images": [],
+
+  "physical": {
+    "density": { "value": null, "unit": "g/cm³", "status": "not_applicable", "conditions": "A methodology, not a material; properties belong to whichever specific polymer a given model designs or predicts." },
+    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
+    "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
+    "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+  },
+
+  "synthesis": {
+    "polymerization_type": null,
+    "common_monomers": [],
+    "catalysts": [],
+    "industrial_process_notes": "Not a synthesis route but a design layer sitting on top of conventional polymer chemistry. Machine-learning approaches include: graph neural networks and transformer-style language models trained on polymer structure-property datasets (e.g. Polymer Genome, published 2020, offering near-instantaneous ML property prediction); generative models (e.g. variational autoencoders) that propose novel candidate structures for target properties (e.g. polymers for extreme conditions, Batra et al. 2020); and high-throughput DFT/simulation pipelines used to generate training data and validate candidates before real synthesis.",
+    "synthesis_scheme_image": null
+  },
+
+  "structure_morphology": {
+    "tacticity": null,
+    "crystallinity_typical": { "value": null, "unit": "%", "status": "not_applicable" },
+    "crystal_structure": null,
+    "chain_flexibility_notes": null,
+    "tg_relation_notes": null
+  },
+
+  "thermal": {
+    "tg": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tm": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "decomposition_onset": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "not_applicable" }
+  },
+
+  "mechanical": {
+    "tensile_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "yield_strength": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "not_applicable" },
+    "elongation_at_break": { "value": null, "unit": "%", "status": "not_applicable" },
+    "impact_izod": { "value": null, "unit": "J/m", "status": "not_applicable" },
+    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "not_applicable" },
+    "hardness": { "value": null, "unit": "Shore", "status": "not_applicable" },
+    "flexural_modulus": { "value": null, "unit": "MPa", "status": "not_applicable" }
+  },
+
+  "chemical_resistance": {
+    "solvent_resistance": {},
+    "weathering_uv": { "value": null, "status": "not_applicable" },
+    "hydrolysis_resistance": { "value": null, "status": "not_applicable" },
+    "flammability_ul94": { "value": null, "status": "not_applicable" }
+  },
+
+  "processing": {
+    "processing_methods": ["machine-learning property prediction (graph neural networks, transformer language models)", "generative molecular design (variational autoencoders)", "high-throughput DFT/simulation screening"],
+    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "drying_required": null,
+    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+  },
+
+  "applications": [
+    { "sector": "Materials discovery", "examples": ["accelerated screening of candidate polymers for extreme-environment applications"] },
+    { "sector": "Property prediction", "examples": ["near-instantaneous prediction of Tg, dielectric constant, and other properties from structure alone (e.g. Polymer Genome)"] }
+  ],
+
+  "environmental": {
+    "recyclable": null,
+    "biodegradable": null,
+    "degradation_pathway": null,
+    "environmental_notes": "Explicitly excluded from this atlas's core polymer-page schema per instructions.md §3.3/§11: no ML-predicted property values are shown on individual polymer pages themselves (that output belongs on a separate, dedicated tool page) -- this entry documents the methodology as a historical/technical topic, not as a source of predicted numbers for other entries."
+  },
+
+  "references": ["search-ai-designed-polymers"],
+
+  "media": {
+    "hero_image": null,
+    "diagrams": [],
+    "structure_render_2d": null,
+    "structure_render_3d": null
+  }
+}
