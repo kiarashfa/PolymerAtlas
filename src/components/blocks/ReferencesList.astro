@@ -1,0 +1,35 @@
+---
+// Numbered references list with scroll anchors (#ref-n) for the numeric
+// superscript citations. Shared by every page type that cites sources.
+import type { PageCitations } from '../../lib/content';
+
+interface Props {
+  refList: PageCitations['list'];
+}
+const { refList } = Astro.props;
+---
+
+{
+  refList.length ? (
+    <ol class="ref-list">
+      {refList.map((ref) => (
+        <li class="ref-item" id={`ref-${ref.n}`}>
+          <span class="ref-n">[{ref.n}]</span>
+          <span class="ref-body">
+            <span class="ref-title">{ref.bib.title}</span>
+            {ref.bib.publisher && <span class="ref-pub">{ref.bib.publisher}</span>}
+            {ref.bib.note && <span class="ref-note">{ref.bib.note}</span>}
+            {ref.bib.url && (
+              <a class="ref-url" href={ref.bib.url} rel="noopener">
+                {ref.bib.url}
+              </a>
+            )}
+            <span class="ref-key">[{ref.key}]</span>
+          </span>
+        </li>
+      ))}
+    </ol>
+  ) : (
+    <p class="none">No sources consulted yet for this entry.</p>
+  )
+}

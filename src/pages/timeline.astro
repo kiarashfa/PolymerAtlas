@@ -2,22 +2,17 @@
 // The timeline: the second home presentation of the archive (§8) — an
 // era-colored chronological spine. Multi-entry years render as one diamond
 // marker with several cards (§4.1); variants sit at their OWN year, never
-// nested under their hub's.
+// nested under their hub's. Data comes from timelineData() — the same
+// derived artifact served at /timeline.json (§9.3).
 import Base from '../layouts/Base.astro';
-import { browseRowsByEra, eraShortName, href, type BrowseRow } from '../lib/content';
+import { eraShortName } from '../lib/content';
+import { timelineData } from '../lib/derived';
 
-const byEra = await browseRowsByEra();
-const total = byEra.reduce((n, g) => n + g.rows.length, 0);
-
-const groupByYear = (rows: BrowseRow[]) => {
-  const groups = new Map<number, BrowseRow[]>();
-  for (const row of rows) {
-    const g = groups.get(row.year);
-    if (g) g.push(row);
-    else groups.set(row.year, [row]);
-  }
-  return [...groups.entries()];
-};
+const timeline = await timelineData();
+const total = timeline.reduce(
+  (n, era) => n + era.years.reduce((m, y) => m + y.entries.length, 0),
+  0
+);
 ---
 
 <Base
@@ -32,34 +27,30 @@ const groupByYear = (rows: BrowseRow[]) => {
     </header>
     <div class="timeline">
       {
-        byEra.map(({ era, rows }, i) => (
-          <section class={`tl-era era-c-${i}`} id={`era-${i}`}>
+        timeline.map((era) => (
+          <section class={`tl-era era-c-${era.index}`} id={`era-${era.index}`}>
             <header class="tl-era-head">
               <h2 class="tl-era-name">{eraShortName(era.name)}</h2>
               <span class="tl-era-range">
                 {era.year_start}–{era.year_end}
               </span>
             </header>
-            {groupByYear(rows).map(([year, group]) => (
+            {era.years.map(({ year, entries }) => (
               <div class="tl-year-group">
                 <span class="tl-year-label">{year}</span>
                 <div class="tl-cards">
-                  {group.map((row) =>
-                    row.concept ? (
-                      <div class="tl-card tl-card--concept">
-                        <span class="tl-card-name">{row.title}</span>
-                        {row.subtitle && <span class="tl-card-sub">{row.subtitle}</span>}
-                        <span class="chip">concept</span>
-                      </div>
-                    ) : (
-                      <a class="tl-card" href={href(`/${row.id}/`)}>
-                        <span class="tl-card-name" transition:name={`ed-${row.id}`}>
-                          {row.title}
-                        </span>
-                        {row.subtitle && <span class="tl-card-sub">{row.subtitle}</span>}
-                      </a>
-                    )
-                  )}
+                  {entries.map((entry) => (
+                    <a
+                      class:list={['tl-card', { 'tl-card--concept': entry.concept }]}
+                      href={entry.path}
+                    >
+                      <span class="tl-card-name" transition:name={`ed-${entry.id}`}>
+                        {entry.title}
+                      </span>
+                      {entry.subtitle && <span class="tl-card-sub">{entry.subtitle}</span>}
+                      {entry.concept && <span class="chip">concept</span>}
+                    </a>
+                  ))}
                 </div>
               </div>
             ))}

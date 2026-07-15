@@ -1,0 +1,51 @@
+---
+// A figure inside a narrative (owner-supplied or Wikimedia Commons). Renders
+// the shared structured image object of §3.3 Media — alt required,
+// attribution/license shown whenever recorded (§10.1). Narrative MDX uses
+// the content-side path convention "~/assets/<...>" = src/assets/<...>;
+// resolution goes through Astro's image pipeline (optimized, hashed,
+// self-hosted — never hotlinked).
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  src: string;
+  alt: string;
+  caption?: string;
+  source_url?: string;
+  author?: string;
+  license?: string;
+  attribution_text?: string;
+}
+const { src, alt, caption, source_url, author, license, attribution_text } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/**/*.{png,jpg,jpeg,webp,avif,svg}'
+);
+const key = src.replace(/^~\//, '../../');
+const loader = images[key];
+if (!loader) throw new Error(`Figure: unknown asset "${src}" (resolved to "${key}")`);
+const image = (await loader()).default;
+
+const attribution =
+  attribution_text ?? ([author, license].filter(Boolean).join(' · ') || null);
+---
+
+<figure class="fig">
+  <Image src={image} alt={alt} class="fig-img" />
+  {
+    (caption || attribution) && (
+      <figcaption class="fig-caption">
+        {caption && <span>{caption}</span>}
+        {attribution &&
+          (source_url ? (
+            <a class="fig-attribution" href={source_url} rel="noopener">
+              {attribution}
+            </a>
+          ) : (
+            <span class="fig-attribution">{attribution}</span>
+          ))}
+      </figcaption>
+    )
+  }
+</figure>

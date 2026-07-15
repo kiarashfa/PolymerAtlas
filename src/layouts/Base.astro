@@ -6,6 +6,7 @@
 import { ClientRouter } from 'astro:transitions';
 import ThemeToggle from '../components/ui/ThemeToggle.astro';
 import VariantToggle from '../components/ui/VariantToggle.astro';
+import SearchOverlay from '../components/ui/SearchOverlay.astro';
 import { href } from '../lib/content';
 import '../styles/tokens.css';
 import '../styles/edition.css';
@@ -60,6 +61,7 @@ const isHome = title === 'Atlas of Polymers';
           Timeline
         </a>
       </nav>
+      <SearchOverlay />
       <VariantToggle />
       <ThemeToggle />
     </header>

@@ -1,0 +1,36 @@
+---
+// "Related polymers" (§9.3): computed at build time from the catalogue index
+// via weighted structured-field overlap (weights: src/data/related-weights.json),
+// deterministic top-N. Never hand-written. Renders between the data blocks
+// and the chronological prev/next.
+import { relatedFor } from '../../lib/derived';
+
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+const related = await relatedFor(id);
+---
+
+{
+  related.length > 0 && (
+    <aside class="related" aria-label="Related polymers" data-pagefind-ignore>
+      <h2 class="related-head">Related in the Atlas</h2>
+      <div class="related-cards">
+        {related.map((r) => (
+          <a class={`related-card era-c-${r.era.index}`} href={r.path}>
+            <span class="related-year">{r.year}</span>
+            <span class="related-title">{r.title}</span>
+            {r.chemical_family.length > 0 && (
+              <span class="related-families">
+                {r.chemical_family.slice(0, 2).map((f) => (
+                  <span class="chip chip--family">{f}</span>
+                ))}
+              </span>
+            )}
+          </a>
+        ))}
+      </div>
+    </aside>
+  )
+}

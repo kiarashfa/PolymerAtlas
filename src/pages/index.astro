@@ -4,7 +4,7 @@
 // Server-rendered chronologically so the full list exists without JS; the
 // controls only reorder/hide rows.
 import Base from '../layouts/Base.astro';
-import { browseRowsByEra, eras, eraShortName, eraIndex, href } from '../lib/content';
+import { browseRowsByEra, eras, eraShortName, eraIndex } from '../lib/content';
 
 const byEra = await browseRowsByEra();
 const rows = byEra.flatMap((g) => g.rows);
@@ -62,17 +62,14 @@ const description =
             'data-family': (row.families[0] ?? '~').toLowerCase(),
             'data-haystack': haystack(row),
           };
-          const inner = (
-            <>
+          return (
+            <a {...shared} href={row.path}>
               <span class="cat-row-year">
                 <b>{row.year}</b>
                 <span class="type-badge">{row.concept ? 'concept' : 'polymer'}</span>
               </span>
               <span class="cat-row-main">
-                <span
-                  class="cat-row-title"
-                  transition:name={row.concept ? undefined : `ed-${row.id}`}
-                >
+                <span class="cat-row-title" transition:name={`ed-${row.id}`}>
                   {row.title}
                 </span>
                 {row.subtitle && <span class="cat-row-sub">{row.subtitle}</span>}
@@ -85,13 +82,6 @@ const description =
                   ))}
                 </span>
               </span>
-            </>
-          );
-          return row.concept ? (
-            <div {...shared}>{inner}</div>
-          ) : (
-            <a {...shared} href={href(`/${row.id}/`)}>
-              {inner}
             </a>
           );
         })

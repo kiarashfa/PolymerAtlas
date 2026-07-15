@@ -5,12 +5,18 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import erasData from '../data/taxonomy/eras.json';
 import bibRaw from '../../references.bib?raw';
+import { parseBib, type BibEntry } from './bib';
 
 // ---------------------------------------------------------------- base URL --
 // GitHub Pages project deploy serves under /PolymerAtlas (§9.2) — every
 // internal link must respect BASE_URL.
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const href = (path: string) => `${base}/${path.replace(/^\//, '')}`;
+
+/** Canonical site path for an entry (§9.1 locked URL scheme: type-prefixed
+ *  flat slugs — /polymers/<id>/, /concepts/<id>/; never hub/variant nesting). */
+export const entryPath = (kind: 'polymer' | 'concept', id: string) =>
+  href(`/${kind === 'concept' ? 'concepts' : 'polymers'}/${id}/`);
 
 // -------------------------------------------------------------------- eras --
 export interface Era {
@@ -30,16 +36,8 @@ const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 export const eraRoman = (name: string) => ROMAN[eraIndex(name)] ?? '?';
 
 // ------------------------------------------------------------------ titles --
-/** Author's page names carry a subtitle after the first colon:
- *  "Polyethylene (PE): The Accidental Wonder That Changed Our World" */
-export function splitTitle(full: string): { title: string; subtitle: string | null } {
-  const i = full.indexOf(': ');
-  if (i === -1) return { title: full, subtitle: null };
-  return { title: full.slice(0, i), subtitle: full.slice(i + 2) };
-}
-
-/** Display name without the "(PE)" abbreviation parenthetical. */
-export const bareName = (title: string) => title.replace(/\s*\([^)]*\)\s*$/, '');
+import { splitTitle } from './titles';
+export { splitTitle, bareName } from './titles';
 
 // ----------------------------------------------------------------- entries --
 export type PolymerNarrative = CollectionEntry<'polymers'>;
@@ -74,18 +72,45 @@ export async function loadPolymers(): Promise<PolymerEntry[]> {
   return polymerCache;
 }
 
-/** Concept narratives (for browse/timeline views; concept detail pages are
- *  out of scope for these prototypes). */
-export async function loadConcepts(): Promise<CollectionEntry<'concepts'>[]> {
-  const concepts = await getCollection('concepts');
-  return concepts.sort((a, b) => a.data.year_of_origin - b.data.year_of_origin);
+export type ConceptNarrative = CollectionEntry<'concepts'>;
+export type ConceptData = CollectionEntry<'conceptData'>['data'];
+export interface ConceptEntry {
+  narrative: ConceptNarrative;
+  data: ConceptData;
 }
 
-/** One row of a browse view. Concepts are included (they exist on timelines
- *  and in catalogues) but concept DETAIL pages are out of prototype scope, so
- *  rows carry a `concept` flag the views render as a non-linked card. */
+let conceptCache: ConceptEntry[] | null = null;
+
+/** All concept entries (narrative + structured data joined by id), sorted by
+ *  year_of_origin. Same integrity contract as loadPolymers: every narrative
+ *  MUST have a conceptData file. */
+export async function loadConcepts(): Promise<ConceptEntry[]> {
+  if (conceptCache) return conceptCache;
+  const [narratives, dataEntries] = await Promise.all([
+    getCollection('concepts'),
+    getCollection('conceptData'),
+  ]);
+  const byId = new Map(dataEntries.map((d) => [d.data.id, d.data]));
+  conceptCache = narratives
+    .map((narrative) => {
+      const data = byId.get(narrative.data.id);
+      if (!data) throw new Error(`No conceptData file for narrative "${narrative.data.id}"`);
+      return { narrative, data };
+    })
+    .sort(
+      (a, b) =>
+        a.data.year_of_origin - b.data.year_of_origin || a.data.name.localeCompare(b.data.name)
+    );
+  return conceptCache;
+}
+
+/** One row of a browse view (catalogue/timeline). Polymers and concepts are
+ *  both first-class linked entries; `concept` drives the visual distinction
+ *  and the type filter. */
 export interface BrowseRow {
   id: string;
+  /** Canonical site path (type-prefixed per §9.1). */
+  path: string;
   title: string;
   subtitle: string | null;
   abbreviation: string[];
@@ -109,6 +134,7 @@ export async function browseRowsByEra(): Promise<{ era: Era; rows: BrowseRow[] }
   const rows: Omit<BrowseRow, 'index'>[] = [
     ...polymers.map((e) => ({
       id: e.narrative.data.id,
+      path: entryPath('polymer', e.narrative.data.id),
       ...splitTitle(e.narrative.data.name),
       abbreviation: e.narrative.data.abbreviation,
       year: e.narrative.data.year_of_origin,
@@ -118,13 +144,14 @@ export async function browseRowsByEra(): Promise<{ era: Era; rows: BrowseRow[] }
       families: e.data.chemical_family,
     })),
     ...concepts.map((c) => ({
-      id: c.data.id,
-      ...splitTitle(c.data.name),
-      abbreviation: c.data.abbreviation,
-      year: c.data.year_of_origin,
-      era: c.data.era,
+      id: c.narrative.data.id,
+      path: entryPath('concept', c.narrative.data.id),
+      ...splitTitle(c.narrative.data.name),
+      abbreviation: c.narrative.data.abbreviation,
+      year: c.narrative.data.year_of_origin,
+      era: c.narrative.data.era,
       concept: true,
-      tagline: c.data.tagline,
+      tagline: c.narrative.data.tagline,
       families: [],
     })),
   ];
@@ -137,13 +164,42 @@ export async function browseRowsByEra(): Promise<{ era: Era; rows: BrowseRow[] }
   return browseCache;
 }
 
-/** Chronological neighbours for the Chronicle direction's prev/next footer. */
+/** One stop on the site-wide chronological reading path. */
+export interface ChronoRef {
+  path: string;
+  title: string;
+  year: number;
+  era: string;
+}
+
+let chronoCache: (ChronoRef & { id: string })[] | null = null;
+
+/** Chronological prev/next across ALL entries — polymers and concepts share
+ *  one chain, matching the timeline (every page sits at its own year, §8). */
 export async function chronoNeighbours(id: string) {
-  const all = await loadPolymers();
-  const i = all.findIndex((e) => e.narrative.data.id === id);
+  if (!chronoCache) {
+    const [polymers, concepts] = await Promise.all([loadPolymers(), loadConcepts()]);
+    chronoCache = [
+      ...polymers.map((e) => ({
+        id: e.narrative.data.id,
+        path: entryPath('polymer', e.narrative.data.id),
+        title: splitTitle(e.narrative.data.name).title,
+        year: e.data.year_of_origin,
+        era: e.data.era,
+      })),
+      ...concepts.map((c) => ({
+        id: c.narrative.data.id,
+        path: entryPath('concept', c.narrative.data.id),
+        title: splitTitle(c.narrative.data.name).title,
+        year: c.data.year_of_origin,
+        era: c.data.era,
+      })),
+    ].sort((a, b) => a.year - b.year || a.title.localeCompare(b.title));
+  }
+  const i = chronoCache.findIndex((e) => e.id === id);
   return {
-    prev: i > 0 ? all[i - 1] : null,
-    next: i >= 0 && i < all.length - 1 ? all[i + 1] : null,
+    prev: i > 0 ? chronoCache[i - 1] : null,
+    next: i >= 0 && i < chronoCache.length - 1 ? chronoCache[i + 1] : null,
   };
 }
 
@@ -254,14 +310,17 @@ export const SECTIONS = [
   { num: '13', id: 'references', title: 'References' },
 ] as const;
 
+// Concept pages have their own, lighter section list (schema in
+// concept-data-schema.ts — not the locked §3.3 blocks).
+export const CONCEPT_SECTIONS = [
+  { num: '01', id: 'overview', title: 'Overview' },
+  { num: '02', id: 'equations', title: 'Key Equations' },
+  { num: '03', id: 'history', title: 'History' },
+  { num: '04', id: 'references', title: 'References' },
+] as const;
+
 // ------------------------------------------------------------ references.bib --
-export interface BibEntry {
-  key: string;
-  title: string;
-  publisher?: string;
-  url?: string;
-  note?: string;
-}
+export type { BibEntry } from './bib';
 
 /** Per-page numeric citations (owner decision, 2026-07-14): in-page marks are
  *  superscript [1], [2] … that anchor into the numbered References list. The
@@ -285,29 +344,7 @@ export function citationsFor(referenceKeys: string[]): PageCitations {
 
 let bibCache: Map<string, BibEntry> | null = null;
 
-/** Minimal BibTeX parse — enough to render honest citation text in the
- *  prototypes. The real build-time citation renderer (ACS style etc., §3.3
- *  item 13) is later infrastructure, not part of the design prototypes. */
 export function getBib(): Map<string, BibEntry> {
-  if (bibCache) return bibCache;
-  bibCache = new Map();
-  const entryRe = /@\w+\{([^,]+),([\s\S]*?)\n\}/g;
-  const fieldRe = /(\w+)\s*=\s*\{([^{}]*)\}/g;
-  let m: RegExpExecArray | null;
-  while ((m = entryRe.exec(bibRaw)) !== null) {
-    const key = m[1].trim();
-    const fields: Record<string, string> = {};
-    let f: RegExpExecArray | null;
-    while ((f = fieldRe.exec(m[2])) !== null) {
-      fields[f[1].toLowerCase()] = f[2].replace(/\\'e/g, 'é').replace(/\\/g, '').trim();
-    }
-    bibCache.set(key, {
-      key,
-      title: fields.title ?? key,
-      publisher: fields.howpublished ?? fields.publisher,
-      url: fields.url,
-      note: fields.note,
-    });
-  }
+  if (!bibCache) bibCache = parseBib(bibRaw);
   return bibCache;
 }

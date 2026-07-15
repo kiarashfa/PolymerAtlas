@@ -1,8 +1,8 @@
 ---
-// Flat polymer routes (locked URL scheme): /polyethylene/, /nylon/, …
+// Flat polymer routes (locked URL scheme §9.1): /polymers/polyethylene/, …
 // All rendering lives in the PolymerPage template.
-import PolymerPage from '../components/templates/PolymerPage.astro';
-import { loadPolymers, type PolymerEntry } from '../lib/content';
+import PolymerPage from '../../components/templates/PolymerPage.astro';
+import { loadPolymers, type PolymerEntry } from '../../lib/content';
 
 export async function getStaticPaths() {
   const entries = await loadPolymers();

@@ -1,0 +1,196 @@
+---
+// Full page template for one concept/theory entry (§7 "Edition"): same
+// chrome as PolymerPage (era strip → title-page hero → section rail →
+// narrative), but the data blocks follow the lighter concept schema —
+// Overview, Key Equations (KaTeX rendered at BUILD time, never client-side),
+// History, References.
+import { render } from 'astro:content';
+import katex from 'katex';
+import 'katex/dist/katex.min.css';
+import Base from '../../layouts/Base.astro';
+import Section from '../blocks/Section.astro';
+import FactRow from '../blocks/FactRow.astro';
+import DidYouKnow from '../blocks/DidYouKnow.astro';
+import Figure from '../blocks/Figure.astro';
+import ReferencesList from '../blocks/ReferencesList.astro';
+import ChronoNav from '../blocks/ChronoNav.astro';
+import {
+  chronoNeighbours,
+  citationsFor,
+  splitTitle,
+  eraShortName,
+  eraIndex,
+  eras,
+  href,
+  CONCEPT_SECTIONS,
+  type ConceptEntry,
+} from '../../lib/content';
+
+interface Props {
+  entry: ConceptEntry;
+}
+const { entry } = Astro.props;
+const { narrative, data } = entry;
+const { Content } = await render(narrative);
+const { title, subtitle } = splitTitle(narrative.data.name);
+const currentEra = eraIndex(data.era);
+const { prev, next } = await chronoNeighbours(narrative.data.id);
+const sec = Object.fromEntries(CONCEPT_SECTIONS.map((s) => [s.id, s]));
+const { numberFor, list: refList } = citationsFor(data.references);
+
+const equations = data.key_equations.map((eq) => ({
+  ...eq,
+  html: katex.renderToString(eq.latex, { throwOnError: true, displayMode: true }),
+  variablesRendered: eq.variables.map((v) => ({
+    ...v,
+    symbolHtml: katex.renderToString(v.symbol, { throwOnError: true }),
+  })),
+}));
+
+const description =
+  narrative.data.tagline ??
+  subtitle ??
+  `${title} — a foundational concept of polymer science, ${data.year_of_origin}.`;
+---
+
+<Base title={title} description={description}>
+  <article class={`era-c-${currentEra}`} data-pagefind-body data-pagefind-filter="type:concept">
+    <nav class="era-strip" aria-label="Eras" data-pagefind-ignore>
+      {
+        eras.map((era, i) => (
+          <a
+            class:list={[`era-c-${i}`, { 'is-current': i === currentEra }]}
+            href={href(`/timeline/#era-${i}`)}
+            title={era.name}
+          >
+            <span class="era-strip-label">{eraShortName(era.name)}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <header class="hero">
+      <p class="hero-eyebrow" data-pagefind-filter={`era:${eraShortName(data.era)}`}>
+        {data.era}
+      </p>
+      <div class="hero-year" data-pagefind-meta="year">{data.year_of_origin}</div>
+      <h1 class="hero-title" transition:name={`ed-${narrative.data.id}`}>{title}</h1>
+      {subtitle && <p class="hero-subtitle" data-pagefind-meta="subtitle">{subtitle}</p>}
+      <p class="hero-meta">
+        <span class="chip">concept</span>
+        {
+          narrative.data.key_figures.length > 0 && (
+            <>
+              <span class="sep">·</span>
+              <span>{narrative.data.key_figures.join(', ')}</span>
+            </>
+          )
+        }
+      </p>
+      <div class="hero-ornament" aria-hidden="true"></div>
+    </header>
+
+    <div class="detail-grid">
+      <nav class="rail" aria-label="Sections" data-pagefind-ignore>
+        <ul class="rail-list">
+          <li>
+            <a href="#narrative"><span class="rail-num">00</span> The Story</a>
+          </li>
+          {
+            CONCEPT_SECTIONS.map((s) => (
+              <li>
+                <a href={`#${s.id}`}>
+                  <span class="rail-num">{s.num}</span> {s.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="detail-main">
+        <div class="narrative" id="narrative" data-spy>
+          <Content components={{ DidYouKnow, Figure }} />
+        </div>
+
+        <div class="data-blocks">
+          <Section {...sec.overview}>
+            <p class="section-prose">{data.summary}</p>
+          </Section>
+
+          <Section {...sec.equations}>
+            {
+              equations.length ? (
+                <div class="eq-list">
+                  {equations.map((eq) => (
+                    <figure class="eq-item">
+                      <figcaption class="eq-name">
+                        {eq.name}
+                        {eq.source && numberFor.has(eq.source) && (
+                          <a
+                            class="cite"
+                            href={`#ref-${numberFor.get(eq.source)}`}
+                            aria-label={`Reference ${numberFor.get(eq.source)}`}
+                          >
+                            <sup>[{numberFor.get(eq.source)}]</sup>
+                          </a>
+                        )}
+                      </figcaption>
+                      <div class="eq-math" set:html={eq.html} />
+                      {eq.variablesRendered.length > 0 && (
+                        <dl class="eq-vars">
+                          {eq.variablesRendered.map((v) => (
+                            <div class="eq-var">
+                              <dt class="eq-var-symbol" set:html={v.symbolHtml} />
+                              <dd class="eq-var-meaning">
+                                {v.meaning}
+                                {v.unit && <span class="eq-var-unit"> [{v.unit}]</span>}
+                              </dd>
+                            </div>
+                          ))}
+                        </dl>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              ) : (
+                <p class="none">
+                  No governing equations recorded — this concept is treated qualitatively.
+                </p>
+              )
+            }
+          </Section>
+
+          <Section {...sec.history}>
+            <dl class="fact-table">
+              <FactRow label="Year of origin">{data.year_of_origin}</FactRow>
+              <FactRow label="Era">{data.era}</FactRow>
+              <FactRow label="Key figures">
+                {
+                  data.key_figures.length ? (
+                    data.key_figures.join(' · ')
+                  ) : (
+                    <span class="none">—</span>
+                  )
+                }
+              </FactRow>
+              {
+                data.historical_events_referenced.length > 0 && (
+                  <FactRow label="Events referenced">
+                    {data.historical_events_referenced.join(' · ')}
+                  </FactRow>
+                )
+              }
+            </dl>
+          </Section>
+
+          <Section {...sec.references}>
+            <ReferencesList refList={refList} />
+          </Section>
+        </div>
+
+        <ChronoNav prev={prev} next={next} />
+      </div>
+    </div>
+  </article>
+</Base>

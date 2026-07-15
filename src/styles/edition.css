@@ -398,6 +398,21 @@ code {
 .narrative p {
   margin: 0 0 1.1em;
 }
+/* §9.3 automatic cross-links — the only internal links in narrative prose.
+   Book-quiet: ink-colored text, era-colored underline that strengthens on
+   hover; never a loud web-blue. */
+.narrative a.autolink {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--era-color) 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.narrative a.autolink:hover {
+  color: var(--era-color);
+  text-decoration-color: var(--era-color);
+}
 .variant-gilt .narrative p {
   text-align: justify;
   hyphens: auto;
@@ -1017,9 +1032,7 @@ a.cat-row:hover {
 }
 .cat-row--concept {
   background: color-mix(in srgb, var(--paper-raised) 55%, var(--paper));
-}
-.cat-row--concept .cat-row-title {
-  color: var(--ink-soft);
+  border-style: dashed;
 }
 .cat-row.is-hidden {
   display: none;
@@ -1153,6 +1166,307 @@ a.tl-card:hover {
 }
 .tl-card--concept {
   border-style: dashed;
+}
+
+/* ------------------------------------------------------------ search (§9) ---
+   Custom overlay over Pagefind's JS API. Foil-accented (no single era owns
+   the whole archive), paper-raised panel, honest dev-mode empty state. */
+.search-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
   color: var(--ink-soft);
-  background: transparent;
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.search-open:hover {
+  border-color: var(--foil);
+  color: var(--foil);
+}
+.search-open span[aria-hidden] {
+  font-size: 1.1em;
+  line-height: 1;
+}
+.search-dialog {
+  border: none;
+  background: none;
+  padding: var(--space-4) var(--page-pad);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.search-dialog::backdrop {
+  background: color-mix(in srgb, var(--paper-deep) 55%, transparent);
+  backdrop-filter: blur(3px);
+}
+.search-panel {
+  max-width: 44rem;
+  margin: 0 auto;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 60px var(--shadow);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-height: 80vh;
+}
+.search-bar {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.search-bar input {
+  flex: 1;
+  font: inherit;
+  font-size: 1.1rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: 0.55rem 0.9rem;
+}
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--foil);
+}
+.search-close {
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: 0.35rem 0.55rem;
+  cursor: pointer;
+}
+.search-close:hover {
+  border-color: var(--foil);
+  color: var(--foil);
+}
+.search-filters {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.search-filters select {
+  font: inherit;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: 0.3rem 0.5rem;
+}
+.search-count {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: 0.6rem var(--space-2);
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease);
+}
+.search-result:hover {
+  border-color: var(--foil);
+}
+.search-result-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6em;
+}
+.search-result-title {
+  font-weight: 600;
+  color: var(--ink);
+}
+.search-result-year {
+  color: var(--foil);
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.search-result-sub {
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+}
+.search-result-excerpt {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.search-result-excerpt mark {
+  background: var(--wash);
+  color: var(--foil);
+  font-weight: 600;
+}
+.search-empty {
+  color: var(--ink-muted);
+  padding: var(--space-2);
+}
+@media (max-width: 720px) {
+  .search-open-label {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------- related entries ---
+   §9.3 computed "Related polymers" strip — between data blocks and the
+   chronological prev/next. Each card carries its own era's color. */
+.related {
+  margin-top: var(--space-4);
+}
+.related-head {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.14em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  margin: 0 0 var(--space-2);
+}
+.variant-atelier .related-head {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+.related-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: var(--space-2);
+}
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: var(--space-2);
+  text-decoration: none;
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
+}
+.related-card:hover {
+  border-color: color-mix(in srgb, var(--era-color) 55%, var(--rule));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+.related-year {
+  color: var(--era-color);
+  font-weight: 600;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 0.9rem;
+}
+.related-title {
+  font-weight: 600;
+  line-height: 1.3;
+}
+.related-families {
+  margin-top: auto;
+}
+
+/* ------------------------------------------------------ narrative figure ---
+   Structured image object (§3.3 Media) rendered inside a narrative. */
+.fig {
+  margin: var(--space-4) 0;
+  text-align: center;
+}
+.fig-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-small);
+  border: 1px solid var(--rule);
+}
+.fig-caption {
+  margin-top: var(--space-1);
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+.fig-attribution {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+
+/* ------------------------------------------------ concept key equations ---
+   ConceptPage's Key Equations card: KaTeX is rendered at build time; the
+   markup here only frames it (name + display math + variable legend). */
+.eq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.eq-item {
+  margin: 0;
+  padding: var(--space-2) var(--space-3);
+  background: var(--wash);
+  border-radius: var(--radius-small);
+}
+.eq-name {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.12em;
+  color: var(--era-color);
+}
+.variant-atelier .eq-name {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+.eq-math {
+  overflow-x: auto;
+}
+.eq-math .katex-display {
+  margin: var(--space-2) 0;
+}
+.eq-vars {
+  margin: var(--space-1) 0 0;
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-1);
+}
+.eq-var {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: var(--space-2);
+  padding: 0.3rem 0;
+}
+.eq-var dt {
+  text-align: right;
+}
+.eq-var dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+.eq-var-unit {
+  color: var(--ink-muted);
 }

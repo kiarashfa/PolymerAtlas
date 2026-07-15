@@ -1,0 +1,41 @@
+---
+// Chronological prev/next footer — one site-wide chain across polymers AND
+// concepts, each page at its own year (§8). Links carry the neighbour's era
+// color.
+import { eraIndex, type ChronoRef } from '../../lib/content';
+
+interface Props {
+  prev: ChronoRef | null;
+  next: ChronoRef | null;
+}
+const { prev, next } = Astro.props;
+---
+
+<nav class="chrono-nav" aria-label="Chronological neighbours" data-pagefind-ignore>
+  {
+    prev ? (
+      <a class={`chrono-link era-c-${eraIndex(prev.era)}`} href={prev.path}>
+        <span class="chrono-dir">← Earlier</span>
+        <div>
+          <span class="chrono-year">{prev.year}</span>
+          {prev.title}
+        </div>
+      </a>
+    ) : (
+      <span />
+    )
+  }
+  {
+    next ? (
+      <a class={`chrono-link chrono-link--next era-c-${eraIndex(next.era)}`} href={next.path}>
+        <span class="chrono-dir">Later →</span>
+        <div>
+          {next.title}
+          <span class="chrono-year">{next.year}</span>
+        </div>
+      </a>
+    ) : (
+      <span />
+    )
+  }
+</nav>

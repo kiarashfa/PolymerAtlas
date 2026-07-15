@@ -6,6 +6,7 @@
 import Section from './Section.astro';
 import PropRow from './PropRow.astro';
 import FactRow from './FactRow.astro';
+import ReferencesList from './ReferencesList.astro';
 import {
   describeProperty,
   describeRated,
@@ -74,7 +75,7 @@ const structureImagePending =
 ---
 
 <div class="data-blocks">
-  <p class="legend">
+  <p class="legend" data-pagefind-ignore>
     values with <a class="cite" href="#references"><sup>[n]</sup></a> cite the numbered
     references<span class="sep">·</span><em>estimates are flagged</em><span class="sep">·</span
     ><em>“not yet available” and “N/A” are honest states, not gaps</em>
@@ -85,7 +86,11 @@ const structureImagePending =
       <FactRow label="Abbreviation">
         {
           data.abbreviation.length ? (
-            data.abbreviation.map((a) => <span class="chip">{a}</span>)
+            data.abbreviation.map((a) => (
+              <span class="chip" data-pagefind-weight="7">
+                {a}
+              </span>
+            ))
           ) : (
             <span class="none">—</span>
           )
@@ -117,7 +122,14 @@ const structureImagePending =
       <FactRow label="Also known as">
         {
           data.aliases.length ? (
-            data.aliases.map((a) => <span class="chip">{a.name}</span>)
+            /* §9.3: aliases render here so Pagefind indexes every name
+               variant (PE80, PE-HD, …), boosted so alias hits rank the
+               entry itself first. */
+            data.aliases.map((a) => (
+              <span class="chip" data-pagefind-weight="7">
+                {a.name}
+              </span>
+            ))
           ) : (
             <span class="none">—</span>
           )
@@ -131,7 +143,11 @@ const structureImagePending =
       <FactRow label="Chemical family">
         {
           data.chemical_family.length ? (
-            data.chemical_family.map((f) => <span class="chip chip--family">{f}</span>)
+            data.chemical_family.map((f) => (
+              <span class="chip chip--family" data-pagefind-filter="family">
+                {f}
+              </span>
+            ))
           ) : (
             <span class="none">—</span>
           )
@@ -319,29 +335,6 @@ const structureImagePending =
   </Section>
 
   <Section {...sec.references}>
-    {
-      refList.length ? (
-        <ol class="ref-list">
-          {refList.map((ref) => (
-            <li class="ref-item" id={`ref-${ref.n}`}>
-              <span class="ref-n">[{ref.n}]</span>
-              <span class="ref-body">
-                <span class="ref-title">{ref.bib.title}</span>
-                {ref.bib.publisher && <span class="ref-pub">{ref.bib.publisher}</span>}
-                {ref.bib.note && <span class="ref-note">{ref.bib.note}</span>}
-                {ref.bib.url && (
-                  <a class="ref-url" href={ref.bib.url} rel="noopener">
-                    {ref.bib.url}
-                  </a>
-                )}
-                <span class="ref-key">[{ref.key}]</span>
-              </span>
-            </li>
-          ))}
-        </ol>
-      ) : (
-        <p class="none">No sources consulted yet for this entry.</p>
-      )
-    }
+    <ReferencesList refList={refList} />
   </Section>
 </div>

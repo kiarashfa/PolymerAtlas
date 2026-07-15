@@ -7,6 +7,9 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PolymerDataBlocks from '../blocks/PolymerDataBlocks.astro';
 import DidYouKnow from '../blocks/DidYouKnow.astro';
+import Figure from '../blocks/Figure.astro';
+import RelatedEntries from '../blocks/RelatedEntries.astro';
+import ChronoNav from '../blocks/ChronoNav.astro';
 import {
   chronoNeighbours,
   splitTitle,
@@ -36,8 +39,8 @@ const description =
 ---
 
 <Base title={title} description={description}>
-  <article class={`era-c-${currentEra}`}>
-    <nav class="era-strip" aria-label="Eras">
+  <article class={`era-c-${currentEra}`} data-pagefind-body data-pagefind-filter="type:polymer">
+    <nav class="era-strip" aria-label="Eras" data-pagefind-ignore>
       {
         eras.map((era, i) => (
           <a
@@ -52,10 +55,12 @@ const description =
     </nav>
 
     <header class="hero">
-      <p class="hero-eyebrow">{data.era}</p>
-      <div class="hero-year">{data.year_of_origin}</div>
+      <p class="hero-eyebrow" data-pagefind-filter={`era:${eraShortName(data.era)}`}>
+        {data.era}
+      </p>
+      <div class="hero-year" data-pagefind-meta="year">{data.year_of_origin}</div>
       <h1 class="hero-title" transition:name={`ed-${narrative.data.id}`}>{title}</h1>
-      {subtitle && <p class="hero-subtitle">{subtitle}</p>}
+      {subtitle && <p class="hero-subtitle" data-pagefind-meta="subtitle">{subtitle}</p>}
       <p class="hero-meta">
         {showTagline && (
           <>
@@ -77,7 +82,7 @@ const description =
     </header>
 
     <div class="detail-grid">
-      <nav class="rail" aria-label="Sections">
+      <nav class="rail" aria-label="Sections" data-pagefind-ignore>
         <ul class="rail-list">
           <li>
             <a href="#narrative"><span class="rail-num">00</span> The Story</a>
@@ -96,45 +101,14 @@ const description =
 
       <div class="detail-main">
         <div class="narrative" id="narrative" data-spy>
-          <Content components={{ DidYouKnow }} />
+          <Content components={{ DidYouKnow, Figure }} />
         </div>
 
         <PolymerDataBlocks data={data} />
 
-        <nav class="chrono-nav" aria-label="Chronological neighbours">
-          {
-            prev ? (
-              <a
-                class={`chrono-link era-c-${eraIndex(prev.data.era)}`}
-                href={href(`/${prev.narrative.data.id}/`)}
-              >
-                <span class="chrono-dir">← Earlier</span>
-                <div>
-                  <span class="chrono-year">{prev.data.year_of_origin}</span>
-                  {splitTitle(prev.narrative.data.name).title}
-                </div>
-              </a>
-            ) : (
-              <span />
-            )
-          }
-          {
-            next ? (
-              <a
-                class={`chrono-link chrono-link--next era-c-${eraIndex(next.data.era)}`}
-                href={href(`/${next.narrative.data.id}/`)}
-              >
-                <span class="chrono-dir">Later →</span>
-                <div>
-                  {splitTitle(next.narrative.data.name).title}
-                  <span class="chrono-year">{next.data.year_of_origin}</span>
-                </div>
-              </a>
-            ) : (
-              <span />
-            )
-          }
-        </nav>
+        <RelatedEntries id={narrative.data.id} />
+
+        <ChronoNav prev={prev} next={next} />
       </div>
     </div>
   </article>

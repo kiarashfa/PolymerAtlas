@@ -1,0 +1,21 @@
+---
+// Flat concept routes (locked URL scheme §9.1): /concepts/the-carothers-equation/, …
+// All rendering lives in the ConceptPage template.
+import ConceptPage from '../../components/templates/ConceptPage.astro';
+import { loadConcepts, type ConceptEntry } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const entries = await loadConcepts();
+  return entries.map((entry) => ({
+    params: { slug: entry.narrative.data.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: ConceptEntry;
+}
+const { entry } = Astro.props;
+---
+
+<ConceptPage entry={entry} />
