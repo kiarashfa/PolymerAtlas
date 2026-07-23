@@ -103,6 +103,43 @@ function buildDictionary(root: string, base: string): Dictionary {
     }
   }
 
+  // Person and family pages claim SOFTLY — a term already owned by a
+  // polymer/concept stays with it (never trip the ambiguity drop, which
+  // would delete the established link). Multi-word phrases sorted
+  // longest-first in the regex keep e.g. "Carothers equation" (concept)
+  // winning over bare "Carothers" (person) at the same position.
+  const claimSoft = (term: string, target: Target) => {
+    const t = term.trim();
+    if (t.length < 2) return;
+    const caseSensitive = !/[a-z]/.test(t);
+    const map = caseSensitive ? exact : loose;
+    const key = caseSensitive ? t : t.toLowerCase();
+    if (!map.has(key)) claim(t, target);
+  };
+
+  for (const id of contentIds(join(root, 'src/content/personData'), '.json')) {
+    const data = JSON.parse(
+      readFileSync(join(root, 'src/content/personData', `${id}.json`), 'utf-8')
+    );
+    const target: Target = { id, path: `${base}/people/${id}/` };
+    for (const person of data.people ?? []) {
+      claimSoft(person.full_name, target);
+      claimSoft(person.full_name.split(/\s+/).at(-1) ?? '', target); // surname
+    }
+    for (const alias of data.aliases ?? [])
+      if (alias.autolinkable !== false) claimSoft(alias.name, target);
+  }
+
+  for (const id of contentIds(join(root, 'src/content/familyData'), '.json')) {
+    const data = JSON.parse(
+      readFileSync(join(root, 'src/content/familyData', `${id}.json`), 'utf-8')
+    );
+    const target: Target = { id, path: `${base}/families/${id}/` };
+    claimSoft(bareName(splitTitle(data.name).title), target);
+    for (const alias of data.aliases ?? [])
+      if (alias.autolinkable !== false) claimSoft(alias.name, target);
+  }
+
   return {
     exact,
     loose,
@@ -210,7 +247,7 @@ export default function rehypeAutolink(options: AutolinkOptions) {
     dict ??= buildDictionary(options.root ?? process.cwd(), options.base.replace(/\/$/, ''));
     const p = file.path ?? '';
     // Only narrative content files get autolinks (they are the only MDX).
-    if (!/[\\/]src[\\/]content[\\/](polymers|concepts)[\\/]/.test(p)) return;
+    if (!/[\\/]src[\\/]content[\\/](polymers|concepts|people|families)[\\/]/.test(p)) return;
     const selfId = basename(p, extname(p));
     walk(tree, false, dict, selfId, new Set());
   };

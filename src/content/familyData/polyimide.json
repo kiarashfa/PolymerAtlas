@@ -1,0 +1,11 @@
+{
+  "id": "polyimide",
+  "slug": "polyimide",
+  "name": "The Polyimides: The Plastics That Laugh at Fire",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["polyimide"] },
+  "aliases": [
+    { "name": "polyimides", "autolinkable": true }
+  ],
+  "references": []
+}

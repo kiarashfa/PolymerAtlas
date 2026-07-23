@@ -1,0 +1,12 @@
+{
+  "id": "conducting-polymer",
+  "slug": "conducting-polymer",
+  "name": "The Conducting Polymers: Plastics That Carry a Current",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["conducting-polymer"] },
+  "aliases": [
+    { "name": "conducting polymers", "autolinkable": true },
+    { "name": "conductive polymers", "autolinkable": true }
+  ],
+  "references": []
+}

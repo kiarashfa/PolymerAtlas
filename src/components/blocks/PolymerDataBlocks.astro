@@ -11,6 +11,8 @@ import {
   describeProperty,
   describeRated,
   citationsFor,
+  familyPathsByTag,
+  personPathsByName,
   SECTIONS,
   type PolymerData,
 } from '../../lib/content';
@@ -22,6 +24,9 @@ const { data } = Astro.props;
 
 const sec = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 const { numberFor, list: refList } = citationsFor(data.references);
+// Tags with a compilation page become links; names with a person page too.
+const familyPage = await familyPathsByTag();
+const personPage = await personPathsByName();
 
 const physical = [
   describeProperty('Density', data.physical.density),
@@ -142,11 +147,17 @@ const structureImagePending = 'Structure render pending — drawn in a future up
       <FactRow label="Chemical family">
         {
           data.chemical_family.length ? (
-            data.chemical_family.map((f) => (
-              <span class="chip chip--family" data-pagefind-filter="family">
-                {f}
-              </span>
-            ))
+            data.chemical_family.map((f) =>
+              familyPage.has(f) ? (
+                <a class="chip chip--family" data-pagefind-filter="family" href={familyPage.get(f)}>
+                  {f}
+                </a>
+              ) : (
+                <span class="chip chip--family" data-pagefind-filter="family">
+                  {f}
+                </span>
+              )
+            )
           ) : (
             <span class="none">—</span>
           )
@@ -156,7 +167,15 @@ const structureImagePending = 'Structure render pending — drawn in a future up
       <FactRow label="Polymerization mechanism">
         {
           data.polymerization_mechanism.length ? (
-            data.polymerization_mechanism.map((mch) => <span class="chip">{mch}</span>)
+            data.polymerization_mechanism.map((mch) =>
+              familyPage.has(mch) ? (
+                <a class="chip" href={familyPage.get(mch)}>
+                  {mch}
+                </a>
+              ) : (
+                <span class="chip">{mch}</span>
+              )
+            )
           ) : (
             <span class="none">—</span>
           )
@@ -184,7 +203,24 @@ const structureImagePending = 'Structure render pending — drawn in a future up
       <FactRow label="Year of origin">{data.year_of_origin}</FactRow>
       <FactRow label="Era">{data.era}</FactRow>
       <FactRow label="Key figures">
-        {data.key_figures.length ? data.key_figures.join(' · ') : <span class="none">—</span>}
+        {
+          data.key_figures.length ? (
+            data.key_figures.map((fig, i) => (
+              <>
+                {i > 0 && <span class="sep"> · </span>}
+                {personPage.has(fig) ? (
+                  <a class="figure-link" href={personPage.get(fig)}>
+                    {fig}
+                  </a>
+                ) : (
+                  fig
+                )}
+              </>
+            ))
+          ) : (
+            <span class="none">—</span>
+          )
+        }
       </FactRow>
       {
         data.historical_events_referenced.length > 0 && (

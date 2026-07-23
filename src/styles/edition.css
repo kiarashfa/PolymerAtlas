@@ -461,6 +461,11 @@ code {
   vertical-align: 0.5em;
   margin: 0 0.5em;
 }
+/* Family pages show a span ("1839 → 1963"), not a single year — smaller,
+   or the arrow form outgrows the title. */
+.hero-year--span {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
 .hero-title {
   font-size: clamp(2.1rem, 5vw, 3.4rem);
   font-weight: 500;
@@ -930,6 +935,30 @@ a.cite:hover sup {
   color: var(--era-color);
   background: color-mix(in srgb, var(--era-color) 6%, transparent);
 }
+/* Chips that are links (family/mechanism chips pointing at their
+   compilation page) keep the chip look; hover deepens the tint. */
+a.chip {
+  text-decoration: none;
+  transition:
+    border-color 0.2s var(--ease),
+    background 0.2s var(--ease);
+}
+a.chip:hover {
+  border-color: var(--era-color);
+  background: color-mix(in srgb, var(--era-color) 14%, transparent);
+}
+/* Key-figure names that have a page in the Atlas (hero meta line and the
+   History block) — quiet era-colored underline, like narrative autolinks. */
+a.figure-link {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--era-color) 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s var(--ease);
+}
+a.figure-link:hover {
+  text-decoration-color: var(--era-color);
+}
 .fact-note {
   color: var(--ink-muted);
   font-style: italic;
@@ -1226,6 +1255,51 @@ a.cat-row:hover {
 .cat-row--concept {
   background: color-mix(in srgb, var(--paper-raised) 55%, var(--paper));
   border-style: dashed;
+}
+/* Member/mention lists embedded inside a section card (family pages,
+   person pages) reuse the catalogue-row look minus the page-level frame. */
+.cat-rows--embed {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+/* /families/ index groups: hairline-flanked labels, one group per kind. */
+.fam-group {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 var(--page-pad);
+}
+.fam-group-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  font-size: 1.05rem;
+  color: var(--ink-muted);
+  margin: var(--space-4) 0 var(--space-2);
+}
+.fam-group-title::before,
+.fam-group-title::after {
+  content: '';
+  height: 1px;
+  background: var(--rule-strong);
+  flex: 1;
+}
+/* Biography sub-blocks on person pages (joint pages hold several). */
+.bio-person + .bio-person {
+  margin-top: var(--space-3);
+}
+.bio-name {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.12em;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--era-color);
+  margin: 0 0 var(--space-1);
 }
 .cat-row.is-hidden {
   display: none;
@@ -1834,8 +1908,8 @@ a.tl-card:hover {
 
 /* ----------------------------------------------------------------- search ---
    Custom UI over Pagefind's JS API. A header dropdown sharing the
-   EditionMenu's panel anatomy (2026-07-22, replaced the modal <dialog>):
-   same paper, hairlines, unfold + stagger — one coherent header language.
+   EditionMenu's panel anatomy: same paper, hairlines, unfold + stagger —
+   one coherent header language.
    Foil-accented (no single era owns the whole archive); honest dev-mode
    empty state. */
 .search-panel {

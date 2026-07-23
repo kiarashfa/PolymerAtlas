@@ -75,7 +75,7 @@
       "value": null,
       "unit": "g/cm³",
       "status": "placeholder",
-      "conditions": "Multiple tertiary sources suggest 1.35-1.49 g/cm³ for gum arabic, but no single directly-read source with methodology was found this session -- see handoff.md."
+      "conditions": "Tertiary sources suggest roughly 1.35-1.49 g/cm³ for gum arabic; no primary measurement with stated methodology has been confirmed."
     },
     "melt_flow_index": {
       "value": null,

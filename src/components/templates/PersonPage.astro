@@ -1,0 +1,181 @@
+---
+// Full page template for one person entry ("Edition" design): the same
+// chrome as the other detail pages (era strip → title-page hero → section
+// rail → narrative), anchored to the figure's signature year. Data blocks:
+// Biography (one sub-block per person — the schema is a people[] array, so
+// joint pages like Ziegler & Natta are first-class), Milestones, In the
+// Atlas (auto-generated list of every entry naming them), References.
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Section from '../blocks/Section.astro';
+import FactRow from '../blocks/FactRow.astro';
+import DidYouKnow from '../blocks/DidYouKnow.astro';
+import Figure from '../blocks/Figure.astro';
+import ReferencesList from '../blocks/ReferencesList.astro';
+import {
+  citationsFor,
+  entriesFeaturing,
+  splitTitle,
+  eraShortName,
+  eraIndex,
+  eras,
+  href,
+  PERSON_SECTIONS,
+  type PersonEntry,
+} from '../../lib/content';
+
+interface Props {
+  entry: PersonEntry;
+}
+const { entry } = Astro.props;
+const { narrative, data } = entry;
+const { Content } = await render(narrative);
+const { title, subtitle } = splitTitle(narrative.data.name);
+const currentEra = eraIndex(data.era);
+const sec = Object.fromEntries(PERSON_SECTIONS.map((s) => [s.id, s]));
+const { list: refList } = citationsFor(data.references);
+const inAtlas = await entriesFeaturing(data.people.map((p) => p.full_name));
+const lifespans = data.people.map((p) => `${p.born.year}–${p.died.year}`).join(' · ');
+
+const description =
+  narrative.data.tagline ??
+  subtitle ??
+  `${title} — a pioneer of polymer science. Life, milestones, and their entries in the Atlas.`;
+---
+
+<Base title={title} description={description}>
+  <article class={`era-c-${currentEra}`} data-pagefind-body data-pagefind-filter="type:person">
+    <nav class="era-strip" aria-label="Eras" data-pagefind-ignore>
+      {
+        eras.map((era, i) => (
+          <a
+            class:list={[`era-c-${i}`, { 'is-current': i === currentEra }]}
+            href={href(`/timeline/#era-${i}`)}
+            title={era.name}
+          >
+            <span class="era-strip-label">{eraShortName(era.name)}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <header class="hero">
+      <p class="hero-eyebrow" data-pagefind-filter={`era:${eraShortName(data.era)}`}>
+        {data.era}
+      </p>
+      <div class="hero-year" data-pagefind-meta="year">{data.year_of_origin}</div>
+      <h1 class="hero-title" transition:name={`ed-${narrative.data.id}`}>{title}</h1>
+      {subtitle && <p class="hero-subtitle" data-pagefind-meta="subtitle">{subtitle}</p>}
+      <p class="hero-meta">
+        <span class="chip">pioneer</span>
+        <span class="sep">·</span>
+        <span>{lifespans}</span>
+      </p>
+      <div class="hero-ornament" aria-hidden="true"></div>
+    </header>
+
+    <div class="detail-grid">
+      <nav class="rail" aria-label="Sections" data-pagefind-ignore>
+        <ul class="rail-list">
+          <li>
+            <a href="#narrative"><span class="rail-num">00</span> The Story</a>
+          </li>
+          {
+            PERSON_SECTIONS.map((s) => (
+              <li>
+                <a href={`#${s.id}`}>
+                  <span class="rail-num">{s.num}</span> {s.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="detail-main">
+        <div class="narrative" id="narrative" data-spy>
+          <Content components={{ DidYouKnow, Figure }} />
+        </div>
+
+        <div class="data-blocks">
+          <Section {...sec.biography}>
+            {
+              data.people.map((person) => (
+                <div class="bio-person">
+                  {data.people.length > 1 && <h3 class="bio-name">{person.full_name}</h3>}
+                  <dl class="fact-table">
+                    <FactRow label="Born">
+                      {person.born.year}, {person.born.place}
+                    </FactRow>
+                    <FactRow label="Died">
+                      {person.died.year}, {person.died.place}
+                    </FactRow>
+                    <FactRow label="Nationality">{person.nationality}</FactRow>
+                    {person.institutions.length > 0 && (
+                      <FactRow label="Career">{person.institutions.join(' · ')}</FactRow>
+                    )}
+                    {person.nobel && (
+                      <FactRow label="Nobel Prize">
+                        {person.nobel.year} — <em>“{person.nobel.citation}”</em>
+                      </FactRow>
+                    )}
+                    <FactRow label="Wikipedia">
+                      <a class="ext-link" href={person.wikipedia_url} rel="noopener">
+                        {person.full_name}
+                        <span class="ext-mark" aria-hidden="true">↗</span>
+                      </a>
+                    </FactRow>
+                  </dl>
+                </div>
+              ))
+            }
+          </Section>
+
+          <Section {...sec.milestones}>
+            {
+              data.milestones.length ? (
+                <dl class="fact-table">
+                  {data.milestones.map((m) => (
+                    <FactRow label={String(m.year)}>{m.event}</FactRow>
+                  ))}
+                </dl>
+              ) : (
+                <p class="none">not yet available</p>
+              )
+            }
+          </Section>
+
+          <Section {...sec.atlas}>
+            {
+              inAtlas.length ? (
+                <div class="cat-rows cat-rows--embed" data-pagefind-ignore>
+                  {inAtlas.map((row) => (
+                    <a class={`cat-row era-c-${eraIndex(row.era)}`} href={row.path}>
+                      <span class="cat-row-year">
+                        <b>{row.year}</b>
+                        <span class="type-badge">{row.concept ? 'concept' : 'polymer'}</span>
+                      </span>
+                      <span class="cat-row-main">
+                        <span class="cat-row-title">{row.title}</span>
+                        {row.subtitle && <span class="cat-row-sub">{row.subtitle}</span>}
+                      </span>
+                      <span class="cat-row-meta">
+                        <span class="cat-row-era">{eraShortName(row.era)}</span>
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <p class="none">no entries reference this figure yet</p>
+              )
+            }
+          </Section>
+
+          <Section {...sec.references}>
+            <ReferencesList refList={refList} />
+          </Section>
+        </div>
+      </div>
+    </div>
+  </article>
+</Base>

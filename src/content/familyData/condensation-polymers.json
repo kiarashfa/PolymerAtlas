@@ -1,0 +1,16 @@
+{
+  "id": "condensation-polymers",
+  "slug": "condensation-polymers",
+  "name": "Condensation Polymers: Built Slowly, Two Ends at a Time",
+  "kind": "polymerization-mechanism",
+  "membership": {
+    "axis": "polymerization_mechanism",
+    "tags": ["step-growth-condensation"]
+  },
+  "aliases": [
+    { "name": "condensation polymers", "autolinkable": true },
+    { "name": "step-growth polymers", "autolinkable": true },
+    { "name": "step-growth polymerization", "autolinkable": true }
+  ],
+  "references": []
+}

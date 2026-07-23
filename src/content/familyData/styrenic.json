@@ -1,0 +1,12 @@
+{
+  "id": "styrenic",
+  "slug": "styrenic",
+  "name": "The Styrenics: The Family with a Benzene Ring on Its Shoulder",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["styrenic"] },
+  "aliases": [
+    { "name": "styrenics", "autolinkable": true },
+    { "name": "styrenic polymers", "autolinkable": true }
+  ],
+  "references": []
+}

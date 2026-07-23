@@ -15,7 +15,7 @@ interface Props {
   title: string;
   description: string;
   /** Marks the matching header nav link with aria-current. */
-  current?: 'catalogue' | 'timeline' | 'constellation';
+  current?: 'catalogue' | 'timeline' | 'constellation' | 'families';
 }
 const { title, description, current } = Astro.props;
 const isHome = title === 'Atlas of Polymers';
@@ -66,6 +66,10 @@ const isHome = title === 'Atlas of Polymers';
           aria-current={current === 'constellation' ? 'page' : undefined}
         >
           Constellation
+        </a>
+        <span class="nav-sep" aria-hidden="true">·</span>
+        <a href={href('/families/')} aria-current={current === 'families' ? 'page' : undefined}>
+          Families
         </a>
       </nav>
       <div class="head-tools">

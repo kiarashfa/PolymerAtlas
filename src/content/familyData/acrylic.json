@@ -1,0 +1,12 @@
+{
+  "id": "acrylic",
+  "slug": "acrylic",
+  "name": "The Acrylics: Glass That Won't Break and Paint That Won't Yellow",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["acrylic"] },
+  "aliases": [
+    { "name": "acrylics", "autolinkable": true },
+    { "name": "acrylic polymers", "autolinkable": true }
+  ],
+  "references": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "thermoplastic-elastomer",
+  "slug": "thermoplastic-elastomer",
+  "name": "The Thermoplastic Elastomers: Rubber You Can Melt and Remould",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["thermoplastic-elastomer"] },
+  "aliases": [
+    { "name": "thermoplastic elastomers", "autolinkable": false }
+  ],
+  "references": []
+}

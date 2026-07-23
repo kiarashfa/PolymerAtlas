@@ -1,0 +1,14 @@
+{
+  "id": "coordination-polymerization",
+  "slug": "coordination-polymerization",
+  "name": "Coordination Polymerization: The Catalyst That Choreographs the Chain",
+  "kind": "polymerization-mechanism",
+  "membership": {
+    "axis": "polymerization_mechanism",
+    "tags": ["coordination"]
+  },
+  "aliases": [
+    { "name": "coordination polymerization", "autolinkable": true }
+  ],
+  "references": []
+}

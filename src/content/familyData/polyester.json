@@ -1,0 +1,12 @@
+{
+  "id": "polyester",
+  "slug": "polyester",
+  "name": "The Polyesters: A Dynasty Written in Ester Bonds",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["polyester"] },
+  "aliases": [
+    { "name": "polyesters", "autolinkable": true },
+    { "name": "polyester family", "autolinkable": true }
+  ],
+  "references": []
+}

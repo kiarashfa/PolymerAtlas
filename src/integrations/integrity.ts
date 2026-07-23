@@ -36,7 +36,10 @@ function checkPair(
   root: string,
   narrativeDir: string,
   dataDir: string,
-  errors: string[]
+  errors: string[],
+  /** Compilation pages have no year/era of their own (a family spans the
+   *  whole timeline) — pass false to skip the chronology agreement checks. */
+  dated = true
 ): void {
   const nIds = ids(join(root, narrativeDir), '.mdx');
   const dIds = ids(join(root, dataDir), '.json');
@@ -49,10 +52,11 @@ function checkPair(
     const fm = frontmatter(join(root, narrativeDir, `${id}.mdx`));
     if (fm.id !== id)
       errors.push(`${narrativeDir}/${id}.mdx frontmatter id "${fm.id}" ≠ filename`);
-    if (!fm.era) errors.push(`${narrativeDir}/${id}.mdx has no era`);
+    if (dated && !fm.era) errors.push(`${narrativeDir}/${id}.mdx has no era`);
     if (!dIds.includes(id)) continue;
     const data = JSON.parse(readFileSync(join(root, dataDir, `${id}.json`), 'utf-8'));
     if (data.id !== id) errors.push(`${dataDir}/${id}.json id "${data.id}" ≠ filename`);
+    if (!dated) continue;
     if (fm.era && data.era !== fm.era)
       errors.push(`${id}: era differs between narrative ("${fm.era}") and data ("${data.era}")`);
     if (fm.year_of_origin && data.year_of_origin !== Number(fm.year_of_origin))
@@ -105,8 +109,12 @@ export default function integrity(): AstroIntegration {
         const errors: string[] = [];
         checkPair(root, 'src/content/polymers', 'src/content/polymerData', errors);
         checkPair(root, 'src/content/concepts', 'src/content/conceptData', errors);
+        checkPair(root, 'src/content/people', 'src/content/personData', errors);
+        checkPair(root, 'src/content/families', 'src/content/familyData', errors, false);
         checkCitations(root, 'src/content/polymerData', errors);
         checkCitations(root, 'src/content/conceptData', errors);
+        checkCitations(root, 'src/content/personData', errors);
+        checkCitations(root, 'src/content/familyData', errors);
         checkBibComplete(root, errors);
         if (errors.length) {
           throw new Error(

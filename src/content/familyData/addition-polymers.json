@@ -1,0 +1,16 @@
+{
+  "id": "addition-polymers",
+  "slug": "addition-polymers",
+  "name": "Addition Polymers: Chains That Grow One Grab at a Time",
+  "kind": "polymerization-mechanism",
+  "membership": {
+    "axis": "polymerization_mechanism",
+    "tags": ["free-radical", "cationic", "anionic", "coordination"]
+  },
+  "aliases": [
+    { "name": "addition polymers", "autolinkable": true },
+    { "name": "chain-growth polymers", "autolinkable": true },
+    { "name": "chain-growth polymerization", "autolinkable": true }
+  ],
+  "references": []
+}

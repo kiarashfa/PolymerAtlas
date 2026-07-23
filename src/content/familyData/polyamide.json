@@ -1,0 +1,12 @@
+{
+  "id": "polyamide",
+  "slug": "polyamide",
+  "name": "The Polyamides: The Chains That Hold Hands",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["polyamide"] },
+  "aliases": [
+    { "name": "polyamides", "autolinkable": true },
+    { "name": "polyamide family", "autolinkable": true }
+  ],
+  "references": []
+}

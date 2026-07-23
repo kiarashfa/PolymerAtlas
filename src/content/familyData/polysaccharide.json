@@ -1,0 +1,11 @@
+{
+  "id": "polysaccharide",
+  "slug": "polysaccharide",
+  "name": "The Polysaccharides: Nature's Oldest Polymers",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["polysaccharide"] },
+  "aliases": [
+    { "name": "polysaccharides", "autolinkable": true }
+  ],
+  "references": []
+}

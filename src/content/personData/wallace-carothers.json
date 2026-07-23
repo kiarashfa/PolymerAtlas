@@ -1,0 +1,43 @@
+{
+  "id": "wallace-carothers",
+  "slug": "wallace-carothers",
+  "name": "Wallace Carothers: The Architect of the First Synthetic Fibers",
+  "year_of_origin": 1935,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "people": [
+    {
+      "full_name": "Wallace Carothers",
+      "born": { "year": 1896, "place": "Burlington, Iowa, United States" },
+      "died": { "year": 1937, "place": "Philadelphia, Pennsylvania, United States" },
+      "nationality": "American",
+      "institutions": [
+        "Tarkio College (BS 1920)",
+        "University of Illinois (MA 1921, PhD 1924)",
+        "Harvard University (1926–1928)",
+        "DuPont Experimental Station, Wilmington (1928–1937)"
+      ],
+      "nobel": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wallace_Carothers"
+    }
+  ],
+  "milestones": [
+    { "year": 1924, "event": "PhD at Illinois under Roger Adams" },
+    { "year": 1928, "event": "Joins DuPont (6 February) to lead fundamental organic research at \"Purity Hall\"" },
+    { "year": 1930, "event": "Neoprene: Arnold Collins isolates chloroprene under his direction (April); Julian Hill discovers cold drawing of polyesters" },
+    { "year": 1935, "event": "First nylon 6,6 synthesized under his direction by Gerard Berchet (28 February)" },
+    { "year": 1936, "event": "First industrial organic chemist elected to the National Academy of Sciences; the Carothers equation formalizes step-growth polymerization" },
+    { "year": 1937, "event": "Dies in Philadelphia (29 April); his daughter Jane is born that November" },
+    { "year": 1938, "event": "DuPont announces nylon to the public (27 October), sixteen months after his death" },
+    { "year": 1940, "event": "\"Nylon Day\" (15 May): stockings go on sale nationwide — 64 million pairs sell in the first year" }
+  ],
+  "aliases": [],
+  "historical_events_referenced": [
+    "First demonstration of radar (1935)",
+    "Discovery of Pluto (1930)",
+    "Introduction of Monopoly (1935)",
+    "Social Security Act (1935)",
+    "New York World's Fair (1939)"
+  ],
+  "historical_images": [],
+  "references": ["wiki-wallace-carothers", "wiki-nylon"]
+}

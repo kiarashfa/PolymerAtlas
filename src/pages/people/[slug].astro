@@ -1,0 +1,21 @@
+---
+// Flat person routes: /people/hermann-staudinger/, … All rendering lives
+// in the PersonPage template.
+import PersonPage from '../../components/templates/PersonPage.astro';
+import { loadPeople, type PersonEntry } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const entries = await loadPeople();
+  return entries.map((entry) => ({
+    params: { slug: entry.narrative.data.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: PersonEntry;
+}
+const { entry } = Astro.props;
+---
+
+<PersonPage entry={entry} />

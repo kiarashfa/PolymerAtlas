@@ -1,0 +1,12 @@
+{
+  "id": "polyolefin",
+  "slug": "polyolefin",
+  "name": "The Polyolefins: An Empire Built from Nothing but Carbon and Hydrogen",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["polyolefin"] },
+  "aliases": [
+    { "name": "polyolefins", "autolinkable": true },
+    { "name": "polyolefin family", "autolinkable": true }
+  ],
+  "references": []
+}

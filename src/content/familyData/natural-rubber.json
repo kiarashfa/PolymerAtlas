@@ -1,0 +1,11 @@
+{
+  "id": "natural-rubber",
+  "slug": "natural-rubber",
+  "name": "Natural Rubber & Its Kin: The Tree That Bounced",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["natural-rubber"] },
+  "aliases": [
+    { "name": "natural rubber family", "autolinkable": false }
+  ],
+  "references": []
+}

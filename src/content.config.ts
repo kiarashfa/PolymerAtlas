@@ -4,6 +4,8 @@ import { z } from 'astro/zod';
 import erasData from './data/taxonomy/eras.json';
 import { polymerDataSchema } from './content/polymer-data-schema';
 import { conceptDataSchema } from './content/concept-data-schema';
+import { personDataSchema } from './content/person-data-schema';
+import { familyDataSchema } from './content/family-data-schema';
 
 // Content Layer API (Astro 6+): explicit glob loaders replace the legacy
 // `type: 'content' | 'data'` collections. Files stay where they always
@@ -39,6 +41,38 @@ const concepts = defineCollection({
   schema: narrativeSchema,
 });
 
+// Person pages: major historical figures only (a small, closed set). The
+// narrative is anchored to a signature year so the page wears an era's
+// colors like every other content page.
+const personNarrativeSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  page_type: z.literal('person'),
+  year_of_origin: z.number(),
+  era: z.enum(eraNames),
+  tagline: z.string().nullable().default(null),
+  narrative_author: z.enum(['owner-authored', 'claude-authored']),
+});
+const people = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/people' }),
+  schema: personNarrativeSchema,
+});
+
+// Compilation/family pages: a hand-written intro + an auto-generated member
+// list driven by classification tags. No single year/era — a family spans
+// the whole timeline; its chrome era is derived from its earliest member.
+const familyNarrativeSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  page_type: z.literal('compilation'),
+  tagline: z.string().nullable().default(null),
+  narrative_author: z.enum(['owner-authored', 'claude-authored']),
+});
+const families = defineCollection({
+  loader: glob({ pattern: '**/*.mdx', base: './src/content/families' }),
+  schema: familyNarrativeSchema,
+});
+
 // Structured data files, keyed by the same id as the narrative collection
 // above. polymerData follows the full 13-block polymer schema; conceptData
 // is a lighter schema (equations/summary/history) for theory pages.
@@ -50,5 +84,22 @@ const conceptData = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/conceptData' }),
   schema: conceptDataSchema,
 });
+const personData = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/personData' }),
+  schema: personDataSchema,
+});
+const familyData = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/familyData' }),
+  schema: familyDataSchema,
+});
 
-export const collections = { polymers, concepts, polymerData, conceptData };
+export const collections = {
+  polymers,
+  concepts,
+  polymerData,
+  conceptData,
+  people,
+  personData,
+  families,
+  familyData,
+};

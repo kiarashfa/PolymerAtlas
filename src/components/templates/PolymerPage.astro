@@ -12,6 +12,7 @@ import RelatedEntries from '../blocks/RelatedEntries.astro';
 import ChronoNav from '../blocks/ChronoNav.astro';
 import {
   chronoNeighbours,
+  personPathsByName,
   splitTitle,
   eraShortName,
   eraIndex,
@@ -32,6 +33,7 @@ const currentEra = eraIndex(data.era);
 const { prev, next } = await chronoNeighbours(narrative.data.id);
 const showTagline =
   narrative.data.tagline && narrative.data.tagline !== subtitle ? narrative.data.tagline : null;
+const personPage = await personPathsByName();
 const description =
   narrative.data.tagline ??
   subtitle ??
@@ -74,7 +76,20 @@ const description =
         {narrative.data.key_figures.length > 0 && (
           <>
             <span class="sep">·</span>
-            <span>{narrative.data.key_figures.join(', ')}</span>
+            <span>
+              {narrative.data.key_figures.map((fig, i) => (
+                <>
+                  {i > 0 && ', '}
+                  {personPage.has(fig) ? (
+                    <a class="figure-link" href={personPage.get(fig)}>
+                      {fig}
+                    </a>
+                  ) : (
+                    fig
+                  )}
+                </>
+              ))}
+            </span>
           </>
         )}
       </p>

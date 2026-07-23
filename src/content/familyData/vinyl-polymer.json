@@ -1,0 +1,11 @@
+{
+  "id": "vinyl-polymer",
+  "slug": "vinyl-polymer",
+  "name": "The Vinyl Polymers: One Double Bond, a Thousand Different Lives",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["vinyl-polymer"] },
+  "aliases": [
+    { "name": "vinyl polymers", "autolinkable": true }
+  ],
+  "references": []
+}

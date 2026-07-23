@@ -15,10 +15,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const href = (path: string) => `${base}/${path.replace(/^\//, '')}`;
 
 /** Canonical site path for an entry (type-prefixed flat slugs —
- *  /polymers/<id>/, /concepts/<id>/; never hub/variant nesting, so URLs
- *  survive any future re-parenting unchanged). */
-export const entryPath = (kind: 'polymer' | 'concept', id: string) =>
-  href(`/${kind === 'concept' ? 'concepts' : 'polymers'}/${id}/`);
+ *  /polymers/<id>/, /concepts/<id>/, /people/<id>/, /families/<id>/; never
+ *  hub/variant nesting, so URLs survive any future re-parenting unchanged). */
+const KIND_PREFIX = {
+  polymer: 'polymers',
+  concept: 'concepts',
+  person: 'people',
+  family: 'families',
+} as const;
+export const entryPath = (kind: keyof typeof KIND_PREFIX, id: string) =>
+  href(`/${KIND_PREFIX[kind]}/${id}/`);
 
 // -------------------------------------------------------------------- eras --
 export interface Era {
@@ -106,6 +112,66 @@ export async function loadConcepts(): Promise<ConceptEntry[]> {
   return conceptCache;
 }
 
+export type PersonNarrative = CollectionEntry<'people'>;
+export type PersonData = CollectionEntry<'personData'>['data'];
+export interface PersonEntry {
+  narrative: PersonNarrative;
+  data: PersonData;
+}
+
+let personCache: PersonEntry[] | null = null;
+
+/** All person entries (narrative + structured data joined by id), sorted by
+ *  anchor year. Same integrity contract as the other collections. */
+export async function loadPeople(): Promise<PersonEntry[]> {
+  if (personCache) return personCache;
+  const [narratives, dataEntries] = await Promise.all([
+    getCollection('people'),
+    getCollection('personData'),
+  ]);
+  const byId = new Map(dataEntries.map((d) => [d.data.id, d.data]));
+  personCache = narratives
+    .map((narrative) => {
+      const data = byId.get(narrative.data.id);
+      if (!data) throw new Error(`No personData file for narrative "${narrative.data.id}"`);
+      return { narrative, data };
+    })
+    .sort(
+      (a, b) =>
+        a.data.year_of_origin - b.data.year_of_origin || a.data.name.localeCompare(b.data.name)
+    );
+  return personCache;
+}
+
+export type FamilyNarrative = CollectionEntry<'families'>;
+export type FamilyData = CollectionEntry<'familyData'>['data'];
+export interface FamilyEntry {
+  narrative: FamilyNarrative;
+  data: FamilyData;
+}
+
+let familyCache: FamilyEntry[] | null = null;
+
+/** All compilation/family entries (narrative + structured data joined by
+ *  id), alphabetical. Member lists are computed separately — see
+ *  familyMembers(). */
+export async function loadFamilies(): Promise<FamilyEntry[]> {
+  if (familyCache) return familyCache;
+  const [narratives, dataEntries] = await Promise.all([
+    getCollection('families'),
+    getCollection('familyData'),
+  ]);
+  const byId = new Map(dataEntries.map((d) => [d.data.id, d.data]));
+  familyCache = narratives
+    .map((narrative) => {
+      const data = byId.get(narrative.data.id);
+      if (!data) throw new Error(`No familyData file for narrative "${narrative.data.id}"`);
+      return { narrative, data };
+    })
+    .sort((a, b) => a.data.name.localeCompare(b.data.name));
+  return familyCache;
+}
+
 /** One row of a browse view (catalogue/timeline). Polymers and concepts are
  *  both first-class linked entries; `concept` drives the visual distinction
  *  and the type filter. */
@@ -164,6 +230,66 @@ export async function browseRowsByEra(): Promise<{ era: Era; rows: BrowseRow[] }
     rows: indexed.filter((r) => r.era === era.name),
   }));
   return browseCache;
+}
+
+/** Members of a compilation page, chronological — computed from the
+ *  classification tags on the polymer data files (an entry matching ANY of
+ *  the page's membership tags belongs). Never hand-maintained. */
+export async function familyMembers(fam: FamilyData): Promise<BrowseRow[]> {
+  const polymers = await loadPolymers();
+  const memberIds = new Set(
+    polymers
+      .filter((e) => {
+        const tags =
+          fam.membership.axis === 'chemical_family'
+            ? e.data.chemical_family
+            : e.data.polymerization_mechanism;
+        return fam.membership.tags.some((t) => tags.includes(t));
+      })
+      .map((e) => e.data.id)
+  );
+  const byEra = await browseRowsByEra();
+  return byEra.flatMap((g) => g.rows).filter((r) => memberIds.has(r.id));
+}
+
+/** Every entry whose key_figures names one of the given people — powers a
+ *  person page's "In the Atlas" list. Chronological. */
+export async function entriesFeaturing(names: string[]): Promise<BrowseRow[]> {
+  const [polymers, concepts] = await Promise.all([loadPolymers(), loadConcepts()]);
+  const featured = new Set(
+    [...polymers.map((e) => e.narrative), ...concepts.map((c) => c.narrative)]
+      .filter((n) => n.data.key_figures.some((f) => names.includes(f)))
+      .map((n) => n.data.id)
+  );
+  const byEra = await browseRowsByEra();
+  return byEra.flatMap((g) => g.rows).filter((r) => featured.has(r.id));
+}
+
+let personPathCache: Map<string, string> | null = null;
+
+/** full name -> person-page path, for linking key_figures in heroes and
+ *  data blocks. Names not in the map stay plain text (Wikipedia-link-only
+ *  figures never get internal pages). */
+export async function personPathsByName(): Promise<Map<string, string>> {
+  if (personPathCache) return personPathCache;
+  personPathCache = new Map();
+  for (const p of await loadPeople())
+    for (const person of p.data.people)
+      personPathCache.set(person.full_name, entryPath('person', p.data.id));
+  return personPathCache;
+}
+
+let familyPathCache: Map<string, string> | null = null;
+
+/** taxonomy tag -> compilation-page path (both axes share the map — tag
+ *  vocabularies don't overlap). Tags without a page stay plain chips. */
+export async function familyPathsByTag(): Promise<Map<string, string>> {
+  if (familyPathCache) return familyPathCache;
+  familyPathCache = new Map();
+  for (const f of await loadFamilies())
+    for (const tag of f.data.membership.tags)
+      familyPathCache.set(tag, entryPath('family', f.data.id));
+  return familyPathCache;
 }
 
 /** One stop on the site-wide chronological reading path. */
@@ -324,6 +450,20 @@ export const CONCEPT_SECTIONS = [
   { num: '02', id: 'equations', title: 'Key Equations' },
   { num: '03', id: 'history', title: 'History' },
   { num: '04', id: 'references', title: 'References' },
+] as const;
+
+// Person pages (major historical figures).
+export const PERSON_SECTIONS = [
+  { num: '01', id: 'biography', title: 'Biography' },
+  { num: '02', id: 'milestones', title: 'Milestones' },
+  { num: '03', id: 'atlas', title: 'In the Atlas' },
+  { num: '04', id: 'references', title: 'References' },
+] as const;
+
+// Compilation/family pages.
+export const FAMILY_SECTIONS = [
+  { num: '01', id: 'members', title: 'Members' },
+  { num: '02', id: 'references', title: 'References' },
 ] as const;
 
 // ------------------------------------------------------------ references.bib --

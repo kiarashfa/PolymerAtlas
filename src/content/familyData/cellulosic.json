@@ -1,0 +1,12 @@
+{
+  "id": "cellulosic",
+  "slug": "cellulosic",
+  "name": "The Cellulosics: Wood and Cotton, Reinvented",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["cellulosic"] },
+  "aliases": [
+    { "name": "cellulosics", "autolinkable": true },
+    { "name": "cellulosic polymers", "autolinkable": true }
+  ],
+  "references": []
+}

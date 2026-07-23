@@ -1,0 +1,21 @@
+---
+// Flat compilation routes: /families/polyester/, /families/coordination-
+// polymerization/, … All rendering lives in the FamilyPage template.
+import FamilyPage from '../../components/templates/FamilyPage.astro';
+import { loadFamilies, type FamilyEntry } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const entries = await loadFamilies();
+  return entries.map((entry) => ({
+    params: { slug: entry.narrative.data.id },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: FamilyEntry;
+}
+const { entry } = Astro.props;
+---
+
+<FamilyPage entry={entry} />

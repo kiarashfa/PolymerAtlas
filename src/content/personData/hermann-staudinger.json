@@ -1,0 +1,50 @@
+{
+  "id": "hermann-staudinger",
+  "slug": "hermann-staudinger",
+  "name": "Hermann Staudinger: The Man Who Saw Giant Molecules",
+  "year_of_origin": 1920,
+  "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
+  "people": [
+    {
+      "full_name": "Hermann Staudinger",
+      "born": { "year": 1881, "place": "Worms, Germany" },
+      "died": { "year": 1965, "place": "Freiburg, Germany" },
+      "nationality": "German",
+      "institutions": [
+        "University of Halle (doctorate 1903)",
+        "University of Strasbourg",
+        "Technical University of Karlsruhe (from 1907)",
+        "ETH Zürich (1912–1926)",
+        "University of Freiburg (1926–1965)"
+      ],
+      "nobel": {
+        "year": 1953,
+        "citation": "for his discoveries in the field of macromolecular chemistry"
+      },
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hermann_Staudinger"
+    }
+  ],
+  "milestones": [
+    { "year": 1903, "event": "Doctorate at Halle under Daniel Vorländer; discovers ketenes soon after in Strasbourg" },
+    { "year": 1912, "event": "Professor at ETH Zürich" },
+    { "year": 1914, "event": "Refuses to sign the Manifesto of the Ninety-Three; openly opposes the war effort" },
+    { "year": 1920, "event": "\"Über Polymerisation\" proposes that polymers are covalently bonded long-chain molecules" },
+    { "year": 1922, "event": "Introduces the term \"macromolecule\" to a deeply skeptical scientific community" },
+    { "year": 1926, "event": "Moves to the University of Freiburg for the remainder of his career" },
+    { "year": 1935, "event": "Viscosity studies let chemists estimate molar mass from solution behavior, arming the theory with numbers" },
+    { "year": 1940, "event": "Founds the first journal devoted to polymer chemistry" },
+    { "year": 1953, "event": "Nobel Prize in Chemistry, thirty-three years after the 1920 paper" },
+    { "year": 1965, "event": "Dies in Freiburg, aged 84" }
+  ],
+  "aliases": [],
+  "historical_events_referenced": [
+    "First assembly of the League of Nations (1920)",
+    "First commercial radio broadcast (1920)",
+    "American women's suffrage (1920)",
+    "Manifesto of the Ninety-Three (1914)",
+    "Discovery of the DNA double helix (1953)",
+    "First ascent of Mount Everest (1953)"
+  ],
+  "historical_images": [],
+  "references": ["wiki-hermann-staudinger", "wiki-heidegger-nazism"]
+}

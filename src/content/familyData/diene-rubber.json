@@ -1,0 +1,12 @@
+{
+  "id": "diene-rubber",
+  "slug": "diene-rubber",
+  "name": "The Diene Rubbers: Spring Steel Made of Carbon",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["diene-rubber"] },
+  "aliases": [
+    { "name": "diene rubbers", "autolinkable": true },
+    { "name": "synthetic rubbers", "autolinkable": true }
+  ],
+  "references": []
+}

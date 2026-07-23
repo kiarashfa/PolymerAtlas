@@ -1,0 +1,142 @@
+---
+// The families index: every compilation page (chemical families, then the
+// polymerization-mechanism lineages), plus the pioneers — grouped, each
+// group chronological by first appearance. Member counts and year spans
+// are computed from the same tag-driven membership as the pages themselves.
+import Base from '../../layouts/Base.astro';
+import {
+  loadFamilies,
+  loadPeople,
+  familyMembers,
+  entryPath,
+  splitTitle,
+  eraShortName,
+  eraIndex,
+} from '../../lib/content';
+
+const families = await loadFamilies();
+const people = await loadPeople();
+
+const withSpans = await Promise.all(
+  families.map(async (f) => {
+    const members = await familyMembers(f.data);
+    return {
+      path: entryPath('family', f.data.id),
+      ...splitTitle(f.narrative.data.name),
+      kind: f.data.kind,
+      count: members.length,
+      firstYear: members[0]?.year ?? 0,
+      lastYear: members.at(-1)?.year ?? 0,
+      era: members[0]?.era ?? '',
+    };
+  })
+);
+const chronological = (a: (typeof withSpans)[number], b: (typeof withSpans)[number]) =>
+  a.firstYear - b.firstYear || a.title.localeCompare(b.title);
+const chemical = withSpans.filter((f) => f.kind === 'chemical-family').sort(chronological);
+const mechanisms = withSpans
+  .filter((f) => f.kind === 'polymerization-mechanism')
+  .sort(chronological);
+
+const pioneers = people.map((p) => ({
+  path: entryPath('person', p.data.id),
+  ...splitTitle(p.narrative.data.name),
+  year: p.data.year_of_origin,
+  era: p.data.era,
+  lifespans: p.data.people.map((h) => `${h.born.year}–${h.died.year}`).join(' · '),
+}));
+
+const description =
+  `The Atlas of Polymers by kinship: ${chemical.length} chemical families, ` +
+  `${mechanisms.length} polymerization lineages, and the pioneers who built the science.`;
+---
+
+<Base title="Families" description={description} current="families">
+  <main>
+    <header class="cat-head">
+      <h1 class="cat-title">Families &amp; Lineages</h1>
+      <p class="cat-sub">
+        The Atlas arranged by kinship — chemical families sharing one backbone chemistry, the
+        polymerization lineages that build them, and the pioneers who made chains make sense.
+      </p>
+    </header>
+
+    <section class="fam-group">
+      <h2 class="fam-group-title">Chemical Families</h2>
+      <div class="cat-rows cat-rows--embed">
+        {
+          chemical.map((f) => (
+            <a class={`cat-row era-c-${eraIndex(f.era)}`} href={f.path}>
+              <span class="cat-row-year">
+                <b>{f.firstYear}</b>
+                <span class="type-badge">family</span>
+              </span>
+              <span class="cat-row-main">
+                <span class="cat-row-title">{f.title}</span>
+                {f.subtitle && <span class="cat-row-sub">{f.subtitle}</span>}
+              </span>
+              <span class="cat-row-meta">
+                <span class="cat-row-era">
+                  {f.firstYear}–{f.lastYear}
+                </span>
+                <span class="chip">{f.count} members</span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="fam-group">
+      <h2 class="fam-group-title">Lineages of Synthesis</h2>
+      <div class="cat-rows cat-rows--embed">
+        {
+          mechanisms.map((f) => (
+            <a class={`cat-row era-c-${eraIndex(f.era)}`} href={f.path}>
+              <span class="cat-row-year">
+                <b>{f.firstYear}</b>
+                <span class="type-badge">lineage</span>
+              </span>
+              <span class="cat-row-main">
+                <span class="cat-row-title">{f.title}</span>
+                {f.subtitle && <span class="cat-row-sub">{f.subtitle}</span>}
+              </span>
+              <span class="cat-row-meta">
+                <span class="cat-row-era">
+                  {f.firstYear}–{f.lastYear}
+                </span>
+                <span class="chip">{f.count} members</span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="fam-group">
+      <h2 class="fam-group-title">The Pioneers</h2>
+      <div class="cat-rows cat-rows--embed">
+        {
+          pioneers.map((p) => (
+            <a class={`cat-row era-c-${eraIndex(p.era)}`} href={p.path}>
+              <span class="cat-row-year">
+                <b>{p.year}</b>
+                <span class="type-badge">pioneer</span>
+              </span>
+              <span class="cat-row-main">
+                <span class="cat-row-title" transition:name={`ed-${p.path.split('/').at(-2)}`}>
+                  {p.title}
+                </span>
+                {p.subtitle && <span class="cat-row-sub">{p.subtitle}</span>}
+              </span>
+              <span class="cat-row-meta">
+                <span class="cat-row-era">{eraShortName(p.era)}</span>
+                <span class="chip">{p.lifespans}</span>
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Base>

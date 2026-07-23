@@ -1,0 +1,67 @@
+{
+  "id": "ziegler-natta",
+  "slug": "ziegler-natta",
+  "name": "Karl Ziegler & Giulio Natta: The Partnership That Tamed the Olefins",
+  "year_of_origin": 1953,
+  "era": "The Post-War Boom (1946-1960)",
+  "people": [
+    {
+      "full_name": "Karl Ziegler",
+      "born": { "year": 1898, "place": "Helsa, near Kassel, Germany" },
+      "died": { "year": 1973, "place": "Mülheim an der Ruhr, Germany" },
+      "nationality": "German",
+      "institutions": [
+        "University of Marburg (doctorate 1920)",
+        "University of Heidelberg (1926–1936)",
+        "University of Halle (1936–1943)",
+        "Max Planck Institute for Coal Research, Mülheim — director (1943–1969)"
+      ],
+      "nobel": {
+        "year": 1963,
+        "citation": "for their discoveries in the field of the chemistry and technology of high polymers"
+      },
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Karl_Ziegler"
+    },
+    {
+      "full_name": "Giulio Natta",
+      "born": { "year": 1903, "place": "Imperia, Italy" },
+      "died": { "year": 1979, "place": "Bergamo, Italy" },
+      "nationality": "Italian",
+      "institutions": [
+        "Politecnico di Milano (chemical engineering degree 1924)",
+        "University of Pavia (1933–1935)",
+        "University of Rome (1935–1936)",
+        "Politecnico di Torino (1936–1938)",
+        "Politecnico di Milano — head of chemical engineering (1938–1979)"
+      ],
+      "nobel": {
+        "year": 1963,
+        "citation": "for their discoveries in the field of the chemistry and technology of high polymers"
+      },
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Giulio_Natta"
+    }
+  ],
+  "milestones": [
+    { "year": 1943, "event": "Ziegler becomes director of the institute for coal research at Mülheim, with freedom to follow fundamental chemistry" },
+    { "year": 1952, "event": "Ziegler discloses his organometallic catalyst work to Montecatini, where Natta consults" },
+    { "year": 1953, "event": "The Mülheim breakthrough: the accidental \"nickel effect\" leads to titanium + aluminum-alkyl catalysts that polymerize ethylene at atmospheric pressure" },
+    { "year": 1954, "event": "Natta's Milan group produces isotactic polypropylene (11 March); his wife Rosita Beati coins \"isotactic\", \"syndiotactic\" and \"atactic\"" },
+    { "year": 1956, "event": "Ziegler–Natta catalysts enter commercial polyolefin manufacture" },
+    { "year": 1963, "event": "Ziegler and Natta share the Nobel Prize in Chemistry" },
+    { "year": 1973, "event": "Ziegler dies in Mülheim; his patent income endows a ~40-million-DM research fund" },
+    { "year": 1979, "event": "Natta dies in Bergamo after a long struggle with Parkinson's disease" }
+  ],
+  "aliases": [
+    { "name": "Ziegler-Natta", "autolinkable": true },
+    { "name": "Ziegler–Natta", "autolinkable": true }
+  ],
+  "historical_events_referenced": [
+    "Death of Stalin (1953)",
+    "Discovery of the DNA double helix (1953)",
+    "First ascent of Mount Everest (1953)",
+    "Coronation of Elizabeth II (1953)",
+    "Korean War armistice (1953)"
+  ],
+  "historical_images": [],
+  "references": ["wiki-karl-ziegler", "wiki-giulio-natta", "wiki-ziegler-natta-catalyst"]
+}

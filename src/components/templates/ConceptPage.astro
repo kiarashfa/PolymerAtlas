@@ -17,6 +17,7 @@ import ChronoNav from '../blocks/ChronoNav.astro';
 import {
   chronoNeighbours,
   citationsFor,
+  personPathsByName,
   splitTitle,
   eraShortName,
   eraIndex,
@@ -37,6 +38,7 @@ const currentEra = eraIndex(data.era);
 const { prev, next } = await chronoNeighbours(narrative.data.id);
 const sec = Object.fromEntries(CONCEPT_SECTIONS.map((s) => [s.id, s]));
 const { numberFor, list: refList } = citationsFor(data.references);
+const personPage = await personPathsByName();
 
 const equations = data.key_equations.map((eq) => ({
   ...eq,
@@ -82,7 +84,20 @@ const description =
           narrative.data.key_figures.length > 0 && (
             <>
               <span class="sep">·</span>
-              <span>{narrative.data.key_figures.join(', ')}</span>
+              <span>
+                {narrative.data.key_figures.map((fig, i) => (
+                  <>
+                    {i > 0 && ', '}
+                    {personPage.has(fig) ? (
+                      <a class="figure-link" href={personPage.get(fig)}>
+                        {fig}
+                      </a>
+                    ) : (
+                      fig
+                    )}
+                  </>
+                ))}
+              </span>
             </>
           )
         }
@@ -168,7 +183,18 @@ const description =
               <FactRow label="Key figures">
                 {
                   data.key_figures.length ? (
-                    data.key_figures.join(' · ')
+                    data.key_figures.map((fig, i) => (
+                      <>
+                        {i > 0 && <span class="sep"> · </span>}
+                        {personPage.has(fig) ? (
+                          <a class="figure-link" href={personPage.get(fig)}>
+                            {fig}
+                          </a>
+                        ) : (
+                          fig
+                        )}
+                      </>
+                    ))
                   ) : (
                     <span class="none">—</span>
                   )

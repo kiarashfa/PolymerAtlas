@@ -1,0 +1,12 @@
+{
+  "id": "biodegradable-polyester",
+  "slug": "biodegradable-polyester",
+  "name": "The Biodegradable Polyesters: Plastics Designed to Disappear",
+  "kind": "chemical-family",
+  "membership": { "axis": "chemical_family", "tags": ["biodegradable-polyester"] },
+  "aliases": [
+    { "name": "biodegradable polyesters", "autolinkable": true },
+    { "name": "compostable polyesters", "autolinkable": true }
+  ],
+  "references": []
+}

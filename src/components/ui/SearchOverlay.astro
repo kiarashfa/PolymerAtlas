@@ -1,9 +1,9 @@
 ---
 // Full-text search: custom UI over Pagefind's JS API — never the
-// prebuilt widget. Since 2026-07-22 it is a header DROPDOWN panel sharing
-// the EditionMenu's anatomy (.head-menu/.head-menu-panel, hairline-flanked
-// label, staggered unfold) instead of a modal <dialog> — one coherent
-// header language. The Pagefind bundle is produced post-build
+// prebuilt widget. A header DROPDOWN panel sharing the EditionMenu's
+// anatomy (.head-menu/.head-menu-panel, hairline-flanked label, staggered
+// unfold) — one coherent header language. The Pagefind bundle is produced
+// post-build
 // (`pagefind --site dist`), lazy-loaded on first open, and filterable by
 // the type/era metadata stamped on every detail page. In `astro dev` the
 // bundle doesn't exist; the panel shows an honest notice instead.
@@ -50,6 +50,8 @@ import { eras, eraShortName, href } from '../../lib/content';
         <option value="">All types</option>
         <option value="polymer">Polymers</option>
         <option value="concept">Concepts</option>
+        <option value="family">Families</option>
+        <option value="person">Pioneers</option>
       </select>
       <select aria-label="Era" data-search-era>
         <option value="">Any era</option>
@@ -79,7 +81,7 @@ import { eras, eraShortName, href } from '../../lib/content';
   // hint is stripped from component scripts, Vite wraps the call in its
   // preload helper, and the `__VITE_PRELOAD__` placeholder is left
   // unresolved in the built page — a runtime ReferenceError that silently
-  // put the UI in its "index not available" state (caught 2026-07-22).
+  // puts the UI in its "index not available" state.
   const importRuntime = new Function('path', 'return import(path)') as (
     p: string
   ) => Promise<any>;

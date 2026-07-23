@@ -1,0 +1,129 @@
+---
+// Full page template for one compilation/family entry ("Edition" design):
+// same chrome as the other detail pages, but the page has no single year —
+// the hero shows the family's span (first → last member year) and the
+// chrome wears the era of its EARLIEST member. Below the hand-written intro
+// sits the auto-generated member list: driven entirely by classification
+// tags on the polymer data files, never hand-maintained.
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Section from '../blocks/Section.astro';
+import DidYouKnow from '../blocks/DidYouKnow.astro';
+import Figure from '../blocks/Figure.astro';
+import ReferencesList from '../blocks/ReferencesList.astro';
+import {
+  citationsFor,
+  familyMembers,
+  splitTitle,
+  eraShortName,
+  eraIndex,
+  eras,
+  href,
+  FAMILY_SECTIONS,
+  type FamilyEntry,
+} from '../../lib/content';
+
+interface Props {
+  entry: FamilyEntry;
+}
+const { entry } = Astro.props;
+const { narrative, data } = entry;
+const { Content } = await render(narrative);
+const { title, subtitle } = splitTitle(narrative.data.name);
+const sec = Object.fromEntries(FAMILY_SECTIONS.map((s) => [s.id, s]));
+const { list: refList } = citationsFor(data.references);
+const members = await familyMembers(data);
+const currentEra = members.length ? eraIndex(members[0].era) : 0;
+const firstYear = members[0]?.year;
+const lastYear = members.at(-1)?.year;
+const span = firstYear === lastYear ? String(firstYear ?? '') : `${firstYear} → ${lastYear}`;
+const kindLabel =
+  data.kind === 'chemical-family' ? 'Chemical family' : 'Polymerization mechanism';
+
+const description =
+  narrative.data.tagline ??
+  subtitle ??
+  `${title} — ${members.length} entries in the Atlas of Polymers.`;
+---
+
+<Base title={title} description={description}>
+  <article class={`era-c-${currentEra}`} data-pagefind-body data-pagefind-filter="type:family">
+    <nav class="era-strip" aria-label="Eras" data-pagefind-ignore>
+      {
+        eras.map((era, i) => (
+          <a
+            class:list={[`era-c-${i}`, { 'is-current': i === currentEra }]}
+            href={href(`/timeline/#era-${i}`)}
+            title={era.name}
+          >
+            <span class="era-strip-label">{eraShortName(era.name)}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    <header class="hero">
+      <p class="hero-eyebrow">{kindLabel}</p>
+      <div class="hero-year hero-year--span" data-pagefind-meta="year">{span}</div>
+      <h1 class="hero-title" transition:name={`ed-${narrative.data.id}`}>{title}</h1>
+      {subtitle && <p class="hero-subtitle" data-pagefind-meta="subtitle">{subtitle}</p>}
+      <p class="hero-meta">
+        <span class="chip">{members.length} members</span>
+      </p>
+      <div class="hero-ornament" aria-hidden="true"></div>
+    </header>
+
+    <div class="detail-grid">
+      <nav class="rail" aria-label="Sections" data-pagefind-ignore>
+        <ul class="rail-list">
+          <li>
+            <a href="#narrative"><span class="rail-num">00</span> The Story</a>
+          </li>
+          {
+            FAMILY_SECTIONS.map((s) => (
+              <li>
+                <a href={`#${s.id}`}>
+                  <span class="rail-num">{s.num}</span> {s.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <div class="detail-main">
+        <div class="narrative" id="narrative" data-spy>
+          <Content components={{ DidYouKnow, Figure }} />
+        </div>
+
+        <div class="data-blocks">
+          <Section {...sec.members}>
+            <div class="cat-rows cat-rows--embed" data-pagefind-ignore>
+              {
+                members.map((row) => (
+                  <a class={`cat-row era-c-${eraIndex(row.era)}`} href={row.path}>
+                    <span class="cat-row-year">
+                      <b>{row.year}</b>
+                      <span class="type-badge">{row.concept ? 'concept' : 'polymer'}</span>
+                    </span>
+                    <span class="cat-row-main">
+                      <span class="cat-row-title">{row.title}</span>
+                      {row.subtitle && <span class="cat-row-sub">{row.subtitle}</span>}
+                    </span>
+                    <span class="cat-row-meta">
+                      <span class="cat-row-era">{eraShortName(row.era)}</span>
+                    </span>
+                  </a>
+                ))
+              }
+            </div>
+          </Section>
+
+          <Section {...sec.references}>
+            <ReferencesList refList={refList} />
+          </Section>
+        </div>
+      </div>
+    </div>
+  </article>
+</Base>
