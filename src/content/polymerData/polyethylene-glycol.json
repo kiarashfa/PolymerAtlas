@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "25322-68-3",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "H-(O-CH2-CH2)n-OH; commercial PEG spans a huge molecular-weight range (300 to 10,000,000 g/mol), so specific grades behave as distinctly different materials despite sharing the same repeat unit.",
+  "repeat_unit": "{[][>]OCC[<][]}",
+  "smiles_depiction": "*OCC*",
+  "notation_note": "Named poly(ethylene glycol) below about 20,000 g/mol and poly(ethylene oxide) above it, though the repeat unit is identical.",
   "iupac_name": null,
   "synonyms": [
     "polyethylene oxide (high-MW grades)",
@@ -136,7 +137,7 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable",
-      "conditions": "Low-MW grades are liquids/waxes without a meaningful tensile modulus; only very-high-MW PEO grades would have conventional solid mechanical properties (not sourced this session)."
+      "conditions": "Low-MW grades are liquids/waxes without a meaningful tensile modulus; only very-high-MW PEO grades would have conventional solid mechanical properties (not sourced)."
     },
     "yield_strength": {
       "value": null,
@@ -253,7 +254,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyethylene-glycol.svg",
+      "alt": "Repeat unit of Polyethylene Glycol, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyethylene-glycol.sdf",
+      "alt": "Ball-and-stick model of one Polyethylene Glycol repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

@@ -195,7 +195,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds -- a real limitation in exterior wood-composite use, not independently confirmed with a source this session."
+      "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds -- a real limitation in exterior wood-composite use, not independently confirmed with a source."
     },
     "flammability_ul94": {
       "value": null,

@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Polyurethanes are formed from many possible diisocyanate + polyol combinations (TDI/MDI with polyester or polyether polyols, etc.) joined by carbamate (urethane) linkages -- composition varies hugely by formulation, so no single repeat unit represents the class.",
+  "repeat_unit": "{[][>]OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)[<][]}",
+  "smiles_depiction": "*OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)*",
+  "notation_note": "One diisocyanate-diol pairing is shown, of very many. Polyurethane is a linkage rather than a single chemistry: the same urethane group joins whatever diol and diisocyanate a formulation calls for, which is how one family spans soft foam to rigid insulation to elastomer.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -48,7 +49,7 @@
       "value": null,
       "unit": "g/cm³",
       "status": "placeholder",
-      "conditions": "Varies enormously by form: rigid foam, flexible foam, and solid elastomer densities differ by an order of magnitude or more; no single sourced figure this session."
+      "conditions": "Varies enormously by form: rigid foam, flexible foam, and solid elastomer densities differ by an order of magnitude or more; no single sourced figure."
     },
     "melt_flow_index": {
       "value": null,
@@ -124,7 +125,7 @@
       "value": null,
       "unit": "W/(m·K)",
       "status": "placeholder",
-      "conditions": "Rigid PUR foam is a well-known low-thermal-conductivity insulation material, but no specific number was sourced this session."
+      "conditions": "Rigid PUR foam is a well-known low-thermal-conductivity insulation material, but no specific number was sourced."
     }
   },
   "mechanical": {
@@ -178,7 +179,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR -- a real, widely-cited distinction, but not independently confirmed with a source this session."
+      "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR -- a real, widely-cited distinction, but not independently confirmed with a source."
     },
     "flammability_ul94": {
       "value": null,
@@ -244,7 +245,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyurethane.svg",
+      "alt": "Repeat unit of Polyurethane, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyurethane.sdf",
+      "alt": "Ball-and-stick model of one Polyurethane repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

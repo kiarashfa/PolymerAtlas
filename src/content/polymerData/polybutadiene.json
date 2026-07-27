@@ -9,8 +9,34 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(buta-1,3-diene); microstructure (cis/trans/vinyl content) varies substantially by catalyst system, so no single fixed stereochemical repeat unit represents all commercial grades.",
+  "repeat_unit": "{[][$]C/C=C\\C[$][]}",
+  "smiles_depiction": "*C/C=C\\C*",
+  "structure_variants": [
+    {
+      "key": "cis-1-4",
+      "label": "cis-1,4",
+      "repeat_unit": "{[][$]C/C=C\\C[$][]}",
+      "smiles_depiction": "*C/C=C\\C*",
+      "is_default": true
+    },
+    {
+      "key": "trans-1-4",
+      "label": "trans-1,4",
+      "repeat_unit": "{[][$]C/C=C/C[$][]}",
+      "smiles_depiction": "*C/C=C/C*",
+      "note": "Crystallises readily and is far less rubbery than the cis form.",
+      "is_default": false
+    },
+    {
+      "key": "vinyl-1-2",
+      "label": "1,2-vinyl",
+      "repeat_unit": "{[][$]CC(C=C)[$][]}",
+      "smiles_depiction": "*CC(C=C)*",
+      "note": "Addition across one double bond only, leaving the other pendant. Vinyl content is a lever polymer chemists pull deliberately: it raises the glass transition and is what gives high-vinyl grades their grip in tyre treads.",
+      "is_default": false
+    }
+  ],
+  "notation_note": "The cis-1,4 unit is shown. Microstructure (cis/trans/vinyl content) varies substantially by catalyst system, so no single stereochemical repeat unit represents all commercial grades.",
   "iupac_name": "Poly(buta-1,3-diene)",
   "synonyms": [
     "butadiene rubber"
@@ -244,7 +270,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polybutadiene.svg",
+      "alt": "Repeat unit of Polybutadiene, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polybutadiene.sdf",
+      "alt": "Ball-and-stick model of one Polybutadiene repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

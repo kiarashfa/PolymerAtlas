@@ -47,6 +47,15 @@ data is also published as machine-readable artifacts at `/catalogue.json`
 and `/timeline.json`. Deployment to GitHub Pages is automated via
 `.github/workflows/deploy.yml`.
 
+Chemical structures are drawn as one house style for the whole atlas: each
+repeat unit is a 2D drawing (SVG, inlined so its ink follows the light or dark
+theme) plus a 3D ball-and-stick model, shown together in a viewer on every
+polymer page. Polymers with more than one configuration worth seeing -- cis
+versus trans, 1,2-vinyl addition -- carry a drawing and a model for each.
+
 ## License
 
 Text and data: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+The 3D viewer is [3Dmol.js](https://3dmol.csb.pitt.edu/), bundled at
+`public/vendor/` under the BSD-3-Clause licence kept alongside it.

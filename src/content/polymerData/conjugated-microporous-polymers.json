@@ -30,7 +30,7 @@
     "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
     "refractive_index": { "value": null, "unit": "", "status": "not_applicable" },
     "dielectric_constant": { "value": null, "unit": "", "status": "not_applicable" },
-    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "placeholder", "conditions": "The pi-conjugated backbone suggests some conductivity, but no specific value sourced this session." }
+    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "placeholder", "conditions": "The pi-conjugated backbone suggests some conductivity, but no specific value sourced." }
   },
 
   "synthesis": {

@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Exists in three idealized oxidation states with distinct repeat units -- leucoemeraldine (C6H4NH)n (fully reduced), emeraldine ([C6H4NH]2[C6H4N]2)n (partially oxidized, most useful form), and pernigraniline (C6H4N)n (fully oxidized) -- so no single repeat unit represents the material.",
+  "repeat_unit": "{[][>]Nc1ccc(Nc2ccc(N=C3C=CC(=Nc4ccc([<])cc4)C=C3)cc2)cc1[]}",
+  "smiles_depiction": "*Nc1ccc(Nc2ccc(N=C3C=CC(=Nc4ccc(*)cc4)C=C3)cc2)cc1",
+  "notation_note": "The emeraldine base is shown: two reduced amine rings and two oxidized quinoid rings per repeat, the half-oxidized state that becomes conducting when protonated. Fully reduced and fully oxidized forms of the same chain exist, and both are insulators.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -237,7 +238,15 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyaniline.svg",
+      "alt": "Repeat unit of Polyaniline, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
     "structure_render_3d": null
   }
 }

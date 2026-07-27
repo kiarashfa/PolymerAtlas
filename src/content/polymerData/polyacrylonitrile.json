@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "25014-41-9",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1-10% vinyl comonomers, so a pure-homopolymer repeat unit doesn't represent most commercial grades.",
+  "repeat_unit": "{[][$]CC(C#N)[$][]}",
+  "smiles_depiction": "*CC(C#N)*",
+  "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1-10% vinyl comonomers, so the pure-homopolymer repeat unit shown does not represent most commercial grades.",
   "iupac_name": "Polyacrylonitrile",
   "synonyms": [
     "acrylic fiber (textile form)",
@@ -250,7 +251,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyacrylonitrile.svg",
+      "alt": "Repeat unit of Polyacrylonitrile, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyacrylonitrile.sdf",
+      "alt": "Ball-and-stick model of one Polyacrylonitrile repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

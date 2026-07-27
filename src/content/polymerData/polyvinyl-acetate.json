@@ -9,8 +9,8 @@
   "parent": null,
   "cas_number": "9003-20-7",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(1-(acetyloxy)ethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][$]CC(OC(C)=O)[$][]}",
+  "smiles_depiction": "*CC(OC(C)=O)*",
   "iupac_name": "Poly[1-(acetyloxy)ethylene]",
   "synonyms": [
     "wood glue resin",
@@ -250,7 +250,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyvinyl-acetate.svg",
+      "alt": "Repeat unit of Polyvinyl Acetate, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyvinyl-acetate.sdf",
+      "alt": "Ball-and-stick model of one Polyvinyl Acetate repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

@@ -1,0 +1,266 @@
+---
+// The repeat unit, drawn. Opens on the 2D structure -- an inlined SVG, so its
+// ink follows the page in either theme -- and offers a 3D ball-and-stick model
+// behind a toggle. Where a polymer has more than one configuration worth
+// showing (cis vs trans, 1,2-vinyl), each is its own drawing and model.
+//
+// The SVGs are inlined rather than referenced with <img>, deliberately: they
+// are drawn in `currentColor`, and an <img> renders in its own document where
+// there is no page colour to inherit, so it would come out black on black.
+//
+// 3Dmol.js is ~1 MB and is fetched only when a reader first asks for 3D.
+import type { PolymerData } from '../../lib/content';
+
+interface Props {
+  data: PolymerData;
+}
+const { data } = Astro.props;
+
+// every structure SVG, as raw markup, keyed by file stem
+const svgFiles = import.meta.glob<string>('../../assets/structures/*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+const svgByKey = new Map(
+  Object.entries(svgFiles).map(([path, markup]) => [
+    path.split('/').pop()!.replace(/\.svg$/, ''),
+    markup,
+  ]),
+);
+
+// One entry per form to show: the default first, then any variants.
+type Form = { key: string; label: string; asset: string; note?: string };
+const variants = data.structure_variants ?? [];
+const forms: Form[] = variants.length
+  ? variants.map((v) => ({
+      key: v.key,
+      label: v.label,
+      asset: v.is_default ? data.id : `${data.id}--${v.key}`,
+      note: v.note,
+    }))
+  : [{ key: 'default', label: 'repeat unit', asset: data.id }];
+
+const drawn = forms.filter((f) => svgByKey.has(f.asset));
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+{
+  drawn.length > 0 && (
+    <figure
+      class="struct"
+      data-pagefind-ignore
+      data-struct
+      data-assets={JSON.stringify(Object.fromEntries(drawn.map((f) => [f.key, f.asset])))}
+      data-model-base={`${base}/structures/`}
+      data-mol-url={`${base}/vendor/3Dmol.min.js`}
+    >
+      <div class="struct-stage">
+        {drawn.map((f, i) => (
+          <div class="struct-2d" data-form={f.key} hidden={i !== 0} set:html={svgByKey.get(f.asset)} />
+        ))}
+        <div class="struct-3d" hidden>
+          <div class="struct-canvas" data-viewer />
+          <p class="struct-loading" data-loading>
+            fetching the model…
+          </p>
+        </div>
+      </div>
+
+      <figcaption class="struct-caption">
+        <div class="struct-controls">
+          <div class="struct-pair" role="group" aria-label="structure view">
+            <button type="button" class="struct-btn is-active" data-view="2d" aria-pressed="true">
+              2D
+            </button>
+            <button type="button" class="struct-btn" data-view="3d" aria-pressed="false">
+              3D
+            </button>
+          </div>
+
+          {drawn.length > 1 && (
+            <div class="struct-pair struct-pair--forms" role="group" aria-label="configuration">
+              {drawn.map((f, i) => (
+                <button
+                  type="button"
+                  class:list={['struct-btn', { 'is-active': i === 0 }]}
+                  data-form-btn={f.key}
+                  aria-pressed={i === 0 ? 'true' : 'false'}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <div class="struct-pair struct-pair--models" hidden data-model-group role="group" aria-label="model size">
+            <button type="button" class="struct-btn is-active" data-model="unit" aria-pressed="true">
+              one unit
+            </button>
+            <button type="button" class="struct-btn" data-model="trimer" aria-pressed="false">
+              three units
+            </button>
+          </div>
+        </div>
+
+        {drawn.map((f, i) => (
+          <p class="struct-note" data-note={f.key} hidden={i !== 0}>
+            {f.note ?? <span class="struct-note-quiet">{data.name.split(/[(:]/)[0].trim()} repeat unit</span>}
+          </p>
+        ))}
+      </figcaption>
+
+    </figure>
+  )
+}
+
+<script>
+  // Wired on every page load, including View Transition swaps, and guarded so a
+  // figure is never bound twice.
+  type Mol3D = {
+    createViewer: (el: HTMLElement, cfg: Record<string, unknown>) => Viewer;
+  };
+  type Viewer = {
+    setBackgroundColor: (c: string | number, alpha?: number) => void;
+    clear: () => void;
+    addModel: (data: string, format: string, opts?: Record<string, unknown>) => void;
+    setStyle: (sel: Record<string, unknown>, style: Record<string, unknown>) => void;
+    zoomTo: () => void;
+    zoom: (factor: number) => void;
+    render: () => void;
+  };
+
+  function wireStructures() {
+    document.querySelectorAll<HTMLElement>('[data-struct]').forEach((fig) => {
+      if (fig.dataset.wired) return;
+      fig.dataset.wired = '1';
+
+      const assets: Record<string, string> = JSON.parse(fig.dataset.assets || '{}');
+      const modelBase = fig.dataset.modelBase || '';
+      const molUrl = fig.dataset.molUrl || '';
+      const stage = fig.querySelector<HTMLElement>('.struct-stage');
+      const pane3d = fig.querySelector<HTMLElement>('.struct-3d');
+      const canvas = fig.querySelector<HTMLElement>('[data-viewer]');
+      const loading = fig.querySelector<HTMLElement>('[data-loading]');
+      const modelGroup = fig.querySelector<HTMLElement>('[data-model-group]');
+      if (!stage || !pane3d || !canvas || !loading || !modelGroup) return;
+
+      let form = Object.keys(assets)[0];
+      let size: 'unit' | 'trimer' = 'unit';
+      let viewer: Viewer | null = null;
+      let loadingLib: Promise<void> | null = null;
+
+      const setPressed = (btn: HTMLElement, on: boolean) => {
+        btn.classList.toggle('is-active', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      };
+
+      function showForm(key: string) {
+        form = key;
+        fig.querySelectorAll<HTMLElement>('.struct-2d').forEach((el) => {
+          el.hidden = !pane3d!.hidden || el.dataset.form !== key;
+        });
+        fig.querySelectorAll<HTMLElement>('[data-note]').forEach((el) => {
+          el.hidden = el.dataset.note !== key;
+        });
+        fig.querySelectorAll<HTMLElement>('[data-form-btn]').forEach((b) =>
+          setPressed(b, b.dataset.formBtn === key),
+        );
+        if (!pane3d!.hidden) void loadModel();
+      }
+
+      function ensureLibrary(): Promise<void> {
+        if ((window as unknown as { $3Dmol?: Mol3D }).$3Dmol) return Promise.resolve();
+        if (loadingLib) return loadingLib;
+        loadingLib = new Promise<void>((resolve, reject) => {
+          const s = document.createElement('script');
+          s.src = molUrl;
+          s.onload = () => resolve();
+          s.onerror = () => reject(new Error('could not load the 3D viewer'));
+          document.head.appendChild(s);
+        });
+        return loadingLib;
+      }
+
+      // Only the ink is read from the page. The canvas itself is left
+      // TRANSPARENT so the section wash shows through it -- painting it with a
+      // colour of its own put a black box inside the lighter panel, and the
+      // wash is a translucent rgba() that cannot be handed to WebGL anyway.
+      function pageInk() {
+        return getComputedStyle(fig).color || '#000000';
+      }
+
+      async function loadModel() {
+        const name = assets[form] + (size === 'trimer' ? '-trimer' : '');
+        loading!.hidden = false;
+        loading!.textContent = 'fetching the model…';
+        try {
+          await ensureLibrary();
+          // SDF, not PDB: 3Dmol's PDB reader drops hydrogens (a six-carbon
+          // repeat unit came back as six atoms, no H at all), and SDF carries
+          // real bond orders instead of guessing them from distances.
+          const res = await fetch(`${modelBase}${name}.sdf`);
+          if (!res.ok) throw new Error(`no model for ${name}`);
+          const sdf = await res.text();
+          const carbon = pageInk();
+          const lib = (window as unknown as { $3Dmol: Mol3D }).$3Dmol;
+          if (!viewer) viewer = lib.createViewer(canvas!, { backgroundAlpha: 0 });
+          viewer.setBackgroundColor(0x000000, 0);
+          viewer.clear();
+          viewer.addModel(sdf, 'sdf', { keepH: true });
+          // ball and stick, sized off the van der Waals radii 3Dmol carries
+          viewer.setStyle(
+            {},
+            {
+              stick: { radius: 0.13, colorscheme: 'Jmol' },
+              sphere: { scale: 0.26, colorscheme: 'Jmol' },
+            },
+          );
+          // carbon takes the page's ink so the model reads in either theme
+          viewer.setStyle(
+            { elem: 'C' },
+            { stick: { radius: 0.13, color: carbon }, sphere: { scale: 0.26, color: carbon } },
+          );
+          viewer.zoomTo();
+          viewer.zoom(1.25);   // zoomTo leaves a wide margin for a small molecule
+          viewer.render();
+          loading!.hidden = true;
+        } catch {
+          loading!.hidden = false;
+          loading!.textContent = 'the 3D model could not be loaded';
+        }
+      }
+
+      function showView(which: string) {
+        const is3d = which === '3d';
+        pane3d!.hidden = !is3d;
+        fig.querySelectorAll<HTMLElement>('.struct-2d').forEach((el) => {
+          el.hidden = is3d || el.dataset.form !== form;
+        });
+        modelGroup!.hidden = !is3d;
+        fig.querySelectorAll<HTMLElement>('[data-view]').forEach((b) =>
+          setPressed(b, (b.dataset.view === '3d') === is3d),
+        );
+        stage!.classList.toggle('is-3d', is3d);
+        if (is3d) void loadModel();
+      }
+
+      fig.addEventListener('click', (ev) => {
+        const btn = (ev.target as HTMLElement | null)?.closest<HTMLElement>('button');
+        if (!btn || !fig.contains(btn)) return;
+        if (btn.dataset.view) showView(btn.dataset.view);
+        else if (btn.dataset.formBtn) showForm(btn.dataset.formBtn);
+        else if (btn.dataset.model) {
+          size = btn.dataset.model === 'trimer' ? 'trimer' : 'unit';
+          fig.querySelectorAll<HTMLElement>('[data-model]').forEach((b) =>
+            setPressed(b, b.dataset.model === size),
+          );
+          void loadModel();
+        }
+      });
+    });
+  }
+
+  wireStructures();
+  document.addEventListener('astro:page-load', wireStructures);
+</script>

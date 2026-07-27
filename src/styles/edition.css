@@ -970,11 +970,6 @@ a.figure-link:hover {
   font-style: italic;
   font-size: 0.95rem;
 }
-.pending-asset {
-  color: var(--ink-muted);
-  font-style: italic;
-  font-size: 0.9rem;
-}
 .section-prose {
   font-size: 0.98rem;
   max-width: 70ch;
@@ -2176,4 +2171,131 @@ a.tl-card:hover {
 }
 .eq-var-unit {
   color: var(--ink-muted);
+}
+
+/* ---------------------------------------------------------------- structure */
+/* The repeat unit as a plate: the drawing sits on the page's own paper, its ink
+   inherited through currentColor, with the controls set quietly beneath it. */
+.struct {
+  margin: 0 0 1.6rem;
+  padding: 0;
+}
+/* The panels and control groups are laid out with flex, which outranks the
+   user agent's [hidden] { display: none } and would leave every configuration
+   -- and both the 2D and 3D panes -- on screen at once. */
+.struct [hidden] {
+  display: none !important;
+}
+.struct-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 13rem;
+  padding: 1.4rem 1rem 1rem;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  background: var(--wash);
+}
+.struct-2d {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.struct-2d svg,
+.structure-svg {
+  max-width: min(100%, 30rem);
+  max-height: 15rem;
+  height: auto;
+  color: var(--ink);
+}
+.struct-3d {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.struct-canvas {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  height: 17rem;
+}
+.struct-canvas canvas {
+  border-radius: var(--radius-sm, 2px);
+}
+.struct-loading {
+  margin: 0;
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint, var(--ink-soft));
+}
+.struct-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0.7rem 0 0;
+}
+.struct-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.15rem;
+  align-items: center;
+}
+/* Groups are separated by space rather than a rule: the row wraps on a narrow
+   column, and a border-left then lands at the start of a line looking like a
+   stray mark. */
+.struct-controls {
+  gap: 0.45rem 1.6rem;
+}
+.struct-pair {
+  display: inline-flex;
+  gap: 0.35rem;
+}
+.struct-btn {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.24rem 0.75rem;
+  cursor: pointer;
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease),
+    background 0.25s var(--ease);
+}
+.struct-btn:hover {
+  color: var(--foil);
+  border-color: var(--rule-strong);
+}
+.struct-btn.is-active {
+  color: var(--foil);
+  border-color: var(--foil);
+  background: var(--wash);
+}
+.struct-note {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.struct-note-quiet {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.09em;
+  color: var(--ink-faint, var(--ink-soft));
+}
+@media (max-width: 640px) {
+  .struct-stage {
+    min-height: 10rem;
+    padding: 1rem 0.5rem 0.8rem;
+  }
+  .struct-canvas {
+    height: 14rem;
+  }
 }

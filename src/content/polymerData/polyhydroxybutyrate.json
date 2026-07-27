@@ -9,8 +9,9 @@
   "parent": "polyhydroxyalkanoates",
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(3-hydroxybutyrate), P3HB (the most common PHB form); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]O[C@@H](C)CC(=O)[<][]}",
+  "smiles_depiction": "*O[C@@H](C)CC(=O)*",
+  "notation_note": "Bacterially synthesized PHB is stereochemically pure R, which is why it crystallizes so readily -- and why it is stiff and brittle compared with the copolymers.",
   "iupac_name": null,
   "synonyms": [
     "poly-3-hydroxybutyrate",
@@ -244,7 +245,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyhydroxybutyrate.svg",
+      "alt": "Repeat unit of Polyhydroxybutyrate, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyhydroxybutyrate.sdf",
+      "alt": "Ball-and-stick model of one Polyhydroxybutyrate repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

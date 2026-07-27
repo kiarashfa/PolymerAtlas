@@ -9,8 +9,8 @@
   "parent": null,
   "cas_number": "24968-11-4",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(ethylene 2,6-naphthalate); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]OCCOC(=O)c1ccc2cc(ccc2c1)C(=O)[<][]}",
+  "smiles_depiction": "*OCCOC(=O)c1ccc2cc(ccc2c1)C(=O)*",
   "iupac_name": "Poly(ethylene 2,6-naphthalate)",
   "synonyms": [],
   "aliases": [],
@@ -132,7 +132,7 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder",
-      "conditions": "Qualitatively 'improved strength and modulus' vs. PET; no specific number sourced this session."
+      "conditions": "Qualitatively 'improved strength and modulus' vs. PET; no specific number sourced."
     },
     "elongation_at_break": {
       "value": null,
@@ -237,7 +237,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyethylene-naphthalate.svg",
+      "alt": "Repeat unit of Polyethylene Naphthalate, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyethylene-naphthalate.sdf",
+      "alt": "Ball-and-stick model of one Polyethylene Naphthalate repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

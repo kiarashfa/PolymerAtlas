@@ -9,8 +9,8 @@
   "parent": null,
   "cas_number": "25134-01-4",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(2,6-dimethyl-1,4-phenylene oxide); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]Oc1c(C)cc(cc1C)[<][]}",
+  "smiles_depiction": "*Oc1c(C)cc(cc1C)*",
   "iupac_name": null,
   "synonyms": [
     "polyphenylene ether",
@@ -240,7 +240,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyphenylene-oxide.svg",
+      "alt": "Repeat unit of Polyphenylene Oxide, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyphenylene-oxide.sdf",
+      "alt": "Ball-and-stick model of one Polyphenylene Oxide repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

@@ -7,8 +7,9 @@
   "parent": null,
   "cas_number": "9004-34-6",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Cellulose is a linear β(1→4)-linked D-glucose homopolymer (cellobiose repeat unit), but degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton/plant fibers ~800-10,000, bacterial cellulose up to ~10,000) so no single fixed-length notation applies.",
+  "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@H]([<])O[C@@H]1CO[]}",
+  "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@H](*)O[C@@H]1CO",
+  "notation_note": "The anhydroglucose unit is shown as the constitutional repeat unit; the crystallographic repeat is cellobiose, two glucose units, because alternate rings are rotated 180 degrees. Degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton and plant fibers ~800-10,000, bacterial cellulose up to ~10,000).",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -257,7 +258,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/cellulose.svg",
+      "alt": "Repeat unit of Cellulose, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/cellulose.sdf",
+      "alt": "Ball-and-stick model of one Cellulose repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

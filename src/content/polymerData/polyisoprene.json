@@ -9,8 +9,26 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Synthetic cis-1,4-polyisoprene, chemically the same repeat unit as natural rubber (see natural-rubber entry) but manufactured; cis-content varies by catalyst (90-92% via anionic Li-initiation vs. ~98.5% via Ziegler-Natta), so treated separately here as the synthetic-production entry.",
+  "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
+  "smiles_depiction": "*C/C(C)=C\\C*",
+  "structure_variants": [
+    {
+      "key": "cis-1-4",
+      "label": "cis-1,4",
+      "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
+      "smiles_depiction": "*C/C(C)=C\\C*",
+      "is_default": true
+    },
+    {
+      "key": "trans-1-4",
+      "label": "trans-1,4",
+      "repeat_unit": "{[][$]C/C(C)=C/C[$][]}",
+      "smiles_depiction": "*C/C(C)=C/C*",
+      "note": "The trans-1,4 chain packs into a crystalline solid instead of an elastomer -- this is the configuration of gutta-percha and balata.",
+      "is_default": false
+    }
+  ],
+  "notation_note": "The cis-1,4 unit is shown -- chemically the same repeat unit as natural rubber, but manufactured. cis-content varies by catalyst (90-92% via anionic Li-initiation vs. ~98.5% via Ziegler-Natta), which is why the synthetic route is treated as its own entry.",
   "iupac_name": null,
   "synonyms": [
     "synthetic natural rubber",
@@ -227,7 +245,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyisoprene.svg",
+      "alt": "Repeat unit of Polyisoprene, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyisoprene.sdf",
+      "alt": "Ball-and-stick model of one Polyisoprene repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

@@ -15,6 +15,20 @@ import {
 
 const eraNames = erasData.map((e) => e.name) as [string, ...string[]];
 
+// One configurational form of a repeat unit -- cis vs trans 1,4-addition,
+// 1,2-vinyl addition, a defined stereocentre. Same constitution, different
+// geometry, and often a different material: cis-1,4-polyisoprene is rubber
+// while the trans isomer is gutta-percha. Entries with no meaningful
+// alternative leave this empty and the top-level repeat_unit stands alone.
+const structureVariantSchema = z.object({
+  key: z.string(), // asset suffix, e.g. 'trans-1-4' -> <id>--trans-1-4.svg
+  label: z.string(), // as shown to a reader, e.g. 'trans-1,4'
+  repeat_unit: z.string().nullable(), // BigSMILES
+  smiles_depiction: z.string().nullable(), // plain SMILES, '*' attachment points
+  note: z.string().optional(),
+  is_default: z.boolean().default(false), // the form the page opens on
+});
+
 // Full polymer data schema, all 13 blocks. Lives in a separate data
 // collection from the narrative MDX (two files per entry, never merged),
 // joined by `id`. Concepts get their own lighter data schema -- this one
@@ -30,6 +44,13 @@ export const polymerDataSchema = z.object({
   cas_number: z.string().nullable(),
   resin_id_code: z.string().nullable(),
   repeat_unit: z.string().nullable(), // BigSMILES
+  // Plain SMILES for the same repeat unit, attachment points written as '*'.
+  // Derived from `repeat_unit`, for tooling that cannot read BigSMILES.
+  smiles_depiction: z.string().nullable().default(null),
+  // Alternative configurations of that same repeat unit, if the polymer has
+  // any. repeat_unit above is always the default one, repeated here as the
+  // entry marked is_default.
+  structure_variants: z.array(structureVariantSchema).default([]),
   notation_note: z.string().optional(), // required in spirit when repeat_unit is null
   iupac_name: z.string().nullable(),
   synonyms: z.array(z.string()).default([]),

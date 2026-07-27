@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "61128-46-9",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Phthalimide/bisphenol-A-based repeat unit (C37H24O6N2, MW 592.61 g/mol); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]N1C(=O)c2ccc(Oc3ccc(cc3)C(C)(C)c3ccc(cc3)Oc3ccc4C(=O)N(C(=O)c4c3)c3cccc(c3)[<])cc2C1=O[]}",
+  "smiles_depiction": "*N1C(=O)c2ccc(Oc3ccc(cc3)C(C)(C)c3ccc(cc3)Oc3ccc4C(=O)N(C(=O)c4c3)c3cccc(c3)*)cc2C1=O",
+  "notation_note": "The bisphenol A-based polyetherimide shown is the commercial archetype. The ether links between the imide rings are what make it melt-processable, unlike the fully rigid polyimides.",
   "iupac_name": null,
   "synonyms": [
     "Ultem"
@@ -251,7 +252,15 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyetherimide.svg",
+      "alt": "Repeat unit of Polyetherimide, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
     "structure_render_3d": null
   }
 }

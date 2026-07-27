@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "LCPs are a structural class (rigid, rod-like aromatic mesogenic units in the main chain or as side chains) rather than one chemistry -- commercial grades (Vectra, Xydar, Zenite, Vectran) vary in exact monomer composition, so no single repeat unit represents the class.",
+  "repeat_unit": "{[][>]Oc1ccc(cc1)C(=O)[<],[>]Oc1ccc2cc(ccc2c1)C(=O)[<][]}",
+  "smiles_depiction": "*Oc1ccc(cc1)C(=O)*.*Oc1ccc2cc(ccc2c1)C(=O)*",
+  "notation_note": "One widely used aromatic copolyester is shown. The rigid rod-like rings are the point: they line up in the melt, which is what gives this family its extraordinary flow into thin sections. Other LCP chemistries use different rigid monomers.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [
@@ -100,13 +101,13 @@
       "value": null,
       "unit": "°C",
       "status": "placeholder",
-      "conditions": "Varies by formulation/processing; no single value sourced this session."
+      "conditions": "Varies by formulation/processing; no single value sourced."
     },
     "tm": {
       "value": null,
       "unit": "°C",
       "status": "placeholder",
-      "conditions": "Varies by formulation/processing; no single value sourced this session."
+      "conditions": "Varies by formulation/processing; no single value sourced."
     },
     "tc": {
       "value": null,
@@ -280,7 +281,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/liquid-crystal-polymers.svg",
+      "alt": "Repeat unit of Liquid Crystal Polymers, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/liquid-crystal-polymers.sdf",
+      "alt": "Ball-and-stick model of one Liquid Crystal Polymers repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

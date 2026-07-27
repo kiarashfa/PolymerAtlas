@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "32131-17-2",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "This hub is represented by nylon 6,6 (poly(hexamethylene adipamide)) as the archetypal nylon; other nylon variants (nylon 6, nylon 4,6, nylon 6,12, etc., mentioned in the narrative's own sub-comparisons) would need separate variant treatment for their own distinct repeat units.",
+  "repeat_unit": "{[][>]NCCCCCCNC(=O)CCCCC(=O)[<][]}",
+  "smiles_depiction": "*NCCCCCCNC(=O)CCCCC(=O)*",
+  "notation_note": "This hub is represented by nylon 6,6 (poly(hexamethylene adipamide)) as the archetypal nylon; other nylons (nylon 6, nylon 4,6, nylon 6,12) have their own distinct repeat units.",
   "iupac_name": "Poly(hexamethylene adipamide)",
   "synonyms": [
     "polyamide 66",
@@ -189,7 +190,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "Amide linkages are hydrolyzable, and nylon is known to absorb moisture, but no specific rate/data sourced this session."
+      "conditions": "Amide linkages are hydrolyzable, and nylon is known to absorb moisture, but no specific rate/data sourced."
     },
     "flammability_ul94": {
       "value": null,
@@ -256,7 +257,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/nylon.svg",
+      "alt": "Repeat unit of Nylon, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/nylon.sdf",
+      "alt": "Ball-and-stick model of one Nylon repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

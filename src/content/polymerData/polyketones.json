@@ -84,7 +84,7 @@
       "value": null,
       "unit": "%",
       "status": "placeholder",
-      "conditions": "Described as 'semi-crystalline'; no specific percentage sourced this session."
+      "conditions": "Described as 'semi-crystalline'; no specific percentage sourced."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Aromatic ketone/ether backbone gives PAEK-family polymers an unusual combination of high-temperature performance and (unlike many other high-performance polymers) genuine melt-processability.",
@@ -139,7 +139,7 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder",
-      "conditions": "Qualitatively described as 'as strong as aluminum while being 40 percent of the weight'; no specific number sourced this session."
+      "conditions": "Qualitatively described as 'as strong as aluminum while being 40 percent of the weight'; no specific number sourced."
     },
     "elongation_at_break": {
       "value": null,
@@ -182,7 +182,7 @@
       "status": "estimated",
       "evidence_level": "tertiary",
       "source": "wiki-pekk",
-      "conditions": "Qualitative claim from source; no formal UL94 rating sourced this session."
+      "conditions": "Qualitative claim from source; no formal UL94 rating sourced."
     }
   },
   "processing": {

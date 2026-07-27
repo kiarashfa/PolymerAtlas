@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "9002-89-5",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "[CH2CH(OH)]n, made by hydrolyzing polyvinyl acetate rather than polymerizing a vinyl alcohol monomer (which is thermodynamically unstable and tautomerizes to acetaldehyde) -- degree of hydrolysis varies by grade.",
+  "repeat_unit": "{[][$]CC(O)[$][]}",
+  "smiles_depiction": "*CC(O)*",
+  "notation_note": "Made by hydrolyzing polyvinyl acetate rather than by polymerizing a vinyl alcohol monomer, which is thermodynamically unstable and tautomerizes to acetaldehyde; the degree of hydrolysis varies by grade, so commercial material retains some acetate units.",
   "iupac_name": null,
   "synonyms": [
     "PVOH"
@@ -252,7 +253,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyvinyl-alcohol.svg",
+      "alt": "Repeat unit of Polyvinyl Alcohol, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyvinyl-alcohol.sdf",
+      "alt": "Ball-and-stick model of one Polyvinyl Alcohol repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

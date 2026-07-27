@@ -9,8 +9,8 @@
   "parent": null,
   "cas_number": "26247-20-1",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(butylene succinate), repeating C8H12O4 units; a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]OCCCCOC(=O)CCC(=O)[<][]}",
+  "smiles_depiction": "*OCCCCOC(=O)CCC(=O)*",
   "iupac_name": null,
   "synonyms": [
     "GS Pla (trade name)"
@@ -144,7 +144,7 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder",
-      "conditions": "Qualitatively 'comparable to polypropylene'; no specific number sourced this session."
+      "conditions": "Qualitatively 'comparable to polypropylene'; no specific number sourced."
     },
     "elongation_at_break": {
       "value": null,
@@ -240,7 +240,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polybutylene-succinate.svg",
+      "alt": "Repeat unit of Polybutylene Succinate, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polybutylene-succinate.sdf",
+      "alt": "Ball-and-stick model of one Polybutylene Succinate repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

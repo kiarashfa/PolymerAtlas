@@ -8,7 +8,7 @@ export const backboneClassEnum = backboneClasses as [string, ...string[]];
 export const polymerizationMechanismEnum = polymerizationMechanisms as [string, ...string[]];
 
 // Status semantics for every empirical value on the site:
-// verified   -- source actually opened & read this session, URL/DOI in references.bib
+// verified   -- source actually opened & read, URL/DOI in references.bib
 // estimated  -- inferred from family-typical ranges, not a direct measurement
 // placeholder -- not yet researched
 // not_applicable -- property doesn't exist for this material (never conflate with placeholder)

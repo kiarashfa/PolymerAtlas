@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Triblock copolymer (styrene-b-(ethylene/butylene)-b-styrene), made by hydrogenating SBS (styrene-butadiene-styrene); block ratios vary by grade so no single fixed repeat unit represents the class.",
+  "repeat_unit": "{[][$]CC(c1ccccc1)[$],[$]CCCC[$][]}",
+  "smiles_depiction": "*CC(c1ccccc1)*.*CCCC*",
+  "notation_note": "SEBS is a triblock: a long midblock flanked by two polystyrene endblocks, which is why it behaves as a rubber at room temperature yet melts and flows like a thermoplastic. The midblock is polybutadiene after hydrogenation, so it contains both the tetramethylene run shown and butylene branches from 1,2-addition.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -143,7 +144,7 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder",
-      "conditions": "Qualitatively described as 'high tensile strength'; no specific number sourced this session."
+      "conditions": "Qualitatively described as 'high tensile strength'; no specific number sourced."
     },
     "elongation_at_break": {
       "value": null,
@@ -236,7 +237,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/styrene-ethylene-butylene-styrene.svg",
+      "alt": "Repeat unit of Styrene-Ethylene-Butylene-Styrene, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/styrene-ethylene-butylene-styrene.sdf",
+      "alt": "Ball-and-stick model of one Styrene-Ethylene-Butylene-Styrene repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

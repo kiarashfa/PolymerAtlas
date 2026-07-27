@@ -7,8 +7,9 @@
   "parent": "chitin",
   "cas_number": "9012-76-4",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Linear copolymer of D-glucosamine and N-acetyl-D-glucosamine (deacetylated chitin); degree of deacetylation (60-100% in commercial grades) varies, so no single fixed ratio represents all grades.",
+  "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](N)[C@H]([<])O[C@@H]1CO[]}",
+  "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](N)[C@H](*)O[C@@H]1CO",
+  "notation_note": "Chitosan is chitin with most of its acetyl groups removed; the degree of deacetylation varies by preparation, so real material is a copolymer of the unit shown and the acetylated chitin unit.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -246,7 +247,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/chitosan.svg",
+      "alt": "Repeat unit of Chitosan, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/chitosan.sdf",
+      "alt": "Ball-and-stick model of one Chitosan repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

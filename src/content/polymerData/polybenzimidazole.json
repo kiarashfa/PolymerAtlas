@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "32075-68-6",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly[2,2'-(m-phenylene)-5,5'-bisbenzimidazole], (C20H12N4)n, repeat unit molar mass 308.34 g/mol; a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][>]c1ccc2[nH]c(nc2c1)c1cccc(c1)c1nc2cc(ccc2[nH]1)[<][]}",
+  "smiles_depiction": "*c1ccc2[nH]c(nc2c1)c1cccc(c1)c1nc2cc(ccc2[nH]1)*",
+  "notation_note": "The meta-linked polybenzimidazole shown is the commercial fibre. Forming each benzimidazole ring costs two molecules of water, four per repeat unit.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -244,7 +245,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polybenzimidazole.svg",
+      "alt": "Repeat unit of Polybenzimidazole, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polybenzimidazole.sdf",
+      "alt": "Ball-and-stick model of one Polybenzimidazole repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

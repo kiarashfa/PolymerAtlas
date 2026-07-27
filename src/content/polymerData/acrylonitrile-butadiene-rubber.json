@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "9003-18-3",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Random copolymer of acrylonitrile and butadiene; ACN content (commonly ~33 wt% for balanced performance) varies by grade and strongly affects properties, so no single fixed repeat-unit ratio represents the class.",
+  "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(C#N)[$][]}",
+  "smiles_depiction": "*C/C=C\\C*.*CC(C#N)*",
+  "notation_note": "A statistical copolymer. Acrylonitrile content, commonly 18-50%, is the dial that trades oil resistance against low-temperature flexibility, so no single ratio represents the class.",
   "iupac_name": null,
   "synonyms": [
     "nitrile rubber",
@@ -108,7 +109,7 @@
       "value": null,
       "unit": "°C",
       "status": "placeholder",
-      "conditions": "Decreases with lower ACN content; no single number sourced this session."
+      "conditions": "Decreases with lower ACN content; no single number sourced."
     },
     "tm": {
       "value": null,
@@ -287,7 +288,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/acrylonitrile-butadiene-rubber.svg",
+      "alt": "Repeat unit of Acrylonitrile Butadiene Rubber, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/acrylonitrile-butadiene-rubber.sdf",
+      "alt": "Ball-and-stick model of one Acrylonitrile Butadiene Rubber repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

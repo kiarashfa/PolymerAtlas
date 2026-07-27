@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Copolymer of multifunctional alcohols and unsaturated dibasic acids (e.g. maleic or fumaric acid), subsequently crosslinked with styrene -- composition varies by formulation, so no single repeat unit represents the class, and the final crosslinked network has no linear repeat unit at all.",
+  "repeat_unit": "{[][>]OC(C)COC(=O)/C=C\\C(=O)[<][]}",
+  "smiles_depiction": "*OC(C)COC(=O)/C=C\\C(=O)*",
+  "notation_note": "The linear prepolymer is shown. Its point is the carbon-carbon double bond in every repeat: dissolved styrene adds across those bonds during cure and staples the chains into a network.",
   "iupac_name": null,
   "synonyms": [
     "UPR"
@@ -240,7 +241,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/unsaturated-polyester.svg",
+      "alt": "Repeat unit of Unsaturated Polyester, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/unsaturated-polyester.sdf",
+      "alt": "Ball-and-stick model of one Unsaturated Polyester repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

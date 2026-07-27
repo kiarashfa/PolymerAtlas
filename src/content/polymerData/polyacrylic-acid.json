@@ -9,8 +9,8 @@
   "parent": null,
   "cas_number": "9003-01-4",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(1-carboxyethylene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][$]CC(C(=O)O)[$][]}",
+  "smiles_depiction": "*CC(C(=O)O)*",
   "iupac_name": "Poly(acrylic acid)",
   "synonyms": [
     "Carbomer",
@@ -246,7 +246,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polyacrylic-acid.svg",
+      "alt": "Repeat unit of Polyacrylic Acid, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polyacrylic-acid.sdf",
+      "alt": "Ball-and-stick model of one Polyacrylic Acid repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

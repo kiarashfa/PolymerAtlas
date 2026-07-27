@@ -68,7 +68,7 @@
   "mechanical": {
     "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
     "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder", "conditions": "Described qualitatively as an 'exceptionally strong plastic' comparable in application scope to conventional industrial thermosets; no specific number sourced this session." },
+    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder", "conditions": "Described qualitatively as an 'exceptionally strong plastic' comparable in application scope to conventional industrial thermosets; no specific number sourced." },
     "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
     "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
     "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },

@@ -7,8 +7,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(thiophene-2,5-diyl); a defined repeat unit exists but was not converted to BigSMILES notation this session. Regioregularity (head-to-tail vs. random coupling in substituted derivatives like P3HT) strongly affects conductivity and is not captured by a single repeat-unit notation.",
+  "repeat_unit": "{[][$]c1ccc([$])s1[]}",
+  "smiles_depiction": "*c1ccc(s1)*",
+  "notation_note": "Regioregularity (head-to-tail vs. random coupling in substituted derivatives such as P3HT) strongly affects conductivity and is not captured by a single repeat-unit notation.",
   "iupac_name": null,
   "synonyms": ["PEDOT (as the 3,4-ethylenedioxythiophene derivative)"],
   "aliases": [
@@ -106,7 +107,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polythiophene.svg",
+      "alt": "Repeat unit of Polythiophene, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polythiophene.sdf",
+      "alt": "Ball-and-stick model of one Polythiophene repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

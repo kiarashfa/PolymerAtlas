@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "130479-65-1",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Random copolyester of adipic acid, 1,4-butanediol, and terephthalic acid; the random (non-block) arrangement prevents significant crystallization, so behavior varies continuously with composition rather than having one fixed repeat structure.",
+  "repeat_unit": "{[][>]OCCCCOC(=O)CCCCC(=O)[<],[>]OCCCCOC(=O)c1ccc(cc1)C(=O)[<][]}",
+  "smiles_depiction": "*OCCCCOC(=O)CCCCC(=O)*.*OCCCCOC(=O)c1ccc(cc1)C(=O)*",
+  "notation_note": "A random copolyester. The flexible aliphatic adipate segments are what bacteria can attack; the rigid aromatic terephthalate segments are what make it strong enough to use.",
   "iupac_name": null,
   "synonyms": [
     "ecoflex",
@@ -111,7 +112,7 @@
       "value": null,
       "unit": "°C",
       "status": "placeholder",
-      "conditions": "Random copolymer gives a wide melting range rather than a single sharp value; no specific range sourced this session."
+      "conditions": "Random copolymer gives a wide melting range rather than a single sharp value; no specific range sourced."
     },
     "tc": {
       "value": null,
@@ -139,7 +140,7 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder",
-      "conditions": "Qualitatively 'low elastic modulus'; no specific number sourced this session."
+      "conditions": "Qualitatively 'low elastic modulus'; no specific number sourced."
     },
     "yield_strength": {
       "value": null,
@@ -251,7 +252,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polybutylene-adipate-terephthalate.svg",
+      "alt": "Repeat unit of Polybutylene Adipate Terephthalate, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polybutylene-adipate-terephthalate.sdf",
+      "alt": "Ball-and-stick model of one Polybutylene Adipate Terephthalate repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

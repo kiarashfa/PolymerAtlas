@@ -9,8 +9,26 @@
   "parent": null,
   "cas_number": "9010-98-4",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Poly(2-chlorobuta-1,3-diene); a defined repeat unit exists but was not converted to BigSMILES notation this session.",
+  "repeat_unit": "{[][$]C/C(Cl)=C/C[$][]}",
+  "smiles_depiction": "*C/C(Cl)=C/C*",
+  "structure_variants": [
+    {
+      "key": "trans-1-4",
+      "label": "trans-1,4",
+      "repeat_unit": "{[][$]C/C(Cl)=C/C[$][]}",
+      "smiles_depiction": "*C/C(Cl)=C/C*",
+      "is_default": true
+    },
+    {
+      "key": "cis-1-4",
+      "label": "cis-1,4",
+      "repeat_unit": "{[][$]C/C(Cl)=C\\C[$][]}",
+      "smiles_depiction": "*C/C(Cl)=C\\C*",
+      "note": "A minor component of commercial neoprene; the trans form dominates and is what allows the polymer to crystallise on stretching.",
+      "is_default": false
+    }
+  ],
+  "notation_note": "The trans-1,4 unit is shown, the microstructure that dominates commercial neoprene.",
   "iupac_name": "Poly(2-chlorobuta-1,3-diene)",
   "synonyms": [
     "Neoprene",
@@ -276,7 +294,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/polychloroprene.svg",
+      "alt": "Repeat unit of Polychloroprene, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/polychloroprene.sdf",
+      "alt": "Ball-and-stick model of one Polychloroprene repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

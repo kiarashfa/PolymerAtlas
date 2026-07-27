@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "9004-70-0",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Cellulose nitrate ester; degree of nitration ranges from mono- to trinitrocellulose ((C6H9(NO2)O5)n through (C6H7(NO2)3O5)n) depending on nitration conditions, so a single fixed repeat unit does not represent all grades.",
+  "repeat_unit": "{[][>]O[C@H]1[C@H](O[N+](=O)[O-])[C@@H](O[N+](=O)[O-])[C@H]([<])O[C@@H]1CO[N+](=O)[O-][]}",
+  "smiles_depiction": "*O[C@H]1[C@H](O[N+](=O)[O-])[C@@H](O[N+](=O)[O-])[C@H](*)O[C@@H]1CO[N+](=O)[O-]",
+  "notation_note": "Fully nitrated cellulose is shown, three nitrate groups per glucose unit. Real material is rarely fully nitrated: the degree of substitution, typically between 1.8 and 2.8, is what separates lacquer-grade collodion from guncotton.",
   "iupac_name": "Cellulose nitrate",
   "synonyms": [
     "guncotton",
@@ -264,7 +265,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/nitrocellulose.svg",
+      "alt": "Repeat unit of Nitrocellulose, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/nitrocellulose.sdf",
+      "alt": "Ball-and-stick model of one Nitrocellulose repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

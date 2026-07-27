@@ -7,8 +7,9 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Cured epoxy is a crosslinked thermoset network formed from an epoxide-bearing prepolymer (most commonly bisphenol A diglycidyl ether, DGEBA) plus a curing agent (amine, anhydride, phenol, thiol, or isocyanate) -- the final network composition varies hugely by formulation, so no single repeat unit represents the class.",
+  "repeat_unit": "{[][>]Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OCC(O)C[<][]}",
+  "smiles_depiction": "*Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OCC(O)C*",
+  "notation_note": "The linear bisphenol A resin is shown. In use it is a thermoset: the terminal epoxide rings are opened by a hardener that ties the chains into a network, so the cured material has no repeating unit at all.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -241,7 +242,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/epoxy-resin.svg",
+      "alt": "Repeat unit of Epoxy Resin, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/epoxy-resin.sdf",
+      "alt": "Ball-and-stick model of one Epoxy Resin repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

@@ -9,8 +9,9 @@
   "parent": null,
   "cas_number": "9003-55-8",
   "resin_id_code": null,
-  "repeat_unit": null,
-  "notation_note": "Random copolymer of styrene and butadiene (typically ~25:75 by weight); ratio varies by grade so no single fixed repeat unit represents the class.",
+  "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(c1ccccc1)[$][]}",
+  "smiles_depiction": "*C/C=C\\C*.*CC(c1ccccc1)*",
+  "notation_note": "A statistical copolymer: the two units shown alternate irregularly along the chain in whatever ratio the recipe fixes, typically about three butadiene units to one styrene. The butadiene unit is drawn cis-1,4, though emulsion SBR contains trans and vinyl units too.",
   "iupac_name": null,
   "synonyms": [
     "GR-S (Government Rubber-Styrene, wartime name)"
@@ -257,7 +258,24 @@
   "media": {
     "hero_image": null,
     "diagrams": [],
-    "structure_render_2d": null,
-    "structure_render_3d": null
+    "structure_render_2d": {
+      "src": "~/assets/structures/styrene-butadiene-rubber.svg",
+      "alt": "Repeat unit of Styrene Butadiene Rubber, drawn as a skeletal structure with polymer brackets",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    },
+    "structure_render_3d": {
+      "src": "/structures/styrene-butadiene-rubber.sdf",
+      "alt": "Ball-and-stick model of one Styrene Butadiene Rubber repeat unit",
+      "caption": "A three-unit model is available alongside this one.",
+      "source_url": "",
+      "author": "Atlas of Polymers",
+      "license": "CC BY-SA 4.0",
+      "tool": "ChemDraw",
+      "generated_date": "2026-07-27"
+    }
   }
 }

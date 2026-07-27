@@ -7,6 +7,7 @@ import Section from './Section.astro';
 import PropRow from './PropRow.astro';
 import FactRow from './FactRow.astro';
 import ReferencesList from './ReferencesList.astro';
+import StructureViewer from './StructureViewer.astro';
 import {
   describeProperty,
   describeRated,
@@ -75,7 +76,6 @@ const processingProps = [
 ];
 
 const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Yes' : 'No');
-const structureImagePending = 'Structure render pending — drawn in a future update.';
 ---
 
 <div class="data-blocks">
@@ -86,6 +86,7 @@ const structureImagePending = 'Structure render pending — drawn in a future up
   </p>
 
   <Section {...sec.identity}>
+    <StructureViewer data={data} />
     <dl class="fact-table">
       <FactRow label="Abbreviation">
         {
@@ -291,7 +292,6 @@ const structureImagePending = 'Structure render pending — drawn in a future up
         <p class="section-prose">{data.structure_morphology.tg_relation_notes}</p>
       )
     }
-    <p class="pending-asset">{structureImagePending}</p>
   </Section>
 
   <Section {...sec.physical}>
