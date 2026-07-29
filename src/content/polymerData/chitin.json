@@ -58,6 +58,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -75,9 +100,31 @@
       "status": "placeholder",
       "conditions": "Forms crystalline nanofibrils/whiskers; no single sourced percentage."
     },
-    "crystal_structure": "Crystalline nanofibrils; hydrogen-bonded chain packing makes chitin very difficult to dissolve in water.",
+    "crystal_structure": "Crystalline nanofibrils; hydrogen-bonded chain packing makes chitin very difficult to dissolve in water. Two polymorphs are distinguished: alpha-chitin (antiparallel chain packing, orthorhombic unit cell) is the dominant, most crystalline form (crustacean shells, insect cuticle); beta-chitin (parallel chain packing, monoclinic unit cell) occurs in squid pens and some diatoms.",
     "chain_flexibility_notes": "In composite with calcium carbonate (as in crustacean shells), forms much harder/stiffer structures than pure chitin.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 100000,
+        "range_max": 500000,
+        "unit": "g/mol",
+        "conditions": "Commercial chitin (not distinguished as Mn or Mw in source); native, unprocessed chitin is reported considerably higher, >1e6 g/mol.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -151,6 +198,16 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -167,12 +224,25 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder"
+      "value": "good -- biodegrades very slowly under normal conditions",
+      "conditions": "Susceptible mainly to chitinolytic bacteria/enzymes (chitinase, chitobiase); pH 4.0-7.0 is the most active range for these enzymes.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -222,7 +292,8 @@
     "environmental_notes": "The second most abundant natural polymer on Earth after cellulose; commercial extraction valorizes seafood-processing waste."
   },
   "references": [
-    "wiki-chitin"
+    "wiki-chitin",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -246,5 +317,35 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 16000,
+      "unit": "mg/kg",
+      "conditions": "Reported as LD50 16 g/kg body weight; exact species/route not stated in source.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

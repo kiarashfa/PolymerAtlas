@@ -43,14 +43,24 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 0.915,
+      "range_min": 0.88,
+      "range_max": 0.95,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 11.5,
+      "range_min": 1,
+      "range_max": 22,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230 °C/5 kg."
     },
     "refractive_index": {
       "value": null,
@@ -65,6 +75,31 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -87,13 +122,45 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Microphase-separated triblock structure: glassy polystyrene end-blocks act as physical crosslinks, while the rubbery ethylene/butylene mid-block provides elasticity -- giving SEBS its thermoplastic-elastomer behavior (rubber-like at use temperature, moldable when hot).",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 50000,
+        "range_max": 154000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 57000,
+        "range_max": 183000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 1.05,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -56.5,
+      "range_min": -60,
+      "range_max": -53,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Two-phase block copolymer; also reported separately: ethylene/butylene midblock -36 °C, polystyrene endblock 100 °C."
     },
     "tm": {
       "value": null,
@@ -107,10 +174,14 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 37.5,
+      "range_min": -50,
+      "range_max": 125,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a continuous-use range of -60°C to +120°C (brittleness point to service limit), with short-term excursions to 150°C; exceeds unhydrogenated SBS's -40°C to +80°C range."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a continuous-use (long-term service temperature) range of -50 °C to +125 °C; brittleness point (ASTM D746) is -60 to -21 °C."
     },
     "decomposition_onset": {
       "value": 400,
@@ -130,31 +201,48 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2.8,
+      "range_min": 0.2,
+      "range_max": 5.4,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
-      "value": null,
+      "value": 5.6,
       "unit": "MPa",
-      "status": "not_applicable",
-      "conditions": "Thermoplastic elastomer; no distinct yield region."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "SEBS shows a measurable tensile yield point under this test, distinct from its ultimate tensile strength at break."
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 21.5,
+      "range_min": 3,
+      "range_max": 40,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Qualitatively described as 'high tensile strength'; no specific number sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wide range reflects grade/hardness variation across SEBS compounds."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 675,
+      "range_min": 470,
+      "range_max": 880,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
       "unit": "J/m",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "no break"
     },
     "impact_charpy": {
       "value": null,
@@ -162,18 +250,43 @@
       "status": "not_applicable"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 62.5,
+      "range_min": 30,
+      "range_max": 95,
+      "unit": "Shore A",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 400,
+      "range_min": 100,
+      "range_max": 700,
       "unit": "MPa",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alcohols": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aliphatic hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aromatic hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "greases & oils": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "halogenated hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" }
+    },
     "weathering_uv": {
       "value": "Significantly improved oxidation/ozone/UV resistance vs. unhydrogenated SBS",
       "status": "verified",
@@ -187,6 +300,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -197,17 +320,23 @@
     ],
     "processing_temp_range": {
       "value": 200,
+      "range_min": 170,
+      "range_max": 230,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "search-sebs",
-      "conditions": "Melt viscosity commonly characterized at 200°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Injection molding/compounding."
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 2.1,
+      "range_min": 1.2,
+      "range_max": 3,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -232,7 +361,8 @@
     "environmental_notes": null
   },
   "references": [
-    "search-sebs"
+    "search-sebs",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
@@ -256,5 +386,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 2000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported as >2,000 mg/kg (practically nontoxic)."
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Skin (rabbit) LD50: >2,000 mg/kg. Aquatic toxicity (48 h LC50): Daphnia magna >1,000 mg/L, bluegill sunfish >1,000 mg/L."
   }
 }

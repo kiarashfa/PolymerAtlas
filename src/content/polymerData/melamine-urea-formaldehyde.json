@@ -56,8 +56,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.0,
+      "range_max": 1.31,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "20 °C; MF resin 1-1.14 g/cm³, UF resin 1.2-1.31 g/cm³",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -65,19 +70,65 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.43,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "UF resin, 20 °C; no MF value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 4.7,
+      "range_max": 10.9,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz unless noted; MF 4.7-10.9 (100 Hz), 7.9 (1 MHz); UF approx. 5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-12,
+      "range_max": 9.09e-10,
       "unit": "S/m",
+      "conditions": "reciprocal of reported volume resistivity; UF 1.1×10⁹ Ω·m, MF 1×10¹⁰-1×10¹² Ω·m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 3,
+      "unit": "%",
+      "conditions": "UF resin, equilibrium immersion at 23 °C; alpha-cellulose-filled molding compounds are much lower (Mark): UF 0.4-0.8%, MF 0.1-0.6%, 24 h",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 11,
+      "range_max": 16,
+      "unit": "kV/mm",
+      "conditions": "MF resin, d = 0.6-0.8 mm, K20/P50 test; no UF value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -103,7 +154,39 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Hard, durable, and rigid once cured; prone to chipping under conventional saws; MF surfaces are not microwave-safe and can stain/scratch over time.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 400,
+        "range_max": 640,
+        "unit": "g/mol",
+        "conditions": "UF resin, water-based dispersion; no MF value found",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 2500,
+        "range_max": 500000,
+        "unit": "g/mol",
+        "conditions": "UF resin, water-based dispersion; no MF value found",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 5.2,
+        "range_max": 7.3,
+        "unit": "",
+        "conditions": "UF resin, water-based dispersion; no MF value found",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -113,9 +196,13 @@
     },
     "tm": {
       "value": null,
+      "range_min": 90,
+      "range_max": 119,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Thermoset; does not melt."
+      "conditions": "uncured (B-stage) resin melting/softening range, DSC; MF 90-101 °C, UF 119 °C; once cured, the crosslinked network does not melt",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -124,70 +211,170 @@
     },
     "hdt": {
       "value": null,
+      "range_min": 130,
+      "range_max": 182,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa; UF 130 °C (Wypych, resin; also 130 °C for alpha-cellulose-filled grade per Mark), MF 182 °C (Mark, alpha-cellulose-filled; no unfilled MF value found)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 185,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "MF resin; no UF value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
-      "value": 0.0358,
-      "range_min": 0.0343,
-      "range_max": 0.0373,
+      "value": null,
+      "range_min": 0.293,
+      "range_max": 0.423,
       "unit": "W/(m·K)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-urea-formaldehyde",
-      "conditions": "UF foam insulation (UFFI), not the solid resin."
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "alpha-cellulose-filled molding compounds: UF 0.423, MF 0.293-0.423; foam insulation (UFFI) is much lower, around 0.036 (tertiary source, not the solid resin)."
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 9000,
+      "range_max": 9700,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,000-9,700 MPa, MF 9,300 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 45,
+      "range_max": 55,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "UF resin, tensile stress at yield; no distinct MF yield value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 45,
+      "range_max": 55,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "MF 45-52 MPa, UF 55 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 0.5,
+      "range_max": 1.0,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 0.5-1.0%, MF 0.6-0.9%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 13,
+      "range_max": 19,
       "unit": "J/m",
-      "status": "placeholder"
+      "conditions": "notched; alpha-cellulose-filled molding compounds (Mark); UF 14-18 J/m, MF 13-19 J/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_charpy": {
       "value": null,
+      "range_min": 1.1,
+      "range_max": 1.6,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "conditions": "UF resin, notched, 23 °C; unnotched reported separately at 5-12 kJ/m²; no MF value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder",
-      "conditions": "Qualitatively hard and durable, resistant to breaking but prone to chipping."
+      "range_min": 110,
+      "range_max": 125,
+      "unit": "Rockwell M",
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF M110-M120, MF M110-M125",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 7600,
+      "range_max": 10300,
       "unit": "MPa",
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,700-10,300 MPa, MF 7,600 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "alcohols": {
+        "value": "good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "very good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "conditions": "MF resin",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -198,8 +385,29 @@
       "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds -- a real limitation in exterior wood-composite use, not independently confirmed with a source."
     },
     "flammability_ul94": {
+      "value": "V-0",
+      "conditions": "both MF and UF resins",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
+      "range_min": 30,
+      "range_max": 60,
+      "unit": "%",
+      "conditions": "MF 30-60%, UF 30%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 25.74,
+      "unit": "MPa^0.5",
+      "conditions": "Hildebrand parameter, UF resin; no MF value found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "processing": {
@@ -210,14 +418,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 95,
+      "range_max": 188,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "UF (Wypych): 95-115 °C nozzle, 145-150 °C mold, injection molding; alpha-cellulose-filled compounds (Mark): UF 135-177 °C, MF 138-188 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.6,
+      "range_max": 1.8,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "MF (Wypych): 1.5-1.8% general, 0.6-0.8% as molded; UF (Mark, alpha-cellulose-filled): 0.6-1.4% mold shrinkage",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -263,12 +481,62 @@
   },
   "references": [
     "wiki-melamine-resin",
-    "wiki-urea-formaldehyde"
+    "wiki-urea-formaldehyde",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
     "diagrams": [],
     "structure_render_2d": null,
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "range_min": 8394,
+      "range_max": 10000,
+      "unit": "mg/kg",
+      "conditions": "UF 8,394 mg/kg; MF >10,000 mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 1,
+      "range_max": 2,
+      "unit": "",
+      "conditions": "MF resin; explicitly stated as NFPA 704 rating; no UF rating found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "conditions": "MF resin; explicitly stated as NFPA 704 rating; no UF rating found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "MF resin; explicitly stated as NFPA 704 rating; no UF rating found",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "conditions": "MF resin",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Skin (rabbit) LD50: UF >2,000 mg/kg; MF >10,000 mg/kg."
   }
 }

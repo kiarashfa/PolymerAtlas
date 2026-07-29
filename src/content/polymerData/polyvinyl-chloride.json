@@ -45,10 +45,13 @@
   "physical": {
     "density": {
       "value": 1.4,
+      "range_min": 1.37,
+      "range_max": 1.43,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, rigid PVC"
     },
     "melt_flow_index": {
       "value": null,
@@ -56,18 +59,63 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.54,
+      "range_min": 1.532,
+      "range_max": 1.548,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.45,
+      "range_min": 3.39,
+      "range_max": 3.5,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1 kHz to 1 MHz"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-13,
+      "range_max": 1e-12,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1×10¹²–1×10¹³ Ω·m"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.22,
+      "range_min": 0.04,
+      "range_max": 0.4,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, 23 °C water immersion"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -81,33 +129,102 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Predominantly atactic with a syndiotactic bias from free-radical polymerization: syndiotactic dyad content ~28-44% (up to 55-68% at low polymerization temperature), isotactic ~5-22%, heterotactic ~31-52%.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 7,
+      "range_min": 4,
+      "range_max": 10,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "commercial PVC"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Orthorhombic unit cell (a≈1.01-1.08 nm, b≈0.53-0.54 nm, c≈0.510-0.512 nm, 2 chains/cell); lamellar, fringed-micelle crystalline morphology; planar zigzag chain conformation.",
     "chain_flexibility_notes": "Exists in two families with very different behavior: rigid/unplasticized PVC (uPVC) and flexible PVC (can be >85% plasticizer by mass).",
-    "tg_relation_notes": "Rigid PVC's Tg (82°C) is well above room temperature, giving unplasticized PVC its stiffness; plasticizer addition lowers the effective Tg dramatically, producing flexible PVC."
+    "tg_relation_notes": "Rigid PVC's Tg (82°C) is well above room temperature, giving unplasticized PVC its stiffness; plasticizer addition lowers the effective Tg dramatically, producing flexible PVC.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 37000,
+        "range_max": 214000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 2.25,
+        "range_min": 1.9,
+        "range_max": 2.59,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "suspension-polymerized PVC (dominant commercial process)"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "cyclohexanone",
+        "temperature_k": 293,
+        "k": { "value": 0.0137, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 1.0, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetrahydrofuran",
+        "temperature_k": 293,
+        "k": { "value": 0.00363, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.92, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chlorobenzene",
+        "temperature_k": 303,
+        "mw_range": "30-190 kg/mol (Mn)",
+        "k": { "value": 0.0712, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.59, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "cyclohexane",
+        "temperature_k": 298,
+        "mw_range": "30-190 kg/mol (Mn)",
+        "k": { "value": 0.0138, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.78, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetrahydrofuran (25 °C)",
+        "temperature_k": 298,
+        "mw_range": "30-190 kg/mol (Mn)",
+        "k": { "value": 0.0163, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.78, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 82,
+      "value": 84.5,
+      "range_min": 82,
+      "range_max": 87,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride",
-      "conditions": "Rigid/unplasticized PVC."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., rigid PVC"
     },
     "tm": {
-      "value": 180,
-      "range_min": 100,
-      "range_max": 260,
+      "value": null,
+      "range_min": 103,
+      "range_max": 230,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC; a separate estimate of ~400 °C is reported for syndiotactic PVC"
     },
     "tc": {
       "value": null,
@@ -115,14 +232,21 @@
       "status": "placeholder"
     },
     "hdt": {
-      "value": null,
+      "value": 73.5,
+      "range_min": 73,
+      "range_max": 74,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 200,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
@@ -132,42 +256,49 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": 3400,
+      "value": 3215,
+      "range_min": 2430,
+      "range_max": 4000,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride",
-      "conditions": "Young's modulus, rigid PVC only (3.4 GPa)."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 39.2,
+      "range_max": 88.3,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "tensile stress at yield, spans rigid to filled/reinforced PVC grades"
     },
     "tensile_strength_at_break": {
-      "value": 45,
-      "range_min": 31,
-      "range_max": 60,
+      "value": 56.6,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride",
-      "conditions": "Rigid PVC; source reports unqualified 'tensile strength', not specified whether at yield or break."
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "unplasticized (rigid) PVC; plasticized with 10% dioctyl phthalate: 55.5 MPa"
     },
     "elongation_at_break": {
-      "value": 30,
-      "range_min": 20,
-      "range_max": 40,
+      "value": 85,
       "unit": "%",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-chloride",
-      "conditions": "Rigid PVC."
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "unplasticized (rigid) PVC; with 10% dioctyl phthalate: 104%"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 33,
+      "range_max": 1302,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C; spans unmodified to impact-modified PVC grades"
     },
     "impact_charpy": {
       "value": null,
@@ -175,18 +306,102 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 67.5,
+      "range_min": 66,
+      "range_max": 69,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "rigid PVC; also reported as Shore A 30-96 / Shore D 22-25 depending on grade"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2945,
+      "range_min": 2580,
+      "range_max": 3310,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.3825,
+      "range_min": 0.38,
+      "range_max": 0.385,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": 0.575,
+      "range_min": 0.35,
+      "range_max": 0.8,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "static, on steel; dynamic 0.72-0.93"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "dilute and concentrated"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "fair-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -198,7 +413,106 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": 43,
+      "range_min": 37,
+      "range_max": 49,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 19.6,
+      "range_min": 19.19,
+      "range_max": 20.1,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp."
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "toluene",
+        "value": null,
+        "range_min": 0.41,
+        "range_max": 0.45,
+        "unit": "",
+        "conditions": "125-140 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "2-propanol",
+        "value": null,
+        "range_min": 0.97,
+        "range_max": 1.1,
+        "unit": "",
+        "conditions": "125-140 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "methanol",
+        "value": null,
+        "range_min": 1.24,
+        "range_max": 1.42,
+        "unit": "",
+        "conditions": "125-140 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "acetone",
+        "value": null,
+        "range_min": 0.53,
+        "range_max": 0.77,
+        "unit": "",
+        "conditions": "125-140 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": 0.75,
+        "unit": "",
+        "conditions": "120 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "carbon tetrachloride",
+        "value": 1.14,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "chloroform",
+        "value": 0.91,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "dichloromethane",
+        "value": 1.63,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ],
+    "gas_permeability": []
   },
   "processing": {
     "processing_methods": [
@@ -212,9 +526,13 @@
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 1.5,
+      "range_min": 0.5,
+      "range_max": 2.5,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -264,7 +582,9 @@
   },
   "references": [
     "wiki-polyvinyl-chloride",
-    "ansi-resin-codes"
+    "ansi-resin-codes",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -288,5 +608,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

@@ -41,8 +41,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.4,
+      "range_max": 1.42,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "20 °C, solid; bulk (powder) density is much lower, 0.4-0.68 g/cm³.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -51,8 +56,13 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.52,
+      "range_max": 1.54,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
@@ -62,6 +72,34 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 10,
+      "unit": "%",
+      "conditions": "moisture absorption, equilibrium at 23 °C/50% RH (not immersion)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -78,23 +116,67 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 35,
+      "range_max": 50,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "chitosan fibers",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
-    "chain_flexibility_notes": "Degree of deacetylation (measurable by NMR, 60-100% in commercial grades) governs solubility and reactivity.",
-    "tg_relation_notes": null
+    "crystal_structure": "Orthorhombic unit cell (a = 0.895 nm, b = 1.697 nm, c = 1.037 nm), 4 chains per unit cell with 8 associated water molecules; chains adopt a 2-fold helix conformation.",
+    "chain_flexibility_notes": "Degree of deacetylation (65-95%, commonly ~90% in commercial grades) governs solubility and reactivity.",
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 33700,
+        "range_max": 99400,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 20000,
+        "range_max": 375000,
+        "unit": "g/mol",
+        "conditions": "Spans low-Mw (20,000-190,000) and high-Mw (190,000-375,000) commercial grades; a representative Mw of 150,000 is also cited.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 3.3,
+        "range_max": 8.1,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 163,
+      "range_max": 172,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
+      "range_min": 199,
+      "range_max": 230,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "DSC",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -108,8 +190,12 @@
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 313,
+      "range_max": 317,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
@@ -119,9 +205,12 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 32.6,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "cast film",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -130,13 +219,22 @@
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 6.7,
+      "range_max": 150.2,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Wide range reflects different film-casting/plasticizer conditions; amorphous film, no distinct yield point.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 4.1,
+      "range_max": 117.8,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -157,6 +255,16 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -167,11 +275,42 @@
         "evidence_level": "tertiary",
         "source": "wiki-chitosan"
       },
-      "dilute_acids": {
-        "value": "Soluble below pH 6 (forms soluble salts with organic acid anions)",
+      "acids": {
+        "value": "poor",
+        "conditions": "dilute and concentrated; soluble below pH 6 (forms soluble salts with organic acid anions) -- acetic acid, formic acid and concentrated mineral acids are listed as good solvents",
         "status": "verified",
-        "evidence_level": "tertiary",
-        "source": "wiki-chitosan"
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -179,12 +318,25 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder"
+      "value": "moderate -- susceptible to lysozyme and specific glycosidase hydrolysis",
+      "conditions": "Enzymes hydrolyzing glucosamine-glucosamine and N-acetylglucosamine-N-acetylglucosamine linkages degrade chitosan; also degraded by lysozyme.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -239,10 +391,11 @@
     "recyclable": false,
     "biodegradable": true,
     "degradation_pathway": "Enzymatic hydrolysis (chitosanase, lysozyme) of glycosidic linkages; biodegradable.",
-    "environmental_notes": "Commercial production valorizes shellfish-processing waste."
+    "environmental_notes": "Commercial production valorizes shellfish-processing waste. Low aquatic toxicity reported: 100% survival in 48 h tests on Daphnia magna, fathead minnow and rainbow trout; rainbow trout LC50 >10,000 mg/l."
   },
   "references": [
-    "wiki-chitosan"
+    "wiki-chitosan",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
@@ -266,5 +419,49 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 16000,
+      "unit": "mg/kg",
+      "conditions": "Reported for oral mouse (source's own designation), not rat; >16,000 mg/kg (practically non-toxic).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

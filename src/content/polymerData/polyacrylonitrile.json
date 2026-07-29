@@ -53,10 +53,13 @@
   "physical": {
     "density": {
       "value": 1.184,
+      "range_min": 1.04,
+      "range_max": 1.31,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyacrylonitrile"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range 1.04-1.31 g/cm³; calculated range 1.112-1.177 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -64,18 +67,61 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.517,
+      "range_min": 1.514,
+      "range_max": 1.52,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C."
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 2.87,
+      "range_max": 4.2,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range across frequencies/sources; typically higher at lower frequency (e.g., 6.5 at 60 Hz, 4.2 at 1 MHz)."
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-11,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity (1×10¹¹ Ω·m)."
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 1.25,
+      "range_min": 1.0,
+      "range_max": 1.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersed in water at 23 °C."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -90,29 +136,103 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Statistical mix from radical polymerization: isotactic 25-29%, heterotactic 47-51%, syndiotactic 22-27%.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 31.75,
+      "range_min": 18.5,
+      "range_max": 45,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Fiber form reaches higher crystallinity (~60%)."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Orthorhombic, pseudo-hexagonal, or hexagonal, depending on preparation.",
     "chain_flexibility_notes": "Strong dipole-dipole interaction between nitrile groups gives PAN unusually high intermolecular cohesion for a vinyl polymer, contributing to its high Tg and insolubility in common solvents.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 30000,
+        "range_max": 40000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 30000,
+        "range_max": 230000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Fiber-grade material reported narrower, 80,000-100,000 g/mol."
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.1,
+        "range_max": 3.5,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "butyrolactone",
+        "temperature_k": 293,
+        "k": { "value": 0.0343, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.730, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "butyrolactone",
+        "temperature_k": 303,
+        "k": { "value": 0.0572, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.67, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "butyrolactone",
+        "temperature_k": 303,
+        "k": { "value": 0.0342, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.70, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "butyrolactone",
+        "temperature_k": 303,
+        "k": { "value": 0.0400, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.69, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dimethylformamide",
+        "temperature_k": 293,
+        "k": { "value": 0.0307, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.76, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 95,
+      "value": 84.5,
+      "range_min": 43.8,
+      "range_max": 105,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyacrylonitrile"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Most commonly cited range 84-85 °C; wider experimental range 43.8-105 °C reflects measurement-method/sample variation."
     },
     "tm": {
-      "value": null,
+      "value": 317,
+      "range_min": 297,
+      "range_max": 341,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Degrades above 300°C rather than exhibiting a conventional melt transition."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Both handbooks report a real melting transition (Wypych DSC: 317 °C, range 297-341 °C; Mark calorimetry: 320 °C and 326 °C at different heating rates), lying close to PAN's thermal decomposition range."
     },
     "tc": {
       "value": null,
@@ -139,9 +259,11 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3700,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -149,14 +271,23 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 45.5,
+      "range_min": 19,
+      "range_max": 72,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Bulk/unoriented material; oriented fiber form reaches 133-480 MPa, film form 115-117 MPa."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 25,
+      "range_min": 15,
+      "range_max": 35,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -177,6 +308,16 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -186,7 +327,14 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-polyacrylonitrile"
-      }
+      },
+      "dilute acids": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alcohols": { "value": "very good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "weak alkalis": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aliphatic hydrocarbons": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aromatic hydrocarbons": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "esters": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "halogenated hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" }
     },
     "weathering_uv": {
       "value": null,
@@ -199,7 +347,50 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": 18.1,
+      "range_min": 18,
+      "range_max": 18.2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 26.335,
+      "range_min": 25.27,
+      "range_max": 27.4,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range."
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": null,
+        "range_min": 1.5e-17,
+        "range_max": 4.1e-16,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 3.6e-11,
+        "range_min": 2.3e-11,
+        "range_max": 4.9e-11,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -207,18 +398,25 @@
       "thermal oxidative stabilization + carbonization (carbon fiber precursor)"
     ],
     "processing_temp_range": {
-      "value": 230,
+      "value": 167.5,
+      "range_min": 160,
+      "range_max": 175,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyacrylonitrile",
-      "conditions": "Thermal-oxidative stabilization step in carbon-fiber processing."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Filament extrusion/spinning; a separate thermal-oxidative stabilization step at ~230 °C precedes carbonization in carbon-fiber precursor processing."
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 18,
+      "range_min": 14,
+      "range_max": 22,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "A separate boiling-water shrinkage test on fiber form reports 5.1%."
     }
   },
   "applications": [
@@ -246,7 +444,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-polyacrylonitrile"
+    "wiki-polyacrylonitrile",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -270,5 +470,45 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 7000,
+      "range_min": 3000,
+      "range_max": 11000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Two values reported (3,000 and 11,000 mg/kg) across cited studies."
+    },
+    "nfpa_health_rating": {
+      "value": 2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Occupational exposure limits: TLV (ACGIH) 3 mg/m³, MAK/TRK (Germany) 3 ppm, OSHA 2 ppm. Aquatic toxicity (Daphnia magna, 48 h LC50): 1,000-185,000 mg/L."
   }
 }

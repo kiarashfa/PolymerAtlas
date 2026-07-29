@@ -68,12 +68,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.23,
+      "value": 1.235,
+      "range_min": 1.22,
+      "range_max": 1.25,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polychloroprene",
-      "conditions": "Solid form; foam grades 0.1-0.3 g/cm³."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, solid form; foam grades 0.1-0.3 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -81,18 +83,56 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.555,
+      "range_min": 1.552,
+      "range_max": 1.558,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 7,
+      "range_min": 5,
+      "range_max": 9,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz to 1 MHz"
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.9,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, 23 °C water immersion"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -109,29 +149,95 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Predominantly trans-1,4 addition (70-90%, the fraction decreasing at lower polymerization temperature), with minor cis-1,4 (~5-10%) and 1,2-/3,4-isomer content; head-to-head defects ~10-15%.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 26,
+      "range_min": 18,
+      "range_max": 34,
       "unit": "%",
-      "status": "placeholder",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
       "conditions": "Undergoes strain-induced crystallization similar to natural rubber."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Monoclinic unit cell per Wypych 2016 (a:b:c=1.325:0.763:1.415 nm for uncrosslinked macromer; 0.917:0.992:1.22 nm for crosslinked rubber); an orthorhombic unit cell (a=0.884, b=1.024, c=0.48 nm, 4 repeat units/cell) is separately reported by Mark 1999.",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 100000,
+        "range_max": 1000000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999",
+        "conditions": "some grades exceed 1×10⁶ g/mol"
+      },
+      "mw": {
+        "value": 140000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "toluene",
+        "temperature_k": 298,
+        "k": { "value": 0.05, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.615, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetrahydrofuran",
+        "temperature_k": 303,
+        "mw_range": "linear polychloroprene",
+        "k": { "value": 0.00418, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.83, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene (Neoprene CG)",
+        "k": { "value": 0.00202, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.89, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene (Neoprene GN)",
+        "k": { "value": 0.0146, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.73, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene (Neoprene W)",
+        "k": { "value": 0.0155, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": -43,
+      "value": -35.5,
+      "range_min": -46,
+      "range_max": -25,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polychloroprene"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "predominantly trans-1,4; cis-1,4 form: -20 °C"
     },
     "tm": {
       "value": null,
+      "range_min": 45,
+      "range_max": 92,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC; cis-1,4 form ~70 °C, trans-1,4 form 80-115 °C"
     },
     "tc": {
       "value": null,
@@ -145,13 +251,22 @@
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 200,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">200 °C"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.17,
+      "range_min": 0.15,
+      "range_max": 0.19,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     }
   },
   "mechanical": {
@@ -164,25 +279,30 @@
       "conditions": "Young's modulus."
     },
     "yield_strength": {
-      "value": null,
-      "unit": "MPa",
-      "status": "not_applicable",
-      "conditions": "Elastomers like CR typically don't exhibit a distinct yield region before break; see tensile_strength_at_break."
-    },
-    "tensile_strength_at_break": {
-      "value": 27.579,
+      "value": 0.57,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polychloroprene",
-      "conditions": "Reported as ultimate tensile strength (4000 psi)."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reported tensile stress at yield; no distinct yield point in most CR grades, but the handbook gives this measured value -- see tensile_strength_at_break for ultimate strength."
+    },
+    "tensile_strength_at_break": {
+      "value": 15.6,
+      "range_min": 10.3,
+      "range_max": 20.9,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": 600,
+      "range_min": 380,
+      "range_max": 955,
       "unit": "%",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polychloroprene"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -195,29 +315,82 @@
       "status": "not_applicable"
     },
     "hardness": {
-      "value": 62,
-      "range_min": 30,
-      "range_max": 95,
+      "value": 63.5,
+      "range_min": 42,
+      "range_max": 85,
       "unit": "Shore A",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polychloroprene",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
       "conditions": "Durometer, formulation-dependent."
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
     "solvent_resistance": {
       "oils_and_greases": {
-        "value": "Good resistance",
-        "status": "estimated",
-        "evidence_level": "tertiary",
-        "source": "wiki-polychloroprene",
-        "conditions": "Inferred from widespread use in gaskets/hoses for corrosion-resistant, oil-exposed service."
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "handbook rates greases & oils resistance as poor, correcting an earlier inferred estimate"
+      },
+      "acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "dilute and concentrated"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "fair to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "fair to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "fair to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -233,6 +406,26 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": 37.5,
+      "range_min": 28,
+      "range_max": 47,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled; flame-retarded grades reach 46-59%"
+    },
+    "solubility_parameter": {
+      "value": 18.365,
+      "range_min": 17.6,
+      "range_max": 19.13,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.; calc.=16.59-19.19"
     }
   },
   "processing": {
@@ -241,9 +434,14 @@
       "foam expansion (wetsuit-grade)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 70,
+      "range_min": 40,
+      "range_max": 100,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "40-100 °C extrusion; 50-100 °C sheet calendering"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -289,7 +487,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-polychloroprene"
+    "wiki-polychloroprene",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -313,5 +513,44 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "range_min": 5000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">5,000 mg/kg (also reported as >20,000 mg/kg)"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

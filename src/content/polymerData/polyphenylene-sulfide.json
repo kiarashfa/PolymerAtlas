@@ -35,9 +35,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.35,
+      "range_min": 1.34,
+      "range_max": 1.36,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, unfilled; amorphous 1.32 g/cm³, crystalline 1.425-1.44 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -45,19 +50,63 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.83,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 3.8,
+      "range_max": 5.2,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz; at 1 MHz, 3.8-4.9"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-9,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1×10⁹ Ω·m, unfilled; notably lower than glass-fiber-filled grades (>1×10¹³ Ω·m, i.e. <1×10⁻¹³ S/m)"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.01,
+      "range_max": 0.03,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, immersion in water at 23 °C"
+    },
+    "dielectric_strength": {
+      "value": 18,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "specimen thickness 0.6-0.8 mm, unfilled; 40% glass fiber grade reaches 28 kV/mm"
     }
   },
   "synthesis": {
@@ -74,23 +123,69 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 40,
+      "range_max": 83,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's X-ray diffraction figure for a fully crystalline reference sample is 65% (handbook-mark-1999)"
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Aromatic-ring/sulfide-linkage backbone gives PPS very high chemical, thermal, and dimensional stability, at the cost of low toughness relative to more flexible engineering plastics.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 12000,
+        "range_max": 1400000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.4,
+        "range_max": 2.0,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "1-chloronaphthalene",
+        "temperature_k": 481.15,
+        "k": { "value": 8.91e-5, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.747, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 84.85,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "DSC (358 K); Wypych reports a broader range of 74-92 °C across grades (handbook-wypych-2016)"
     },
     "tm": {
       "value": null,
+      "range_min": 285,
+      "range_max": 295,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC; equilibrium (extrapolated) melting point is higher, ~303-315 °C depending on molecular weight (handbook-mark-1999)"
     },
     "tc": {
       "value": null,
@@ -98,47 +193,77 @@
       "status": "placeholder"
     },
     "hdt": {
-      "value": null,
+      "value": 114.85,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a maximum service temperature of 240°C."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D648, 1.82 MPa",
+      "conditions": "unfilled, linear-type PPS; unfilled cured-feedstock grade (annealed) is 134.85 °C. 40% glass fiber and glass/mineral-filled grades exceed 259.85 °C."
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 450,
+      "range_max": 480,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "a higher value of 532 °C is also reported. Mark reports thermogravimetric onset at 424.85 °C and 20% mass loss at 549.85 °C (handbook-mark-1999)."
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.29,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, unfilled; matches value independently reported in handbook-mark-1999. Glass-fiber-filled grade is lower, 0.20 W/(m·K)."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3800,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade; 40% glass fiber grades reach 14,500-19,100 MPa"
     },
     "yield_strength": {
-      "value": null,
+      "value": 80,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "unfilled, linear-type PPS"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 90,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade; Mark reports 65 MPa (cured feedstock) to 86 MPa (linear type), ASTM D638 (handbook-mark-1999)"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 3,
+      "range_max": 8,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade; Mark reports 1.6-2% for cured/feedstock grades and up to 21% for some linear-type samples, depending on test method (handbook-mark-1999)"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 2.6,
+      "range_max": 3.5,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C, unfilled; Mark reports notably higher values for unfilled grades, 16 J/m (cured feedstock) to 26 J/m (linear type), ASTM D256 (handbook-mark-1999)"
     },
     "impact_charpy": {
       "value": null,
@@ -147,13 +272,36 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 90,
+      "range_max": 95,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled; Mark reports Rockwell R120 for unfilled, cured feedstock grade (handbook-mark-1999)"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 3750,
+      "range_max": 4200,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade; Mark reports 3400-4130 MPa for various unfilled grades (handbook-mark-1999)"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": 0.4,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "in air, unfilled; 0.22 in water, 0.6 for 40% glass-fiber grade"
     }
   },
   "chemical_resistance": {
@@ -163,13 +311,75 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-pps"
+      },
+      "dilute acids": {
+        "value": "very good",
+        "conditions": "nitric acid; ranges from dilute (very good) to concentrated (fair)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "fair",
+        "conditions": "nitric acid; ranges from dilute (very good) to concentrated (fair)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
-      "value": "Resistant to aging, sunlight, and abrasion",
+      "value": "Weatherometer (WOM) exposure to 2000 h causes little change in tensile and impact strength",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pps"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": "Resistant to acids and alkalis",
@@ -178,8 +388,25 @@
       "source": "wiki-pps"
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
+      "value": "V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 40,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade; Mark reports 44% via ASTM D2863 (handbook-mark-1999)"
+    },
+    "solubility_parameter": {
+      "value": 19.8,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "processing": {
@@ -190,14 +417,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 300,
+      "range_max": 340,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "injection molding; extrusion 285-310 °C"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 1.5,
+      "range_min": 1.2,
+      "range_max": 1.8,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade"
     }
   },
   "applications": [
@@ -238,7 +475,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pps"
+    "wiki-pps",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -262,5 +501,41 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": "TLV (ACGIH): 3 mg/m³ (respirable), 10 mg/m³ (total). OSHA: 5 mg/m³ (respirable), 15 mg/m³ (total)."
   }
 }

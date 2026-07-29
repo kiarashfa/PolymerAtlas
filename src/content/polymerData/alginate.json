@@ -50,11 +50,12 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.601,
+      "value": 1.79,
       "unit": "g/cm³",
+      "conditions": "20 °C, alginic acid",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-alginic-acid"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -63,8 +64,13 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.595,
+      "range_max": 1.69,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
@@ -74,6 +80,31 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -91,9 +122,31 @@
       "unit": "%",
       "status": "placeholder"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Fibril diameter ~6.0 nm; lamellar spacing 3.5-4.2 nm. G:M (guluronic:mannuronic acid) block ratio reported 39:61 for one algal source -- this ratio varies significantly by species/tissue and controls gel stiffness.",
     "chain_flexibility_notes": "Hydrophilic; forms a viscous gum when hydrated and ionically crosslinked hydrogels with divalent cations (notably Ca2+, the 'egg-box' model).",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 80000,
+        "range_max": 240000,
+        "unit": "g/mol",
+        "conditions": "alginic acid",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -130,9 +183,12 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3620,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "fiber form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -140,14 +196,20 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 200,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "fiber form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 16,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "fiber form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -167,6 +229,16 @@
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
+      "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
@@ -190,6 +262,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -252,12 +334,42 @@
     "environmental_notes": "Harvested from renewable seaweed/algal biomass."
   },
   "references": [
-    "wiki-alginic-acid"
+    "wiki-alginic-acid",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
     "diagrams": [],
     "structure_render_2d": null,
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "On combustion releases CO2, CO, furfural, phenol and other volatiles."
   }
 }

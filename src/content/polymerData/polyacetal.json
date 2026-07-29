@@ -54,33 +54,87 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.415,
-      "range_min": 1.41,
-      "range_max": 1.42,
+      "value": 1.42,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pom"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D792",
+      "conditions": "Homopolymer, amorphous density; copolymer grades ~1.41 g/cm³. Crystalline-phase density is higher, 1.49-1.53 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 1.9,
+      "range_max": 52,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "190 °C/3.8 kg, range across commercial grades"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.545,
+      "range_max": 1.553,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C; a separate value of 1.47 is also reported in the same source without further qualification"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.7,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D150",
+      "conditions": "10²-10⁶ Hz; homopolymer and copolymer both reported at 3.7"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-13,
+      "range_max": 1e-12,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1×10¹²-1×10¹³ Ω·m"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.8,
+      "range_max": 1.65,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, immersion in water at 23 °C; equilibrium moisture uptake at 23 °C/50% RH is 0.2-0.4%"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 21,
+      "range_max": 40,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "specimen thickness 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -96,26 +150,99 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 48,
+      "range_max": 85,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Highly crystalline -- the basis of its high stiffness and low friction, though no specific percentage sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "homopolymer, unoriented; up to 72-92% in highly-oriented fiber. Copolymer grades run lower, ~56-59% (handbook-mark-1999)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "High chain regularity and crystallinity give POM its combination of stiffness, low friction, and dimensional stability -- ideal for precision parts.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 20000,
+        "range_max": 110000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 21000,
+        "range_max": 1000000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.84,
+        "range_max": 14.7,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "p-chlorophenol",
+        "temperature_k": 403,
+        "k": { "value": 0.0543, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.66, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "p-chlorophenol, 2% α-pinene",
+        "temperature_k": 333,
+        "mw_range": "62-129 kg/mol",
+        "k": { "value": 0.0413, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.724, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "phenol",
+        "temperature_k": 363,
+        "k": { "value": 0.0113, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.76, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dimethylformamide",
+        "temperature_k": 423,
+        "mw_range": "89-285 kg/mol",
+        "k": { "value": 0.044, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.66, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dimethylformamide",
+        "temperature_k": 403,
+        "mw_range": "1.5-15 kg/mol",
+        "k": { "value": 0.0224, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
-      "unit": "°C",
-      "status": "placeholder"
-    },
-    "tm": {
-      "value": 165,
+      "value": -75.15,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pom"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "198 K; a separate experimental range of -90 to -60 °C across grades is also reported (handbook-wypych-2016)"
+    },
+    "tm": {
+      "value": 174.85,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D2133",
+      "conditions": "Homopolymer (Delrin 500), 448 K; copolymer (Celcon M90) melts at 164.85 °C (438 K)"
     },
     "tc": {
       "value": null,
@@ -123,80 +250,225 @@
       "status": "placeholder"
     },
     "hdt": {
-      "value": null,
+      "value": 135.85,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D648, 1.82 MPa",
+      "conditions": "Homopolymer (Delrin 500), 409 K; copolymer (Celcon M90) is 109.85 °C. At 0.45 MPa, Delrin 500 is 171.85 °C."
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 230,
+      "range_max": 250,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "in air; in nitrogen, 277-326 °C"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.303,
+      "range_min": 0.294,
+      "range_max": 0.312,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "solid state; melt state is lower, 0.13-0.15 W/(m·K)"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": 2700,
+      "value": 3100,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pom"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D638",
+      "conditions": "Homopolymer, 296 K; copolymer grades ~2825 MPa"
     },
     "yield_strength": {
-      "value": 62,
+      "value": null,
+      "range_min": 43,
+      "range_max": 74,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pom",
-      "conditions": "Source explicitly reports this as tensile YIELD strength (not just generic tensile strength)."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "tensile stress at yield, range across POM grades"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 68.9,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D638",
+      "conditions": "Homopolymer, 296 K; copolymer grades ~60.6 MPa"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 23,
+      "range_max": 75,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D638",
+      "conditions": "Homopolymer, 296 K, maximum extensibility; copolymer grades 40-75%"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 69,
+      "range_max": 122,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D256, notched",
+      "conditions": "Homopolymer, 296 K, 3.175 mm; copolymer grades 53-80 J/m. At 233 K, homopolymer is 53-95 J/m."
     },
     "impact_charpy": {
       "value": null,
+      "range_min": 5.3,
+      "range_max": 8,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 94,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D785",
+      "conditions": "Homopolymer; copolymer grades are Rockwell M80"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2830,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D790",
+      "conditions": "Homopolymer, 296 K; copolymer grades ~2584 MPa"
+    },
+    "poissons_ratio": {
+      "value": 0.27,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "range_min": 0.18,
+      "range_max": 0.41,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "against steel; against itself 0.10-0.38, dynamic 0.11"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "~50% tensile strength retention after 1000 h UV exposure (SAE J-1885); UV-stabilized grades retain ~98%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder"
     },
     "flammability_ul94": {
+      "value": "HB",
+      "conditions": "1.6/0.8 mm thickness",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 15.5,
+      "range_min": 15,
+      "range_max": 16,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade"
+    },
+    "solubility_parameter": {
       "value": null,
+      "unit": "MPa^0.5",
       "status": "placeholder"
     }
   },
@@ -208,14 +480,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 180,
+      "range_max": 230,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "injection molding, recommended 205-215 °C; film/profile extrusion 175-180 °C"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 2.0,
+      "range_min": 1.9,
+      "range_max": 2.1,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unfilled grade"
     }
   },
   "applications": [
@@ -241,11 +523,13 @@
   "environmental": {
     "recyclable": true,
     "biodegradable": false,
-    "degradation_pathway": null,
+    "degradation_pathway": "Not biodegradable; thermal/chemical degradation releases formaldehyde, which itself acts as a biocide against further microbial attack.",
     "environmental_notes": null
   },
   "references": [
-    "wiki-pom"
+    "wiki-pom",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -269,5 +553,45 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP (thermal decomposition releases formaldehyde, an IARC Group 1 carcinogen)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

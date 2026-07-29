@@ -48,28 +48,86 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.31,
+      "range_max": 1.43,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "Kapton film specifically 1.42, Vespel SP-1 1.43 (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 10,
       "unit": "g/10min",
-      "status": "not_applicable"
+      "conditions": "400 °C/6.6 kg. Most polyimide forms (Kapton film, Vespel) are effectively infusible; this reflects a specific melt-processable grade",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.61,
+      "range_max": 1.8,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "Wypych exp. 1.61-1.68; Mark reports 1.70-1.80 (visible range) for Kapton film",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 2.74,
+      "range_max": 3.64,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "wide range reflects different PI grades/frequencies; Kapton film ~3.0-3.4, Vespel SP-1 ~3.55-3.64 (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-16,
+      "range_max": 1e-13,
       "unit": "S/m",
+      "conditions": "reciprocal of volume resistivity range (1×10¹³-1×10¹⁶ Ω·m); varies strongly by grade, temperature and humidity",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.39,
+      "range_max": 2.9,
+      "unit": "%",
+      "conditions": "24 h water immersion, 23 °C; at 50% RH equilibrium, 1-1.8%. Similarly 1.8%/2.8% for Kapton film and 1.0-1.3%/0.24% for Vespel (immersion/RH, Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 22,
+      "range_max": 506,
+      "unit": "kV/mm",
+      "conditions": "wide range from strong thickness dependence: thick molded Vespel ~22 kV/mm (2 mm thick, Mark) vs thin Kapton film several hundred kV/mm (25 μm)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -86,24 +144,63 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 44,
+      "range_max": 60,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "Wypych reports this range with supporting crystal-structure data (orthorhombic unit cell); standard Kapton film is typically regarded as amorphous, so this may reflect specific processing/annealing conditions or other PI grades within the broader class",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Orthorhombic unit cell, a:b:c = 0.635:0.405:3.26 nm (c = chain axis), planar zig-zag chain conformation; a monoclinic polymorph is also reported (Mark).",
     "chain_flexibility_notes": "Rigid aromatic imide backbone gives exceptional thermal and dimensional stability, maintaining useful properties up to ~232°C in continuous service.",
-    "tg_relation_notes": null
+    "tg_relation_notes": "Tg varies widely by grade and measurement method -- Wypych reports 190-385 °C for the broader PI class (some grades, e.g. Vespel, show no distinct Tg); Kapton HN film specifically clusters at 360-410 °C (633-683 K, DSC/thermomechanical, Mark).",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 10000,
+        "range_max": 100000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 10000,
+        "range_max": 210000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.2,
+        "range_max": 2.6,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 190,
+      "range_max": 410,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "wide grade dependence; some forms (e.g. Vespel) show no distinct Tg. Kapton HN film specifically: 360-410 °C (633-683 K, DSC/thermomechanical, Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Does not exhibit a conventional melt transition in typical use; effectively infusible once cured."
+      "conditions": "PMDA-ODA (Kapton) itself shows no distinct melting point (confirmed absent, ASTM E-794, in Mark's dedicated chapter). Some other polyimide chemistries within the broader PI class exhibit DSC melting endotherms around 340-408 °C (Wypych)."
     },
     "tc": {
       "value": null,
@@ -111,79 +208,230 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": 232,
+      "value": null,
+      "range_min": 221,
+      "range_max": 360,
       "unit": "°C",
+      "conditions": "1.8 MPa; Mark confirms ~360 °C for Vespel SP-1 (ASTM D648, 264 psi)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyimide",
-      "conditions": "Reported continuous-use temperature limit."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 185,
+      "range_max": 400,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "370 °C reported for fiber form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
+      "range_min": 0.12,
+      "range_max": 0.35,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "Kapton film 0.12, Vespel SP-1 0.35 (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 1200,
+      "range_max": 3800,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Kapton HN film: 2,500 MPa at 23 °C (dropping to 2,000 at 200 °C); Vespel SP-1 flexural modulus 3,102 MPa at 23 °C (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 112,
+      "range_max": 120,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Mark reports a differently-defined 'yield point at 3% strain' of 69 MPa (23 °C) for Kapton HN film",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 81,
+      "range_max": 241,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Qualitatively described as 'high tensile strength' with 'very low creep'; no specific number sourced."
+      "conditions": "unqualified 'tensile strength' row; Kapton HN film 231 MPa and Vespel SP-1 86.2 MPa at 23 °C (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 7,
+      "range_max": 95,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "Kapton HN film ~72-83%, Vespel SP-1 ~6-7.5% (Mark) -- differs substantially by form/grade",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 42.7,
+      "range_max": 110,
       "unit": "J/m",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C; Vespel SP-1 (Mark) 42.7 J/m matches the low end. Unnotched values run much higher (up to 750 J/m, Wypych; 747 J/m Vespel SP-1, Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_charpy": {
       "value": null,
+      "range_min": 20,
+      "range_max": 22,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 112,
+      "unit": "Rockwell M",
+      "conditions": "Vespel-specific grades range M92-102, or Rockwell E 45-60 (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 2900,
+      "range_max": 3520,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Vespel SP-1 (Mark): 3,102 MPa at 23 °C, dropping to 1,724 MPa at 260 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "range_min": 0.15,
+      "range_max": 0.42,
+      "unit": "",
+      "conditions": "Kapton film 0.34, Vespel SP-1 0.41 (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "range_min": 0.29,
+      "range_max": 0.63,
+      "unit": "",
+      "conditions": "kinetic 0.29-0.48, static 0.35-0.63; Vespel (unlubricated, in air) at the low end, Kapton film-to-film at the high end (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "generally excellent UV/radiation resistance, limited mainly to surface erosion because of strong intrinsic absorption; outdoor Florida exposure reduces elongation by 50% after 1,300 h",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder"
+      "value": "considerable variation by grade; poor hydrolytic resistance in 10% NaOH (Kapton)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
+      "value": "V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
+      "range_min": 37,
+      "range_max": 53,
+      "unit": "%",
+      "conditions": "Kapton film 37%, Vespel SP-1 53% (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
       "status": "placeholder"
     }
   },
@@ -194,14 +442,23 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 380,
+      "range_max": 430,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.004,
+      "range_max": 1.3,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "molding; also reported as 0.03-0.17% (30 min/150 °C) and 1.25% (120 min/400 °C) -- both figures corroborated for Kapton film by Mark",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -233,7 +490,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-polyimide"
+    "wiki-polyimide",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -257,5 +516,36 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 15600,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "ACGIH TLV 3 mg/m³ (respirable), 10 mg/m³ (total); OSHA PEL 5 mg/m³ (respirable), 15 mg/m³ (total)."
   }
 }

@@ -54,31 +54,90 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.14,
+      "value": null,
+      "range_min": 1.05,
+      "range_max": 1.16,
       "unit": "g/cm³",
+      "conditions": "dry as molded, unfilled; PA-6 1.06-1.16 g/cm³, PA-6,6 1.05-1.14 g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nylon66"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 7.7,
+      "range_max": 36.4,
       "unit": "g/10min",
-      "status": "placeholder"
+      "conditions": "PA-6, 190 °C/2.16 kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.53,
+      "range_max": 1.568,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "PA-6 exp. = 1.53; PA-6,6 1.565-1.568",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 3.6,
+      "range_max": 3.8,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "1 MHz, dry; PA-6 3.8, PA-6,6 3.6 (PA-6,6 also reports 4.0 at 100 Hz)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-13,
       "unit": "S/m",
+      "conditions": "reciprocal of volume resistivity (1×10¹³ Ω·m), dry as molded; PA-6 and PA-6,6 both report this value",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": 85,
+      "unit": "%",
+      "conditions": "PA-6",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 7.1,
+      "range_max": 10,
+      "unit": "%",
+      "conditions": "equilibrium in water immersion, 23 °C, dry unfilled; PA-6 7.1-10%, PA-6,6 8.5-9.0%. Equilibrium at 50% RH (not immersion) is much lower, ~2-3%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 25,
+      "range_max": 30.5,
+      "unit": "kV/mm",
+      "conditions": "PA-6,6, K20/P50 electrodes, d=0.6-0.8 mm; 30-30.5 dry, 25 conditioned. PA-6's reported figure in the same source (up to 460) is inconsistent with this and was not used",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -95,107 +154,376 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 26,
+      "range_max": 65,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "PA-6: 26-50% (~42% dry as molded, ~34% wet); PA-6,6: 32-65% (~43% dry, ~39% wet)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "PA-6: monoclinic α-form (hydrogen-bonded sheets), unit cell a:b:c = 0.956:0.801:1.724 nm. PA-6,6: triclinic α and β forms, plus a pseudohexagonal γ form at high temperature.",
     "chain_flexibility_notes": "Regular amide-hydrogen-bonding pattern along the backbone gives nylon 6,6 good mechanical strength, rigidity, and heat/chemical resistance.",
-    "tg_relation_notes": null
+    "tg_relation_notes": "Amide groups hydrogen-bond with absorbed water, which plasticizes the chain: PA-6 Tg falls from ~50-75 °C dry to 3-20 °C at 50% RH and -22 to -32 °C at saturation; PA-6,6 falls from ~56-70 °C dry to -15 °C at saturation.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 17500,
+        "range_max": 48100,
+        "unit": "g/mol",
+        "conditions": "PA-6: 20,800-48,100 g/mol; PA-6,6: 17,500-18,040 g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 16000,
+        "range_max": 94000,
+        "unit": "g/mol",
+        "conditions": "PA-6: 17,000-94,000 g/mol; PA-6,6: 16,000-30,000 g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.7,
+        "range_max": 2.4,
+        "unit": "",
+        "conditions": "PA-6: 1.7-2.4; PA-6,6: 1.7-2.1",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "85% formic acid (PA-6)",
+        "temperature_k": 298,
+        "k": { "value": 0.023, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.82, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "o-chlorophenol (PA-6,6)",
+        "temperature_k": 298,
+        "mw_range": "14,000-50,000 g/mol (Mn)",
+        "k": { "value": 168, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.62, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "m-cresol (PA-6,6)",
+        "temperature_k": 298,
+        "mw_range": "14,000-50,000 g/mol (Mn)",
+        "k": { "value": 240, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.61, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "aqueous formic acid, 90% (PA-6,6)",
+        "temperature_k": 298,
+        "mw_range": "6,000-65,000 g/mol (Mn)",
+        "k": { "value": 35.3, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.786, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "sulfuric acid, 96% (PA-6,6)",
+        "temperature_k": 298,
+        "mw_range": "14,000-50,000 g/mol (Mn)",
+        "k": { "value": 115, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.67, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 50,
+      "range_max": 75,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "dry as molded; PA-6 exp. 50-75 °C, PA-6,6 56-70 °C. Strongly moisture-sensitive: drops toward -15 to -32 °C at saturation",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": 264,
+      "value": null,
+      "range_min": 220,
+      "range_max": 270,
       "unit": "°C",
+      "conditions": "DSC; PA-6 220-260 °C, PA-6,6 257-270 °C - the two most common nylons differ by roughly 40 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nylon66"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
+      "range_min": 191.8,
+      "range_max": 193.2,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "PA-6, DSC crystallization temperature. PA-6,6's reported 'rapid crystallization temperature' (230 °C) is a different metric and not merged here",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hdt": {
       "value": null,
+      "range_min": 42,
+      "range_max": 86,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa, dry as molded; PA-6 42-65 °C, PA-6,6 70-86 °C",
+      "test_standard": "ASTM D648",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
-      "value": 350,
+      "value": null,
+      "range_min": 300,
+      "range_max": 340,
       "unit": "°C",
+      "conditions": "PA-6: thermal decomposition onset >300 °C; PA-6,6: 340 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "bocsci-nylon66-cas",
-      "conditions": "Reported as thermal decomposition temperature exceeding this value."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
+      "range_min": 0.23,
+      "range_max": 0.25,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "solid, general; PA-6 0.23, PA-6,6 0.25",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 780,
+      "range_max": 3800,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "dry as molded; PA-6 780-3,800 MPa, PA-6,6 3,000-3,600 MPa. Conditioned (moisture-equilibrated) values are roughly half",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 36,
+      "range_max": 95,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "tensile stress at yield, dry as molded; PA-6 36-95 MPa, PA-6,6 82-95 MPa. Conditioned values are lower (PA-6 32-55 MPa, PA-6,6 55-60 MPa)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 70,
+      "range_max": 106,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "unqualified 'tensile strength' row, distinct from tensile stress at yield above; dry as molded; PA-6 74-106 MPa, PA-6,6 70-88 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 10,
+      "range_max": 160,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "dry as molded; PA-6 10-160%, PA-6,6 10-45%. Conditioned (moisture-equilibrated) elongation is much higher, >50-327%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 53,
+      "range_max": 64,
       "unit": "J/m",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C, dry as molded; PA-6 53 J/m (no break at 50% RH); PA-6,6 53-64 J/m dry, 112-133 J/m at 50% RH",
+      "test_standard": "ASTM D256",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_charpy": {
       "value": null,
+      "range_min": 3.5,
+      "range_max": 82,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C, dry as molded; PA-6 3.5-82 kJ/m², PA-6,6 4.9-6 kJ/m²",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 119,
+      "unit": "Rockwell R",
+      "conditions": "PA-6, neat resin, dry as molded",
+      "test_standard": "ASTM D785",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 2600,
+      "range_max": 2800,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "dry as molded; PA-6 2,600 MPa, PA-6,6 2,800 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.33,
+      "unit": "",
+      "conditions": "PA-6, exp.; PA-6,6 reported range 0.3-0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": 0.26,
+      "unit": "",
+      "conditions": "PA-6, static, chrome-steel counterface, dry (ASTM D1894); PA-6,6 reports 0.35-0.5 without counterface specified",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "good",
+        "conditions": "PA-6 and PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "conditions": "PA-6 and PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "conditions": "PA-6 and PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "dilute alkalis": {
+        "value": "good",
+        "conditions": "PA-6 and PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated alkalis": {
+        "value": "poor",
+        "conditions": "PA-6 and PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "conditions": "PA-6,6 (reported as \"resistant\" in PA-6)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "fair",
+        "conditions": "PA-6,6 (reported as \"resistant\" in PA-6)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "conditions": "PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "conditions": "PA-6,6 (reported as \"resistant\" in PA-6)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "conditions": "PA-6,6",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "conditions": "PA-6,6 (reported as \"resistant\" in PA-6)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder",
-      "conditions": "Amide linkages are hydrolyzable, and nylon is known to absorb moisture, but no specific rate/data sourced."
+      "value": "generally resists hydrolysis at room temperature; amide linkages are cleaved by strong acids or bases, especially at elevated temperature",
+      "conditions": "PA-6,6",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
+      "value": "V-2",
+      "conditions": "PA-6, neat resin, 3.2 mm (Mark); Wypych reports HB to V-2 across PA-6 and PA-6,6 unfilled grades",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
-    }
+      "range_min": 20,
+      "range_max": 31,
+      "unit": "%",
+      "conditions": "PA-6 20-27%, PA-6,6 28-31%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 20.3,
+      "range_max": 25.8,
+      "unit": "MPa^0.5",
+      "conditions": "exp.; PA-6 20.3, PA-6,6 22.87-25.8",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "CO2",
+        "value": 5.2e-15,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "PA-6,6, 25 °C, undrawn fiber",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -205,14 +533,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 250,
+      "range_max": 305,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "injection molding; PA-6 250-280 °C, PA-6,6 280-305 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.87,
+      "range_max": 1.6,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "PA-6 0.87-1.4%, PA-6,6 0.95-1.6%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -252,7 +590,9 @@
   },
   "references": [
     "wiki-nylon66",
-    "bocsci-nylon66-cas"
+    "bocsci-nylon66-cas",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -276,5 +616,47 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 10000,
+      "unit": "mg/kg",
+      "conditions": "PA-6,6, reported as >10,000 mg/kg (practically nontoxic)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale; PA-6,6 reports 1, PA-6 reports 0-1",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale; PA-6,6 reports 1, PA-6 reports 0-1",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale; PA-6 and PA-6,6 both report 0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, IARC, or NTP",
+      "conditions": "PA-6 and PA-6,6",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Combustion produces CO and, for PA-6, HCN and caprolactam vapor; PA-6,6 combustion products include cyclopentanone and hexamethylenediamine. Not a skin irritant in rabbit testing (PA-6,6)."
   }
 }

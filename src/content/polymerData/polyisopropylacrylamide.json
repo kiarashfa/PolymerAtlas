@@ -38,11 +38,12 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.1,
+      "value": 1.386,
       "unit": "g/cm³",
+      "conditions": "Dry state",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pnipam"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "melt_flow_index": {
       "value": null,
@@ -50,9 +51,12 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.5,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "Dry polymer (swollen polymer: 1.36)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "dielectric_constant": {
       "value": null,
@@ -62,6 +66,31 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -83,7 +112,24 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Exhibits a lower critical solution temperature (LCST) around 32°C: the chain is hydrophilic and extended below this temperature, then collapses into a hydrophobic globule above it. The exact transition temperature can shift 5-10°C or more depending on concentration, molar mass, dispersity, and end-group chemistry -- see the-ucst-lcst-concept for the general phenomenon.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -122,8 +168,13 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 0.1,
+      "range_max": 1.3,
       "unit": "MPa",
-      "status": "not_applicable"
+      "conditions": "Storage modulus (compressive) of the polymer gel, oscillatory testing; 30 °C: 0.1 MPa, 60 °C: 1.3 MPa (large increase reflects LCST-driven collapse).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "yield_strength": {
       "value": null,
@@ -159,6 +210,16 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -181,7 +242,46 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "water",
+        "value": 0.51,
+        "unit": "",
+        "conditions": "20 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": 0.95,
+        "unit": "",
+        "conditions": "40 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": 0.518,
+        "unit": "",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -231,7 +331,8 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pnipam"
+    "wiki-pnipam",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -255,5 +356,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

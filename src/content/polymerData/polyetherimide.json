@@ -48,30 +48,89 @@
   "physical": {
     "density": {
       "value": 1.27,
+      "range_min": 1.27,
+      "range_max": 1.31,
       "unit": "g/cm³",
+      "conditions": "amorphous, unfilled",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 14,
+      "range_max": 18,
       "unit": "g/10min",
-      "status": "placeholder"
+      "conditions": "230 °C/3.8 kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.63,
+      "range_max": 1.687,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.15,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz-1 MHz; essentially frequency-independent (Wypych, Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-15,
+      "range_max": 1e-13,
       "unit": "S/m",
+      "conditions": "reciprocal of volume resistivity range (1×10¹³-1×10¹⁵ Ω·m)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": 58,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": 2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.65,
+      "range_max": 1.75,
+      "unit": "%",
+      "conditions": "equilibrium in water immersion, 23 °C; 0.65% at 24 h, 1.75% at 30 days",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 14,
+      "range_max": 33,
+      "unit": "kV/mm",
+      "conditions": "K20/P50 electrodes, d=0.6-0.8 mm (Wypych); Mark reports 33 kV/mm at 1.6 mm in air, dropping to 20 kV/mm at 3.2 mm in oil",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -89,22 +148,52 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
       "conditions": "Amorphous -- underlies its amber transparency."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Combines aromatic imide rigidity (heat/chemical resistance) with ether linkages that improve melt-processability relative to fully rigid polyimides like Kapton.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 10000,
+        "range_max": 42000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 30000,
+        "range_max": 75000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 1.6,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 217,
+      "value": null,
+      "range_min": 209,
+      "range_max": 249,
       "unit": "°C",
+      "conditions": "commonly cited as ~217 °C; range reflects different test methods (torsion pendulum, DMA, dielectric measurement)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
@@ -119,8 +208,14 @@
     },
     "hdt": {
       "value": null,
+      "range_min": 190,
+      "range_max": 235,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa; Mark reports 200 °C for Ultem 1000, unannealed, 6.4 mm",
+      "test_standard": "ASTM D648",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
       "value": null,
@@ -128,66 +223,172 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.22,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "test_standard": "ASTM C177",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 3000,
+      "range_max": 3700,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Wypych 3,420-3,700 MPa; Mark reports 3,000 MPa for Ultem 1000 (ASTM D638)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 96,
+      "range_max": 105,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "tensile stress at yield; Wypych 96-103 MPa, Mark 105 MPa for Ultem 1000 (ASTM D638)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
-      "value": 115,
+      "value": null,
+      "range_min": 53,
+      "range_max": 124,
       "unit": "MPa",
+      "conditions": "unqualified 'tensile strength' row, distinct from tensile stress at yield above",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei",
-      "conditions": "Source reports unqualified 'tensile strength'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": 70,
-      "range_min": 60,
-      "range_max": 80,
+      "value": null,
+      "range_min": 14,
+      "range_max": 60,
       "unit": "%",
+      "conditions": "Wypych 14-50%; Mark reports 60% ultimate elongation at break for Ultem 1000 (ASTM D638)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": 42.5,
-      "range_min": 25,
-      "range_max": 60,
+      "value": null,
+      "range_min": 27,
+      "range_max": 69,
       "unit": "J/m",
+      "conditions": "notched, 23 °C; Mark reports 50 J/m for Ultem 1000 (ASTM D256)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pei"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_charpy": {
-      "value": null,
+      "value": 21,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 127,
+      "unit": "Rockwell R",
+      "conditions": "Mark separately reports 109 for Ultem 1000, scale not specified in source (ASTM D785)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 3040,
+      "range_max": 3810,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Mark reports 3,300 MPa for Ultem 1000 (ASTM D790)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.36,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "range_min": 0.15,
+      "range_max": 0.7,
+      "unit": "",
+      "conditions": "against steel; varies with sliding speed and applied pressure",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -197,9 +398,57 @@
       "status": "placeholder"
     },
     "flammability_ul94": {
+      "value": "V-0",
+      "conditions": "V-0 achieved at 0.41 mm thickness; 5VA rating achieved at 1.9 mm (Mark, Ultem 1000)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
-    }
+      "range_min": 45,
+      "range_max": 47,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 19.8,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 3.75e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 0.5 barrer",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "N2",
+        "value": 5.25e-15,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 0.07 barrer",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "CO2",
+        "value": 9.975e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "35 °C, 10 atm; converted from 1.33 barrer (Ultem 1000)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -209,14 +458,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 260,
+      "range_max": 320,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "molding",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.5,
+      "range_max": 1.2,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "Mark reports 0.7% mold shrinkage for Ultem 1000",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -247,7 +506,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pei"
+    "wiki-pei",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -262,5 +523,46 @@
       "generated_date": "2026-07-27"
     },
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 5000,
+      "unit": "mg/kg",
+      "conditions": "reported as >5,000 mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Thermal/photooxidative degradation products include acetophenone, phenylacetic acid, phenols, benzoic acid, and phthalic anhydride/acid chain-end groups."
   }
 }

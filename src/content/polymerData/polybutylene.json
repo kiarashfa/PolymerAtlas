@@ -7,7 +7,7 @@
   ],
   "type": "hub",
   "parent": null,
-  "cas_number": null,
+  "cas_number": "9003-28-5",
   "resin_id_code": null,
   "repeat_unit": "{[][$]CC(CC)[$][]}",
   "smiles_depiction": "*CC(CC)*",
@@ -49,33 +49,75 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 0.91,
-      "range_min": 0.89,
+      "value": null,
+      "range_min": 0.87,
       "range_max": 0.95,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "search-pb1",
-      "conditions": "Form II (metastable, freshly molded) ~0.89 g/cm³; Form I (stable, after aging) ~0.95 g/cm³."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, general 0.87-0.92 g/cm³ (0.95 g/cm³ crystalline); Mark reports crystalline density by polymorph: Form I (hexagonal, stable) 0.951, Form II (tetragonal, metastable) 0.902, Form III (orthorhombic) 0.905 g/cm³ -- consistent with the Form II -> Form I density increase on aging"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 1,
+      "range_max": 30,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "190°C/10 kg; Mark separately reports 0.4 g/10min under ASTM D1238 condition E (190°C/2.16 kg) -- different load, not directly comparable"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.5125,
+      "range_max": 1.5246,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., 20°C; Mark's isotactic value (1.5125) matches the lower bound"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.53,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz-1 MHz; Mark corroborates at 10³-10⁶ Hz"
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_max": 0.03,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "<0.03%, 24h water immersion, 23°C (ASTM D570; Wypych and Mark agree)"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -94,77 +136,200 @@
     "tacticity": "Isotactic.",
     "crystallinity_typical": {
       "value": null,
+      "range_min": 38,
+      "range_max": 58,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych: 45-55% conventional (47-58% form I, 38% form II); Mark: 48-55% (form I, after extrusion)"
     },
     "crystal_structure": "Polymorphic with at least four crystal forms. Melt-solidified PB-1 first forms a metastable tetragonal phase (Form II), which irreversibly transforms to a thermodynamically stable hexagonal phase (Form I) over roughly 2-14 days at room temperature -- a slow solid-state transition that is the defining quirk of this material.",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": "Tg ~-21°C."
+    "tg_relation_notes": "Tg ~-21°C.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 20000,
+        "range_max": 300000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Wypych; Mark's typical commercial range is narrower at ~70,000-75,000 g/mol"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 85000,
+        "range_max": 2200000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Wypych; Mark's typical commercial range is narrower at ~725,000-750,000 g/mol"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 4,
+        "range_max": 12,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Wypych (Ziegler-Natta); Mark reports 10-11 for Ziegler-Natta, 1.02 for anionic polymerization"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "1,2,4-trichlorobenzene",
+        "temperature_k": 408,
+        "mw_range": "not given (GPC)",
+        "k": {
+          "value": 0.0118,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "isotactic"
+        },
+        "a": {
+          "value": 0.729,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "decalin",
+        "temperature_k": 388,
+        "mw_range": "~900,000 g/mol (single-point LS measurement)",
+        "k": {
+          "value": 0.00949,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "isotactic"
+        },
+        "a": {
+          "value": 0.73,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": -21,
+      "range_min": -45,
+      "range_max": -17,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "search-pb1"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.; form I -20.5°C, form II -26.9°C; Mark's DMA measurement gives -25.2 to -17.2°C (248-256 K), consistent"
     },
     "tm": {
-      "value": 127.5,
-      "range_min": 124,
-      "range_max": 135,
+      "value": null,
+      "range_min": 97,
+      "range_max": 142,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "search-pb1",
-      "conditions": "Form II (metastable) melts ~124°C; Form I (stable, aged) melts ~135°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC, isotactic (Wypych 97-142°C general; by form: I 120-135°C, I' 90-100°C, II 110-120°C, III 90-100°C). Mark gives higher form-specific values: I 138-142°C, II 120-130°C, III 101-110°C; syndiotactic ~50°C (both agree)"
     },
     "tc": {
-      "value": null,
+      "value": 72,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reported as \"rapid crystallization temperature\""
     },
     "hdt": {
       "value": null,
+      "range_min": 54,
+      "range_max": 60,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "1.82 MPa, ASTM D648"
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 300,
+      "range_max": 440,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "form I"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.22,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "ASTM C177; Wypych separately reports 0.1344-0.22 W/(m·K) for the melt"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 150,
+      "range_max": 295,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 150-295 MPa; Mark's ASTM D638 measurement gives 290-295 MPa (matches Wypych's upper bound and its separately reported \"elastic modulus\" of 290-295 MPa)"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 12,
+      "range_max": 18,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 12-15 MPa; Mark's ASTM D638 measurement gives 16-18 MPa"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 27,
+      "range_max": 45,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 27-45 MPa; Mark's ASTM D638 measurement gives 32-35 MPa"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 200,
+      "range_max": 400,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 200-400%; Mark's ASTM D638 measurement gives 275-320%"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 640,
+      "range_max": 800,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "notched, ASTM D256; not given in the Wypych entry"
     },
     "impact_charpy": {
       "value": null,
@@ -173,17 +338,96 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 55,
+      "range_max": 65,
+      "unit": "Shore D",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "ASTM D2240"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 250,
+      "range_max": 450,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 250-450 MPa; Mark's ASTM D790 measurement gives 375-380 MPa"
+    },
+    "poissons_ratio": {
+      "value": 0.47,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., 25°C (Wypych and Mark agree); calc.=0.393"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "good",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -195,7 +439,46 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "n-decane",
+        "value": 0.30,
+        "unit": "",
+        "conditions": "115-135°C; tacticity not specified in source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": 0.49,
+        "unit": "",
+        "conditions": "135°C; tacticity not specified in source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "cyclohexane",
+        "value": 0.20,
+        "unit": "",
+        "conditions": "135°C; tacticity not specified in source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -210,8 +493,12 @@
     "drying_required": null,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 2.5,
+      "range_max": 5,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -238,7 +525,9 @@
     "environmental_notes": null
   },
   "references": [
-    "search-pb1"
+    "search-pb1",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -262,5 +551,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

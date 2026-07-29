@@ -43,9 +43,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.11,
+      "range_min": 1.1,
+      "range_max": 1.12,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "At 20°C, cured base resin. Mark's Polymer Data Handbook reports a broader specific-gravity range for cast forms (rigid 1.04-1.46, flexible 1.01-1.20)."
     },
     "melt_flow_index": {
       "value": null,
@@ -58,13 +63,49 @@
       "status": "placeholder"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.9,
+      "range_min": 2.8,
+      "range_max": 3,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "1 MHz, cast (unfilled) resin; molded compounds 3.2-4.5, glass-fiber-reinforced ≈5."
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-12,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Reciprocal of reported volume resistivity (1×10¹⁴ Ω·cm = 1×10¹² Ω·m)."
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersion in water at 23°C. Mark's Polymer Data Handbook reports 0.15-0.6% for cast rigid forms (24 h, 1/8 in. sample)."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -88,20 +129,42 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-unsaturated-polyester",
-      "conditions": "Amorphous crosslinked thermoset network once cured."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Amorphous crosslinked thermoset network once cured; Mark's Polymer Data Handbook classifies UP as a thermoset polymer system (mixture of unsaturated polyester prepolymer with a vinyl monomer)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 109.5,
+      "range_min": 94,
+      "range_max": 125,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "After cure; uncured prepolymer Tg ≈ -61°C."
     },
     "tm": {
       "value": null,
@@ -115,9 +178,14 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 131.85,
+      "range_min": 56.85,
+      "range_max": 206.85,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "1.82 MPa, cast rigid (unfilled) grade; glass-fiber-reinforced grades reach 157-287°C."
     },
     "decomposition_onset": {
       "value": null,
@@ -125,16 +193,24 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.17,
       "unit": "W/(m·K)",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Base/cast resin. Glass-fiber-reinforced grades reported far higher (2.6-8.4 W/(m·K)) per Mark's Polymer Data Handbook, reflecting filler content."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3550,
+      "range_min": 3200,
+      "range_max": 3900,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports a broader cast-rigid range (2,100-4,400 MPa) and much higher glass-fiber-reinforced values (5,500-31,000 MPa)."
     },
     "yield_strength": {
       "value": null,
@@ -142,19 +218,34 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 53.5,
+      "range_min": 22,
+      "range_max": 85,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 4.1-90 MPa for cast rigid and up to 340 MPa for glass-fiber-reinforced (woven cloth) grades."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 3.1,
+      "range_min": 1.2,
+      "range_max": 5,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports <2.6% for cast rigid and 40-310% for cast flexible grades."
     },
     "impact_izod": {
-      "value": null,
+      "value": 16,
+      "range_min": 11,
+      "range_max": 21,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Cast, rigid (unfilled); cast, flexible >370 J/m; glass-fiber-reinforced 80-1,600 J/m."
     },
     "impact_charpy": {
       "value": null,
@@ -162,21 +253,86 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 55,
+      "range_min": 35,
+      "range_max": 75,
+      "unit": "Barcol",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Cast, rigid (unfilled); cast, flexible Shore D84-94; glass-fiber-reinforced Barcol 40-80."
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 4050,
+      "range_min": 3500,
+      "range_max": 4600,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 3,400-4,200 MPa for cast rigid (296 K) and 7,000-21,000+ MPa for glass-fiber-reinforced grades."
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good (dilute only)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Good weathering resistance (general property of unsaturated polyester thermoset systems).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -185,6 +341,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -195,14 +361,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 23,
+      "range_max": 197,
       "unit": "°C",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Glass-fiber-reinforced compression/injection/transfer molding compounds (SMC/BMC/prepreg); wide range reflects different molding forms and process types. Hand lay-up/cast UP without heated molding is typically cured near room temperature with a peroxide catalyst. Replaces an earlier not-applicable judgement -- heated molding is a real process for glass-fiber-reinforced UP compounds."
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.4,
+      "range_min": 0.1,
+      "range_max": 0.7,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Unfilled resin, linear mold shrinkage. Glass-fiber-reinforced 0.02-1.2%; SMC as low as 0.002%."
     }
   },
   "applications": [
@@ -236,7 +412,9 @@
     "environmental_notes": "As a thermoset composite (typically glass-fiber reinforced), end-of-life disposal is difficult; mechanical grinding for use as filler is the main reuse route rather than true recycling."
   },
   "references": [
-    "wiki-unsaturated-polyester"
+    "wiki-unsaturated-polyester",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -260,5 +438,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

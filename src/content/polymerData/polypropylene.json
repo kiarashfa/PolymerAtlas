@@ -46,34 +46,104 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 0.91,
-      "range_min": 0.895,
-      "range_max": 0.93,
+      "value": null,
+      "range_min": 0.90,
+      "range_max": 0.91,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polypropylene",
-      "conditions": "Lowest density among common commodity plastics."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, isotactic (commercial form); generic Wypych PP entry gives 0.84-0.91"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 1.9,
+      "range_max": 31,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230°C/2.16 kg, isotactic"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.49,
+      "range_max": 1.503,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, isotactic"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 2.2,
+      "range_max": 2.3,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz-1 MHz, isotactic"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-15,
+      "range_max": 1e-14,
       "unit": "S/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1x10^14-1x10^15 ohm-m, isotactic (Mark chapter corroborates with 10^16-10^17 ohm-cm = 10^14-10^15 ohm-m)"
+    },
+    "transmittance": {
+      "value": null,
+      "range_min": 50,
+      "range_max": 90,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic film; quenched 60-90%, slowly cooled 50-65%"
+    },
+    "haze": {
+      "value": 0.3,
+      "range_min": 0.2,
+      "range_max": 0.9,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic; biaxially oriented metallocene grade 0.2-0.9%"
+    },
+    "gloss": {
+      "value": 99,
+      "range_min": 94,
+      "range_max": 99,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "60°, Gardner (ASTM D523), isotactic; biaxially oriented metallocene grade 94-98%"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.02,
+      "range_max": 0.04,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, water immersion, 23°C; generic PP entry (not isotactic-specific)"
+    },
+    "dielectric_strength": {
+      "value": 24,
+      "range_min": 17,
+      "range_max": 30,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "298 K (ASTM D149), isotactic; a second cited source gives 21.7-30 kV/mm at 298 K, 17 kV/mm at 393 K"
     }
   },
   "synthesis": {
@@ -92,43 +162,94 @@
     "tacticity": "Isotactic (iPP, dominant commercial form, semi-crystalline), syndiotactic (sPP, alternating methyl orientation, slightly less crystalline, made via metallocene catalysis), and atactic (aPP, random/amorphous, used as sealant and bitumen additive).",
     "crystallinity_typical": {
       "value": null,
+      "range_min": 29,
+      "range_max": 75,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic (Wypych); Mark reports 50-70% as typical commercial (DSC); generic Wypych PP entry spans 3.2-67% across tacticities"
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 5000,
+        "range_max": 166000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "isotactic"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 158000,
+        "range_max": 580000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "isotactic"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.9,
+        "range_max": 9.7,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "isotactic; 3.0-3.9 for metallocene-catalyzed grades"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
-      "unit": "°C",
-      "status": "placeholder"
-    },
-    "tm": {
-      "value": 163,
-      "range_min": 160,
-      "range_max": 166,
+      "value": -10,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polypropylene",
-      "conditions": "Commercial isotactic PP; perfectly isotactic PP reaches 171°C. Syndiotactic PP ranges 130-186°C depending on stereoregularity."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic (dedicated Wypych PP,iso entry); generic Wypych PP entry reports exp.=-8 (-3.2 for isotactic specifically); Mark's DMA measurement gives a positive Tg of 2-11°C (283.7 K at 30 Hz, 275.5 K at 1 Hz) -- sources disagree"
+    },
+    "tm": {
+      "value": null,
+      "range_min": 151,
+      "range_max": 171,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC, isotactic; commercial grade 151-166°C, high-isotacticity material 157-171°C, biaxially oriented metallocene 148-151°C"
     },
     "tc": {
       "value": null,
+      "range_min": 116,
+      "range_max": 140,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "generic PP entry, labeled \"Crystallization temperature\"; isotactic-specific entry separately reports a \"rapid crystallization temperature\" of 138-144°C"
     },
     "hdt": {
-      "value": null,
+      "value": 55,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa, isotactic"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 328,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "generic PP entry (explicitly labeled onset); isotactic-specific Wypych entry separately reports 240°C, Mark reports 350°C (TGA, helium) -- criteria not directly comparable"
     },
     "thermal_conductivity": {
       "value": null,
@@ -139,28 +260,53 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 825,
+      "range_max": 1700,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic (825 MPa, commercial grade; 910 alpha-form, 820 beta-form per Wypych PP,iso entry); generic Wypych PP entry separately reports 1,700 MPa (unfilled base grade)"
     },
     "yield_strength": {
-      "value": null,
+      "value": 34.5,
+      "range_min": 33,
+      "range_max": 36,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic (33-36 MPa, Wypych); Mark's isotactic homopolymer entry gives 34.5 MPa; generic Wypych PP entry close at 31-35.2 MPa"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 30,
+      "range_min": 26,
+      "range_max": 32,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic, commercial unoriented grade (30 MPa); generic Wypych PP unfilled range 26-32 MPa; oriented film values are much higher (130-300 MPa MD/TD, biaxially stretched)"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 10,
+      "range_max": 500,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic entry 90-500%; generic Wypych PP unfilled entry narrower at 10-140%"
     },
     "impact_izod": {
-      "value": null,
+      "value": 27,
+      "range_min": 18,
+      "range_max": 69,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23°C; isotactic entry 25-39 J/m (Mark's isotactic homopolymer 27 J/m); generic Wypych PP entry wider at 18-69 J/m"
     },
     "impact_charpy": {
       "value": null,
@@ -169,29 +315,167 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 90,
+      "range_max": 105,
+      "unit": "Rockwell R",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic (R95-105, Wypych; R90, Mark homopolymer); generic Wypych PP entry narrower at R102-103"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 1389,
+      "range_min": 1150,
+      "range_max": 1600,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic 1,150-1,570 MPa (Wypych); Mark's isotactic homopolymer 1,389 MPa; generic Wypych PP entry 1,240-1,600 MPa"
+    },
+    "poissons_ratio": {
+      "value": 0.38,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "range_min": 0.27,
+      "range_max": 0.36,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "ASTM D1894, generic PP entry; vs chrome steel 0.27-0.29, vs aluminum 0.35-0.36"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "very good",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "fair to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good to fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Poor unstabilized (cracks form after 228 h Xenotest exposure); requires UV absorber/HALS stabilizer package for outdoor use. Syndiotactic PP is substantially more UV-stable than isotactic.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
       "status": "not_applicable"
     },
     "flammability_ul94": {
+      "value": "HB",
+      "conditions": "unfilled grade; V-0 achievable with flame retardants",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
-    }
+      "range_min": 17,
+      "range_max": 19,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic reports 17% (Mark corroborates at 17.4%); generic Wypych PP entry 17-19%"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 17.2,
+      "range_max": 19.2,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "isotactic 17.2-18.8 (Wypych; Mark reports 17.3-18.8 by inverse-phase GC); generic Wypych PP entry 18.0-19.2"
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 7.73e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "298 K, isotropic film, all pressures, isotactic",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "CO2",
+        "value": 2.37e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "298 K, <1 atm, isotactic",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water vapor",
+        "value": 3.83e-12,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "298 K, isotactic",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -202,14 +486,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 191,
+      "range_max": 250,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "generic PP entry"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.72,
+      "range_max": 2,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "injection molding, generic PP entry; oriented film grades report much higher shrinkage (7% MD/10% TD unoriented cast, up to 21% for biaxially oriented metallocene film)"
     }
   },
   "applications": [
@@ -250,7 +544,9 @@
   },
   "references": [
     "wiki-polypropylene",
-    "ansi-resin-codes"
+    "ansi-resin-codes",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -274,5 +570,46 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 5000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">5,000 (isotactic and generic PP entries agree)"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH): 3 mg/m³ respirable, 10 mg/m³ total. OSHA: 5 mg/m³ respirable, 15 mg/m³ total. Mutagenic, teratogenic and reproductive toxicity not known; skin (rabbit) LD50 >2,000 mg/kg."
   }
 }

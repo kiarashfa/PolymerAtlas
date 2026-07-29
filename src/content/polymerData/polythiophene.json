@@ -2,7 +2,9 @@
   "id": "polythiophene",
   "slug": "polythiophene",
   "name": "Polythiophene (PT): Plastic that eats sunlight for breakfast",
-  "abbreviation": ["PT"],
+  "abbreviation": [
+    "PT"
+  ],
   "type": "hub",
   "parent": null,
   "cas_number": null,
@@ -11,99 +13,393 @@
   "smiles_depiction": "*c1ccc(s1)*",
   "notation_note": "Regioregularity (head-to-tail vs. random coupling in substituted derivatives such as P3HT) strongly affects conductivity and is not captured by a single repeat-unit notation.",
   "iupac_name": null,
-  "synonyms": ["PEDOT (as the 3,4-ethylenedioxythiophene derivative)"],
-  "aliases": [
-    { "name": "PEDOT", "autolinkable": false }
+  "synonyms": [
+    "PEDOT (as the 3,4-ethylenedioxythiophene derivative)"
   ],
-
-  "chemical_family": ["conducting-polymer"],
+  "aliases": [
+    {
+      "name": "PEDOT",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "conducting-polymer"
+  ],
   "backbone_class": "heterochain",
-  "polymerization_mechanism": ["oxidative-coupling"],
+  "polymerization_mechanism": [
+    "oxidative-coupling"
+  ],
   "monomer": [
-    { "name": "Thiophene", "wikipedia_url": "https://en.wikipedia.org/wiki/Thiophene" }
+    {
+      "name": "Thiophene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thiophene"
+    }
   ],
   "polymer_class": "thermoplastic",
-
   "year_of_origin": 2000,
   "era": "The Smart Materials Era (2000-2015)",
   "key_figures": [],
   "historical_events_referenced": [],
   "historical_images": [],
-
   "physical": {
-    "density": { "value": null, "unit": "g/cm³", "status": "placeholder" },
-    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "not_applicable" },
-    "refractive_index": { "value": null, "unit": "", "status": "placeholder" },
-    "dielectric_constant": { "value": null, "unit": "", "status": "placeholder" },
-    "electrical_conductivity": { "value": 100000, "unit": "S/m", "status": "verified", "evidence_level": "tertiary", "source": "wiki-polythiophene", "conditions": "Optimally doped, approaching 1000 S/cm (=100,000 S/m); varies substantially by preparation method and doping level. For reference, copper is ~5.8e7 S/m." }
+    "density": {
+      "value": null,
+      "range_min": 1.4,
+      "range_max": 1.6,
+      "unit": "g/cm³",
+      "conditions": "unsubstituted PT; PEDOT (a substituted polythiophene) reported in the same range",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "unit": "g/10min",
+      "status": "not_applicable"
+    },
+    "refractive_index": {
+      "value": null,
+      "range_min": 1.5,
+      "range_max": 1.55,
+      "unit": "",
+      "conditions": "PEDOT (a substituted polythiophene), 20°C; parent PT refractive index not stated in source",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_constant": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "electrical_conductivity": {
+      "value": null,
+      "range_min": 0.002,
+      "range_max": 10000,
+      "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Strongly dopant-dependent: iodine-doped 6-8 S/cm, FeCl3-doped 0.5 S/cm, NOSbF6-doped 9×10⁻⁵ S/cm, NOPF6-doped 2×10⁻⁵ S/cm, triflate (SO3CF3⁻)-doped 50-100 S/cm."
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 1.15,
+      "unit": "%",
+      "conditions": "PEDOT (a substituted polythiophene), equilibrium in water at 23°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
+    }
   },
-
   "synthesis": {
     "polymerization_type": "oxidative coupling polymerization",
-    "common_monomers": ["thiophene"],
-    "catalysts": ["ferric chloride"],
+    "common_monomers": [
+      "thiophene"
+    ],
+    "catalysts": [
+      "ferric chloride"
+    ],
     "industrial_process_notes": "The 2000 Nobel Prize in Chemistry, awarded to Alan Heeger, Alan MacDiarmid, and Hideki Shirakawa, recognized the broader discovery and development of conductive polymers (a field polythiophene belongs to). Sugimoto et al. reported oxidative polymerization using ferric chloride at room temperature in 1986; electrochemical synthesis and Kumada coupling are alternative routes.",
     "synthesis_scheme_image": null
   },
-
   "structure_morphology": {
     "tacticity": null,
-    "crystallinity_typical": { "value": null, "unit": "%", "status": "placeholder" },
-    "crystal_structure": null,
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "conditions": "unsubstituted PT appears completely amorphous by XRD; substituted derivatives show partial crystallinity (<5%)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "crystal_structure": "Predominantly amorphous; ordered/doped domains reported as hexagonal (a ≈ 0.95 nm, c ≈ 1.22 nm). Thin films show a fibrillar (\"noodle-like\") TEM morphology, with fibril diameter increasing with doping level.",
     "chain_flexibility_notes": "Conjugated backbone (alternating single/double bonds along the thiophene rings) is what enables electrical conductivity upon doping -- unlike a conventional saturated-backbone polymer.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 6000,
+        "range_max": 82300,
+        "unit": "g/mol",
+        "conditions": "PEDOT (a substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.27,
+        "range_max": 9.1,
+        "unit": "",
+        "conditions": "PEDOT (a substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
-
   "thermal": {
-    "tg": { "value": null, "unit": "°C", "status": "placeholder" },
-    "tm": { "value": null, "unit": "°C", "status": "placeholder" },
-    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
-    "hdt": { "value": null, "unit": "°C", "status": "not_applicable" },
-    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
-    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "placeholder" }
+    "tg": {
+      "value": 210,
+      "unit": "°C",
+      "conditions": "PEDOT (a substituted polythiophene); parent PT Tg not stated in source",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "tm": {
+      "value": 350,
+      "unit": "°C",
+      "conditions": "PEDOT (a substituted polythiophene), DSC, reported as >350°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "decomposition_onset": {
+      "value": 250,
+      "unit": "°C",
+      "conditions": "unsubstituted PT, in air; stable to ~900°C in inert atmosphere/vacuum. PEDOT (a substituted polythiophene) reported separately at 325°C in air, 375°C in N2.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
   },
-
   "mechanical": {
-    "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
-    "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
-    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },
-    "hardness": { "value": null, "unit": "Shore", "status": "placeholder" },
-    "flexural_modulus": { "value": null, "unit": "MPa", "status": "placeholder" }
+    "tensile_modulus": {
+      "value": null,
+      "range_min": 3200,
+      "range_max": 6800,
+      "unit": "MPa",
+      "conditions": "PEDOT (a substituted polythiophene), unblended; PEDOT/PSS blend 1100-2800 MPa, PEDOT/PSS microfiber 2500-4000 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "yield_strength": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "range_min": 84,
+      "range_max": 178,
+      "unit": "MPa",
+      "conditions": "PEDOT (a substituted polythiophene), unblended; no distinct yield point reported. PEDOT/PSS blend 17.2-53.2 MPa, PEDOT/PSS microfiber 94-130 MPa.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "impact_izod": {
+      "value": null,
+      "unit": "J/m",
+      "status": "placeholder"
+    },
+    "impact_charpy": {
+      "value": null,
+      "unit": "kJ/m²",
+      "status": "placeholder"
+    },
+    "hardness": {
+      "value": null,
+      "unit": "Shore",
+      "status": "placeholder"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "unit": "MPa",
+      "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    }
   },
-
   "chemical_resistance": {
-    "solvent_resistance": {},
-    "weathering_uv": { "value": null, "status": "placeholder" },
-    "hydrolysis_resistance": { "value": null, "status": "placeholder" },
-    "flammability_ul94": { "value": null, "status": "placeholder" }
+    "solvent_resistance": {
+      "alcohols": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "very good",
+        "conditions": "PEDOT (substituted polythiophene)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "weathering_uv": {
+      "value": "UV-sensitive below ~320 nm (PEDOT:PSS)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "flammability_ul94": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
+    }
   },
-
   "processing": {
-    "processing_methods": ["chemical oxidative polymerization", "electrochemical deposition", "solution processing (spin coating, printing)"],
-    "processing_temp_range": { "value": null, "unit": "°C", "status": "not_applicable" },
+    "processing_methods": [
+      "chemical oxidative polymerization",
+      "electrochemical deposition",
+      "solution processing (spin coating, printing)"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
     "drying_required": null,
-    "shrinkage_rate": { "value": null, "unit": "%", "status": "not_applicable" }
+    "shrinkage_rate": {
+      "value": null,
+      "unit": "%",
+      "status": "not_applicable"
+    }
   },
-
   "applications": [
-    { "sector": "Established", "examples": ["antistatic coatings (PEDOT-PSS on photographic film)"] },
-    { "sector": "Energy", "examples": ["organic solar cells/photovoltaics"] },
-    { "sector": "Electronics", "examples": ["OLEDs", "organic field-effect transistors", "electrochromic windows"] },
-    { "sector": "Sensing", "examples": ["chemical and biosensors"] }
+    {
+      "sector": "Established",
+      "examples": [
+        "antistatic coatings (PEDOT-PSS on photographic film)"
+      ]
+    },
+    {
+      "sector": "Energy",
+      "examples": [
+        "organic solar cells/photovoltaics"
+      ]
+    },
+    {
+      "sector": "Electronics",
+      "examples": [
+        "OLEDs",
+        "organic field-effect transistors",
+        "electrochromic windows"
+      ]
+    },
+    {
+      "sector": "Sensing",
+      "examples": [
+        "chemical and biosensors"
+      ]
+    }
   ],
-
   "environmental": {
     "recyclable": false,
     "biodegradable": false,
     "degradation_pathway": null,
     "environmental_notes": null
   },
-
-  "references": ["wiki-polythiophene"],
-
+  "references": [
+    "wiki-polythiophene",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
+  ],
   "media": {
     "hero_image": null,
     "diagrams": [],
@@ -126,5 +422,47 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 2000,
+      "unit": "mg/kg",
+      "conditions": "PEDOT (substituted polythiophene); no mortality observed at highest tested dose (reported as >2,000 mg/kg)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "conditions": "PEDOT (substituted polythiophene)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

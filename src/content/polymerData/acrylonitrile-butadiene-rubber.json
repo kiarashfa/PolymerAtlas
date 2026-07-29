@@ -54,11 +54,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.0,
+      "value": 0.965,
+      "range_min": 0.92,
+      "range_max": 1.01,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nbr"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unfilled gum stock, 20 °C; varies with acrylonitrile content."
     },
     "melt_flow_index": {
       "value": null,
@@ -79,6 +82,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -94,22 +122,59 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Butadiene-segment microstructure approximately 78% trans-1,4, 12% cis-1,4, 10% 1,2-vinyl.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 0,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "amorphous"
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Higher acrylonitrile (ACN) content improves solvent/oil resistance but reduces low-temperature flexibility; lower ACN content gives the opposite trade-off.",
-    "tg_relation_notes": "Tg decreases with lower ACN content."
+    "tg_relation_notes": "Tg decreases with lower ACN content.",
+    "molecular_weight": {
+      "mn": {
+        "value": 66500,
+        "range_min": 58000,
+        "range_max": 75000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Source prints the lower bound as '58,00'; recorded as 58,000 assuming a dropped digit."
+      },
+      "mw": {
+        "value": 399500,
+        "range_min": 199000,
+        "range_max": 600000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 4,
+        "range_min": 2,
+        "range_max": 6,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -35,
+      "range_min": -60,
+      "range_max": -10,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Decreases with lower ACN content; no single number sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wide range reflects acrylonitrile content 15-51%; Tg rises with increasing ACN content."
     },
     "tm": {
       "value": null,
@@ -127,9 +192,12 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 200,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">200 °C; onset marked by hardening from crosslinking rather than mass loss."
     },
     "thermal_conductivity": {
       "value": null,
@@ -139,9 +207,14 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3.5,
+      "range_min": 2,
+      "range_max": 5,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported as Young's modulus, unfilled gum stock. Wypych separately lists an unqualified 'tensile modulus' of 20.1-29.4 MPa, likely a higher-strain secant value for a different formulation."
     },
     "yield_strength": {
       "value": null,
@@ -150,14 +223,14 @@
       "conditions": "Elastomers like NBR typically don't show a distinct yield region before break; see tensile_strength_at_break."
     },
     "tensile_strength_at_break": {
-      "value": 10.3,
-      "range_min": 3.4,
-      "range_max": 17.2,
+      "value": 4.8,
+      "range_min": 3.1,
+      "range_max": 6.5,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nbr",
-      "conditions": "Converted from reported 500-2500 psi."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unfilled (pure rubber) gum vulcanizate; carbon-black-filled compounds test substantially higher (13-20 MPa)."
     },
     "elongation_at_break": {
       "value": 450,
@@ -165,8 +238,8 @@
       "range_max": 600,
       "unit": "%",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nbr"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -180,17 +253,27 @@
     },
     "hardness": {
       "value": 60,
-      "range_min": 30,
-      "range_max": 90,
+      "range_min": 25,
+      "range_max": 95,
       "unit": "Shore A",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-nbr"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -212,6 +295,66 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-nbr"
+      },
+      "dilute acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -225,7 +368,45 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 19.64,
+      "range_min": 17.9,
+      "range_max": 21.38,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": null,
+        "range_min": 1.77e-14,
+        "range_max": 1.89e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; decreases with increasing acrylonitrile content.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": null,
+        "range_min": 7.21e-14,
+        "range_max": 1.44e-12,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; decreases with increasing acrylonitrile content.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -283,7 +464,8 @@
     "environmental_notes": "Operating temperature range reported as -40 to 108°C."
   },
   "references": [
-    "wiki-nbr"
+    "wiki-nbr",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
@@ -307,5 +489,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

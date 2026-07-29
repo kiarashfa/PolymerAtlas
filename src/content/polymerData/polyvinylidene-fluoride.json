@@ -53,31 +53,100 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.78,
+      "value": 1.795,
+      "range_min": 1.76,
+      "range_max": 1.83,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pvdf"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C; amorphous 1.68, crystalline 1.92-1.98 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 0.5,
+      "range_max": 45,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230 °C / 2.16 kg"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.455,
+      "range_min": 1.42,
+      "range_max": 1.49,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 9.75,
+      "range_min": 9,
+      "range_max": 10.5,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1 kHz; at 1 MHz: 7-9.9"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 4.35e-13,
+      "range_max": 6.67e-13,
       "unit": "S/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1.5-2.3×10¹² Ω·m"
+    },
+    "transmittance": {
+      "value": null,
+      "range_min": 85,
+      "range_max": 94,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "range_min": 3,
+      "range_max": 13,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": 25,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "60°, Gardner, ASTM D523"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.02,
+      "range_max": 0.07,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, 23 °C water immersion"
+    },
+    "dielectric_strength": {
+      "value": 65,
+      "range_min": 63,
+      "range_max": 67,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "specimen thickness 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -90,81 +159,192 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Predominantly head-to-tail (isoregic) addition, ~95-97%; head-to-head/tail-to-tail defects ~3.5-6%.",
     "crystallinity_typical": {
-      "value": 55,
-      "range_min": 50,
-      "range_max": 60,
+      "value": 54,
+      "range_min": 32,
+      "range_max": 76,
       "unit": "%",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pvdf"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "41-46% by DSC, 33-41% by WAXS"
     },
-    "crystal_structure": "Polymorphic: the beta phase has the highest dipolar moment per unit cell and dominates PVDF's piezoelectric/ferroelectric behavior once poled.",
+    "crystal_structure": "Polymorphic: the beta (β) phase has the highest dipolar moment per unit cell and dominates PVDF's piezoelectric/ferroelectric behavior once poled. Four crystal forms are documented: Form I/α (orthorhombic, a=0.858, b=0.491, c=0.256 nm), Form II/β (monoclinic, a=0.496, b=0.964, c=0.462 nm, β≈90°), Form III/γ (orthorhombic, a=0.497, b=0.966, c=0.966 nm), Form IV/δ (orthorhombic, same cell as β).",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 64000,
+        "range_max": 380000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 60000,
+        "range_max": 534000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 2.4,
+        "range_min": 1.6,
+        "range_max": 3.2,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "dimethylacetamide (DMA)",
+        "k": { "value": 1.78e-5, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.74, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dimethylformamide (DMF)",
+        "k": { "value": 3.17e-5, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.70, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "N-methylpyrrolidone (NMP)",
+        "k": { "value": 4.88e-5, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.68, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "acetophenone",
+        "temperature_k": 358,
+        "k": { "value": 2.13e-4, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.62, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzophenone",
+        "temperature_k": 438,
+        "k": { "value": 1.36e-3, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.44, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzophenone (180 °C)",
+        "temperature_k": 453,
+        "k": { "value": 7.54e-4, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.49, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": -35,
+      "value": -43,
+      "range_min": -57,
+      "range_max": -29,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pvdf"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.; calc.=-67 °C"
     },
     "tm": {
-      "value": 177,
+      "value": null,
+      "range_min": 158,
+      "range_max": 200,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pvdf"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC; main melting peak 167-169 °C"
     },
     "tc": {
-      "value": null,
+      "value": 116,
+      "range_min": 92,
+      "range_max": 140,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hdt": {
-      "value": null,
+      "value": 75.5,
+      "range_min": 36,
+      "range_max": 115,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 375,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "in air; 410 °C in nitrogen"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.21,
+      "range_min": 0.17,
+      "range_max": 0.25,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23 °C"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 1194.4,
+      "range_min": 420,
+      "range_max": 2200,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "commercial grade; Wypych 2016 reports a broader range of 420-2,200 MPa across grades"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 14,
+      "range_max": 60,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "tensile stress at yield; Mark 1999 reports 38-52 MPa at 25 °C, 42.8 MPa for a commercial grade"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 50,
+      "range_min": 42,
+      "range_max": 58,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "homopolymer, 25 °C; ultimate tensile strength for a commercial grade: 43.8 MPa"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 43,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "commercial grade; Wypych 2016 reports a broader range of 20-600% across grades"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 50,
+      "range_max": 1000,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C; spans grades"
     },
     "impact_charpy": {
       "value": null,
@@ -172,14 +352,39 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 75,
+      "range_min": 70,
+      "range_max": 80,
+      "unit": "Shore D",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 200,
+      "range_max": 2200,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.383,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": 0.155,
+      "range_min": 0.14,
+      "range_max": 0.17,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PVDF against steel"
     }
   },
   "chemical_resistance": {
@@ -195,6 +400,55 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-pvdf"
+      },
+      "acids": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "dilute and concentrated"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "resistant (diluted)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -208,9 +462,40 @@
       "status": "placeholder"
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
-    }
+      "value": "V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 59.5,
+      "range_min": 44,
+      "range_max": 75,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 17.6,
+      "range_min": 16.8,
+      "range_max": 18.4,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "Ar",
+        "value": 1.5e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C, 5.21×10⁻³ cm specimen thickness",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -220,17 +505,24 @@
       "poling (for piezoelectric grades)"
     ],
     "processing_temp_range": {
-      "value": 177,
+      "value": null,
+      "range_min": 195,
+      "range_max": 210,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pvdf"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "melt 195 °C, extrusion 210 °C"
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 1.6,
+      "range_min": 0.2,
+      "range_max": 3,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -273,7 +565,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pvdf"
+    "wiki-pvdf",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -297,5 +591,34 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

@@ -440,7 +440,8 @@ export const SECTIONS = [
   { num: '10', id: 'processing', title: 'Processing' },
   { num: '11', id: 'applications', title: 'Applications' },
   { num: '12', id: 'environmental', title: 'Environmental & Recycling' },
-  { num: '13', id: 'references', title: 'References' },
+  { num: '13', id: 'toxicity', title: 'Toxicity & Safety' },
+  { num: '14', id: 'references', title: 'References' },
 ] as const;
 
 // Concept pages have their own, lighter section list (schema in

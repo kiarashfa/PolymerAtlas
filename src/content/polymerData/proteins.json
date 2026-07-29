@@ -35,10 +35,12 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.36,
       "unit": "g/cm³",
-      "status": "not_applicable",
-      "conditions": "Density is specific to individual proteins, not meaningful for the class as a whole."
+      "conditions": "Soy-protein-based industrial plastic (Wypych 'PR' entry), 20 °C; density is otherwise highly protein-specific and not meaningful for the class generally.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -59,6 +61,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -77,13 +104,40 @@
     },
     "crystal_structure": "Hierarchical structure: primary (sequence) -> secondary (α-helix/β-sheet, hydrogen-bond stabilized) -> tertiary (3-D fold, stabilized by hydrophobic core, salt bridges, disulfide bonds) -> quaternary (multi-chain assemblies).",
     "chain_flexibility_notes": "Folding behavior and flexibility vary enormously by sequence; no single description applies across the class.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 50000,
+        "range_max": 300000,
+        "unit": "g/mol",
+        "conditions": "Processed soy-protein-based material (Wypych 'PR' entry). Individual proteins vary enormously: raw soy protein 30,000-1,000,000, casein 19,000-25,200, albumins 10,000-15,000, globulins 150,000-450,000.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 181,
+      "range_max": 252,
       "unit": "°C",
-      "status": "not_applicable"
+      "conditions": "Specific to individual proteins, not a general class value: wheat glutenin 181 °C, collagen 192 °C, gelatin 217 °C, elastin 252 °C.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
@@ -114,9 +168,13 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 104,
+      "range_max": 1200,
       "unit": "MPa",
-      "status": "not_applicable",
-      "conditions": "Mechanical properties are specific to individual structural proteins (e.g. keratin, collagen, silk fibroin), not meaningful for 'proteins' as a class."
+      "conditions": "Soy-protein-based industrial material (Wypych 'PR' entry, Young's modulus). Mechanical properties are otherwise specific to individual structural proteins (e.g. keratin, collagen, silk fibroin), not meaningful for 'proteins' as a class.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -125,13 +183,21 @@
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 40,
+      "range_max": 50,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Soy protein (as processed, Wypych 'PR' entry); drawn soy protein (2.5 draw ratio) reaches 99 MPa, zein 12.7 MPa (5-6 MPa cast).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 4.6,
       "unit": "%",
-      "status": "not_applicable"
+      "conditions": "Soy protein (Wypych 'PR' entry); zein reported much higher, 61-122%.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -152,10 +218,63 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "poor",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry), dilute and concentrated.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good/poor",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "not_applicable"
@@ -168,14 +287,29 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
     "processing_methods": [],
     "processing_temp_range": {
       "value": null,
+      "range_min": 70,
+      "range_max": 165,
       "unit": "°C",
-      "status": "not_applicable"
+      "conditions": "Soy protein-based industrial material (Wypych 'PR' entry): 70-105 °C extrusion, 130 °C molding, 135-165 °C compression molding.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -217,15 +351,46 @@
     "recyclable": false,
     "biodegradable": true,
     "degradation_pathway": "Enzymatic proteolysis (hydrolysis of peptide bonds) by proteases; readily biodegradable.",
-    "environmental_notes": null
+    "environmental_notes": "Soy protein-based industrial material (Wypych 'PR' entry) shows low aquatic toxicity: Daphnia magna and rainbow trout 48 h LC50 both >1,000 mg/l."
   },
   "references": [
-    "wiki-protein"
+    "wiki-protein",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
     "diagrams": [],
     "structure_render_2d": null,
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "conditions": "Soy protein-based industrial material (Wypych 'PR' entry).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

@@ -51,9 +51,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.21,
+      "range_min": 1.17,
+      "range_max": 1.25,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C. 1.177 g/cm³ amorphous, 1.262 g/cm³ crystalline (also corroborated in a separate source)."
     },
     "melt_flow_index": {
       "value": null,
@@ -66,13 +71,44 @@
       "status": "placeholder"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1 MHz; value at 100 Hz not reported."
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-14,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity (1×10¹⁴ Ω·m)."
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -87,27 +123,159 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 30,
+      "range_max": 80,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Orthorhombic (space group P2₁2₁2₁), a:b:c = 0.576:1.320:0.596 nm, cell angles 90°.",
     "chain_flexibility_notes": "Water-insoluble and relatively resistant to hydrolytic degradation -- unusual for a biodegradable plastic, most of which degrade primarily via hydrolysis rather than needing microbial action.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 22000,
+        "range_max": 768000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 200000,
+        "range_max": 3000000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "In microbial cell cytoplasm; 12,000 reported as a general figure across Eubacteria/Archaebacteria/Eukaryotes, and >3,000,000 as ultra-high MW in E. coli."
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.95,
+        "range_max": 3.7,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "chloroform",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.0077,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.82,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "2,2,2-trifluoroethanol",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.0251,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.74,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "1,2-dichloroethane",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.00918,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.78,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "1-chloronaphthalene",
+        "temperature_k": 313,
+        "k": {
+          "value": 0.0396,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.62,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "n-butyl chloride",
+        "temperature_k": 286,
+        "mw_range": "theta solvent",
+        "k": {
+          "value": 0.1,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.5,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 2,
+      "value": -0.8,
+      "range_min": -4,
+      "range_max": 2.4,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-phb"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": 175,
+      "value": 175.5,
+      "range_min": 166,
+      "range_max": 185,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-phb"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC. Equilibrium melting point of an infinite crystal is separately calculated at 197 °C."
     },
     "tc": {
       "value": null,
@@ -132,9 +300,12 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3500,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Young's modulus (corroborated at the same value in a separate source). 1,400-2,200 MPa also reported elsewhere as 'tensile modulus'."
     },
     "yield_strength": {
       "value": null,
@@ -142,22 +313,34 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": 40,
+      "value": 51,
+      "range_min": 40,
+      "range_max": 62,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-phb",
-      "conditions": "Source reports unqualified 'tensile strength'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Source reports unqualified 'tensile strength'; corroborated by a separate 40-60 MPa range for unmodified material."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 31.5,
+      "range_min": 5,
+      "range_max": 58,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "A narrower 6-8% is reported elsewhere for unmodified, untreated film."
     },
     "impact_izod": {
-      "value": null,
+      "value": 42.5,
+      "range_min": 35,
+      "range_max": 50,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "notched"
     },
     "impact_charpy": {
       "value": null,
@@ -170,8 +353,23 @@
       "status": "placeholder"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 1500,
+      "range_min": 1000,
+      "range_max": 2000,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "A separate source reports 3,500-4,000 MPa for unmodified material."
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
@@ -182,13 +380,37 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-phb"
+      },
+      "acids": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
-      "value": "UV resistant",
+      "value": "Good",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-phb"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "hydrolysis_resistance": {
       "value": "Relatively resistant to hydrolytic degradation (unusual for a biodegradable plastic)",
@@ -199,7 +421,31 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 19.2,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Corroborated at the same value (calculated via Hoy's group contributions) in a separate source."
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "chloroform",
+        "value": 0.361,
+        "unit": "",
+        "conditions": "30 °C, Mn = 127,000",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -208,9 +454,12 @@
       "fiber spinning"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 160,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Injection molding."
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -240,7 +489,9 @@
     "environmental_notes": "Oxygen-permeable and biocompatible, but historically hampered commercially by cost and performance versus conventional plastics."
   },
   "references": [
-    "wiki-phb"
+    "wiki-phb",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -264,5 +515,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

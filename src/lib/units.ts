@@ -12,11 +12,30 @@ interface ImperialRule {
   format?: (v: number) => string;
 }
 
+const SUPERSCRIPT = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+
+/** Rewrite JavaScript's exponential form into typeset scientific notation:
+ *  "1.9e-13" -> "1.9 × 10⁻¹³". Properties like gas permeability and the
+ *  conductivity of an insulator are unreadable otherwise. Strings without an
+ *  exponent pass through untouched. */
+function typesetExponent(s: string): string {
+  const m = /^(-?[\d.]+)e([+-])(\d+)$/.exec(s);
+  if (!m) return s;
+  const [, mantissa, sign, digits] = m;
+  const exp = (sign === '-' ? '⁻' : '') + [...digits].map((d) => SUPERSCRIPT[+d]).join('');
+  return `${mantissa} × 10${exp}`;
+}
+
+/** The SI form: numbers as JSON stringifies them, with exponents typeset. */
+function decimal(v: number): string {
+  return typesetExponent(String(v));
+}
+
 /** Three significant figures, thousands-separated when large. */
 function sigFigs(v: number): string {
   if (!Number.isFinite(v)) return String(v);
   const n = Number(v.toPrecision(3));
-  return Math.abs(n) >= 1000 ? n.toLocaleString('en-US') : String(n);
+  return Math.abs(n) >= 1000 ? n.toLocaleString('en-US') : typesetExponent(String(n));
 }
 
 const wholeNumber = (v: number) => Math.round(v).toLocaleString('en-US');
@@ -56,14 +75,15 @@ export function assembleValue(
   return u ? `${core} ${u}` : core;
 }
 
-/** The server-rendered SI form: numbers verbatim, as JSON stringifies them. */
+/** The server-rendered SI form: numbers verbatim, as JSON stringifies them,
+ *  with exponential forms typeset as "m × 10ⁿ". */
 export function siText(
   value: number | null,
   min: number | null,
   max: number | null,
   unit: string
 ): string | null {
-  return assembleValue(value, min, max, unit, String);
+  return assembleValue(value, min, max, unit, decimal);
 }
 
 /** The client-computed imperial form, or null when the unit is SI-only. */

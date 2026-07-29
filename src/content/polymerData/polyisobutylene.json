@@ -42,29 +42,82 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 0.917,
+      "range_min": 0.788,
+      "range_max": 0.972,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "20°C, amorphous, high-MW PIB (Mark; matches the formula 0.9171-30/Mn extrapolated to high Mn); Wypych reports 0.788-0.921 across the oligomer MW range, 0.972 crystalline; Mark separately reports crystalline density 0.964"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 200,
+      "range_max": 300,
       "unit": "g/10min",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230°C/3.8 kg"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.505,
+      "range_max": 1.51,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, high-MW PIB; oligomers range lower at 1.445-1.508; Mark's high-Mn extrapolated value is 1.5092"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.4,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "1 atm, 20°C, 1 kHz"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-12,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "20°C, gum vulcanizate; reported directly as conductivity, not as the reciprocal of resistivity"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_max": 0.02,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "<200 ppm (<0.02%), pure polymer, 20°C, total immersion; compounding increases uptake"
+    },
+    "dielectric_strength": {
+      "value": 42,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "d=0.6-0.8mm"
     }
   },
   "synthesis": {
@@ -87,39 +140,127 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Fully saturated, methyl-substituted backbone gives PIB very low gas permeability and excellent chemical inertness -- the properties underlying its 'invisible sealant' role in insulating glass.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 180,
+        "range_max": 6000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "oligomer range (Wypych); Mark gives a wider application-dependent range: 500-5,000 (dispersants) up to 5,000-6,000,000 (blends/viscosity modifiers/chewing gum), 100,000-600,000 (elastomer grades)"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 900,
+        "range_max": 1100000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.06,
+        "range_max": 2.10,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Wypych; Mark reports a broader 2.0-4.0"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "cyclohexane",
+        "temperature_k": 298,
+        "k": {
+          "value": 0.0135,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "PIB/IIR chapter (isobutylene homopolymer and its <1% isoprene copolymer reported together for this dilute-solution property)"
+        },
+        "a": {
+          "value": 0.74,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "benzene",
+        "temperature_k": 298,
+        "k": {
+          "value": 0.10,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "PIB/IIR chapter"
+        },
+        "a": {
+          "value": 0.504,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -72,
+      "range_min": -72,
+      "range_max": -62,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.; calc.=-71; Mark's DSC measurement gives -71°C and -65°C (202 K, 208 K), consistent"
     },
     "tm": {
       "value": null,
+      "range_min": 2,
+      "range_max": 44,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Amorphous/gummy; no true melting point."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "PIB crystallizes below 20°C or under mechanical stress; Mark reports melting points of 275 K and 317 K (~2°C and ~44°C, depending on annealing conditions) for this stress-/cold-crystallized form, with a heat of fusion of 52 cal/g at the melting point -- not a melt transition of the material in its normal amorphous gum state."
     },
     "tc": {
       "value": null,
       "unit": "°C",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "PIB is capable of crystallizing below 20°C or under mechanical stress (see tm), but neither handbook reports a numeric crystallization temperature."
     },
     "hdt": {
       "value": null,
       "unit": "°C",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "No ASTM D648 heat-deflection-under-load result exists for this uncrosslinked gum elastomer; Mark separately reports a low-temperature deflection value of <210 K (<-63°C) tied to its glass transition (202-208 K), a different quantity from heat deflection under load."
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 120,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">120°C; Mark reports 50% volatile loss in 30 min at 320°C (a different, less conservative degradation metric)"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.13,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "20°C, gum vulcanizate; rises to 0.23 with 50 phr carbon black filler; Wypych separately reports 0.19-0.26 for the melt"
     }
   },
   "mechanical": {
@@ -127,58 +268,170 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable",
-      "conditions": "Low/medium-MW grades are gummy solids/liquids without conventional solid mechanical properties."
+      "conditions": "Uncrosslinked PIB gum has no stable equilibrium tensile modulus in the conventional solid sense; Mark's only reported figure (0.5-50 MPa) is explicitly stated to depend on compounding ingredients, i.e. it describes compounded/vulcanized rubber rather than the neat homopolymer."
     },
     "yield_strength": {
       "value": null,
       "unit": "MPa",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Elastomeric stress-strain behavior shows no distinct yield point; neither handbook reports one."
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 1.7,
+      "range_max": 2.5,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "excludes Mark's much broader compounded-rubber range (0.5-50 MPa), which reflects filled/vulcanized IIR formulations rather than neat PIB"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 50,
+      "range_max": 700,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
       "unit": "J/m",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Notched Izod impact testing requires a rigid molded bar; not meaningful for an uncrosslinked gum elastomer, and neither handbook reports a value."
     },
     "impact_charpy": {
       "value": null,
       "unit": "kJ/m²",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Notched Charpy impact testing requires a rigid molded bar; not meaningful for an uncrosslinked gum elastomer, and neither handbook reports a value."
     },
     "hardness": {
       "value": null,
       "unit": "Shore",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Uncrosslinked, unvulcanized PIB gum lacks the stable elastic network a durometer reading needs; Mark's only reported figure (Shore A 5-100) is explicitly compounding-dependent, reflecting finished vulcanized rubber goods rather than the neat homopolymer."
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Three-point flexural testing requires a rigid bar specimen; not meaningful for an uncrosslinked gum elastomer, and neither handbook reports a value."
+    },
+    "poissons_ratio": {
+      "value": 0.49,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "20°C"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "good",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Degrades via ozone attack and UV-driven autoxidation (hydroperoxides, chain scission, crosslinking); no stabilizer-based photostability class given",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Fully saturated hydrocarbon backbone (isobutylene units only); no hydrolyzable linkages."
     },
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 16.5,
+      "range_max": 17.1,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wypych 17.1; Mark 16.5 (20°C)"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "cyclohexane",
+        "value": 0.44,
+        "unit": "",
+        "conditions": "25°C, PIB/IIR chapter",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -187,13 +440,15 @@
     "processing_temp_range": {
       "value": null,
       "unit": "°C",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Fabricated by compounding, vulcanization, coating and sheeting rather than thermoplastic melt processing; neither handbook reports a processing temperature range."
     },
     "drying_required": null,
     "shrinkage_rate": {
       "value": null,
       "unit": "%",
-      "status": "not_applicable"
+      "status": "not_applicable",
+      "conditions": "Not injection-molded into rigid parts (fabricated by compounding/coating/sheeting instead), so mold shrinkage is not a meaningful measurement; neither handbook reports a value."
     }
   },
   "applications": [
@@ -230,7 +485,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-polyisobutylene"
+    "wiki-polyisobutylene",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -254,5 +511,48 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 34600,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">2,000 also reported (different study/grade)"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale (health reported as a 0-1 range)"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH): 2 mg/m³ inhalable. Skin (rabbit) LD50: non-irritant. Mutagenic, teratogenic and reproductive toxicity: none reported."
   }
 }

@@ -55,33 +55,95 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.21,
-      "range_min": 1.2,
+      "value": 1.205,
+      "range_min": 1.19,
       "range_max": 1.22,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polycarbonate"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "At 20°C. Mark's Polymer Data Handbook reports 1.2 g/cm³ (ASTM D792)."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 43,
+      "range_min": 6,
+      "range_max": 80,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "300°C/1.2 kg"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.5865,
+      "range_min": 1.586,
+      "range_max": 1.587,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, exp."
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.9,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1 MHz"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-15,
+      "range_max": 1e-12,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity range (1×10¹²–1×10¹⁵ Ω·m)."
+    },
+    "transmittance": {
+      "value": 86.5,
+      "range_min": 82,
+      "range_max": 91,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": 1.9,
+      "range_min": 0.8,
+      "range_max": 3,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.26,
+      "range_min": 0.12,
+      "range_max": 0.4,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.09-0.3%."
+    },
+    "dielectric_strength": {
+      "value": 41,
+      "range_min": 15,
+      "range_max": 67,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Film, d = 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -99,28 +161,64 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-polycarbonate",
-      "conditions": "Amorphous -- underlies its high transparency."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Typically amorphous (rigid backbone) in commercial resin, underlying its transparency; crystallinity of 20-42% has been reported under special processing (e.g. solvent-induced or long-term annealing)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Bulky bisphenol A units and carbonate linkages give PC an unusual combination of high stiffness, high impact toughness, and optical clarity.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": 29400,
+        "range_min": 17500,
+        "range_max": 41300,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": 37500,
+        "range_min": 19000,
+        "range_max": 56000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 2.25,
+        "range_min": 1.3,
+        "range_max": 3.2,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 147,
+      "value": 145.5,
+      "range_min": 137,
+      "range_max": 154,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polycarbonate"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp."
     },
     "tm": {
-      "value": null,
+      "value": 261,
+      "range_min": 255,
+      "range_max": 267,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Amorphous; no true melting point."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC, measured on crystallized/annealed PC -- commercial resin is normally amorphous with no distinct melting point."
     },
     "tc": {
       "value": null,
@@ -128,77 +226,193 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 137.5,
+      "range_min": 119,
+      "range_max": 156,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 420,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.192,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2650,
+      "range_min": 2200,
+      "range_max": 3100,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported 'Young's modulus' 2,390-2,600 MPa also given; Mark's Polymer Data Handbook reports 2,380 MPa (ASTM D638)."
     },
     "yield_strength": {
-      "value": null,
+      "value": 65.5,
+      "range_min": 57,
+      "range_max": 74,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Tensile stress at yield."
     },
     "tensile_strength_at_break": {
-      "value": 65,
+      "value": 71.5,
       "range_min": 55,
-      "range_max": 75,
+      "range_max": 88,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polycarbonate",
-      "conditions": "Source reports unqualified 'tensile strength'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (57-74 MPa). Mark's Polymer Data Handbook reports 65.5 MPa 'at ultimate'."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 103,
+      "range_min": 66,
+      "range_max": 140,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": 725,
-      "range_min": 600,
-      "range_max": 850,
+      "value": null,
+      "range_min": 12,
+      "range_max": 736,
       "unit": "J/m",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polycarbonate"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23°C, notched; wide range reflects grade-dependent variability. Mark's Polymer Data Handbook separately reports 850 J/m (Izod, notched) for standard PC."
     },
     "impact_charpy": {
-      "value": null,
+      "value": 45.5,
+      "range_min": 11,
+      "range_max": 80,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23°C, notched"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 89,
+      "unit": "Rockwell L",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2410,
+      "range_min": 2220,
+      "range_max": 2600,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.4105,
+      "range_min": 0.401,
+      "range_max": 0.42,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp."
+    },
+    "coefficient_of_friction": {
+      "value": 0.21,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Chrome steel counterface, ASTM D1894."
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Outdoor/UV exposure degrades optical clarity and induces yellowing: light transmittance drops from 85% (initial) to 82% and haze rises from 3% to 19% after 3 years outdoor exposure.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -206,9 +420,85 @@
       "conditions": "Carbonate linkages are hydrolyzable (a known processing concern requiring pre-drying), but no specific rate data sourced."
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
-    }
+      "value": "HB to V-2",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unfilled resin, grade/thickness dependent; V-0 achievable with some flame-retardant grades."
+    },
+    "limiting_oxygen_index": {
+      "value": 27.5,
+      "range_min": 25,
+      "range_max": 30,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Flame-retardant grades reach 30-43%."
+    },
+    "solubility_parameter": {
+      "value": 22.2,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 1.05e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 1.05 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "CO2",
+        "value": 6e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 6.0 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "N2",
+        "value": 2.25e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 0.225 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "He",
+        "value": 7.5e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 7.5 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "H2",
+        "value": 9e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 9.0 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "Ar",
+        "value": 6e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 0.6 × 10⁻¹⁷ m³·m·m⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -217,15 +507,23 @@
       "blow molding"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 317.5,
+      "range_min": 280,
+      "range_max": 355,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.65,
+      "range_min": 0.4,
+      "range_max": 0.9,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -270,7 +568,9 @@
   },
   "references": [
     "wiki-polycarbonate",
-    "ansi-resin-codes"
+    "ansi-resin-codes",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -294,5 +594,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 10000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">10,000 mg/kg"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "OSHA exposure limit: 5 mg/m³ (respirable dust), 15 mg/m³ (total dust). Skin LD50 (rabbit) >2,000 mg/kg."
   }
 }

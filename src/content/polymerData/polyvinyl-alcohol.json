@@ -47,31 +47,75 @@
       "range_min": 1.19,
       "range_max": 1.31,
       "unit": "g/cm³",
+      "conditions": "20 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pva"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 31,
+      "range_max": 47,
       "unit": "g/10min",
-      "status": "placeholder"
+      "conditions": "190 °C/21.6 kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
-      "value": 1.477,
+      "value": 1.5,
+      "range_min": 1.49,
+      "range_max": 1.51,
       "unit": "",
+      "conditions": "20 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pva",
-      "conditions": "At 632 nm."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.6,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz/1 MHz; rises with moisture content (up to ~5.9 at higher frequency, per Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 2.63e-6,
+      "range_max": 3.23e-6,
       "unit": "S/m",
+      "conditions": "Reciprocal of reported volume resistivity, (3.1-3.8)×10⁵ Ω·m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 5,
+      "unit": "%",
+      "conditions": "24 h, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -85,28 +129,105 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Predominantly atactic (commercial, from radical polymerization/hydrolysis of vinyl acetate); stereoregular syndiotactic and isotactic forms have also been synthesized by specialized routes.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 45,
+      "range_min": 30,
+      "range_max": 60,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "Atactic (commercial) grade; syndiotactic 25-35%, isotactic 18-24%.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Predominantly 1,3-diol linkages with trace 1,2-diol units, the ratio depending on the precursor polyvinyl acetate's polymerization conditions.",
+    "crystal_structure": "Predominantly 1,3-diol linkages with trace 1,2-diol units, the ratio depending on the precursor polyvinyl acetate's polymerization conditions. Crystallizes in a monoclinic lattice (a:b:c ≈ 0.78:0.55:0.25 nm, angles ≈ 91-93°).",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 7000,
+        "range_max": 101000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 1750,
+        "range_max": 186000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 1.19,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "water",
+        "temperature_k": 298,
+        "mw_range": "~21 kg/mol",
+        "k": { "value": 0.02, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.76, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "water",
+        "temperature_k": 298,
+        "mw_range": "~70 kg/mol",
+        "k": { "value": 0.14, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.6, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "water (syndiotactic-rich)",
+        "temperature_k": 303,
+        "mw_range": "~120 kg/mol",
+        "k": { "value": 0.0734, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.63, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "water",
+        "temperature_k": 353,
+        "mw_range": "~460 kg/mol",
+        "k": { "value": 0.094, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.56, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "phenol/water (85/15 vol)",
+        "temperature_k": 303,
+        "mw_range": "~120 kg/mol",
+        "k": { "value": 0.0246, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.8, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 34,
+      "range_max": 85,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "Experimental range (calculated: 84 °C)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": 200,
+      "value": 230,
       "unit": "°C",
+      "conditions": "Fully hydrolyzed grade; partially hydrolyzed grades 180-190 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pva"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -119,14 +240,19 @@
       "status": "placeholder"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 240,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.2,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "Airvol grade",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
@@ -141,14 +267,22 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 39,
+      "range_min": 23,
+      "range_max": 55,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Unqualified \"tensile strength\"; base film/sheet grade (excludes highly oriented drawn-fiber values up to ~1,490 MPa).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 225,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "Extruded, 25 °C (pressed samples: 445%)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_izod": {
       "value": null,
@@ -169,6 +303,21 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "range_min": 0.455,
+      "range_max": 0.485,
+      "unit": "",
+      "conditions": "Hydrogel (water-swollen) state, not dry solid.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -178,11 +327,62 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-pva"
+      },
+      "dilute acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Excellent stability to sunlight",
+      "conditions": "Spectral sensitivity <280 nm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -192,7 +392,111 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": 21.25,
+      "range_min": 20,
+      "range_max": 22.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 25.78,
+      "range_min": 21.7,
+      "range_max": 25.78,
+      "unit": "MPa^0.5",
+      "conditions": "Handbook of Polymers reports a range of 21.7-25.78 MPa^0.5.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "water",
+        "value": 0.494,
+        "unit": "",
+        "conditions": "30 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": -0.49,
+        "unit": "",
+        "conditions": "26.7 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "glycerol",
+        "value": -0.16,
+        "unit": "",
+        "conditions": "22.8 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": 0.3,
+        "unit": "",
+        "conditions": "40 °C, crystallinity >28%",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": 0.18,
+        "unit": "",
+        "conditions": "40 °C, crystallinity ≤28%",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ],
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 6.65e-16,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 5.25e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "CO2",
+        "value": 9.0e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "50% RH, 25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "H2",
+        "value": 1.605e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "50% RH, 25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -201,9 +505,14 @@
       "3D printing (support material)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 185.5,
+      "range_min": 183,
+      "range_max": 188,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "Extrusion",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -244,11 +553,13 @@
   "environmental": {
     "recyclable": false,
     "biodegradable": true,
-    "degradation_pathway": "Water-soluble and biodegradable under appropriate microbial conditions.",
-    "environmental_notes": null
+    "degradation_pathway": "Degradation products are water and CO2; at least 55 known microorganism species degrade PVA (e.g. Acinetobacter, E. coli, Pseudomonas, Saccharomyces, Lipomyces); degradable in activated sludge, soil landfills, and septic systems.",
+    "environmental_notes": "Aquatic toxicity: Daphnia magna LC50 (48 h) 8.3 mg/L; bluegill sunfish LC50 (48 h) 10 mg/L; fathead minnow LC50 (48 h) 40 mg/L."
   },
   "references": [
-    "wiki-pva"
+    "wiki-pva",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -272,5 +583,48 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 23854,
+      "unit": "mg/kg",
+      "conditions": ">20,000 mg/kg also reported",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Workplace exposure limits: OSHA PEL 5 mg/m³ (respirable), 15 mg/m³ (total)."
   }
 }

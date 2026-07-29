@@ -37,11 +37,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.5,
+      "value": 1.555,
+      "range_min": 1.54,
+      "range_max": 1.57,
       "unit": "g/cm³",
+      "conditions": "20°C, typical solid cellulose; crystalline regions 1.59-1.63 g/cm³, amorphous regions 1.482-1.489 g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-cellulose"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -50,18 +53,63 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.534,
+      "range_max": 1.618,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20°C; birefringent, n∥ 1.595-1.618 and n⊥ 1.527-1.534 across fiber types",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 3,
+      "range_max": 7.5,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz to 1 MHz; crystalline portion reported separately at 5.7",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": 4,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": 90,
+      "unit": "%",
+      "conditions": "60°, Gardner, ASTM D523",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": 40,
+      "range_min": 30,
+      "range_max": 50,
+      "unit": "kV/mm",
+      "conditions": "specimen thickness 0.6-0.8 mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -74,19 +122,80 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": null,
+      "value": 50,
+      "range_min": 40,
+      "range_max": 60,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "typical range across native cellulose sources; cotton ~75%, wood pulp ~60%; regenerated cellulose is markedly lower (~25-35%, see viscose-rayon)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Semi-crystalline; natural cellulose forms Iα/Iβ allomorphs, regenerated cellulose forms cellulose II, and cellulose III/IV are accessible via chemical treatment.",
     "chain_flexibility_notes": "Extensive interchain hydrogen bonding between parallel chains forms rigid microfibrils, giving cellulose its high stiffness and insolubility in water and most organic solvents.",
-    "tg_relation_notes": "Reported to require ~320°C and 25 MPa pressure to become amorphous in water; a conventional Tg is not well-defined because the material decomposes before/near this regime under ambient pressure."
+    "tg_relation_notes": "Reported to require ~320°C and 25 MPa pressure to become amorphous in water; a conventional Tg is not well-defined because the material decomposes before/near this regime under ambient pressure.",
+    "molecular_weight": {
+      "mn": {
+        "value": 38000,
+        "range_min": 36000,
+        "range_max": 40000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": 360000,
+        "range_min": 160000,
+        "range_max": 560000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "cuprammonium hydroxide (Cuoxam)",
+        "temperature_k": 293,
+        "k": { "value": 0.00308, "unit": "mL/g", "conditions": "osmotic calibration on fractionated samples", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 1.0, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "cuprammonium hydroxide (Cuoxam)",
+        "temperature_k": 298,
+        "k": { "value": 0.113, "unit": "mL/g", "conditions": "viscosimetric calibration", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.657, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "cuprammonium hydroxide (Cuoxam)",
+        "temperature_k": 298,
+        "k": { "value": 0.101, "unit": "mL/g", "conditions": "viscosimetric calibration, second literature determination", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.661, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "cupriethylenediamine (Cuene)",
+        "temperature_k": 298,
+        "k": { "value": 0.00498, "unit": "mL/g", "conditions": "viscosimetric calibration", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 1.0, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 232.5,
+      "range_min": 220,
+      "range_max": 245,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "reported experimental range; a conventional Tg is debated for cellulose since decomposition typically precedes or overlaps this regime under ambient pressure",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
@@ -109,21 +218,30 @@
       "range_min": 260,
       "range_max": 270,
       "unit": "°C",
+      "conditions": "DSC, reported under a melting-temperature row since cellulose decomposes rather than melts",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-cellulose"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.071,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "cotton fiber, 293 K",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 4000,
+      "range_min": 3000,
+      "range_max": 5000,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "bulk/aggregate native cellulose; individual native bast fibers show much higher axial modulus (flax 78,000-108,000 MPa, hemp 59,000-78,000 MPa, ramie 48,000-69,000 MPa)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -131,14 +249,24 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 4.05,
+      "range_min": 2.2,
+      "range_max": 5.9,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "pulp handsheets (native, non-regenerated cellulose fiber network); individual fibers test much higher (e.g. cotton 200-800 MPa per Mark Polymer Data Handbook); regenerated cellulose (rayon) and cellophane report substantially different values, recorded on their own entries",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 8,
+      "range_min": 6,
+      "range_max": 10,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "native cellulose fiber; cast film 18-70%, regenerated forms 22-70% reported separately",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -159,6 +287,22 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": 0.30,
+      "unit": "",
+      "conditions": "microcrystalline cellulose",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": 0.25,
+      "unit": "",
+      "conditions": "static; dynamic 0.2 (counterface not specified)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "chemical_resistance": {
@@ -174,6 +318,66 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-cellulose"
+      },
+      "dilute acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -187,7 +391,60 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": 19,
+      "range_min": 18,
+      "range_max": 20,
+      "unit": "%",
+      "conditions": "untreated cellulose; flame-retardant treated forms show 22.8-30.3%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 18.03,
+      "range_max": 32.02,
+      "unit": "MPa^0.5",
+      "conditions": "Mark Polymer Data Handbook lists a single value of 32.02 MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 4e-15,
+        "range_min": 2e-15,
+        "range_max": 6e-15,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 2.2e-15,
+        "range_min": 4e-16,
+        "range_max": 4e-15,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 2e-9,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -253,7 +510,9 @@
     "environmental_notes": "The most abundant natural polymer on Earth; central to paper recycling streams and a renewable feedstock for biofuels and nanomaterials."
   },
   "references": [
-    "wiki-cellulose"
+    "wiki-cellulose",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -277,5 +536,48 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 5000,
+      "unit": "mg/kg",
+      "conditions": "reported as >5,000 mg/kg (practically nontoxic)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "range_min": 0,
+      "range_max": 2,
+      "unit": "",
+      "conditions": "reported as a range depending on cellulose form/dust exposure",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1.5,
+      "range_min": 1,
+      "range_max": 2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH) 3 mg/m³ respirable, 10 mg/m³ total dust; NIOSH 5 mg/m³ respirable, 10 mg/m³ total; OSHA 5 mg/m³ respirable, 15 mg/m³ total. Skin (rabbit) LD50 >2,000 mg/kg."
   }
 }

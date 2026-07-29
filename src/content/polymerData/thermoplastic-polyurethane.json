@@ -48,8 +48,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.02,
+      "range_max": 1.12,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -62,14 +67,48 @@
       "status": "placeholder"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.7,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "60 Hz-1 MHz",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1.45e-10,
       "unit": "S/m",
+      "conditions": "reciprocal of reported volume resistivity, 6.9×10⁹ Ω·m (converted from 6.9×10¹¹ Ω·cm), oxyester-polyol/MDI/1,4-butanediol elastomer system",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": 15,
+      "unit": "kV/mm",
+      "conditions": "d = 0.6-0.8 mm, K20/P50 test",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -87,25 +126,65 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 2.7,
+      "range_max": 18.3,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Hard segments can crystallize/order while soft segments remain amorphous -- a microphase-separated morphology, not a single crystallinity value."
+      "conditions": "Hard segments can crystallize/order while soft segments remain amorphous -- a microphase-separated morphology; source labels this range specifically \"(TPU)\", and reports a more crystalline \"(TSPU)\" variant separately at 45.7-47.8%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Hard/soft segment ratio and chemistry (polyester vs polyether soft segment) tune hardness, oil resistance, and hydrolysis resistance.",
-    "tg_relation_notes": "Hard and soft segments have distinct glass transitions, unlike a homogeneous single-Tg polymer."
+    "tg_relation_notes": "Hard and soft segments have distinct glass transitions, unlike a homogeneous single-Tg polymer.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 83000,
+        "range_max": 163000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": 120000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.2,
+        "range_max": 3.7,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": -66,
+      "range_max": -44,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Distinct hard-segment and soft-segment Tg values; no single number sourced."
+      "conditions": "soft-segment Tg; distinct hard-segment Tg also exists but no single number sourced",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
+      "range_min": 170,
+      "range_max": 220,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "DSC, hard-segment melting",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -131,24 +210,40 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 120,
+      "range_max": 330,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 39,
+      "range_max": 54.2,
       "unit": "MPa",
-      "status": "not_applicable",
-      "conditions": "Elastomer; typically no distinct yield region."
+      "conditions": "tensile stress at yield; the handbook does report a distinct yield value for TPU, so this is recorded rather than left not applicable",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 17,
+      "range_max": 66,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 300,
+      "range_max": 1500,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -162,23 +257,71 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder",
-      "conditions": "Formulated across a wide hardness range (soft elastomer to rigid engineering grades); no single value sourced."
+      "range_min": 62,
+      "range_max": 98,
+      "unit": "Shore A",
+      "conditions": "harder grades reported separately as Shore D 28-73",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 17,
+      "range_max": 1990,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
     "solvent_resistance": {
-      "oils_and_greases": {
-        "value": "Good resistance",
+      "alcohols": {
+        "value": "good",
         "status": "verified",
-        "evidence_level": "tertiary",
-        "source": "wiki-tpu"
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -193,7 +336,96 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 23,
+      "unit": "MPa^0.5",
+      "conditions": "polyether (PPG) soft-segment/MDI/1,4-butanediol systems, consistent across polyol Mw 1,000-3,000",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "chloroform",
+        "value": 0.228,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": 0.333,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "methyl ethyl ketone (MEK)",
+        "value": 0.417,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "dibutyl ether",
+        "value": 0.521,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "acetonitrile",
+        "value": 0.606,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "cyclohexane",
+        "value": 0.660,
+        "unit": "",
+        "conditions": "polyurethane elastomer, specific system not stated by source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ],
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 1.05e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 1.4×10⁻¹⁰ cm³·cm/(cm²·s·cmHg)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 5.25e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 7.0×10⁻¹⁰ cm³·cm/(cm²·s·cmHg)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -204,14 +436,23 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 170,
+      "range_max": 240,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "injection molding 185-240 °C, extrusion 170-235 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.3,
+      "range_max": 0.8,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -253,7 +494,9 @@
     "environmental_notes": "Bio-based TPU variants exist (e.g. some Elastollan N grades)."
   },
   "references": [
-    "wiki-tpu"
+    "wiki-tpu",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -277,5 +520,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

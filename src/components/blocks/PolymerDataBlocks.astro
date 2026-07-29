@@ -1,5 +1,5 @@
 ---
-// Edition renderer for all 13 polymer data blocks: collapsible numbered
+// Edition renderer for all 14 polymer data blocks: collapsible numbered
 // section cards (expanded by default), numeric superscript citations, and a
 // numbered References list with scroll anchors. Every block always renders,
 // with honest placeholder / N-A states — never omitted, never faked.
@@ -8,6 +8,7 @@ import PropRow from './PropRow.astro';
 import FactRow from './FactRow.astro';
 import ReferencesList from './ReferencesList.astro';
 import StructureViewer from './StructureViewer.astro';
+import MarkHouwinkTable from './MarkHouwinkTable.astro';
 import {
   describeProperty,
   describeRated,
@@ -33,7 +34,12 @@ const physical = [
   describeProperty('Density', data.physical.density),
   describeProperty('Melt flow index', data.physical.melt_flow_index),
   describeProperty('Refractive index', data.physical.refractive_index),
+  describeProperty('Transmittance', data.physical.transmittance),
+  describeProperty('Haze', data.physical.haze),
+  describeProperty('Gloss', data.physical.gloss),
+  describeProperty('Water absorption', data.physical.water_absorption),
   describeProperty('Dielectric constant', data.physical.dielectric_constant),
+  describeProperty('Dielectric strength', data.physical.dielectric_strength),
   describeProperty('Electrical conductivity', data.physical.electrical_conductivity),
 ];
 
@@ -55,6 +61,8 @@ const mechanical = [
   describeProperty('Impact strength (Charpy)', data.mechanical.impact_charpy),
   describeProperty('Hardness', data.mechanical.hardness),
   describeProperty('Flexural modulus', data.mechanical.flexural_modulus),
+  describeProperty("Poisson's ratio", data.mechanical.poissons_ratio),
+  describeProperty('Coefficient of friction', data.mechanical.coefficient_of_friction),
 ];
 
 const resistance = [
@@ -64,11 +72,40 @@ const resistance = [
   describeRated('Weathering / UV', data.chemical_resistance.weathering_uv),
   describeRated('Hydrolysis resistance', data.chemical_resistance.hydrolysis_resistance),
   describeRated('Flammability (UL94)', data.chemical_resistance.flammability_ul94),
+  describeProperty('Limiting oxygen index', data.chemical_resistance.limiting_oxygen_index),
+  describeProperty('Solubility parameter (δ)', data.chemical_resistance.solubility_parameter),
+];
+
+// Formula-style labels: O2 -> O₂, CO2 -> CO₂. Left alone when the key is a
+// word ("water vapor") rather than a formula.
+const SUBS = '₀₁₂₃₄₅₆₇₈₉';
+const formula = (key: string) =>
+  /^[A-Za-z]+\d/.test(key) ? key.replace(/\d/g, (d) => SUBS[Number(d)]) : key;
+
+const gasPermeability = data.chemical_resistance.gas_permeability.map((g) =>
+  describeProperty(formula(g.key), g)
+);
+const chiValues = data.chemical_resistance.interaction_parameter_chi.map((c) =>
+  describeProperty(c.key, c)
+);
+
+const molecularWeight = [
+  describeProperty('Number average (Mn)', data.structure_morphology.molecular_weight.mn),
+  describeProperty('Mass average (Mw)', data.structure_morphology.molecular_weight.mw),
+  describeProperty('Dispersity (Mw/Mn)', data.structure_morphology.molecular_weight.pdi),
 ];
 
 const morphProps = data.structure_morphology.crystallinity_typical
   ? [describeProperty('Typical crystallinity', data.structure_morphology.crystallinity_typical)]
   : [];
+
+const toxicity = [
+  describeProperty('LD50 (oral, rat)', data.toxicity_safety.ld50_oral_rat),
+  describeProperty('NFPA — health', data.toxicity_safety.nfpa_health_rating),
+  describeProperty('NFPA — flammability', data.toxicity_safety.nfpa_flammability_rating),
+  describeProperty('NFPA — reactivity', data.toxicity_safety.nfpa_reactivity_rating),
+  describeRated('Carcinogenic classification', data.toxicity_safety.carcinogenic_classification),
+];
 
 const processingProps = [
   describeProperty('Processing temperature', data.processing.processing_temp_range),
@@ -282,6 +319,26 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
         </dl>
       )
     }
+
+    <h3 class="sub-head">Molecular weight</h3>
+    <dl class="prop-table">
+      {molecularWeight.map((p) => <PropRow prop={p} citeNumbers={numberFor} />)}
+    </dl>
+
+    {
+      data.structure_morphology.mark_houwink.length > 0 ? (
+        <MarkHouwinkTable
+          entries={data.structure_morphology.mark_houwink}
+          citeNumbers={numberFor}
+        />
+      ) : (
+        <>
+          <h3 class="sub-head">Mark-Houwink constants</h3>
+          <p class="none sub-none">not yet available</p>
+        </>
+      )
+    }
+
     {
       data.structure_morphology.chain_flexibility_notes && (
         <p class="section-prose">{data.structure_morphology.chain_flexibility_notes}</p>
@@ -316,6 +373,32 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
     <dl class="prop-table">
       {resistance.map((p) => <PropRow prop={p} citeNumbers={numberFor} />)}
     </dl>
+
+    <h3 class="sub-head">Gas permeability</h3>
+    {
+      gasPermeability.length > 0 ? (
+        <dl class="prop-table">
+          {gasPermeability.map((p) => (
+            <PropRow prop={p} citeNumbers={numberFor} />
+          ))}
+        </dl>
+      ) : (
+        <p class="none sub-none">not yet available</p>
+      )
+    }
+
+    <h3 class="sub-head">Polymer-solvent interaction parameter (χ)</h3>
+    {
+      chiValues.length > 0 ? (
+        <dl class="prop-table">
+          {chiValues.map((p) => (
+            <PropRow prop={p} citeNumbers={numberFor} />
+          ))}
+        </dl>
+      ) : (
+        <p class="none sub-none">not yet available</p>
+      )
+    }
   </Section>
 
   <Section {...sec.processing}>
@@ -367,6 +450,15 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
         <p class="section-prose">{data.environmental.environmental_notes}</p>
       )
     }
+  </Section>
+
+  <Section {...sec.toxicity}>
+    <dl class="prop-table">
+      {toxicity.map((p) => <PropRow prop={p} citeNumbers={numberFor} />)}
+    </dl>
+    {data.toxicity_safety.safety_notes && (
+      <p class="section-prose">{data.toxicity_safety.safety_notes}</p>
+    )}
   </Section>
 
   <Section {...sec.references}>

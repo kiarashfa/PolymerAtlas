@@ -356,6 +356,9 @@ code {
     order: 3;
     width: 100%;
     margin-left: 0;
+    /* Four nav items do not fit one 375px row; without this the last one
+       pushes the page into horizontal scroll. */
+    flex-wrap: wrap;
   }
 }
 .site-foot {
@@ -861,6 +864,10 @@ code {
 .prop-value {
   font-variant-numeric: lining-nums tabular-nums;
   font-weight: 600;
+  /* Compound units (cm³(STP)·cm/(cm²·s·Pa)) carry no spaces to break at and
+     are wider than a phone column; without this they are clipped by
+     .ed-inner rather than wrapped. */
+  overflow-wrap: anywhere;
 }
 .prop-empty {
   color: var(--ink-muted);
@@ -970,6 +977,91 @@ a.figure-link:hover {
   font-style: italic;
   font-size: 0.95rem;
 }
+
+/* -------------------------------------- sub-groups within a data block -- */
+/* A property that legitimately carries many values (one per solvent, one per
+   gas) gets its own labelled group inside the section card, rather than a
+   flat row it could never fit into. */
+.sub-head {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+  font-size: 0.94rem;
+  font-weight: 400;
+  color: var(--ink-muted);
+  margin: var(--space-4) 0 var(--space-1);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+}
+.variant-atelier .sub-head {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.sub-none {
+  margin: 0;
+}
+
+/* Wide content scrolls inside its own container so the page body never
+   scrolls horizontally. */
+.subtable-scroll {
+  overflow-x: auto;
+  margin-top: var(--space-4);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+}
+.subtable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.94rem;
+}
+.subtable-cap {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+  font-size: 0.94rem;
+  color: var(--ink-muted);
+  padding-bottom: var(--space-2);
+}
+.variant-atelier .subtable-cap {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.subtable-eq {
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.subtable th,
+.subtable td {
+  text-align: left;
+  padding: 0.4em 0.9em 0.4em 0;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+.subtable thead th {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.subtable tbody tr:last-child th,
+.subtable tbody tr:last-child td {
+  border-bottom: none;
+}
+.subtable-key {
+  font-weight: 400;
+  padding-right: 1.4em;
+  white-space: normal;
+}
+.subtable .num {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
 .section-prose {
   font-size: 0.98rem;
   max-width: 70ch;

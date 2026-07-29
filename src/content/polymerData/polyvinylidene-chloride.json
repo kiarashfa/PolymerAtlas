@@ -44,9 +44,12 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.70,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C; amorphous 1.775, crystalline 1.97 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -54,9 +57,14 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.615,
+      "range_min": 1.6,
+      "range_max": 1.63,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
       "value": null,
@@ -66,6 +74,31 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -81,24 +114,81 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": null,
+      "value": 5,
+      "range_min": 4,
+      "range_max": 6,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Monoclinic unit cell (a≈0.672 nm, b≈1.252 nm, c≈0.468 nm, β≈123°); rapid crystallization around 140-150°C.",
     "chain_flexibility_notes": "Densely packed chlorine substituents give PVDC exceptionally low permeability to water, oxygen, and aroma compounds -- its defining property.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": 115000,
+        "range_min": 105000,
+        "range_max": 125000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 1.75,
+        "range_min": 1.5,
+        "range_max": 2.0,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "1-methyl-2-pyrrolidinone",
+        "temperature_k": 298,
+        "k": { "value": 0.0131, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.69, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetramethylene sulfoxide",
+        "temperature_k": 298,
+        "k": { "value": 0.0139, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.69, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "hexamethylenephosphoramide",
+        "temperature_k": 298,
+        "k": { "value": 0.0258, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.65, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -18.15,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "255 K, consistent across dilatometry, dynamic-mechanical, and DSC"
     },
     "tm": {
       "value": null,
+      "range_min": 158,
+      "range_max": 205,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC"
     },
     "tc": {
       "value": null,
@@ -111,12 +201,12 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": 125,
+      "value": 120,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinylidene-chloride",
-      "conditions": "Decomposes above this temperature, releasing HCl."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "decomposes above this temperature, releasing HCl"
     },
     "thermal_conductivity": {
       "value": null,
@@ -126,29 +216,52 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 483,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "machine (draw) direction, oriented film; transverse direction 34.5 MPa"
     },
     "yield_strength": {
-      "value": null,
+      "value": 22.5,
+      "range_min": 19,
+      "range_max": 26,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "tensile stress at yield; Mark also reports 69 MPa (machine direction, oriented film) and 19.3-36.2 MPa (molding resin grade)"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 46.5,
+      "range_min": 24,
+      "range_max": 69,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unoriented; oriented (drawn) film/fiber reaches 207-414 MPa"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 15,
+      "range_min": 10,
+      "range_max": 20,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "unoriented; oriented film/fiber 15-40%"
     },
     "impact_izod": {
-      "value": null,
+      "value": 37.4,
+      "range_min": 21.35,
+      "range_max": 53.38,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "notched, VD-VC molding resin grade"
     },
     "impact_charpy": {
       "value": null,
@@ -156,13 +269,28 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 55,
+      "unit": "Rockwell R",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "also reported as Rockwell M 50-65 for molding resin grade"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 500,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
@@ -173,6 +301,61 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-polyvinylidene-chloride"
+      },
+      "acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "dilute and concentrated"
+      },
+      "alcohols": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "fair-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good-fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "fair-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -186,9 +369,56 @@
       "source": "wiki-polyvinylidene-chloride"
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
-    }
+      "value": "V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 60,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 24.05,
+      "range_min": 23.1,
+      "range_max": 25.0,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 7.06e-17,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 3.83e-16,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 7.0e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -202,9 +432,13 @@
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 1.5,
+      "range_min": 0.5,
+      "range_max": 2.5,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -239,7 +473,9 @@
     "environmental_notes": "Chlorine content raised environmental concerns significant enough that Dow reformulated retail Saran Wrap to LDPE in 2004; PVDC remains in use mainly as a thin barrier coating rather than a bulk film."
   },
   "references": [
-    "wiki-polyvinylidene-chloride"
+    "wiki-polyvinylidene-chloride",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -263,5 +499,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

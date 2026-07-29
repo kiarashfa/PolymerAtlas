@@ -60,6 +60,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -80,7 +105,24 @@
     },
     "crystal_structure": "Regenerated cellulose (cellulose II allomorph, as in viscose rayon).",
     "chain_flexibility_notes": "Birefringent; molecular orientation from the casting process gives distinctive optical behavior under polarized light.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -127,9 +169,14 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 85,
+      "range_min": 50,
+      "range_max": 120,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "cellophane film, explicitly tagged in the handbook's cellulose chapter (distinct from viscose rayon fiber, 200-400 MPa dry, and generic \"regenerated cellulose,\" 69-170 MPa)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
@@ -155,6 +202,16 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -170,6 +227,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -218,7 +285,8 @@
     "environmental_notes": "Manufacturing uses carbon disulfide, described as highly toxic to workers -- a real occupational/environmental concern distinct from the finished film's own biodegradability."
   },
   "references": [
-    "wiki-cellophane"
+    "wiki-cellophane",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
@@ -242,5 +310,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

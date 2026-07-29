@@ -44,11 +44,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 2.2,
+      "value": 2.18,
+      "range_min": 2.16,
+      "range_max": 2.2,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ptfe"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C; amorphous 2.077, crystalline 2.187, triclinic 2.344 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -57,21 +60,63 @@
       "conditions": "PTFE has essentially no melt flow even above Tm due to extremely high melt viscosity; processed via sintering, not conventional melt extrusion."
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.36,
+      "range_min": 1.35,
+      "range_max": 1.37,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
       "value": 2.1,
       "unit": "",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ptfe"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz to 1 MHz"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-16,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1×10¹⁶ Ω·m"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, 23 °C water immersion"
+    },
+    "dielectric_strength": {
+      "value": 39.85,
+      "range_min": 19.7,
+      "range_max": 60,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "specimen thickness 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -86,30 +131,59 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Not applicable -- the CF2-CF2 repeat unit has no stereocenter.",
     "crystallinity_typical": {
-      "value": null,
+      "value": 78,
+      "range_min": 58,
+      "range_max": 98,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Polymorphic helical chain packing: Form II below 19 °C (triclinic/pseudohexagonal, a=b≈0.559 nm, c≈1.688 nm, β≈119.3°, 13/6 helix); Form IV 19-30 °C and Form I above 30 °C (trigonal, a=b≈0.566-0.567 nm, c>1.95 nm, 15/7 helix); Form III at high pressure (orthorhombic, 2/1 helix).",
     "chain_flexibility_notes": "The fully fluorinated backbone gives PTFE its extremely low surface energy and low coefficient of friction.",
-    "tg_relation_notes": null
+    "tg_relation_notes": "PTFE has several sub-Tg crystalline transitions in addition to its amorphous glass transition, most notably the ~19-30 °C crystal-disordering transitions (β 292 K, β″ 303 K) that cause a characteristic small volume change near room temperature.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 400000,
+        "range_max": 10000000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 114.85,
+      "value": 125.85,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ptfe"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "α (glass I) transition, 399 K; PTFE also shows sub-Tg crystalline transitions (β 292 K, β″ 303 K, γ/glass II 193 K)"
     },
     "tm": {
-      "value": 327,
+      "value": null,
+      "range_min": 317,
+      "range_max": 345,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ptfe"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC, first (irreversible) melt; reversible/second melt ~327 °C, extended-chain form ~385 °C"
     },
     "tc": {
       "value": null,
@@ -117,49 +191,75 @@
       "status": "placeholder"
     },
     "hdt": {
-      "value": null,
-      "unit": "°C",
-      "status": "placeholder"
-    },
-    "decomposition_onset": {
-      "value": 260,
+      "value": 52.5,
+      "range_min": 45,
+      "range_max": 60,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ptfe",
-      "conditions": "Pyrolysis reported above 400°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa"
+    },
+    "decomposition_onset": {
+      "value": 508,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "decomposition onset; 350 °C reported for 0.001% weight loss"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.25,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "298 K"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 475,
+      "range_min": 400,
+      "range_max": 550,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
-      "value": null,
+      "value": 10,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "296 K, ASTM D638"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 27.5,
+      "range_min": 20,
+      "range_max": 35,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 425,
+      "range_min": 300,
+      "range_max": 550,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": null,
+      "value": 188,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C"
     },
     "impact_charpy": {
       "value": null,
@@ -172,9 +272,32 @@
       "status": "placeholder"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 480,
+      "range_min": 340,
+      "range_max": 620,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.48,
+      "range_min": 0.46,
+      "range_max": 0.5,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": 0.08,
+      "range_min": 0.06,
+      "range_max": 0.08,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "static 0.08, dynamic 0.06; against polished steel 0.05-0.08 per Mark 1999"
     }
   },
   "chemical_resistance": {
@@ -184,6 +307,62 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-ptfe"
+      },
+      "acids": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "dilute and concentrated, including fuming nitric acid and aqua regia"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "attacked by molten alkali metals"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -195,8 +374,29 @@
       "status": "not_applicable"
     },
     "flammability_ul94": {
+      "value": "V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
+      "range_min": 99.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">99.5% O2 (effectively non-flammable in air); Mark 1999 reports >95%"
+    },
+    "solubility_parameter": {
+      "value": 14.7,
+      "range_min": 12.7,
+      "range_max": 16.7,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "12.7 is the calculated value; an experimental figure of 16.7 is also reported"
     }
   },
   "processing": {
@@ -204,15 +404,22 @@
       "suspension/emulsion polymerization + cold-press sintering (not melt-processable in the conventional sense)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 400,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "sintering"
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 6,
+      "range_min": 2,
+      "range_max": 10,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -250,7 +457,9 @@
     "environmental_notes": "PTFE manufacture has historically been associated with PFOA/PFAS-family processing aids, a significant environmental and regulatory concern for the fluoropolymer industry broadly (specific to PTFE's own persistence: not independently verified)."
   },
   "references": [
-    "wiki-ptfe"
+    "wiki-ptfe",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -274,5 +483,42 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 1250,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Mutagenic, teratogenic, and reproductive toxicity effects not known."
   }
 }

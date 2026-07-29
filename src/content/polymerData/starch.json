@@ -44,9 +44,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.34,
+      "range_max": 1.65,
       "unit": "g/cm³",
-      "status": "placeholder",
-      "conditions": "Reported as variable depending on botanical source and prior processing/treatment."
+      "conditions": "20 °C, native granules; varies by botanical source (e.g. maize, potato, wheat).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -55,8 +59,13 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.523,
+      "range_max": 1.535,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "Potato starch, 25 °C, 589 nm; two principal indices reported (birefringent granules).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "dielectric_constant": {
       "value": null,
@@ -66,6 +75,34 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 22.5,
+      "unit": "%",
+      "conditions": "equilibrium immersion in water, 23 °C; equilibrium moisture uptake at 50% RH/23 °C is much lower, 10.2-13.3%.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -80,19 +117,52 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 25,
+      "range_max": 45,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Starch granules are semi-crystalline (concentric amorphous/crystalline layers); no single confidently-sourced percentage found."
+      "conditions": "Native starch granules; wheat starch reported narrower at 32-36%. Becomes essentially amorphous after processing/gelatinization.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Semi-crystalline granules with concentric layering of amylose and amylopectin.",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": 214000,
+        "unit": "g/mol",
+        "conditions": "Regular dent corn (maize) starch, whole granule, size-exclusion chromatography. Varies greatly with source: waxy maize 1.48e5, high-amylose corn 4.8-5.4e4.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      "mw": {
+        "value": 14500000,
+        "unit": "g/mol",
+        "conditions": "Regular dent corn (maize) starch, whole granule, size-exclusion chromatography. Varies greatly with source: waxy maize 2.18e7, high-amylose corn 3.96-5.75e6.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      "pdi": {
+        "value": 68,
+        "unit": "",
+        "conditions": "Regular dent corn (maize) starch. Waxy maize and high-amylose corn grades reported much broader, PDI 82-147.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -55,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "Native starch shows two transitions, -55 °C and 27-43 °C, both moisture-dependent; a much higher extrapolated Tg (~223 °C) is reported for anhydrous corn starch.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
@@ -112,8 +182,13 @@
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 240,
+      "range_max": 250,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "Estimated onset, reported under the DSC 'melting temperature' row since starch decomposes rather than showing a true melt endotherm.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
@@ -124,23 +199,41 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 1020,
+      "range_max": 1140,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Native/unplasticized starch; a much lower elastic modulus (9-38.7 MPa) is reported elsewhere in the same source, likely a plasticized or hydrated grade.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 1.4,
+      "range_max": 22,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Tensile stress at yield; wide range reflects different starch products/grades and moisture content.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 1.6,
+      "range_max": 2.1,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 27,
+      "range_max": 84,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -160,6 +253,16 @@
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
+      "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
@@ -183,12 +286,25 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder"
+      "value": "poor -- readily hydrolyzed by acid and enzymes",
+      "conditions": "The alpha-glucopyranose linkage is more susceptible to hydrolysis/enzyme attack than the beta linkage in cellulose.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -199,8 +315,13 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 160,
+      "range_max": 180,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "160 °C extrusion; 180 °C melt/injection molding (thermoplastic starch).",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -261,7 +382,9 @@
     "environmental_notes": "Renewable, widely used as a biodegradable-plastics feedstock (e.g. PLA precursor)."
   },
   "references": [
-    "wiki-starch"
+    "wiki-starch",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -285,5 +408,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 5000,
+      "unit": "mg/kg",
+      "conditions": "reported as >5,000 mg/kg (practically non-toxic)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH) 10 mg/m³; OSHA exposure limit 5 mg/m³ (respirable), 15 mg/m³ (total dust)."
   }
 }

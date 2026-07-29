@@ -2,7 +2,9 @@
   "id": "cyclic-olefin-copolymer",
   "slug": "cyclic-olefin-copolymer",
   "name": "Cyclic Olefin Copolymer (COC): The Ultimate Transparent",
-  "abbreviation": ["COC"],
+  "abbreviation": [
+    "COC"
+  ],
   "type": "hub",
   "parent": null,
   "cas_number": "26007-43-2",
@@ -11,102 +13,488 @@
   "smiles_depiction": "*CC*.*C1C2CCC(C2)C1*",
   "notation_note": "The bulky bicyclic norbornene units are what stop the chain crystallizing, leaving a glassy, glass-clear material; raising their proportion raises the glass transition.",
   "iupac_name": null,
-  "synonyms": ["cyclo olefin copolymer", "ethylene-norbornene copolymer"],
-  "aliases": [
-    { "name": "TOPAS", "autolinkable": false },
-    { "name": "APEL", "autolinkable": false }
+  "synonyms": [
+    "cyclo olefin copolymer",
+    "ethylene-norbornene copolymer"
   ],
-
-  "chemical_family": ["polyolefin"],
+  "aliases": [
+    {
+      "name": "TOPAS",
+      "autolinkable": false
+    },
+    {
+      "name": "APEL",
+      "autolinkable": false
+    }
+  ],
+  "chemical_family": [
+    "polyolefin"
+  ],
   "backbone_class": "carbon-chain",
-  "polymerization_mechanism": ["coordination"],
+  "polymerization_mechanism": [
+    "coordination"
+  ],
   "monomer": [
-    { "name": "Ethylene", "wikipedia_url": "https://en.wikipedia.org/wiki/Ethylene" },
-    { "name": "Norbornene", "wikipedia_url": "https://en.wikipedia.org/wiki/Norbornene" }
+    {
+      "name": "Ethylene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ethylene"
+    },
+    {
+      "name": "Norbornene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norbornene"
+    }
   ],
   "polymer_class": "thermoplastic",
-
   "year_of_origin": 2002,
   "era": "The Smart Materials Era (2000-2015)",
   "key_figures": [],
   "historical_events_referenced": [],
   "historical_images": [],
-
   "physical": {
-    "density": { "value": 1.02, "unit": "g/cm³", "status": "verified", "evidence_level": "tertiary", "source": "wiki-coc" },
-    "melt_flow_index": { "value": null, "unit": "g/10min", "status": "placeholder" },
-    "refractive_index": { "value": null, "unit": "", "status": "placeholder" },
-    "dielectric_constant": { "value": null, "unit": "", "status": "placeholder" },
-    "electrical_conductivity": { "value": null, "unit": "S/m", "status": "not_applicable" }
+    "density": {
+      "value": null,
+      "range_min": 1.00,
+      "range_max": 1.08,
+      "unit": "g/cm³",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C"
+    },
+    "melt_flow_index": {
+      "value": null,
+      "range_min": 2,
+      "range_max": 36,
+      "unit": "g/10min",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "260°C/2.16 kg; a single source reports up to 48 g/10min"
+    },
+    "refractive_index": {
+      "value": null,
+      "range_min": 1.51,
+      "range_max": 1.54,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C; Topas grade 1.53"
+    },
+    "dielectric_constant": {
+      "value": 2.2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz-1 MHz, Topas grade; relative permittivity separately reported as 2.35 at 1-10 Hz and 2.3 at 1 GHz"
+    },
+    "electrical_conductivity": {
+      "value": 1e-14,
+      "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1x10^14 ohm-m"
+    },
+    "transmittance": {
+      "value": null,
+      "range_min": 90,
+      "range_max": 92,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Topas grade 91.4%"
+    },
+    "haze": {
+      "value": null,
+      "range_min": 0.5,
+      "range_max": 4,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": 100,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">100 (exceeds standard scale ceiling), 60°, Gardner (ASTM D523)"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_max": 0.01,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "<0.01%, equilibrium, 23°C"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
+    }
   },
-
   "synthesis": {
     "polymerization_type": "coordination chain copolymerization",
-    "common_monomers": ["ethylene", "norbornene or tetracyclododecene"],
-    "catalysts": ["metallocene catalysts"],
+    "common_monomers": [
+      "ethylene",
+      "norbornene or tetracyclododecene"
+    ],
+    "catalysts": [
+      "metallocene catalysts"
+    ],
     "industrial_process_notes": "Made via chain copolymerization of cyclic monomers (norbornene or tetracyclododecene) with ethylene. Commercial variants include TOPAS and APEL.",
     "synthesis_scheme_image": null
   },
-
   "structure_morphology": {
     "tacticity": null,
-    "crystallinity_typical": { "value": 0, "unit": "%", "status": "estimated", "evidence_level": "tertiary", "source": "wiki-coc", "conditions": "Amorphous -- underlies its exceptional transparency." },
+    "crystallinity_typical": {
+      "value": 0,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Amorphous -- underlies its exceptional transparency."
+    },
     "crystal_structure": null,
     "chain_flexibility_notes": "Bulky cyclic olefin units in the backbone restrict chain mobility, raising Tg far above room temperature while remaining fully amorphous -- the combination that gives COC both rigidity and optical clarity.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 51000,
+        "range_max": 173000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 41000,
+        "range_max": 188000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "note: the stated Mw range partly falls below the Mn range, as printed in the source"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.5,
+        "range_max": 4.1,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
-
   "thermal": {
-    "tg": { "value": 200, "unit": "°C", "status": "verified", "evidence_level": "tertiary", "source": "wiki-coc", "conditions": "Exceeds 200°C; varies with monomer content." },
-    "tm": { "value": null, "unit": "°C", "status": "not_applicable", "conditions": "Amorphous; no true melting point." },
-    "tc": { "value": null, "unit": "°C", "status": "not_applicable" },
-    "hdt": { "value": null, "unit": "°C", "status": "placeholder" },
-    "decomposition_onset": { "value": null, "unit": "°C", "status": "placeholder" },
-    "thermal_conductivity": { "value": null, "unit": "W/(m·K)", "status": "placeholder" }
+    "tg": {
+      "value": null,
+      "range_min": 62,
+      "range_max": 177,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "varies strongly with norbornene content and catalyst: 114-122°C (metallocene catalyst), 96-125°C (depending on annealing). Note: an earlier tertiary source claimed Tg exceeds 200°C; the handbook's own range tops out at 177°C."
+    },
+    "tm": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable",
+      "conditions": "Amorphous; no true melting point."
+    },
+    "tc": {
+      "value": null,
+      "unit": "°C",
+      "status": "not_applicable"
+    },
+    "hdt": {
+      "value": null,
+      "range_min": 60,
+      "range_max": 151,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa; base grades 60-125°C, Topas grades 68-151°C"
+    },
+    "decomposition_onset": {
+      "value": null,
+      "range_min": 407,
+      "range_max": 440,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "thermal_conductivity": {
+      "value": null,
+      "unit": "W/(m·K)",
+      "status": "placeholder"
+    }
   },
-
   "mechanical": {
-    "tensile_modulus": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "yield_strength": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "tensile_strength_at_break": { "value": null, "unit": "MPa", "status": "placeholder" },
-    "elongation_at_break": { "value": null, "unit": "%", "status": "placeholder" },
-    "impact_izod": { "value": null, "unit": "J/m", "status": "placeholder" },
-    "impact_charpy": { "value": null, "unit": "kJ/m²", "status": "placeholder" },
-    "hardness": { "value": null, "unit": "Shore", "status": "placeholder" },
-    "flexural_modulus": { "value": null, "unit": "MPa", "status": "placeholder" }
+    "tensile_modulus": {
+      "value": null,
+      "range_min": 1260,
+      "range_max": 3200,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "yield_strength": {
+      "value": null,
+      "range_min": 37,
+      "range_max": 60,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "tensile_strength_at_break": {
+      "value": null,
+      "range_min": 22,
+      "range_max": 72,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Topas grade 46-63 MPa"
+    },
+    "elongation_at_break": {
+      "value": null,
+      "range_min": 1.1,
+      "range_max": 100,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "impact_izod": {
+      "value": null,
+      "range_min": 25,
+      "range_max": 45,
+      "unit": "J/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23°C"
+    },
+    "impact_charpy": {
+      "value": null,
+      "range_min": 1.6,
+      "range_max": 2.6,
+      "unit": "kJ/m²",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23°C; Topas grade 1.8-2.6"
+    },
+    "hardness": {
+      "value": null,
+      "range_min": 130,
+      "range_max": 184,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "ball indentation hardness, 358 N/30 s (ISO 2039-1)"
+    },
+    "flexural_modulus": {
+      "value": null,
+      "range_min": 2400,
+      "range_max": 3200,
+      "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    }
   },
-
   "chemical_resistance": {
     "solvent_resistance": {
-      "water_vapor": { "value": "Excellent moisture barrier, low absorption", "status": "verified", "evidence_level": "tertiary", "source": "wiki-coc" }
+      "water_vapor": {
+        "value": "Excellent moisture barrier, low absorption",
+        "status": "verified",
+        "evidence_level": "tertiary",
+        "source": "wiki-coc"
+      },
+      "acids": {
+        "value": "resistant",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "resistant (short chain)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
     },
-    "weathering_uv": { "value": "High UV transmission (comparable to quartz glass alternatives)", "status": "verified", "evidence_level": "tertiary", "source": "wiki-coc" },
-    "hydrolysis_resistance": { "value": null, "status": "placeholder" },
-    "flammability_ul94": { "value": null, "status": "placeholder" }
+    "weathering_uv": {
+      "value": "Photooxidizes under UV (280-380 nm; peak activation 267 nm) forming chromophores/hydroperoxides/carboxylic acids; requires antioxidant stabilization (e.g. Irganox 1010). High UV transmittance (optically) is a separate property from UV degradation resistance.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "hydrolysis_resistance": {
+      "value": null,
+      "status": "not_applicable",
+      "conditions": "Ethylene-norbornene copolymer; backbone is a fully saturated hydrocarbon (C-C, C-H only) with no ester, amide, or other hydrolyzable linkage."
+    },
+    "flammability_ul94": {
+      "value": "HB",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": null,
+        "range_min": 1.97e-14,
+        "range_max": 4.63e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from 1.7-4 cm³(STP)·cm/(m²·day·bar)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
-
   "processing": {
-    "processing_methods": ["injection molding (microfluidic devices, precise mold detail replication)", "extrusion", "film casting"],
-    "processing_temp_range": { "value": null, "unit": "°C", "status": "placeholder" },
+    "processing_methods": [
+      "injection molding (microfluidic devices, precise mold detail replication)",
+      "extrusion",
+      "film casting"
+    ],
+    "processing_temp_range": {
+      "value": null,
+      "range_min": 190,
+      "range_max": 240,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "injection molding/extrusion"
+    },
     "drying_required": null,
-    "shrinkage_rate": { "value": null, "unit": "%", "status": "placeholder" }
+    "shrinkage_rate": {
+      "value": null,
+      "range_min": 0.1,
+      "range_max": 0.7,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    }
   },
-
   "applications": [
-    { "sector": "Pharmaceutical packaging", "examples": ["blister packaging (high purity, sterilization-compatible)"] },
-    { "sector": "Microfluidics", "examples": ["micron-scale molded lab-on-chip devices"] },
-    { "sector": "Optical", "examples": ["lenses", "touch screens", "camera components", "films"] }
+    {
+      "sector": "Pharmaceutical packaging",
+      "examples": [
+        "blister packaging (high purity, sterilization-compatible)"
+      ]
+    },
+    {
+      "sector": "Microfluidics",
+      "examples": [
+        "micron-scale molded lab-on-chip devices"
+      ]
+    },
+    {
+      "sector": "Optical",
+      "examples": [
+        "lenses",
+        "touch screens",
+        "camera components",
+        "films"
+      ]
+    }
   ],
-
   "environmental": {
     "recyclable": true,
     "biodegradable": false,
     "degradation_pathway": null,
     "environmental_notes": null
   },
-
-  "references": ["wiki-coc"],
-
+  "references": [
+    "wiki-coc",
+    "handbook-wypych-2016"
+  ],
   "media": {
     "hero_image": null,
     "diagrams": [],
@@ -129,5 +517,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 3250,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": "TLV (ACGIH): 10 mg/m³ total, 3 mg/m³ respirable fraction. OSHA: 5 mg/m³ respirable dust, 15 mg/m³ total dust."
   }
 }

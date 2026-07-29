@@ -89,6 +89,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -108,13 +133,144 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Highly flexible cis-configured chains give natural rubber its characteristic elasticity and large stretch ratio.",
-    "tg_relation_notes": "Elasticity drops sharply when cooled below the glass transition temperature (specific value not sourced)."
+    "tg_relation_notes": "Elasticity drops sharply when cooled below the glass transition temperature.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": 640000,
+        "range_min": 40000,
+        "range_max": 1240000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Value specifically labeled 'natural rubber' in the source table; contrasted there with 1,500,000-2,500,000 g/mol for synthetic polyisoprene."
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "benzene",
+        "temperature_k": 303,
+        "mw_range": "80-280 kg/mol",
+        "k": {
+          "value": 0.0185,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        },
+        "a": {
+          "value": 0.74,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        }
+      },
+      {
+        "solvent": "cyclohexane",
+        "temperature_k": 300,
+        "k": {
+          "value": 0.03,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); light scattering / sedimentation-diffusion."
+        },
+        "a": {
+          "value": 0.70,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); light scattering / sedimentation-diffusion."
+        }
+      },
+      {
+        "solvent": "4-methyl-2-pentanone",
+        "temperature_k": 308,
+        "mw_range": "50-1,000 kg/mol",
+        "k": {
+          "value": 0.0607,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); light scattering."
+        },
+        "a": {
+          "value": 0.57,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); light scattering."
+        }
+      },
+      {
+        "solvent": "2-pentanone",
+        "temperature_k": 288,
+        "mw_range": "80-280 kg/mol",
+        "k": {
+          "value": 0.119,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        },
+        "a": {
+          "value": 0.50,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 298,
+        "mw_range": "70-1,000 kg/mol",
+        "k": {
+          "value": 0.0502,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        },
+        "a": {
+          "value": 0.667,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "Natural rubber (Hevea); osmometry."
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -75,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Value specifically labeled 'natural rubber'; the same table separately reports -70 to -72 °C for synthetic polyisoprene."
     },
     "tm": {
       "value": null,
@@ -183,6 +339,16 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -198,6 +364,21 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 16.71,
+      "range_min": 16.33,
+      "range_max": 17.09,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Natural rubber (Hevea), observed, 25 °C; five literature values."
     }
   },
   "processing": {
@@ -263,7 +444,9 @@
   },
   "references": [
     "wiki-natural-rubber",
-    "chemsrc-natural-rubber"
+    "chemsrc-natural-rubber",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -287,5 +470,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

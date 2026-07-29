@@ -47,9 +47,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.10,
+      "range_max": 1.25,
       "unit": "g/cm³",
-      "status": "placeholder",
-      "conditions": "Varies enormously by form: rigid foam, flexible foam, and solid elastomer densities differ by an order of magnitude or more; no single sourced figure."
+      "conditions": "solid/cast form, general (Wypych); a fully crystalline PU is calculated at 1.322 g/cm³, and an MDI/1,4-butanediol system is measured at 1.297 g/cm³ (Mark)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -64,12 +68,48 @@
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 7.8,
+      "range_max": 9.4,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz-1 MHz, solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 2.08e-10,
       "unit": "S/m",
+      "conditions": "reciprocal of reported volume resistivity, 4.8×10⁹ Ω·m, solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 2.5,
+      "unit": "%",
+      "conditions": "water vapor absorption, MDI/ethylene glycol system",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -88,23 +128,62 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 0,
+      "range_max": 13,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Triclinic unit cell most commonly reported for hard-segment crystallites (e.g. MDI/1,4-butanediol); polymorphs I and II form under quiescent crystallization, polymorph III under orientation/strain.",
     "chain_flexibility_notes": "Rigid foams use high crosslink density (thermal insulation); flexible foams use longer chain segments with lower crosslinking; elastomers sit at an intermediate crosslink density.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "dimethylacetamide (DMA)",
+        "temperature_k": 298,
+        "k": { "value": 0.087, "unit": "mL/g", "conditions": "MDI/1,4-butanediol system", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 1.43, "unit": "", "conditions": "MDI/1,4-butanediol system; an exponent this high suggests chain association/aggregation in solution rather than simple coil expansion", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": -60.3,
+      "range_max": -19,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "solid/cast form, general; Mark reports much higher hard-segment Tg values for specific systems, e.g. -2 to 90 °C across HMDI/BD, HMDI/DEG, and MDI/EG",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
+      "range_min": 141,
+      "range_max": 157,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "DSC, solid/cast form, general; Mark reports 123-225 °C across specific systems (HMDI/DEG, HMDI/OFHD, TDI/EG, MDI/EG)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -113,19 +192,29 @@
     },
     "hdt": {
       "value": null,
+      "range_min": 123,
+      "range_max": 232,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa, solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
       "value": null,
+      "range_min": 120,
+      "range_max": 126,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "as reported; unusually low for typical PU thermal decomposition (commonly cited around 250-300 °C), possibly reflecting a specific low-stability formulation",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
       "unit": "W/(m·K)",
       "status": "placeholder",
-      "conditions": "Rigid PUR foam is a well-known low-thermal-conductivity insulation material, but no specific number was sourced."
+      "conditions": "Rigid PUR foam is a well-known low-thermal-conductivity insulation material; the only handbook figure found (0.13 W/(m·K)) is explicitly for the melt state, not solid, so is not recorded here."
     }
   },
   "mechanical": {
@@ -136,18 +225,33 @@
     },
     "yield_strength": {
       "value": null,
+      "range_min": 31,
+      "range_max": 57.2,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "tensile stress at yield, solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 7.6,
+      "range_max": 66,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 350,
+      "range_max": 1200,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -161,17 +265,94 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 60,
+      "range_max": 95,
+      "unit": "Shore A",
+      "conditions": "solid/cast form; harder grades reported separately as Shore D 36-91",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 540,
+      "range_max": 3000,
       "unit": "MPa",
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids (dilute/concentrated)": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "conditions": "solid/cast form",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -182,9 +363,38 @@
       "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR -- a real, widely-cited distinction, but not independently confirmed with a source."
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
-    }
+      "value": "V-2",
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 25,
+      "unit": "%",
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 22.8,
+      "unit": "MPa^0.5",
+      "conditions": "Hildebrand parameter, solid/cast form, general; Mark reports 21-27 MPa^0.5 across specific MDI/1,4-butanediol and MDI/ethylene glycol systems",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "dimethylformamide (DMF), TDI/1,4-butanediol system",
+        "value": 0.122,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -200,8 +410,13 @@
     "drying_required": null,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 1.2,
+      "range_max": 2.5,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -240,7 +455,9 @@
     "environmental_notes": "As a broad, highly formulation-dependent thermoset/elastomer family, end-of-life handling varies widely by product type; chemical recycling (e.g. glycolysis) exists for some grades but is not yet mainstream."
   },
   "references": [
-    "wiki-polyurethane"
+    "wiki-polyurethane",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -264,5 +481,36 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "range_min": 5000,
+      "unit": "mg/kg",
+      "conditions": "reported as >5,000 mg/kg, solid/cast form",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

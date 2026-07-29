@@ -44,16 +44,24 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.278,
+      "value": 1.295,
+      "range_min": 1.28,
+      "range_max": 1.31,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pekk"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, 20 °C, unfilled grade"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 25,
+      "range_max": 120,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, 380 °C/8.4 kg"
     },
     "refractive_index": {
       "value": null,
@@ -62,13 +70,54 @@
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 3.3,
+      "range_max": 3.6,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, 1000 Hz; value at 1 MHz not clearly extracted from source"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-14,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, reciprocal of reported volume resistivity, 1×10¹⁴ Ω·m"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.2,
+      "range_max": 0.3,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, 24 h immersion at 23 °C"
+    },
+    "dielectric_strength": {
+      "value": 24,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, specimen thickness 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -82,36 +131,76 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 0,
+      "range_max": 35,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Described as 'semi-crystalline'; no specific percentage sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK; varies with processing/cooling rate -- PEKK is notable among PAEK-family polymers for its tunable crystallinity. Maximum crystallinity is reached by processing at 340-350 °C with <3 °C/min cooling rate."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Aromatic ketone/ether backbone gives PAEK-family polymers an unusual combination of high-temperature performance and (unlike many other high-performance polymers) genuine melt-processability.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": 162,
+      "range_min": 154,
+      "range_max": 171,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pekk"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK"
     },
     "tm": {
       "value": null,
+      "range_min": 304,
+      "range_max": 391,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, DSC; the wide range reflects PEKK's tunable terephthaloyl/isophthaloyl (T/I) isomer ratio, which shifts melting point substantially"
     },
     "tc": {
       "value": null,
+      "range_min": 240,
+      "range_max": 270,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, rapid/cold crystallization temperature; crystallization half-time 7-9 min"
     },
     "hdt": {
       "value": null,
+      "range_min": 141,
+      "range_max": 175,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "test_standard": "1.8 MPa",
+      "conditions": "PEKK, unfilled; 20-40% glass fiber grades exceed 299-316 °C"
     },
     "decomposition_onset": {
       "value": null,
@@ -119,16 +208,24 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.25,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, melt state; no solid-state value reported"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 3450,
+      "range_max": 4400,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, unfilled grade"
     },
     "yield_strength": {
       "value": null,
@@ -137,19 +234,31 @@
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 90,
+      "range_max": 110,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Qualitatively described as 'as strong as aluminum while being 40 percent of the weight'; no specific number sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, unfilled grade; source reports an unqualified 'tensile strength' (ambiguous whether yield or break -- elongation at break is only about 12%, suggesting limited post-yield deformation)"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 12,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, unfilled grade; 20-40% glass fiber grades are 1.9-2.5%"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 43,
+      "range_max": 69,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, notched, 23 °C, unfilled; unnotched (20-40% glass fiber grades only) is 480-900 J/m"
     },
     "impact_charpy": {
       "value": null,
@@ -157,18 +266,108 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 88,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 3380,
+      "range_max": 4600,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, unfilled grade"
+    },
+    "poissons_ratio": {
+      "value": 0.4,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK"
+    },
+    "coefficient_of_friction": {
+      "value": 0.175,
+      "range_min": 0.17,
+      "range_max": 0.18,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, dynamic; static is higher, 0.26-0.28"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "very good",
+        "conditions": "PEKK",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -178,11 +377,24 @@
       "status": "placeholder"
     },
     "flammability_ul94": {
-      "value": "Fire resistant",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-pekk",
-      "conditions": "Qualitative claim from source; no formal UL94 rating sourced."
+      "value": "V-0",
+      "conditions": "PEKK, unfilled; also V-0 for 20-40% glass fiber grades",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 40,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -193,14 +405,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 377,
+      "range_max": 382,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, 20-40% glass fiber grade; no unfilled-grade figure reported"
     },
     "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.01,
+      "range_max": 1.4,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PEKK, unfilled grade"
     }
   },
   "applications": [
@@ -230,12 +452,40 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pekk"
+    "wiki-pekk",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
     "diagrams": [],
     "structure_render_2d": null,
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

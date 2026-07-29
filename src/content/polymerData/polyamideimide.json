@@ -47,12 +47,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.48,
+      "value": null,
+      "range_min": 1.38,
+      "range_max": 1.42,
       "unit": "g/cm³",
+      "conditions": "unfilled; Mark reports 1.380 g/cm³ for unfilled Torlon 4000T (ASTM D792)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pai",
-      "conditions": "Molded PAI, per ASTM D 792."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -60,19 +62,62 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.656,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 3.9,
+      "range_max": 4.2,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz-1 MHz, unfilled; Mark reports 4.0 at 1 MHz for unfilled Torlon 4000T",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 3.33e-14,
       "unit": "S/m",
+      "conditions": "reciprocal of volume resistivity (3.0×10¹³ Ω·m), unfilled Torlon 4000T",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.33,
+      "unit": "%",
+      "conditions": "equilibrium in water immersion, 23 °C, unfilled",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 17.3,
+      "range_max": 23,
+      "unit": "kV/mm",
+      "conditions": "unfilled; Wypych 23 kV/mm, Mark 17.3 kV/mm for Torlon 4000T (ASTM D149)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -97,19 +142,55 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Combined amide and imide linkages give PAI an unusually high strength-to-weight ratio among unreinforced thermoplastics.",
-    "tg_relation_notes": null
+    "tg_relation_notes": "Tg is highly sensitive to the aromatic diamine used in synthesis: reported values for trimellitic-anhydride-derived amide-imides span roughly 206-326 °C, while commercial Torlon itself clusters around 260-285 °C depending on test method.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 18400,
+        "range_max": 86000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 20100,
+        "range_max": 220000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.74,
+        "range_max": 2.56,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 206,
+      "range_max": 326,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "wide range reflects different amide-imide backbone chemistries; commercial Torlon itself is reported at 260-285 °C (533-558 K, Mark) across different test methods",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": null,
+      "value": 357,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Amorphous thermoplastic (or thermoset, depending on grade); no true melting point for the amorphous form."
+      "conditions": "DSC. PAI/Torlon is generally regarded as amorphous, but Wypych reports a measured melting endotherm at this temperature.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -118,8 +199,14 @@
     },
     "hdt": {
       "value": null,
+      "range_min": 252,
+      "range_max": 278,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa; Wypych reports 278 °C, Mark reports 252-260 °C for unfilled Torlon 4000T",
+      "test_standard": "ASTM D648",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
       "value": null,
@@ -127,16 +214,25 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.24,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "unfilled Torlon 4000T",
+      "test_standard": "ASTM C177",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 4480,
+      "range_max": 5200,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "unfilled; Wypych 4,480-4,900 MPa, Mark 5,200 MPa for Torlon 4000T (ASTM D638)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -144,22 +240,34 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": 91.6,
+      "value": null,
+      "range_min": 117.2,
+      "range_max": 192,
       "unit": "MPa",
+      "conditions": "unfilled; Wypych 147-192 MPa, Mark reports 117.2 MPa for Torlon 4000T (ASTM D638, break)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pai",
-      "conditions": "Molded, unreinforced PAI, reported as 'ultimate tensile strength'. Glass- or carbon-fiber-reinforced grades reach 221 MPa."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 10,
+      "range_max": 35,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "unfilled; Wypych 15-35%, Mark 10-18% for Torlon 4000T (ASTM D638)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 136,
+      "range_max": 144,
       "unit": "J/m",
-      "status": "placeholder"
+      "conditions": "notched, 23 °C, unfilled; Wypych 138-144 J/m, Mark 136 J/m for Torlon 4000T (ASTM D256)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_charpy": {
       "value": null,
@@ -168,27 +276,131 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 78,
+      "range_max": 127,
+      "unit": "Rockwell E",
+      "conditions": "unfilled; Wypych 86-127, Mark 78 for Torlon 4000T (ASTM D785)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 3590,
+      "range_max": 5030,
       "unit": "MPa",
+      "conditions": "unfilled; Wypych 3,620-5,030 MPa, Mark 3,590 MPa for Torlon 4000T (ASTM D790)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.45,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "excellent to poor",
+        "conditions": "varies by specific alcohol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "excellent",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "good -- 93% tensile strength retention and 100% elongation retention after 10,000 h carbon-arc Weather-O-Meter exposure",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder"
     },
     "flammability_ul94": {
+      "value": "V-0",
+      "conditions": "unfilled and lightly filled (TiO2/fluorocarbon) grades both rate V-0",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
+      "range_min": 39.5,
+      "range_max": 45,
+      "unit": "%",
+      "conditions": "unfilled",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
       "status": "placeholder"
     }
   },
@@ -201,14 +413,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 304,
+      "range_max": 371,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "injection molding",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.6,
+      "range_max": 0.85,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "unfilled",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -239,7 +461,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pai"
+    "wiki-pai",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -263,5 +487,42 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

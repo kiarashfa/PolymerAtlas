@@ -41,28 +41,82 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.08,
+      "range_min": 1.07,
+      "range_max": 1.09,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 7.5,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230 °C/3.8 kg."
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.57,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C."
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.85,
+      "range_min": 2.7,
+      "range_max": 3,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz to 1 MHz."
     },
     "electrical_conductivity": {
       "value": null,
+      "range_max": 1e-13,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Upper bound; reciprocal of reported volume resistivity (>1×10¹³ Ω·m)."
+    },
+    "transmittance": {
+      "value": 88.5,
+      "range_min": 85,
+      "range_max": 92,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.3,
+      "range_min": 0.25,
+      "range_max": 0.35,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersed in water at 23 °C."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -88,16 +142,39 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Brittle relative to rubber-toughened ABS, which is precisely why ABS was later developed by adding polybutadiene to a SAN-like matrix.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": 175000,
+        "range_min": 165000,
+        "range_max": 185000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 100,
+      "value": 107.5,
+      "range_min": 103,
+      "range_max": 112,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-san-resin",
-      "conditions": "Reported as 'greater than 100°C', giving SAN boiling-water resistance that plain polystyrene lacks."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range; giving SAN boiling-water resistance that plain polystyrene lacks."
     },
     "tm": {
       "value": null,
@@ -111,14 +188,22 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 95,
+      "range_min": 86,
+      "range_max": 104,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa."
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 260,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported as 'decomposition temperature' (onset not separately specified)."
     },
     "thermal_conductivity": {
       "value": null,
@@ -128,35 +213,59 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3750,
+      "range_min": 3600,
+      "range_max": 3900,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "not_applicable",
+      "conditions": "Rigid, brittle copolymer with no distinct yield region reported (low elongation at break, 2.5-4%); see tensile_strength_at_break."
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 70,
+      "range_min": 61,
+      "range_max": 79,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Source reports unqualified 'tensile strength'."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 3.25,
+      "range_min": 2.5,
+      "range_max": 4,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": null,
+      "value": 25.35,
+      "range_min": 24,
+      "range_max": 26.7,
       "unit": "J/m",
-      "status": "placeholder",
-      "conditions": "Qualitatively brittle relative to rubber-toughened ABS; no number sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D256",
+      "conditions": "Two named commercial grades (Lustran-35, Tyril-880)."
     },
     "impact_charpy": {
-      "value": null,
+      "value": 2,
+      "range_min": 1.5,
+      "range_max": 2.5,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Notched, 23 °C."
     },
     "hardness": {
       "value": null,
@@ -167,10 +276,32 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": 0.366,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alcohols": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alkalis": { "value": "very good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aliphatic hydrocarbons": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aromatic hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "esters": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "greases & oils": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "halogenated hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "ketones": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -182,7 +313,22 @@
       "source": "wiki-san-resin"
     },
     "flammability_ul94": {
+      "value": "HB",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.6/0.8 mm specimen thickness."
+    },
+    "limiting_oxygen_index": {
+      "value": 18,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
       "value": null,
+      "unit": "MPa^0.5",
       "status": "placeholder"
     }
   },
@@ -192,15 +338,24 @@
       "extrusion"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 240,
+      "range_min": 220,
+      "range_max": 260,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Injection molding; extrusion runs 220-240 °C."
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.5,
+      "range_min": 0.3,
+      "range_max": 0.7,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -234,7 +389,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-san-resin"
+    "wiki-san-resin",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -258,5 +415,45 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 1800,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Skin (rabbit) LD50: 2,000 mg/kg. Aquatic toxicity (48 h LC50): Daphnia magna 13 mg/L, bluegill sunfish 28 mg/L, fathead minnow 10 mg/L."
   }
 }

@@ -4,15 +4,17 @@ instructions.md
 handoff.md
 readme_local.md
 COMPONENTS.md
+ADDING-A-POLYMER.md
 progress.json
 document.docx
 content_manifest.json
 polymer_document_inventory.md
 historical-milestones.txt
 
-# Authoring-only tooling (ChemDraw automation, docx-splitting scripts, local tests)
+# Authoring-only tooling 
 /scripts/
 /tests/
+/handbooks/
 
 # --- Node / Astro build ---
 node_modules/

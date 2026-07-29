@@ -44,9 +44,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.175,
+      "range_min": 1.1,
+      "range_max": 1.25,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "At 20°C, resin/coating grade. Mark's Polymer Data Handbook reports 1.2 g/cm³ for a coating grade specifically; mineral- or glass-fiber-filled molding compounds (a different product form) run much higher, 1.6-2.3 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -54,18 +59,61 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.48,
+      "range_min": 1.467,
+      "range_max": 1.493,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 4.25,
+      "range_min": 3.5,
+      "range_max": 5,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's Polymer Data Handbook reports 4 for a coating grade specifically (1 MHz)."
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": 90,
+      "range_min": 85,
+      "range_max": 95,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "60° Gardner gloss (ASTM D523), coating; specific formulations measured 85.2-90.9%."
+    },
+    "water_absorption": {
+      "value": 2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Coating grade. Mineral-filled/glass-fiber-reinforced molding compounds (a different product form) report 0.03-0.5% (1/8 in. specimen, 24 h)."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -86,20 +134,55 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-alkyd",
-      "conditions": "Amorphous crosslinked network once cured (oxidative drying of the unsaturated oil component)."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Amorphous crosslinked network once cured (oxidative drying of the unsaturated oil component); Mark's Polymer Data Handbook classifies alkyd resins as thermoset polyesters modified with monobasic fatty acids."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Oil length (fatty-acid content) tunes flexibility vs. hardness of the cured film.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": 2350,
+        "range_min": 2300,
+        "range_max": 2400,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 2,550-6,611 g/mol."
+      },
+      "mw": {
+        "value": 27100,
+        "range_min": 23900,
+        "range_max": 30300,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 8,125-19,537 g/mol."
+      },
+      "pdi": {
+        "value": 10,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": ">10 (reported as a lower bound), conventional resin; hyperbranched variants reported 1.94-2.58 or 2.16-295 depending on formulation."
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 9,
+      "range_min": 8,
+      "range_max": 10,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Typical cured film; uncrosslinked ≈2°C; naturally aged 25 years 20-40°C (further crosslinking/oxidation)."
     },
     "tm": {
       "value": null,
@@ -118,9 +201,14 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 200,
+      "range_min": 150,
+      "range_max": 250,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Onset of peroxide decomposition; oxidative decomposition follows at 250-400°C, volatilization above 400°C."
     },
     "thermal_conductivity": {
       "value": null,
@@ -140,14 +228,20 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 35,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Coating (cured film) grade. Mineral/glass-fiber-filled molding compounds (a different product form) report 20-66 MPa."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 65,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Coating (cured film) grade."
     },
     "impact_izod": {
       "value": null,
@@ -160,29 +254,110 @@
       "status": "not_applicable"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 80,
+      "unit": "Shore D",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Coating grade. Wypych's Handbook of Polymers separately reports pencil hardness 2B-H."
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor to good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good to fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good to fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "fair to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Susceptible to UV-driven chalking and oxidation of unsaturated double bonds; activation wavelength ≈330 nm.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Ester linkages are hydrolyzable under alkaline conditions.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 21.22,
+      "range_min": 21.2,
+      "range_max": 21.24,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Total Hansen solubility parameter (δt); long-oil formulation 21.20 MPa^0.5, short-oil formulation 21.24 MPa^0.5."
     }
   },
   "processing": {
@@ -223,12 +398,52 @@
     "environmental_notes": "Solvent-borne alkyd coatings are a VOC source, driving a long-term industry shift toward waterborne/latex paint alternatives."
   },
   "references": [
-    "wiki-alkyd"
+    "wiki-alkyd",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
     "diagrams": [],
     "structure_render_2d": null,
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 2000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">2,000 mg/kg"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 2,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Mutagenic effect: none known. Skin (rabbit) LD50: non-irritant. Ignition temperature (as-formulated, solvent-borne coating): 40°C."
   }
 }

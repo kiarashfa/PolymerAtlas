@@ -1,0 +1,73 @@
+---
+// Mark-Houwink constants, one row per solvent. K and a are only meaningful
+// as a pair for a given solvent (and usually a temperature and MW range), so
+// this is a real table rather than the PropRow list the single-value
+// properties use. Scrolls horizontally inside its own container so the page
+// body never does.
+import { describeProperty, type PolymerData } from '../../lib/content';
+
+// Derived from the Zod schema rather than re-declared, so it cannot drift.
+type MarkHouwinkEntry = PolymerData['structure_morphology']['mark_houwink'][number];
+
+interface Props {
+  entries: MarkHouwinkEntry[];
+  /** citation key -> per-page number (from citationsFor) */
+  citeNumbers: Map<string, number>;
+}
+const { entries, citeNumbers } = Astro.props;
+
+const rows = entries.map((e) => {
+  const k = describeProperty('K', e.k);
+  const a = describeProperty('a', e.a);
+  const source = e.k.source ?? e.a.source;
+  return {
+    solvent: e.solvent,
+    temp: e.temperature_k ?? null,
+    mwRange: e.mw_range ?? null,
+    k,
+    a,
+    citeN: source ? citeNumbers.get(source) : undefined,
+  };
+});
+---
+
+<div class="subtable-scroll">
+  <table class="subtable">
+    <caption class="subtable-cap">
+      Mark-Houwink constants — <span class="subtable-eq">[η] = K · M<sup>a</sup></span>
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Solvent</th>
+        <th scope="col">T</th>
+        <th scope="col">M range</th>
+        <th scope="col">K</th>
+        <th scope="col">a</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((r) => (
+          <tr>
+            <th scope="row" class="subtable-key">
+              {r.solvent}
+              {r.citeN !== undefined && (
+                <a class="cite" href={`#ref-${r.citeN}`} aria-label={`Reference ${r.citeN}`}>
+                  <sup>[{r.citeN}]</sup>
+                </a>
+              )}
+            </th>
+            <td class="num">{r.temp !== null ? `${r.temp} K` : <span class="none">—</span>}</td>
+            <td>{r.mwRange ?? <span class="none">—</span>}</td>
+            <td class="num">
+              {r.k.value ?? <span class="prop-empty">{r.k.statusText}</span>}
+            </td>
+            <td class="num">
+              {r.a.value ?? <span class="prop-empty">{r.a.statusText}</span>}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

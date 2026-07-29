@@ -11,6 +11,8 @@ import {
   chemicalFamilyEnum,
   backboneClassEnum,
   polymerizationMechanismEnum,
+  keyedPropertyArraySchema,
+  markHouwinkArraySchema,
 } from './schema-shared';
 
 const eraNames = erasData.map((e) => e.name) as [string, ...string[]];
@@ -29,7 +31,7 @@ const structureVariantSchema = z.object({
   is_default: z.boolean().default(false), // the form the page opens on
 });
 
-// Full polymer data schema, all 13 blocks. Lives in a separate data
+// Full polymer data schema, all 14 blocks. Lives in a separate data
 // collection from the narrative MDX (two files per entry, never merged),
 // joined by `id`. Concepts get their own lighter data schema -- this one
 // is polymer_hub / polymer_variant only.
@@ -86,6 +88,17 @@ export const polymerDataSchema = z.object({
     crystal_structure: z.string().nullable(),
     chain_flexibility_notes: z.string().nullable(),
     tg_relation_notes: z.string().nullable(),
+    // Typical commercial/reported molecular weight -- almost every handbook
+    // entry carries these three together; PDI (Mw/Mn) is dimensionless.
+    molecular_weight: z.object({
+      mn: propertyValueSchema,
+      mw: propertyValueSchema,
+      pdi: propertyValueSchema,
+    }),
+    // Viscosity-molecular weight relationship [eta] = K * M^a. Solvent-
+    // dependent by nature (see keyedPropertyArraySchema doc) -- K and a are
+    // paired per solvent, never meaningful alone.
+    mark_houwink: markHouwinkArraySchema,
   }),
 
   // 5b. Physical properties — density plus a few bulk properties that fit
@@ -99,6 +112,19 @@ export const polymerDataSchema = z.object({
     // for their defining property. Use `conditions` for doping state, since
     // conductivity swings by orders of magnitude between doped/undoped forms.
     electrical_conductivity: propertyValueSchema,
+    // Optical clarity -- relevant mainly for transparent/semi-transparent
+    // grades (PET, PC, PMMA, PS); note test geometry (e.g. specimen
+    // thickness, gloss angle) in `conditions`.
+    transmittance: propertyValueSchema,
+    haze: propertyValueSchema,
+    gloss: propertyValueSchema,
+    // Equilibrium water/moisture uptake -- note immersion vs. RH-equilibrium
+    // conditions, since the two give very different numbers.
+    water_absorption: propertyValueSchema,
+    // Dielectric breakdown strength -- distinct from dielectric_constant
+    // (permittivity) above; note specimen thickness in `conditions`, since
+    // breakdown strength is thickness-dependent.
+    dielectric_strength: propertyValueSchema,
   }),
 
   // 6. Thermal properties
@@ -126,6 +152,10 @@ export const polymerDataSchema = z.object({
     impact_charpy: propertyValueSchema,
     hardness: propertyValueSchema,
     flexural_modulus: propertyValueSchema,
+    // Dimensionless elastic constant; note counter-surface/test method
+    // (e.g. steel vs. steel, dry vs. lubricated) in `conditions`.
+    poissons_ratio: propertyValueSchema,
+    coefficient_of_friction: propertyValueSchema,
   }),
 
   // 8. Chemical / environmental resistance
@@ -134,6 +164,19 @@ export const polymerDataSchema = z.object({
     weathering_uv: ratedValueSchema,
     hydrolysis_resistance: ratedValueSchema,
     flammability_ul94: ratedValueSchema,
+    // Limiting oxygen index -- numeric flammability metric alongside the
+    // categorical UL94 rating above.
+    limiting_oxygen_index: propertyValueSchema,
+    // Hildebrand solubility parameter -- a single value predicting solvent
+    // miscibility, distinct from the per-solvent good/poor ratings above.
+    solubility_parameter: propertyValueSchema,
+    // Flory-Huggins polymer-solvent interaction parameter, one value per
+    // solvent (never a single representative number -- see
+    // keyedPropertyArraySchema doc in schema-shared.ts). `key` = solvent name.
+    interaction_parameter_chi: keyedPropertyArraySchema,
+    // Gas/vapor barrier performance, one value per permeant species (O2,
+    // CO2, N2, H2O...) -- critical for packaging polymers. `key` = gas name.
+    gas_permeability: keyedPropertyArraySchema,
   }),
 
   // 9. Processing
@@ -164,6 +207,22 @@ export const polymerDataSchema = z.object({
     diagrams: z.array(imageObjectSchema).default([]),
     structure_render_2d: structureImageSchema.nullable().default(null),
     structure_render_3d: structureImageSchema.nullable().default(null),
+  }),
+
+  // 14. Toxicity & safety -- acute toxicity and fire-hazard ratings are
+  // commonly reported alongside other bulk properties and had no home
+  // anywhere else in this schema.
+  toxicity_safety: z.object({
+    ld50_oral_rat: propertyValueSchema, // acute oral toxicity, rat model
+    // NFPA 704 diamond ratings, each 0-4.
+    nfpa_health_rating: propertyValueSchema,
+    nfpa_flammability_rating: propertyValueSchema,
+    nfpa_reactivity_rating: propertyValueSchema,
+    // Categorical (e.g. an IARC group, or "not listed by ACGIH/NIOSH/NTP") --
+    // never a bare unqualified value, same discipline as ratedValueSchema
+    // elsewhere.
+    carcinogenic_classification: ratedValueSchema,
+    safety_notes: z.string().nullable(),
   }),
 });
 

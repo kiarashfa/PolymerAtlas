@@ -49,18 +49,22 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.665,
-      "range_min": 1.38,
-      "range_max": 1.95,
+      "value": 1.37,
+      "range_min": 1.34,
+      "range_max": 1.4,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "At 20°C, unfilled resin; glass-fiber-reinforced grades (15-50% GF) 1.5-1.81 g/cm³."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 2,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230°C/3.8 kg"
     },
     "refractive_index": {
       "value": null,
@@ -68,14 +72,57 @@
       "status": "placeholder"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 4.45,
+      "range_min": 3.9,
+      "range_max": 5,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1 MHz; at 60 Hz: 4.2."
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-14,
+      "range_max": 1e-13,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity range (1×10¹³–1×10¹⁴ Ω·m)."
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.01,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.03-0.04%."
+    },
+    "dielectric_strength": {
+      "value": 43,
+      "range_min": 39,
+      "range_max": 47,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Film, d = 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -88,26 +135,67 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": null,
+      "value": 28,
+      "range_min": 18,
+      "range_max": 38,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Rigid rod-like mesogenic units self-align into liquid-crystalline order in the melt, which is retained (frozen in) on solidification -- giving highly oriented, anisotropic mechanical and thermal expansion properties (notably a high Z-axis, i.e. through-thickness, coefficient of thermal expansion).",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": 17400,
+        "range_min": 10600,
+        "range_max": 24200,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": 29700,
+        "range_min": 12000,
+        "range_max": 47400,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 1.9,
+        "range_min": 1.8,
+        "range_max": 2,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 115.5,
+      "range_min": 95,
+      "range_max": 136,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Varies by formulation/processing; no single value sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Uncrosslinked; crosslinked grades 164-181°C. Wide range reflects the diversity of commercial LCP formulations."
     },
     "tm": {
       "value": null,
+      "range_min": 221,
+      "range_max": 370,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Varies by formulation/processing; no single value sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC. Very wide range reflects the diversity of commercial LCP formulations (Type I/II/III); glass-fiber-reinforced grades 280-350°C."
     },
     "tc": {
       "value": null,
@@ -115,71 +203,92 @@
       "status": "placeholder"
     },
     "hdt": {
-      "value": null,
+      "value": 147.5,
+      "range_min": 108,
+      "range_max": 187,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa, unfilled resin; glass-fiber-reinforced grades 230-340°C."
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 375,
+      "range_min": 350,
+      "range_max": 400,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.125,
+      "range_min": 0.05,
+      "range_max": 0.2,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported as 'melt' in source; may not exactly represent solid-state conductivity."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": 12865,
-      "range_min": 8530,
-      "range_max": 17200,
+      "value": 10350,
+      "range_min": 7500,
+      "range_max": 13200,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp",
-      "conditions": "Reported as 'elasticity modulus'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unfilled, unoriented resin. Highly oriented (fiber) forms reach 41,000 MPa; glass-fiber-reinforced grades 12,000-17,500 MPa."
     },
     "yield_strength": {
-      "value": null,
+      "value": 176,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Tensile stress at yield, unfilled resin; glass-fiber-reinforced grades 140-155 MPa."
     },
     "tensile_strength_at_break": {
-      "value": 119,
-      "range_min": 52.8,
-      "range_max": 185,
+      "value": 158.5,
+      "range_min": 117,
+      "range_max": 200,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp",
-      "conditions": "Source reports unqualified 'tensile strength'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (176 MPa). Oriented fiber forms reach 430 MPa."
     },
     "elongation_at_break": {
-      "value": 3.2,
-      "range_min": 0.26,
-      "range_max": 6.2,
+      "value": 2.85,
+      "range_min": 1.3,
+      "range_max": 4.4,
       "unit": "%",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp",
-      "conditions": "Reported as 'tensile elongation'."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": 51.75,
-      "range_min": 21.0,
-      "range_max": 82.5,
-      "unit": "kJ/m²",
+      "value": 78,
+      "range_min": 60,
+      "range_max": 96,
+      "unit": "J/m",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp",
-      "conditions": "Reported as 'notched Izod impact' -- unit as sourced is kJ/m², not the schema's typical J/m for Izod; recorded as given."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23°C, notched. Replaces an earlier figure recorded with a mismatched unit (kJ/m²)."
     },
     "impact_charpy": {
-      "value": null,
+      "value": 70.5,
+      "range_min": 46,
+      "range_max": 95,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23°C, notched"
     },
     "hardness": {
       "value": null,
@@ -187,18 +296,56 @@
       "status": "placeholder"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 11250,
+      "range_min": 9100,
+      "range_max": 13400,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
     "solvent_resistance": {
-      "acids_bases_and_solvents": {
-        "value": "Extreme chemical resistance and inertness",
+      "alcohols": {
+        "value": "resistant",
         "status": "verified",
-        "evidence_level": "tertiary",
-        "source": "wiki-lcp"
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -212,10 +359,20 @@
       "status": "placeholder"
     },
     "flammability_ul94": {
-      "value": "Inherently flame retardant",
+      "value": "V-2 to V-0",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-lcp"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -225,15 +382,24 @@
       "fiber spinning (lyotropic grades)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 315,
+      "range_min": 270,
+      "range_max": 360,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "General processing range; injection molding specifically 330-340°C."
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.25,
+      "range_min": 0.1,
+      "range_max": 0.4,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -276,7 +442,8 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-lcp"
+    "wiki-lcp",
+    "handbook-wypych-2016"
   ],
   "media": {
     "hero_image": null,
@@ -300,5 +467,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 2000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">2,000 mg/kg"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH): 3 mg/m³ (respirable), 10 mg/m³ (total). OSHA exposure limit: 5 mg/m³ (respirable), 15 mg/m³ (total)."
   }
 }

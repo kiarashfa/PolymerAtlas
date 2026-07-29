@@ -51,22 +51,34 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.53,
+      "value": 1.6,
+      "range_min": 1.46,
+      "range_max": 1.74,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pga",
-      "conditions": "At 25°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C. 1.70 g/cm³ crystalline, 1.5 g/cm³ amorphous."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 14,
+      "range_min": 6,
+      "range_max": 22,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "250 °C / 2.16 kg"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.48,
+      "range_min": 1.45,
+      "range_max": 1.51,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
       "value": null,
@@ -76,6 +88,37 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": 1,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "<1%"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 28,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, immersion in water, 23 °C"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -96,31 +139,62 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 33,
+      "range_max": 55,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "46-52% reported specifically for Dexon suture fiber."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Orthorhombic, a:b:c = 0.522:0.619:0.702 nm, 2 chains per unit cell; planar zig-zag chain conformation.",
     "chain_flexibility_notes": "Fibers exhibit high strength and modulus relative to other resorbable polyesters, but degrade fully within a predictable few-month window -- the basis of its use as a temporary/absorbable material.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 100000,
+        "range_max": 200000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.7,
+        "range_max": 2.3,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 37.5,
+      "value": 44,
       "range_min": 35,
-      "range_max": 40,
+      "range_max": 53,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pga"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": 227.5,
-      "range_min": 225,
-      "range_max": 230,
+      "value": 215.5,
+      "range_min": 200,
+      "range_max": 231,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pga"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC"
     },
     "tc": {
       "value": null,
@@ -133,9 +207,12 @@
       "status": "placeholder"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 254,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Mw 50,000, Xc = 0.52, heating rate 20 °C/min under N2; reported as 527 K."
     },
     "thermal_conductivity": {
       "value": null,
@@ -145,12 +222,14 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": 7000,
+      "value": 6630,
+      "range_min": 6080,
+      "range_max": 7180,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pga",
-      "conditions": "Fiber form."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Young's modulus."
     },
     "yield_strength": {
       "value": null,
@@ -158,14 +237,23 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 66.5,
+      "range_min": 61,
+      "range_max": 72,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Source reports a single unqualified 'tensile strength', ambiguously yield-or-break; general grade. 1,100 MPa reported for highly oriented fibers."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 12.5,
+      "range_min": 5,
+      "range_max": 20,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -186,10 +274,51 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -203,6 +332,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -211,9 +350,12 @@
       "injection molding (implants)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 240,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Extrusion / electrospinning."
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -252,7 +394,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pga"
+    "wiki-pga",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -276,5 +420,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

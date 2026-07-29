@@ -39,29 +39,77 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.345,
+      "range_min": 1.33,
+      "range_max": 1.36,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "At 20°C; amorphous ≈1.325 g/cm³, crystalline ≈1.407 g/cm³. Mark's Polymer Data Handbook measured 1.3471 g/cm³ (autodensimeter)."
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 2.5,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "300°C/3.8 kg"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.575,
+      "range_min": 1.5,
+      "range_max": 1.65,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.2,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-13,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity (1×10¹³ Ω·m)."
+    },
+    "transmittance": {
+      "value": 84,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": 160,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Film, d = 0.6-0.8 mm"
     }
   },
   "synthesis": {
@@ -78,28 +126,65 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 1,
+      "range_max": 50.6,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Strongly processing-dependent: 1-4.2% as-amorphous, 6.8-49.6% annealed (123-170°C), 31-38% drawn (ratio 3.6-6.1), 50.6% biaxially oriented; up to 62.5-87.2% under high-pressure crystallization."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Triclinic, two polymorphs (α: a≈0.651, b≈0.575, c≈1.32 nm; β: a≈0.926, b≈1.559, c≈1.273 nm), 1 chain per unit cell; nearly planar chain conformation.",
     "chain_flexibility_notes": "The bulkier naphthalate ring (vs. PET's terephthalate) restricts chain mobility, improving strength, modulus, chemical/hydrolytic resistance, gas barrier, thermal/thermo-oxidative resistance, and UV-light barrier relative to PET.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 119.5,
+      "range_min": 117,
+      "range_max": 122,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's Polymer Data Handbook reports 117-121°C (DSC), closely matching."
     },
     "tm": {
-      "value": null,
+      "value": 275.5,
+      "range_min": 261,
+      "range_max": 290,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC. Mark's Polymer Data Handbook reports 265-266°C (DSC)."
     },
     "tc": {
-      "value": null,
+      "value": 200.35,
+      "range_min": 197.85,
+      "range_max": 202.85,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "DSC; Wypych's Handbook of Polymers reports a closely matching rapid crystallization temperature of 198-203°C."
     },
     "hdt": {
       "value": null,
@@ -119,9 +204,12 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2000,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's Polymer Data Handbook reports the same value (2,000 MPa) as Young's modulus."
     },
     "yield_strength": {
       "value": null,
@@ -129,20 +217,32 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 64,
+      "range_min": 60,
+      "range_max": 68,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Qualitatively 'improved strength and modulus' vs. PET; no specific number sourced."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unqualified 'tensile strength' row, no separate yield value given. Mark's Polymer Data Handbook reports 83 MPa breaking strength for a different (tensile-tested) sample."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 295,
+      "range_min": 250,
+      "range_max": 340,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's Polymer Data Handbook reports a much lower 48.5% for a different sample/orientation."
     },
     "impact_izod": {
-      "value": null,
+      "value": 420,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "23°C, unnotched (no notched value given)."
     },
     "impact_charpy": {
       "value": null,
@@ -155,13 +255,77 @@
       "status": "placeholder"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2500,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark's Polymer Data Handbook reports the same value (2,500 MPa, 3-point flexure)."
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": 0.27,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": "Improved UV-light barrier resistance vs. PET",
       "status": "verified",
@@ -175,9 +339,50 @@
       "source": "wiki-pen"
     },
     "flammability_ul94": {
+      "value": "V-2",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
+      "unit": "%",
       "status": "placeholder"
-    }
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
+    },
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 6e-15,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 0.006 × 10⁻¹² cm³·cm·cm⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "CO2",
+        "value": 1e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 0.01 × 10⁻¹² cm³·cm·cm⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 4e-11,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25°C; converted from reported 40 × 10⁻¹² cm³·cm·cm⁻²·s⁻¹·Pa⁻¹.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -191,9 +396,11 @@
     },
     "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.8,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -232,7 +439,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pen"
+    "wiki-pen",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -256,5 +465,34 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Mutagenic effect: none. Teratogenic effect: none."
   }
 }

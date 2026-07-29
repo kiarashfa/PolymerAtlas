@@ -65,34 +65,100 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 0.92,
-      "range_min": 0.88,
-      "range_max": 0.97,
+      "value": null,
+      "range_min": 0.90,
+      "range_max": 0.98,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyethylene",
-      "conditions": "Spans full grade range: VLDPE 0.880-0.915, LDPE 0.910-0.940, LLDPE 0.915-0.925, MDPE 0.926-0.940, HDPE >=0.941, UHMWPE <0.935."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, generic PE entry; by grade: LDPE 0.915-0.929, LLDPE 0.905-0.942, HDPE 0.94-0.965 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 3.2,
+      "range_max": 9,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230°C/3.8 kg, generic PE entry"
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.4728,
+      "range_max": 1.52,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., 20°C, generic PE entry"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 2.28,
+      "range_max": 2.32,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz-1 MHz, generic PE entry"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-13,
       "unit": "S/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "reciprocal of reported volume resistivity, 1x10^13 ohm-m (HDPE and LDPE entries agree)"
+    },
+    "transmittance": {
+      "value": null,
+      "range_min": 90,
+      "range_max": 91,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "LDPE film"
+    },
+    "haze": {
+      "value": null,
+      "range_min": 2.2,
+      "range_max": 27,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "LDPE film"
+    },
+    "gloss": {
+      "value": null,
+      "range_min": 33,
+      "range_max": 87,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "60°, Gardner (ASTM D523), LDPE film"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.005,
+      "range_max": 0.015,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, water immersion, 23°C; consistent across LDPE/LLDPE/HDPE grades"
+    },
+    "dielectric_strength": {
+      "value": 39,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "d=0.6-0.8mm, generic PE entry; grade range 16-45 kV/mm across LDPE-HDPE"
     }
   },
   "synthesis": {
@@ -112,47 +178,139 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 35,
+      "range_max": 94,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Varies substantially by grade (branching density is the main driver: LDPE lower, HDPE higher)."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry; by grade: LDPE 28.8-60%, LLDPE 30-53%, HDPE 60-90%."
     },
     "crystal_structure": "Semi-crystalline; branching architecture (short/long-chain branches in LDPE vs. linear chains in HDPE) controls the degree of chain packing and crystallinity.",
     "chain_flexibility_notes": "Grade-dependent: LDPE's branched chains resist packing (flexible, transparent film); HDPE's linear chains pack tightly (stiffer, stronger, translucent/opaque).",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 13000,
+        "range_max": 18000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "LDPE grade only; not reported for the generic PE entry"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 28000,
+        "range_max": 6300000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Generic PE entry, spans all grades"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.9,
+        "range_max": 14.1,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Generic PE entry"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "1,2,4-trichlorobenzene",
+        "temperature_k": 408,
+        "mw_range": "6,000-200,000 g/mol",
+        "k": {
+          "value": 0.056,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "HDPE (linear high-density PE chapter)"
+        },
+        "a": {
+          "value": 0.70,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "decalin",
+        "temperature_k": 408,
+        "mw_range": "2,000-100,000 g/mol",
+        "k": {
+          "value": 0.062,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        },
+        "a": {
+          "value": 0.70,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
-      "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Not distinctly reported/meaningful for semi-crystalline PE grades in common usage."
-    },
-    "tm": {
-      "value": 125,
-      "range_min": 115,
-      "range_max": 135,
+      "range_min": -133,
+      "range_max": -20,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyethylene"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Scatters strongly by grade, method, and which secondary relaxation is assigned as Tg. Wypych: generic PE calc.=-133 to -59°C, exp.=-128 to -20°C; by grade HDPE -133 to -118°C, LDPE -133 to -103°C, LLDPE -110°C. Mark corroborates a low-temperature transition at 140-180 K (-133 to -93°C, HDPE) and 140-170 K (-133 to -103°C, LDPE) by DMA/calorimetry, with a distinct higher relaxation near 243-283 K (-30 to +10°C) sometimes cited in the literature as the true Tg."
+    },
+    "tm": {
+      "value": null,
+      "range_min": 99,
+      "range_max": 138,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC, generic PE entry; by grade: LDPE 105-115°C, LLDPE 120-136°C, HDPE 125-135°C"
     },
     "tc": {
       "value": null,
+      "range_min": 96,
+      "range_max": 123,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reported as \"rapid crystallization temperature\"; by grade: LDPE 96-100°C, HDPE 114-120°C, LLDPE 107-123°C"
     },
     "hdt": {
       "value": null,
-      "unit": "°C",
-      "status": "placeholder"
-    },
-    "decomposition_onset": {
-      "value": 349,
+      "range_min": 36,
+      "range_max": 65,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyethylene",
-      "conditions": "Combustion temperature."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa; by grade: LDPE 36-40°C, LLDPE 38°C, HDPE 44-65°C"
+    },
+    "decomposition_onset": {
+      "value": 335,
+      "unit": "°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry"
     },
     "thermal_conductivity": {
       "value": null,
@@ -163,29 +321,53 @@
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 130,
+      "range_max": 1350,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "By grade: LDPE 130-348, LLDPE 260-520, HDPE 500-1100 (1120-1350 bimodal)"
     },
     "yield_strength": {
       "value": null,
+      "range_min": 10.6,
+      "range_max": 20.7,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Wikipedia only describes tensile strength qualitatively by grade (LDPE lower, LLDPE higher than LDPE, HDPE high, UHMWPE very tough) without single sourced numbers."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry; by grade: LDPE ~10-14, LLDPE 8-32 (film, MD/TD), HDPE 21-31"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 48.6,
+      "range_min": 13,
+      "range_max": 71,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry (48.6 MPa); wide range across grades/forms: HDPE 13-51, LDPE 10-32 (extrusion/film), LLDPE 25-71 (film)"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 130,
+      "range_max": 1200,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry 180-1000%; grade range 130-1200% across LDPE-HDPE-LLDPE forms"
     },
     "impact_izod": {
       "value": null,
+      "range_min": 20,
+      "range_max": 490,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Notched, 23°C; by grade: HDPE 20-220 (490 bimodal), LDPE 420 to no-break, LLDPE 54 to no-break"
     },
     "impact_charpy": {
       "value": null,
@@ -194,29 +376,167 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 40,
+      "range_max": 69,
+      "unit": "Shore D",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "By grade: LDPE 41-50, LLDPE 44-56, HDPE 40-69 (59 bimodal)"
     },
     "flexural_modulus": {
       "value": null,
+      "range_min": 230,
+      "range_max": 1680,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "By grade: LDPE 230-495, LLDPE 280-735, HDPE 750-1600 (621-1680 bimodal)"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "range_min": 0.46,
+      "range_max": 0.49,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.; generic PE 0.47-0.49, HDPE 0.46"
+    },
+    "coefficient_of_friction": {
+      "value": 0.6,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PE-on-itself, dynamic (generic PE/LDPE/LLDPE); HDPE vs chrome steel 0.17, vs aluminum 0.27-0.33 (ASTM D1894)"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "very good",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good to poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Poor unstabilized (unsaturation/carbonyl-initiated photooxidation below 300 nm); good with UV absorber/HALS stabilizer package",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
       "status": "not_applicable"
     },
     "flammability_ul94": {
+      "value": "HB",
+      "conditions": "unfilled grade; consistent across LDPE/LLDPE/HDPE",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
       "value": null,
-      "status": "placeholder"
-    }
+      "range_min": 17.4,
+      "range_max": 18.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Generic PE entry; grade values reported as <20%"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 15.76,
+      "range_max": 17.6,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., generic PE entry"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "cis-decahydronaphthalene",
+        "value": 0.08,
+        "unit": "",
+        "conditions": "419 K, HDPE",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "n-decane",
+        "value": 0.32,
+        "unit": "",
+        "conditions": "419 K, HDPE",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "toluene",
+        "value": 0.39,
+        "unit": "",
+        "conditions": "419 K, HDPE",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -227,14 +547,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 193,
+      "range_max": 232,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Extrusion; LDPE 199-232°C, HDPE 193-227°C (LDPE coating up to 316-332°C)"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 1.5,
+      "range_max": 4,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Grade range: LDPE 2.4%, LLDPE 2.0-2.5%, HDPE 1.5-4% (generic PE entry 1.7-1.85%)"
     }
   },
   "applications": [
@@ -269,7 +599,9 @@
   },
   "references": [
     "wiki-polyethylene",
-    "ansi-resin-codes"
+    "ansi-resin-codes",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -293,5 +625,46 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 4000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">2,000 also reported (generic PE entry); by grade: HDPE >7,950, LDPE >5,000"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; generic PE/HDPE report 0/1/0, LDPE entry reports 1/0/1"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; generic PE/HDPE report 0/1/0, LDPE entry reports 1/0/1"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale; generic PE/HDPE report 0/1/0, LDPE entry reports 1/0/1"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH): 3 mg/m³ respirable, 10 mg/m³ inhalable. OSHA: 5 mg/m³ respirable, 15 mg/m³ total. Reproductive toxicity not expected to occur; skin (rabbit) LD50 non-irritant."
   }
 }

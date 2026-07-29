@@ -64,31 +64,78 @@
       "range_min": 1.17,
       "range_max": 1.2,
       "unit": "g/cm³",
+      "conditions": "20 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 2.2,
+      "range_max": 24,
       "unit": "g/10min",
-      "status": "placeholder"
+      "conditions": "230 °C/3.8 kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
-      "value": 1.4905,
+      "value": 1.49,
       "unit": "",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma",
-      "conditions": "At 589.3 nm."
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.6,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz; 2.2-2.6 at 1 MHz",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1e-10,
       "unit": "S/m",
+      "conditions": "Reciprocal of reported volume resistivity, 1×10¹⁰ Ω·m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": 92,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "range_max": 1,
+      "unit": "%",
+      "conditions": "< 1%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.2,
+      "range_min": 0.1,
+      "range_max": 0.3,
+      "unit": "%",
+      "conditions": "24 h, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -106,25 +153,47 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma",
-      "conditions": "Amorphous; this amorphous structure plus low light scattering is what gives PMMA its optical clarity."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Atactic (commercial) PMMA is amorphous; isotactic PMMA can reach ~48% crystallinity."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Isotactic PMMA crystallizes in an orthorhombic unit cell (a:b:c ≈ 2.10:1.21:1.04 nm, 4 chains per cell); commercial atactic PMMA is amorphous.",
     "chain_flexibility_notes": "Unmodified PMMA is strong but brittle under load; impact modifiers are used to improve toughness in demanding applications.",
-    "tg_relation_notes": "Atactic/commercial-grade Tg ~105°C; commercial grades formulated across 85-165°C depending on application."
+    "tg_relation_notes": "Atactic/commercial-grade Tg ~105°C; commercial grades formulated across 85-165°C depending on application.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 13000,
+        "range_max": 2200000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 105,
-      "range_min": 85,
-      "range_max": 165,
+      "value": 104.5,
+      "range_min": 104,
+      "range_max": 105,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma",
-      "conditions": "105°C for atactic PMMA; commercial grades formulated 85-165°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Atactic (commercial) grade; wider literature range 105-122°C also reported for atactic samples."
     },
     "tm": {
       "value": null,
@@ -138,17 +207,21 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 98,
+      "range_min": 96,
+      "range_max": 100,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "1.8 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "decomposition_onset": {
-      "value": 460,
+      "value": 170,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma",
-      "conditions": "Reported as ignition point."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
@@ -158,9 +231,13 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 3300,
+      "range_min": 3200,
+      "range_max": 3400,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -168,20 +245,31 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 70.5,
+      "range_min": 63,
+      "range_max": 78,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "Unqualified \"tensile strength\"; PMMA is brittle/amorphous with no distinct yield region, so recorded as strength at break.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 4,
+      "range_min": 2,
+      "range_max": 6,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": null,
+      "value": 19,
       "unit": "J/m",
-      "status": "placeholder",
-      "conditions": "Qualitatively higher impact resistance than glass and polystyrene but lower than polycarbonate; no number sourced."
+      "conditions": "Notched, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_charpy": {
       "value": null,
@@ -189,24 +277,95 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 92,
+      "range_min": 89,
+      "range_max": 95,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 3450,
+      "range_min": 3400,
+      "range_max": 3500,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.375,
+      "range_min": 0.35,
+      "range_max": 0.4,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "non-resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": "Good UV/outdoor weathering resistance relative to many commodity thermoplastics",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-pmma",
-      "conditions": "Inferred from widespread outdoor/glazing use; no explicit weathering-test data sourced."
+      "value": "Excellent; among the most weatherable commodity thermoplastics",
+      "conditions": "Primary photodegradation sensitivity at 290-320 nm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -215,7 +374,48 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 21.3,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 6.15e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 1.15e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 4.8e-11,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -224,15 +424,23 @@
       "injection molding"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 235,
+      "range_min": 210,
+      "range_max": 260,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "drying_required": null,
+    "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.5,
+      "range_min": 0.3,
+      "range_max": 0.7,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -268,10 +476,12 @@
     "recyclable": null,
     "biodegradable": false,
     "degradation_pathway": null,
-    "environmental_notes": null
+    "environmental_notes": "Cradle-to-pellet life-cycle estimates: ~115 MJ/kg non-renewable energy use, ~7 kg CO2/kg resin."
   },
   "references": [
-    "wiki-pmma"
+    "wiki-pmma",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -295,5 +505,45 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 8000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Workplace exposure limits: TLV (ACGIH) 50 ppm; OSHA PEL 100 ppm."
   }
 }

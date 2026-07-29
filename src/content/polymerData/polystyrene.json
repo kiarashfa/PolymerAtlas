@@ -47,35 +47,97 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.0,
-      "range_min": 0.96,
-      "range_max": 1.05,
+      "value": 1.05,
+      "range_min": 1.04,
+      "range_max": 1.06,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polystyrene",
-      "conditions": "Solid; expanded foam grades range 16-640 kg/m³."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Solid, general-purpose (unfilled) grade at 20 °C."
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 3.3,
+      "range_max": 14,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230 °C / 3.8 kg."
     },
     "refractive_index": {
-      "value": 1.6,
+      "value": null,
+      "range_min": 1.5894,
+      "range_max": 1.6,
       "unit": "",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polystyrene"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, experimental values."
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.5,
+      "range_min": 2.4,
+      "range_max": 2.7,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz to 1 MHz."
     },
     "electrical_conductivity": {
       "value": null,
+      "range_min": 1e-20,
+      "range_max": 1e-18,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Reciprocal of reported volume resistivity (1×10¹⁸-1×10²⁰ Ω·m)."
+    },
+    "transmittance": {
+      "value": 89.5,
+      "range_min": 89,
+      "range_max": 90,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": 1.1,
+      "range_min": 1,
+      "range_max": 1.2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": 87.5,
+      "range_min": 80,
+      "range_max": 95,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "test_standard": "ASTM D523",
+      "conditions": "60° geometry."
+    },
+    "water_absorption": {
+      "value": 0.065,
+      "range_min": 0.03,
+      "range_max": 0.1,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Equilibrium, immersed in water at 23 °C."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -93,23 +155,128 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-polystyrene",
-      "conditions": "Atactic PS is amorphous; only syndiotactic grades crystallize."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Atactic PS is amorphous (non-crystalline); only syndiotactic grades crystallize."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 103000,
+        "range_max": 1998000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Broad literature range across commercial GPPS grades."
+      },
+      "mw": {
+        "value": null,
+        "range_min": 258000,
+        "range_max": 2038000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "Broad literature range across commercial GPPS grades."
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.02,
+        "range_max": 3.5,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "benzene",
+        "temperature_k": 298,
+        "mw_range": "70-1,800 kg/mol",
+        "k": { "value": 0.0113, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.73, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "butyl chloride",
+        "temperature_k": 314,
+        "mw_range": "290-1,060 kg/mol",
+        "k": { "value": 0.0151, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.659, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chlorobenzene",
+        "temperature_k": 299,
+        "mw_range": "620-4,240 kg/mol",
+        "k": { "value": 0.0074, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.749, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chloroform",
+        "temperature_k": 298,
+        "mw_range": "120-2,800 kg/mol",
+        "k": { "value": 0.00716, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.76, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "cyclohexane",
+        "temperature_k": 307,
+        "mw_range": "10-700 kg/mol",
+        "k": { "value": 0.082, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.50, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dimethylformamide",
+        "temperature_k": 308,
+        "mw_range": "4-870 kg/mol",
+        "k": { "value": 0.0318, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.603, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "dioxane",
+        "temperature_k": 307,
+        "mw_range": "80-800 kg/mol",
+        "k": { "value": 0.015, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.694, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "ethylbenzene",
+        "temperature_k": 298,
+        "mw_range": "70-1,500 kg/mol",
+        "k": { "value": 0.0176, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.68, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetrahydrofuran",
+        "temperature_k": 298,
+        "mw_range": "10-1,000 kg/mol",
+        "k": { "value": 0.011, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.725, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 303,
+        "mw_range": "400-3,700 kg/mol",
+        "k": { "value": 0.012, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 90,
+      "value": 93.5,
+      "range_min": 85,
+      "range_max": 102,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polystyrene",
-      "conditions": "Atactic polystyrene."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Atactic polystyrene; experimental range reflects molecular-weight/grade dependence."
     },
     "tm": {
       "value": null,
@@ -123,26 +290,42 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 79,
+      "range_min": 72,
+      "range_max": 86,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.8 MPa."
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 285,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
+      "range_min": 0.105,
+      "range_max": 0.128,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Solid state, ~20-100 °C."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2775,
+      "range_min": 2250,
+      "range_max": 3300,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -152,41 +335,96 @@
     },
     "tensile_strength_at_break": {
       "value": 53,
-      "range_min": 46,
-      "range_max": 60,
+      "range_min": 40,
+      "range_max": 66,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polystyrene"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 2.5,
+      "range_min": 2,
+      "range_max": 3,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
-      "value": null,
+      "value": 16,
+      "range_min": 12,
+      "range_max": 20,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Notched, 23 °C."
     },
     "impact_charpy": {
-      "value": null,
+      "value": 3.5,
+      "range_min": 3,
+      "range_max": 4,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Notched, 23 °C."
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 61,
+      "range_min": 58,
+      "range_max": 64,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "L scale 90-94 also reported."
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 3580,
+      "range_min": 3530,
+      "range_max": 3630,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": 0.342,
+      "range_min": 0.33,
+      "range_max": 0.354,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental value."
+    },
+    "coefficient_of_friction": {
+      "value": 0.27,
+      "range_min": 0.26,
+      "range_max": 0.28,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "test_standard": "ASTM D1894",
+      "conditions": "Chrome steel counterface."
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": { "value": "very good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "concentrated acids": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alcohols": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "alkalis": { "value": "good", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aliphatic hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "aromatic hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "esters": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "greases & oils": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "halogenated hydrocarbons": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" },
+      "ketones": { "value": "poor", "status": "verified", "evidence_level": "handbook", "source": "handbook-wypych-2016" }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -196,9 +434,139 @@
       "status": "not_applicable"
     },
     "flammability_ul94": {
+      "value": "HB",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "1.6/0.8 mm specimen thickness."
+    },
+    "limiting_oxygen_index": {
+      "value": 17.95,
+      "range_min": 17.8,
+      "range_max": 18.1,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
       "value": null,
-      "status": "placeholder"
-    }
+      "range_min": 17.45,
+      "range_max": 23.9,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range across cited literature sources."
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "acetone",
+        "value": null,
+        "range_min": 0.81,
+        "range_max": 1.1,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.6-1.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": null,
+        "range_min": 0.26,
+        "range_max": 0.42,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.2-0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "chloroform",
+        "value": null,
+        "range_min": 0.17,
+        "range_max": 0.52,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.2-0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "cyclohexane",
+        "value": null,
+        "range_min": 0.50,
+        "range_max": 0.93,
+        "unit": "",
+        "conditions": "307 K, polymer volume fraction 0-0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "methylcyclohexane",
+        "value": null,
+        "range_min": 0.49,
+        "range_max": 0.67,
+        "unit": "",
+        "conditions": "349 K, polymer volume fraction 0-0.4.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "methyl ethyl ketone",
+        "value": null,
+        "range_min": 0.63,
+        "range_max": 0.77,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.4-0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "propyl acetate",
+        "value": 0.66,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.4-0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "toluene",
+        "value": null,
+        "range_min": 0.16,
+        "range_max": 0.37,
+        "unit": "",
+        "conditions": "298 K, polymer volume fraction 0.2-1.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ],
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 1.9e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 1.35e-10,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -207,15 +575,25 @@
       "expanded-bead foaming (EPS)"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 220,
+      "range_min": 160,
+      "range_max": 280,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Injection molding; blown film runs 180-210 °C, flat film 200-240 °C."
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.615,
+      "range_min": 0.5,
+      "range_max": 0.73,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Injection molding; 0.50% across flow, 0.73% along flow."
     }
   },
   "applications": [
@@ -255,7 +633,9 @@
   },
   "references": [
     "wiki-polystyrene",
-    "ansi-resin-codes"
+    "ansi-resin-codes",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -279,5 +659,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale."
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

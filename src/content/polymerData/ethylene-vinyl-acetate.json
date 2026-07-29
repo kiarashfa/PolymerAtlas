@@ -48,24 +48,34 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 0.935,
+      "value": 0.95,
       "range_min": 0.92,
-      "range_max": 0.95,
+      "range_max": 0.98,
       "unit": "g/cm³",
+      "conditions": "20 °C; decreases with increasing VA content, tracking reduced crystallinity.",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-eva",
-      "conditions": "Decreases from ~0.95 (low VA content) to ~0.92 (high VA content), tracking reduced crystallinity."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 0.35,
+      "range_max": 800,
       "unit": "g/10min",
-      "status": "placeholder"
+      "conditions": "190 °C/2.16 kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.4825,
+      "range_min": 1.467,
+      "range_max": 1.498,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
@@ -73,9 +83,56 @@
       "status": "placeholder"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 1.075e-14,
       "unit": "S/m",
+      "conditions": "Reciprocal of reported volume resistivity, 9.3×10¹³ Ω·m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "range_min": 0.7,
+      "range_max": 20,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "gloss": {
+      "value": null,
+      "range_min": 34,
+      "range_max": 100,
+      "unit": "%",
+      "conditions": "60°, ASTM D523",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 0.005,
+      "range_max": 0.13,
+      "unit": "%",
+      "conditions": "Equilibrium, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 24.4,
+      "range_max": 29.9,
+      "unit": "kV/mm",
+      "conditions": "0.31 cm thick specimen, ASTM D149",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "synthesis": {
@@ -92,38 +149,79 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 5.9,
+      "range_max": 60,
       "unit": "%",
-      "status": "placeholder",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
       "conditions": "Low-VA grades are semi-crystalline (LLDPE-like); high-VA grades (>40 wt%) are amorphous/elastomeric."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Vinyl acetate content is the master variable: higher VA gives more amorphous, polar, adhesive, elastomeric behavior; lower VA gives more crystalline, LLDPE-like behavior.",
-    "tg_relation_notes": "Tg stays roughly constant around -25 to -30°C across most formulations despite the large property swing driven by VA content."
+    "tg_relation_notes": "Tg stays roughly constant around -25 to -30°C across most formulations despite the large property swing driven by VA content.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 16000,
+        "range_max": 42000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 35200,
+        "range_max": 210000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 2.03,
+        "range_max": 6,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": -27.5,
-      "range_min": -30,
-      "range_max": -25,
+      "value": -40,
+      "range_min": -42,
+      "range_max": -38,
       "unit": "°C",
+      "conditions": "Mark reports 231 K (-42 °C) at 30% VA and 235 K (-38 °C) at 40% VA.",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-eva"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": 90,
-      "range_min": 60,
-      "range_max": 110,
+      "value": 85,
+      "range_min": 58,
+      "range_max": 112,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-eva",
-      "conditions": "Decreases with increasing VA content; ~110°C for low-VA grades, below 60°C for high-VA elastomeric grades."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Decreases with increasing VA content; spans low-VA (~112°C) to high-VA elastomeric grades (~58°C)."
     },
     "tc": {
-      "value": null,
+      "value": 64,
+      "range_min": 52,
+      "range_max": 76,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "Reported as \"rapid crystallization temperature\"",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hdt": {
       "value": null,
@@ -131,9 +229,13 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 230.5,
+      "range_min": 221,
+      "range_max": 240,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
@@ -143,48 +245,129 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 10,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
-      "value": null,
+      "value": 6,
+      "range_min": 4.6,
+      "range_max": 7.4,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 2,
+      "range_max": 41,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 580,
+      "range_min": 300,
+      "range_max": 860,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
       "unit": "J/m",
-      "status": "not_applicable"
+      "conditions": "Notched, 23 °C; no break",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_charpy": {
       "value": null,
       "unit": "kJ/m²",
-      "status": "not_applicable"
+      "conditions": "Unnotched, 23 °C; no break",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 80.5,
+      "range_min": 65,
+      "range_max": 96,
+      "unit": "Shore A",
+      "conditions": "Softer grades; harder grades read 15-43 on Shore D.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 53.1,
       "unit": "MPa",
+      "conditions": "ASTM D790",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": "Good UV radiation resistance",
       "status": "verified",
@@ -198,7 +381,151 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": 23,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 17.0,
+      "range_max": 19.2,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "acetaldehyde",
+        "value": 0.16,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "acetic acid",
+        "value": 1.12,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": -0.02,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "1-butanol",
+        "value": 0.65,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "2-butanol",
+        "value": 0.51,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "cyclohexane",
+        "value": 0.07,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "1,4-dioxane",
+        "value": 0.45,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "ethanol",
+        "value": 1.28,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "hexane",
+        "value": 0.25,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "methanol",
+        "value": 1.69,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "octane",
+        "value": 0.23,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "2-propanol",
+        "value": 0.93,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "tetrahydrofuran",
+        "value": 0.25,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "m-xylene",
+        "value": -0.02,
+        "unit": "",
+        "conditions": "29% vinyl acetate, 150 °C, inverse GC, infinite dilution",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -208,14 +535,13 @@
       "film lamination (solar encapsulant)"
     ],
     "processing_temp_range": {
-      "value": null,
-      "range_min": 40,
-      "range_max": 80,
+      "value": 190,
+      "range_min": 150,
+      "range_max": 230,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-eva",
-      "conditions": "Polymerization reactor temperature, not end-use processing temperature."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -255,10 +581,13 @@
     "recyclable": false,
     "biodegradable": false,
     "degradation_pathway": null,
+    "degradation_pathway": "UV/thermal degradation produces hydroperoxides, hydroxyl groups, polyene sequences, aldehydes, and acetic acid.",
     "environmental_notes": "Generally considered non-toxic and non-carcinogenic; biocompatible, FDA-approved grades exist for pharmaceutical use."
   },
   "references": [
-    "wiki-eva"
+    "wiki-eva",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -282,5 +611,45 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 3080,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "HMIS rating, 0-4 scale",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Reproductive toxicity not expected. OSHA PEL 5 mg/m³ (respirable), 15 mg/m³ (total). Skin (rabbit) LD50 7,940 mg/kg."
   }
 }

@@ -61,8 +61,13 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.4563,
+      "range_max": 1.51,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, experimental; calculated range is 1.4418-1.4468. Rises with molecular weight -- Mark reports 1.4563 for low MW rising to 1.51-1.54 for high MW (handbook-mark-1999)."
     },
     "dielectric_constant": {
       "value": null,
@@ -72,6 +77,31 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -90,26 +120,120 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": null,
+      "value": 76,
+      "range_min": 70,
+      "range_max": 82,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Low-MW PEGs are semi-crystalline waxy solids/liquids; high-MW PEO is also semi-crystalline but behaves very differently in bulk."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "applies broadly across the PEG/PEO molecular-weight range; low-MW PEGs are semi-crystalline waxy solids/liquids, high-MW PEO is also semi-crystalline but behaves very differently in bulk."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Highly flexible, hydrophilic ether backbone; readily forms hydrogen bonds with water, underlying its use for steric shielding in drug delivery (PEGylation).",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 120,
+        "range_max": 136000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "spans the full commercial PEG (low MW) to PEO (high MW) range"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 200,
+        "range_max": 8000000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "spans the full commercial PEG (low MW) to PEO (high MW) range"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.1,
+        "range_max": 1.3,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "acetone",
+        "temperature_k": 298,
+        "mw_range": "70-1,000 kg/mol",
+        "k": { "value": 0.032, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.67, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene",
+        "temperature_k": 298,
+        "mw_range": "80-5,200 kg/mol",
+        "k": { "value": 0.0307, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.686, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "carbon tetrachloride",
+        "temperature_k": 298,
+        "mw_range": "70-1,000 kg/mol",
+        "k": { "value": 0.062, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.64, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chloroform",
+        "temperature_k": 298,
+        "mw_range": "200-1,500 kg/mol",
+        "k": { "value": 0.206, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "methanol",
+        "temperature_k": 298,
+        "k": { "value": 0.0825, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.57, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 308,
+        "mw_range": "400-4,000 kg/mol",
+        "k": { "value": 0.0145, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.7, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "water",
+        "temperature_k": 308,
+        "mw_range": "30,000-7,000,000 g/mol",
+        "k": { "value": 0.0064, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.82, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": -70,
+      "range_max": -60,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "a calculated estimate of -60 °C is also reported. Mark's DSC data on oligomers is much more scattered (conflicting data, -115 to -40 °C depending on end group and chain length, handbook-mark-1999) and is not used here."
     },
     "tm": {
       "value": null,
+      "range_min": -23,
+      "range_max": 63,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Varies substantially with molecular weight; low-MW PEG grades are liquid at room temperature, higher-MW grades are waxy solids."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "rises steeply with molecular weight: PEG 400 approx. 4-8 °C, PEG 600 approx. 20-25 °C, PEG 1500 approx. 44-48 °C, PEG 4000 approx. 54-58 °C, PEG 6000 approx. 56-63 °C; very low-MW grades range -23 to 12 °C (DSC)."
     },
     "tc": {
       "value": null,
@@ -127,52 +251,85 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.858,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "melt state, experimental; calculated estimate is 0.9085 W/(m·K). No solid-state value reported."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 300,
       "unit": "MPa",
-      "status": "not_applicable",
-      "conditions": "Low-MW grades are liquids/waxes without a meaningful tensile modulus; only very-high-MW PEO grades would have conventional solid mechanical properties (not sourced)."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "solid, high-molecular-weight PEO; low-MW PEG grades are liquids/waxes with no meaningful modulus. High-MW oriented fibers reach 500-1,000 MPa; theoretical ultimate modulus is 10,000 MPa."
     },
     "yield_strength": {
       "value": null,
       "unit": "MPa",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "Applies in principle to solid, high-molecular-weight PEO, but no value was found in either handbook; low-MW PEG grades are liquids with no meaningful yield point."
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 11,
+      "range_max": 60,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "solid, high-molecular-weight PEO; oriented fibers reach 100-200 MPa. Low-MW PEG grades are liquids with no meaningful tensile strength."
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 30,
+      "range_max": 70,
       "unit": "%",
-      "status": "not_applicable"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "high-molecular-weight PEO fibers; not applicable to low-MW liquid PEG grades."
     },
     "impact_izod": {
       "value": null,
       "unit": "J/m",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "Applies in principle to solid, high-molecular-weight PEO, but no value was found in either handbook; low-MW PEG grades are liquids/waxes with no meaningful impact strength."
     },
     "impact_charpy": {
       "value": null,
       "unit": "kJ/m²",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "Applies in principle to solid, high-molecular-weight PEO, but no value was found in either handbook; low-MW PEG grades are liquids/waxes with no meaningful impact strength."
     },
     "hardness": {
       "value": null,
       "unit": "Shore",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "Applies in principle to solid, high-molecular-weight PEO, but no value was found in either handbook; low-MW PEG grades are liquids/waxes with no meaningful hardness."
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
-      "status": "not_applicable"
+      "status": "placeholder",
+      "conditions": "Applies in principle to solid, high-molecular-weight PEO, but no value was found in either handbook; low-MW PEG grades are liquids/waxes with no meaningful flexural modulus."
+    },
+    "poissons_ratio": {
+      "value": 0.439,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "calculated"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -182,6 +339,30 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-peg"
+      },
+      "alcohols": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -194,8 +375,35 @@
     },
     "flammability_ul94": {
       "value": null,
-      "status": "not_applicable"
-    }
+      "status": "placeholder",
+      "conditions": "No UL94 classification found in either handbook; ignition temperature (182-287 °C) and limiting oxygen index are reported instead."
+    },
+    "limiting_oxygen_index": {
+      "value": 18.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": 20.2,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "matches 20.2 ± 2 MPa^0.5 (IGPC method, 25 °C) per handbook-mark-1999"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "benzene",
+        "value": 0.18,
+        "unit": "",
+        "conditions": "323.8 K, polymer volume fraction v2=0.2 (vapor pressure method); chi is strongly concentration-dependent, falling to 0.10 at v2=0.6. At 343.5 K, chi=0.19 at v2=0.2, falling to 0.09 at v2=0.8.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -244,12 +452,14 @@
   ],
   "environmental": {
     "recyclable": false,
-    "biodegradable": null,
-    "degradation_pathway": null,
-    "environmental_notes": null
+    "biodegradable": true,
+    "degradation_pathway": "Enzymatic: PEO-dehydrogenase, PEO-aldehyde-dehydrogenase, and PEO-carboxylate-dehydrogenase act sequentially on the terminal units of the ether chain, producing terminal carbonyl and carboxyl groups, followed by release of two-carbon units as glyoxylic acid.",
+    "environmental_notes": "Low aquatic toxicity: LC50 (48 h) exceeds 20,000 mg/L for both fathead minnow and rainbow trout."
   },
   "references": [
-    "wiki-peg"
+    "wiki-peg",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -273,5 +483,48 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "range_min": 28000,
+      "range_max": 50000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "rises with molecular weight: 28,000 mg/kg (MW 200), 38,100 mg/kg (MW 600), 44,200 mg/kg (MW 1,000), 50,000 mg/kg (MW 4,000)"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "TLV (ACGIH): 10 ppm."
   }
 }

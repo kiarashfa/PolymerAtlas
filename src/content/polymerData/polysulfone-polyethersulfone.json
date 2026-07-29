@@ -52,29 +52,91 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.235,
+      "range_min": 1.23,
+      "range_max": 1.24,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU (bisphenol A polysulfone), 20 °C; matches 1.24 g/cm³ per handbook-mark-1999. PES (polyethersulfone) is denser, 1.37-1.43 g/cm³ (handbook-wypych-2016)."
     },
     "melt_flow_index": {
       "value": null,
+      "range_min": 3.4,
+      "range_max": 17.5,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, 343 °C/3.8 kg (Mark reports 6.5 g/10 min for PSU without stated conditions). PES is 12-30 g/10 min at 380 °C/2.16 kg (handbook-wypych-2016)."
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.633,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, 20 °C; PES is 1.545-1.65 (handbook-wypych-2016), 1.545 per handbook-mark-1999"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.03,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, 60 Hz (3.02 at 1 MHz). PES is higher, 3.51 at 60 Hz / 3.54 at 1 MHz (handbook-wypych-2016), 3.5 per handbook-mark-1999."
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 3.33e-15,
       "unit": "S/m",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, reciprocal of reported volume resistivity 3×10¹⁴ Ω·m (close to ~2×10⁻¹⁵ S/m computed from handbook-mark-1999's 5×10¹⁶ Ω·cm). PES is less resistive, >1.7×10¹³ Ω·m (<5.9×10⁻¹⁴ S/m, handbook-wypych-2016)."
+    },
+    "transmittance": {
+      "value": 85,
+      "range_min": 84,
+      "range_max": 86,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU"
+    },
+    "haze": {
+      "value": null,
+      "range_min": 1.5,
+      "range_max": 2.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.3,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, equilibrium 23 °C/50% RH; 24 h immersion at 23 °C gives 0.22-0.3%. PES equilibrium moisture is higher, 0.8% (24 h immersion: 2.2% per handbook-wypych-2016, or 0.43% per handbook-mark-1999)."
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 17,
+      "range_max": 37,
+      "unit": "kV/mm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, specimen thickness 0.6-0.8 mm; matches 14.6 kV/mm per handbook-mark-1999. PES is 15 kV/mm (handbook-wypych-2016)."
     }
   },
   "synthesis": {
@@ -92,30 +154,61 @@
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-psu",
-      "conditions": "Amorphous -- underlies transparency."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU explicitly reported as amorphous, underlying its transparency; PES is likewise amorphous (both handbooks)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Sulfonyl (aryl-SO2-aryl) linkages give exceptional thermal/oxidative stability and a very wide service temperature window.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 39000,
+        "range_max": 41000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "PSU; PES is lower, 8,600-28,700 g/mol (handbook-wypych-2016)"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 20000,
+        "range_max": 96000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "PSU; PES is lower, 10,100-38,800 g/mol (handbook-wypych-2016)"
+      },
+      "pdi": {
+        "value": 1.6,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "PSU; PES is 1.17-1.55 (handbook-wypych-2016)"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": 210,
-      "range_min": 190,
-      "range_max": 230,
+      "value": 187.5,
+      "range_min": 185,
+      "range_max": 190,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-psu"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU (bisphenol A polysulfone); matches 185.85 °C by DSC (handbook-mark-1999). PES (polyethersulfone) is substantially higher, 220-246 °C (handbook-wypych-2016), matching 224.85 °C by DSC (handbook-mark-1999)."
     },
     "tm": {
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Amorphous; no true melting point."
+      "conditions": "Both PSU and PES are explicitly reported as amorphous (both handbooks), with no true melting point. Wypych's tables do list a 'Melting temperature, DSC' row for each (185 °C for PSU, 220-238 °C for PES), but these coincide almost exactly with each material's own Tg range and are judged to be a mislabeled duplicate of Tg rather than a real crystalline melting transition."
     },
     "tc": {
       "value": null,
@@ -123,81 +216,280 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 174.5,
+      "range_min": 174,
+      "range_max": 175,
       "unit": "°C",
-      "status": "placeholder",
-      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a service temperature range of -100°C to +200°C."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "test_standard": "ASTM D648, 1.8 MPa",
+      "conditions": "PSU; matches 173.85 °C per handbook-mark-1999. PES (polyethersulfone) is substantially higher, 204-207 °C (handbook-wypych-2016), or 233.85 °C per handbook-mark-1999."
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 550,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; PES is 400-584 °C (handbook-wypych-2016)"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.26,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; matches handbook-mark-1999. PES is lower, 0.18-0.24 W/(m·K) depending on source (handbook-wypych-2016, handbook-mark-1999)."
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2540,
+      "range_min": 2480,
+      "range_max": 2600,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; matches 2482 MPa per handbook-mark-1999. PES is similar, 2650 MPa (handbook-wypych-2016) or 2413 MPa (handbook-mark-1999)."
     },
     "yield_strength": {
-      "value": null,
+      "value": 75,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; PES is 90 MPa, conditioned (handbook-wypych-2016)"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 73.5,
+      "range_min": 70,
+      "range_max": 77,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Source states glass-fiber reinforcement increases tensile strength 2-3x versus unreinforced resin, but gives no baseline number."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; matches 69.0 MPa per handbook-mark-1999. PES is higher, 83-95 MPa (handbook-wypych-2016) or 82.8 MPa (handbook-mark-1999)."
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 50,
+      "range_max": 100,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; Mark reports a much lower maximum extensibility of 3.0% for the neat resin (handbook-mark-1999), a notable discrepancy, possibly a different test or grade. PES is lower, 25-75% (handbook-wypych-2016), or 40-80% per handbook-mark-1999."
     },
     "impact_izod": {
-      "value": null,
+      "value": 69,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, notched, 23 °C; close to 80.4 J/m per handbook-mark-1999. PES is higher, 85 J/m (handbook-wypych-2016), matching 85.7 J/m (handbook-mark-1999)."
     },
     "impact_charpy": {
       "value": null,
+      "range_min": 5.5,
+      "range_max": 6,
       "unit": "kJ/m²",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, notched, 23 °C; PES is 6.5 kJ/m², conditioned (handbook-wypych-2016)"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 69,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; Mark reports Shore D 69 for PSU and Shore D 88 for PES (handbook-mark-1999). PES Rockwell hardness is R127 (handbook-wypych-2016)."
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2690,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; matches 2758 MPa per handbook-mark-1999. PES is similar, 2900 MPa (handbook-wypych-2016) or 2552 MPa (handbook-mark-1999)."
+    },
+    "poissons_ratio": {
+      "value": 0.37,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; PES is 0.41 (handbook-wypych-2016)"
+    },
+    "coefficient_of_friction": {
+      "value": 0.48,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, in air; 0.4 in water. PES is 0.15-0.45 in air, 0.3 in water (handbook-wypych-2016)."
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "excellent",
+        "conditions": "PSU; PES dilute acids are 'good', concentrated 'poor' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "excellent",
+        "conditions": "PSU; PES dilute acids are 'good', concentrated 'poor' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "excellent",
+        "conditions": "PSU; PES is 'good' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good to excellent",
+        "conditions": "PSU; PES is 'good' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "excellent",
+        "conditions": "PSU; PES is 'good' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good to poor",
+        "conditions": "PSU; PES is 'good to fair' (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "conditions": "PSU and PES agree",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "conditions": "PES; no data reported for PSU",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "conditions": "PSU and PES agree",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "conditions": "PSU and PES agree",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "PSU retains 93-100% of tensile strength and impact strength after exposure to 50-100 kGy gamma radiation",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
-      "value": "Withstands repeated autoclave (steam) sterilization",
+      "value": "Good hydrolytic resistance and high alkaline stability (both PSU and PES); withstands repeated autoclave/steam sterilization",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-psu"
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flammability_ul94": {
-      "value": null,
-      "status": "placeholder"
-    }
+      "value": "HB to V-0",
+      "conditions": "PSU, unfilled; PES is V-0 to V-1 (handbook-wypych-2016)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "limiting_oxygen_index": {
+      "value": 29,
+      "range_min": 26,
+      "range_max": 32,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU, unfilled; PES is higher, 39% (handbook-wypych-2016)"
+    },
+    "solubility_parameter": {
+      "value": 20.26,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; a second reported value is 21.5 MPa^0.5. Matches 20.26 MPa^0.5 per handbook-mark-1999. PES is higher, 21.0-22.9 MPa^0.5 experimental / 23.12-24.4 MPa^0.5 calculated (handbook-wypych-2016)."
+    },
+    "gas_permeability": [
+      {
+        "key": "N2 (PSU)",
+        "value": 1.79e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 155 mm³·m/(m²·MPa·day) (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2 (PSU)",
+        "value": 1.03e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C; converted from 894 mm³·m/(m²·MPa·day) (handbook-wypych-2016)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "He (PES)",
+        "value": 7.95e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "50 °C, 10 bar pressure difference; converted from 7.95×10⁻¹⁷ m³(STP)·m/(m²·s·Pa) (handbook-mark-1999)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "CO2 (PES)",
+        "value": 3.15e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "50 °C, 10 bar pressure difference; converted from 3.15×10⁻¹⁷ m³(STP)·m/(m²·s·Pa) (handbook-mark-1999)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "O2 (PES)",
+        "value": 6.0e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "50 °C, 10 bar pressure difference; converted from 6.0×10⁻¹⁸ m³(STP)·m/(m²·s·Pa) (handbook-mark-1999)",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -207,14 +499,24 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 350,
+      "range_max": 390,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; PES is 340-390 °C, injection molding (handbook-wypych-2016)"
     },
     "drying_required": true,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.725,
+      "range_min": 0.68,
+      "range_max": 0.77,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PSU; PES is higher, 0.8-1.4% (handbook-wypych-2016)"
     }
   },
   "applications": [
@@ -251,7 +553,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-psu"
+    "wiki-psu",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -275,5 +579,44 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "conditions": "reported for both PSU and PES",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

@@ -46,11 +46,13 @@
   "physical": {
     "density": {
       "value": 1.19,
+      "range_min": 1.18,
+      "range_max": 1.2,
       "unit": "g/cm³",
+      "conditions": "20 °C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-acetate",
-      "conditions": "At 25°C."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -58,19 +60,62 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.468,
+      "range_min": 1.467,
+      "range_max": 1.469,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 3.5,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "1 MHz (100 Hz value not reported)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 4.5,
+      "range_min": 3,
+      "range_max": 6,
+      "unit": "%",
+      "conditions": "Equilibrium, 23 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": 39.4,
+      "range_min": 30.7,
+      "range_max": 39.4,
+      "unit": "kV/mm",
+      "conditions": "30-60 °C (decreases with temperature)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "synthesis": {
@@ -83,29 +128,122 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": null,
+    "tacticity": "Predominantly atactic (commercial, free-radical polymerized).",
     "crystallinity_typical": {
       "value": 0,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-acetate",
-      "conditions": "Atactic PVAc is amorphous."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Amorphous (atactic, commercial grade)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
-    "tg_relation_notes": "Tg (30-45°C) depends on molecular weight; near room temperature, giving PVAc its characteristic tacky/film-forming behavior used in adhesives."
+    "tg_relation_notes": "Tg (30-45°C) depends on molecular weight; near room temperature, giving PVAc its characteristic tacky/film-forming behavior used in adhesives.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 13000,
+        "range_max": 500000,
+        "unit": "g/mol",
+        "conditions": "Range across commercial grades",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": 2.0,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "acetone",
+        "temperature_k": 298,
+        "k": { "value": 0.0146, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.72, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "acetonitrile",
+        "temperature_k": 298,
+        "k": { "value": 0.0162, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene",
+        "temperature_k": 303,
+        "k": { "value": 0.0563, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.62, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "butanone (MEK)",
+        "temperature_k": 298,
+        "k": { "value": 0.0134, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chlorobenzene",
+        "temperature_k": 298,
+        "k": { "value": 0.11, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chloroform",
+        "temperature_k": 298,
+        "k": { "value": 0.0203, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.72, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "1,4-dioxane",
+        "temperature_k": 298,
+        "k": { "value": 0.0114, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.74, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "ethanol",
+        "temperature_k": 330,
+        "mw_range": "theta condition",
+        "k": { "value": 0.09, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "methanol",
+        "temperature_k": 298,
+        "k": { "value": 0.038, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.59, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "tetrahydrofuran",
+        "temperature_k": 298,
+        "k": { "value": 0.016, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.7, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 298,
+        "k": { "value": 0.108, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.53, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 37,
-      "range_min": 30,
-      "range_max": 45,
+      "value": 34,
+      "range_min": 28,
+      "range_max": 40,
       "unit": "°C",
+      "conditions": "Commercial grade; atactic 24-31 °C, isotactic 26 °C.",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-polyvinyl-acetate",
-      "conditions": "Dependent on molecular weight."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
@@ -119,26 +257,36 @@
       "status": "not_applicable"
     },
     "hdt": {
-      "value": null,
+      "value": 50,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 150,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.159,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 1765.5,
+      "range_min": 1275,
+      "range_max": 2256,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "yield_strength": {
       "value": null,
@@ -146,19 +294,31 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 9.1,
+      "range_min": 6.2,
+      "range_max": 12,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 15,
+      "range_min": 10,
+      "range_max": 20,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "20 °C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_izod": {
-      "value": null,
+      "value": 102.4,
       "unit": "J/m",
-      "status": "placeholder"
+      "conditions": "Notched",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_charpy": {
       "value": null,
@@ -174,23 +334,232 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "fair",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "Photodegrades via chain scission, releasing acetic acid",
+      "conditions": "Spectral sensitivity ~313 nm",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
-      "value": null,
-      "status": "placeholder",
-      "conditions": "Ester side groups are hydrolyzable (this is the basis of the related polyvinyl alcohol production route)."
+      "value": "Susceptible to hydrolysis (basis of the polyvinyl alcohol production route); also enzymatically hydrolyzed by lipase.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 21.07,
+      "unit": "MPa^0.5",
+      "conditions": "25 °C (Handbook of Polymers reports an experimental range of 18.0-25.7 MPa^0.5)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "interaction_parameter_chi": [
+      {
+        "key": "acetone",
+        "value": 0.35,
+        "range_min": 0.31,
+        "range_max": 0.39,
+        "unit": "",
+        "conditions": "30-50 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "benzene",
+        "value": 0.42,
+        "unit": "",
+        "conditions": "20 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "n-butane",
+        "value": 1.97,
+        "unit": "",
+        "conditions": "100 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "butanone",
+        "value": 0.44,
+        "unit": "",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "chloroform",
+        "value": -0.13,
+        "range_min": -0.17,
+        "range_max": -0.09,
+        "unit": "",
+        "conditions": "80-135 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "cyclohexane",
+        "value": 1.18,
+        "unit": "",
+        "conditions": "100 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "ethanol",
+        "value": 0.8,
+        "unit": "",
+        "conditions": "100 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "n-hexane",
+        "value": null,
+        "range_min": 1.71,
+        "range_max": 2.06,
+        "unit": "",
+        "conditions": "100-120 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "n-octane",
+        "value": null,
+        "range_min": 1.94,
+        "range_max": 2.3,
+        "unit": "",
+        "conditions": "90-120 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "1-propanol",
+        "value": null,
+        "range_min": 1.0,
+        "range_max": 1.3,
+        "unit": "",
+        "conditions": "30-50 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "vinyl acetate",
+        "value": null,
+        "range_min": 0.22,
+        "range_max": 0.41,
+        "unit": "",
+        "conditions": "30 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "water",
+        "value": 2.5,
+        "unit": "",
+        "conditions": "40 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ],
+    "gas_permeability": [
+      {
+        "key": "O2",
+        "value": 3.67e-14,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -241,11 +610,13 @@
   "environmental": {
     "recyclable": false,
     "biodegradable": false,
-    "degradation_pathway": null,
+    "degradation_pathway": "Plasticizers in PVAc formulations are attacked by fungi; the polymer itself is susceptible to hydrolysis by lipase enzymes.",
     "environmental_notes": null
   },
   "references": [
-    "wiki-polyvinyl-acetate"
+    "wiki-polyvinyl-acetate",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -269,5 +640,37 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 25000,
+      "unit": "mg/kg",
+      "conditions": ">25,000 mg/kg; NOAEL 3,080 mg/kg/day",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Non-mutagenic; non-irritant to rabbit skin."
   }
 }

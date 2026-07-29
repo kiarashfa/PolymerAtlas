@@ -48,23 +48,34 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 1.32,
+      "value": 1.25,
       "range_min": 1.21,
-      "range_max": 1.43,
+      "range_max": 1.29,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pla"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "melt_flow_index": {
-      "value": null,
+      "value": 16.5,
+      "range_min": 3,
+      "range_max": 30,
       "unit": "g/10min",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "230 °C / 3.8 kg"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.4,
+      "range_min": 1.35,
+      "range_max": 1.45,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C"
     },
     "dielectric_constant": {
       "value": null,
@@ -74,6 +85,36 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": 2.2,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": 0.5,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "equilibrium, immersion in water, 23 °C"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -93,33 +134,146 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 20,
+      "range_max": 47,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Depends on the L-/D-lactide stereochemical ratio; PLLA can be semi-crystalline, PDLLA is amorphous."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Depends on the L-/D-lactide stereochemical ratio; PLLA can be semi-crystalline, PDLLA is amorphous. Reported as 25-70% for L-PLA specifically (65% in fiber form, 10-20% in film); 20-44% by WAXD."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 74000,
+        "range_max": 660000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 80000,
+        "range_max": 380000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "General range; ~4,000-6,000 reported for D,L-PLA and ~100,000 for L-PLA specifically."
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.5,
+        "range_max": 3.79,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "benzene (isotactic PLA)",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.00572,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "K for viscosity-average Mv"
+        },
+        "a": {
+          "value": 0.72,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "chloroform (isotactic PLA)",
+        "temperature_k": 298,
+        "k": {
+          "value": 0.00248,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "K for viscosity-average Mv"
+        },
+        "a": {
+          "value": 0.77,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "chloroform (atactic PLA)",
+        "temperature_k": 298,
+        "k": {
+          "value": 0.00606,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "K for mass-average Mw"
+        },
+        "a": {
+          "value": 0.64,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      },
+      {
+        "solvent": "ethyl acetate (atactic PLA)",
+        "temperature_k": 298,
+        "k": {
+          "value": 0.00163,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "K for mass-average Mw"
+        },
+        "a": {
+          "value": 0.73,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999"
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": 62.5,
-      "range_min": 60,
-      "range_max": 65,
+      "value": 65,
+      "range_min": 55,
+      "range_max": 75,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pla"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Range reflects L-/D-lactide ratio: amorphous D,L-PLA runs toward the low end, semi-crystalline L-PLA toward the high end."
     },
     "tm": {
-      "value": 155,
-      "range_min": 130,
-      "range_max": 180,
+      "value": 171,
+      "range_min": 164,
+      "range_max": 178,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pla",
-      "conditions": "150-160°C typical."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "DSC. 180-184 °C reported for L-PLA specifically; lower range for mixed-stereochemistry grades."
     },
     "tc": {
       "value": null,
@@ -132,9 +286,14 @@
       "status": "placeholder"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 245,
+      "range_min": 235,
+      "range_max": 255,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "L-PLA, Mw (0.5-3)×10⁵; reported as 508-528 K. D,L-PLA reported as 528 K (255 °C)."
     },
     "thermal_conductivity": {
       "value": null,
@@ -149,29 +308,49 @@
       "range_max": 16000,
       "unit": "MPa",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pla",
-      "conditions": "Young's modulus; wide range reflects stereochemistry/crystallinity/molecular weight variation."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Wide range reflects stereochemistry/crystallinity/molecular weight variation. A narrower 3,700-4,100 MPa is also reported under 'Young's modulus' in the same source."
     },
     "yield_strength": {
-      "value": null,
+      "value": 71.3,
+      "range_min": 65.6,
+      "range_max": 77,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Tensile stress at yield."
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 62,
+      "range_min": 52,
+      "range_max": 72,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "General grade; 27-41 MPa reported for D,L-PLA, 55-82 MPa for L-PLA."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 5,
+      "range_min": 4,
+      "range_max": 6,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "General grade; 3-10% reported for D,L-PLA, 5-10% for L-PLA."
     },
     "impact_izod": {
-      "value": null,
+      "value": 18.8,
+      "range_min": 13,
+      "range_max": 24.6,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C"
     },
     "impact_charpy": {
       "value": null,
@@ -184,8 +363,22 @@
       "status": "placeholder"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2400,
+      "range_min": 1000,
+      "range_max": 3800,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
@@ -196,6 +389,42 @@
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-pla"
+      },
+      "alcohols": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
       }
     },
     "weathering_uv": {
@@ -211,6 +440,24 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": 19,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Unmodified grade; 23-26% with flame retardant additives."
+    },
+    "solubility_parameter": {
+      "value": 20,
+      "range_min": 19,
+      "range_max": 21,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp.=19.0-21.0; calc.=19.2-20.3"
     }
   },
   "processing": {
@@ -220,9 +467,14 @@
       "film extrusion"
     ],
     "processing_temp_range": {
-      "value": null,
+      "value": 237.5,
+      "range_min": 220,
+      "range_max": 255,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Extrusion; 280-300 °C for fiber spinning."
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -261,7 +513,9 @@
     "environmental_notes": "Does not fully disintegrate under normal marine conditions and degrades at rates comparable to conventional plastics in ocean environments -- a real limitation on its 'biodegradable' marketing when it ends up as marine litter rather than industrial compost."
   },
   "references": [
-    "wiki-pla"
+    "wiki-pla",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -285,5 +539,46 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 5000,
+      "unit": "mg/kg",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": ">5,000 mg/kg"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

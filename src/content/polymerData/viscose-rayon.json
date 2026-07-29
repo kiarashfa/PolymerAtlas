@@ -50,9 +50,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.6,
+      "range_min": 1.583,
+      "range_max": 1.62,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "cellulose II crystal form (the regenerated allomorph)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "melt_flow_index": {
       "value": null,
@@ -73,6 +78,31 @@
       "value": null,
       "unit": "S/m",
       "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -87,13 +117,33 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": null,
+      "value": 25,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "viscose specifically; a broader \"regenerated cellulose\" figure of 35% is also reported, versus 40-60% typical for native cellulose",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Regenerated cellulose forms the cellulose II crystal allomorph, distinct from native cellulose I.",
     "chain_flexibility_notes": "Lower elastic recovery and reduced wet strength compared to high-wet-modulus rayon variants.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "mw": {
+        "value": null,
+        "unit": "g/mol",
+        "status": "placeholder"
+      },
+      "pdi": {
+        "value": null,
+        "unit": "",
+        "status": "placeholder"
+      }
+    }
   },
   "thermal": {
     "tg": {
@@ -123,16 +173,23 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.062,
+      "range_min": 0.054,
+      "range_max": 0.07,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     }
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 33000,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "oriented rayon fiber",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "yield_strength": {
       "value": null,
@@ -140,14 +197,24 @@
       "status": "placeholder"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 300,
+      "range_min": 200,
+      "range_max": 400,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "dry viscose rayon fiber; wet strength 100-200 MPa; highly oriented rayon reaches 610 MPa dry / 520 MPa wet; Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 69-170 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 17,
+      "range_min": 8,
+      "range_max": 26,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "dry viscose rayon fiber; wet elongation 13-43%; highly oriented rayon ~9% (dry and wet); Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 22-70%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "impact_izod": {
       "value": null,
@@ -168,6 +235,16 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
@@ -183,6 +260,16 @@
     "flammability_ul94": {
       "value": null,
       "status": "not_applicable"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -224,7 +311,9 @@
     "environmental_notes": "The viscose process itself uses carbon disulfide, a hazardous reagent with real environmental/occupational concerns distinct from the fiber's own biodegradability."
   },
   "references": [
-    "wiki-viscose"
+    "wiki-viscose",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -248,5 +337,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }

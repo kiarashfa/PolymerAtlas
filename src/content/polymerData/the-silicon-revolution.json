@@ -56,11 +56,12 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": 0.965,
+      "value": 0.97,
       "unit": "g/cm³",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pdms"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20°C, uncrosslinked fluid/gum (amorphous solid 0.98, crystalline 1.07)"
     },
     "melt_flow_index": {
       "value": null,
@@ -70,18 +71,62 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.375,
+      "range_max": 1.404,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20°C, exp.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.8,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "100 Hz-1 MHz",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "electrical_conductivity": {
-      "value": null,
+      "value": 2.5e-14,
       "unit": "S/m",
+      "conditions": "reciprocal of reported volume resistivity (4×10¹³ Ω·m)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
       "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": 47,
+      "unit": "%",
+      "conditions": "60°, Gardner, ASTM D523",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "range_min": 12,
+      "range_max": 27,
+      "unit": "kV/mm",
+      "conditions": "K20/P50 electrode configuration, 0.6-0.8 mm specimen thickness",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "synthesis": {
@@ -99,29 +144,122 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 24,
+      "range_max": 95,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "depends on cooling rate; unfilled PDMS (drops to 0-14% with 10-40% fumed silica)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": null,
+    "crystal_structure": "Monoclinic (a:b:c = 1.3:0.775:0.83 nm, β ≈ 60°)",
     "chain_flexibility_notes": "Highly flexible Si-O backbone (larger bond angles/lengths than C-C backbones) gives PDMS very low glass transition temperature and a wide viscosity range from pourable liquids (low n) to rubbery gums (high n).",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 300,
+        "range_max": 66000,
+        "unit": "g/mol",
+        "conditions": "commercial products span oligomeric fluids to high-MW gums",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 500,
+        "range_max": 423000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.6,
+        "range_max": 3.9,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "butanone (MEK)",
+        "temperature_k": 293,
+        "k": { "value": 0.0815, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999", "conditions": "theta solvent" }
+      },
+      {
+        "solvent": "ethyl phenyl ether",
+        "temperature_k": 356,
+        "k": { "value": 0.077, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999", "conditions": "theta solvent" }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 298,
+        "k": { "value": 0.02, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.66, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene",
+        "temperature_k": 293,
+        "k": { "value": 0.012, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.68, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "bromobenzene",
+        "temperature_k": 351.85,
+        "k": { "value": 0.076, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999", "conditions": "theta solvent" }
+      },
+      {
+        "solvent": "ethyl iodide",
+        "temperature_k": 275.25,
+        "k": { "value": 0.07, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999", "conditions": "theta solvent" }
+      },
+      {
+        "solvent": "bromocyclohexane",
+        "temperature_k": 302,
+        "k": { "value": 0.074, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999", "conditions": "theta solvent" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": -127,
+      "range_max": -123,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "unfilled PDMS (-121 to -122°C with 10-40% fumed silica)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
+      "range_min": -55,
+      "range_max": -35,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Exhibits a glass transition rather than a conventional melting point."
+      "conditions": "PDMS crystallizes only on cooling well below Tg-relevant service temperatures (typically below about -40°C); this is the DSC melting endotherm of that low-temperature crystalline phase, not a melting point encountered in normal use.",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
+      "range_min": -65,
+      "range_max": -56,
       "unit": "°C",
-      "status": "not_applicable"
+      "conditions": "rapid/quench crystallization on cooling; literature values vary widely with thermal history",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hdt": {
       "value": null,
@@ -129,21 +267,34 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 343,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "reported as >343°C for silicone oil (unfilled fluid); 235°C reported for a sealant formulation",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
       "value": null,
+      "range_min": 0.151,
+      "range_max": 0.167,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "15-80°C, unfilled fluid/gum",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 0.69,
+      "range_max": 3.45,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "cured PDMS elastomer, various formulations",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -152,13 +303,23 @@
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 0.5,
+      "range_max": 9.7,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "cured PDMS elastomer, unfilled to reinforced formulations; elastomer with no distinct yield point",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 220,
+      "range_max": 1600,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "cured PDMS elastomer",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -172,23 +333,90 @@
     },
     "hardness": {
       "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "range_min": 15,
+      "range_max": 70,
+      "unit": "Shore A",
+      "conditions": "cured PDMS elastomer, various formulations",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
       "status": "not_applicable"
+    },
+    "poissons_ratio": {
+      "value": 0.5,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "acids": {
+        "value": "good",
+        "conditions": "dilute and concentrated",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "fair-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good-poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": "Good weathering/UV and thermal-oxidative stability relative to organic elastomers",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-pdms",
-      "conditions": "Inferred from widespread outdoor sealant/caulk use; no explicit weathering-test data sourced."
+      "value": "Good resistance to UV radiation",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "degradation activated mainly at 300-360 nm; sensitizers include benzophenone, ozone, mechanical stress"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -197,7 +425,44 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "range_min": 26,
+      "range_max": 42,
+      "unit": "%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "range_min": 14.9,
+      "range_max": 15.6,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "interaction_parameter_chi": [
+      { "key": "pentane", "value": 0.43, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "toluene", "value": 0.465, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "nitrobenzene", "value": 2.2, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "ethyl ether", "value": 0.43, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "cyclohexane", "value": 0.44, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "hexane", "value": 0.40, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "carbon tetrachloride", "value": 0.45, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "ethyl iodide", "value": 0.58, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "dioxane", "value": 0.61, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "2,3-dimethylpentane", "value": 0.392, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "2,2,4-trimethylpentane", "value": 0.38, "unit": "", "conditions": "swelling method, 25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+    ],
+    "gas_permeability": [
+      { "key": "O2", "value": 4.5e-11, "unit": "cm³(STP)·cm/(cm²·s·Pa)", "conditions": "33% silica-filled PDMS membrane, ~25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "N2", "value": 2.1e-11, "unit": "cm³(STP)·cm/(cm²·s·Pa)", "conditions": "33% silica-filled PDMS membrane, ~25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "CO2", "value": 2.44e-10, "unit": "cm³(STP)·cm/(cm²·s·Pa)", "conditions": "33% silica-filled PDMS membrane, ~25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+      { "key": "water vapor", "value": 2.7e-9, "unit": "cm³(STP)·cm/(cm²·s·Pa)", "conditions": "33% silica-filled PDMS membrane, ~25°C", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -207,8 +472,13 @@
     ],
     "processing_temp_range": {
       "value": null,
+      "range_min": 200,
+      "range_max": 316,
       "unit": "°C",
-      "status": "not_applicable"
+      "conditions": "vulcanization; other cure routes reported separately (moisture cure 0-50°C, extrusion vulcanization 250-500°C, peroxide cure 60-90°C then 130-200°C)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -251,7 +521,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pdms"
+    "wiki-pdms",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -275,5 +547,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 4990,
+      "unit": "mg/kg",
+      "conditions": "no mortality observed at highest tested dose (reported as >4990 mg/kg)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "Adverse reproductive effects have occurred in some experimental animal studies; skin (rabbit) LD50 >18,400 mg/kg."
   }
 }

@@ -59,8 +59,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.44,
+      "range_max": 1.48,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "PPTA (Kevlar); as-spun 1.44-1.47, up to 1.48 fully crystalline",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -69,8 +74,13 @@
     },
     "refractive_index": {
       "value": null,
+      "range_min": 1.61,
+      "range_max": 2.12,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "highly birefringent fiber: n⊥≈2.05-2.12 (perpendicular to fiber axis), n∥≈1.59-1.65 (parallel), PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
@@ -80,6 +90,36 @@
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "range_min": 3.5,
+      "range_max": 7,
+      "unit": "%",
+      "conditions": "PPTA yarn, as shipped; 3.5-4.5% regained from dried state",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -97,25 +137,64 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 72.2,
+      "range_max": 91,
       "unit": "%",
-      "status": "placeholder",
-      "conditions": "Highly crystalline/highly oriented in fiber form (liquid-crystalline spinning), but no specific percentage sourced."
+      "conditions": "PPTA, highly oriented/crystalline via liquid-crystalline spinning",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Para-aramid: linear, rod-like chains (amide linkages at para/1,4 ring positions) pack into a highly extended, hydrogen-bonded crystalline structure, giving exceptional axial strength and stiffness. Meta-aramid (1,3 linkages) is less linear and used more for heat/flame resistance than pure tensile strength.",
+    "crystal_structure": "Para-aramid: linear, rod-like chains (amide linkages at para/1,4 ring positions) pack into a highly extended, hydrogen-bonded crystalline structure, giving exceptional axial strength and stiffness. Meta-aramid (1,3 linkages) is less linear and used more for heat/flame resistance than pure tensile strength. PPTA unit cell: monoclinic (pseudo-orthorhombic), a:b:c = 0.78:0.519:1.29 nm, 2 chains/cell (Wypych, Mark).",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 10300,
+        "range_max": 19800,
+        "unit": "g/mol",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 31400,
+        "range_max": 48350,
+        "unit": "g/mol",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 2.4,
+        "range_max": 5.3,
+        "unit": "",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": 425,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "PPTA; Wypych and Mark agree exactly (425 °C / 698 K)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Reported to decompose above 500°C rather than exhibiting a conventional melt transition."
+      "conditions": "PPTA's melting point lies beyond its decomposition temperature (Mark's dedicated Kevlar chapter); Wypych's entry additionally reports a DSC endotherm at 551-554 °C."
     },
     "tc": {
       "value": null,
@@ -128,23 +207,34 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": 500,
+      "value": null,
+      "range_min": 427,
+      "range_max": 482,
       "unit": "°C",
+      "conditions": "PPTA, in air; Wypych and Mark agree closely (427-482 °C / 700-755 K)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-aramid"
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 5.03,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "conditions": "PPTA, temperature-dependent (decays from this value over ~7-290 K); Mark reports higher figures via phonon propagation (10 W/(m·K)) and axial conductivity 20-30 W/(m·K) at 125-250 K -- measurement-method dependent",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "mechanical": {
     "tensile_modulus": {
       "value": null,
+      "range_min": 70500,
+      "range_max": 138000,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "PPTA yarns; specific grades (Mark): Kevlar 29 83,000 MPa, Kevlar 49 124,000 MPa, Kevlar 149 161,000 MPa; fully crystalline theoretical maximum 200,000 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
       "value": null,
@@ -154,17 +244,23 @@
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 2920,
+      "range_max": 3600,
       "unit": "MPa",
-      "status": "placeholder",
-      "conditions": "Qualitatively 'outstanding strength-to-weight'; no specific number sourced."
+      "conditions": "PPTA yarns; Mark reports 2,000-3,000 MPa for LC-solution-spun fiber and grade-specific fracture stress of 1,700-2,500 MPa (Kevlar 149/29/49)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
-      "value": 3.5,
+      "value": null,
+      "range_min": 2.4,
+      "range_max": 3.6,
       "unit": "%",
+      "conditions": "PPTA; grade-dependent, from Kevlar 149 (highest modulus) as low as 1.0% to Kevlar 29 up to 4.0% (Mark)",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-aramid",
-      "conditions": "Para-aramids."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "impact_izod": {
       "value": null,
@@ -185,24 +281,105 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": 0.63,
+      "unit": "",
+      "conditions": "PPTA (Wypych); Mark reports a lower value, 0.36, for Kevlar fiber",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "good",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "poor",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "good to fair",
+        "conditions": "PPTA; not clearly split into dilute/concentrated in source",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "resistant",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "resistant",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "resistant",
+        "conditions": "PPTA",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "50% tensile strength loss after 900 h Fadeometer (accelerated UV) exposure; most photosensitive in the 300-450 nm range",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder"
     },
     "flammability_ul94": {
-      "value": "Inherently flame-resistant",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-aramid",
-      "conditions": "Inferred from widespread use as an asbestos replacement/fireproof material; no formal UL94 rating sourced."
+      "value": "self-extinguishing; inherently flame-resistant",
+      "conditions": "PPTA; no specific UL94 class found in either handbook",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "range_min": 28,
+      "range_max": 29,
+      "unit": "%",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "solubility_parameter": {
+      "value": null,
+      "unit": "MPa^0.5",
+      "status": "placeholder"
     }
   },
   "processing": {
@@ -216,9 +393,12 @@
     },
     "drying_required": null,
     "shrinkage_rate": {
-      "value": null,
+      "value": 0.1,
       "unit": "%",
-      "status": "placeholder"
+      "conditions": "PPTA, reported as less than 0.1%",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -252,7 +432,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-aramid"
+    "wiki-aramid",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -276,5 +458,47 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": 7500,
+      "unit": "mg/kg",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "conditions": "PPTA",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": "No known mutagenic effect; animal testing showed effects on embryo-fetal development at levels below those causing maternal toxicity. Not a skin irritant (rabbit)."
   }
 }

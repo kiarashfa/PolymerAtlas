@@ -7,7 +7,7 @@
   ],
   "type": "hub",
   "parent": null,
-  "cas_number": null,
+  "cas_number": "9003-17-2",
   "resin_id_code": null,
   "repeat_unit": "{[][$]C/C=C\\C[$][]}",
   "smiles_depiction": "*C/C=C\\C*",
@@ -71,9 +71,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 0.9025,
+      "range_min": 0.89,
+      "range_max": 0.915,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, cis-1,4 form."
     },
     "melt_flow_index": {
       "value": null,
@@ -81,18 +86,51 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.5605,
+      "range_min": 1.516,
+      "range_max": 1.605,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "exp., 20 °C, cis-1,4 form."
     },
     "dielectric_constant": {
-      "value": null,
+      "value": 2.3,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "50 Hz, cis-1,4 form."
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -113,29 +151,119 @@
   "structure_morphology": {
     "tacticity": "Microstructure-dependent: high-cis grades (neodymium/cobalt/nickel catalysts, ~96-98% cis-1,4) are highly stereoregular; lithium-catalyzed grades are a mixed cis/trans/vinyl microstructure (10-30% cis, 20-60% trans, 10-70% vinyl).",
     "crystallinity_typical": {
-      "value": null,
+      "value": 21,
+      "range_min": 18,
+      "range_max": 24,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "cis-1,4 form."
     },
-    "crystal_structure": null,
+    "crystal_structure": "Monoclinic unit cell (cis-1,4 form); a:b:c ≈ 0.853:0.816:1.266 nm, β ≈ 83.3°.",
     "chain_flexibility_notes": "High-cis grades exhibit a low glass transition and strain-induced crystallization similar to natural rubber, giving good strength even without fillers.",
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": 78500,
+        "range_min": 5000,
+        "range_max": 152000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "cis-1,4 form."
+      },
+      "mw": {
+        "value": 436750,
+        "range_min": 56500,
+        "range_max": 817000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "cis-1,4 form."
+      },
+      "pdi": {
+        "value": 2.9,
+        "range_min": 2.0,
+        "range_max": 3.8,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016",
+        "conditions": "cis-1,4 form."
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "benzene",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.0337,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "98% cis-1,4, 2% 1,2-vinyl microstructure; osmometry."
+        },
+        "a": {
+          "value": 0.715,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "98% cis-1,4, 2% 1,2-vinyl microstructure; osmometry."
+        }
+      },
+      {
+        "solvent": "toluene",
+        "temperature_k": 303,
+        "k": {
+          "value": 0.0305,
+          "unit": "mL/g",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "98% cis-1,4, 2% 1,2-vinyl microstructure; osmometry."
+        },
+        "a": {
+          "value": 0.725,
+          "unit": "",
+          "status": "verified",
+          "evidence_level": "handbook",
+          "source": "handbook-mark-1999",
+          "conditions": "98% cis-1,4, 2% 1,2-vinyl microstructure; osmometry."
+        }
+      }
+    ]
   },
   "thermal": {
     "tg": {
-      "value": null,
+      "value": -102,
+      "range_min": -106,
+      "range_max": -99,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Experimental range for cis-1,4 form; trans-1,4 form has a higher Tg, approximately -72 to -87 °C."
     },
     "tm": {
-      "value": null,
+      "value": 1,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Low, broad melting endotherm typical of imperfect crystallites in high-cis material; trans-1,4 form (more crystallizable) melts far higher, around 80-145 °C."
     },
     "tc": {
-      "value": null,
+      "value": -26,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Isothermal crystallization temperature, cis-1,4 form."
     },
     "hdt": {
       "value": null,
@@ -148,9 +276,12 @@
       "status": "placeholder"
     },
     "thermal_conductivity": {
-      "value": null,
+      "value": 0.22,
       "unit": "W/(m·K)",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Unspecified microstructure, 20 °C."
     }
   },
   "mechanical": {
@@ -160,19 +291,34 @@
       "status": "placeholder"
     },
     "yield_strength": {
-      "value": null,
+      "value": 9.1,
+      "range_min": 8.9,
+      "range_max": 9.3,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Tensile stress at yield, cis-1,4 form."
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 18.1,
+      "range_min": 16.2,
+      "range_max": 20,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "cis-1,4 form (strain-crystallizing gum vulcanizate)."
     },
     "elongation_at_break": {
-      "value": null,
+      "value": 535,
+      "range_min": 450,
+      "range_max": 620,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "cis-1,4 form."
     },
     "impact_izod": {
       "value": null,
@@ -185,18 +331,79 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 76,
+      "range_min": 64,
+      "range_max": 88,
+      "unit": "Shore A",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "cis-1,4 form."
     },
     "flexural_modulus": {
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": 0.432,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "calculated, cis-1,4 form."
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "not resistant",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -208,7 +415,51 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 17.1,
+      "range_min": 16.2,
+      "range_max": 18.0,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "cis-1,4 form."
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 1.44e-12,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C, cis-1,4 form.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 1.43e-12,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C, cis-1,4 form; converted from m³·m/(m²·s·Pa) × 10⁻¹⁷.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      },
+      {
+        "key": "CO2",
+        "value": 1.04e-11,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C, cis-1,4 form; converted from m³·m/(m²·s·Pa) × 10⁻¹⁷.",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-mark-1999"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -265,7 +516,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-polybutadiene"
+    "wiki-polybutadiene",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -289,5 +542,43 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_flammability_rating": {
+      "value": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "nfpa_reactivity_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "HMIS rating, 0-4 scale"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

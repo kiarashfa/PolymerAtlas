@@ -42,8 +42,13 @@
   "physical": {
     "density": {
       "value": null,
+      "range_min": 1.36,
+      "range_max": 1.4,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "conditions": "20°C, general/commercial PANI; emeraldine base (undoped) is 1.245 g/cm³",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "melt_flow_index": {
       "value": null,
@@ -51,9 +56,12 @@
       "status": "not_applicable"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.85,
       "unit": "",
-      "status": "placeholder"
+      "conditions": "20°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "dielectric_constant": {
       "value": null,
@@ -61,12 +69,42 @@
       "status": "placeholder"
     },
     "electrical_conductivity": {
-      "value": 6.28e-9,
+      "value": null,
+      "range_min": 1e-6,
+      "range_max": 40000,
       "unit": "S/m",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-pani",
-      "conditions": "Undoped emeraldine base. Doping with 4% HBr raises conductivity roughly ten orders of magnitude, to ~4.60e-5 S/m."
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "conditions": "Full span from undoped/lightly-doped emeraldine base (~10⁻⁸ S/cm) to CSA (camphorsulfonic acid)-doped emeraldine salt film cast from m-cresol (400 S/cm, room temperature) — conductivity depends strongly on dopant and doping level; other dopants reported: CH3SO3H 350 S/cm, HCl 24 S/cm, I2 11.4 S/cm, H2SO4 6.31 S/cm."
+    },
+    "transmittance": {
+      "value": 97,
+      "unit": "%",
+      "conditions": "thin PANI film (solar-cell electrode context)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
+      "status": "placeholder"
     }
   },
   "synthesis": {
@@ -84,23 +122,64 @@
     "tacticity": null,
     "crystallinity_typical": {
       "value": null,
+      "range_min": 30,
+      "range_max": 50,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Semi-flexible rod polymer; conductivity and color depend on oxidation state (leucoemeraldine, colorless; emeraldine, green salt or blue base form; pernigraniline, blue/violet) and protonation (doping) level.",
+    "crystal_structure": "Semi-flexible rod polymer; conductivity and color depend on oxidation state (leucoemeraldine, colorless; emeraldine, green salt or blue base form; pernigraniline, blue/violet) and protonation (doping) level. Orthorhombic lattice (emeraldine base form II: a:b:c ≈ 0.765:0.575:1.02 nm).",
     "chain_flexibility_notes": null,
-    "tg_relation_notes": null
+    "tg_relation_notes": null,
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 25000,
+        "range_max": 127000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 5000,
+        "range_max": 440000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 2.55,
+        "range_max": 3.46,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    }
   },
   "thermal": {
     "tg": {
       "value": null,
+      "range_min": 100,
+      "range_max": 190,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "form/dopant not specified; DMTA on specific forms reports higher values (leucoemeraldine base fiber 201°C, emeraldine base film 221°C)",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tm": {
-      "value": null,
+      "value": 385,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "leucoemeraldine base (LEB) film/fiber, DSC",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tc": {
       "value": null,
@@ -113,9 +192,12 @@
       "status": "not_applicable"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 400,
       "unit": "°C",
-      "status": "placeholder"
+      "conditions": "TGA onset, emeraldine base (EB) film cast from NMP, 20°C/min, N2; leucoemeraldine base (LEB) decomposes at a higher onset, ~507°C",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "thermal_conductivity": {
       "value": null,
@@ -125,19 +207,30 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 1300,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "PANI base (emeraldine); PANI·HCl (doped) 900 MPa, oriented fibers 1260-1750 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "yield_strength": {
-      "value": null,
+      "value": 120,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "form/dopant not specified in source",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
       "value": null,
+      "range_min": 40,
+      "range_max": 168,
       "unit": "MPa",
-      "status": "placeholder"
+      "conditions": "non-crosslinked; crosslinked grades reach 60-430 MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "elongation_at_break": {
       "value": null,
@@ -163,13 +256,62 @@
       "value": null,
       "unit": "MPa",
       "status": "placeholder"
+    },
+    "poissons_ratio": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
-      "value": null,
-      "status": "placeholder"
+      "value": "UV-sensitive; spectral sensitivity at 290, 325, 350, 400 nm (emeraldine base sensitized at 331 nm); some grades photobleach at 380-400 nm and are stabilized with Tinuvin 213",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -178,6 +320,19 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 22.2,
+      "unit": "MPa^0.5",
+      "conditions": "emeraldine base form; emeraldine salt 23.6, leucoemeraldine base ~23-25",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "processing": {
@@ -233,7 +388,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-pani"
+    "wiki-pani",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -248,5 +405,42 @@
       "generated_date": "2026-07-27"
     },
     "structure_render_3d": null
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_flammability_rating": {
+      "value": 0,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "range_min": 0,
+      "range_max": 1,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "carcinogenic_classification": {
+      "value": "not listed by ACGIH, NIOSH, NTP",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "safety_notes": null
   }
 }

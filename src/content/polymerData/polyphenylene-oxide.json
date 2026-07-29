@@ -50,9 +50,14 @@
   "historical_images": [],
   "physical": {
     "density": {
-      "value": null,
+      "value": 1.06,
+      "range_min": 1.04,
+      "range_max": 1.06,
       "unit": "g/cm³",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "25 °C, amorphous; matches handbook-mark-1999 (296 K). Crystalline phase 1.16 g/cm³, melt 0.958-0.96 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -60,18 +65,51 @@
       "status": "placeholder"
     },
     "refractive_index": {
-      "value": null,
+      "value": 1.64,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "20 °C, experimental; calculated range is 1.608-1.6209"
     },
     "dielectric_constant": {
       "value": null,
+      "range_min": 4.6,
+      "range_max": 4.7,
       "unit": "",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "100 Hz; at 1 MHz, 4.5-4.8"
     },
     "electrical_conductivity": {
       "value": null,
       "unit": "S/m",
+      "status": "placeholder"
+    },
+    "transmittance": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "haze": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "gloss": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "water_absorption": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "dielectric_strength": {
+      "value": null,
+      "unit": "kV/mm",
       "status": "placeholder"
     }
   },
@@ -87,46 +125,126 @@
   "structure_morphology": {
     "tacticity": null,
     "crystallinity_typical": {
-      "value": 0,
+      "value": null,
+      "range_min": 0,
+      "range_max": 58,
       "unit": "%",
-      "status": "estimated",
-      "evidence_level": "tertiary",
-      "source": "wiki-ppo",
-      "conditions": "Amorphous."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "As commercially processed (melt-quenched), PPO is effectively amorphous (0% crystallinity, handbook-mark-1999); slow-cooled or annealed samples develop crystallinity up to 40-58% depending on thermal history and measurement method (handbook-wypych-2016, handbook-mark-1999)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Miscible with polystyrene in all proportions, which is exploited to tune Tg/processability in Noryl-type blends.",
-    "tg_relation_notes": "Tg of 215°C is unusually high for a commodity-adjacent thermoplastic; blending with polystyrene lowers it to improve processability."
+    "tg_relation_notes": "Tg of 215°C is unusually high for a commodity-adjacent thermoplastic; blending with polystyrene lowers it to improve processability.",
+    "molecular_weight": {
+      "mn": {
+        "value": null,
+        "range_min": 15000,
+        "range_max": 164000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "mw": {
+        "value": null,
+        "range_min": 35000,
+        "range_max": 320000,
+        "unit": "g/mol",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "pdi": {
+        "value": null,
+        "range_min": 1.3,
+        "range_max": 2.4,
+        "unit": "",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
+    "mark_houwink": [
+      {
+        "solvent": "toluene",
+        "temperature_k": 298,
+        "mw_range": "26.5-415 kg/mol",
+        "k": { "value": 0.0285, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.68, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chlorobenzene",
+        "temperature_k": 298,
+        "mw_range": "26.5-415 kg/mol",
+        "k": { "value": 0.0378, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.66, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "chloroform",
+        "temperature_k": 298,
+        "mw_range": "26.5-415 kg/mol",
+        "k": { "value": 0.0483, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.64, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "benzene",
+        "temperature_k": 298,
+        "mw_range": "39.7-164 kg/mol",
+        "k": { "value": 0.026, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.69, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      },
+      {
+        "solvent": "carbon tetrachloride",
+        "temperature_k": 298,
+        "mw_range": "39.7-164 kg/mol",
+        "k": { "value": 0.0744, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "a": { "value": 0.58, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
+      }
+    ]
   },
   "thermal": {
     "tg": {
       "value": 215,
+      "range_min": 205,
+      "range_max": 215,
       "unit": "°C",
       "status": "verified",
-      "evidence_level": "tertiary",
-      "source": "wiki-ppo",
-      "conditions": "Pure PPO; varies when blended with polystyrene."
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "experimental (DSC); a calculated estimate of 85-115 °C is also reported but is much lower and less reliable. Mark reports 206.85-224.85 °C depending on DSC heating rate (handbook-mark-1999)."
     },
     "tm": {
       "value": null,
+      "range_min": 240,
+      "range_max": 267,
       "unit": "°C",
-      "status": "not_applicable",
-      "conditions": "Amorphous; no true melting point."
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Applies only to partially crystalline (slow-cooled/annealed) PPO; melt-quenched or as-normally-processed material is amorphous with no distinct melting point. Mark reports 261.85 °C (DSC) for a similarly crystallized sample (handbook-mark-1999)."
     },
     "tc": {
       "value": null,
       "unit": "°C",
-      "status": "not_applicable"
+      "status": "placeholder"
     },
     "hdt": {
-      "value": null,
+      "value": 106,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "0.45 MPa; Mark reports 178.85 °C under unspecified load conditions (handbook-mark-1999)"
     },
     "decomposition_onset": {
-      "value": null,
+      "value": 300,
       "unit": "°C",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "under vacuum and N2"
     },
     "thermal_conductivity": {
       "value": null,
@@ -136,29 +254,46 @@
   },
   "mechanical": {
     "tensile_modulus": {
-      "value": null,
+      "value": 2700,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "matches 2690 MPa at 296 K reported in handbook-mark-1999; drops to 2480 MPa at 366 K"
     },
     "yield_strength": {
-      "value": null,
+      "value": 98,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     },
     "tensile_strength_at_break": {
-      "value": null,
+      "value": 80,
       "unit": "MPa",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D638",
+      "conditions": "296 K; falls to 55 MPa at 366 K. Wypych reports a tensile yield stress of 98 MPa (handbook-wypych-2016), higher than this break value."
     },
     "elongation_at_break": {
       "value": null,
+      "range_min": 20,
+      "range_max": 40,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "matches 20-40% at 296 K reported in handbook-mark-1999; rises to 30-70% at 366 K"
     },
     "impact_izod": {
-      "value": null,
+      "value": 69,
       "unit": "J/m",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "notched, 23 °C; close to 64 J/m at 296 K (ASTM D256, handbook-mark-1999). Unnotched Izod is very high, >2000 J/m."
     },
     "impact_charpy": {
       "value": null,
@@ -166,18 +301,99 @@
       "status": "placeholder"
     },
     "hardness": {
-      "value": null,
-      "unit": "Shore",
-      "status": "placeholder"
+      "value": 78,
+      "unit": "Rockwell M",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999"
     },
     "flexural_modulus": {
-      "value": null,
+      "value": 2590,
       "unit": "MPa",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-mark-1999",
+      "test_standard": "ASTM D790",
+      "conditions": "296 K; 2650 MPa at 256 K, 2480 MPa at 366 K. Wypych separately reports a much higher 5880-10,000 MPa, likely reflecting a different (possibly reinforced) grade."
+    },
+    "poissons_ratio": {
+      "value": 0.451,
+      "range_min": 0.41,
+      "range_max": 0.492,
+      "unit": "",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
+    },
+    "coefficient_of_friction": {
+      "value": null,
+      "unit": "",
       "status": "placeholder"
     }
   },
   "chemical_resistance": {
-    "solvent_resistance": {},
+    "solvent_resistance": {
+      "dilute acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "concentrated acids": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alcohols": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "alkalis": {
+        "value": "very good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aliphatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "aromatic hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "esters": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "greases & oils": {
+        "value": "good",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "halogenated hydrocarbons": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      "ketones": {
+        "value": "poor",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    },
     "weathering_uv": {
       "value": null,
       "status": "placeholder"
@@ -189,7 +405,49 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder"
-    }
+    },
+    "limiting_oxygen_index": {
+      "value": null,
+      "unit": "%",
+      "status": "placeholder"
+    },
+    "solubility_parameter": {
+      "value": 19.3,
+      "unit": "MPa^0.5",
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016",
+      "conditions": "Mark reports a notably lower figure of 9.5-10.21 MPa^0.5 from the same underlying literature (handbook-mark-1999); possible unit inconsistency between sources"
+    },
+    "gas_permeability": [
+      {
+        "key": "N2",
+        "value": 2.86e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "O2",
+        "value": 1.19e-13,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      },
+      {
+        "key": "water vapor",
+        "value": 3.045e-10,
+        "unit": "cm³(STP)·cm/(cm²·s·Pa)",
+        "conditions": "25 °C",
+        "status": "verified",
+        "evidence_level": "handbook",
+        "source": "handbook-wypych-2016"
+      }
+    ]
   },
   "processing": {
     "processing_methods": [
@@ -204,8 +462,12 @@
     "drying_required": null,
     "shrinkage_rate": {
       "value": null,
+      "range_min": 0.25,
+      "range_max": 0.35,
       "unit": "%",
-      "status": "placeholder"
+      "status": "verified",
+      "evidence_level": "handbook",
+      "source": "handbook-wypych-2016"
     }
   },
   "applications": [
@@ -235,7 +497,9 @@
     "environmental_notes": null
   },
   "references": [
-    "wiki-ppo"
+    "wiki-ppo",
+    "handbook-wypych-2016",
+    "handbook-mark-1999"
   ],
   "media": {
     "hero_image": null,
@@ -259,5 +523,32 @@
       "tool": "ChemDraw",
       "generated_date": "2026-07-27"
     }
+  },
+  "toxicity_safety": {
+    "ld50_oral_rat": {
+      "value": null,
+      "unit": "mg/kg",
+      "status": "placeholder"
+    },
+    "nfpa_health_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_flammability_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "nfpa_reactivity_rating": {
+      "value": null,
+      "unit": "",
+      "status": "placeholder"
+    },
+    "carcinogenic_classification": {
+      "value": null,
+      "status": "placeholder"
+    },
+    "safety_notes": null
   }
 }
