@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "32131-17-2",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C12H22N2O2)n",
+    "structural": "[-NH-(CH2)6-NH-CO-(CH2)4-CO-]n"
+  },
   "repeat_unit": "{[][>]NCCCCCCNC(=O)CCCCC(=O)[<][]}",
   "smiles_depiction": "*NCCCCCCNC(=O)CCCCC(=O)*",
   "notation_note": "This hub is represented by nylon 6,6 (poly(hexamethylene adipamide)) as the archetypal nylon; other nylons (nylon 6, nylon 4,6, nylon 6,12) have their own distinct repeat units.",
@@ -50,8 +54,45 @@
   "key_figures": [
     "Wallace Carothers"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "1939 New York World's Fair (\"The World of Tomorrow\")",
+    "Outbreak of World War II in Europe (September 1939)",
+    "Attack on Pearl Harbor and the wartime silk shortage (December 1941)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/nylon/worlds-fair-1939-poster.webp",
+      "alt": "An Art Deco poster in blue and yellow showing the Trylon spire and Perisphere globe of the 1939 New York World's Fair against a night sky crossed by searchlight beams, with a city skyline below and the words NEW YORK WORLD'S FAIR THE WORLD OF TOMORROW 1939.",
+      "caption": "The 1939 New York World's Fair, built around the promise that science had already designed tomorrow — and nylon, barely a year old, was one of the exhibits meant to prove it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Joseph_Binder's_poster_for_the_1939_New_York_World's_Fair.jpg",
+      "author": "Joseph Binder",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/nylon/dupont-nylon-announcement-ad-1938.webp",
+      "alt": "A full-page 1938 newspaper advertisement headlined 'Du Pont Announces for the World of Tomorrow... a new word and a new material NYLON', dense with body text, ending with a photograph of the Wonder World of Chemistry pavilion and the DuPont oval logo.",
+      "caption": "DuPont's own announcement, reprinted from the New York Herald Tribune in October 1938 — five months before the fair opened and a full year before the first stockings went on sale.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DuPont_Announces_for_the_World_of_Tomorrow..._a_new_world_and_a_new_material_NYLON_-_DPLA_-_42288d5b4720d56e027bbbab22830095.jpg",
+      "author": "Unknown author",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/nylon/women-sewing-parachutes-1942.webp",
+      "alt": "A large industrial sewing room with rows of workers at Singer sewing machines, working with billowing white fabric that covers most of the tables in the foreground, under long fluorescent light fixtures.",
+      "caption": "Naval Aircraft Factory workers in Philadelphia sewing parachute canopies in May 1942 — still silk here, at the exact moment the material was being displaced by nylon across the American parachute industry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Women_sewing_parachutes,_Naval_Aircraft_Factory,_Philadelphia,_Pennsylvania,_1942_(26958800336).jpg",
+      "author": "National Museum of the U.S. Navy",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/nylon/salvaged-nylon-stockings-barrel-1942.webp",
+      "alt": "A black-and-white photograph of a woman in a pinstriped suit dropping a pair of stockings into a wooden barrel stencilled 'DEPOSIT OLD SILK & NYLON HOSE HERE', while a man in flight gear and a headset looks on.",
+      "caption": "A wartime stocking-collection drive: worn silk and nylon hose, reprocessed into parachute cloth, at a moment when the fiber that had been sold as a stockings replacement two years earlier had become a strategic material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_worn_out_nylon_stockings_in_this_barrel_full_of_salvaged_stockings_will_be_reprocessed_and_made_into_parachutes..._-_NARA_-_196427.jpg",
+      "author": "Office for Emergency Management, Office of War Information",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

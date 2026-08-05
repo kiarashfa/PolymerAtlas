@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "9003-28-5",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H8)n",
+    "structural": "[-CH2-CH(C2H5)-]n"
+  },
   "repeat_unit": "{[][$]CC(CC)[$][]}",
   "smiles_depiction": "*CC(CC)*",
-  "notation_note": "Isotactic poly(1-butene) is polymorphic, with at least four crystal forms, so a single crystal structure or density value does not represent the material across its post-molding aging timeline (form II converts to form I over ~2-14 days).",
+  "notation_note": "The bracketed unit is the chain's repeat unit and does not indicate which polymorphic crystal form is present. Isotactic poly(1-butene) is polymorphic, with at least four crystal forms, so a single crystal structure or density value does not represent the material across its post-molding aging timeline (form II converts to form I over ~2-14 days).",
   "iupac_name": "Poly(1-butene)",
   "synonyms": [
     "polybutene-1",
@@ -44,9 +48,47 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1970,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Shell Chemical Company",
+    "Chemische Werke Hüls"
+  ],
+  "historical_events_referenced": [
+    "University of Michigan environmental teach-in, a precursor to the first Earth Day (March 1970)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polybutylene/earth-day-1970-rally.webp",
+      "alt": "A large crowd of young people, many in winter coats, gathered outdoors around a speaker at a podium with a microphone, seen from behind the speaker.",
+      "caption": "A 1970 environmental teach-in at the University of Michigan, part of the wave of activism that led to the first Earth Day that April — the same year a new plastic pipe was being pitched as the practical alternative to mined and smelted copper.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Day_-_Enact_1970.jpg",
+      "author": "University of Michigan School for Environment and Sustainability from Ann Arbor",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene/copper-pipe-soldering.webp",
+      "alt": "A close-up of a blue propane-torch flame heating a joint between two copper pipes, with a bright bead of melted solder running around the fitting.",
+      "caption": "Sweating a copper joint — the skilled, torch-and-solder trade that PB-1 pipe, joined instead with plastic fittings, was sold as a faster and cheaper alternative to.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Propane_torch_soldering_copper_pipe.jpg",
+      "author": "neffk (talk)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene/ceiling-water-damage.webp",
+      "alt": "A water-stained, cracked patch of dark brown discolouration spreading across white ceiling tiles above a tiled bathroom corner.",
+      "caption": "The kind of damage, from a slow leak hidden behind a wall or ceiling, that fuelled the class-action litigation which ended polybutylene's career in American plumbing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ceiling_water_damage.jpg",
+      "author": "Atomicdragon136",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene/pex-installation-tools.webp",
+      "alt": "A flat-lay photograph of plumbing tools and brass fittings on a cloth surface: a crimping tool, a pipe cutter, push-fit couplings, a tee fitting and several stainless steel clamp rings.",
+      "caption": "The tools of PEX plumbing — the cross-linked polyethylene tubing that took over the market polybutylene lost.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PEX_installation_tools_and_fittings.jpg",
+      "author": "Tomwsulcer",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

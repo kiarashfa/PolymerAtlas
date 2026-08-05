@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H10O5)n",
+    "structural": "[C6H7O2(OH)3]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@H](*)O[C@@H]1CO",
   "notation_note": "Regenerated cellulose spun into fibre; the repeat unit is cellulose's own.",
@@ -43,11 +47,53 @@
   "era": "Decoding Nature's Legacy (1833-1902)",
   "key_figures": [
     "Hilaire de Chardonnet",
-    "Max Fremery",
-    "Emil Bronnert"
+    "Charles Frederick Cross",
+    "Edward John Bevan",
+    "Clayton Beadle"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/viscose-rayon/brooklyn-bridge-1883.webp",
+      "alt": "A colour print of the Brooklyn Bridge viewed from below, its stone towers and web of suspension cables spanning a busy harbour full of sailing ships and steamers.",
+      "caption": "The Brooklyn Bridge, completed in May 1883 — an age confident it could reshape steel and stone into whatever it needed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Currier_and_Ives_Brooklyn_Bridge2.jpg",
+      "author": "Currier and Ives",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/viscose-rayon/krakatoa-eruption-1883.webp",
+      "alt": "A lithograph of a volcanic island erupting at night, a dark ash column rising from a glowing red base and trailing ash across the sky.",
+      "caption": "Krakatoa's 1883 eruption, illustrated a few years later — a reminder of how small even the age's proudest engineering still was.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Krakatoa_eruption_lithograph.jpg",
+      "author": "Lithograph: Parker & Coward, Britain",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/viscose-rayon/joseph-swan-portrait.webp",
+      "alt": "An elderly, long-bearded man in a dark coat leans on a laboratory bench cluttered with glass apparatus beside a window, signed 'Joseph W. Swan, Xmas 1910.'",
+      "caption": "Joseph Swan, photographed in his laboratory in 1910. His 1883 patent for extruding nitrocellulose fiber was aimed at lightbulbs, not clothing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Joseph_Wilson_Swan_2.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/viscose-rayon/chardonnet-bust.webp",
+      "alt": "A white marble bust of a balding, bearded man in formal dress with a bow tie and a decoration on his lapel, on a plinth reading 'Cte de Chardonnet, 1839-1924.'",
+      "caption": "Hilaire de Chardonnet, sculpted by his own daughter — the man who turned an accidental thread into a textile industry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Comte_de_Chardonnay.jpg",
+      "author": "User:Arnaud 25",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/viscose-rayon/viscose-spinning-machine.webp",
+      "alt": "A small brass and glass demonstration spinning apparatus in a museum display case, with two large grooved pulleys, a drive shaft, and a glass bobbin mounted at one end.",
+      "caption": "An early viscose spinning bobbin mechanism, preserved at London's Science Museum — the descendant of Swan's and Chardonnet's extrusion experiments, scaled down to a museum case.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Viscose_Rayon_spinning_machine.JPG",
+      "author": "Geni",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.6,

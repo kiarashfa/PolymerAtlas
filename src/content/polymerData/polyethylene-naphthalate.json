@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "24968-11-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C14H10O4)n",
+    "structural": "[-O-CH2-CH2-O-CO-C10H6-CO-]n"
+  },
   "repeat_unit": "{[][>]OCCOC(=O)c1ccc2cc(ccc2c1)C(=O)[<][]}",
   "smiles_depiction": "*OCCOC(=O)c1ccc2cc(ccc2c1)C(=O)*",
+  "notation_note": "The formula shows the 2,6-naphthalate isomer, the dominant commercial form; other naphthalate isomers (e.g. 1,5-, 2,7-) exist but see little commercial use.",
   "iupac_name": "Poly(ethylene 2,6-naphthalate)",
   "synonyms": [],
   "aliases": [],
@@ -34,9 +39,42 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1988,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Imperial Chemical Industries (ICI)", "Teijin", "Goodyear Tire and Rubber Company"],
+  "historical_events_referenced": ["International Ozone Trends Panel confirms CFC-driven ozone depletion (15 March 1988)", "James Hansen's Senate testimony on global warming (23 June 1988)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyethylene-naphthalate/ozone-hole-satellite-map-1987.webp",
+      "alt": "A false-color satellite map centered on Antarctica, with a large dark blue and black region over the pole surrounded by concentric bands of orange, red, and yellow representing higher ozone concentrations, dated 15 October 1987.",
+      "caption": "A NOAA satellite ozone map from October 1987, of the kind that fed directly into the March 1988 international panel report confirming CFCs were destroying stratospheric ozone.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Satellite_Image_of_Ozone_Hole_in_1987.jpg",
+      "author": "National Oceanic & Atmospheric Administration (NOAA)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-naphthalate/james-hansen-portrait.webp",
+      "alt": "A head-and-shoulders portrait of a balding man with grey hair, wearing a purple button-down shirt, looking directly at the camera.",
+      "caption": "James Hansen, the NASA climatologist whose 23 June 1988 Senate testimony brought global warming into mainstream political debate.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:James_Hansen_profile_(cropped).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-naphthalate/lto-tape-cartridge-pen-film.webp",
+      "alt": "An opened data-tape cartridge shown from above, its reel of thin metallic-grey magnetic tape wound around a central hub, beside the cartridge's disassembled outer casing and a small pile of screws.",
+      "caption": "An opened LTO data-tape cartridge. The tape itself is wound on a thin polyester film base — PEN's stiffness and dimensional stability suit it well to this role.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sony_LTO_Ultrium_3_Data_cartridge_LTX400G_-_details.jpg",
+      "author": "Mister rf",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-naphthalate/aps-film-cartridges-pen-base.webp",
+      "alt": "A small rectangular cardboard box of photographic film, printed 'Picture World' with an orange stripe and a blue globe graphic, photographed at an angle against a plain grey background.",
+      "caption": "A boxed roll of Advanced Photo System film. APS film used a PEN base for its thinness and resistance to curling in the format's compact cartridge.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Advanced_Photo_System_240_film_cartridges_APS-Film_01.JPG",
+      "author": "Nxr-at",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.345,

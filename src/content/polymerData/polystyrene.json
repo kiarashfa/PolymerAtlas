@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "9003-53-6",
   "resin_id_code": "6",
+  "chemical_formula": {
+    "empirical": "(C8H8)n",
+    "structural": "[-CH2-CH(C6H5)-]n"
+  },
   "repeat_unit": "{[][$]CC(c1ccccc1)[$][]}",
   "smiles_depiction": "*CC(c1ccccc1)*",
+  "notation_note": "Shows the chain connectivity common to all forms. Whether the phenyl rings fall randomly along the backbone (atactic, the amorphous commercial default) or in a strict repeating pattern (syndiotactic, crystalline) is a matter of catalyst choice, not something this notation distinguishes.",
   "iupac_name": "Poly(1-phenylethane-1,2-diyl)",
   "synonyms": [
     "Styrofoam (expanded-foam trade name)"
@@ -44,7 +49,48 @@
     "Hermann Franz Mark"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polystyrene/hitler-appointed-chancellor-1933.webp",
+      "alt": "An open-topped car creeping through a dense crowd toward a palace entrance, with people pressed against iron railings on both sides waving hats and papers, photographed from an upper window.",
+      "caption": "Hitler's car reaches the Reich President's palace on 30 January 1933, the morning of his appointment as Chancellor.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Entrevue_Hitler-Hindenburg_-_l'auto_dans_laquelle_se_trouve_Hitler,_sortant_du_Palais_-_btv1b90493949.jpg",
+      "author": "Agence de presse Mondial Photo-Presse",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polystyrene/reichstag-fire-1933.webp",
+      "alt": "The Reichstag building at night, its great dome and colonnade lit from within by fire, smoke pouring from the roof.",
+      "caption": "The Reichstag ablaze on the night of 27 February 1933, four weeks into the new government.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reichstagsbrand.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polystyrene/ludwigshafen-riverbank-1925.webp",
+      "alt": "A wide river with the industrial waterfront of a German city on the far bank, warehouses and tenement blocks along the quay and a tall factory chimney trailing dark smoke.",
+      "caption": "The Ludwigshafen riverfront on the Rhine, photographed from Mannheim in the mid-1920s — the works where polystyrene became an industrial material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ludwigshafen_Industrielle_Uferzone_von_Mannheim_aus_ca_1925.jpg",
+      "author": "Dr. Fritz Hirschbrunn; restored by Peter Boss HD",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polystyrene/hermann-staudinger-portrait.webp",
+      "alt": "A balding man in his sixties wearing round wire-rimmed glasses and a dark suit with a striped tie, photographed in three-quarter profile.",
+      "caption": "Hermann Staudinger, whose macromolecular theory explained what Simon's jelly actually was — eight decades after the fact.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_Staudinger.jpg",
+      "author": "Nobel Foundation",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polystyrene/eps-foam-packaging.webp",
+      "alt": "A block of white expanded polystyrene foam, molded into interlocking ridges and recesses shaped to cradle another object during shipping.",
+      "caption": "Molded expanded polystyrene, doing what it does best: holding something fragile inside a block of mostly trapped air.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Expanded_polystyrene_foam_dunnage.jpg",
+      "author": "User:Acdx",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.05,

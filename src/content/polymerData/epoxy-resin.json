@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C18H20O3)n",
+    "structural": "[-O-C6H4-C(CH3)2-C6H4-O-CH2-CH(OH)-CH2-]n"
+  },
   "repeat_unit": "{[][>]Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OCC(O)C[<][]}",
   "smiles_depiction": "*Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OCC(O)C*",
   "notation_note": "The linear bisphenol A resin is shown. In use it is a thermoset: the terminal epoxide rings are opened by a hardener that ties the chains into a network, so the cured material has no repeating unit at all.",
@@ -34,10 +38,47 @@
   "year_of_origin": 1946,
   "era": "The Post-War Boom (1946-1960)",
   "key_figures": [
-    "Pierre Castan"
+    "Pierre Castan",
+    "Sylvan Greenlee"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Postwar rubble-clearance and reconstruction across bombed European cities (1946)",
+    "Ciba brings Castan's resin to market as Araldite (1946)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/epoxy-resin/berlin-rubble-women-reconstruction-1946.webp",
+      "alt": "Two women in aprons and headscarves shoveling rubble into a wheelbarrow in front of a bombed, roofless building, with a large mound of broken masonry behind them.",
+      "caption": "Berlin's Trümmerfrauen clearing rubble, July 1946. Reconstruction, not new construction, was the material problem of the year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-H29659,_Berlin,_J%C3%A4gerstra%C3%9Fe,_Tr%C3%BCmmerfrauen.jpg",
+      "author": "Cürlis, Peter",
+      "license": "CC BY-SA 3.0 de"
+    },
+    {
+      "src": "~/assets/polymers/epoxy-resin/pierre-castan-portrait.webp",
+      "alt": "A small, low-resolution black-and-white photograph of an older man in a dark suit, seated indoors and holding a sheet of paper.",
+      "caption": "Pierre Castan, whose search for a better denture material at a Swiss dental firm produced, instead, the resin Ciba would sell as Araldite.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_Castan.jpg",
+      "author": "Poyans",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/epoxy-resin/sydney-opera-house-construction-1965.webp",
+      "alt": "An aerial view of the Sydney Opera House under construction in 1965, showing the ribbed skeletal framework of the shell roofs partly clad in white tile panels, surrounded by tower cranes.",
+      "caption": "The Sydney Opera House shells under construction, 1965 — precast concrete segments bonded with an Araldite epoxy adhesive rather than mechanical fasteners.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SYDNEY_OPERA_HOUSE_under_construction_1965.tif",
+      "author": "Len Stone photograph collection",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/epoxy-resin/fr4-printed-circuit-board.webp",
+      "alt": "A green printed circuit board densely populated with electronic components, resistors, capacitors and connectors, mounted on a wooden surface.",
+      "caption": "An epoxy-glass laminate circuit board — FR-4 — the rigid, insulating substrate epoxy resin has provided the electronics industry since the 1950s.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Printed_Circuit_Board_2.jpg",
+      "author": "Balurbala",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

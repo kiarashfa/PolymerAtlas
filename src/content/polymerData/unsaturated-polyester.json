@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C7H8O4)n",
+    "structural": "[-O-CH(CH3)-CH2-O-CO-CH=CH-CO-]n"
+  },
   "repeat_unit": "{[][>]OC(C)COC(=O)/C=C\\C(=O)[<][]}",
   "smiles_depiction": "*OC(C)COC(=O)/C=C\\C(=O)*",
   "notation_note": "The linear prepolymer is shown. Its point is the carbon-carbon double bond in every repeat: dissolved styrene adds across those bonds during cure and staples the chains into a network.",
@@ -38,9 +42,49 @@
   "polymer_class": "thermoset",
   "year_of_origin": 1943,
   "era": "The Wartime Innovation Period (1939-1945)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Carlton Ellis",
+    "Ray Greene",
+    "American Cyanamid"
+  ],
+  "historical_events_referenced": [
+    "Surrender of German forces at the Battle of Stalingrad (2 February 1943)",
+    "The Battle of the Atlantic and 'Black May' 1943"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/unsaturated-polyester/stalingrad-german-pows-1943.webp",
+      "alt": "A long column of German prisoners of war, heavily bundled against the cold, walking past the bombed and shell-pocked ruins of a large grain elevator building in the snow.",
+      "caption": "German prisoners marched through Stalingrad after the February 1943 surrender — one of the two fronts on which the war's balance visibly shifted that year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_pows_stalingrad_1943.jpg",
+      "author": "Soviet military personnel (uncredited)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/unsaturated-polyester/uboat-u200-attack-1943.webp",
+      "alt": "An aerial view of the ocean surface with a German U-boat under attack, a large plume of white water and spray thrown up beside its hull from a depth-charge or bomb strike.",
+      "caption": "A U-boat under attack from an RAF Coastal Command aircraft, 24 June 1943 — the kind of aircraft-borne radar sortie that closed the mid-Atlantic gap, and the kind of housing problem that unsaturated polyester and glass fiber were pressed into service to solve.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:U-200_Luftangriff.jpg",
+      "author": "Australian armed forces",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/unsaturated-polyester/owens-corning-fiberglass-plant-1942.webp",
+      "alt": "Tall cylindrical steel storage silos and elevated walkways at an industrial batch house, with smoke rising from a stack behind, photographed in colour against a pale sky.",
+      "caption": "The batch house at an Owens-Corning Fiberglas plant in Toledo, Ohio, February 1942, storing the raw materials melted down into the glass fiber that unsaturated polyester resin would soon be paired with.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Section_of_the_batch_house_at_a_plant_of_the_Owens-Corning_Fiberglass_Corporation1a35081v.jpg",
+      "author": "Alfred T. Palmer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/unsaturated-polyester/grp-timber-folkboats-comparison.webp",
+      "alt": "A white fiberglass sailboat moored beside an older varnished wooden sailboat of the identical hull design, in a marina with other boats in the background.",
+      "caption": "A fiberglass and a timber-built Folkboat, same hull design, side by side — the direct comparison unsaturated polyester eventually made possible for an entire category of small craft.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GRP_%26_Timber_Folkboats.jpg",
+      "author": "Packhorse",
+      "license": "CC BY 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.11,

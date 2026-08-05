@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "MOFs are hybrid organic-inorganic coordination networks (metal-ion clusters/secondary building units linked by organic di- or tricarboxylic-acid ligands), not a classical covalent polymer -- included in this atlas as a bordering/hybrid material class per the manifest's own framing. No single repeat unit represents the class; composition is defined by metal-node + linker choice (e.g. MOF-5 uses Zn4O clusters with terephthalate linkers).",
   "iupac_name": null,
@@ -29,10 +33,49 @@
   "year_of_origin": 2012,
   "era": "The Smart Materials Era (2000-2015)",
   "key_figures": [
+    "Richard Robson",
+    "Susumu Kitagawa",
     "Omar Yaghi"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Higgs boson discovery announced at CERN (4 July 2012)",
+    "Northwestern University's NU-110 sets a world-record surface area for a porous material (August 2012)",
+    "2025 Nobel Prize in Chemistry awarded to Robson, Kitagawa and Yaghi for the development of metal-organic frameworks"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/metal-organic-framework-polymers/fermilab-higgs-announcement-2012.webp",
+      "alt": "An overhead, fisheye view of a packed university auditorium, with more than two hundred people seated and standing to watch a projection screen at the front displaying a scientific slide.",
+      "caption": "Fermilab researchers crowd a lecture hall at 2 a.m. on 4 July 2012, watching CERN announce the discovery of the Higgs boson — a triumph of predicting, then finding, an exact and specific thing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Photo_of_the_Week-_July_6,_2012_(7652236802).jpg",
+      "author": "ENERGY.GOV",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/metal-organic-framework-polymers/omar-yaghi-portrait-2025.webp",
+      "alt": "A close studio portrait, lit against a black background, of a balding man with glasses resting his chin on his clasped hands, wearing a dark jacket over a pale blue shirt.",
+      "caption": "Omar Yaghi, photographed in 2025, the year he shared the Nobel Prize in Chemistry with Susumu Kitagawa and Richard Robson for turning an open architectural idea into a designable chemistry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Omar_Yaghi_by_Christopher_Michel_in_2025_01.jpg",
+      "author": "Christopher Michel",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/metal-organic-framework-polymers/mof-5-crystal-structure.webp",
+      "alt": "A computer-rendered ball-and-stick and polyhedral model of a crystal structure, showing blue tetrahedra representing zinc-oxide clusters linked by rings of black, red and pale pink atoms into a cage-like lattice with large open square voids.",
+      "caption": "The structure of MOF-5, rendered from its crystallographic data: zinc-oxide clusters (blue tetrahedra) held apart by rigid organic rods, leaving the open cavities that give the framework its enormous internal surface area.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MOF-5_Crystal_Structure.png",
+      "author": "Axs154",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/metal-organic-framework-polymers/northwestern-university-evanston-campus.webp",
+      "alt": "A tree-lined stone footpath on a university campus, leading toward a Gothic-style building with pointed arched windows, flanked by another stone building on the left.",
+      "caption": "Northwestern University's Evanston campus, home to the Farha and Hupp laboratories where NU-110 set its 2012 surface-area record — and, that same year, the site of NuMat Technologies, a spin-out company founded to move MOF chemistry from the laboratory bench toward industrial gas storage and separation.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Northwestern_University_campus,_Evanston,_IL.jpg",
+      "author": "~delta",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

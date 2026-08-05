@@ -2391,3 +2391,230 @@ a.tl-card:hover {
     height: 14rem;
   }
 }
+
+/* ============================================== chemical formula row ===
+   One Identity row carrying both notations of the repeat unit, switched by
+   a segmented pair that reuses the structure viewer's control language
+   (.struct-pair / .struct-btn above) so the two toggles in the Identity
+   card read as one family. */
+.formula {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+/* Load-bearing: .formula is a flex container, and a flex item's blockified
+   display would otherwise outrank the user agent's [hidden] rule. */
+.formula [hidden] {
+  display: none !important;
+}
+.formula-text {
+  font-variant-numeric: lining-nums;
+  overflow-wrap: anywhere;
+}
+.formula-text sub {
+  font-size: 0.7em;
+  line-height: 0;
+}
+/* The caveat the formula needs, on its own line so it never reads as part of
+   the formula: which isomer is drawn, or what a chain repeat leaves out. */
+.formula-note {
+  flex-basis: 100%;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+}
+
+/* ================================================= narrative plates ===
+   Historical photographs set into the author's narrative. No card and no
+   mat: the photograph sits on the page, edged with a hairline so a pale or
+   blown-out image cannot dissolve into the paper. */
+.plate {
+  margin: var(--space-4) auto;
+  max-width: var(--measure);
+}
+.plate-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: var(--foil);
+  margin: 0 0 var(--space-2);
+}
+.plate-label::before,
+.plate-label::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid var(--rule);
+}
+/* The photograph sits behind glass: a hairline frame, a theme-matched veil
+   that pulls very different white points onto one page, and a single soft
+   diagonal highlight so the glazing reads as glass rather than as haze. The
+   overlay is a pseudo-element on the wrapper, never a filter on the image
+   itself -- a filter would also dim the frame and cost a repaint on scroll. */
+.plate-glass {
+  position: relative;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 4px var(--shadow);
+}
+.plate-glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* The veil is a flat colour, so it has to be the background-COLOUR under
+     the gloss gradient -- listing it as a second background-image layer
+     silently computes to `none`. */
+  background-color: var(--plate-veil);
+  background-image: linear-gradient(
+    146deg,
+    var(--plate-gloss) 0%,
+    color-mix(in srgb, var(--plate-gloss) 35%, transparent) 22%,
+    transparent 46%
+  );
+}
+.plate-img {
+  display: block;
+  max-width: 100%;
+  max-height: 26rem;
+  width: auto;
+  height: auto;
+}
+/* .variant-gilt justifies narrative paragraphs — captions stay centred. */
+.plate .plate-caption,
+.plate-pair .plate-caption {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-align: center;
+}
+.plate-credit {
+  display: block;
+  margin-top: 0.35em;
+  font-family: var(--font-label);
+  font-style: normal;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+}
+.plate-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--era-color) 40%, transparent);
+  text-underline-offset: 0.15em;
+}
+.plate-credit a:hover {
+  color: var(--era-color);
+}
+
+/* Two that belong together. The pair stays inside the text column, so each
+   photograph takes half the measure — the page keeps one edge all the way
+   down and a pair never shouts over a single plate. */
+.plate-pair {
+  margin: var(--space-4) auto;
+  max-width: var(--measure);
+}
+.plate-pair-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  align-items: end;
+}
+.plate-pair-grid .plate {
+  margin: 0;
+  max-width: none;
+}
+/* A fixed square keeps the two halves identical whatever the source
+   photographs' proportions are, so the captions below them always align. */
+.plate-pair-grid .plate-glass {
+  width: 100%;
+}
+.plate-pair-grid .plate-img {
+  width: 100%;
+  max-height: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+}
+.plate-pair-grid .plate-caption {
+  font-size: 0.85rem;
+}
+@media (max-width: 720px) {
+  .plate-pair-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  .plate-pair-grid .plate-img {
+    aspect-ratio: auto;
+    max-height: 26rem;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+/* Illustrations list — full attribution for the narrative photographs,
+   gathered at the foot of the References card the way a book lists its
+   plates. Follows the .ref-list language so the two read as one section. */
+.img-credits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.img-credit {
+  display: flex;
+  gap: var(--space-2);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.img-credit-n {
+  flex: none;
+  min-width: 4.5em;
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--foil);
+}
+.img-credit-body {
+  min-width: 0;
+}
+.img-credit-subject {
+  display: block;
+  color: var(--ink-soft);
+}
+.img-credit-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+.img-credit-url {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--era-color) 40%, transparent);
+  text-underline-offset: 0.15em;
+}
+.img-credit-url:hover {
+  color: var(--era-color);
+}
+
+/* Glazing is a reader preference, like the theme and the unit system:
+   html.no-glaze lifts the glass off every narrative photograph, leaving the
+   hairline frame. Stamped before first paint by the Layout's head script, so
+   an unglazed reader never sees a flash of glass. */
+.no-glaze .plate-glass::after {
+  display: none;
+}

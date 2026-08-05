@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C8H8)x·(C4H8)y",
+    "structural": "[-CH2-CH(C6H5)-]x[-CH2-CH2-CH2-CH2-]y"
+  },
   "repeat_unit": "{[][$]CC(c1ccccc1)[$],[$]CCCC[$][]}",
   "smiles_depiction": "*CC(c1ccccc1)*.*CCCC*",
-  "notation_note": "SEBS is a triblock: a long midblock flanked by two polystyrene endblocks, which is why it behaves as a rubber at room temperature yet melts and flows like a thermoplastic. The midblock is polybutadiene after hydrogenation, so it contains both the tetramethylene run shown and butylene branches from 1,2-addition.",
+  "notation_note": "SEBS is a segmented A-B-A triblock, not a random or alternating copolymer: the two brackets above show the two segment compositions and their approximate ratio, but the real chain is one long hydrogenated-polybutadiene midblock (segment y) flanked by a polystyrene block (segment x) at each end. That block sequence, not the monomer ratio, is why SEBS behaves as a rubber at room temperature yet melts and flows like a thermoplastic. The midblock also contains butylene branches from 1,2-addition alongside the tetramethylene run shown.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -37,10 +41,45 @@
   "year_of_origin": 1969,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Neil Armstrong"
+    "Robert C. Jones"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Apollo 11 lands on the Moon (1969)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/styrene-ethylene-butylene-styrene/armstrong-on-moon-1969.webp",
+      "alt": "An astronaut in a white spacesuit working beside the gold-foil-wrapped leg of a lunar module on the grey, cratered surface of the Moon, an American flag patch visible on the strut.",
+      "caption": "Neil Armstrong at the Apollo 11 lunar module, 20 July 1969 — the only photograph taken of him on the Moon's surface, since he was holding the camera in most of the others.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:As11-40-5886.jpg",
+      "author": "Buzz Aldrin / NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-ethylene-butylene-styrene/sbs-tem-micrograph.webp",
+      "alt": "A grey-scale electron micrograph showing a dense, roughly hexagonal pattern of small pale dots scattered evenly across a darker background, with a 0.2-micrometre scale bar.",
+      "caption": "An electron micrograph of Kraton, SEBS's unhydrogenated sister SBS, taken the year after Jones's patent: the pale dots are the polystyrene domains, each only a few tens of nanometres across, suspended in the surrounding rubber matrix.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sbs_block_copolymer.jpg",
+      "author": "Peter R. Lewis",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-ethylene-butylene-styrene/overmolded-handle-closeup.webp",
+      "alt": "Close-up of a clear rigid plastic handle tip with a flexible green strip of a second, softer plastic running down its centre and protruding slightly beyond the clear material.",
+      "caption": "Two plastics, one mold: a soft SEBS-style insert fused into a rigid handle by co-injection, the everyday form this chemistry is most often felt rather than seen.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toothbrush_handle_of_sandwich_injection_closeup.jpg",
+      "author": "Swoolverton",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/styrene-ethylene-butylene-styrene/asphalt-paving-machine.webp",
+      "alt": "A large asphalt paving machine laying fresh grey asphalt in a car park, under a cloudy sky, with a traffic cone and safety fencing nearby.",
+      "caption": "Asphalt paving: an unglamorous application, and one where a rubbery styrenic additive like SEBS improves resistance to rutting and cracking without anyone noticing it is there.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Asphalt_paving_machine_-_geograph.org.uk_-_7349239.jpg",
+      "author": "Thomas Nugent",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.915,

@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": "9005-32-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Linear copolymer of β-D-mannuronic acid (M) and α-L-guluronic acid (G) residues, arranged in homopolymeric M-blocks, homopolymeric G-blocks, and alternating MG sequences whose proportions vary by algal source -- block structure/ratio is not fixed enough for one canonical repeat unit.",
   "iupac_name": null,
@@ -47,7 +51,40 @@
     "Edward Charles Cortis Stanford"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/alginate/kelp-forest-firth-of-forth.webp",
+      "alt": "Fronds of brown kelp seaweed floating just beneath the surface of shallow, clear coastal water.",
+      "caption": "Brown kelp in the Firth of Forth, Scotland — the same waters Edward Stanford drew on when he began looking for a use for seaweed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kelp_off_Car_Craig,_Firth_of_Forth_-_geograph.org.uk_-_1318686.jpg",
+      "author": "Simon Johnston",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/alginate/seaweed-harvesting-uk.webp",
+      "alt": "Two people in a small open boat harvesting seaweed from the muddy shoreline of a wide, calm river estuary, framed by trees and green hills.",
+      "caption": "Seaweed harvesting on a British estuary today — a small-scale version of the same raw-material gathering that first fed Stanford's Scottish algin works.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Seaweed_harvesting_-_geograph.org.uk_-_7523682.jpg",
+      "author": "Gerald England",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/alginate/dental-impression-alginate.webp",
+      "alt": "A gloved hand holding a pale pink dental impression tray filled with a set, tooth-imprinted alginate mold showing the detailed shape of a row of upper teeth.",
+      "caption": "A dental impression set in alginate. The same calcium-triggered gelling that locks up a kelp cell wall captures the fine detail of a tooth in seconds.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dental_impression_upper_teeth.jpg",
+      "author": "Teemeah",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/alginate/spherification-coke-beads.webp",
+      "alt": "A small white ceramic plate holding a cluster of glistening amber spheres, each about the size of a large pearl, in a light syrup.",
+      "caption": "Spherified droplets made using alginate and calcium — the egg-box gel, plated as a dessert.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coke_Spherification_-_testing_of_Mixology_Molecular_bar.jpg",
+      "author": "Pipeqklon",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.79,

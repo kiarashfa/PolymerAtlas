@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9002-84-0",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2F4)n",
+    "structural": "[-CF2-CF2-]n"
+  },
   "repeat_unit": "{[][$]C(F)(F)C(F)(F)[$][]}",
   "smiles_depiction": "*C(F)(F)C(F)(F)*",
   "iupac_name": "Poly(1,1,2,2-tetrafluoroethylene)",
@@ -40,8 +44,45 @@
   "key_figures": [
     "Roy Plunkett"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Freon and the 1930s home-refrigeration boom",
+    "Discovery of nuclear fission (Otto Hahn and Fritz Strassmann, 1938)",
+    "The Manhattan Project's Oak Ridge gaseous diffusion plant"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polytetrafluoroethylene/frigidaire-refrigerators-1934.webp",
+      "alt": "A French magazine advertisement for Frigéco refrigerators, showing three women in coats and hats admiring an open refrigerator stocked with food, above French advertising copy.",
+      "caption": "The mechanical refrigerator was becoming a mass consumer object across the industrialised world in the 1930s, and its growth is what put a cylinder of experimental refrigerant gas on Plunkett's bench.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frigidaires.jpg",
+      "author": "loki11",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polytetrafluoroethylene/nuclear-fission-apparatus-1938.webp",
+      "alt": "A wooden laboratory bench crowded with 1930s electronic apparatus — vacuum tubes, wired boxes, batteries and glass vessels — displayed behind museum glass, with a diagram of the layout on the wall behind.",
+      "caption": "The apparatus with which Otto Hahn and Fritz Strassmann split the uranium atom in Berlin in 1938, now in the Deutsches Museum. The same year, a DuPont chemist in New Jersey found a molecule that resisted being taken apart by anything at all.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nuclear_Fission_Experimental_Apparatus_1938_-_Deutsches_Museum_-_Munich.jpg",
+      "author": "J Brew",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polytetrafluoroethylene/zepel-teflon-fabric-ad-1963.webp",
+      "alt": "A 1963 DuPont magazine advertisement showing a man in a raincoat standing behind a screen of falling rain, with the text 'Even if it rains pea soup' and the Zepel fabric fluoridizer branding below.",
+      "caption": "DuPont spent the 1950s and 60s finding fluorochemistry a life beyond the laboratory bench — Zepel, a fabric treatment built on the same chemistry as Teflon, is one of many trade names PTFE and its relatives wore into the consumer market.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1963_Zepel_advertisement.jpg",
+      "author": "DuPont Corporation",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polytetrafluoroethylene/k25-gaseous-diffusion-plant.webp",
+      "alt": "An aerial black-and-white photograph of the enormous U-shaped K-25 gaseous diffusion building at Oak Ridge, Tennessee, surrounded by smaller support buildings and roads.",
+      "caption": "The K-25 gaseous diffusion plant at Oak Ridge, where PTFE gaskets and seals held back uranium hexafluoride gas that would have destroyed almost any other material — a use classified for years after the war.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:K-25_aerial_view_cropped.jpg",
+      "author": "James E. Westcott, official US Army Manhattan Project photographer",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 2.18,

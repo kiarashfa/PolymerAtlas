@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A hybrid nanocomposite -- inorganic semiconductor quantum dots (a few nanometers, e.g. CdSe, InP) dispersed/embedded in a polymer host matrix -- rather than a polymer chemistry itself; the host polymer varies by application (encapsulant resins, printable matrices) and the quantum dots are not a polymeric species at all.",
   "iupac_name": null,
@@ -19,9 +23,49 @@
   "polymer_class": null,
   "year_of_origin": 2020,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Alexei Ekimov",
+    "Louis Brus",
+    "Moungi Bawendi"
+  ],
+  "historical_events_referenced": [
+    "Samsung Advanced Institute of Technology publishes an efficient, stable cadmium-free blue quantum dot LED in Nature (14 October 2020)",
+    "2023 Nobel Prize in Chemistry awarded to Ekimov, Brus and Bawendi for the discovery and synthesis of quantum dots"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/quantum-dot-polymers/plasmachem-quantum-dots-vials.webp",
+      "alt": "Eight small glass vials in a row, each glowing a different vivid colour under ultraviolet light — from pale violet through cyan, green, yellow, orange, and two shades of red — against a black background.",
+      "caption": "Colloidal quantum dots of the same core semiconductor, each vial a different size, photographed under ultraviolet light. Size alone sets the colour — nothing about the chemistry changes between one vial and the next.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Quantum_Dots_with_emission_maxima_in_a_10-nm_step_are_being_produced_at_PlasmaChem_in_a_kg_scale.jpg",
+      "author": "Antipoff",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/quantum-dot-polymers/moungi-bawendi-nobel-reception-2023.webp",
+      "alt": "A group of people in formal evening dress talking at a reception; the central figure, an older man with grey hair wearing a Nobel medal pin on his lapel, gestures with one hand while holding a champagne glass in the other.",
+      "caption": "Moungi Bawendi (centre) at the US Embassy's reception for the 2023 Nobel laureates in Stockholm. His 1993 synthesis method is why quantum dots could be manufactured to a reliable size at all — the step that turned Ekimov's and Brus's discovery into an industry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:US_Embassy_Sweden_2023_Nobel_Reception_(53390303343).jpg",
+      "author": "US Embassy Sweden",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/quantum-dot-polymers/samsung-qled-tv-8k.webp",
+      "alt": "A large flat-screen television on a showroom floor, illuminated 'QLED 8K' lettering above it, displaying a vivid, saturated image of root vegetables against a black background.",
+      "caption": "A Samsung QLED television on display, its quantum-dot film delivering the saturated colour these sets are marketed on — the display application quantum dots reached shop floors through years before the 2020 blue breakthrough closed out the cadmium-free set.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Samsung_QLED_TV_8K_-_75_inches_-_2018-11-02.jpg",
+      "author": "Bretwa",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/quantum-dot-polymers/sargent-group-quantum-dot-solar-cell.webp",
+      "alt": "A square reddish-brown photovoltaic device on a white background, its surface patterned in radiating streaks with four rows of four dark circular metal electrode contacts.",
+      "caption": "An experimental quantum dot solar cell from the University of Toronto's Sargent Group, its eight stacked layers of differently sized dots each tuned to absorb a different slice of the solar spectrum.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sargent_Group_quantum_dot_solar_cell.jpg",
+      "author": "Lukasz Brzozowski",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

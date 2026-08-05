@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "9002-88-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H4)n",
+    "structural": "[-CH2-CH2-]n"
+  },
   "repeat_unit": "{[][$]CC[$][]}",
   "smiles_depiction": "*CC*",
-  "notation_note": "Grade (LDPE/LLDPE/MDPE/HDPE/UHMWPE) varies by branching architecture rather than by a different repeat unit, so this hub entry covers the family; individual grades may get their own variant treatment later.",
+  "notation_note": "The bracketed unit is the unbranched backbone common to every grade; it is the branching architecture (none in HDPE, short-chain in LLDPE, short- and long-chain in LDPE) that actually distinguishes the grades, and that is invisible to this notation. This hub entry covers the whole family; individual grades may get their own variant treatment later.",
   "iupac_name": "Polyethene",
   "synonyms": [
     "polyethene",
@@ -59,10 +63,55 @@
   "key_figures": [
     "Eric Fawcett",
     "Reginald Gibson",
-    "Michael Perrin"
+    "Michael Perrin",
+    "Karl Ziegler"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Robert Watson-Watt's Daventry Experiment demonstrates radar (26 February 1935)",
+    "The Battle of Britain, fought with the aid of the Chain Home radar network (1940)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyethylene/daventry-radio-van-1933.webp",
+      "alt": "A man wearing headphones sits inside the open rear doors of a boxy 1930s radio van, operating receiver equipment, with a small dog at his feet.",
+      "caption": "The Radio Research Section's van, photographed two years before it carried the receiving equipment for the Daventry Experiment that proved radar could work.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jock_Herd_in_Ditton_Park_radio_van.jpg",
+      "author": "Arnold Wilkins",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene/michael-perrin-1971.webp",
+      "alt": "A balding man in glasses and a suit, photographed mid-conversation with one arm resting on a table.",
+      "caption": "Michael Perrin, photographed decades later as he retired from the chairmanship of the Wellcome Foundation. In 1935 he led the ICI team that turned an unrepeatable accident into a controllable industrial process.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michael_Perrin_1971.jpg",
+      "author": "Wellcome Foundation Archive, Foundation News, Volume 23 Part 1 Page 3",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene/first-polythene-pillbox-1936.webp",
+      "alt": "A small, plain, dark cylindrical pillbox with a fitted lid, resting on a pale surface.",
+      "caption": "A pillbox pressed from the first pound of polythene ever produced, and given to Frank Bebbington, the lab assistant who saw the reaction work.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:First_polythene_pillbox.JPG",
+      "author": "User:Geni",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene/chain-home-radar-poling-1945.webp",
+      "alt": "Seven tall steel and timber lattice radar towers standing in a flat field, photographed from ground level against a cloudy sky.",
+      "caption": "The Chain Home station at Poling, Sussex — one link in the radar chain that polyethylene-insulated cable helped keep running through the war.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chain_Home_radar_installation_at_Poling,_Sussex,_1945._CH15173.jpg",
+      "author": "Royal Air Force official photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene/hdpe-pipe-installation.webp",
+      "alt": "A row of white plastic pipes curving across reddish earth on a construction site, with workers in high-visibility clothing and machinery in the background.",
+      "caption": "HDPE pipe being laid at a modern industrial site — a direct descendant of Ziegler's low-pressure, low-branching chemistry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Site_Photo_of_HDPE_Pipe.jpg",
+      "author": "GordonJ86",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

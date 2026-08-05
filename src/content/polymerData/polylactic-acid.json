@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "26100-51-6",
   "resin_id_code": "7",
+  "chemical_formula": {
+    "empirical": "(C3H4O2)n",
+    "structural": "[-O-CH(CH3)-CO-]n"
+  },
   "repeat_unit": "{[][>]O[C@@H](C)C(=O)[<][]}",
   "smiles_depiction": "*O[C@@H](C)C(=O)*",
   "notation_note": "The L unit is shown. Commercial PLA is made from L-lactide, D-lactide or their mixtures, and the L:D ratio governs how crystalline -- and how heat-resistant -- the material is.",
@@ -43,9 +47,49 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1982,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Wallace Carothers",
+    "Patrick Gruber",
+    "NatureWorks"
+  ],
+  "historical_events_referenced": [
+    "1982 collapse in U.S. corn prices and farmland values (1980s farm crisis)",
+    "1980 U.S. grain embargo against the Soviet Union"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polylactic-acid/corn-combine-harvest.webp",
+      "alt": "An aerial photograph of a green combine harvester cutting through a large field of dried corn stalks, unloading grain into a cart towed alongside it, with dust rising behind.",
+      "caption": "Corn coming off the field. By 1982 the United States was harvesting far more of it than the world's markets wanted to buy.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Corn_combine_harvest_with_grain_cart-4.jpg",
+      "author": "Wikideas1",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polylactic-acid/cargill-grain-elevator.webp",
+      "alt": "A large concrete grain elevator complex beside a river, with the Cargill company logo painted on its tallest tower and a rail bridge crossing the water in the foreground.",
+      "caption": "A Cargill grain elevator on the Mississippi. The same company that moved the corn surplus by rail and barge would later fund the research that turned some of it into plastic.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cargill_and_grain_elevator_in_East_St._Louis.jpg",
+      "author": "Mark Schierbecker",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polylactic-acid/pla-cups.webp",
+      "alt": "Four clear plastic cups standing on a dark cloth, each printed with a green band and leaf logo, with one cup's base turned upward to show a stamped recycling symbol reading VEGWARE R280-VW PLA.",
+      "caption": "PLA drinking cups, stamped with the resin code that tells a composting facility what it is holding.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cmglee_PLA_cups.jpg",
+      "author": "Cmglee",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polylactic-acid/pla-filament-spool.webp",
+      "alt": "A spool of bright orange plastic filament wound in front of its retail box, the box printed with the text 'PLA filament 1.75 mm, 1 kg' and small icons for storage and printing conditions.",
+      "caption": "PLA sold as filament — the form in which most people encounter it today, corn's least likely destination in 1982.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bobina_PLA.jpg",
+      "author": "RaquelRendo",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.25,

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A functional class defined by dual-state shape recovery behavior rather than one chemistry -- physically crosslinked examples include polyurethanes and PET-PEO block copolymers; chemically crosslinked examples include crosslinked polyurethanes and PEO-based networks; PEEK-based thermoplastic variants also exist.",
   "iupac_name": null,
@@ -23,9 +27,47 @@
   "polymer_class": null,
   "year_of_origin": 2004,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Andreas Lendlein",
+    "Robert Langer"
+  ],
+  "historical_events_referenced": [
+    "SpaceShipOne wins the Ansari X Prize for private crewed spaceflight (4 October 2004)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/shape-memory-polymers/spaceshipone-landing-june-2004.webp",
+      "alt": "A small white rocket-powered aircraft with a bulbous nose, twin tail booms and stubby wings, coming in to land over scrubland with its landing gear extended and its wings in the flat, unfeathered position.",
+      "caption": "SpaceShipOne landing at Mojave in June 2004, wings flattened back out of the feathered re-entry position it had held minutes earlier.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kluft-photo-SS1-landing-June-2004-Img_1406c.jpg",
+      "author": "Ikluft",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/shape-memory-polymers/spaceshipone-xprize-crowd-2004.webp",
+      "alt": "A dense crowd at an airfield, most people holding up cameras or shading their eyes as they watch the sky, with a jumbo jet-sized carrier aircraft and a large video screen behind them.",
+      "caption": "The crowd at Mojave Air and Space Port watching SpaceShipOne's X Prize-winning flight of 4 October 2004.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_sea_of_people_watch_10_4_2004_as_SpaceShipOne_makes_it_second_flight_photo_Don_Ramey_Logan.jpg",
+      "author": "Don Ramey Logan",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/shape-memory-polymers/robert-langer-laboratory.webp",
+      "alt": "An older man with grey hair, wearing a white lab coat over a blue shirt, standing with arms crossed in a laboratory lined with shelves of reagent bottles and equipment.",
+      "caption": "Robert Langer, whose MIT lab produced the biodegradable shape-memory network Lendlein trained on and the two later went on to patent together.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Langer_BioTech_Awards_Video_laboratory.png",
+      "author": "Staff videographer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/shape-memory-polymers/mit-great-dome.webp",
+      "alt": "A domed neoclassical building with tall columns, seen across a snow-covered courtyard framed by bare trees.",
+      "caption": "MIT's Great Dome. Lendlein trained as a postdoctoral fellow here in Robert Langer's lab before returning to Germany to found mnemoScience and, later, direct polymer research at GKSS.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Great_dome_of_MIT,_Feb_2021.jpg",
+      "author": "Peacearth",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

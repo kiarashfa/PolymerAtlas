@@ -53,6 +53,18 @@
   --era-6: light-dark(#4d5bc9, #9ba8f0);
   --era-color: var(--foil); /* pages without one era (catalogue, timeline head) */
 
+  /* Museum glazing over a narrative photograph. Both are mixed FROM --paper,
+     so each presentation style and each theme glazes with its own stock
+     automatically: a warm veil on Gilt, a cooler one on Atelier, and a
+     heavier one after dark, where an unglazed white scan would otherwise
+     glare off a near-black page. The veil is what makes photographs of very
+     different whiteness sit together on one page. */
+  --plate-veil: light-dark(
+    color-mix(in srgb, var(--paper) 16%, transparent),
+    color-mix(in srgb, var(--paper) 34%, transparent)
+  );
+  --plate-gloss: light-dark(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
+
   --radius: 14px;
   --radius-small: 8px;
   --space-1: 0.4rem;

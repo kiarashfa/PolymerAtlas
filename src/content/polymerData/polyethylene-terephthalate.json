@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "25038-59-9",
   "resin_id_code": "1",
+  "chemical_formula": {
+    "empirical": "(C10H8O4)n",
+    "structural": "[-O-CH2-CH2-O-CO-C6H4-CO-]n"
+  },
   "repeat_unit": "{[][>]OCCOC(=O)c1ccc(cc1)C(=O)[<][]}",
   "smiles_depiction": "*OCCOC(=O)c1ccc(cc1)C(=O)*",
   "iupac_name": "Poly(ethylene terephthalate)",
@@ -58,10 +62,47 @@
   "era": "The Wartime Innovation Period (1939-1945)",
   "key_figures": [
     "John Rex Whinfield",
-    "James Tennant Dickson"
+    "James Tennant Dickson",
+    "Nathaniel Wyeth"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "First controlled nuclear chain reaction, Chicago Pile-1 (2 December 1942)",
+    "Wartime clothes rationing and the 'Make Do and Mend' campaign in Britain (1941-1942)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyethylene-terephthalate/chicago-pile-1-reactor-1942.webp",
+      "alt": "A cutaway illustration of a large cubic structure built from stacked graphite and uranium blocks inside a squash court, with a wooden control-rod scaffold beside it and a ladder leaning against the pile.",
+      "caption": "Chicago Pile-1, drawn from memory years later since no photograph of the actual 1942 apparatus was permitted — one of the year's genuine secrets, kept the way governments keep them.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stagg_Field_reactor.jpg",
+      "author": "Melvin A. Miller of the Argonne National Laboratory",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-terephthalate/austerity-fashion-britain-1942.webp",
+      "alt": "Three men in a photography studio: one in the centre wears a jacket and trousers from the wartime utility clothing scheme while an older man beside him inspects the sleeve, and a third man in pinstripe suit looks on.",
+      "caption": "Men modelling Britain's wartime utility clothing scheme, cut to strict cloth rations — the same shortage of wool and cotton that sent Whinfield and Dickson looking for a fiber that owed nothing to a farm.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Home_Front_In_Britain_During_The_Second_World_War_-_Austerity_fashion_for_men.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-terephthalate/pet-bottle-preform.webp",
+      "alt": "A clear, thick-walled PET preform shaped like a small test tube with a threaded neck, lying beside a separate blue plastic screw cap, on a white background.",
+      "caption": "A PET preform, injection-moulded thick and then reheated and blown into its final bottle shape — the process Nathaniel Wyeth's 1973 patent made possible.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PETling.jpg",
+      "author": "Frank Murmann",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-terephthalate/pet-bottle-bales-recycling.webp",
+      "alt": "A tightly compressed bale of crushed, multicoloured PET bottles and caps, viewed close up, at a recycling facility.",
+      "caption": "Baled PET bottles awaiting reprocessing. PET is recycled more successfully than almost any other plastic, though by most estimates still less than a third of it is captured worldwide.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bales_of_PET_bottles_closeup.jpg",
+      "author": "Grendelkhan",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.35,

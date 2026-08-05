@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "9003-01-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C3H4O2)n",
+    "structural": "[-CH2-CH(COOH)-]n"
+  },
   "repeat_unit": "{[][$]CC(C(=O)O)[$][]}",
   "smiles_depiction": "*CC(C(=O)O)*",
+  "notation_note": "Shown as the un-ionized homopolymer. Commercial superabsorbent grades are lightly crosslinked (originally with divinylbenzene, following Werner Kern's 1938 work) and cosmetic carbomer grades with allyl sucrose or allyl pentaerythritol, often as the partly neutralized sodium or potassium salt; the chain repeat above leaves out that crosslinking.",
   "iupac_name": "Poly(acrylic acid)",
   "synonyms": [
     "Carbomer",
@@ -44,9 +49,48 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1929,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Otto Röhm",
+    "Werner Kern"
+  ],
+  "historical_events_referenced": [
+    "Röhm & Haas registers the Luglas laminated-glass trademark (26 October 1929)",
+    "Wall Street Crash / Black Tuesday (29 October 1929)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyacrylic-acid/crowd-outside-nyse-1929.webp",
+      "alt": "A high-angle photograph looking down a narrow street between tall stone office buildings, packed edge to edge with a crowd of people in coats and hats, automobiles stalled in the crush below.",
+      "caption": "Crowds outside the New York Stock Exchange on 29 October 1929 — weeks after Röhm &amp; Haas had been celebrating a production record for its acrylic-cored safety glass.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg",
+      "author": "US-gov",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylic-acid/otto-rohm-portrait.webp",
+      "alt": "A formal studio portrait of a young man in a three-piece suit and tie, one hand in his trouser pocket, the other resting on the back of an ornately upholstered chair.",
+      "caption": "Otto Röhm, whose 1901 doctoral thesis on the polymerization products of acrylic acid started the whole family of research that would eventually include this polymer.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Otto_Rohm_-_DPLA_-_96030ea2629ca3f5a9f9329c8cc2da82_(page_1).jpg",
+      "author": "Unknown author",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylic-acid/rohm-haas-darmstadt-factory-illustration.webp",
+      "alt": "An engraved bird's-eye illustration of a sprawling factory complex with several tall smoking chimneys, mounted on a period card captioned 'Chemische Fabrik Röhm & Haas, Darmstadt.'",
+      "caption": "Röhm & Haas's works at Darmstadt, where two decades of patient research into acrylic acids and esters finally produced a marketable product in 1929.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rohm_%26_Haas_Chemische_Fabrik,_Darmstadt,_Germany_-_DPLA_-_e57b2d67ba9cc3f6120dfaa05873d03f_(page_2).jpg",
+      "author": "Unknown author",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylic-acid/superabsorbent-polymer-crystals.webp",
+      "alt": "A close-up photograph of a small heap of coarse white crystalline granules scattered against a black background.",
+      "caption": "Sodium polyacrylate granules — the lightly crosslinked, water-swelling form of the polymer that turned polyacrylic acid's least useful property into its greatest one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Superabsorbent_Polymer.jpg",
+      "author": "User:Ritchey",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

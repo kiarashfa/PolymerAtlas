@@ -10,8 +10,12 @@
   "parent": null,
   "cas_number": "29658-26-2",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
-  "notation_note": "PEKK (polyetherketoneketone) is one member of the broader polyaryletherketone (PAEK) family, which also includes PEEK (already covered in its own hub entry) and PEK; this entry focuses on PEKK as the PAEK-family representative not otherwise covered.",
+  "notation_note": "PEKK (polyetherketoneketone) is one member of the broader, aromatic polyaryletherketone (PAEK) family, which also includes PEEK (already covered in its own hub entry) and PEK; this entry focuses on PEKK as the PAEK-family representative not otherwise covered. \"Polyketone\" is also used, unrelatedly, for the aliphatic carbon monoxide/olefin copolymers (e.g. Shell's Carilon) discussed in this entry's history; the two chemistries share a name but no repeat unit.",
   "iupac_name": null,
   "synonyms": [
     "polyaryletherketone",
@@ -39,9 +43,55 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1987,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Eit Drent",
+    "Willard Hallam Bonner Jr."
+  ],
+  "historical_events_referenced": [
+    "Black Monday stock market crash (19 October 1987)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyketones/dupont-experimental-station-gate.webp",
+      "alt": "A stone-faced sign at a gated entrance reading DUPONT EXPERIMENTAL STATION MAIN GATE, with a second sign for a later tenant, Incyte, beside it, set against a backdrop of trees.",
+      "caption": "The entrance to DuPont's Experimental Station in Wilmington, Delaware, the city Willard Bonner gave as his address when his 1959 patent first put a ketone-linked aromatic backbone on paper.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DuPont_Experimental_Station_Main_Gate.JPG",
+      "author": "Littleinfo",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyketones/shell-technology-centre-amsterdam.webp",
+      "alt": "A modern multi-storey brick office and laboratory building with a large Shell shell-logo mounted near its roofline, seen across a lawn planted with young trees.",
+      "caption": "Shell's technology centre in Amsterdam, present-day home of the chemical research that grew out of Eit Drent's 1987 catalyst work on aliphatic polyketones.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shell_Technology_Centre.JPG",
+      "author": "Marion Golsteijn",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyketones/cst-100-starliner-slc41-2022.webp",
+      "alt": "An overhead view of a white, dome-topped space capsule being lifted by an overhead crane inside an industrial processing building, surrounded by scaffolding, work platforms, and technicians in hard hats.",
+      "caption": "Boeing's CST-100 Starliner spacecraft being moved onto its launch vehicle in 2022 — one of the vehicles PEKK components, made by additive manufacturing, fly aboard.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Boeing_CST-100_Starliner_for_OFT-2_Arrives_at_SLC-41_0095.jpg",
+      "author": "Ben Smegelsky",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyketones/pekk-hdd-part.webp",
+      "alt": "A small, transparent amber-coloured injection-moulded plastic bracket with a metal cylindrical insert, photographed on a white background next to a centimetre ruler.",
+      "caption": "A PEKK part made for a hard-disk-drive assembly, shown against a centimetre scale — the natural amber colour and fine, stable moulding detail typical of the resin.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polyetherketoneketone_HDD_part.jpg",
+      "author": "Marián Hubinský",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyketones/oxford-performance-materials-south-windsor.webp",
+      "alt": "A man in a suit speaks from a lectern bearing the seal of the Governor of Connecticut, standing in front of a 3D-printing machine and a wall sign reading OXFAB Industrial Solutions.",
+      "caption": "Connecticut's governor visiting Oxford Performance Materials in 2014 — the firm that spent the 2000s refining DuPont's aromatic polyketone chemistry toward the market.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oxford_Performance_Materials_in_South_Windsor_(11968143503).jpg",
+      "author": "Dannel Malloy",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.295,

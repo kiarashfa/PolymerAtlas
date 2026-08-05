@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Natural gums are a heterogeneous class of branched polysaccharide/glycoprotein complexes whose exact composition depends on botanical source (e.g. gum arabic, tragacanth, karaya, guar, locust bean gum) -- there is no single repeat unit for the hub as a whole. Gum arabic, the most historically significant member, is illustrated via its constituent monosaccharides in the monomer[] field below.",
   "iupac_name": null,
@@ -62,12 +66,44 @@
   "historical_images": [
     {
       "src": "~/assets/polymers/natural-gums/jean-baptiste-dumas-portrait.jpg",
-      "alt": "Portrait of chemist Jean-Baptiste Dumas, from a c. 1908 Félix Potin collectible card.",
-      "caption": "Jean-Baptiste Dumas (1800-1884), whose 1833 chemical analyses helped establish natural gums as distinct, well-defined organic substances.",
+      "alt": "Engraved portrait of Jean-Baptiste Dumas in formal nineteenth-century dress, on a printed collectible card.",
+      "caption": "Jean-Baptiste Dumas. His 1833 nitrogen-analysis method gave chemists the first reliable way to tell a carbohydrate gum from a nitrogen-rich protein by composition alone.",
       "source_url": "https://commons.wikimedia.org/wiki/File:CFP-2_Dumas,_Jean-Baptiste_(1).jpg",
       "author": "Félix Potin (card publisher)",
-      "license": "Public Domain (CC-PD-Mark)",
-      "attribution_text": "Félix Potin trading card, c. 1908, via Wikimedia Commons (public domain)."
+      "license": "Public domain",
+      "attribution_text": "Félix Potin trading card, c. 1908 · Public domain"
+    },
+    {
+      "src": "~/assets/polymers/natural-gums/acacia-senegal-tree.webp",
+      "alt": "A low, wide-canopied, thorny acacia tree growing on a grassy, sandy hillside, with a smaller sapling in the foreground.",
+      "caption": "Acacia senegal, the source tree of gum arabic, growing wild in its native Sahel range.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acacia_senegal_L._01.jpg",
+      "author": "Mouhamadoulmansour",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/natural-gums/gum-arabic-exuding.webp",
+      "alt": "A close-up of a tree branch with rough, reddish bark, from which a translucent amber-colored bead of gum is oozing.",
+      "caption": "Gum exuding from a wounded branch — the raw material, unchanged from how it was collected in antiquity.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gum_Arabic_exuding.jpg",
+      "author": "Ashwin Baindur (User:AshLin)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/natural-gums/gum-trade-bakel-senegal.webp",
+      "alt": "A nineteenth-century engraving of a group of West African traders and their pack donkeys gathered near tents on open grassland, negotiating a sale.",
+      "caption": "Gum traders at the river port of Bakel, Senegal, in an 1890 engraving — the same overland trade network, still running six decades after Dumas first analyzed its product.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GommeBakel.jpg",
+      "author": "Jeanniot (grav.)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/natural-gums/gouache-paint-gum-binder.webp",
+      "alt": "Tubes of gouache paint arranged around a ceramic mixing palette with dabs of red, yellow, blue, green and black paint, alongside two paintbrushes and a water dish.",
+      "caption": "Modern gouache paint, still bound with gum arabic — the same job the material did for an Egyptian artisan four and a half thousand years earlier.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gouache.jpg",
+      "author": "Jeff Dahl",
+      "license": "CC BY-SA 3.0"
     }
   ],
   "physical": {

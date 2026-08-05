@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C14H10N2O2)n",
+    "structural": "[-NH-C6H4-NH-CO-C6H4-CO-]n"
+  },
   "repeat_unit": "{[][>]Nc1ccc(cc1)NC(=O)c1ccc(cc1)C(=O)[<][]}",
   "smiles_depiction": "*Nc1ccc(cc1)NC(=O)c1ccc(cc1)C(=O)*",
   "notation_note": "The para-aramid shown is Kevlar. Meta-aramids such as Nomex use the same chemistry with meta-substituted rings, which kinks the chain and gives flame resistance rather than tensile strength.",
@@ -52,10 +56,56 @@
   "year_of_origin": 1971,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Stephanie Kwolek"
+    "Stephanie Kwolek",
+    "Charles Smullen"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Attica prison uprising and its suppression (September 1971)",
+    "U.S. Law Enforcement Standards Laboratory established (January 1971)",
+    "Vietnam War: American soldiers issued nylon-and-fiberglass flak jackets"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/aramid-fibers/flak-jacket-vietnam-1971.webp",
+      "alt": "A young U.S. Army soldier stands in a doorway between head-high stacks of corrugated metal sheeting, wearing a bulky fabric flak vest over his fatigues and holding a shotgun, Vietnam, 1971.",
+      "caption": "A nylon-and-fiberglass flak jacket, standard body armor for American soldiers in Vietnam in 1971 — heavy and hot, and exactly the kind of protection an Army researcher was about to describe to a federal body-armor program.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Flak_Jacket.jpg",
+      "author": "Dwight Burdette",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "~/assets/polymers/aramid-fibers/attica-prison-riot-1971.webp",
+      "alt": "State troopers in gas masks stand over rows of prisoners lying face down in the mud of a prison yard, after retaking a New York correctional facility by force.",
+      "caption": "New York state police retake Attica Correctional Facility in September 1971 — the same year a federal researcher first requested a sample of DuPont's new fiber to test in a soft vest.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Attica_Prison_Riot,_1971.jpg",
+      "author": "Unknown author Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/aramid-fibers/stephanie-kwolek-1986.webp",
+      "alt": "An informal head-and-shoulders portrait of an older woman with short grey hair, wearing a grey cardigan over a ruffled blouse, photographed against striped curtains.",
+      "caption": "Stephanie Kwolek, photographed in 1986, the year before she retired from DuPont after four decades in its fiber research laboratories.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stephanie_Kwolek_1986.TIF",
+      "author": "Staff photographer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/aramid-fibers/dupont-chestnut-run-entrance.webp",
+      "alt": "A large red sign reading DU PONT Chestnut Run Plaza on a stone base, in front of a wooded corporate research campus.",
+      "caption": "One of the DuPont research campuses in Wilmington, Delaware, where Kwolek's Pioneering Research Laboratory group worked through the 1960s.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DuPont_Chestnut_Run_Plaza_entrance.JPG",
+      "author": "Littleinfo",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/aramid-fibers/aramid-fiber-filaments-macro.webp",
+      "alt": "A dense clump of fine, bright yellow-green fibers cut short and photographed in close-up against a black background.",
+      "caption": "Aramid staple fiber in its natural golden-yellow color — no dye involved, and the same fiber that ends up woven into a vest or braided into a marine rope.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aramid_fiber2.jpg",
+      "author": "Cjp24",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

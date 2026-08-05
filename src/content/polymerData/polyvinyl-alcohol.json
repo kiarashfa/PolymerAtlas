@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9002-89-5",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H4O)n",
+    "structural": "[-CH2-CH(OH)-]n"
+  },
   "repeat_unit": "{[][$]CC(O)[$][]}",
   "smiles_depiction": "*CC(O)*",
   "notation_note": "Made by hydrolyzing polyvinyl acetate rather than by polymerizing a vinyl alcohol monomer, which is thermodynamically unstable and tautomerizes to acetaldehyde; the degree of hydrolysis varies by grade, so commercial material retains some acetate units.",
@@ -38,9 +42,45 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1977,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["W. O. Herrmann", "W. Haehnel"],
+  "historical_events_referenced": [
+    "Star Wars in general release, queues outside Grauman's Chinese Theatre (1977)",
+    "NASA's Space Shuttle Enterprise approach and landing tests, Edwards Air Force Base (1977)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyvinyl-alcohol/graumans-chinese-theatre-1977.webp",
+      "alt": "Color photograph of the ornate ticket booth outside Grauman's Chinese Theatre in 1977, its window displaying a hand-lettered 'Star Wars' screening schedule and a poster.",
+      "caption": "Grauman's Chinese Theatre, 1977, mid-run of Star Wars — the year's most visible reminder that an audience will queue for something genuinely new.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Grauman's_Chinese_Theater,_Hollywood,_California_LCCN2017707846.tif",
+      "author": "John Margolies",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-alcohol/space-shuttle-enterprise-first-flight-1977.webp",
+      "alt": "The wingless-looking Space Shuttle prototype Enterprise gliding above cloud cover, having just separated from the NASA 747 carrier aircraft flying below it.",
+      "caption": "The shuttle Enterprise glides free of its 747 carrier during 1977's Approach and Landing Tests — an incomplete vehicle, built to solve one problem before the real one could be attempted.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Enterprise_First_Free_Flight_(19669327824).jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-alcohol/laundry-detergent-pod.webp",
+      "alt": "Clear plastic tubs of Tide Pods laundry detergent capsules on a store shelf, each capsule visible as a multicolored gel unit wrapped in a thin transparent film.",
+      "caption": "Laundry detergent pods — PVA's most visible role, dissolving on contact with wash water and releasing the detergent sealed inside.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tide_Pods_Laundry_Detergent_Capsules_(8422844630).jpg",
+      "author": "Austin Kirk",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-alcohol/pva-granular-sample.webp",
+      "alt": "A small glass vial holding pale, granular solid pellets of polyvinyl alcohol, photographed against a dark background.",
+      "caption": "Polyvinyl alcohol resin in its raw, granular form, before it is dissolved and cast into the films used in packaging, textiles and medicine.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sample_of_Polyvinyl_alcohol.jpg",
+      "author": "LHcheM",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.25,

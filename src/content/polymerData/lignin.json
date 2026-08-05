@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Lignin is an irregular, highly cross-linked aromatic network built from three phenylpropanoid monomers (coniferyl, sinapyl, and p-coumaryl alcohol) in ratios that vary by plant species and tissue -- there is no single repeat unit, only a family of monomers and an irregular crosslinking pattern.",
   "iupac_name": null,
@@ -36,9 +40,42 @@
   "polymer_class": "thermoset",
   "year_of_origin": 1875,
   "era": "Decoding Nature's Legacy (1833-1902)",
-  "key_figures": [],
+  "key_figures": ["Ferdinand Tiemann", "Augustin Pyramus de Candolle"],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/lignin/vanilla-beans.webp",
+      "alt": "Several long, dark brown, cured vanilla bean pods, twisted and curling, laid out against a plain white background.",
+      "caption": "Cured vanilla pods. The search for a cheaper substitute for their flavor led Ferdinand Tiemann, in 1874 and 1875, straight to coniferyl alcohol — one of lignin's own building blocks.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vanilla_6beans.JPG",
+      "author": "B.navez",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/lignin/pine-trunk-cross-section.webp",
+      "alt": "A storm-toppled pine tree lying on a forest floor, its rootball and soil-covered roots exposed, with a freshly sawn cross-section of the trunk visible in the foreground.",
+      "caption": "A storm-felled pine. The tree came down when its roots gave way — the wood itself, bound by lignin, held its shape through the fall.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2022-03-26_pine_tree_trunk_02.JPG",
+      "author": "Bärbel Miemietz",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/lignin/wood-pulp-mill-idaho.webp",
+      "alt": "An aerial view of a large industrial wood pulp mill beside a river, with tall smokestacks releasing plumes of white steam over rows of green processing buildings and stacked timber.",
+      "caption": "A modern kraft pulp mill. The chemistry inside is still doing what Dahl's 1879 process first did: dissolving lignin out of the wood to free the cellulose fiber underneath.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wood_pulp_mill,_Lewiston,_Idaho(7634100102).jpg",
+      "author": "Greg Goebel from Loveland CO, USA",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/lignin/woven-carbon-fiber.webp",
+      "alt": "A close-up of tightly woven black carbon fiber fabric, its diagonal twill pattern catching the light, with loose frayed strands along one cut edge.",
+      "caption": "Woven carbon fiber. Most carbon fiber today is spun from petroleum-derived precursors, but lignin — already rich in the aromatic carbon rings carbon fiber is made of — is a leading renewable candidate to replace them.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Woven_carbon_fiber_fabric.jpg",
+      "author": "Acheolg",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "25135-51-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C27H22O4S)n",
+    "structural": "[-O-C6H4-C(CH3)2-C6H4-O-C6H4-SO2-C6H4-]n"
+  },
   "repeat_unit": "{[][>]Oc1ccc(cc1)C(C)(C)c1ccc(cc1)Oc1ccc(cc1)S(=O)(=O)c1ccc(cc1)[<][]}",
   "smiles_depiction": "*Oc1ccc(cc1)C(C)(C)c1ccc(cc1)Oc1ccc(cc1)S(=O)(=O)c1ccc(cc1)*",
-  "notation_note": "Bisphenol A polysulfone is shown. Polyethersulfone drops the isopropylidene bridge, leaving only ether and sulfone links, which raises its glass transition further.",
+  "notation_note": "Bisphenol A polysulfone (PSU) is shown. Polyethersulfone (PES) drops the isopropylidene C(CH3)2 bridge entirely, leaving only ether and sulfone links between aromatic rings, which raises its glass transition further.",
   "iupac_name": null,
   "synonyms": [
     "PES",
@@ -47,9 +51,50 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1976,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Ilan Cabasso", "Union Carbide", "ICI"],
+  "historical_events_referenced": ["Viking 1 first photograph from the surface of Mars (1976)", "Cabasso, Klein and Smith's polysulfone hollow-fiber spinning paper (1976)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polysulfone-polyethersulfone/viking-1-first-mars-surface-image-1976.webp",
+      "alt": "A grainy black-and-white photograph of a rock-strewn, sandy Martian plain, with the curved edge of a spacecraft footpad and its shadow visible in the lower right corner.",
+      "caption": "The first clear photograph taken from the surface of Mars, transmitted by Viking 1 on 20 July 1976.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mars_Viking_12a001.png",
+      "author": "Roel van der Hoorn (Van der Hoorn)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polysulfone-polyethersulfone/kolff-artificial-kidney-1955.webp",
+      "alt": "Two masked, capped medical staff in a hospital ward standing beside a stand of glass bottles and rubber tubing connected to an artificial kidney machine, partially visible at the lower edge of the frame.",
+      "caption": "A Kolff-type artificial kidney in operation at a field hospital, 1955 — two decades before a membrane material existed that could survive being sterilized and reused indefinitely.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artificial_kidney_(Kolff_type)_in_operation.jpg",
+      "author": "United States Army",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polysulfone-polyethersulfone/hemodialysis-machine.webp",
+      "alt": "A tall white hemodialysis machine with a control panel of dials, buttons and a small screen, alongside pump mechanisms and tubing, in a tiled clinical room.",
+      "caption": "A modern hemodialysis machine. The membrane cartridge it drives — the part actually touching the patient's blood — is where polysulfone and polyethersulfone do their work.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hemodialysismachine.jpg",
+      "author": "Unknown author",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polysulfone-polyethersulfone/polysulfone-hollow-fiber-cross-section.webp",
+      "alt": "A black-and-white scanning electron micrograph of a hollow fiber wall in cross-section, showing a dense outer skin over an open, finger-like porous interior.",
+      "caption": "A polysulfone hollow-fiber membrane wall in cross-section, magnified. The asymmetric skin-over-sponge structure is what Cabasso's 1976 work first showed how to spin reliably.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polysulfone_Hollow_Fiber_Membrane_Cross-Section.jpg",
+      "author": "RobertsBiology",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polysulfone-polyethersulfone/polysulfone-food-service-pans.webp",
+      "alt": "Two amber-tinted transparent plastic food pans, one holding a slotted spoon and a pair of tongs, sitting on a black glass cooktop.",
+      "caption": "Polysulfone food-service pans, chosen for the same properties that make the polymer useful in a hospital: they go from freezer to steam table or microwave without cracking or clouding.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polysulfone_food_pans.jpg",
+      "author": "Zzorse",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.235,

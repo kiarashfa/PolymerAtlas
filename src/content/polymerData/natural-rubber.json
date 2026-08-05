@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9006-04-6",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C5H8)n",
+    "structural": "[-CH2-C(CH3)=CH-CH2-]n"
+  },
   "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
   "smiles_depiction": "*C/C(C)=C\\C*",
   "structure_variants": [
@@ -62,8 +66,54 @@
   "year_of_origin": 1836,
   "era": "Decoding Nature's Legacy (1833-1902)",
   "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Railway Acts of 1836 (35 new British lines authorised)",
+    "Texas Revolution: Alamo and Battle of San Jacinto (1836)",
+    "Great Trek of the Boers from Cape Colony (1835-1840s)",
+    "Collapse of the 1830s India-rubber fever"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/natural-rubber/codex-borgia-rubber-ball-offering.webp",
+      "alt": "A page from an Aztec painted manuscript showing the deity Xiuhtecuhtli seated beside a round black ball, a bundle of sticks and a feather offered before him.",
+      "caption": "A rubber ball offered to Xiuhtecuhtli, Lord of Fire, in the Codex Borgia - rubber as a ritual material centuries before it was ever a chemical one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xiuhtecuhtli,_Codex_Borgia,_14,_w_rubber_balls_offering.jpg",
+      "author": "cleaned up and touched up by User:Madman2001",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/natural-rubber/liverpool-manchester-railway-1831.webp",
+      "alt": "A hand-coloured print of an early steam train pulling open carriages of passengers along a raised embankment, with a horse-drawn carriage on a road below.",
+      "caption": "The Liverpool and Manchester Railway, the model every one of 1836's thirty-five new lines was chasing - proof that steam and iron could out-run anything the natural world offered.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coloured_View_on_the_Liverpool_and_Manchester_Railway,_1831.jpg",
+      "author": "plates by S.G. Hughes and H. Pyall after T. Bury, plates watermarked \"J. Whatman, 1831\"",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/natural-rubber/battle-of-san-jacinto-1895.webp",
+      "alt": "A large history painting of chaotic hand-to-hand fighting between mounted and dismounted soldiers on an open plain, smoke rising in the background.",
+      "caption": "The Battle of San Jacinto, fought in eighteen minutes in April 1836 - one of two new frontiers, an ocean apart, being claimed by force that same year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Battle_of_San_Jacinto_(1895).jpg",
+      "author": "Henry Arthur McArdle",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/natural-rubber/rubber-galoshes-1830s.webp",
+      "alt": "A pair of dark, glossy rubber overshoes with rounded toes, photographed against a plain background.",
+      "caption": "Rubber overshoes from the 1830s, the exact decade of the India-rubber fever - waterproof in the showroom, and prone to arriving home as a puddle.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Galoshes_MET_CP485_CP2.jpg",
+      "author": "Unknown author",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/natural-rubber/hevea-tapping-1911.webp",
+      "alt": "A black-and-white photograph of a rubber tree trunk scored with a spiral cutting pattern, with a collecting cup fixed to the bark at the base of the cut.",
+      "caption": "Spiral tapping of a Hevea trunk, photographed around 1911 - the same basic cut, refined but not reinvented, that every tapper before and since has made.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CSpiral_tapping_of_Hevea_Brasiliensis%E2%80%9D.jpg",
+      "author": "Unknown photographer, photograph provided by Henry C. Pearson.",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

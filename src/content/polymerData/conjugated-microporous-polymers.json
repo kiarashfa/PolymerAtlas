@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A structural class (pi-conjugated aromatic building blocks linked into a permanently microporous 3-D network) rather than one chemistry -- building blocks and linking chemistry vary by synthesis route (Suzuki, Sonogashira, Yamamoto, Schiff base, cyclotrimerization), so no single repeat unit represents the class.",
   "iupac_name": null,
@@ -27,8 +31,45 @@
   "key_figures": [
     "Andrew Cooper"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Lehman Brothers files for bankruptcy (15 September 2008)",
+    "The Large Hadron Collider produces its first proton collisions after over a year of repairs (23 November 2009)",
+    "Andrew Cooper publishes \"Conjugated Microporous Polymers\" in Advanced Materials, naming and establishing the field (2009)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/conjugated-microporous-polymers/lehman-brothers-hq-2008.webp",
+      "alt": "A dark New York skyscraper at night, its lower floors covered in illuminated electronic screens reading 'LEHMAN BROTHERS' and the date 'SEP 15', photographed from street level looking up.",
+      "caption": "Lehman Brothers' Times Square building on the night of 15 September 2008, still lit with its own name as the firm entered bankruptcy — the opening of a downturn that sharpened the case for materials able to do two jobs with one structure.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-20080915.jpg",
+      "author": "Robert Scoble",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/conjugated-microporous-polymers/lhc-tunnel-2009.webp",
+      "alt": "The curved interior of an underground tunnel lined with large blue and silver cylindrical magnet segments running into the distance, overhead cable trays and warning signage visible along the ceiling.",
+      "caption": "A section of the Large Hadron Collider tunnel, photographed in October 2009, weeks before it produced its first proton collisions after more than a year of repairs.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Views_of_the_LHC_tunnel_sector_3-4,_tirage_2.jpg",
+      "author": "Maximilien Brice (CERN)",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/conjugated-microporous-polymers/university-of-liverpool-victoria-building.webp",
+      "alt": "A red-brick and terracotta Victorian Gothic building with a tall clock tower topped by a spire, set against a blue sky with scattered clouds.",
+      "caption": "The Victoria Building at the University of Liverpool, where Andrew Cooper's group built and named the first conjugated microporous polymers.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Victoria_Building,_University_of_Liverpool_2019.jpg",
+      "author": "Rodhullandemu",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/conjugated-microporous-polymers/cmp-monomer-structure.webp",
+      "alt": "A skeletal chemical structure diagram of a three-armed molecule: a central benzene ring with three rigid alkyne-linked methyl-substituted benzene rings radiating outward at 120-degree angles.",
+      "caption": "A representative CMP monomer: a rigid, star-shaped aromatic unit whose triple-bonded arms will not fold, so a network built from it holds its pores open rather than collapsing into a dense film.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Conjugated_Microporous_Polymer.png",
+      "author": "Mofchem",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

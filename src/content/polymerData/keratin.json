@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A family of fibrous structural proteins (sequence-defined amino-acid heteropolymers); no single repeat unit. Alpha-keratin (all vertebrates: hair, nails, horns, hooves) and beta-keratin (sauropsids: reptiles/birds) are structurally distinct sub-families.",
   "iupac_name": null,
@@ -30,9 +34,42 @@
   "polymer_class": null,
   "year_of_origin": 1882,
   "era": "Decoding Nature's Legacy (1833-1902)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Johann Franz Simon", "William Astbury"],
+  "historical_events_referenced": ["Pearl Street Station opens, 1882 (first commercial electrical power plant)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/keratin/edison-carbon-bulb-1879.webp",
+      "alt": "An early Edison incandescent light bulb with a pear-shaped glass envelope, a looped carbon filament, and a screw-style base, mounted against a dark green background.",
+      "caption": "An original Edison carbon-filament bulb. By the time Edison's Pearl Street Station switched electric light on in 1882, keratin — named, but still structurally a mystery — was still doing the job synthetic plastics would later take over.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edison_Carbon_Bulb.jpg",
+      "author": "Terren",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/keratin/rhino-horns-closeup.webp",
+      "alt": "A close-up side view of a rhinoceros's two horns, tapered and ridged, growing from its snout.",
+      "caption": "A rhinoceros's horns — pure keratin, with no bony core at all, packed and compressed into one of the hardest structures any mammal grows.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-horns-Lisbon_07.JPG",
+      "author": "Salix",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/keratin/scarlet-tanager-feather-macro.webp",
+      "alt": "An extreme close-up of a bird feather, showing the fine parallel barbs of jet-black plumage bordered by a band of vivid red, with small gold-tipped covert feathers along the edge.",
+      "caption": "Beta-keratin, magnified: the interlocking barbs of a scarlet tanager's feather.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scarlet_tanager,_feather_2014-04-21-14.06.59_ZS_PMax_(13966553812).jpg",
+      "author": "USGS Bee Inventory and Monitoring Lab from Beltsville, Maryland, USA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/keratin/sheep-wool-fleece.webp",
+      "alt": "A dense mass of naturally curly, cream-colored sheep's wool, tightly packed into ringlets.",
+      "caption": "Alpha-keratin, magnified: raw sheep's wool, its coiled fibers built from the same helical protein as human hair.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Royal_Winter_Fair_Wool_2.jpg",
+      "author": "Rob",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

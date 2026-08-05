@@ -45,6 +45,19 @@ export const polymerDataSchema = z.object({
   parent: z.string().nullable().default(null),
   cas_number: z.string().nullable(),
   resin_id_code: z.string().nullable(),
+  // Two ways of writing the same repeat unit, shown in one Identity row a
+  // reader toggles between. `empirical` is the element tally -- (C3H6)n --
+  // derived from smiles_depiction and checkable against it. `structural`
+  // spells the connectivity out -- [-CH2-CF2-]n -- and is hand-written, so
+  // it is validated to contain exactly the same atoms as the empirical form.
+  // Both are null for the entries that have no single repeat unit; the
+  // reason lives in notation_note below.
+  chemical_formula: z
+    .object({
+      empirical: z.string().nullable().default(null),
+      structural: z.string().nullable().default(null),
+    })
+    .default({ empirical: null, structural: null }),
   repeat_unit: z.string().nullable(), // BigSMILES
   // Plain SMILES for the same repeat unit, attachment points written as '*'.
   // Derived from `repeat_unit`, for tooling that cannot read BigSMILES.

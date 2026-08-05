@@ -6,8 +6,44 @@
   "year_of_origin": 1950,
   "era": "The Post-War Boom (1946-1960)",
   "key_figures": ["Odd Hassel", "Derek Barton", "Karl Ziegler", "Giulio Natta"],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "First kidney transplant, performed by Richard Lawler in Evergreen Park, Illinois (17 June 1950)",
+    "German invasion and occupation of Norway begins (9 April 1940)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/concepts/configuration-vs-conformation/german-troops-oslo-april-1940.webp",
+      "alt": "German infantry in steel helmets and long coats marching in formation down a wide cobblestone street past a crowd of Norwegian civilians, bicycles lined against the kerb, with a large stone building beyond them.",
+      "caption": "German troops marching through Oslo, 9 April 1940 — the invasion that put Norway under an occupation which would intern Odd Hassel three and a half years later, mid-experiment.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:German_soldiers_in_Oslo_9_April_1940.jpg",
+      "author": "Henriksen & Steen (Photographers in Oslo, Norway)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/configuration-vs-conformation/odd-hassel-portrait.webp",
+      "alt": "Odd Hassel standing in his laboratory in a three-piece suit, holding a cigarette, with glass apparatus and reagent bottles on the shelves behind him.",
+      "caption": "Odd Hassel in his Oslo laboratory, around 1935, over a decade before his electron-diffraction data would let a chemist half a continent away predict how a molecule reacts from its shape alone.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Odd_Hassel.jpg",
+      "author": "Unknown author",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "~/assets/concepts/configuration-vs-conformation/derek-barton-portrait.webp",
+      "alt": "A formal head-and-shoulders photograph of a young man with side-parted hair and dark-framed glasses, wearing a tweed jacket and striped tie.",
+      "caption": "Derek Barton, whose four-page 1950 paper turned Hassel's physical measurements into the working method chemists still call conformational analysis.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Derek-Harold-Richard-Barton.jpg",
+      "author": "National Portrait Gallery",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/configuration-vs-conformation/giulio-natta-portrait.webp",
+      "alt": "An animated older man with grey hair, gesturing while speaking, seated in a dark suit and patterned tie.",
+      "caption": "Giulio Natta, who in 1954 showed that Ziegler's catalysts could fix a polypropylene chain's configuration deliberately, producing a crystalline, stereoregular plastic instead of a random one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giulio_Natta_1960s.jpg",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain"
+    }
+  ],
 
   "summary": "Configuration and conformation are both descriptions of a molecule's 3-D arrangement, but they differ in a critical way: configuration is fixed by the connectivity of chemical bonds and can only be changed by breaking and reforming bonds (e.g. cis/trans isomerism, or the tacticity of a polymer backbone), while conformation is a transient 3-D shape reached by rotation around single bonds without breaking any bonds (e.g. a cyclohexane ring flipping between chair and boat forms). Odd Hassel confirmed the existence of cyclohexane's chair and boat conformers using electron diffraction in 1943; Derek Barton showed in 1950 that organic and steroid molecules could be assigned a preferred conformation based on Hassel's physical data, founding the field of conformational analysis. The two shared the 1969 Nobel Prize in Chemistry for this work. For polymer science specifically, the configuration/conformation distinction underpins tacticity (a configurational property, fixed at the moment of polymerization -- as in Ziegler-Natta stereoregular polypropylene and polyethylene) versus chain conformation (a dynamic property governing solution behavior, crystallization, and rubber elasticity).",
   "key_equations": [],

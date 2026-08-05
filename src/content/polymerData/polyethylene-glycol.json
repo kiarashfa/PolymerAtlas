@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "25322-68-3",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H4O)n",
+    "structural": "[-O-CH2-CH2-]n"
+  },
   "repeat_unit": "{[][>]OCC[<][]}",
   "smiles_depiction": "*OCC*",
   "notation_note": "Named poly(ethylene glycol) below about 20,000 g/mol and poly(ethylene oxide) above it, though the repeat unit is identical.",
@@ -43,9 +47,42 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1944,
   "era": "The Wartime Innovation Period (1939-1945)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Charles Adolphe Wurtz", "Union Carbide", "Frank F. Davis"],
+  "historical_events_referenced": ["Bretton Woods Conference (July 1944)", "Willem Kolff builds the first rotating-drum artificial kidney (1943-1945)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyethylene-glycol/bretton-woods-conference-opening-1944.webp",
+      "alt": "A black-and-white photograph of a man addressing an audience from a lectern on a stage draped with national flags, with two seated men beside him.",
+      "caption": "U.S. Treasury Secretary Henry Morgenthau Jr. opens the Bretton Woods Conference in July 1944, where delegates drew up the rules for the postwar global economy.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Morgenthau_Bretton_Woods_opening_1944.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-glycol/kolff-artificial-kidney-museum.webp",
+      "alt": "A preserved rotating-drum dialysis machine on display in a museum: a wide horizontal drum wound with cellophane tubing, mounted in a white metal cradle over a shallow trough, with a hand crank and drive chain to one side.",
+      "caption": "Willem Kolff's rotating-drum artificial kidney, the machine he built and rebuilt through 1943 and 1944 before it saved its first patient.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Museum_Boerhaave_Kolff's_Artificial_Kidney.jpg",
+      "author": "Rob Koopman from Leiderdorp, Netherlands",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-glycol/peg-4000-solid-flakes.webp",
+      "alt": "A small heap of translucent white waxy flakes on an orange card beside a ruler, showing the flakes span roughly five centimetres in width.",
+      "caption": "Polyethylene glycol 4000, a mid-range molecular weight sold as flakes — solid at room temperature, but still a long way from the tough fiber-forming grades sold as polyethylene oxide.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polyethylene_glycol_4000.jpg",
+      "author": "Anypodetos",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polyethylene-glycol/mary-rose-peg-conservation.webp",
+      "alt": "A conservator in protective coveralls and a yellow hood sprays a fine mist over the exposed, blackened timber ribs of a large wooden ship hull inside a purpose-built conservation hall.",
+      "caption": "Spraying the hull of the Mary Rose with polyethylene glycol solution at Portsmouth's Historic Dockyard, a treatment that ran continuously from 1994 to 2013.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MaryRose-conservation2.jpg",
+      "author": "Mary Rose Trust",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.125,

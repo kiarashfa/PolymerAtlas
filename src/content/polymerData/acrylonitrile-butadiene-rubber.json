@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-18-3",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6)x·(C3H3N)y",
+    "structural": "[-CH2-CH=CH-CH2-]x[-CH2-CH(CN)-]y"
+  },
   "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(C#N)[$][]}",
   "smiles_depiction": "*C/C=C\\C*.*CC(C#N)*",
   "notation_note": "A statistical copolymer. Acrylonitrile content, commonly 18-50%, is the dial that trades oil resistance against low-temperature flexibility, so no single ratio represents the class.",
@@ -49,9 +53,45 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1944,
   "era": "The Wartime Innovation Period (1939-1945)",
-  "key_figures": [],
+  "key_figures": [
+    "Erich Konrad",
+    "Eduard Tschunkur"
+  ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/dday-sherman-tanks-1944.webp",
+      "alt": "A hazy black-and-white photograph, taken from a landing craft, of tanks and vehicles disembarking onto a beach among rows of wooden anti-invasion stakes driven into the shallows.",
+      "caption": "Sherman tanks going ashore on Sword Beach, Normandy, 6 June 1944 - a landing that ran on fuel systems and seals built from a rubber invented in Germany fourteen years earlier.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:D-day_-_British_Forces_during_the_Invasion_of_Normandy_6_June_1944_B5111.jpg",
+      "author": "No 5 Army Film & Photographic Unit, Mapham J (Sgt)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/goodrich-synthetic-rubber-mill-1941.webp",
+      "alt": "Two workers in overcoats and caps feeding a thick, wet white sheet of rubber into the rollers of an industrial mill, water spraying off the machinery.",
+      "caption": "Workers feed newly milled synthetic rubber through rollers at the B.F. Goodrich plant in Akron, Ohio, 1941 - one of the same wartime plants that would scale up oil-resistant nitrile rubber for the invasion fleet three years later.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sheet_of_synthetic_rubber_coming_off_the_rolling_mill_at_the_plant_of_Goodrich.jpg",
+      "author": "Alfred T. Palmer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/raw-nbr-bales.webp",
+      "alt": "Six plastic-wrapped rectangular bales of pale tan rubber crumb, stacked two high on a wooden pallet, the wrapping torn open at one corner to show the granular material inside.",
+      "caption": "Raw NBR delivered as wrapped bales of crumb rubber - the coagulated latex, still unvulcanised, that a compounder mills with carbon black before it becomes a finished seal or hose.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NBR_balles.jpg",
+      "author": "Cjp24",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/nitrile-glove-modern.webp",
+      "alt": "A single blue disposable glove, palm facing the camera, photographed against a plain light background.",
+      "caption": "A modern disposable nitrile glove - the same oil- and chemical-resistant copolymer that once sealed wartime fuel tanks, now standard in laboratories and hospitals precisely because it tolerates so much of what a latex glove cannot.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Disposable_nitrile_glove.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.965,

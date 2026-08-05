@@ -22,3 +22,21 @@ export function frontmatter(path: string): Record<string, string> {
   }
   return out;
 }
+
+/** Parse a frontmatter value that is written as an inline array —
+ *  `key_figures: ["A", "B"]` — into real strings. Returns null when the value
+ *  is absent or is not an array, so a caller can tell "not a list" apart from
+ *  "an empty list". Frontmatter values arrive here as raw text (see above),
+ *  and a checker that forgot that would compare a string to an array and
+ *  silently always pass.  */
+export function frontmatterList(value: string | undefined): string[] | null {
+  if (!value) return null;
+  const t = value.trim();
+  if (!t.startsWith('[') || !t.endsWith(']')) return null;
+  try {
+    const parsed = JSON.parse(t.replace(/'/g, '"'));
+    return Array.isArray(parsed) ? parsed.map(String) : null;
+  } catch {
+    return null;
+  }
+}

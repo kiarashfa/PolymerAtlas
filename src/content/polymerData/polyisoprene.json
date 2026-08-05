@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-31-0",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C5H8)n",
+    "structural": "[-CH2-C(CH3)=CH-CH2-]n"
+  },
   "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
   "smiles_depiction": "*C/C(C)=C\\C*",
   "structure_variants": [
@@ -57,9 +61,46 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1916,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
-  "key_figures": [],
+  "key_figures": [
+    "Ivan Ostromislensky",
+    "Karl Ziegler",
+    "Giulio Natta"
+  ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyisoprene/brusilov-offensive-red-cross-1916.webp",
+      "alt": "A black-and-white photograph of a wartime camp clearing among birch and pine trees, with a group of soldiers gathered at a tent in the middle distance and wooden crosses marking graves at the right.",
+      "caption": "A Red Cross camp on the Eastern Front during the Brusilov Offensive, summer 1916 - the same war whose blockade of Russian trade was pushing the country's own chemists toward a rubber substitute.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Brusilov_Offensive,_June-september_1916_Q97848.jpg",
+      "author": "Florence Farmborough",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyisoprene/karl-ziegler-portrait.webp",
+      "alt": "A black-and-white portrait photograph of a balding man wearing thick horn-rimmed glasses and a dark suit, looking directly at the camera.",
+      "caption": "Karl Ziegler, whose coordination catalysts, discovered in 1953, gave chemists a way to control how a growing polymer chain adds each new monomer.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Karl_Ziegler_Nobel.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyisoprene/giulio-natta-portrait.webp",
+      "alt": "A black-and-white photograph of a man with swept-back grey hair, reading a document at a desk, a signature visible in the corner of the page.",
+      "caption": "Giulio Natta, who extended Ziegler's chemistry to stereoregular polymers the following year - the work that eventually made a true synthetic match for natural rubber possible.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giulio_Natta_Nobel.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyisoprene/synthetic-polyisoprene-samples.webp",
+      "alt": "Several irregular chunks of translucent amber and pale tan solid rubber inside a labelled glass specimen jar on a wooden shelf, the label reading 'Poly-Isoprene'.",
+      "caption": "Raw synthetic polyisoprene, as it comes out of the reactor before compounding - chemically the same monomer natural rubber is built from, arranged by a catalyst rather than a tree.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polyisoprene.jpg",
+      "author": "Gradstudentscholar",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.918,

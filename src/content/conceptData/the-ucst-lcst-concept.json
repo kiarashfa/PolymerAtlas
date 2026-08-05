@@ -5,9 +5,50 @@
 
   "year_of_origin": 1968,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Paul Flory", "Maurice Huggins", "M. Heskins", "J. E. Guillet"],
+  "historical_events_referenced": ["Apollo 8 (first crewed lunar orbit, December 1968)", "Earthrise photograph (24 December 1968)"],
+  "historical_images": [
+    {
+      "src": "~/assets/concepts/the-ucst-lcst-concept/apollo-8-liftoff.webp",
+      "alt": "A Saturn V rocket lifting off from its launch pad at night, trailing a huge column of white exhaust and lit orange by its own engine flame.",
+      "caption": "Apollo 8 leaves the pad on 21 December 1968, three days before its crew photographed Earth whole for the first time.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_8_liftoff.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-ucst-lcst-concept/earthrise-apollo-8.webp",
+      "alt": "The Earth as a small blue and white sphere, half in shadow, hanging above a grey, cratered lunar horizon against black space.",
+      "caption": "Earthrise, photographed by Bill Anders on 24 December 1968 — the boundary of the whole Earth, seen for the first time from outside it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg",
+      "author": "NASA/Bill Anders",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-ucst-lcst-concept/lash-miller-laboratories-toronto.webp",
+      "alt": "A low, symbol-decorated concrete wall along a University of Toronto street, part of the chemistry building, with trees in blossom and a cyclist passing on the sidewalk.",
+      "caption": "The University of Toronto chemistry precinct today. Heskins and Guillet's laboratory stood in this building when they mapped PNIPAM's phase diagram in 1968.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_fragment_of_Lash_Miller_Chemical_Laboratories,_University_of_Toronto.jpg",
+      "author": "Maksim Sokolov (maxergon.com)",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/concepts/the-ucst-lcst-concept/pnipam-solution-below-lcst.webp",
+      "alt": "A small glass vial with a teal cap, about a third full of a perfectly clear, colourless liquid, on a dark laboratory bench.",
+      "caption": "A PNIPAM solution below its LCST: the chains are extended and hydrated, and the liquid is optically clear.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PNIPA_LCST_Before.jpg",
+      "author": "Quantyield",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/concepts/the-ucst-lcst-concept/pnipam-solution-above-lcst.webp",
+      "alt": "The same style of vial, now filled with an opaque, milky-white liquid.",
+      "caption": "The same solution warmed past its LCST: the chains have collapsed into globules that scatter light, turning the liquid white within moments.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PNIPA_LCST_After.jpg",
+      "author": "Quantyield",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
 
   "summary": "A polymer solution that is a single, clear phase at one temperature can separate into two phases when heated or cooled past a critical solution temperature. In Lower Critical Solution Temperature (LCST) systems the polymer is soluble when cold but separates on heating (e.g. PNIPAM, LCST ~32C); in Upper Critical Solution Temperature (UCST) systems the polymer becomes more soluble as temperature rises (e.g. polystyrene in cyclohexane, UCST ~35C). Some systems (e.g. PHEMA or PMMA in water/alcohol mixtures) show both an LCST and a UCST, giving three distinct temperature-dependent phases. The phase behavior is governed by the Flory-Huggins interaction parameter (chi): in LCST systems chi increases with temperature, in UCST systems it decreases, and phase separation occurs once chi crosses the critical value set by the polymer's degree of polymerization. Heskins and Guillet first characterized this critical-solution-temperature behavior in PNIPAM in 1968, turning it from a laboratory curiosity into a foundational design principle for stimuli-responsive/smart materials (drug delivery, smart windows, switchable membranes).",
   "key_equations": [

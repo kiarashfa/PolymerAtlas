@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "24968-12-5",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C12H12O4)n",
+    "structural": "[-O-(CH2)4-O-CO-C6H4-CO-]n"
+  },
   "repeat_unit": "{[][>]OCCCCOC(=O)c1ccc(cc1)C(=O)[<][]}",
   "smiles_depiction": "*OCCCCOC(=O)c1ccc(cc1)C(=O)*",
   "iupac_name": null,
@@ -52,9 +56,42 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1968,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Celanese Corporation", "General Electric"],
+  "historical_events_referenced": ["Prague Spring and the Warsaw Pact invasion of Czechoslovakia (1968)", "Bob Beamon's long jump world record at the 1968 Mexico City Olympics"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polybutylene-terephthalate/prague-spring-soviet-invasion-1968.webp",
+      "alt": "Two young men walk along a cobbled Prague street past a burning tank wreathed in smoke, one of them carrying a Czechoslovak flag, as onlookers watch from the pavement and soldiers stand atop a second armoured vehicle behind it.",
+      "caption": "Prague, August 1968: a burning tank during the Warsaw Pact invasion that ended the Prague Spring reforms within days of the Soviet response.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:10_Soviet_Invasion_of_Czechoslovakia_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
+      "author": "The Central Intelligence Agency",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-terephthalate/bob-beamon-long-jump-1968.webp",
+      "alt": "A close-up action photograph of an athlete in mid-air during a long jump, knees drawn up toward his chest, arms trailing behind, with a blurred stadium crowd in the background.",
+      "caption": "Bob Beamon in flight at the 1968 Mexico City Olympics, seconds before landing a world record that would stand until 1991.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bob_Beamon_1968.jpg",
+      "author": "Unknown author",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-terephthalate/pbt-keyboard-keycaps.webp",
+      "alt": "A close-up view of a mechanical keyboard's function-row and number-row keycaps in matte dark grey, with a single red Escape key at the left edge.",
+      "caption": "PBT keycaps on a mechanical keyboard, valued for keeping their matte finish and printed legends far longer than cheaper keycap plastics.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vortex_Doubleshot_PBT_front_printed_keycaps_(19175010650).jpg",
+      "author": "Brett Spangler from Austin, US",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-terephthalate/heavy-duty-vehicle-connector.webp",
+      "alt": "A close-up of a black, threaded, cylindrical electrical connector plug with nine gold pins set into a red insert, attached to a thick coiled cable.",
+      "caption": "A heavy-duty vehicle wiring connector — the class of rigid, weatherproof, precisely molded part that engineering polyesters like PBT were built to fill.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:J1939-Stecker.jpg",
+      "author": "Florian-schäffer",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.29,

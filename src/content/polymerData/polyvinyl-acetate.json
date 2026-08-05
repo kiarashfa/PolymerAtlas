@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-20-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6O2)n",
+    "structural": "[-CH2-CH(OCOCH3)-]n"
+  },
   "repeat_unit": "{[][$]CC(OC(C)=O)[$][]}",
   "smiles_depiction": "*CC(OC(C)=O)*",
   "iupac_name": "Poly[1-(acetyloxy)ethylene]",
@@ -41,8 +45,43 @@
   "key_figures": [
     "Fritz Klatte"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Ford's moving assembly line begins operation, Highland Park, Michigan (October 1913)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyvinyl-acetate/ford-assembly-line-1913.webp",
+      "alt": "Black-and-white photograph of workers in caps and overalls assembling wheel hubs and small metal parts along a moving conveyor line, with bins of components at their feet.",
+      "caption": "Ford's moving line at Highland Park, 1913. Mass production of standardized goods created its own appetite: an equally standardized, equally cheap way to bind, seal and package them.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ford_assembly_line_-_1913_(restored).jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-acetate/bookbinding-manual-1914.webp",
+      "alt": "A labelled photograph from a 1914 instructional manual showing a bookbinder's press, sewing frame, folding sticks, paring knife and other hand tools arranged on a table.",
+      "caption": "Tools from a 1914 bookbinding manual. The craft PVAc would eventually enter still relied on hide glue and hand presses when Klatte filed his patent.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Printing_and_bookbinding_for_schools_(1914)_(14802851343).jpg",
+      "author": "Vaughn, Samuel Jesse",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-acetate/pva-wood-glue-bottle.webp",
+      "alt": "A hardware-store shelf stocked with dozens of bottles, tubs and jerrycans of PVA wood adhesive and building adhesive under various brand names.",
+      "caption": "A hardware-store aisle of PVA adhesives — the everyday, unglamorous form Klatte's forgotten patent eventually took.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pva_wood_glue.jpg",
+      "author": "Victuallers",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-acetate/painting-conservation-restoration.webp",
+      "alt": "Two conservators in white coats and gloves examine a wooden panel painting through stereo microscopes and a magnifying lamp, surrounded by small labelled bottles on a workbench.",
+      "caption": "Conservators examining a panel painting. PVAc's reversibility — it dissolves back out of a surface it was used to stabilize — is what earned it a place in this work.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VENIS_STUDIOS_-Art_Conservation_and_Restoration.jpg",
+      "author": "Arthistory333",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.19,

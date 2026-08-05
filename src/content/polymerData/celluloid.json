@@ -7,6 +7,10 @@
   "parent": "nitrocellulose",
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Nitrocellulose plasticized with camphor (plus dyes/other agents); a plasticized blend rather than a single-substance repeat unit.",
   "iupac_name": null,
@@ -40,7 +44,48 @@
     "George Eastman"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/celluloid/golden-spike-ceremony-1869.webp",
+      "alt": "A crowd of men on horseback and on foot gathered around a locomotive and a ceremonial pole at a bare desert railhead, with distant hills behind them.",
+      "caption": "Promontory Summit, Utah, May 1869 — the moment two railroads became one, and a continent got easier to supply.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Golden_Spike_ceremony,_Promontory_Point,_Utah_-_DPLA_-_daf2ade228723372d0b9a77c71d91b7c.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/celluloid/suez-canal-opening-1869.webp",
+      "alt": "A stereograph photograph of small steam-powered boats and barges moored along a narrow desert waterway lined with low buildings and ships' masts.",
+      "caption": "The Suez Canal at its inauguration, November 1869, which shortened the sea route between the ivory markets of Africa and Asia and the workshops of Europe and America.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Opening_van_het_Suezkanaal,_intocht_van_Arabische_sjeiks,_Ismailia_Inauguration_du_Canal_de_Suez,_Isma%C3%AFla_canal_d'eau_douce,_arriv%C3%A9e_des_scheiks_Arabes_(instantan%C3%A9e)_(titel_op_object),_RP-F-F12908.jpg",
+      "author": "Rijksmuseum",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/celluloid/hyatt-portrait.webp",
+      "alt": "An engraved head-and-shoulders portrait of a balding, heavily bearded man in a dark suit and bow tie, looking off to one side.",
+      "caption": "John Wesley Hyatt, whose 1869 and 1870 patents turned a fragile experimental curiosity into a material that could survive a billiard table.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:J_W_Hyatt.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/celluloid/billiards-match-1890s.webp",
+      "alt": "A crowded Victorian billiard hall with two men playing on a large table lit by hanging shaded lamps, watched by rows of seated spectators in formal dress.",
+      "caption": "A billiards match in Sheffield, England, in the 1890s — the game whose appetite for ivory balls had gone unmet a generation earlier.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Billiards_match_-_Spencer_Diggle.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/celluloid/celluloid-company-newark-1891.webp",
+      "alt": "An engraved bird's-eye view of a sprawling industrial complex of low brick workshops and tall smoking chimneys, labelled 'Newark: The Celluloid Co.'",
+      "caption": "The Celluloid Manufacturing Company's works in Newark, New Jersey, drawn in 1891 — the scale of production that made an ivory substitute an everyday material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:US-NJ(1891)_p568_NEWARK,_THE_CELLULOID_COMPANY.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

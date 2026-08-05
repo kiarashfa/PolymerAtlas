@@ -9,6 +9,10 @@
   "parent": "natural-rubber",
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C5H8)n",
+    "structural": "[-CH2-C(CH3)=CH-CH2-]n"
+  },
   "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
   "smiles_depiction": "*C/C(C)=C\\C*",
   "notation_note": "The chain repeat is natural rubber's own cis-1,4 isoprene unit. What vulcanization adds is not a change to that unit but sulfur bridges between chains -- in a soft rubber roughly one crosslink per hundred units, too sparse to belong in a repeating structure.",
@@ -37,8 +41,46 @@
   "key_figures": [
     "Charles Goodyear"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Announcement of the daguerreotype and photogenic drawing (January 1839)",
+    "Destruction of opium at Humen and opening moves of the First Opium War (1839)",
+    "Panic of 1837 (Goodyear's backer ruined)",
+    "Thomas Hancock's British vulcanization patent priority dispute (1843-1855)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/vulcanized-natural-rubber/ghent-daguerreotype-1839.webp",
+      "alt": "A faded sepia-toned photograph of a canal lined with tall narrow townhouses and a stone bridge, taken from an upper-storey window.",
+      "caption": "Ghent, photographed in October 1839, only months after Daguerre's process became public - among the first images anywhere fixed permanently by light and chemistry rather than by hand.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gezicht_op_de_Predikherenlei_en_-brug_te_Gent,_ca._1839,_STAM_Gent.tif",
+      "author": "STAM - Stadsmuseum Gent",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/vulcanized-natural-rubber/destruction-of-opium-1839.webp",
+      "alt": "A Chinese painting showing rows of workers at pits dissolving raw opium under the supervision of officials, with covered sheds in the background.",
+      "caption": "Commissioner Lin Zexu's destruction of confiscated opium at Humen, June 1839 - one kind of chemical undoing, the same year rubber was about to be chemically remade.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Destruction_of_opium_in_1839.jpg",
+      "author": "Chinese artist",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/vulcanized-natural-rubber/goodyear-portrait.webp",
+      "alt": "A formal seated portrait photograph of a balding man in a dark coat with a high collar, arms folded.",
+      "caption": "Charles Goodyear, photographed some years after the accident that made his name - by then still deep in the patent disputes it would take the rest of his life to fight.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Southworth_and_Hawes_-_Charles_Goodyear_(Zeno_Fotografie)_crop.png",
+      "author": "Southworth & Hawes",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/vulcanized-natural-rubber/sulfur-crystal.webp",
+      "alt": "A cluster of translucent, deep yellow crystalline mineral fragments against a dark background.",
+      "caption": "Native sulfur, the ordinary yellow mineral that, heated together with rubber, was the whole of Goodyear's accidental recipe.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Large_Sulfur_Crystal.jpg",
+      "author": "Eric Hunt",
+      "license": "CC BY-SA 2.5"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.95,

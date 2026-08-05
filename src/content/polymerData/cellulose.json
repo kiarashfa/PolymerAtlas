@@ -7,9 +7,13 @@
   "parent": null,
   "cas_number": "9004-34-6",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H10O5)n",
+    "structural": "[C6H7O2(OH)3]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@H](*)O[C@@H]1CO",
-  "notation_note": "The anhydroglucose unit is shown as the constitutional repeat unit; the crystallographic repeat is cellobiose, two glucose units, because alternate rings are rotated 180 degrees. Degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton and plant fibers ~800-10,000, bacterial cellulose up to ~10,000).",
+  "notation_note": "The anhydroglucose unit is shown in condensed form (ring core plus three hydroxyls) as the constitutional repeat unit; the crystallographic repeat is cellobiose, two glucose units, because alternate rings are rotated 180 degrees. Degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton and plant fibers ~800-10,000, bacterial cellulose up to ~10,000).",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -34,7 +38,40 @@
     "Anselme Payen"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/cellulose/egyptian-papyrus-scroll.webp",
+      "alt": "A section of an ancient Egyptian papyrus scroll covered in rows of painted hieroglyphs and figures, including a long serpent motif, mounted under glass.",
+      "caption": "A papyrus scroll from ancient Egypt — plant fiber pressed and dried into a writing surface, long before anyone knew to call the material inside it cellulose.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ancient_Egypt_Papyrus_Scroll_of_the_Dead_(28748821475).jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/cellulose/payen-lithograph-maurin.webp",
+      "alt": "A lithographed half-length portrait of a clean-shaven, side-whiskered man in a dark coat and cravat, signed 'Payen' beneath the image.",
+      "caption": "Anselme Payen, around the time of his cellulose work. The formula he measured for the fibrous residue of wood matched the one he had already found in starch — the first clue that the two materials were built from the same sugar.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anselm_Payen._Lithograph_by_N._E._Maurin._Wellcome_V0004564.jpg",
+      "author": "Unknown author",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/cellulose/cotton-boll-open.webp",
+      "alt": "A cotton plant with an open white boll of fiber, an unopened green seed pod, and a pale yellow flower, growing among green leaves.",
+      "caption": "Raw cotton fiber on the plant — cellulose in close to its purest natural form, at roughly ninety percent of the fiber's dry weight.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:COTTON_open_boll_bloom_(48948371196).jpg",
+      "author": "Alabama Extension",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/cellulose/cellulose-nanocrystal-film.webp",
+      "alt": "A shallow glass petri dish containing a thin, dried film that shimmers in bands of blue, green and purple, resting on a dark surface.",
+      "caption": "A self-assembled film of cellulose nanocrystals. The iridescent color comes entirely from how the nanocrystals stack — no dye or pigment is involved.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Macroscopic_picture_of_a_film_of_cellulose_nanocrystal_suspension_cast_on_a_Petri_dish_(diameter_3.5cm)..jpg",
+      "author": "Yapadaryko",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.555,

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "31694-16-3",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C19H12O3)n",
+    "structural": "[-O-C6H4-O-C6H4-CO-C6H4-]n"
+  },
   "repeat_unit": "{[][>]Oc1ccc(cc1)Oc1ccc(cc1)C(=O)c1ccc(cc1)[<][]}",
   "smiles_depiction": "*Oc1ccc(cc1)Oc1ccc(cc1)C(=O)c1ccc(cc1)*",
   "notation_note": "The ether-ether-ketone sequence names the polymer: two ether links then a ketone, repeating.",
@@ -35,9 +39,48 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1965,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "John Rose",
+    "Philip Staniland"
+  ],
+  "historical_events_referenced": [
+    "Alexei Leonov's first spacewalk from Voskhod 2 (March 1965)",
+    "Ed White's first American spacewalk on Gemini 4 (June 1965)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyether-ether-ketone/voskhod2-spacewalk-stamp-1965.webp",
+      "alt": "A 1965 Soviet postage stamp illustrating a cosmonaut in an orange spacesuit floating outside the cylindrical Voskhod 2 spacecraft against a starry blue background, with Cyrillic text and the date 18 March 1965.",
+      "caption": "A Soviet stamp marking Alexei Leonov's spacewalk from Voskhod 2 in March 1965 — the same year the aerospace and nuclear industries' hunger for extreme-environment materials was pushing several major chemical companies toward a new class of aromatic engineering plastics.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union-1965-Stamp-0.10._Voskhod-2._First_Spacewalk.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyether-ether-ketone/ed-white-gemini4-spacewalk-1965.webp",
+      "alt": "An astronaut in a white spacesuit floating in space above the curve of the blue Earth, tethered by a gold-coloured umbilical line, holding a hand-held manoeuvring unit.",
+      "caption": "Ed White during America's first spacewalk, June 1965 — the same decade's demand for materials that could take extreme heat and chemical stress without adding weight is what set ICI, Phillips Petroleum and Union Carbide chasing new aromatic polymer chemistry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ed_White_performs_first_U.S._spacewalk_-_GPN-2006-000025.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyether-ether-ketone/peek-resin-pellets.webp",
+      "alt": "A close-up photograph of a person's cupped hand holding a large quantity of small black cylindrical plastic pellets.",
+      "caption": "PEEK resin pellets, ready for melt-processing — the raw form of a material whose real story is not a single dramatic discovery but a decade of parallel corporate research into polymers that could survive where ordinary plastics could not.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PEEK_resin.jpg",
+      "author": "Acheolg",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyether-ether-ketone/victrex-peek-cable-tie.webp",
+      "alt": "A single moulded plastic cable tie in a warm amber-brown colour, curled into a loop with its locking head at the top, photographed against a plain white background and embossed with a manufacturer's web address.",
+      "caption": "A cable tie moulded from Victrex PEEK — one of the least glamorous applications of a polymer otherwise associated with jet engines and spinal implants, and a reminder that most of PEEK's working life is spent on jobs nobody notices.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EXM_cable_tie.jpg",
+      "author": "T. Krivec / IB Steiner",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.3,

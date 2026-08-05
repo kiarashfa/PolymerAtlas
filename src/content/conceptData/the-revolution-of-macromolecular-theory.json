@@ -6,8 +6,44 @@
   "year_of_origin": 1920,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
   "key_figures": ["Hermann Staudinger"],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Rutherford's Bakerian Lecture proposing the name 'proton' (3 June 1920)",
+    "First Assembly of the League of Nations, Geneva (15 November 1920)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/concepts/the-revolution-of-macromolecular-theory/rutherford-portrait-1920s.webp",
+      "alt": "A formal studio portrait of a balding man with a bushy grey moustache, in a tweed suit and dark tie, looking off to one side.",
+      "caption": "Ernest Rutherford, photographed in the 1920s. That June he told the Royal Society the hydrogen nucleus deserved a name of its own: the proton.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Ernest_Rutherford_LCCN2014716719_-_restoration1.jpg",
+      "author": "Bain News Service, publisher Restored by: Bammesk",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-revolution-of-macromolecular-theory/league-of-nations-first-assembly-1920.webp",
+      "alt": "A large domed assembly hall packed with rows of delegates in dark suits seated at desks, potted palms flanking a raised dais at the back, with spectators crowded into balconies on either side.",
+      "caption": "The first Assembly of the League of Nations, Geneva, November 1920 — an attempt to bind separate, sovereign parts into one working whole.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:No-nb_bldsa_5c013.jpg",
+      "author": "Frédéric Boissonnas",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-revolution-of-macromolecular-theory/rubber-tapping-sumatra-1910.webp",
+      "alt": "Workers among a grove of young rubber trees, collecting tapped latex into containers set at the base of each trunk, dappled sunlight coming through the canopy.",
+      "caption": "Rubber being tapped on a Sumatran plantation, around 1910 — one of the puzzling materials chemists insisted was really a colloidal crowd of small molecules.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:COLLECTIE_TROPENMUSEUM_Het_aftappen_van_Hevea_brasiliensis_rubberbomen_op_de_onderneming_Penandjoeng_en_Mandalareh_bij_Bandjar_TMnr_10024154.jpg",
+      "author": "Unknown author",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/concepts/the-revolution-of-macromolecular-theory/staudinger-portrait-1954.webp",
+      "alt": "A formal head-and-shoulders photograph of a balding, bespectacled man in a dark suit and tie, looking slightly to one side.",
+      "caption": "Hermann Staudinger, photographed not long after the 1953 Nobel Prize that closed out thirty years of argument.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_Staudinger.jpg",
+      "author": "Nobel Foundation",
+      "license": "Public domain"
+    }
+  ],
 
   "summary": "In 1920, Hermann Staudinger proposed that rubber and other polymers (starch, cellulose, proteins) are long chains of repeating molecular units joined by ordinary covalent bonds -- not, as the prevailing view held, colloidal aggregates of small molecules held together by weaker physical association. Leading chemists including Emil Fischer and Heinrich Wieland initially rejected the idea. Through the 1930s, membrane osmometry and viscosity measurements confirmed genuinely high molecular weights, Hermann Mark's X-ray diffraction work demonstrated real long-chain structures, and Wallace Carothers' deliberate synthesis of nylon and polyesters from well-understood organic reactions provided further proof the theory was right. Staudinger received the 1953 Nobel Prize in Chemistry for founding macromolecular chemistry; the hypothesis is the theoretical foundation the entire modern polymer/plastics industry rests on.",
   "key_equations": [],

@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H4S)n",
+    "structural": "[-C6H4-S-]n"
+  },
   "repeat_unit": "{[][>]Sc1ccc(cc1)[<][]}",
   "smiles_depiction": "*Sc1ccc(cc1)*",
+  "notation_note": "Shown is the linear para-phenylene sulfide homopolymer backbone. Commercial Ryton and equivalent grades are almost always sold reinforced with glass fiber or mineral filler, which this formula does not capture.",
   "iupac_name": "Poly(phenylene sulfide)",
   "synonyms": [],
   "aliases": [],
@@ -30,9 +35,44 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1973,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["James T. Edmonds Jr.", "H. Wayne Hill Jr."],
+  "historical_events_referenced": [
+    "OPEC oil embargo begins (October 1973)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyphenylene-sulfide/no-gas-oregon-1973.webp",
+      "alt": "A hand-lettered orange sign reading Sorry... No Gas Today, propped in the window of a filling station.",
+      "caption": "A gas station sign in Oregon, autumn 1973, during the Arab oil embargo — the same year an Oklahoma oil company was bringing a new plastic to market.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22NO_GAS%22_SIGNS_WERE_A_COMMON_SIGHT_IN_OREGON_DURING_THE_FALL_OF_1973,_SUCH_AS_AT_THIS_STATION_IN_LINCOLN_CITY_ALONG..._-_NARA_-_555416.jpg",
+      "author": "David Falconer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-sulfide/hill-edmonds-ryton-pioneers.webp",
+      "alt": "Two men in suits sit at a table examining a molded gray plastic valve component and a small gear, in front of a chalkboard chemical structure of a benzene ring bonded to sulfur, labeled with a repeating-unit bracket.",
+      "caption": "H. Wayne Hill Jr. and James T. Edmonds Jr., the Phillips Petroleum chemists whose solvent-based process finally made poly(phenylene sulfide) into a real material, examining early molded Ryton parts.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Inventors_Dr._H._Wayne_Hill_Jr._%26_Mr._James_T._Edmonds.jpg",
+      "author": "Ktm200",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-sulfide/frank-phillips-tower-bartlesville.webp",
+      "alt": "A tall early-twentieth-century brick and terracotta office tower with arched upper-floor windows, photographed from street level against a clear blue sky.",
+      "caption": "The Frank Phillips Tower in downtown Bartlesville, Oklahoma, once part of Phillips Petroleum's headquarters complex — the same company, in the same small city, where Edmonds and Hill developed Ryton.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frank_Phillips_Tower,_Keeler_Avenue_and_4th_Street,_Bartlesville,_OK.jpg",
+      "author": "Warren LeMay",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-sulfide/coal-power-plant-cooling-tower-1973.webp",
+      "alt": "An aerial view of a coal-fired power plant's cooling tower venting a large plume of steam, with coal stockpiles, rail lines and a river visible in the surrounding landscape.",
+      "caption": "A coal-fired power plant photographed in September 1973, the same year Ryton reached the market — the kind of plant whose exhaust, decades later, would be filtered through baghouses lined with woven PPS fabric.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CLOUD_OF_STEAM_RISES_FROM_ONE_OF_THE_MASSIVE_COOLING_TOWERS_OF_THE_JOHN_AMOS_POWER_PLANT_NEAR_NITRO_ON_THE_KANAWHA..._-_NARA_-_551184.jpg",
+      "author": "Schaefer, Harry, Photographer ( NARA record: 8464469 )",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.35,

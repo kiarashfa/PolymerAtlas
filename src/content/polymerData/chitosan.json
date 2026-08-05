@@ -7,6 +7,10 @@
   "parent": "chitin",
   "cas_number": "9012-76-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H11NO4)n",
+    "structural": "[C6H7O2(OH)2(NH2)]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](N)[C@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](N)[C@H](*)O[C@@H]1CO",
   "notation_note": "Chitosan is chitin with most of its acetyl groups removed; the degree of deacetylation varies by preparation, so real material is a copolymer of the unit shown and the acetylated chitin unit.",
@@ -34,10 +38,54 @@
   "year_of_origin": 1961,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Yuri Gagarin"
+    "Charles Rouget",
+    "Felix Hoppe-Seyler"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Yuri Gagarin becomes the first human in space (1961)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/chitosan/gagarin-warsaw-1961.webp",
+      "alt": "A uniformed man standing in an open-topped car decorated with flowers, waving to a dense crowd lining a tree-lined avenue, with police motorcyclists riding alongside.",
+      "caption": "Yuri Gagarin touring Warsaw in 1961, the year materials science's postwar boom gave way to a more deliberate, engineering-driven era.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yuri_Gagarin_welcome_Warsaw_1961.jpg",
+      "author": "Nieznany/unknown",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/chitosan/charles-rouget-portrait.webp",
+      "alt": "A formal 19th-century studio portrait of a moustached man in a dark coat and bow tie, standing beside a brass microscope, with his signature printed below the image.",
+      "caption": "Charles Rouget, who first deacetylated chitin into a soluble derivative in 1859 and called it 'chitine modifiée.'",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Marie_Benjamin_Rouget.jpg",
+      "author": "John Farquahar Fulton, from 'Nouvelles archives du musee d'Histoire Naturelle', Paris, 1904, vol. VI.",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/chitosan/felix-hoppe-seyler-portrait.webp",
+      "alt": "A sepia-toned 19th-century portrait of a man with round spectacles, a moustache, and a patterned bow tie, with his signature printed below the image.",
+      "caption": "Felix Hoppe-Seyler, who gave Rouget's modified chitin the name chitosan in 1894.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Felix_Hoppe-Seyler,_Buste,_3-4_%C3%A0_dr_-_btv1b102171797.jpg",
+      "author": "Meisenbach-Riffarth (engraver); Jules Fuchs (photographer)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/chitosan/shrimp-shell-raw-material.webp",
+      "alt": "A dense pile of small pink and translucent whole shrimp, seen from directly above, filling the entire frame.",
+      "caption": "Raw material rather than raw curiosity: chitosan begins as the shell of a shrimp or crab, most of which the seafood industry would otherwise throw away.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pandborealispile.jpg",
+      "author": "U.S. National Oceanic and Atmospheric Administration",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/chitosan/chitosan-formed-objects.webp",
+      "alt": "An arrangement of small brightly coloured translucent cups and moulded trays with egg-carton-style indentations, in red, yellow, green and blue, laid out on a white tabletop.",
+      "caption": "Cups and moulded trays cast from chitosan — a demonstration of how far the material can be shaped once it has been processed into a workable form.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Objects_made_of_chitosan.png",
+      "author": "Jgfermart",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

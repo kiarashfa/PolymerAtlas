@@ -9,6 +9,10 @@
   "parent": "polyurethane",
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C19H20N2O4)x·(C4H8O)y",
+    "structural": "[-O-(CH2)4-O-CO-NH-C6H4-CH2-C6H4-NH-CO-]x[-O-(CH2)4-]y"
+  },
   "repeat_unit": "{[][>]OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)[<],[>]OCCCC[<][]}",
   "smiles_depiction": "*OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)*.*OCCCC*",
   "notation_note": "Two blocks doing two jobs: the rigid diisocyanate-diol hard segment shown here crystallizes into physical crosslinks, while the flexible polyether soft segment supplies the elasticity. The soft segment may equally be a polyester, and the block lengths are the main formulation lever.",
@@ -41,10 +45,45 @@
   "year_of_origin": 1967,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Christiaan Barnard"
+    "Charles S. Schollenberger"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Christiaan Barnard performs the first human heart transplant (1967)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/thermoplastic-polyurethane/christiaan-barnard-1968.webp",
+      "alt": "A head-and-shoulders portrait of a smiling man with dark hair, wearing a black suit and tie with a white pocket square, photographed outdoors at dusk.",
+      "caption": "Christiaan Barnard in 1968, the year after he performed the first human-to-human heart transplant in Cape Town.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christiaan_Barnard_1968.jpg",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-polyurethane/gogo-boots-fashion-1968.webp",
+      "alt": "A black-and-white snapshot of a girl in a short shift dress and a shoulder bag, standing indoors and wearing pale knee-high go-go boots.",
+      "caption": "A girl photographed in 1968 wearing go-go boots, the kind of glossy, synthetic-coated footwear that rode the 'wet look' fashion craze — and with it, sales of polyurethane coating resins like Estane.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Girl_in_1968.jpg",
+      "author": "jeanne (Wikimedia Commons user)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-polyurethane/cordless-drill-tpu-overmold-grip.webp",
+      "alt": "An orange and black cordless power drill standing upright on its battery pack, showing a textured black rubberized grip panel set into the orange handle.",
+      "caption": "A cordless drill with a soft-touch overmolded grip — the kind of comfort-and-durability detail that TPU's combination of flexibility and abrasion resistance was built for.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Black_%26_Decker_Cordless_20V_Drill.jpg",
+      "author": "TaurusEmerald",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-polyurethane/adidas-boost-etpu-midsole.webp",
+      "alt": "Close-up of a white, textured foam midsole strip made of small fused granules, set into the side of a grey and white knit running shoe.",
+      "caption": "Adidas's Boost midsole, made from expanded thermoplastic polyurethane beads fused together — a foam form of the same hard-segment/soft-segment chemistry Schollenberger patented, developed with BASF and brought to market in 2013.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Adidas_Boost_Material_in_focus_on_Adidas_Sesame-Trace_Green_NMD_R1s.jpg",
+      "author": "Bn.andrsn",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

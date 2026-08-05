@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "9003-54-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C8H8)x·(C3H3N)y",
+    "structural": "[-CH2-CH(C6H5)-]x[-CH2-CH(CN)-]y"
+  },
   "repeat_unit": "{[][$]CC(c1ccccc1)[$],[$]CC(C#N)[$][]}",
   "smiles_depiction": "*CC(c1ccccc1)*.*CC(C#N)*",
-  "notation_note": "A statistical copolymer, typically 70-80% styrene by weight.",
+  "notation_note": "A statistical (random) copolymer, typically 70-80% styrene by weight; the two brackets show the two monomer units and their approximate ratio, not a block sequence, since the two are mixed at random along the chain.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -38,7 +42,40 @@
   "era": "The Wartime Innovation Period (1939-1945)",
   "key_figures": [],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/styrene-acrylonitrile/pearl-harbor-attack-1941.webp",
+      "alt": "A warship listing and burning at anchor, engulfed in a vast column of black smoke, photographed from water level with a smaller vessel spraying firefighting water in the foreground.",
+      "caption": "Pearl Harbor, 7 December 1941. Within ten weeks, Japan's advance through Southeast Asia would cut off nearly all of America's natural rubber.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pearl_Harbor_Attack,_7_December_1941_-_80-G-19942.jpg",
+      "author": "U.S. Navy",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-acrylonitrile/scrap-rubber-drive-1942.webp",
+      "alt": "A donkey pulling a two-wheeled cart heaped with old tires past a filling station, with two men seated among the load.",
+      "caption": "Old tires collected for a wartime scrap rubber drive — the shortage reached rural roads as well as city streets.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scrap_Rubber_Drive_-_NARA_-_196503.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-acrylonitrile/goodrich-synthetic-rubber-1941.webp",
+      "alt": "Two factory workers in overalls bent over a rolling mill, guiding a thick, damp white sheet of rubber crumb between heavy rollers.",
+      "caption": "Synthetic rubber coming off the rolling mill at B.F. Goodrich's Akron plant in 1941, part of the wartime buildup that made acrylonitrile a bulk American chemical for the first time.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sheet_of_synthetic_rubber_coming_off_the_rolling_mill_at_the_plant_of_Goodrich.jpg",
+      "author": "Alfred T. Palmer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-acrylonitrile/scrap-rubber-poster-wpb.webp",
+      "alt": "A four-panel wartime poster illustrating a gas mask, a life raft, a scout car and a heavy bomber, each labelled with the pounds of rubber it required, above the headline 'America needs your scrap rubber'.",
+      "caption": "A 1942 War Production Board poster spelling out, item by item, just how much of the war effort ran on rubber - the shortage that pushed acrylonitrile into bulk American production in the first place.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:America_needs_your_scrap_rubber.jpg",
+      "author": "Boston Public Library",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.08,

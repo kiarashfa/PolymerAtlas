@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "25134-01-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C8H8O)n",
+    "structural": "[-O-C6H2(CH3)2-]n"
+  },
   "repeat_unit": "{[][>]Oc1c(C)cc(cc1C)[<][]}",
   "smiles_depiction": "*Oc1c(C)cc(cc1C)*",
+  "notation_note": "This is the repeat unit of PPO on its own. The commercial material, sold as Noryl, is almost always a miscible blend of this polymer with polystyrene, at ratios chosen for each grade -- a blend cannot be captured in a single repeat-unit formula.",
   "iupac_name": null,
   "synonyms": [
     "polyphenylene ether",
@@ -44,10 +49,47 @@
   "year_of_origin": 1966,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Allan Hay"
+    "Allan Hay",
+    "Edith Boldebuck"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "NFL-AFL merger announced (June 1966)",
+    "Super Bowl I, the merged leagues' first meeting on the field (January 1967)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyphenylene-oxide/super-bowl-i-packers-chiefs-1967.webp",
+      "alt": "Green Bay Packers defensive linemen in dark jerseys tackle a Kansas City Chiefs player in white and red, mid-play at Super Bowl I.",
+      "caption": "Super Bowl I, January 1967 — the first game between the merged leagues, the on-field result of the merger the two sides had announced the previous June.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1986_Jeno's_Pizza_-_15_-_Willie_Davis_(Willie_Davis_crop).jpg",
+      "author": "Jeno's",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-oxide/ge-research-laboratory-schenectady.webp",
+      "alt": "A red-brick early-twentieth-century industrial research complex with a rooftop sign reading GENERAL ELECTRIC beneath the company's monogram, seen across a fenced lawn.",
+      "caption": "The General Electric Research Laboratory in Schenectady, New York, where Hay made his accidental discovery in 1956 and where, a few years later, a colleague in the same building found the fix for its biggest flaw.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GE_Schenectady.JPG",
+      "author": "UpstateNYer",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-oxide/noryl-computer-cover.webp",
+      "alt": "The underside of a black molded plastic computer duct, stamped with manufacturer part numbers, resin-identification codes, and the text NORYL GE PX1005X beside a PPO recycling symbol.",
+      "caption": "A Noryl PPO/polystyrene duct cover from inside a desktop computer, its resin code molded directly into the part — the ordinary, everyday form the material actually took.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Computer_cover_made_of_Noryl.jpg",
+      "author": "Cjp24",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyphenylene-oxide/jack-welch-portrait-2012.webp",
+      "alt": "A bald, smiling older man in a dark pinstriped suit, light blue shirt and striped tie, photographed head-on in a portrait setting.",
+      "caption": "Jack Welch, photographed decades later in 2012. In 1966 he was a young GE chemical engineer helping push the toughened Noryl blend through its development crisis, long before he became the company's chairman.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:JackWelchApril2012.jpg",
+      "author": "Hamilton83",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.06,

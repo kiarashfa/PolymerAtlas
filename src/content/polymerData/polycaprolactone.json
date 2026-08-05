@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "24980-41-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H10O2)n",
+    "structural": "[-O-(CH2)5-CO-]n"
+  },
   "repeat_unit": "{[][>]OCCCCCC(=O)[<][]}",
   "smiles_depiction": "*OCCCCCC(=O)*",
+  "notation_note": "epsilon-Caprolactone has no stereocentre, so the ring-opened chain repeat shown is unambiguous.",
   "iupac_name": "Poly(epsilon-caprolactone)",
   "synonyms": [],
   "aliases": [],
@@ -31,9 +36,55 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1985,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Fritz Hostettler",
+    "Colin Pitt"
+  ],
+  "historical_events_referenced": [
+    "Chuck Hull's stereolithography (3D printing) patent, filed August 1984 and granted March 1986"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polycaprolactone/wallace-carothers-lab.webp",
+      "alt": "A man in glasses and a suit stands at a laboratory bench holding up a coiled strip of material in one hand and a small sample in the other, with glassware and a Bunsen burner behind him.",
+      "caption": "Wallace Carothers in his DuPont laboratory. His research group made PCL for the first time in 1934, the same year it was chasing the lactone chemistry behind early polylactic acid.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wallace_Carothers,_in_the_lab.jpg",
+      "author": "Unknown photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polycaprolactone/union-carbide-south-charleston.webp",
+      "alt": "A hazy, sepia-toned view over a river town toward a large chemical plant with five tall smokestacks, one venting dark smoke, with storage tanks and rows of houses in the foreground.",
+      "caption": "A Union Carbide chemical complex in West Virginia, photographed in 1973. Union Carbide's chemists commercialised PCL around 1960 for coatings and adhesives, long before anyone thought to put it in the body.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:SMOKESTACKS_OF_THE_UNION_CARBIDE_PLANT_IN_SOUTH_CHARLESTON_THE_RESIDENTIAL_SECTION_IS_CLOSE_BY_-_NARA_-_551146.jpg",
+      "author": "Schaefer, Harry, Photographer (NARA record: 8464469)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polycaprolactone/pcl-beads.webp",
+      "alt": "A close-up photograph of translucent, off-white plastic pellets, oval and pearl-like, densely packed together and catching the light unevenly.",
+      "caption": "Polycaprolactone resin pellets — the raw form in which the polymer is sold before it is melted into filament, coatings, or medical devices.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PCL_beads.jpg",
+      "author": "Prosthetic Head",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polycaprolactone/shapelock-bike-light.webp",
+      "alt": "A close-up of a bicycle handlebar stem where two flashlight torches are clamped in place by a lump of hand-shaped white plastic moulded around the metal fittings.",
+      "caption": "A bicycle light mount, hand-moulded from softened PCL pellets — the same low melting point that made it a slow-release drug implant also makes it workable with nothing hotter than tap water.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shapelock_bike_light.png",
+      "author": "Catsmeat",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polycaprolactone/reprap-mendel-fdm-printer.webp",
+      "alt": "A homemade desktop 3D printer built from metal threaded rods and 3D-printed white plastic brackets, with circuit boards and wiring visible on top and a build platform below.",
+      "caption": "An early open-source RepRap 'Mendel' desktop printer, of the fused-filament kind PCL's low melting point has made a favourite low-temperature filament for.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RepRap_'Mendel'.jpg",
+      "author": "CharlesC",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.135,

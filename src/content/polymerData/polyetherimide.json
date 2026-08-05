@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "61128-46-9",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C37H24N2O6)n",
+    "structural": "[-N(CO)2-C6H3-O-C6H4-C(CH3)2-C6H4-O-C6H3-(CO)2-N-C6H4-]n"
+  },
   "repeat_unit": "{[][>]N1C(=O)c2ccc(Oc3ccc(cc3)C(C)(C)c3ccc(cc3)Oc3ccc4C(=O)N(C(=O)c4c3)c3cccc(c3)[<])cc2C1=O[]}",
   "smiles_depiction": "*N1C(=O)c2ccc(Oc3ccc(cc3)C(C)(C)c3ccc(cc3)Oc3ccc4C(=O)N(C(=O)c4c3)c3cccc(c3)*)cc2C1=O",
-  "notation_note": "The bisphenol A-based polyetherimide shown is the commercial archetype. The ether links between the imide rings are what make it melt-processable, unlike the fully rigid polyimides.",
+  "notation_note": "The bisphenol A-based polyetherimide shown is the commercial archetype (Ultem). Each (CO)2 bridge is one fused five-membered imide ring, written open for readability; the ether links either side of the bisphenol A bridge are what make this polymer melt-processable, unlike the fully rigid polyimides.",
   "iupac_name": null,
   "synonyms": [
     "Ultem"
@@ -42,9 +46,42 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1975,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Tohru Takekoshi", "General Electric"],
+  "historical_events_referenced": ["Apollo-Soyuz Test Project docking (July 1975)", "Takekoshi and Kochanowski's polyetherimide patent grant (16 September 1975)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyetherimide/apollo-soyuz-crews-portrait-1975.webp",
+      "alt": "Five men in flight suits pose for a formal portrait, three in tan NASA suits and two in olive Soviet suits, seated around a table holding a scale model of the docked Apollo and Soyuz spacecraft, flanked by American and Soviet flags.",
+      "caption": "The Apollo and Soyuz crews, photographed together ahead of the July 1975 docking mission that required American and Soviet hardware to be engineered to work as one system.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_ASTP_crews_-_restoration.jpg",
+      "author": "Adam Cuerden",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyetherimide/ge-research-lab-schenectady.webp",
+      "alt": "A large early-twentieth-century brick research building with a rooftop sign reading GENERAL ELECTRIC beneath the company's script-lettered monogram, seen across a park-like lawn with mature trees.",
+      "caption": "General Electric's Research and Development Center in Schenectady, New York, where Tohru Takekoshi's team developed the ether-linked polyimide chemistry behind Ultem.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Building_37,_General_Electric_Research_Laboratory,_Schenectady,_New_York_-_20220615.jpg",
+      "author": "Andre Carrotflower",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyetherimide/kapton-polyimide-tape-rolls.webp",
+      "alt": "Several rolls of amber, semi-transparent Kapton polyimide tape, still shrink-wrapped with barcode labels, stacked together.",
+      "caption": "Rolls of Kapton polyimide tape — the rigid, unmeltable chemistry that polyetherimide shares an imide ring with, but that it alone among this family can also melt and mold.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kapton_tapes,_three_rolls_of_different_widths.jpg",
+      "author": "Dsimic",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyetherimide/boeing-787-cabin-interior.webp",
+      "alt": "A close-up view inside an aircraft cabin showing two rows of blue upholstered economy seats beside oval windows, with white overhead panelling and ventilation nozzles visible above.",
+      "caption": "An aircraft cabin interior — the kind of environment where Ultem-family resins are chosen for panels and ducting precisely because they resist fire and produce little smoke.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:B-787-LAN-interior.jpg",
+      "author": "FDV",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.27,

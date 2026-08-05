@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9011-14-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C5H8O2)n",
+    "structural": "[-CH2-C(CH3)(COOCH3)-]n"
+  },
   "repeat_unit": "{[][$]CC(C)(C(=O)OC)[$][]}",
   "smiles_depiction": "*CC(C)(C(=O)OC)*",
   "iupac_name": "Poly(methyl 2-methylpropenoate)",
@@ -54,10 +58,48 @@
   "year_of_origin": 1933,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
   "key_figures": [
-    "Otto Röhm"
+    "Otto Röhm",
+    "John Crawford",
+    "Rowland Hill"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Franklin D. Roosevelt's first inauguration and the start of the New Deal's Hundred Days (4 March 1933)",
+    "Nationwide U.S. bank holiday declared (6 March 1933)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polymethyl-methacrylate/fdr-first-inauguration-1933.webp",
+      "alt": "A crowd-filled inaugural platform draped in garlands, where a man in a dark coat raises his right hand to take an oath before a robed official, flanked by dignitaries in overcoats and top hats, with the year 1933 carved into the balustrade below.",
+      "caption": "Franklin D. Roosevelt takes the oath of office on 4 March 1933, opening the Hundred Days of emergency legislation that followed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Flickr_-_USCapitol_-_Franklin_D._Roosevelt's_First_Inauguration.jpg",
+      "author": "USCapitol",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polymethyl-methacrylate/bank-run-michigan-1933.webp",
+      "alt": "A dense crowd of men and women in coats and hats gathered on a city sidewalk outside a bank building with shuttered windows.",
+      "caption": "Depositors outside a Detroit bank in February 1933, days before Roosevelt's inauguration — the banking panic that produced his first act in office.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bank_Run_in_Michigan,_USA,_February_1933.jpg",
+      "author": "Photographer not credited.",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polymethyl-methacrylate/rohm-haas-resin-research-laboratory.webp",
+      "alt": "A wood-panelled chemistry laboratory with long benches crowded with glassware and distillation apparatus, and shelves of labelled reagent bottles along one wall.",
+      "caption": "Röhm & Haas's Philadelphia resin laboratory, sister operation to the German works where Röhm's team produced Plexiglas in 1933.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rohm_and_Haas_Resin_Research_Laboratory_-_DPLA_-_82455af186fbcd49c32b34003c6c03bf.jpg",
+      "author": "Rohm and Haas Company",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/polymethyl-methacrylate/ici-perspex-showroom.webp",
+      "alt": "The glass-fronted ground floor of a modernist building, its window display arranged with pale blue and lime-green moulded fixtures.",
+      "caption": "A later showroom for ICI's Perspex — the acrylic sheet developed in Britain almost simultaneously with Röhm's Plexiglas.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Showroom_for_ICI_perspex_products_-_geograph.org.uk_-_922411.jpg",
+      "author": "Alexander P Kapp",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.185,

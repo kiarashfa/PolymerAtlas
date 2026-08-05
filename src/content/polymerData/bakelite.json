@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": "9003-35-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Crosslinked phenol-formaldehyde thermoset network; a densely crosslinked resin has no single linear repeat unit.",
   "iupac_name": "Polyoxybenzylmethyleneglycol anhydride",
@@ -48,7 +52,49 @@
     "Leo Baekeland"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/bakelite/new-york-curb-market-1907.webp",
+      "alt": "Crowds of brokers packed into a New York street, signalling with their hands up to clerks leaning from the office windows above.",
+      "caption": "The New York curb market, where trading spilled into the street. In the autumn of 1907 a copper corner collapsed the Knickerbocker Trust and took much of Wall Street with it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Curb_market.jpg",
+      "author": "Bain News Service",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/bakelite/baekeland-portrait.webp",
+      "alt": "Studio portrait of Leo Baekeland in a dark suit, balding, with a heavy moustache and wire-rimmed spectacles.",
+      "caption": "Leo Baekeland. Having sold Velox to Eastman, he could pursue a problem for years without having to justify it to anyone.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Leo_Hendrik_Baekeland.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/bakelite/wright-flyer-fort-myer.webp",
+      "alt": "A Wright Flyer biplane standing on grass, a crowd of soldiers and officials gathered along one wing.",
+      "caption": "The Wright Flyer on Army trials. Powered flight was four years old and still built from spruce and cloth — the whole technological ambition of the age was running up against the same short list of natural materials.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wright_Flyer_Test_Flights_at_Fort_Myer,_VA_-_GPN-2002-000124.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/bakelite/first-bakelizer.webp",
+      "alt": "An egg-shaped riveted iron pressure vessel standing on a tiled laboratory floor, with a large valve wheel on top and pipework running to the wall.",
+      "caption": "The first semi-commercial Bakelizer, from Baekeland's own laboratory.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:First_Semi-commercial_Bakelizer_1935_Bakelite_Review_Silver_Anniversary_p6.tif",
+      "author": "Unknown author",
+      "license": "Public domain",
+      "attribution_text": "Bakelite Review, Silver Anniversary Number, 1935 · Public domain"
+    },
+    {
+      "src": "~/assets/polymers/bakelite/philips-bakelite-radio.webp",
+      "alt": "A 1930s Philips radio receiver in a dark brown moulded case with a fan-shaped speaker grille.",
+      "caption": "A Philips receiver of the mid-1930s, its entire cabinet moulded in one piece.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bakelite_radio.jpg",
+      "author": "Robneild (Wikipedia)",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

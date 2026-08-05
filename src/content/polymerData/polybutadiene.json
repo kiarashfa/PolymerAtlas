@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-17-2",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6)n",
+    "structural": "[-CH2-CH=CH-CH2-]n"
+  },
   "repeat_unit": "{[][$]C/C=C\\C[$][]}",
   "smiles_depiction": "*C/C=C\\C*",
   "structure_variants": [
@@ -65,10 +69,51 @@
   "year_of_origin": 1915,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
   "key_figures": [
-    "Walter Bock"
+    "Sergei Lebedev"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polybutadiene/ypres-aerial-1915.webp",
+      "alt": "A grainy aerial reconnaissance photograph of a war-damaged town, its streets and building outlines visible from directly above, with handwritten annotations in the margins.",
+      "caption": "Ypres, photographed from a German aircraft during the battle that opened with the war's first large gas attack in April 1915 - the same national mobilisation of chemistry that was, that same year, being pointed at rubber.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Ypres_during_the_Second_Battle_of_Ypres_(1915).jpg",
+      "author": "Leutnant Eichler, spotter for the Imperial German Flying Corps",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybutadiene/german-gas-mask-ww1.webp",
+      "alt": "A corroded metal filter canister attached by a corrugated rubber hose to a leather and fabric head harness, laid out on a plain cloth background.",
+      "caption": "A German gas mask of the type issued after Ypres - its breathing hose was one more everyday object that depended on rubber Germany could no longer import by sea.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mask,_gas_(AM_612860-1).jpg",
+      "author": "Draeger",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutadiene/grand-fleet-scapa-flow-1915.webp",
+      "alt": "A watercolour of two British battlecruisers riding at anchor in a calm, hazy harbour, seen across open water past a red mooring buoy.",
+      "caption": "Battlecruisers of the Grand Fleet at Scapa Flow, painted around 1915 - the ships that kept German merchant traffic, and German rubber imports, off the high seas for the length of the war.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Two_'Invincible'-class_battlecruisers_at_Scapa_Flow,_1915-17,_with_a_red_cone_buoy_in_the_foreground_RMG_PU9907.jpg",
+      "author": "William Lionel Wyllie",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybutadiene/fritz-hofmann-portrait.webp",
+      "alt": "A formal seated studio portrait of a balding man with a heavy moustache, in a dark suit with a bow tie, hands folded in his lap.",
+      "caption": "Fritz Hofmann, photographed around 1909, the year he patented the first synthetic rubber. The isoprene rubber he patented that year was not good enough to last; the wartime substitute his laboratory produced instead was not the polymer this page is about, but it proved the idea could be forced to work under pressure.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fritz_Hofmann_ca1909_Bayer.jpg",
+      "author": "Bayer LANXESS AG",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybutadiene/sergei-lebedev-portrait.webp",
+      "alt": "A black-and-white studio portrait of a bearded man with short combed-back hair, wearing a dark suit and striped tie, photographed from the shoulders up.",
+      "caption": "Sergei Lebedev, the chemist who actually first polymerised butadiene, in the 1920s - the decade his 1910 laboratory result became Soviet industrial policy.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sergey_Lebedev.jpg",
+      "author": "Unknown author (Mondadori publishers)",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.9025,

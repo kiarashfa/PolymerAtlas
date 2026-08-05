@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A design methodology (machine-learning-guided property prediction and generative molecular design applied to polymers) rather than a single chemistry -- the polymers ultimately produced/recommended by these methods are conventional polymer chemistries (existing or novel), so there is no repeat unit for the methodology itself.",
   "iupac_name": null,
@@ -19,9 +23,47 @@
   "polymer_class": null,
   "year_of_origin": 2020,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Rampi Ramprasad"
+  ],
+  "historical_events_referenced": [
+    "DeepMind's AlphaFold2 wins the CASP14 protein-structure-prediction competition (November-December 2020)",
+    "2024 Nobel Prize in Chemistry awarded to Demis Hassabis and John Jumper for AlphaFold, and to David Baker for computational protein design"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/ai-designed-polymers/alphafold2-casp14-performance.webp",
+      "alt": "A scientific figure in five panels: a bar chart comparing AlphaFold's median prediction error against fourteen rival groups at the CASP14 competition, three overlaid ribbon-diagram comparisons of predicted (blue) and experimentally determined (green) protein structures, and a schematic of the neural network's internal architecture.",
+      "caption": "The figure from AlphaFold2's own paper: at CASP14 in November 2020, its predictions (blue) matched experimentally solved structures (green) closely enough that the two are hard to tell apart, while its median error sat far below every competing method's.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:AlphaFold_2.png",
+      "author": "John Jumper et al",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/ai-designed-polymers/demis-hassabis-2024-nobel-chemistry.webp",
+      "alt": "A smiling bald man wearing glasses and a dark suit with a blue tie stands beside a banner reading 'Kungl. Vetenskapsakademien — The Royal Swedish Academy of Sciences'.",
+      "caption": "Demis Hassabis at the 2024 Nobel Prize week in Stockholm. He and John Jumper shared that year's Chemistry Prize for AlphaFold, four years after CASP14 — the clearest sign yet that data-driven structure prediction had become a recognised branch of chemistry rather than a curiosity.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis,_2024_Nobel_Prize_Laureate_in_Chemistry_6.jpg",
+      "author": "John Sears",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/ai-designed-polymers/summit-supercomputer-oak-ridge.webp",
+      "alt": "A long aisle between tall black server cabinets with angular blue accent panels, cables running along an overhead yellow gantry, with the word 'Summit' printed vertically on the nearest cabinet.",
+      "caption": "Oak Ridge National Laboratory's Summit, unveiled in 2018 as the world's most powerful scientific supercomputer — the scale of machine that the quantum-mechanical calculations behind polymer property databases, and the neural networks trained on them, actually require.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Summit_supercomputer_(44552257460).jpg",
+      "author": "Oak Ridge National Laboratory",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/ai-designed-polymers/graphics-processing-unit.webp",
+      "alt": "A close-up photograph of a graphics processing unit chip on a green circuit board, its black ceramic package etched with a manufacturer's logo and serial number, surrounded by smaller surface-mounted components.",
+      "caption": "A graphics processing unit of the kind that, adapted from video games to matrix arithmetic, made training a network on hundreds of thousands of molecular structures a practical afternoon's work rather than a practical impossibility.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Graphics_Processing_Unit.JPG",
+      "author": "Nick Stathas",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

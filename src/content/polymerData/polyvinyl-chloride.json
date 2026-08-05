@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9002-86-2",
   "resin_id_code": "3",
+  "chemical_formula": {
+    "empirical": "(C2H3Cl)n",
+    "structural": "[-CH2-CHCl-]n"
+  },
   "repeat_unit": "{[][$]CC(Cl)[$][]}",
   "smiles_depiction": "*CC(Cl)*",
   "iupac_name": "Poly(1-chloroethylene)",
@@ -40,8 +44,43 @@
   "key_figures": [
     "Waldo Semon"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Bonus Army encampment forcibly cleared in Washington, D.C. (July 1932)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyvinyl-chloride/bonus-army-camp-burning-1932.webp",
+      "alt": "Black-and-white photograph of wooden shacks engulfed in flames and thick smoke, with the U.S. Capitol dome visible through the haze in the background.",
+      "caption": "The Bonus Army's camp on the Anacostia Flats burns after federal troops cleared it, July 1932 — the year's clearest snapshot of a country with almost nothing left to spend.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Evictbonusarmy.jpg",
+      "author": "U.S. Army Signal Corps",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-chloride/pure-pvc-powder.webp",
+      "alt": "A small glass vial, capped with a metal screw lid, half filled with a fine white powder.",
+      "caption": "Raw polyvinyl chloride resin, with no plasticizer added — the rigid, unworkable form both Baumann and Klatte abandoned before Semon found a way in.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pure_Polyvinyl_Chloride_powder.jpg",
+      "author": "LHcheM",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-chloride/pvc-sewer-pipe-installation.webp",
+      "alt": "A construction worker in a hard hat kneels in a trench, fitting together large orange-brown ribbed plastic pipe sections, with an excavator bucket visible above.",
+      "caption": "PVC sewer pipe being laid — the low-cost, corrosion-proof role that now consumes roughly half of all PVC resin produced.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laying_sewer_hi_res_(2).jpg",
+      "author": "Steve Tan",
+      "license": "Attribution"
+    },
+    {
+      "src": "~/assets/polymers/polyvinyl-chloride/vinyl-lp-record.webp",
+      "alt": "A black 12-inch vinyl LP record with a yellow paper label, photographed flat against a white background.",
+      "caption": "A vinyl LP. The word became so attached to the format that most people no longer think of it as naming a chlorine-bearing plastic at all.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:12in-Vinyl-LP-Record-Angle.jpg",
+      "author": "Evan-Amos",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.4,

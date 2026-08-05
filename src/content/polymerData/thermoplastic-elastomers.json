@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "TPEs are a structural class (phase-separated hard/soft block copolymers or polymer blends combining rubber-like elasticity with thermoplastic melt-processability) rather than one chemistry -- member families include SBS/SEBS, TPU, TPO, TPV, and copolyester/copolyamide TPEs, several of which have their own entries.",
   "iupac_name": null,
@@ -25,9 +29,54 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1983,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Norman R. Legge"
+  ],
+  "historical_events_referenced": [
+    "ARPANET TCP/IP flag day (1 January 1983)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/thermoplastic-elastomers/arpanet-imp-hardware.webp",
+      "alt": "A cream-coloured metal equipment panel labelled INTERFACE MESSAGE PROCESSOR, fitted with two rows of illuminated push-buttons and switches, mounted inside an open cabinet.",
+      "caption": "An original Interface Message Processor, the routing hardware behind the earliest ARPANET nodes. By 1 January 1983, every host still on the network had to speak through machines like this one in a single shared protocol, TCP/IP.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1969_ARPANET_BBN_IMP.jpg",
+      "author": "ARPANET IMP",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-elastomers/charles-goodyear-portrait.webp",
+      "alt": "A sepia-toned daguerreotype-style portrait of a middle-aged man with tousled dark hair and a bow tie, looking slightly off-camera.",
+      "caption": "Charles Goodyear, whose 1839 discovery of vulcanization gave rubber its stretch and recovery by locking its chains into a permanent chemical network — the very permanence a later generation of chemists had to find a way around.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Southworth_and_Hawes_-_Charles_Goodyear_(Zeno_Fotografie)_crop.png",
+      "author": "Southworth & Hawes",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-elastomers/running-shoe-soles.webp",
+      "alt": "A pair of black-and-grey knit running shoes with white ridged outsoles, standing on a sunlit paved surface.",
+      "caption": "A pair of running shoes. Cushioned midsoles and outsoles like these are among the most common everyday homes for thermoplastic elastomer compounds — soft enough to spring back underfoot, meltable enough to injection-mould by the million.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:New_shoes_(13519423543).jpg",
+      "author": "Mark Bonica from Durham, NH, USA",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-elastomers/sbs-block-copolymer-tem-micrograph.webp",
+      "alt": "A black-and-white transmission electron micrograph showing a dense field of small pale dots scattered across a dark background, with a 0.2 micrometre scale bar in the corner.",
+      "caption": "A transmission electron micrograph of styrene-butadiene-styrene block copolymer (Kraton), one member of the thermoplastic elastomer family. The pale dots are hard polystyrene domains dispersed through a soft polybutadiene matrix — the physical microstructure, not any chemical crosslink, that holds the material together at room temperature.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sbs_block_copolymer.jpg",
+      "author": "Peter R Lewis",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/thermoplastic-elastomers/amc-matador-kraton-bumper-fascia.webp",
+      "alt": "Close-up of the front bumper and grille of a glossy tan 1974 AMC Matador, showing a chrome strip over a moulded elastic bumper fascia and a Rambler Ranch dealer plate frame.",
+      "caption": "The front bumper fascia of a 1974 AMC Matador, moulded from Shell's Kraton SBS block copolymer — one member of the thermoplastic elastomer family, and one of the earliest large-scale automotive uses of the idea in place of chrome-plated steel.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1974_AMC_Matador_sedan_in_Golden_Tan_standard_interior_at_Rambler_Ranch_bumper.jpg",
+      "author": "CZmarlin — Christopher Ziemnowicz, releases rights, but a photo credit would be appreciated if this image is used anywhere other than Wikipedia. Please leave a note at Wikipedia here . Thank you!",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

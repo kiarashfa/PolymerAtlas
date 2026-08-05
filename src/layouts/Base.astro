@@ -43,6 +43,8 @@ const isHome = title === 'Atlas of Polymers';
             document.documentElement.classList.remove('variant-gilt');
             document.documentElement.classList.add('variant-' + v);
           }
+          if (localStorage.getItem('pa-glaze') === 'off')
+            document.documentElement.classList.add('no-glaze');
         } catch {}
       })();
     </script>

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Family classification covering 150+ possible hydroxyalkanoate monomer combinations; poly(3-hydroxybutyrate) (PHB, this hub's earliest and simplest member, already covered in its own variant entry dated 1976 -- decades before this family classification itself emerged) is the archetype, but the family as a whole has no single repeat unit.",
   "iupac_name": null,
@@ -31,9 +35,49 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 2006,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Alexander Steinbüchel",
+    "Metabolix"
+  ],
+  "historical_events_referenced": [
+    "New Horizons launches toward Pluto (19 January 2006)",
+    "International Astronomical Union votes to define \"dwarf planet\" and reclassifies Pluto (24 August 2006)",
+    "Metabolix and ADM announce the Telles joint venture to produce PHA at commercial scale (13 February 2006)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyhydroxyalkanoates/new-horizons-launch-2006.webp",
+      "alt": "An Atlas V rocket blasting off from a launch pad in a burst of orange flame and white smoke, framed between two tall lightning-protection towers against a blue sky.",
+      "caption": "NASA's New Horizons spacecraft launches toward Pluto on 19 January 2006 — bound for a planet that, seven months later, would no longer officially be one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:New_Horizons_launch.jpg",
+      "author": "Kim Shiflett",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxyalkanoates/iau-prague-closing-ceremony-2006.webp",
+      "alt": "Rows of seated delegates in a theatre-style hall, several wearing lanyards and holding papers, listening attentively during a conference session.",
+      "caption": "Delegates at the International Astronomical Union's 26th General Assembly in Prague, photographed on 24 August 2006 — the day the IAU voted to define 'dwarf planet' and reclassify Pluto.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Closing_Ceremony_2_IAU2006GA.jpg",
+      "author": "Astronomical Institute, Academy of Sciences of the Czech Republic",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxyalkanoates/pha-family-structures.webp",
+      "alt": "A chemical structure diagram showing three repeat units in square brackets: PH3B with a methyl side group, PHV with an ethyl side group, and PHBV, a copolymer combining both units in one chain.",
+      "caption": "Three members of the PHA family drawn side by side: polyhydroxybutyrate (PH3B) and polyhydroxyvalerate (PHV) differ only in the length of one side group, and PHBV combines both monomers in a single copolymer chain.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polyhydroxyalkanoates.png",
+      "author": "Berserker79 at en.wikipedia",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxyalkanoates/pilot-scale-bioreactors.webp",
+      "alt": "A row of polished stainless-steel bioreactor vessels with control panels, sensors, and coiled tubing, in a clean industrial laboratory setting.",
+      "caption": "Pilot-scale stainless-steel bioreactors of the kind used to ferment PHA-producing bacteria at increasing scale — the unglamorous engineering step between a laboratory culture and a commodity material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BTEC_Bioreactors.jpg",
+      "author": "RickLawless",
+      "license": "CC BY 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

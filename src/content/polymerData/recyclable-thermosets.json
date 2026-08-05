@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Represented by IBM's polyhexahydrotriazine (PHT, nicknamed 'Titan'), discovered accidentally in 2014 -- a specific dynamic-covalent-network chemistry rather than a fixed general repeat unit for 'recyclable thermosets' as a category, which is closely related to (but distinct from) vitrimers.",
   "iupac_name": null,
@@ -52,8 +56,44 @@
   "key_figures": [
     "Jeannette Garcia"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Rosetta wakes from hibernation, European Space Operations Centre (20 January 2014)",
+    "Philae becomes the first spacecraft to land on a comet nucleus, 67P/Churyumov–Gerasimenko (12 November 2014)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/recyclable-thermosets/rosetta-signal-received-2014.webp",
+      "alt": "A group of engineers in a space mission control room, several with fists raised and mouths open in celebration, standing at rows of monitors below screens reading 'ESA'.",
+      "caption": "Mission control at ESOC, Darmstadt, on 20 January 2014, the moment Rosetta's signal confirmed it had woken from hibernation on schedule.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Signal_received_from_Rosetta_(12055070794).jpg",
+      "author": "ESA - Jürgen Mai",
+      "license": "CC BY-SA 3.0 igo"
+    },
+    {
+      "src": "~/assets/polymers/recyclable-thermosets/comet-67p-philae-landing-site-2014.webp",
+      "alt": "A grainy black-and-white image of an irregularly shaped, cratered comet nucleus made of two lobes joined by a narrower neck, photographed against the blackness of space.",
+      "caption": "Comet 67P/Churyumov–Gerasimenko, photographed by Rosetta days before Philae's landing attempt — a decade of navigation ending in a bounce nobody had planned for.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Comet_67P_Philae_landing_site_20141030_NavCam_mosaic.jpg",
+      "author": "ESA/Rosetta/NAVCAM",
+      "license": "CC BY-SA 3.0 igo"
+    },
+    {
+      "src": "~/assets/polymers/recyclable-thermosets/claw-hammer.webp",
+      "alt": "A steel-headed claw hammer with a black and yellow rubber-gripped handle, resting on a concrete floor.",
+      "caption": "An ordinary claw hammer — the tool Garcia actually needed to free her accidental discovery from its flask.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stanley_graphite_claw_hammer.jpg",
+      "author": "J.C. Fields",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/recyclable-thermosets/ibm-research-almaden.webp",
+      "alt": "An aerial view of a low, dark, multi-winged office building set among dry golden hills, reached by a single winding access road, with a small town visible in the hazy valley beyond.",
+      "caption": "IBM Research–Almaden, San Jose, where Garcia's group turned an accident in a flask into a published discovery.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IBM_Research_Almaden.jpg",
+      "author": "Dicklyon",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

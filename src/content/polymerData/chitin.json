@@ -7,8 +7,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C8H13NO5)n",
+    "structural": "[C6H7O2(OH)2(NHCOCH3)]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](NC(C)=O)[C@@H](O[C@@H]1CO)[<][]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](NC(C)=O)[C@@H](O[C@@H]1CO)*",
+  "notation_note": "The N-acetylglucosamine unit is shown in condensed form (ring core plus two hydroxyls and one acetamido group, replacing one hydroxyl of the parent glucose/cellulose unit). Two crystalline polymorphs exist (alpha, beta) and native chitin is often partially deacetylated in vivo; the fully acetylated repeat is shown.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -29,10 +34,44 @@
   "year_of_origin": 1884,
   "era": "Decoding Nature's Legacy (1833-1902)",
   "key_figures": [
-    "Heinrich Ledderhose"
+    "Georg Ledderhose",
+    "Ferdinand Tiemann"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/chitin/cicada-molted-exoskeleton.webp",
+      "alt": "A translucent, amber-colored, empty cicada exoskeleton still gripping the bark of a tree with its clawed legs, left behind after the adult insect emerged.",
+      "caption": "A cicada's shed exoskeleton, left intact on a tree trunk — pure chitin, holding its exact shape long after the living insect inside it has gone.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Wonders_Of_Nature!_(Cicada_Nymph_Skin)_(51014966282).jpg",
+      "author": "Geoff McKay from Palmerston North, New Zealand",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/chitin/fiddler-crab-exoskeleton.webp",
+      "alt": "A pale, patterned crab sheltering among dry twigs and green succulent shoots in a coastal marsh.",
+      "caption": "A fiddler crab. Its entire shell — legs, claws, carapace — is chitin reinforced with minerals, the same molecule Ledderhose broke apart in the laboratory in 1876.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fiddler_crab_exoskeleton_shedding_within_the_marsh_(6555236543).jpg",
+      "author": "Pacific Southwest Region USFWS from Sacramento, US",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/chitin/shrimp-shells-heap.webp",
+      "alt": "A large heap of pink-orange shrimp shells and heads piled on a white plate, set on a white cloth.",
+      "caption": "Shrimp shells left over from cooking — exactly the seafood-processing byproduct that modern chitin extraction now treats as a resource rather than waste.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_heap_of_shrimp_shells_on_a_plate_in_Tuntorp_1.jpg",
+      "author": "W.carter",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/chitin/blue-morpho-butterfly-wings.webp",
+      "alt": "A blue morpho butterfly with wings fully spread, showing brilliant iridescent blue wing surfaces edged in dark brown, resting on a large green leaf.",
+      "caption": "A blue morpho's wings. The blue is not a pigment at all — it comes from chitin nanostructures on the wing scales that bend and scatter light.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blue_Morpho_butterfly_(Morpho_peleides)_wings_open.jpg",
+      "author": "Alias 0591 from the Netherlands",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

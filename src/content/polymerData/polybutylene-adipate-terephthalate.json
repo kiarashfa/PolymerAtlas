@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "130479-65-1",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C10H16O4)x·(C12H12O4)y",
+    "structural": "[-O-(CH2)4-O-CO-(CH2)4-CO-]x[-O-(CH2)4-O-CO-C6H4-CO-]y"
+  },
   "repeat_unit": "{[][>]OCCCCOC(=O)CCCCC(=O)[<],[>]OCCCCOC(=O)c1ccc(cc1)C(=O)[<][]}",
   "smiles_depiction": "*OCCCCOC(=O)CCCCC(=O)*.*OCCCCOC(=O)c1ccc(cc1)C(=O)*",
   "notation_note": "A random copolyester. The flexible aliphatic adipate segments are what bacteria can attack; the rigid aromatic terephthalate segments are what make it strong enough to use.",
@@ -49,9 +53,46 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1992,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "BASF"
+  ],
+  "historical_events_referenced": [
+    "United Nations Earth Summit, Rio de Janeiro, June 1992"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polybutylene-adipate-terephthalate/rio-92-greenpeace-banner.webp",
+      "alt": "An aerial photograph of Sugarloaf Mountain in Rio de Janeiro, with a cable car passing in the foreground and a large white banner reading 'SOLD / VENDIDO' with a Greenpeace logo hung across the rock face.",
+      "caption": "A Greenpeace banner on Sugarloaf Mountain during the June 1992 Earth Summit, protesting what activists saw as a conference trading firm commitments for compromise.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Faixa_do_Greenpeace_no_P%C3%A3o_de_A%C3%A7%C3%BAcar_%E2%80%93_Rio-92_%E2%80%93_1992_%E2%80%93_Celso_Meira.jpeg",
+      "author": "Celso Meira",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-adipate-terephthalate/basf-ludwigshafen-plant.webp",
+      "alt": "A wide view across farmland toward a large chemical plant on the horizon, its skyline dense with distillation towers, storage tanks and a tall red-and-white striped chimney.",
+      "caption": "Part of BASF's Ludwigshafen site, where PBAT was developed through the early 1990s and first sold, as ecoflex, in 1998.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:BASF_Ludwigshafen_part.jpg",
+      "author": "Felix König",
+      "license": "CC BY 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-adipate-terephthalate/materbi-bags-cutlery.webp",
+      "alt": "A folded compostable plastic bag printed with green leaf logos and multilingual 'bio and compostable' text, laid beside a wrapped set of disposable cutlery marked with the same certification symbols and the brand name Mater-Bi.",
+      "caption": "Compostable bags and cutlery made with Mater-Bi, Novamont's brand for starch blended with an aliphatic-aromatic copolyester in the same family as PBAT.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sacchetti.jpg",
+      "author": "JKey128",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polybutylene-adipate-terephthalate/compost-facility-germany.webp",
+      "alt": "Two long windrows of dark, decomposing organic material piled beside a paved yard, with an open-sided barn and trees in the background.",
+      "caption": "A central composting site in Germany, the kind of industrial-scale facility where a certified compostable film has to prove it breaks down on schedule.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Compost_site_germany.JPG",
+      "author": "Crystalclear",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9002-81-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(CH2O)n",
+    "structural": "[-CH2-O-]n"
+  },
   "repeat_unit": "{[][>]OC[<][]}",
   "smiles_depiction": "*OC*",
   "notation_note": "Homopolymer POM is shown. Copolymer grades insert a small fraction of ethylene oxide units into the chain, which is what stops the backbone unzipping from its ends.",
@@ -49,9 +53,47 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1956,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "R. N. MacDonald",
+    "Stephen Dal Nogare"
+  ],
+  "historical_events_referenced": [
+    "Opening of TAT-1, the first transatlantic telephone cable (25 September 1956)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyacetal/tat1-cable-cross-section.webp",
+      "alt": "A museum display of a short vertical section of transatlantic telephone cable with its layers of coating progressively stripped back from top to bottom, exposing a central copper conductor, then successive layers of insulation, steel armour wires, and an outer wrapped jacket labelled TRANSATLANTIC TELEPHONE, DEEP SEA TYPE, SUBMARINE CABLES LIMITED.",
+      "caption": "A section of TAT-1 cable, its layers stripped back to show the engineering underneath — the same autumn a DuPont chemist was patenting a plastic built for exactly this kind of unforgiving precision, if at a much smaller scale.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:TAT_1_cable.JPG",
+      "author": "Geni",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyacetal/tat1-ieee-milestone-plaque.webp",
+      "alt": "A bronze plaque mounted on a granite boulder, reading IEEE MILESTONE IN ELECTRICAL ENGINEERING AND COMPUTING, THE FIRST SUBMARINE TRANSATLANTIC TELEPHONE CABLE SYSTEM (TAT-1), 1956, with a paragraph of explanatory text below.",
+      "caption": "The IEEE marker at Kerrera, Scotland, the cable's eastern landing point — installed to mark an engineering achievement whose whole point was that nobody would ever need to visit the actual hardware again.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:2024-09-03_Kerrera_IEEE_Milestone_02.jpg",
+      "author": "Xdrio",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyacetal/pom-granulate-pellets.webp",
+      "alt": "A scattered pile of small white plastic pellets on a wood-grain surface, shown next to a euro coin for scale.",
+      "caption": "Polyoxymethylene as it leaves the reactor: white pellets ready for moulding, the raw form of a plastic sold on hundredths-of-a-millimetre tolerance rather than colour or clarity.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:POM-Granulat.JPG",
+      "author": "Dr. Reiner Düren",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyacetal/keck-clips-acetal-resin.webp",
+      "alt": "Three plastic Keck clips shaped like the letter C with a locking tooth, in red, green and yellow, of decreasing size, lying on a white surface, each stamped with a size code and 'Made in Germany' or 'Swiss made'.",
+      "caption": "Keck clips for laboratory glassware, a small everyday object almost always moulded from acetal resin — chosen for the same dimensional stability and chemical resistance that put POM into automotive and industrial gears.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Keck_clips.jpg",
+      "author": "Edgar181",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.42,

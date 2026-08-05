@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-55-8",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6)x·(C8H8)y",
+    "structural": "[-CH2-CH=CH-CH2-]x[-CH2-CH(C6H5)-]y"
+  },
   "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(c1ccccc1)[$][]}",
   "smiles_depiction": "*C/C=C\\C*.*CC(c1ccccc1)*",
   "notation_note": "A statistical copolymer: the two units shown alternate irregularly along the chain in whatever ratio the recipe fixes, typically about three butadiene units to one styrene. The butadiene unit is drawn cis-1,4, though emulsion SBR contains trans and vinyl units too.",
@@ -43,9 +47,45 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1959,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
+  "key_figures": [
+    "Walter Bock",
+    "Eduard Tschunkur"
+  ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/styrene-butadiene-rubber/cadillac-eldorado-tailfins-1959.webp",
+      "alt": "The rear end of a bright orange-red 1959 Cadillac Eldorado, showing its towering chrome-edged tailfins and twin bullet tail-lights, displayed in a museum gallery.",
+      "caption": "A 1959 Cadillac Eldorado Biarritz, its tailfins the tallest ever fitted to a production car - the flamboyant end of a decade whose tires had quietly gone synthetic.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eldorado-biarritz-guggenheim-237.jpg",
+      "author": "Luistxo",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/styrene-butadiene-rubber/49-star-flag-stamp-1959.webp",
+      "alt": "A red, white and blue postage stamp depicting a waving American flag with forty-nine stars, marked 'July 4, 1959' and '4 cents, United States Postage'.",
+      "caption": "A commemorative stamp marking the forty-nine-star flag, issued the same year the country it represented was paving more of itself than ever before.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:49-star_Flag_4c_1959_issue_U.S._stamp.jpg",
+      "author": "Bureau of Engraving and Printing; designed by Stevan Dohanos",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-butadiene-rubber/radial-tire-cutaway-1964.webp",
+      "alt": "Two cutaway diagrams of tires side by side, showing coloured internal ply layers in blue, red and green beneath the tread, comparing a conventional tyre construction to a radial one.",
+      "caption": "A 1964 comparison of conventional and radial tyre construction - a reminder that the rubber compound sits inside a specific engineered structure of plies and belts, not just a block of tread.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pirelli_Cinturato_Tire_cutaway.jpg",
+      "author": "Pirelli",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/styrene-butadiene-rubber/used-tire-stockpile.webp",
+      "alt": "A large outdoor pile of worn car and tractor tires stacked against a corrugated metal fence, with bare trees in the background.",
+      "caption": "A stockpile of worn tires - the scale a single rubber, invented for a war that ended in 1945, now operates at in ordinary peacetime traffic.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Stack_pile_batch_of_old_used_car_and_tractor_tires.jpg",
+      "author": "photosteve101",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.935,

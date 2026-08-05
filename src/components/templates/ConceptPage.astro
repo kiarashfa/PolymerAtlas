@@ -12,7 +12,10 @@ import Section from '../blocks/Section.astro';
 import FactRow from '../blocks/FactRow.astro';
 import DidYouKnow from '../blocks/DidYouKnow.astro';
 import Figure from '../blocks/Figure.astro';
+import Plate from '../blocks/Plate.astro';
+import PlatePair from '../blocks/PlatePair.astro';
 import ReferencesList from '../blocks/ReferencesList.astro';
+import ImageCredits from '../blocks/ImageCredits.astro';
 import ChronoNav from '../blocks/ChronoNav.astro';
 import {
   chronoNeighbours,
@@ -125,7 +128,7 @@ const description =
 
       <div class="detail-main">
         <div class="narrative" id="narrative" data-spy>
-          <Content components={{ DidYouKnow, Figure }} />
+          <Content components={{ DidYouKnow, Figure, Plate, PlatePair }} />
         </div>
 
         <div class="data-blocks">
@@ -212,6 +215,7 @@ const description =
 
           <Section {...sec.references}>
             <ReferencesList refList={refList} />
+            <ImageCredits images={data.historical_images} />
           </Section>
         </div>
 

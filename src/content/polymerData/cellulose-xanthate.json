@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Sodium cellulose xanthate, [C6H7O2(OH)2(OCS2Na)]n -- a soluble derivative of cellulose formed by xanthation, not a distinct polymer synthesized from its own monomers.",
   "iupac_name": null,
@@ -37,11 +41,53 @@
   "year_of_origin": 1908,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
   "key_figures": [
-    "Max Hoff",
-    "Emil Stern"
+    "Charles Frederick Cross",
+    "Edward John Bevan",
+    "Clayton Beadle"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/cellulose-xanthate/rutherford-nobel-1908.webp",
+      "alt": "A formal studio portrait of a mustached man in a dark suit and high collar, looking directly at the camera.",
+      "caption": "Ernest Rutherford, photographed around the time of his 1908 Nobel Prize in Chemistry, awarded for showing that one element could transmute into another.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ernest_Rutherford_(Nobel).jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/cellulose-xanthate/ford-model-t-1909.webp",
+      "alt": "A restored early touring car with a folding canvas roof, brass headlamps and wooden-spoked wheels, parked on grass at a vintage vehicle show.",
+      "caption": "A 1909 Ford Model T — proof, the same year cellulose chemists were taking stock of their own process, that identical, affordable, mass-produced objects were now possible.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1909_Ford_Model_T_T1_Touring_model_(12703369904).jpg",
+      "author": "Sicnag",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/cellulose-xanthate/viscose-dope-solution.webp",
+      "alt": "A glass beaker of thick, translucent orange-red liquid on a laboratory bench, with a stream of the same viscous liquid pouring into it from above.",
+      "caption": "Cellulose xanthate dissolved in dilute alkali — the 'viscose dope' — photographed mid-pour. This golden, honey-thick liquid is the entire process in one image.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Viscose_Dope_1.jpg",
+      "author": "JamesRixson",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/cellulose-xanthate/hercules-hopewell-viscose-lab-1951.webp",
+      "alt": "A laboratory technician at a workbench crowded with beakers, glass sample plates and an analytical balance in a glass case, examining test samples of a viscose solution.",
+      "caption": "A technician at the Hercules Powder Company plant in Hopewell, Virginia, checking the composition of viscose solutions in 1951 — the same quality-control step every batch of cellulose xanthate had to pass before it could be spun.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Percy_L._Bell_analyzing_viscose_solutions_at_Hercules_Hopewell_plant_-_DPLA_-_914957cbb0d3ac92c27a706e98d2b295.jpg",
+      "author": "Hercules Incorporated; Rittase, William M., 1894-1968",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/cellulose-xanthate/american-viscose-front-royal-postcard.webp",
+      "alt": "A tinted aerial postcard view of a sprawling factory complex with multiple long low buildings, tall smokestacks and cooling ponds, captioned 'Aerial View, American Viscose Corp. Plant, Front Royal, Va.'",
+      "caption": "The American Viscose Corporation's works at Front Royal, Virginia, in a mid-century postcard — one of several purpose-built plants that scaled the xanthate-and-acid-bath process from Cross and Bevan's laboratory reaction into a national viscose rayon industry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_Viscose_Plant_Front_Royal_VA_postcard.jpg",
+      "author": "Boston Public Library; Originally published by Shenandoah Valley News Co., Inc., Winchester, VA. Tichnor Quality Views, Reg. U. S. Pat. Off. Made Only by Tichnor Bros., Inc., Boston, Mass.",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

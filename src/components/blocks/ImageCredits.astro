@@ -1,0 +1,50 @@
+---
+// Full attribution for the photographs set into the narrative, gathered at
+// the foot of the page the way a book lists its plates.
+//
+// The plates themselves carry only a quiet "Wikimedia Commons" link, because
+// a full author-and-licence line under every photograph competes with the
+// caption and repeats five times a page. The licence obligation is met here:
+// author, licence and a link to the source page, in plate order.
+//
+// Numbering is derived from document order, which is the order
+// historical_images[] is synced from the narrative — so it always agrees with
+// the labels printed on the plates themselves.
+import type { ImageObject } from '../../content/schema-shared';
+
+interface Props {
+  images: ImageObject[];
+}
+const { images } = Astro.props;
+
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+const roman = (n: number) => ROMAN[n - 1] ?? String(n);
+const sourceName = (url: string) =>
+  url.includes('commons.wikimedia.org')
+    ? 'Wikimedia Commons'
+    : url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+---
+
+{
+  images.length > 0 && (
+    <>
+      <p class="sub-head">Illustrations</p>
+      <ol class="img-credits">
+        {images.map((im, i) => (
+          <li class="img-credit">
+            <span class="img-credit-n">Plate {roman(i + 1)}</span>
+            <span class="img-credit-body">
+              <span class="img-credit-subject">{im.caption ?? im.alt}</span>
+              <span class="img-credit-meta">
+                {im.author} · {im.license}
+              </span>
+              <a class="img-credit-url" href={im.source_url} rel="noopener">
+                {sourceName(im.source_url)}
+              </a>
+            </span>
+          </li>
+        ))}
+      </ol>
+    </>
+  )
+}

@@ -7,9 +7,13 @@
   "parent": null,
   "cas_number": "9005-25-8",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H10O5)n",
+    "structural": "[C6H7O2(OH)3]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@@H](*)O[C@@H]1CO",
-  "notation_note": "The alpha-1,4-linked glucose unit is shown -- the same sugar as cellulose, joined the other way round, which is the whole difference between food and firewood. Real starch is a mixture of linear amylose and branched amylopectin, whose alpha-1,6 branch points are not shown.",
+  "notation_note": "The alpha-1,4-linked glucopyranose unit is shown in condensed form (ring core plus three hydroxyls) -- the same sugar and the same formula as cellulose, joined the other way round, which is the whole difference between food and firewood. Real starch is a mixture of linear amylose and branched amylopectin, whose alpha-1,6 branch points are not shown.",
   "iupac_name": null,
   "synonyms": [
     "amylum"
@@ -40,7 +44,48 @@
     "Anselme Payen"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/starch/rice-terraces-asia.webp",
+      "alt": "Aerial view of steep, terraced rice paddies wrapped around a hillside village of thatched and tin-roofed houses, the paddies flooded and reflecting the sky.",
+      "caption": "Rice terraces in the Philippine Cordilleras, a form of cultivation practiced in Asia for over two thousand years — starch farming as old engineering.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Banaue_Philippines_Batad-Rice-Terraces-02.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/starch/anselme-payen-portrait.webp",
+      "alt": "Nineteenth-century engraved portrait of an older balding man in profile, wearing a dark coat, waistcoat and cravat.",
+      "caption": "Anselme Payen, whose 1834 memoir with Persoz first separated starch itself from the husk and fiber surrounding it in the plant.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anselme_Payen.jpg",
+      "author": "Jean Baptiste Adolphe Lafosse",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/starch/potato-starch-polarized-light.webp",
+      "alt": "Micrograph of many rounded, translucent potato starch granules under polarized light, each showing a bright four-armed cross of interference colors against a pink background.",
+      "caption": "Potato starch granules under polarized light. The crosses mark the semicrystalline layering inside each granule — order built for storage, not for strength.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Potato_Starch_Polarized_light_100x.jpg",
+      "author": "Photon 400 750",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/starch/oswego-starch-factory-1876.webp",
+      "alt": "An 1876 bird's-eye engraving of a large riverside starch factory complex, with tall smoking chimneys, rows of multi-storey brick mill buildings, a rail spur, and horse-drawn wagons on the street below.",
+      "caption": "The Kingsford starch works at Oswego, New York, in 1876 — by then already one of the largest starch factories in the world, built on the same wet-milling principle used today.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:LOSSING(1876)_p150_OSWEGO_STARCH_FACTORY,_OSWEGO,_NY_(T._KINGSFORD_%26_SONS).jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/starch/thermoplastic-starch-packaging.webp",
+      "alt": "A small heap of pale yellow, cylindrical, foam-like packing chips on a dark background, with two loose pieces set apart from the pile.",
+      "caption": "Loose-fill packaging chips made from thermoplastic starch — a modern, compostable answer to the same question Payen was quietly answering in 1834: what, exactly, is this stuff made of?",
+      "source_url": "https://commons.wikimedia.org/wiki/File:St%C3%A4rke-Packstoff_P%C3%B6mpel_CG.jpg",
+      "author": "Christian Gahle, nova-Institut GmbH",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

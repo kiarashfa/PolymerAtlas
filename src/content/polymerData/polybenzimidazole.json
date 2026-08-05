@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "32075-68-6",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C20H12N4)n",
+    "structural": "[-C6H3(N=)(HN-)C-C6H4-C(=N)(NH-)C6H3-]n"
+  },
   "repeat_unit": "{[][>]c1ccc2[nH]c(nc2c1)c1cccc(c1)c1nc2cc(ccc2[nH]1)[<][]}",
   "smiles_depiction": "*c1ccc2[nH]c(nc2c1)c1cccc(c1)c1nc2cc(ccc2[nH]1)*",
-  "notation_note": "The meta-linked polybenzimidazole shown is the commercial fibre. Forming each benzimidazole ring costs two molecules of water, four per repeat unit.",
+  "notation_note": "The meta-linked polybenzimidazole shown is the commercial fibre. The structural formula renders each fused benzimidazole ring as a linear run of its ring atoms rather than as a closed ring; forming the two imidazole rings costs a molecule of water apiece, four per repeat unit.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -36,10 +40,56 @@
   "year_of_origin": 1996,
   "era": "The Specialty Polymers Age (1980-1999)",
   "key_figures": [
-    "Garry Kasparov"
+    "Carl Shipp Marvel",
+    "Herward A. Vogel"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Düsseldorf Airport fire (11 April 1996)",
+    "ValuJet Flight 592 crash (11 May 1996)",
+    "Apollo 1 fire (27 January 1967)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polybenzimidazole/dusseldorf-airport-fire-memorial-1996.webp",
+      "alt": "A polished stone memorial wall inside an airport terminal, inscribed in four languages with a dedication to the victims of an April 1996 fire, a column of names beside it, and a tall vase of white flowers standing in front.",
+      "caption": "The memorial inside Düsseldorf Airport to the seventeen people killed on 11 April 1996, after welding sparks ignited flammable ceiling insulation.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gedenkraum_im_Flughafen_D%C3%BCsseldorf,_Inschrift_zur_Brandkatastrophe_am_D%C3%BCsseldorfer_Flughafen.jpg",
+      "author": "Andreas Schwarzkopf",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polybenzimidazole/noyes-laboratory-university-of-illinois.webp",
+      "alt": "The stone-arched entrance of a red-brick university building, its lintel carved WILLIAM ALBERT NOYES LABORATORY OF CHEMISTRY, flanked by trimmed shrubs and a short flight of steps.",
+      "caption": "The Noyes Laboratory of Chemistry at the University of Illinois, Carl Marvel's academic home for four decades before the work with Herward Vogel that gave PBI its name.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:William_Albert_Noyes_Laboratory_of_Chemistry_University_of_Illinois_at_Urbana-Champaign_entrance.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polybenzimidazole/apollo-1-command-module-interior-fire-1967.webp",
+      "alt": "A close view into the scorched interior of a spacecraft command module, its wiring bundles, hoses, and metal fittings charred black and coated in soot.",
+      "caption": "The interior of the Apollo 1 command module, photographed the day after the January 1967 fire — the disaster that turned PBI from a published curiosity into a funded, urgent program.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_1_fire.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polybenzimidazole/apollo-15-spacesuit-smithsonian.webp",
+      "alt": "A dust-streaked white spacesuit and gold-visored helmet displayed in a museum case, NASA and mission patches on the chest and shoulder, with a placard identifying it as an Apollo lunar suit.",
+      "caption": "The Apollo 15 lunar suit worn by David Scott in 1971. Suits flown after the Apollo 1 fire carried an inner layer of PBI fabric beneath the visible outer shell.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_15_spacesuit_with_moondust_-_Smithsonian_Air_and_Space_Museum_-_2012-05-15_(7276435588).jpg",
+      "author": "Tim Evanson from Cleveland Heights, Ohio, USA",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polybenzimidazole/firefighter-turnout-gear.webp",
+      "alt": "Four sets of structural firefighting turnout coats and helmets hanging in a row on a fire station wall, each coat trimmed with reflective yellow and orange stripes.",
+      "caption": "Structural firefighting turnout gear of the kind PBI fiber has reinforced since the 1980s, blended with aramid fiber into fabric sold as PBI Gold.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fire_fighters_gear.jpg",
+      "author": "Muffet",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

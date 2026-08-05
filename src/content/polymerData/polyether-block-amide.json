@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C12H23NO)x·(C4H8O)y",
+    "structural": "[-NH-(CH2)11-CO-]x[-O-(CH2)4-]y"
+  },
   "repeat_unit": "{[][>]NCCCCCCCCCCCC(=O)[<],[>]OCCCC[<][]}",
   "smiles_depiction": "*NCCCCCCCCCCCC(=O)*.*OCCCC*",
   "notation_note": "The polyamide block shown is nylon 12; the polyether block is polytetramethylene glycol. Both vary by grade, and the ratio between them sets the hardness across the whole range the family is sold in.",
@@ -47,9 +51,45 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1984,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Gérard Deleens", "Paul Foy"],
+  "historical_events_referenced": [
+    "Apple introduces the Macintosh computer (January 1984)",
+    "Bhopal gas disaster, Union Carbide pesticide plant (2 December 1984)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyether-block-amide/steve-jobs-macintosh-january-1984.webp",
+      "alt": "Steve Jobs, in a dark suit, leans over an original beige Macintosh computer with hands clasped, its screen displaying a line drawing of a woman combing her hair, against a plain red background.",
+      "caption": "Steve Jobs with the newly launched Macintosh, January 1984 — one of a wave of compact electronic products whose cables, connectors and housings needed a plastic that could flex without cracking.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_and_Macintosh_computer,_January_1984,_by_Bernard_Gotfryd_-_edited.jpg",
+      "author": "Photo: Bernard Gotfryd - Edited from tif by Cart",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyether-block-amide/castor-bean-plant.webp",
+      "alt": "A castor bean plant with large, deeply lobed dark green leaves and spiky reddish seed pods clustered near the top of the stem.",
+      "caption": "The castor bean plant, Ricinus communis. Castor oil is the raw material for nylon 11, the polyamide used as the hard block in many Pebax grades.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Castor_bean_plant_(371550056).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polyether-block-amide/salomon-sx92-ski-boots-1980s.webp",
+      "alt": "A pair of white and black rear-entry ski boots, one shown open with its rear cuff swung back, the other closed, photographed against a plain wall.",
+      "caption": "Ski boots of the rigid-shell, hinged-cuff kind harder Pebax grades were molded into during the 1980s: stiff where a skier needs support, hinged where the ankle needs to bend.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Salomon_SX92.jpg",
+      "author": "Maury Markowitz",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyether-block-amide/bhopal-disaster-memorial.webp",
+      "alt": "A stone memorial statue of a mourning mother and child behind a metal fence, beside a wall painted with the words BHOPAL DISASTER 1984 TO? THE SUFFERING CONTINUES, SO DOES THE STRUGGLE.",
+      "caption": "A memorial in Bhopal to the victims of the December 1984 Union Carbide gas disaster, the catastrophe that framed the same year Pebax was maturing into a commercial product line.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bhopal-Union_Carbide_1_crop_memorial.jpg",
+      "author": "The original uploader was Simone.lippi at Italian Wikipedia .",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.015,

@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "9003-27-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H8)n",
+    "structural": "[-CH2-C(CH3)2-]n"
+  },
   "repeat_unit": "{[][$]CC(C)(C)[$][]}",
   "smiles_depiction": "*CC(C)(C)*",
+  "notation_note": "The paired methyl groups on every other backbone carbon crowd the chain too densely to let it crystallize under normal conditions, so PIB stays an amorphous gum at room temperature; it forms only transient crystallites under mechanical stress or well below room temperature (see the thermal block).",
   "iupac_name": "Poly(isobutylene)",
   "synonyms": [
     "polyisobutene"
@@ -37,9 +42,47 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1960,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Michael Otto",
+    "BASF"
+  ],
+  "historical_events_referenced": [
+    "Completion of the Union Carbide Building (270 Park Avenue), an all-glass curtain-wall skyscraper (1960)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyisobutylene/union-carbide-building-1960.webp",
+      "alt": "A very tall, narrow, glass-and-metal skyscraper viewed from street level looking straight up, its curtain-wall façade reflecting the sky, flanked by older stone buildings.",
+      "caption": "The Union Carbide Building at 270 Park Avenue, completed in 1960 — one of the wave of all-glass towers whose sealed double-glazing depended on polyisobutylene.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:270_Park_Avenue_before_demolition.jpg",
+      "author": "Mathias Beinling",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyisobutylene/basf-ludwigshafen-site.webp",
+      "alt": "An aerial photograph looking down a wide river bend crowded on one bank with dense industrial plant — storage tanks, pipe racks and processing units — surrounded by farmland.",
+      "caption": "BASF's Ludwigshafen site on the Rhine, where Michael Otto first polymerized isobutylene in 1931 and where Oppanol production began in 1938.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:LudwigshafenBASF2017-07-29-12-44-06.jpg",
+      "author": "Rolf Kickuth",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyisobutylene/chewing-gum-production.webp",
+      "alt": "A factory worker in a hairnet and white coat standing beside a large green industrial machine that folds and wraps strips of gum on a production line.",
+      "caption": "Chewing gum production: the same chemical inertness that keeps polyisobutylene stable in a window seal for decades makes it equally stable in the mouth.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elite_Factory_in_Nazareth_Illit_Bazooka_Chewing_gum_production_IMG_2618.JPG",
+      "author": "Deror_avi",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyisobutylene/insulated-glazing-window-profile.webp",
+      "alt": "A cross-section of a wooden window frame showing a double-glazed unit, with a dark rubbery sealant strip visible in the channel between the two panes of glass.",
+      "caption": "A window profile in cross-section: the dark strip sealing the gap between the panes is exactly the kind of joint polyisobutylene was built to hold for decades without failing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:EURO_68_wooden_window_profile_with_insulated_glazing_01.JPG",
+      "author": "Kozuch",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.917,

@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Hydrogels are a broad structural/functional class -- a crosslinked hydrophilic polymer network holding at least 10% water or biological fluid -- not a single chemistry. Base polymers vary widely (poly-HEMA, PVA, alginate, PNIPAM, etc., several of which have their own entries); crosslinking can be chemical (covalent) or physical (hydrogen bonds, hydrophobic association, chain entanglement).",
   "iupac_name": null,
@@ -22,8 +26,41 @@
   "key_figures": [
     "Otto Wichterle"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": ["Construction of the Berlin Wall begins (August 1961)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/hydrogels/berlin-wall-construction-1961.webp",
+      "alt": "Black-and-white photograph of construction workers and cranes building a low concrete wall topped with barbed wire, on a frosty morning.",
+      "caption": "East German crews building the Berlin Wall in late 1961 — the year's hardest, most literal new boundary.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_1961-11-20.jpg",
+      "author": "National Archives",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/hydrogels/otto-wichterle-portrait.webp",
+      "alt": "A formal black-and-white portrait of a balding man in glasses, wearing a dark suit and tie.",
+      "caption": "Otto Wichterle, whose 1960 paper on hydrophilic gels became something he could actually build only after he was pushed out of his own institute.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Prof._Ing._RTDr._Otto_Wichterle.jpg",
+      "author": "Unknown author",
+      "license": "CC BY-SA 3.0 cz"
+    },
+    {
+      "src": "~/assets/polymers/hydrogels/wichterle-lens-casting-apparatus.webp",
+      "alt": "A tabletop machine built entirely from red, blue, green and yellow perforated toy-construction-kit strips, with a small motor, a row of small moulds along one crossbar, and thin tubes feeding down to them.",
+      "caption": "A reconstruction of Wichterle's home-built casting apparatus, assembled from the same kind of children's construction kit — the original device is held by Prague's National Technical Museum.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Merkur_based_apparatus_for_centrifugal_casting_of_contact_lenses_by_wichterle.jpg",
+      "author": "JanSuchy",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/hydrogels/soft-contact-lens-macro.webp",
+      "alt": "An extreme close-up of a human eye wearing a patterned soft contact lens, its printed iris design visible around the wearer's own pupil, with eyelashes framing the shot.",
+      "caption": "A soft contact lens on the eye today — the direct descendant of Wichterle's kitchen-table gel, now made in both corrective and cosmetic forms.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Contact_Lens_Macro.JPG",
+      "author": "Clarisselitiatco",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

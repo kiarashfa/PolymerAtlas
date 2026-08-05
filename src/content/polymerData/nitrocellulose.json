@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9004-70-0",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H7N3O11)n",
+    "structural": "[C6H7O2(OH)3-x(ONO2)x]n"
+  },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O[N+](=O)[O-])[C@@H](O[N+](=O)[O-])[C@H]([<])O[C@@H]1CO[N+](=O)[O-][]}",
   "smiles_depiction": "*O[C@H]1[C@H](O[N+](=O)[O-])[C@@H](O[N+](=O)[O-])[C@H](*)O[C@@H]1CO[N+](=O)[O-]",
   "notation_note": "Fully nitrated cellulose is shown, three nitrate groups per glucose unit. Real material is rarely fully nitrated: the degree of substitution, typically between 1.8 and 2.8, is what separates lacquer-grade collodion from guncotton.",
@@ -48,7 +52,48 @@
     "Christian Friedrich Schönbein"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/nitrocellulose/ether-demonstration-1846.webp",
+      "alt": "A monochrome print titled 'The First Public Demonstration of Surgical Anaesthesia,' showing a crowded operating theatre in which a patient reclines on a table while a ring of surgeons in dark formal coats look on.",
+      "caption": "Boston, 16 October 1846: the moment chemistry proved it could switch off pain on command. Named for the surgeons present, the print was made decades after the event it commemorates.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:First_demonstration_of_surgical_anaesthesia,_16th_Oct_1846._Wellcome_M0000173.jpg",
+      "author": "Unknown author",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/nitrocellulose/mexican-war-volunteers-1846.webp",
+      "alt": "A daguerreotype of a company of volunteer soldiers in dark uniforms and tall shakos, muskets shouldered, standing in formation on a street in front of a colonnaded building, with a drummer at the rear of the line.",
+      "caption": "Volunteers mustering for the Mexican-American War, 1846 — an army still fighting with muzzle-loaded muskets and black powder, the technology this chemistry would eventually replace.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Volunteers_leaving_for_the_Mexican_War,_Exeter,_New_Hampshire,_daguerreotype_by_E._Punderson,_ca.1846.jpg",
+      "author": "E. Punderson",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/nitrocellulose/schonbein-portrait.webp",
+      "alt": "A seated studio portrait of an older man in a dark coat and waistcoat, a cigar in one hand, with a rack of chemistry reagent bottles on a table beside him.",
+      "caption": "Christian Friedrich Schönbein, photographed in 1857, a decade after the apron incident made his name.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christian_Friedrich_Sch%C3%B6nbein.jpg",
+      "author": "Franz Hanfstaengl",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/nitrocellulose/picking-cotton-waste-1909.webp",
+      "alt": "Women in aprons and caps seated at a bench inside a mill, sorting through enormous loose piles of raw cotton waste stacked around them under tall arched windows.",
+      "caption": "Sorting cotton waste ahead of nitration, photographed for a 1909 popular-science book on modern chemistry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Women_picking_cotton_waste_for_use_in_explosive_manufacturing_b10154140_020_tif_5h73px55z.tiff",
+      "author": "Philip, James Charles, 1873-1941",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/nitrocellulose/guncotton-press-1909.webp",
+      "alt": "A workman leaning over a thick woven rope screen to reach a guncotton press, with the pressing machinery visible through a doorway beyond the screen.",
+      "caption": "A guncotton press shielded by a rope screen — the operator protected in case of accident, decades after Abel's stabilization made the material merely dangerous instead of unpredictable.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Workman_operating_a_guncotton_press_behind_protective_rope_screen.tiff",
+      "author": "Philip, James Charles, 1873-1941",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.375,

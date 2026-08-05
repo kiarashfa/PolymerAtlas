@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-07-0",
   "resin_id_code": "5",
+  "chemical_formula": {
+    "empirical": "(C3H6)n",
+    "structural": "[-CH2-CH(CH3)-]n"
+  },
   "repeat_unit": "{[][$]CC(C)[$][]}",
   "smiles_depiction": "*CC(C)*",
   "notation_note": "Tacticity (isotactic/syndiotactic/atactic) is a configurational property that drastically changes behavior despite an identical repeat unit -- see the configuration-vs-conformation concept entry. The 3D model shows an isotactic triad.",
@@ -40,10 +44,48 @@
   "era": "The Post-War Boom (1946-1960)",
   "key_figures": [
     "Giulio Natta",
-    "Karl Ziegler"
+    "Karl Ziegler",
+    "J. Paul Hogan",
+    "Robert Banks",
+    "Karl Rehn"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Launch of USS Nautilus, the first nuclear-powered submarine (21 January 1954)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polypropylene/uss-nautilus-launch-1954.webp",
+      "alt": "A submarine, decorated with bunting, sliding stern-first down a shipyard slipway into a river as a large crowd watches from the dock.",
+      "caption": "USS Nautilus launched at Groton, Connecticut, 21 January 1954 — the same year, on a molecular scale, chemists learned to arrange a polymer chain just as deliberately.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nautiluscore.jpg",
+      "author": "U.S. Navy photo/Released",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polypropylene/giulio-natta-portrait.webp",
+      "alt": "A middle-aged man with combed-back grey hair, wearing a suit and tie, photographed mid-sentence in an armchair.",
+      "caption": "Giulio Natta, whose Milan laboratory produced isotactic polypropylene in March 1954 by forcing every methyl group in the chain onto the same side of the backbone.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giulio_Natta_1960s.jpg",
+      "author": "Unknown (Mondadori Publishers)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polypropylene/montecatini-ferrara-petrochemical-1962.webp",
+      "alt": "A colour photograph of an industrial petrochemical plant with tall distillation columns, storage tanks and pipework, photographed from ground level.",
+      "caption": "Montecatini's Ferrara petrochemical works, photographed in 1962 — part of the industrial buildout that carried isotactic polypropylene from Natta's laboratory to the world market after 1957.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Il_petrolchimico_di_Ferrara_nel_1962_(particolare).jpg",
+      "author": "Claudio Doliana",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polypropylene/tic-tac-living-hinge.webp",
+      "alt": "An open white plastic mint box, photographed against a black background, showing its thin moulded lid folded back on a single integral hinge.",
+      "caption": "A living hinge, moulded as a single thinned strip of isotactic polypropylene — the trick that makes this the least noticed remarkable plastic in most kitchens.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mint_box_polypropylene_lid.JPG",
+      "author": "en:User:Polyparadig",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

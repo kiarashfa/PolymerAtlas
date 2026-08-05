@@ -5,9 +5,45 @@
 
   "year_of_origin": 1936,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
-  "key_figures": ["Wallace Carothers"],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Wallace Carothers", "Paul Flory"],
+  "historical_events_referenced": [
+    "Hoover Dam substantially completed (spring 1936)",
+    "Jesse Owens wins four gold medals at the Berlin Olympics (August 1936)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/concepts/the-carothers-equation/hoover-dam-concrete-columns-1934.webp",
+      "alt": "An aerial view down into a steep rock canyon showing the top of a dam under construction as a grid of individual rectangular concrete columns, each poured separately, still open at the top, with cranes and pipework running between them.",
+      "caption": "Hoover Dam under construction, February 1934: poured as separate, individually calculated columns rather than one continuous mass, because engineers already knew exactly how far each pour had to cure.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Damforms.jpg",
+      "author": "Bureau of Reclamation photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-carothers-equation/jesse-owens-1936.webp",
+      "alt": "A close head-and-shoulders photograph of Jesse Owens, laughing, in a dark athletic vest, his head shaved.",
+      "caption": "Jesse Owens in 1936, the year a regime's confident theory of fixed human limits met a sprinter who ignored it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jesse_Owens_1936.jpg",
+      "author": "Acme News Photos",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-carothers-equation/carothers-in-the-lab.webp",
+      "alt": "Wallace Carothers in a suit and round spectacles, in a laboratory, holding up a strand of material stretched between his hands, with glass apparatus and a Bunsen burner beside him.",
+      "caption": "Carothers demonstrating a synthetic fibre's cold-drawing — the practical payoff of knowing in advance exactly how far a reaction needed to run.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wallace_Carothers,_in_the_lab.jpg",
+      "author": "Unknown photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/the-carothers-equation/paul-flory-1973.webp",
+      "alt": "An elderly Paul Flory, in a tweed jacket and dark-framed glasses with a patterned tie, photographed outdoors.",
+      "caption": "Paul Flory, photographed in 1973, the year before his own Nobel Prize — the twenty-six-year-old kinetics specialist Carothers had hired in 1934 to work out the mathematics no one else in the lab could do.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paul_Flory_1973.jpg",
+      "author": "Unknown (Associated Press)",
+      "license": "Public domain"
+    }
+  ],
 
   "summary": "Working at DuPont's Experimental Station from 1928, Wallace Carothers worked out the mathematical theory of step-growth polymerization. The Carothers equation relates the average degree of polymerization (Xn) to the fractional monomer conversion (p): Xn = 1/(1-p). Its central, non-obvious insight is that step-growth polymerization requires extremely high conversion to reach useful molecular weights -- at 95% conversion Xn is only 20, and it takes 99%+ conversion to reach chain lengths of 100 or more. This theoretical framework guided Carothers' own team to two landmark materials: neoprene (the first synthetic rubber, synthesized April 1930) and, after Carothers shifted to polyamide research in 1934, nylon 6,6 (first made February 28, 1935; publicly announced October 27, 1938, after Carothers' death).",
   "key_equations": [

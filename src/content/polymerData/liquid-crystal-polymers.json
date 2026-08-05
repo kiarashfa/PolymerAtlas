@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C7H4O2)x·(C11H6O2)y",
+    "structural": "[-O-C6H4-CO-]x[-O-C10H6-CO-]y"
+  },
   "repeat_unit": "{[][>]Oc1ccc(cc1)C(=O)[<],[>]Oc1ccc2cc(ccc2c1)C(=O)[<][]}",
   "smiles_depiction": "*Oc1ccc(cc1)C(=O)*.*Oc1ccc2cc(ccc2c1)C(=O)*",
-  "notation_note": "One widely used aromatic copolyester is shown. The rigid rod-like rings are the point: they line up in the melt, which is what gives this family its extraordinary flow into thin sections. Other LCP chemistries use different rigid monomers.",
+  "notation_note": "One widely used aromatic copolyester (a Vectra-type hydroxybenzoic acid / hydroxynaphthoic acid copolymer) is shown, x and y in the same order as the empirical formula. The rigid rod-like rings are the point: they line up in the melt, which is what gives this family its extraordinary flow into thin sections. Other LCP chemistries use different rigid monomers.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [
@@ -44,9 +48,42 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1974,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["James Economy", "Eastman Kodak"],
+  "historical_events_referenced": ["Reinitzer's discovery of liquid-crystalline behaviour (1888)", "Eastman Kodak and Carborundum's reports of thermotropic liquid-crystal copolyesters (1974)", "Vectran airbags at the Mars Pathfinder and Mars Exploration Rover landings (1997, 2004)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/liquid-crystal-polymers/friedrich-reinitzer-portrait.webp",
+      "alt": "A formal black-and-white studio portrait of a young man with round wire-rimmed glasses, a moustache and small beard, wearing a high-collared shirt, tie and dark jacket.",
+      "caption": "Friedrich Reinitzer, whose 1888 observation of cholesteryl benzoate's two melting points was the first recorded liquid-crystalline behaviour.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Friedrich_Reinitzer_01.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/liquid-crystal-polymers/cholesteryl-benzoate-sample.webp",
+      "alt": "A small open glass vial containing a clump of fine white powder, standing on a blue laboratory hotplate stirrer, with an analytical balance visible in the background.",
+      "caption": "Cholesteryl benzoate, the compound Reinitzer studied in 1888 — still sold today, mostly as a teaching demonstration.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cholesteryl_benzo%C3%A1t.jpg",
+      "author": "Milda 444",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/liquid-crystal-polymers/blue-phase-lcp-microscope-texture.webp",
+      "alt": "A close-up polarized-microscope image showing a dense, irregular mosaic of small angular crystal platelets in bright teal, yellow, orange and violet.",
+      "caption": "The liquid-crystalline order inside these polymers isn't visible to the naked eye, but under a polarizing microscope it resolves into vividly colored, sharply defined domains like this one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blue_phase_of_the_liquid_crystalline_polymer.jpg",
+      "author": "Ratamaque74",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/liquid-crystal-polymers/vectran-mars-pathfinder-airbags.webp",
+      "alt": "Two archival photographs: the upper shows a large cluster of pale, balloon-like fabric airbags under test indoors, with a technician on a ladder beside them; the lower shows three metal cylindrical gas generators laid out with wiring attached.",
+      "caption": "The Mars Pathfinder airbag system under test — woven from Vectran, a liquid-crystal polymer fiber, and inflated by the gas generators shown below.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jfader_pathfinder_bags.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.37,

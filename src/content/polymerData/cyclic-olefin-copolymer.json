@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": "26007-43-2",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H4)x·(C7H10)y",
+    "structural": "[-CH2-CH2-]x[-C7H10-]y"
+  },
   "repeat_unit": "{[][$]CC[$],[$]C1C2CCC(C2)C1[$][]}",
   "smiles_depiction": "*CC*.*C1C2CCC(C2)C1*",
-  "notation_note": "The bulky bicyclic norbornene units are what stop the chain crystallizing, leaving a glassy, glass-clear material; raising their proportion raises the glass transition.",
+  "notation_note": "The norbornene-derived unit has no honest linear notation: metallocene catalysis adds across its ring double bond without opening the ring, so the bicyclic bridge (bicyclo[2.2.1]heptane) is carried bodily into the backbone, fused to it at two adjacent carbons. 'C7H10' stands in for that whole bridged, two-ring structure -- the bracket notation cannot show its fused 3D geometry or which two ring carbons actually continue the chain. The bulky ring is what stops the chain crystallizing, leaving a glassy, glass-clear material; raising its proportion raises the glass transition.",
   "iupac_name": null,
   "synonyms": [
     "cyclo olefin copolymer",
@@ -47,9 +51,57 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 2002,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Walter Kaminsky",
+    "Hoechst AG",
+    "Mitsui Chemicals"
+  ],
+  "historical_events_referenced": [
+    "Signing of the Homeland Security Act, creating the U.S. Department of Homeland Security (25 November 2002)",
+    "Publication of Becker and Locascio's review \"Polymer microfluidic devices\" (2002)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/cyclic-olefin-copolymer/homeland-security-act-signing-2002.webp",
+      "alt": "President George W. Bush speaking at a podium marked 'Protecting the Homeland,' flanked by a row of officials, inside a formal room with an American flag.",
+      "caption": "President Bush signs the Homeland Security Act, 25 November 2002 — legislation born from a security crisis that also exposed the need for fast, portable diagnostic technology.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_George_W._Bush_addresses_the_media_during_the_signing_of_the_Homeland_Security_Act_in_the_East_Room.jpg",
+      "author": "White House photo by Paul Morse",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/cyclic-olefin-copolymer/university-of-hamburg-main-building.webp",
+      "alt": "An aerial view of an ornate early-twentieth-century domed building with red tile roofs, forming a large enclosed courtyard in a European city centre.",
+      "caption": "The University of Hamburg, where Walter Kaminsky discovered the metallocene catalyst chemistry behind COC in 1980.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:UniHHHauptgebaeude.jpg",
+      "author": "Merlin Senger",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/cyclic-olefin-copolymer/industriepark-hoechst.webp",
+      "alt": "A riverside industrial site with brick factory buildings, a tall chimney and pipework, seen across the water from a bridge.",
+      "caption": "Part of the Höchst industrial park near Frankfurt, the home site of Hoechst AG, whose researchers used Kaminsky's catalyst to build the first COC in the late 1980s.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Industriepark_H%C3%B6chst,_Leunabr%C3%BCcke.jpg",
+      "author": "EvaK",
+      "license": "CC BY-SA 2.5"
+    },
+    {
+      "src": "~/assets/polymers/cyclic-olefin-copolymer/microfluidic-lab-on-chip.webp",
+      "alt": "A small, clear, rectangular microfluidic chip with an etched channel network, connected to eight green-hubbed needles by curved steel tubes, sitting in a glass dish.",
+      "caption": "A microfluidic 'lab on a chip' device — the kind of miniaturized diagnostic platform that COC's clarity, rigidity and chemical inertness were well suited to build.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lab_on_a_Chip_(7788250170).jpg",
+      "author": "National Institute of Standards and Technology",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/cyclic-olefin-copolymer/pharmaceutical-blister-pack.webp",
+      "alt": "Several silver foil-backed pharmaceutical blister packs containing round tablets and dark oblong capsules, photographed close together on a wooden surface.",
+      "caption": "Blister packaging, one of the everyday places COC's moisture barrier and clarity have been steadily displacing older film materials.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pills_in_blister_pack.jpg",
+      "author": "Unknown author",
+      "license": "CC0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C24H18N4)n",
+    "structural": "[-NH-C6H4-NH-C6H4-N=C6H4=N-C6H4-]n"
+  },
   "repeat_unit": "{[][>]Nc1ccc(Nc2ccc(N=C3C=CC(=Nc4ccc([<])cc4)C=C3)cc2)cc1[]}",
   "smiles_depiction": "*Nc1ccc(Nc2ccc(N=C3C=CC(=Nc4ccc(*)cc4)C=C3)cc2)cc1",
   "notation_note": "The emeraldine base is shown: two reduced amine rings and two oxidized quinoid rings per repeat, the half-oxidized state that becomes conducting when protonated. Fully reduced and fully oxidized forms of the same chain exist, and both are insulators.",
@@ -38,7 +42,49 @@
     "Hideki Shirakawa"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyaniline/deep-blue-computer.webp",
+      "alt": "A tall black IBM RS/6000 SP server cabinet on display in a museum, beside a wall placard showing one of Deep Blue's custom chess chips and descriptive text.",
+      "caption": "Deep Blue, the IBM computer that beat world chess champion Garry Kasparov in May 1997 — a very public example of a machine crossing into territory everyone had assumed belonged to something else.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Say_hello_to_Deep_Blue_(2586059148).jpg",
+      "author": "Erik Pitti from San Diego, CA, USA",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/polyaniline/ferdinand-runge-portrait.webp",
+      "alt": "An oval Victorian-era engraved portrait of a seated man in a dark coat, raising a glass of clear liquid in a toast, with a wine bottle and a second glass on the table beside him.",
+      "caption": "Friedlieb Ferdinand Runge, who distilled the parent compound of aniline black from coal tar in 1834 and named it for the color it produced.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Friedlieb_Ferdinand_Runge_portrait_circa_1860_holding_glass.png",
+      "author": "Anonymous Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyaniline/macdiarmid-portrait.webp",
+      "alt": "A smiling elderly man with white hair and glasses, wearing a dark blazer and a maroon tie, standing outdoors in front of garden greenery.",
+      "caption": "Alan MacDiarmid, whose research group spent the 1980s turning that dye into a genuinely useful conductor, and who patented the corrosion-protection coating described above in 1997 — three years before sharing the Nobel Prize for the chemistry behind it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alan_MacDiarmid_2005.017.004e_crop.tif",
+      "author": "Unknown author",
+      "license": "CC BY-SA 3.0",
+      "attribution_text": "Alan MacDiarmid Image Collection, Science History Institute · CC BY-SA 3.0 · via Wikimedia Commons"
+    },
+    {
+      "src": "~/assets/polymers/polyaniline/polyaniline-coated-disc.webp",
+      "alt": "Four small round polymer discs on an orange background above a centimetre ruler: two dark green discs coated with polyaniline, and two smaller pale yellow uncoated discs, each only a few millimetres across.",
+      "caption": "Polyaniline in its actual doped, conducting color: the dark green discs are coated with it; the pale ones beside them are not.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Disc-of-polyvinyl-alcohol-glutaraldehyde-PVAG-yellow-and-coated-with-polyaniline-PVAG-PANIG-dark-green.jpg",
+      "author": "Samantha Salomão Caramori, Kátia Flávia Fernandes, Luiz Bezerra de Carvalho Junior",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polyaniline/corroded-steel.webp",
+      "alt": "A close-up of a heavily corroded steel surface, its rust flaking away in mottled patches of orange and brown with an iridescent blue-purple sheen.",
+      "caption": "The kind of decay a polyaniline coating is designed to slow: a protective oxide layer breaking down and the metal beneath rusting through.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rusted_corroded_metal_1578.jpg",
+      "author": "ImagePerson",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

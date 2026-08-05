@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A structural/mechanistic class (crosslinked networks with associative dynamic covalent bond exchange) rather than one chemistry -- Leibler's original demonstration used a catalyzed epoxy/polyester network, but the vitrimer concept has since been applied to many different base chemistries; closely related to (but a distinct concept from) recyclable-thermosets.",
   "iupac_name": null,
@@ -31,10 +35,47 @@
   "year_of_origin": 2015,
   "era": "The Smart Materials Era (2000-2015)",
   "key_figures": [
-    "Ludwik Leibler"
+    "Ludwik Leibler",
+    "Arkema"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "COP21 and the adoption of the Paris Agreement (December 2015)",
+    "Leibler receives the European Inventor Award, European Patent Office (11 June 2015)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/vitrimers/cop21-paris-conference-2015.webp",
+      "alt": "A row of tall white columns painted with national flags and country names, forming an avenue leading toward a large white conference building marked 'Nations Unies sur les Changements Climatiques, COP21/CMP11, Paris–Le Bourget'.",
+      "caption": "The COP21 venue at Le Bourget, December 2015, where nearly two hundred countries adopted the Paris Agreement.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:COP21_2015_Paris_Le_Bourget_-_Conference_Center_-_United_nations_conference_on_climate_change.jpg",
+      "author": "Jmdigne",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/vitrimers/european-patent-office-munich.webp",
+      "alt": "A modern multi-storey office building clad in perforated green metal panels, photographed from a street corner with a lamp post and bare young trees in front.",
+      "caption": "The European Patent Office, Munich, whose annually awarded European Inventor Award went to Leibler for vitrimers in June 2015 — the ceremony itself was held in Paris that year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Europäisches_Patentamt,_München,_Grasserstraße.jpg",
+      "author": "Richard Huber",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/vitrimers/espci-paris-building.webp",
+      "alt": "A red-brick industrial-style school building with large multi-pane windows, a stone plaque reading 'École Municipale de Physique et de Chimie Industrielles' set between dates 1882 and 1932, and cars parked along the street.",
+      "caption": "ESPCI Paris, the school where Leibler directed the Soft Matter and Chemistry laboratory from 2001 to 2017, and where the vitrimer concept was developed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ESPCI_de_Paris.JPG",
+      "author": "LPLT",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/vitrimers/glassblower-shaping-molten-glass.webp",
+      "alt": "A black-and-white photograph of a man with glasses and a moustache seated at a workbench, shaping a glowing blob of molten glass on the end of a long metal blowpipe resting across wooden supports.",
+      "caption": "A glassblower working molten glass — the gradual, no-fixed-melting-point softening that gave vitrimers their name.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mr_Tony_Kuepfer,_glassblower_shaping_glass.jpg",
+      "author": "Archives New Zealand",
+      "license": "CC BY 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

@@ -10,6 +10,8 @@ import Base from '../../layouts/Base.astro';
 import Section from '../blocks/Section.astro';
 import DidYouKnow from '../blocks/DidYouKnow.astro';
 import Figure from '../blocks/Figure.astro';
+import Plate from '../blocks/Plate.astro';
+import PlatePair from '../blocks/PlatePair.astro';
 import ReferencesList from '../blocks/ReferencesList.astro';
 import {
   citationsFor,
@@ -93,7 +95,7 @@ const description =
 
       <div class="detail-main">
         <div class="narrative" id="narrative" data-spy>
-          <Content components={{ DidYouKnow, Figure }} />
+          <Content components={{ DidYouKnow, Figure, Plate, PlatePair }} />
         </div>
 
         <div class="data-blocks">

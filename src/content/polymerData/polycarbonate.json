@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": "7",
+  "chemical_formula": {
+    "empirical": "(C16H14O3)n",
+    "structural": "[-O-C6H4-C(CH3)2-C6H4-O-CO-]n"
+  },
   "repeat_unit": "{[][>]Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OC(=O)[<][]}",
   "smiles_depiction": "*Oc1ccc(cc1)C(C)(C)c1ccc(cc1)OC(=O)*",
   "notation_note": "The bisphenol A polycarbonate shown is the dominant commercial form; aliphatic and other bisphenol polycarbonates exist but are niche.",
@@ -51,8 +55,41 @@
     "Hermann Schnell",
     "Daniel Fox"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": ["Launch of Explorer 1 and founding of NASA (1958)", "Jack Kilby demonstrates the first integrated circuit at Texas Instruments (12 September 1958)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polycarbonate/explorer-1-team-1958.webp",
+      "alt": "Three men in suits stand on a stage before an audience and a microphone, holding a long, slender satellite model above their heads with both hands, in front of a stone wall and an American flag.",
+      "caption": "William Pickering, James Van Allen, and Wernher von Braun hold up a model of Explorer 1 at the press conference announcing its launch, 31 January 1958.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Explorer1_people.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polycarbonate/kilby-integrated-circuit-replica.webp",
+      "alt": "A macro photograph of a small rectangular glass slide mounted with a strip of germanium, gold contact pads, and several fine curved copper wire leads soldered to blobs of solder, displayed behind museum glass.",
+      "caption": "A working replica of Jack Kilby's first integrated circuit, reproducing the germanium chip he demonstrated at Texas Instruments on 12 September 1958; the original is preserved at the Smithsonian.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Replica_IC.png",
+      "author": "Florian Schäffer",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polycarbonate/riot-police-polycarbonate-shields.webp",
+      "alt": "Six police officers in helmets and dark uniforms stand in a line against a stone wall, each holding a large transparent shield printed with the word POLICE in white capital letters.",
+      "caption": "Riot police with transparent polycarbonate shields — by the 1990s the material had become the standard, replacing the wood and metal shields used before it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_riot_police-1.JPG",
+      "author": "Abasaa",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polycarbonate/apollo-14-shepard-visor.webp",
+      "alt": "An overhead photograph of an astronaut in a white spacesuit on the grey lunar surface, his helmet's gold-coated visor glinting brightly in direct sunlight, with the dark shadow of a lunar module leg crossing the foreground.",
+      "caption": "An Apollo 14 astronaut on the Moon, February 1971, wearing the gold-coated polycarbonate visor built to shield against glare and micrometeoroid impact.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Astronaut_Alan_B._Shepard_Jr._on_the_Moon.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.205,

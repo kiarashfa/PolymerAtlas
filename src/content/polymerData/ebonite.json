@@ -9,6 +9,10 @@
   "parent": "vulcanized-natural-rubber",
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C5H8)n",
+    "structural": null
+  },
   "repeat_unit": "{[][$]C/C(C)=C\\C[$][]}",
   "smiles_depiction": "*C/C(C)=C\\C*",
   "notation_note": "The same cis-1,4 isoprene repeat as natural rubber. Ebonite is what happens when vulcanization is pushed to its limit -- 30 to 50% sulfur by weight, crosslinking so dense that the material stops being a rubber and becomes a hard, brittle solid.",
@@ -44,9 +48,58 @@
   "polymer_class": "thermoset",
   "year_of_origin": 1851,
   "era": "Decoding Nature's Legacy (1833-1902)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Nelson Goodyear",
+    "Charles Goodyear"
+  ],
+  "historical_events_referenced": [
+    "The Great Exhibition and the Crystal Palace, London (1851)",
+    "Charles Goodyear's Vulcanite Court exhibit at the Great Exhibition (1851)",
+    "Nelson Goodyear's hard-rubber patent, granted 6 May 1851",
+    "Murder of Josiah Bacon in the vulcanite dental patent dispute (1879)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/ebonite/crystal-palace-exterior-1851.webp",
+      "alt": "An engraving of a vast glass-and-iron exhibition building with rounded transepts, seen from a park road with carriages passing in front.",
+      "caption": "The Crystal Palace in Hyde Park, built to house the Great Exhibition of 1851.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Crystal_Palace_in_Hyde_Park_for_Grand_International_Exhibition_of_1851.jpg",
+      "author": "Read & Co. Engravers & Printers",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ebonite/crystal-palace-interior-1851.webp",
+      "alt": "A coloured lithograph of the exhibition's glazed interior, crowded with visitors beneath a soaring transept roof.",
+      "caption": "The exhibition floor from the inside - the scale of spectacle Goodyear's own rubber pavilion was built to compete with.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crystal_Palace_-_interior.jpg",
+      "author": "J. McNeven",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ebonite/ebonite-switch-1888.webp",
+      "alt": "A small line engraving of a rotary electrical switch with a turned knob, mounted on a rectangular base.",
+      "caption": "An ebonite switch from 1888 - the material's hardness and resistance to current made it a natural fit for the earliest domestic electrical fittings.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ebonite_switch,_1888_(Forty_Years_of_Electrical_Progress).jpg",
+      "author": "Andy Dingley (scanner)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ebonite/ebonite-mourning-bracelet.webp",
+      "alt": "A dark, glossy hinged bracelet with a hand-carved openwork design, photographed against a plain background.",
+      "caption": "An ebonite bracelet from the second half of the 1800s - light enough to wear as jewellery, black enough to serve as an inexpensive substitute for jet in Victorian mourning dress.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Armband_i_ebonit,_1800-talets_andra_h%C3%A4lft_-_Hallwylska_museet_-_110146.tif",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ebonite/vulcanite-matchsafe.webp",
+      "alt": "An oblong pocket matchsafe with a slip-top lid, its surface patterned with irregular red and black mottling.",
+      "caption": "A vulcanite matchsafe from the early twentieth century - the mottled finish left by the sulfur cure became a decorative feature in its own right, on objects far removed from dentistry or electricity.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vulcanite_Matchsafe,_early_20th_century_(CH_18503555).jpg",
+      "author": "Unknown artist Unknown artist",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.15,

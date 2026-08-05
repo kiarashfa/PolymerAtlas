@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Proteins are sequence-defined heteropolymers of up to 20 different L-α-amino acid monomers joined by peptide bonds; there is no single repeat unit for the class as a whole (sequence is the whole point). Individual proteins (e.g. keratin, collagen) get their own entries where relevant.",
   "iupac_name": null,
@@ -30,9 +34,42 @@
   "polymer_class": null,
   "year_of_origin": 1840,
   "era": "Decoding Nature's Legacy (1833-1902)",
-  "key_figures": [],
+  "key_figures": ["Gerardus Johannes Mulder", "Jöns Jacob Berzelius", "Justus von Liebig"],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/proteins/blackfoot-hide-tanning-1928.webp",
+      "alt": "A black-and-white photograph of a woman kneeling outdoors, scraping the flesh side of an animal hide staked to the ground with a bone tool.",
+      "caption": "Fleshing a hide by hand — a craft built entirely on collagen chemistry, practiced for millennia before anyone had a name for the molecule involved.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Blackfoot_Women_tanning.jpg",
+      "author": "Edward Sheriff Curtis (1868-1954)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/proteins/gerardus-mulder-portrait.webp",
+      "alt": "A seated half-length lithograph portrait of a man with dark curly hair and long sideburns, one arm resting on the back of a chair, signed 'G.J. Mulder' beneath.",
+      "caption": "Gerardus Johannes Mulder, whose 1838 analysis of albumin and fibrin proposed the shared substance that Berzelius would name protein.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Portret_van_Gerardus_Johannis_Mulder,_RP-P-OB-29.297.jpg",
+      "author": "Rijksmuseum",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/proteins/liebig-laboratory-1840.webp",
+      "alt": "A hand-colored illustration of a long, high-windowed chemistry laboratory around 1840, crowded with students in coats and top hats working at benches lined with glassware and furnaces.",
+      "caption": "Justus von Liebig's laboratory at Giessen, around 1840 — the year his textbook made 'protein' central to the emerging science of nutrition.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Justus_von_Liebigs_Labor,_1840.jpg",
+      "author": "Wilhelm Trautschold (1815 – 1877)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/proteins/spider-silk-dew.webp",
+      "alt": "A large, densely woven sheet spider web, beaded all over with fine water droplets, spread across green shrubbery.",
+      "caption": "A sheet-web spider's silk, another structural protein whose engineering — strong, light, and self-spun — modern materials science is still trying to match.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Spinsel_bedekt_met_dauw_02.JPG",
+      "author": "Dominicus Johannes Bergsma",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.36,

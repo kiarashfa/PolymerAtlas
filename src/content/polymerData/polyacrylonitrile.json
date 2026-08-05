@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "25014-41-9",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C3H3N)n",
+    "structural": "[-CH2-CH(CN)-]n"
+  },
   "repeat_unit": "{[][$]CC(C#N)[$][]}",
   "smiles_depiction": "*CC(C#N)*",
   "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1-10% vinyl comonomers, so the pure-homopolymer repeat unit shown does not represent most commercial grades.",
@@ -48,8 +52,43 @@
     "Claus Heuck",
     "Herbert Rein"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Clyde Tombaugh discovers Pluto at Lowell Observatory (18 February 1930)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyacrylonitrile/clyde-tombaugh-portrait.webp",
+      "alt": "A young man in glasses, shirt and tie standing beside a tall homemade telescope tube mounted on an equatorial stand in an open field.",
+      "caption": "Clyde Tombaugh with the homemade telescope he built before joining Lowell Observatory, where he discovered Pluto in February 1930.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clyde_W._Tombaugh.jpeg",
+      "author": "Unknown author Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylonitrile/lowell-astrograph-telescope.webp",
+      "alt": "A large red-painted telescope tube mounted on a heavy pier inside a wooden observatory dome, angled steeply upward.",
+      "caption": "The 13-inch astrograph at Lowell Observatory that recorded the photographic plates on which Tombaugh found Pluto.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lowell_astrograph.jpg",
+      "author": "Taken by Pretzelpaws with a Casio Exilim EX-Z750 camera. Cropped 8/16/05 using the GIMP .",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylonitrile/orlon-fashion-advertisement.webp",
+      "alt": "A 1950s magazine advertisement illustration showing a teacher and two students examining a ball-and-stick molecular model at a classroom blackboard, with a young woman in a plaid skirt and white cardigan reading a chemistry textbook in the foreground.",
+      "caption": "A Du Pont advertisement for Orlon, the trade name under which acrylic fiber reached American closets in the 1950s — two decades after Fikentscher and Heuck's polymer had first been written off as useless.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ORLON_teaches_new_fall_fashions_to_keep_their_figure_in_the_wash!_-_DPLA_-_271f0a1df97147140c0d25ae915a67df.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyacrylonitrile/boeing-787-carbon-fiber-fuselage.webp",
+      "alt": "A close-up interior view of a large curved carbon-fiber composite fuselage section, its dark woven surface reinforced along riveted structural frames.",
+      "caption": "A carbon fiber section of a Boeing 787 fuselage — PAN fiber's modern destination, spun, oxidized, and carbonized into a lattice that carries an airliner's structural load.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:787fuselage.jpg",
+      "author": "Cjboffoli at English Wikipedia",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.184,

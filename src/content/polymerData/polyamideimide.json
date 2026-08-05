@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C22H14N2O3)n",
+    "structural": "[-N(CO)2-C6H3-CO-NH-C6H4-CH2-C6H4-]n"
+  },
   "repeat_unit": "{[][>]N1C(=O)c2ccc(cc2C1=O)C(=O)Nc1ccc(cc1)Cc1ccc(cc1)[<][]}",
   "smiles_depiction": "*N1C(=O)c2ccc(cc2C1=O)C(=O)Nc1ccc(cc1)Cc1ccc(cc1)*",
   "notation_note": "Each repeat carries both an imide ring and an amide link -- the imide for thermal stability, the amide for enough chain mobility to be processable.",
@@ -42,9 +46,45 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1978,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Amoco Chemicals"],
+  "historical_events_referenced": [
+    "First Navstar GPS satellite launched (22 February 1978)",
+    "First public trial of a cellular telephone network, Chicago (1978)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyamideimide/gps-satellite-space-chamber-test-1977.webp",
+      "alt": "A satellite with a foil-wrapped body and two extended solar panel wings hangs suspended by cables inside a large space-simulation chamber, a technician in white coveralls standing beside it.",
+      "caption": "A full-scale GPS satellite undergoing environmental testing in 1977, ahead of the first Navstar launch in February 1978 — proving it could survive extremes no repair crew could ever reach.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:150710-F-0000U-002_2_(cropped).jpg",
+      "author": "US Air Force",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyamideimide/car-mounted-mobile-radio-telephone.webp",
+      "alt": "A boxy black car-mounted mobile radio telephone unit with a rotary-style handset, a numbered channel selector strip and a moisture warning label.",
+      "caption": "A car-mounted mobile radio telephone of the kind Illinois Bell and AT&T's 1978 Chicago trial relied on, before cellular networks shrank the equipment enough to fit a pocket.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mobile_radio_telephone.jpg",
+      "author": "Hackgillam at English Wikipedia",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyamideimide/amoco-gas-poplar-bluff-1979.webp",
+      "alt": "A whitewashed 1920s-style brick filling station with tiled eaves and soda vending machines out front, a partial AMOCO sign visible on the adjoining building, photographed in color.",
+      "caption": "An Amoco filling station, photographed in 1979 — the public face of the same company whose chemicals division, far from any gas pump, had spent nearly two decades turning a laboratory curiosity into Torlon.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Amoco_Gas,_Poplar_Bluff,_Missouri_LCCN2017707396.tif",
+      "author": "John Margolies",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyamideimide/f15-engine-bearing-housing.webp",
+      "alt": "Two US Air Force trainees in tan uniforms work on a large turbine bearing housing during aircraft engine maintenance.",
+      "caption": "Aircraft engine maintenance work of the kind PAI's precision-machined bearings and bushings are built to survive, holding tight tolerances under friction and heat without lubrication failing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:U.S._Air_Force_Airman_Brandinn_Kim,_left,_and_Airman_Elizabeth_Ulring,_both_in_the_jet_propulsion_course_with_the_361st_Training_Squadron,_ready_a_bearing_housing_on_an_F-15_Eagle_aircraft_engine_for_130827-F-NS900-001.jpg",
+      "author": "Frank Carter",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

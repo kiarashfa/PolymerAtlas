@@ -6,7 +6,9 @@
 import Section from './Section.astro';
 import PropRow from './PropRow.astro';
 import FactRow from './FactRow.astro';
+import FormulaRow from './FormulaRow.astro';
 import ReferencesList from './ReferencesList.astro';
+import ImageCredits from './ImageCredits.astro';
 import StructureViewer from './StructureViewer.astro';
 import MarkHouwinkTable from './MarkHouwinkTable.astro';
 import {
@@ -148,6 +150,11 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
       <FactRow label="Resin ID code">
         {data.resin_id_code ?? <span class="none">none assigned</span>}
       </FactRow>
+      <FormulaRow
+        empirical={data.chemical_formula.empirical}
+        structural={data.chemical_formula.structural}
+        note={data.notation_note}
+      />
       <FactRow label="Repeat unit (BigSMILES)">
         {
           data.repeat_unit ? (
@@ -463,5 +470,6 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
 
   <Section {...sec.references}>
     <ReferencesList refList={refList} />
+    <ImageCredits images={data.historical_images} />
   </Section>
 </div>

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H2S)n",
+    "structural": "[-C4H2S-]n"
+  },
   "repeat_unit": "{[][$]c1ccc([$])s1[]}",
   "smiles_depiction": "*c1ccc(s1)*",
   "notation_note": "Regioregularity (head-to-tail vs. random coupling in substituted derivatives such as P3HT) strongly affects conductivity and is not captured by a single repeat-unit notation.",
@@ -38,9 +42,46 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 2000,
   "era": "The Smart Materials Era (2000-2015)",
-  "key_figures": [],
+  "key_figures": [
+    "Alan Heeger",
+    "Alan MacDiarmid",
+    "Hideki Shirakawa"
+  ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polythiophene/human-genome-draft-announcement-2000.webp",
+      "alt": "Bill Clinton speaking at a lectern bearing the Presidential seal, flanked by two other men, with screens behind them reading a headline about decoding the book of life.",
+      "caption": "President Clinton announces the completed working draft of the human genome, 26 June 2000 — one kind of polymer making headlines the same year a very different one made the Nobel Prize.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:IHGSC_Human_Genome_Project_Draft_Completion_Announcement_-_June_2000.jpg",
+      "author": "National Human Genome Research Institute (NHGRI)",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polythiophene/shirakawa-nobel-congratulations-2000.webp",
+      "alt": "Two men in suits sitting in armchairs in conversation; the man on the left wears glasses and holds his hands together, and the man on the right gestures as he speaks.",
+      "caption": "Hideki Shirakawa meets Japan's prime minister, Yoshirō Mori, eight days after the Nobel committee named him one of the 2000 laureates in Chemistry.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hideki_Shirakawa_and_Yoshiro_Mori_20001018.jpg",
+      "author": "内閣官房内閣広報室",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/polythiophene/alan-heeger-portrait.webp",
+      "alt": "A balding older man with glasses, a moustache and short beard, wearing a headset microphone and a dark turtleneck, photographed at an event.",
+      "caption": "Alan Heeger, who with Shirakawa and MacDiarmid shared the prize the Nobel committee awarded not to polythiophene specifically, but to the broader discovery that made it a useful material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heeger,_Alan_J._(1936).jpg",
+      "author": "Vogler",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polythiophene/polymer-organic-solar-cell.webp",
+      "alt": "A man in a suit holds up and flexes a large, flexible reddish-brown striped solar panel sheet at a press event.",
+      "caption": "A commercially made polymer solar cell, flexible enough to bend by hand — the kind of application that turned thiophene chemistry from a specialist's material into an industrial one.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polymer_organische_Solarzelle_01.jpg",
+      "author": "Kuebi = Armin Kübelbeck",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

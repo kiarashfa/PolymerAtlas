@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9003-56-9",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6)x·(C8H8)y·(C3H3N)z",
+    "structural": "[-CH2-CH=CH-CH2-]x[-CH2-CH(C6H5)-]y[-CH2-CH(CN)-]z"
+  },
   "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(c1ccccc1)[$],[$]CC(C#N)[$][]}",
   "smiles_depiction": "*C/C=C\\C*.*CC(c1ccccc1)*.*CC(C#N)*",
   "notation_note": "The three units shown are not simply strung along one chain: ABS is a two-phase material, with rubbery polybutadiene particles grafted into and dispersed through a rigid styrene-acrylonitrile matrix. That morphology, not the sequence, is what makes it tough.",
@@ -41,9 +45,44 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1948,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
+  "key_figures": [
+    "Lawrence E. Daly"
+  ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/polaroid-land-camera-1948.webp",
+      "alt": "A folding bellows camera on a museum stand, its front panel reading POLAROID LAND CAMERA MODEL 95, lens housing and accordion bellows extended.",
+      "caption": "The Polaroid Land Camera Model 95, which sold out within hours of going on sale on 26 November 1948.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polaroid_Land_Camera_Model_95_-_MIT_Museum_-_DSC03766.JPG",
+      "author": "Daderot",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/1948-cadillac.webp",
+      "alt": "A black 1948 Cadillac sedan with chrome bumpers and grille, parked among other vintage cars at an outdoor car show.",
+      "caption": "A 1948 Cadillac — the kind of consumer-facing peacetime product American manufacturing was turning back toward that same year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1948_Cadillac_Series_62_(24673004996).jpg",
+      "author": "Jeremy (Sydney, Australia)",
+      "license": "CC BY 2.0"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/abs-resin-granules.webp",
+      "alt": "A handful of small white cylindrical plastic pellets held in an open palm, with more pellets scattered on the surface below.",
+      "caption": "ABS resin as it leaves the factory: pellets ready for injection molding or extrusion, not yet colored or shaped.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:ABS_granule.jpg",
+      "author": "Jacorna",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/lego-bricks.webp",
+      "alt": "Three plastic interlocking building blocks of different sizes — a small red brick and two larger blue and yellow blocks with rounded studs on top — on a plain light background.",
+      "caption": "Interlocking bricks of the kind ABS has been molded into since 1963, chosen for a clutch fit that survives years of assembly and disassembly.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lego_%26_Lego_Duplo_by_Christian_Ursilva.jpg",
+      "author": "Christian Ursilva",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.06,

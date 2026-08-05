@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9002-85-1",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H2Cl2)n",
+    "structural": "[-CH2-CCl2-]n"
+  },
   "repeat_unit": "{[][$]CC(Cl)(Cl)[$][]}",
   "smiles_depiction": "*CC(Cl)(Cl)*",
   "iupac_name": null,
@@ -40,8 +44,44 @@
   "key_figures": [
     "Ralph Wiley"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "King Kong premieres at Radio City Music Hall, New York (2 March 1933)",
+    "Twenty-First Amendment ends Prohibition (5 December 1933)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyvinylidene-chloride/king-kong-1933-poster.webp",
+      "alt": "Illustrated 1933 movie poster showing a giant ape clutching a woman atop a building, swatting at biplanes, with the New York skyline below.",
+      "caption": "The King Kong poster, March 1933 — a fantasy of an oversized creature nobody could contain, the same season a much smaller, equally unshakeable substance turned up in a Dow beaker.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kingkongposter.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-chloride/prohibition-repeal-celebration-1933.webp",
+      "alt": "Black-and-white photograph of men in formal evening dress crowded around a piano, drinking beer straight from a keg and from large glasses and mugs.",
+      "caption": "Celebrating the end of Prohibition, December 1933 — the same year a Dow lab worker discovered a film so impervious that nothing, including a dishwashing brush, could get through it either.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:After_End_of_Prohibition_New_York_Times_1933_3.jpg",
+      "author": "Unknown, via New York Times",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-chloride/pharmaceutical-blister-pack.webp",
+      "alt": "Several sheets of pharmaceutical blister packaging, holding rows of round tablets and dark capsules, stacked and overlapping on a table.",
+      "caption": "Pharmaceutical blister packaging — a use for the same barrier property that keeps oxygen and moisture-sensitive tablets stable until the foil is peeled back.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pills_in_blister_pack.jpg",
+      "author": "Unknown author",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-chloride/saran-wrap-box.webp",
+      "alt": "A yellow box of Saran Wrap cling film, its plastic film partly unrolled and stretched over a bowl of food on a table.",
+      "caption": "Saran Wrap, still sold under Wiley's original trade name decades after Dow itself reformulated the retail product away from PVDC.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saran_Wrap_01.JPG",
+      "author": "Kakura",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.70,

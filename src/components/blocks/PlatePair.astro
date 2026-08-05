@@ -1,0 +1,24 @@
+---
+// Two photographs that belong together, set side by side at half the text
+// measure each so the pair stays inside the column a single plate occupies.
+// Never three -- a third is a second pair, or a plate of its own.
+//
+// Used from MDX by nesting exactly two <Plate> children:
+//
+//   <PlatePair label="Plates III & IV">
+//     <Plate src="…" alt="…" caption="…" … />
+//     <Plate src="…" alt="…" caption="…" … />
+//   </PlatePair>
+//
+// Each child keeps its own credit, so provenance is never pooled or lost.
+interface Props {
+  /** Small-caps label above the pair, e.g. "Plates III & IV". */
+  label?: string;
+}
+const { label } = Astro.props;
+---
+
+<div class="plate-pair">
+  {label && <p class="plate-label">{label}</p>}
+  <div class="plate-pair-grid"><slot /></div>
+</div>

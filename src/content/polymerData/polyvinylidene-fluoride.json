@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "24937-79-9",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H2F2)n",
+    "structural": "[-CH2-CF2-]n"
+  },
   "repeat_unit": "{[][$]CC(F)(F)[$][]}",
   "smiles_depiction": "*CC(F)(F)*",
   "iupac_name": "Poly(1,1-difluoroethylene)",
@@ -48,9 +52,49 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1947,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Thomas Ford",
+    "William Hanford",
+    "Heiji Kawai"
+  ],
+  "historical_events_referenced": [
+    "Chuck Yeager and the Bell X-1 breaking the sound barrier (October 1947)",
+    "Invention of the transistor at Bell Labs (December 1947)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyvinylidene-fluoride/chuck-yeager-bell-x1-cockpit-1947.webp",
+      "alt": "A close-up photograph looking into the open cockpit window of the bright orange Bell X-1 rocket plane, with pilot Chuck Yeager visible inside in flight gear; the aircraft is marked 'Glamorous Glennis', and a later autograph reading 'Good Luck! Chuck Yeager' is written across the lower part of the photograph.",
+      "caption": "Chuck Yeager in the cockpit of the Bell X-1 in 1947 — a breakthrough the world understood within hours, unlike the quiet fluoropolymer patent DuPont had pending that same year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chuck_Yeager_X-1_(color).jpg",
+      "author": "Jack Ridley",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-fluoride/transistor-inventors-bardeen-shockley-brattain.webp",
+      "alt": "A black-and-white photograph of three men in shirtsleeves and ties gathered around a laboratory bench crowded with electronic test equipment, dials, wires and a small mounted device, with one man seated and two standing behind him.",
+      "caption": "John Bardeen, William Shockley and Walter Brattain with the apparatus behind the first transistor, in a Bell Labs publicity photograph — an invention the public understood as revolutionary within months, not decades.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bardeen_Shockley_Brattain_1948.JPG",
+      "author": "AT&T; photographer: Jack St. (last part of name not stamped well enough to read), New York, New York.",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-fluoride/pvdf-ultrapure-water-piping.webp",
+      "alt": "An indoor industrial installation of white plastic piping racks with numerous blue and orange valves, flow meters and fittings, arranged in parallel rows connected by overhead pipework.",
+      "caption": "A PVDF piping installation carrying ultrapure water in a semiconductor fabrication plant — the kind of unglamorous, highly corrosive-resistant service the material has quietly filled since the 1960s, well before anyone cared about its piezoelectricity.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_UPW_Installation_using_PVDF_Piping.png",
+      "author": "Wikikart99",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polyvinylidene-fluoride/lithium-battery-electrode-calendering.webp",
+      "alt": "An industrial calendering machine with a dark, thin electrode film threaded between polished metal and red rubber rollers, control panel and hydraulic fittings visible behind it.",
+      "caption": "A calendering line compressing lithium-ion battery electrode film to its final thickness - the kind of production step where a PVDF binder holds the electrode's active particles onto the foil through repeated rolling and handling.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Calander_Machine.JPG",
+      "author": "RudolfSimon",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.795,

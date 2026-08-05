@@ -1,0 +1,92 @@
+---
+// The chemical formula, as one Identity row carrying both notations behind a
+// toggle -- the element tally a reader can compare across pages, and the
+// structural form that shows how the unit is actually joined. Subscripts are
+// applied here (real <sub> markup); the data files store plain ASCII.
+//
+// The control language is deliberately the structure viewer's: same
+// segmented pair, same active treatment, so the two toggles in the Identity
+// card read as one family.
+import { formulaHtml } from '../../lib/formula';
+
+interface Props {
+  empirical: string | null;
+  structural: string | null;
+  /** The caveat the formula needs: which isomer is shown, what a crosslinked
+   *  network's chain repeat does and does not say, why there is no formula at
+   *  all. Renders beneath the formula, or in its place when there is none —
+   *  a chain repeat quoted without its caveat is the misleading case (ebonite
+   *  is 30-50% sulfur by weight and still repeats natural rubber's isoprene). */
+  note?: string;
+}
+const { empirical, structural, note } = Astro.props;
+
+const forms = [
+  empirical && { key: 'empirical', label: 'empirical', html: formulaHtml(empirical) },
+  structural && { key: 'structural', label: 'structural', html: formulaHtml(structural) },
+].filter(Boolean) as { key: string; label: string; html: string }[];
+---
+
+<div class="fact">
+  <dt class="fact-label">Formula</dt>
+  <dd class="fact-value">
+    {
+      forms.length === 0 ? (
+        <span class="none">{note ?? 'no single repeat unit'}</span>
+      ) : (
+        <span class="formula" data-formula>
+          {forms.map((f, i) => (
+            <span
+              class="formula-text"
+              data-form={f.key}
+              hidden={i !== 0}
+              set:html={f.html}
+            />
+          ))}
+          {forms.length > 1 && (
+            <span class="struct-pair" role="group" aria-label="formula notation">
+              {forms.map((f, i) => (
+                <button
+                  type="button"
+                  class:list={['struct-btn', { 'is-active': i === 0 }]}
+                  data-formula-btn={f.key}
+                  aria-pressed={i === 0 ? 'true' : 'false'}
+                >
+                  {f.label}
+                </button>
+              ))}
+            </span>
+          )}
+          {note && <span class="formula-note">{note}</span>}
+        </span>
+      )
+    }
+  </dd>
+</div>
+
+<script>
+  // Same wiring contract as StructureViewer: bound on every page load
+  // including View Transition swaps, guarded so a row is never bound twice.
+  function wireFormulas() {
+    document.querySelectorAll<HTMLElement>('[data-formula]').forEach((row) => {
+      if (row.dataset.wired) return;
+      row.dataset.wired = '1';
+      row.addEventListener('click', (ev) => {
+        const btn = (ev.target as HTMLElement | null)?.closest<HTMLElement>('[data-formula-btn]');
+        if (!btn || !row.contains(btn)) return;
+        const key = btn.dataset.formulaBtn;
+        row.querySelectorAll<HTMLElement>('.formula-text').forEach((el) => {
+          el.hidden = el.dataset.form !== key;
+        });
+        row.querySelectorAll<HTMLElement>('[data-formula-btn]').forEach((b) => {
+          const on = b.dataset.formulaBtn === key;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      });
+    });
+  }
+
+  wireFormulas();
+  document.addEventListener('astro:page-load', wireFormulas);
+</script>

@@ -3,10 +3,11 @@
 // (three stacked lozenges, the same diamond motif as the timeline's year
 // markers; deliberately not a hamburger). Holds the reading preferences
 // that used to crowd the header: the Gilt/Vellum/Atelier presentation
-// styles (each option typeset in the face it switches to) and the
-// Day/Night theme pair. Absorbs the former VariantToggle + ThemeToggle
-// (same localStorage keys 'pa-variant'/'pa-theme'; the Layout's pre-paint
-// head script still applies both before first paint).
+// styles (each option typeset in the face it switches to), the Day/Night
+// theme pair, the glazing over narrative photographs, and the unit system.
+// Absorbs the former VariantToggle + ThemeToggle (same localStorage keys
+// 'pa-variant'/'pa-theme'; the Layout's pre-paint head script still applies
+// them, and 'pa-glaze', before first paint).
 //
 // Extensible by design: each `.menu-group` is an independent section with
 // its own hairline-flanked label — future entries (links, tools) are added
@@ -92,6 +93,20 @@ import { VARIANTS } from '../../lib/variants';
       </div>
     </section>
 
+    <section class="menu-group" aria-label="Glazing">
+      <h2 class="menu-group-label u-caps menu-stagger">Glazing</h2>
+      <div class="menu-pair menu-stagger">
+        <button class="menu-pair-btn" type="button" data-glaze-set="on">
+          <span class="menu-pair-glyph" aria-hidden="true">◧</span>
+          Glazed
+        </button>
+        <button class="menu-pair-btn" type="button" data-glaze-set="off">
+          <span class="menu-pair-glyph" aria-hidden="true">◫</span>
+          Plain
+        </button>
+      </div>
+    </section>
+
     <section class="menu-group" aria-label="Units">
       <h2 class="menu-group-label u-caps menu-stagger">Units</h2>
       <div class="menu-pair menu-stagger">
@@ -135,6 +150,19 @@ import { VARIANTS } from '../../lib/variants';
     return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
+  function storedGlaze(): string {
+    try {
+      if (localStorage.getItem('pa-glaze') === 'off') return 'off';
+    } catch {
+      /* ignore */
+    }
+    return 'on';
+  }
+
+  function applyGlaze(state: string) {
+    document.documentElement.classList.toggle('no-glaze', state === 'off');
+  }
+
   function storedUnits(): string {
     try {
       if (localStorage.getItem('pa-units') === 'imperial') return 'imperial';
@@ -163,18 +191,22 @@ import { VARIANTS } from '../../lib/variants';
     });
   }
 
-  // Mirror the current variant/theme/units onto the menu's active marks.
+  // Mirror variant / theme / glazing / units onto the menu's active marks.
   function syncMenu() {
     const v = VARIANT_IDS.find((id) =>
       document.documentElement.classList.contains(`variant-${id}`)
     );
     const t = resolvedTheme();
     const u = storedUnits();
+    const g = storedGlaze();
     document.querySelectorAll<HTMLElement>('[data-variant-btn]').forEach((b) => {
       b.classList.toggle('is-active', b.dataset.variantBtn === v);
     });
     document.querySelectorAll<HTMLElement>('[data-theme-set]').forEach((b) => {
       b.classList.toggle('is-active', b.dataset.themeSet === t);
+    });
+    document.querySelectorAll<HTMLElement>('[data-glaze-set]').forEach((b) => {
+      b.classList.toggle('is-active', b.dataset.glazeSet === g);
     });
     document.querySelectorAll<HTMLElement>('[data-units-set]').forEach((b) => {
       b.classList.toggle('is-active', b.dataset.unitsSet === u);
@@ -221,6 +253,17 @@ import { VARIANTS } from '../../lib/variants';
       syncMenu();
       return;
     }
+    const gBtn = el?.closest<HTMLElement>('[data-glaze-set]');
+    if (gBtn?.dataset.glazeSet) {
+      applyGlaze(gBtn.dataset.glazeSet);
+      try {
+        localStorage.setItem('pa-glaze', gBtn.dataset.glazeSet);
+      } catch {
+        /* storage unavailable — the change still applies to this page */
+      }
+      syncMenu();
+      return;
+    }
     const uBtn = el?.closest<HTMLElement>('[data-units-set]');
     if (uBtn?.dataset.unitsSet) {
       try {
@@ -254,6 +297,7 @@ import { VARIANTS } from '../../lib/variants';
     } catch {
       /* ignore */
     }
+    applyGlaze(storedGlaze());
     applyUnits(storedUnits());
     syncMenu();
   }

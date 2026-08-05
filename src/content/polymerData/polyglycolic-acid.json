@@ -9,8 +9,13 @@
   "parent": null,
   "cas_number": "26124-68-5",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H2O2)n",
+    "structural": "[-O-CH2-CO-]n"
+  },
   "repeat_unit": "{[][>]OCC(=O)[<][]}",
   "smiles_depiction": "*OCC(=O)*",
+  "notation_note": "Glycolic acid has no stereocentre, so unlike PLA or PHB there is no isomer to specify -- the chain repeat shown is unambiguous.",
   "iupac_name": "Polyglycolide",
   "synonyms": [
     "polyglycolide"
@@ -46,9 +51,49 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1990,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Edward E. Schmitt",
+    "Rocco A. Polistina",
+    "Davis & Geck"
+  ],
+  "historical_events_referenced": [
+    "Rise of laparoscopic ('keyhole') surgery in the United States (1988-1990)",
+    "American College of Surgeons Clinical Congress, October 1989"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyglycolic-acid/laparoscopic-instruments.webp",
+      "alt": "An overhead photograph of surgical instruments laid out on green cloth, including several long, thin metal rods with pistol-grip handles, trocar sheaths, curved forceps, and coiled cables for light and insufflation.",
+      "caption": "A laparoscopic instrument tray. The keyhole technique that swept through American surgery around 1990 could reach almost anywhere inside the body — but not back out again to pull a stitch.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Instruments_for_laparoscopic_Hernia_Operation.jpg",
+      "author": "Anpol42",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyglycolic-acid/catgut-thread-dispenser.webp",
+      "alt": "A tall cylindrical glass dispenser jar, its lower chamber holding a large coiled ball of amber-coloured thread submerged in preservative fluid, with a small numbered tag tied around it, and a narrower dispensing neck rising above.",
+      "caption": "A mid-twentieth-century catgut suture dispenser. PGA offered surgeons the same disappearing act, but on a schedule they could actually plan around.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Surgical_catgut_thread.jpg",
+      "author": "Nikodem Nijaki",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyglycolic-acid/pga-dexon-suture.webp",
+      "alt": "A pale blue braided suture thread coiled loosely on dark green cloth, with a curved metal needle swaged onto one end.",
+      "caption": "Polyglycolic acid suture in its original form — the Dexon-type braided thread that replaced catgut from 1970 onward.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Polyglycolic_acid_suture_(_PGA-Dexon).JPG",
+      "author": "آرمین",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polyglycolic-acid/vicryl-suture.webp",
+      "alt": "A packet of violet braided suture thread with a curved needle, coiled inside an opened foil and card package printed with perforated tear tabs.",
+      "caption": "Vicryl, a PGA-lactide copolymer developed to handle more softly than pure PGA while keeping the same predictable disappearance.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:VICRYL.Violet_braided_absorbable_suture.3-0.70cm.JPG",
+      "author": "Saltanat ebli",
+      "license": "CC0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.6,

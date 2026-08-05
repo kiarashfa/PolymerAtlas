@@ -9,6 +9,10 @@
   "parent": "polyhydroxyalkanoates",
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H6O2)n",
+    "structural": "[-O-CH(CH3)-CH2-CO-]n"
+  },
   "repeat_unit": "{[][>]O[C@@H](C)CC(=O)[<][]}",
   "smiles_depiction": "*O[C@@H](C)CC(=O)*",
   "notation_note": "Bacterially synthesized PHB is stereochemically pure R, which is why it crystallizes so readily -- and why it is stiff and brittle compared with the copolymers.",
@@ -45,10 +49,47 @@
   "year_of_origin": 1976,
   "era": "The Engineering Polymers Era (1961-1979)",
   "key_figures": [
-    "Maurice Lemoigne"
+    "Maurice Lemoigne",
+    "ICI"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Founding of Genentech (April 1976)",
+    "ICI's Biopol pilot-scale development (1980s)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyhydroxybutyrate/herbert-boyer-1977.webp",
+      "alt": "A black-and-white photograph of six researchers crowded around a laboratory bench, one bearded man holding up a large striped autoradiograph film while colleagues look on, flasks and hand-labelled bottles visible on the bench to the right.",
+      "caption": "Herbert Boyer (second from left) with colleagues examining an experiment, not long after he and Robert Swanson founded Genentech on the idea of engineering bacteria to order.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dr._Herbert_Boyer.jpg",
+      "author": "Crystal Rictor 12",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxybutyrate/maurice-lemoigne-portrait.webp",
+      "alt": "A sepia-toned portrait photograph of an older man with a receding hairline, wearing a white laboratory coat over a shirt and dark tie, a document rolled under one arm.",
+      "caption": "Maurice Lemoigne, who in 1926 found *Bacillus megaterium* cells packed with a substance the organism had made for itself: polyhydroxybutyrate.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maurice_Lemoigne_(1883-1967).jpeg",
+      "author": "Njacquel",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxybutyrate/bacillus-megaterium.webp",
+      "alt": "A close-up photograph of a blood-agar petri dish, dark pink-red in colour, streaked with pale cream bacterial colonies of varying size.",
+      "caption": "*Bacillus megaterium* growing on blood agar — the species in which Lemoigne first found PHB granules.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bacillus_megaterium_bacteria.jpg",
+      "author": "Department of Health and Human Services",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyhydroxybutyrate/cupriavidus-necator-cultures.webp",
+      "alt": "Two gloved hands holding a petri dish with several small orange and cream colonies, while a pipette held by a second gloved hand touches one colony.",
+      "caption": "*Cupriavidus necator* — better known under its older name, *Alcaligenes eutrophus* — the species industry actually uses to grow PHB at scale.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cupriavidus_necator.jpg",
+      "author": "Pontificia Universidad Católica de Chile",
+      "license": "CC BY-SA 2.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.21,

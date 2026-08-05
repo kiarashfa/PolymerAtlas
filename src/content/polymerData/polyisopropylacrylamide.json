@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "25189-55-3",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C6H11NO)n",
+    "structural": "[-CH2-CH(CONHCH(CH3)2)-]n"
+  },
   "repeat_unit": "{[][$]CC(C(=O)NC(C)C)[$][]}",
   "smiles_depiction": "*CC(C(=O)NC(C)C)*",
   "iupac_name": "Poly(N-isopropylacrylamide)",
@@ -33,9 +37,59 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1955,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": [
+    "Edward H. Specht",
+    "Andrew Neuman",
+    "Harry T. Neher",
+    "M. Heskins",
+    "J. E. Guillet"
+  ],
+  "historical_events_referenced": [
+    "Disneyland opens in Anaheim, California (17 July 1955)",
+    "The Warsaw Pact is signed (14 May 1955)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyisopropylacrylamide/disneyland-opening-day-1955.webp",
+      "alt": "Children running along a tree-lined walkway toward a fairy-tale castle with turrets and a drawbridge, past costumed performers on horseback.",
+      "caption": "Opening day at Disneyland, 17 July 1955 — engineered wonder, announced to the world months in advance.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Opening_Day_at_Disneyland.jpg",
+      "author": "Unknown author Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyisopropylacrylamide/rohm-haas-varnish-laboratory.webp",
+      "alt": "A vintage photograph of a chemistry laboratory workbench crowded with cans, bottles, and glass apparatus, with shelves of labelled tins along the back wall, captioned 'Varnish Laboratory, 222 West Washington Sq., Phila. Pa.'",
+      "caption": "A laboratory at Röhm & Haas's Philadelphia home office — the company whose chemists patented the first synthesis of the monomer behind PNIPAM.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rohm_and_Haas_Varnish_Laboratory_-_DPLA_-_ea64c4dc36d918bd8bbbcbe0ee67c9a0.jpg",
+      "author": "Rohm and Haas Company",
+      "license": "No restrictions"
+    },
+    {
+      "src": "~/assets/polymers/polyisopropylacrylamide/warsaw-pact-signing-1955.webp",
+      "alt": "A large formal conference hall with a long U-shaped table of seated delegates in suits and military uniforms, beneath ornate chandeliers and classical columns.",
+      "caption": "Delegates sign the Warsaw Pact in Warsaw on 14 May 1955, formalizing an alliance that had operated in practice for years already.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Warsaw_Pact_1955.jpg",
+      "author": "nieznany/unknown",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyisopropylacrylamide/pnipam-solution-before-heating.webp",
+      "alt": "A small glass sample vial with a teal cap, containing a clear, colorless liquid at room temperature.",
+      "caption": "A PNIPAM solution below its critical temperature: clear, hydrated, and fully dissolved.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PNIPA_LCST_Before.jpg",
+      "author": "Quantyield",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyisopropylacrylamide/pnipam-solution-after-heating.webp",
+      "alt": "The same style of glass sample vial, now containing a cloudy, opaque white liquid after heating.",
+      "caption": "The same solution warmed past its critical temperature: the chains have collapsed and turned the liquid opaque within moments.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PNIPA_LCST_After.jpg",
+      "author": "Quantyield",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.386,

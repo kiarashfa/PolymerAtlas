@@ -10,6 +10,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "This entry covers two related aminoplast condensation resins -- melamine-formaldehyde (MF) and urea-formaldehyde (UF) -- both crosslinked thermoset networks with no single linear repeat unit; UF's idealized repeat is [(O)CNHCH2NH]n before crosslinking.",
   "iupac_name": null,
@@ -50,9 +54,45 @@
   "polymer_class": "thermoset",
   "year_of_origin": 1924,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Edmund Rossiter", "American Cyanamid Company"],
+  "historical_events_referenced": [
+    "British Cyanides Company converts surplus thiourea into Beetle resin (1924)",
+    "British Empire Exhibition, Wembley (1924-1925)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/melamine-urea-formaldehyde/flapper-fashion-1922.webp",
+      "alt": "A young woman in a fur-collared tweed coat and cloche hat, hands in her pockets, posing for a studio photograph captioned 'A Flapper Girl'.",
+      "caption": "The flapper silhouette of the early 1920s: straight, light, and unweighted — the opposite of the heavy silk that had kept British Cyanides in the thiourea business.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_flapper_girl_LCCN2012645724.jpg",
+      "author": "Turner, C. W., photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/melamine-urea-formaldehyde/urea-formaldehyde-objects-colours.webp",
+      "alt": "A museum display case of small urea-formaldehyde household objects — cigarette cases, cups, an owl figurine, salt and pepper shakers, cup-and-saucer sets and trinket boxes — in yellow, green, blue, pink, cream and black.",
+      "caption": "The palette Bakelite could never offer: urea-formaldehyde objects on museum display, ranging across colors a phenolic mold could not hold.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_selection_of_urea_formaldehyde_objects_at_the_science_museum.JPG",
+      "author": "Geni",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/melamine-urea-formaldehyde/wembley-exhibition-postcard-1924.webp",
+      "alt": "A sepia-toned view across an ornamental lake at an exhibition ground, with white pavilions, a footbridge and small boats on the water.",
+      "caption": "The Wembley grounds during the British Empire Exhibition. Beetle resin's sample discs were shown here in 1925, the exhibition's second season.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wembley_British_Empire_Exhibition_1924_-_geograph.org.uk_-_5105754.jpg",
+      "author": "Ann Matthews",
+      "license": "CC BY-SA 2.0"
+    },
+    {
+      "src": "~/assets/polymers/melamine-urea-formaldehyde/melmac-dinnerware-museum.webp",
+      "alt": "A museum display shelf of pale blue Melmac dinnerware — plates, bowls, cups, a creamer and a covered butter dish — with vintage Melmac advertisements pinned to the wall behind.",
+      "caption": "A Melmac place setting on museum display. American Cyanamid's melamine tableware, sold from the 1940s onward, became the material's best-known consumer face.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MelmacDinnerware.jpg",
+      "author": "DanielPenfield",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

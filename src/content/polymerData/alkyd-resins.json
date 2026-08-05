@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Fatty-acid-modified polyester -- composition (polyol + dibasic acid/anhydride + oil type and loading) varies by formulation, so no single repeat unit represents the class.",
   "iupac_name": null,
@@ -39,9 +43,46 @@
   "polymer_class": "thermoset",
   "year_of_origin": 1927,
   "era": "The Birth of Synthetic Polymers (1907-1938): The Bakelite Revolution",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Roy H. Kienle", "General Electric"],
+  "historical_events_referenced": [
+    "Charles Lindbergh's solo transatlantic flight (May 1927)",
+    "Ford introduces the Model A, its first car offered in colors other than black (December 1927)",
+    "General Electric introduces the 'Monitor-Top' refrigerator (1927)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/alkyd-resins/lindbergh-spirit-of-st-louis-1927.webp",
+      "alt": "Charles Lindbergh standing in flight jacket and tie in front of the nose of the Spirit of St Louis, the words 'Spirit of' and 'Louis' visible on the fuselage.",
+      "caption": "Lindbergh in front of the Spirit of St. Louis, May 1927 — the year's most photographed symbol of a country building bigger, faster things than its finishing technology could keep up with.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Lindbergh_and_the_Spirit_of_Saint_Louis_(Crisco_restoration,_with_wings).jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/alkyd-resins/ge-monitor-top-refrigerator-1929.webp",
+      "alt": "Two General Electric Monitor-Top refrigerators on display, tall white enameled steel cabinets with a rounded compressor housing on top and cabriole legs.",
+      "caption": "A General Electric Monitor-Top refrigerator of the model introduced in 1927. Its enameled steel cabinet needed exactly the fast, durable finish Kienle was working on down the hall.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1929_General_Electric_'Monitor_Top'_Refrigerator,_Tallahassee_Automobile_Museum.jpg",
+      "author": "Michael Rivera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/alkyd-resins/mountain-paint-varnish-factory-1925.webp",
+      "alt": "A brick paint and varnish factory with four tall, narrow chimney stacks of varying heights standing above the main building, a water tower visible behind.",
+      "caption": "The Mountain Paint and Varnish Company, Toledo, Ohio, around 1925 — the kind of works, dependent on cooked natural oils and resins, that alkyd chemistry would spend the next generation displacing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mountain_Paint_and_Varnish_Company,_Toledo,_Ohio_(approximately_1925)_-_DPLA_-_302d85746114021bae65854c05490944.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/alkyd-resins/ford-model-a-1928.webp",
+      "alt": "A restored 1928 Ford Model A touring car in pale green and black, with a folded black canvas top, on display in a museum with an informational placard in front of it.",
+      "caption": "A Ford Model A, the car that in December 1927 gave Ford buyers a choice of colors for the first time in nearly two decades — the appetite for color on manufactured goods that alkyd enamels went on to satisfy for the rest of the century.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1928_Ford_Model_A_front_left.jpg",
+      "author": "TTTNIS",
+      "license": "CC0"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.175,

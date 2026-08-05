@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "A structural/functional class (any polymer engineered to autonomously or triggerably repair damage) rather than one chemistry -- mechanisms include microcapsule-based, vascular, and intrinsic/reversible-bonding systems, each built on a different host polymer.",
   "iupac_name": null,
@@ -23,8 +27,52 @@
     "Scott White",
     "Nancy Sottos"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Publication of the draft human genome sequence, International Human Genome Sequencing Consortium, Nature (15 February 2001)",
+    "Launch of Wikipedia (January 2001)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/self-healing-polymers/human-genome-project-bookcase.webp",
+      "alt": "A tall white bookcase holding more than a hundred identical spine-labelled volumes, each printed with a run of chromosome numbers, standing against a red wall in a museum gallery.",
+      "caption": "The human genome, printed out as a shelf of a hundred-odd books for a London exhibition — three billion letters of code that include the cell's own instructions for repairing itself.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wellcome_genome_bookcase.png",
+      "author": "Russ London",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/self-healing-polymers/wikipedia-homepage-2001.webp",
+      "alt": "A plain text-heavy webpage titled 'HomePage', listing subject categories separated by double hyphens, with a note that the project started work in January 2001 and had over a thousand pages.",
+      "caption": "Wikipedia's homepage a few weeks after its January 2001 launch — a project with no way to prevent damage, only a fast way to reverse it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:HomePage_of_WikiPedia_on_3_March_2001.png",
+      "author": "Wikipedia users; see history of Main Page at Wikipedia:Main Page history",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/self-healing-polymers/dicyclopentadiene-crystals.webp",
+      "alt": "A close, slightly out-of-focus view of pale needle-like crystals lining the inside of an amber glass bottle.",
+      "caption": "Dicyclopentadiene, the ordinary petrochemical monomer that White and Sottos loaded into microcapsules as the healing agent.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Needle-like_crystals_of_dicyclopentadiene.jpg",
+      "author": "Pygos",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/self-healing-polymers/robert-grubbs-portrait.webp",
+      "alt": "A formal portrait of an older man with a grey beard and wire-rimmed glasses, wearing a dark suit and patterned tie, against a plain grey background.",
+      "caption": "Robert Grubbs, whose ruthenium catalysts — developed for a different purpose, and later recognised with a share of the 2005 Nobel Prize in Chemistry — turned out to be exactly what a rupturing microcapsule needed to trigger repair.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Grubbs_Royal_Society.jpg",
+      "author": "Duncan.Hull",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/self-healing-polymers/beckman-institute-uiuc.webp",
+      "alt": "A large brick and glass laboratory building with curved glazed bays, seen from a car park and tree-lined path.",
+      "caption": "The Beckman Institute at the University of Illinois, home to the research group White and Sottos went on to build around the discovery.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beckman_Institute_University_of_Illinois.jpg",
+      "author": "Beyond My Ken",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

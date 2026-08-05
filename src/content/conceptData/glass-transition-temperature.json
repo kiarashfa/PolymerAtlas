@@ -5,9 +5,50 @@
 
   "year_of_origin": 1986,
   "era": "The Specialty Polymers Age (1980-1999)",
-  "key_figures": [],
-  "historical_events_referenced": ["Space Shuttle Challenger disaster (January 28, 1986)"],
-  "historical_images": [],
+  "key_figures": ["Thomas G. Fox", "Paul J. Flory", "Malcolm L. Williams", "Robert F. Landel", "John D. Ferry"],
+  "historical_events_referenced": ["Space Shuttle Challenger disaster (January 28, 1986)", "Rogers Commission investigation (1986)"],
+  "historical_images": [
+    {
+      "src": "~/assets/concepts/glass-transition-temperature/icicles-launch-tower-1986.webp",
+      "alt": "Thick icicles hanging from a metal launch-tower railing and structural beams, with the frost-covered white flank of a Space Shuttle stack visible behind.",
+      "caption": "Ice on the Space Shuttle Challenger's launch tower on the morning of 28 January 1986 — the cold snap the O-ring seals had never been tested against.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Icicles_on_the_Launch_Tower_-_GPN-2000-001348.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/glass-transition-temperature/challenger-explosion.webp",
+      "alt": "A billowing white and orange cloud of exhaust and debris against black sky, with thin smoke trails streaking downward from it, a few seconds after an in-flight breakup.",
+      "caption": "The moment of the disaster, a few seconds after the failed joint let hot gas escape and ignite the external tank.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Challenger_explosion.jpg",
+      "author": "Kennedy Space Center",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/glass-transition-temperature/booster-rocket-breach.webp",
+      "alt": "A grainy telephoto frame of the Space Shuttle in flight against blue sky, with a bright orange flame plume jetting sideways from low on the solid rocket booster.",
+      "caption": "Camera E-207's frame from 58.778 seconds into the flight, showing the flame breach at the failed joint — the physical evidence the Rogers Commission traced back to a seal that had lost its resilience in the cold.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Booster_Rocket_Breach_-_GPN-2000-001425.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/concepts/glass-transition-temperature/richard-feynman-1984.webp",
+      "alt": "A grey-haired man in a light shirt, seen in profile outdoors among trees, holding one hand raised as if gesturing mid-explanation.",
+      "caption": "Richard Feynman, photographed two years before he demonstrated the O-ring's loss of resilience in ice water at a televised Rogers Commission hearing.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RichardFeynman-PaineMansionWoods1984_copyrightTamikoThiel_bw.jpg",
+      "author": "Copyright Tamiko Thiel 1984",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/concepts/glass-transition-temperature/differential-scanning-calorimeter.webp",
+      "alt": "A grey benchtop differential scanning calorimeter with a small sample chamber and an attached touchscreen control panel, on a laboratory countertop.",
+      "caption": "A differential scanning calorimeter, the standard instrument for measuring where a polymer's glass transition actually falls.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Differential_scanning_calorimeter.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    }
+  ],
 
   "summary": "The glass transition temperature (Tg) is the temperature range over which an amorphous polymer (or the amorphous regions of a semi-crystalline one) transitions between a hard, glassy state and a softer, rubbery/viscous state, as segmental chain motion becomes thermally activated. Unlike melting (Tm), Tg is not a sharp first-order phase transition -- it is a kinetic, rate-dependent softening of the material, tied to the freezing-in of chain-segment mobility rather than a change in crystal structure. Tg is a defining engineering property: below it, a polymer is brittle and dimensionally stable; above it, it is flexible but loses stiffness. The Space Shuttle Challenger disaster (January 28, 1986) is the canonical real-world illustration: the solid rocket booster O-rings, made of a fluoroelastomer rubber, lost their resilience and sealing ability at the unusually cold launch-morning temperatures (in the 20s Fahrenheit) because the rubber approached or dropped below its glass transition temperature (known to only perform reliably above ~53°F). Physicist Richard Feynman famously demonstrated this at a televised press conference by dipping a compressed O-ring sample in ice water and showing it failed to spring back to shape -- a direct, visible demonstration of glassy embrittlement. The failed O-ring seal allowed hot gas to escape a solid rocket booster, igniting the external fuel tank and destroying the vehicle 73 seconds after launch.",
   "key_equations": [],

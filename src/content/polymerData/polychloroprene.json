@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "9010-98-4",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C4H5Cl)n",
+    "structural": "[-CH2-C(Cl)=CH-CH2-]n"
+  },
   "repeat_unit": "{[][$]C/C(Cl)=C/C[$][]}",
   "smiles_depiction": "*C/C(Cl)=C/C*",
   "structure_variants": [
@@ -65,7 +69,48 @@
     "Arnold Collins"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polychloroprene/empire-state-building-worker-1930.webp",
+      "alt": "A steelworker crouches on a girder high above Manhattan, hammering a rivet, with the Chrysler Building and the East River visible far below in the haze.",
+      "caption": "A structural worker on the Empire State Building's frame, photographed by Lewis Hine during construction - an act of pure economic confidence rising directly out of the Depression's first year.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Old_timer_structural_worker2.jpg",
+      "author": "Lewis Hine",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polychloroprene/american-union-bank-run-1931.webp",
+      "alt": "A crowd of people filling a New York City street outside a bank building with a sign reading American Union Bank, seen from an elevated angle, with cars and streetcars backed up alongside.",
+      "caption": "Depositors gathered outside the American Union Bank on the day it failed, 30 June 1931 - the same year, a few miles south, that a DuPont laboratory quietly finished commercialising a genuinely new material.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:American_union_bank.gif",
+      "author": "National Archives Photo",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polychloroprene/julius-nieuwland-portrait.webp",
+      "alt": "A formal head-and-shoulders portrait of a clean-shaven man in round wire-rimmed glasses and a clerical collar.",
+      "caption": "Father Julius Nieuwland, whose acetylene chemistry - and whose explosive by-product - set DuPont's search for a safer relative in motion.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Julius_Nieuwland.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polychloroprene/wallace-carothers-lab.webp",
+      "alt": "A man in glasses and a suit stands at a laboratory bench holding up a coiled strip of material in one hand and a small sample in the other, with glassware and a Bunsen burner behind him.",
+      "caption": "Wallace Carothers in his DuPont laboratory - the same research group, and the same year, that gave chloroprene its polymer and, soon after, gave the world nylon.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wallace_Carothers,_in_the_lab.jpg",
+      "author": "Unknown photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polychloroprene/neoprene-drysuit-seals.webp",
+      "alt": "A close-up of a blue diving drysuit with black neoprene neck and wrist seals, a valve and a zip visible against a wooden background.",
+      "caption": "Neoprene seals on a modern diving drysuit - the low water absorption and weather resistance that made this material a natural fit for the sea, decades before recreational diving existed to need it.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Diving_suit_neoprene.jpg",
+      "author": "Mark.murphy",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.235,

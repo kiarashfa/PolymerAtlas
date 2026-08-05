@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C19H20N2O4)n",
+    "structural": "[-O-(CH2)4-O-CO-NH-C6H4-CH2-C6H4-NH-CO-]n"
+  },
   "repeat_unit": "{[][>]OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)[<][]}",
   "smiles_depiction": "*OCCCCOC(=O)Nc1ccc(cc1)Cc1ccc(cc1)NC(=O)*",
-  "notation_note": "One diisocyanate-diol pairing is shown, of very many. Polyurethane is a linkage rather than a single chemistry: the same urethane group joins whatever diol and diisocyanate a formulation calls for, which is how one family spans soft foam to rigid insulation to elastomer.",
+  "notation_note": "The structure shown pairs MDI with 1,4-butanediol, one diisocyanate-diol combination of very many. Polyurethane is a linkage rather than a single chemistry: the same urethane group joins whatever diol and diisocyanate a formulation calls for, which is how one family spans soft foam to rigid insulation to elastomer.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -42,8 +46,44 @@
   "key_figures": [
     "Otto Bayer"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Death of Wallace Carothers, DuPont's chief chemist and inventor of nylon (29 April 1937)",
+    "Otto Bayer's diisocyanate polyaddition patent published (November 1937)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyurethane/wallace-carothers-lab.webp",
+      "alt": "A man in round wire-rimmed glasses and a suit, in a laboratory, holding up a translucent strip of material and examining it, with glassware visible behind him.",
+      "caption": "Wallace Carothers in his DuPont laboratory. His patents on polyester and polyamide fibers were so comprehensive that a rival chemistry, not a rival patent fight, was the only way around them.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wallace_Carothers,_in_the_lab.jpg",
+      "author": "Unknown photographer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyurethane/otto-bayer-1952-demonstration.webp",
+      "alt": "A smiling man in a suit stands over laboratory glassware from which a large mass of pale, irregularly bulging foam has risen and overflowed a beaker.",
+      "caption": "Otto Bayer in 1952, demonstrating the reaction he had patented fifteen years earlier: mix an isocyanate with a polyol, and the beaker fills itself.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1937_1952_Prof_Otto_Bayer_Polyurethan.jpg",
+      "author": "Bayer AG",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyurethane/memory-foam-handprint-fast-release.webp",
+      "alt": "A hand pressing into a pale, off-white block of foam, which shows only a shallow, fading impression around the fingers as it springs back.",
+      "caption": "Conventional flexible polyurethane foam recovers its shape within seconds of a hand lifting away.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MemoryFoam-fast.jpg",
+      "author": "Johan",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "src": "~/assets/polymers/polyurethane/memory-foam-handprint-slow-release.webp",
+      "alt": "A hand hovering just above a bright yellow block of foam that retains a deep, detailed impression of fingers and palm after the hand has lifted away.",
+      "caption": "Viscoelastic 'memory' polyurethane foam holds the same impression far longer — the slow recovery that gives the material its name.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:MemoryFoam-slow.jpg",
+      "author": "Johan",
+      "license": "CC BY-SA 3.0"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "63148-62-9",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H6OSi)n",
+    "structural": "[-Si(CH3)2-O-]n"
+  },
   "repeat_unit": "{[][>]O[Si](C)(C)[<][]}",
   "smiles_depiction": "*O[Si](C)(C)*",
   "notation_note": "Polydimethylsiloxane, the archetypal silicone. The backbone is silicon and oxygen rather than carbon, which is the whole point of the family.",
@@ -50,10 +54,47 @@
   "era": "The Wartime Innovation Period (1939-1945)",
   "key_figures": [
     "Eugene G. Rochow",
-    "Richard Müller"
+    "Richard Müller",
+    "Dow Corning Corporation"
   ],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_events_referenced": [
+    "Casablanca Conference directive for a combined bomber offensive (21 January 1943)",
+    "Founding of Dow Corning and its wartime ignition-sealing compound (1943)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/the-silicon-revolution/b17-contrails-high-altitude-1943.webp",
+      "alt": "A formation of B-17 bombers and P-47 fighter escorts seen from below, trailing long white vapor contrails against a dark sky.",
+      "caption": "A bomber formation over Europe in September 1943, high enough for the cold, thin air to write itself across the sky as contrails — the same conditions that made ordinary ignition insulation fail.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:II_World_War_contrails.jpg",
+      "author": "Sgt. Stanley M. Smith",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/the-silicon-revolution/casablanca-conference-1943.webp",
+      "alt": "Franklin D. Roosevelt and Winston Churchill seated side by side in wicker chairs on a villa lawn, Churchill holding a hat and cane.",
+      "caption": "Roosevelt and Churchill at Casablanca, January 1943, where the directive for a round-the-clock combined bomber offensive was signed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_Franklin_Roosevelt_and_Winston_Churchill,_Casablanca_Conference,_1943_(24382716669).jpg",
+      "author": "National Museum of the U.S. Navy",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/the-silicon-revolution/eugene-rochow-1965.webp",
+      "alt": "A balding man in a black bow tie and tuxedo, smiling broadly at the camera at an evening event, with another figure visible in a dark doorway behind him.",
+      "caption": "Eugene G. Rochow, photographed at an American Chemical Society meeting in 1965 — more than two decades after his direct-process discovery had already gone into wartime production.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rochow.jpg",
+      "author": "Peter Geymayer",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/the-silicon-revolution/silicone-pastry-brush.webp",
+      "alt": "A kitchen basting brush with an orange silicone bristle head and a clear molded silicone handle, photographed against a white background.",
+      "caption": "A silicone pastry brush — heat resistance and water repellence developed for a wartime ignition compound, doing the same job at a stovetop.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kitchen-Silicone-Brush.jpg",
+      "author": "Evan-Amos",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.97,

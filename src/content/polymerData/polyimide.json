@@ -9,9 +9,13 @@
   "parent": null,
   "cas_number": null,
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C22H10N2O5)n",
+    "structural": "[-N(CO)2-C6H2-(CO)2-N-C6H4-O-C6H4-]n"
+  },
   "repeat_unit": "{[][>]N1C(=O)c2cc3c(cc2C1=O)C(=O)N(C3=O)c1ccc(cc1)Oc1ccc(cc1)[<][]}",
   "smiles_depiction": "*N1C(=O)c2cc3c(cc2C1=O)C(=O)N(C3=O)c1ccc(cc1)Oc1ccc(cc1)*",
-  "notation_note": "The PMDA-ODA polyimide shown is the archetype, sold as Kapton; the family is large and other dianhydride/diamine pairs give quite different properties.",
+  "notation_note": "The PMDA-ODA polyimide shown is the archetype, sold as Kapton. Each (CO)2 bridge is one of the two fused five-membered imide rings, written open rather than as a ring for readability; the family is large, and other dianhydride/diamine pairs give quite different properties.",
   "iupac_name": null,
   "synonyms": [
     "Kapton"
@@ -42,9 +46,50 @@
   "polymer_class": "thermoplastic",
   "year_of_origin": 1964,
   "era": "The Engineering Polymers Era (1961-1979)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["Walter M. Edwards", "DuPont"],
+  "historical_events_referenced": ["Ranger 7 first close-up photographs of the Moon (1964)", "Gell-Mann and Zweig's proposal of quarks (1964)"],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/polyimide/ranger-7-first-moon-image-1964.webp",
+      "alt": "A grainy black-and-white photograph of the Moon's cratered surface, densely pocked with craters of many sizes, with small crosshair calibration marks along the frame's edges.",
+      "caption": "One of the last images Ranger 7 transmitted before impact, taken from roughly a thousand miles up on 31 July 1964 — the first close-up photographs of the Moon in history.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ranger7_PIA02975.jpg",
+      "author": "NASA",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyimide/murray-gell-mann-portrait-1965.webp",
+      "alt": "A black-and-white studio-style portrait of a man in a tweed jacket and glasses, seated at a desk with papers, smiling toward the camera.",
+      "caption": "Murray Gell-Mann, photographed the year after he and George Zweig independently proposed that protons and neutrons were built from smaller, more fundamental particles.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Murray_Gell-Mann_1965.png",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyimide/dupont-experimental-station-gate.webp",
+      "alt": "A low stone-and-metal sign reading DUPONT EXPERIMENTAL STATION MAIN GATE, set against a backdrop of trees, with a second sign for a later occupant, Incyte, beside it.",
+      "caption": "The entrance to DuPont's Experimental Station in Wilmington, Delaware, where the two-stage polyamic-acid process that made Kapton possible was developed.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:DuPont_Experimental_Station_Main_Gate.JPG",
+      "author": "Littleinfo",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyimide/kapton-thermal-pads.webp",
+      "alt": "Four rectangular insulating pads laid out for comparison, one pink and three shades of amber-orange, each with a small mounting hole punched through the centre and hand-written labels identifying coating types beside them.",
+      "caption": "Kapton thermal pads used to electrically insulate a power transistor from its heat sink — the same imide chemistry doing quiet, unglamorous work far from any spacecraft.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kaptonpads.jpg",
+      "author": "Ulfbastel",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/polyimide/jwst-sunshield-test-unfurl.webp",
+      "alt": "A large, tennis-court-sized metallic silver membrane, folded into a tent-like shape, being inspected by a row of technicians in white cleanroom suits inside a high-bay facility.",
+      "caption": "A full-size test of the James Webb Space Telescope's five-layer Kapton sunshield, unfurled inside a cleanroom before launch.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:James_Webb_telescope_sunshield.jpg",
+      "author": "Chris Gunn",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": null,

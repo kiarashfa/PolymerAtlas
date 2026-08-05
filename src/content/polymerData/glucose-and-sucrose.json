@@ -7,6 +7,10 @@
   "parent": null,
   "cas_number": "50-99-7",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": null,
+    "structural": null
+  },
   "repeat_unit": null,
   "notation_note": "Glucose and sucrose are small molecules (a monosaccharide and a disaccharide, respectively), not polymers -- this entry covers them as the foundational monomer/building-block for the polysaccharide entries elsewhere in the atlas (starch, cellulose, glycogen). CAS 50-99-7 given is for D-glucose specifically; sucrose has its own CAS (57-50-1).",
   "iupac_name": null,
@@ -35,7 +39,40 @@
     "Emil Fischer"
   ],
   "historical_events_referenced": [],
-  "historical_images": [],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/glucose-and-sucrose/emil-fischer-portrait-1895.webp",
+      "alt": "A formal studio photograph of a bearded man with wire-rimmed pince-nez glasses and a receding hairline, wearing a dark suit and high collar.",
+      "caption": "Emil Fischer, photographed in 1895 — already several years past the sugar work for which he would receive the Nobel Prize in 1902.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hermann_Emil_Fischer._Photograph_by_Atelier_Victoria,_1895._Wellcome_V0027668_(cropped).jpg",
+      "author": "Unknown author",
+      "license": "CC BY 4.0"
+    },
+    {
+      "src": "~/assets/polymers/glucose-and-sucrose/nobel-prize-medals-1907.webp",
+      "alt": "Six photographic plates of engraved silver Nobel Prize medals, each showing a profile portrait or classical allegorical figures, arranged in two columns.",
+      "caption": "Nobel Prize medals of the kind awarded in the prize's earliest years — Fischer received his in 1902, the second Nobel Prize in Chemistry ever given.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PSM_V70_D094_Nobel_prize_medals.jpg",
+      "author": "Unknown author",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/glucose-and-sucrose/rock-candy-sugar-crystals.webp",
+      "alt": "Several large, irregular, translucent white crystals of rock candy sugar resting on a dark surface.",
+      "caption": "Crystallized sugar — the same sucrose molecule Fischer's stereochemistry explained, grown large enough here to see its facets by eye.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kandiszucker_--_2018_--_3588.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "src": "~/assets/polymers/glucose-and-sucrose/cuba-sugar-cane-field-1909.webp",
+      "alt": "A tinted postcard photograph of men on horseback beside a tall stand of harvested sugar cane stalks in a Cuban field.",
+      "caption": "A Cuban sugar cane field, photographed around 1909 — the same cane-sugar economy, on the same scale, that surrounded Fischer's laboratory chemistry with an entire industry of practical experience.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cuba_-_Sugar_Cane_Field_(1909).jpg",
+      "author": "Harris Brothers, Havana (publisher)",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 1.54,

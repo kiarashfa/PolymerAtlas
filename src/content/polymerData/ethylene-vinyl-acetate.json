@@ -9,6 +9,10 @@
   "parent": null,
   "cas_number": "24937-78-8",
   "resin_id_code": null,
+  "chemical_formula": {
+    "empirical": "(C2H4)x·(C4H6O2)y",
+    "structural": "[-CH2-CH2-]x[-CH2-CH(OCOCH3)-]y"
+  },
   "repeat_unit": "{[][$]CC[$],[$]CC(OC(C)=O)[$][]}",
   "smiles_depiction": "*CC*.*CC(OC(C)=O)*",
   "notation_note": "A statistical copolymer whose vinyl acetate content, anywhere from a few percent to about 40%, decides whether the material behaves like a tough polyethylene or like a soft elastomer.",
@@ -43,9 +47,45 @@
   "polymer_class": "elastomer",
   "year_of_origin": 1956,
   "era": "The Post-War Boom (1946-1960)",
-  "key_figures": [],
-  "historical_events_referenced": [],
-  "historical_images": [],
+  "key_figures": ["DuPont"],
+  "historical_events_referenced": [
+    "Federal-Aid Highway Act signed, creating the U.S. Interstate Highway System (29 June 1956)",
+    "Elvis Presley appears on The Ed Sullivan Show (September 1956)"
+  ],
+  "historical_images": [
+    {
+      "src": "~/assets/polymers/ethylene-vinyl-acetate/elvis-ed-sullivan-1956.webp",
+      "alt": "Black-and-white photograph of Elvis Presley, in a dark shirt with an open collar, standing beside Ed Sullivan, who holds a lit cigarette, backstage.",
+      "caption": "Elvis Presley with Ed Sullivan, October 1956 — the year America's restlessness was as visible on television as it was on its new highways.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Elvis_Presley_and_Ed_Sullivan_October_1956.jpg",
+      "author": "CBS",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ethylene-vinyl-acetate/interstate-highway-cloverleaf-1957.webp",
+      "alt": "Aerial black-and-white photograph of a newly built cloverleaf highway interchange cutting through a grid of suburban houses and small factories.",
+      "caption": "A new cloverleaf interchange on the Golden State Freeway, 1957 — the interstate system authorized the year DuPont filed its ethylene-vinyl acetate patent.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CA_58_I5_FHWA_1957_5776_14.jpg",
+      "author": "Federal Highway Administration",
+      "license": "Public domain"
+    },
+    {
+      "src": "~/assets/polymers/ethylene-vinyl-acetate/running-shoe-midsole-cross-section.webp",
+      "alt": "Close-up of a cut-open running shoe, showing layers of white foam, orange fabric and small internal air pockets inside the sole.",
+      "caption": "A dissected running-shoe sole, its white midsole foam and internal air pockets built from an EVA compound chosen for exactly this kind of cushioning.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nike_Running_Shoe_Dissected_Rear.jpg",
+      "author": "Yottanesia",
+      "license": "CC0"
+    },
+    {
+      "src": "~/assets/polymers/ethylene-vinyl-acetate/solar-panel-installation.webp",
+      "alt": "Four workers in hard hats and safety vests lift a solar panel onto the roof of a house under a cloudy sky.",
+      "caption": "Installing rooftop solar panels. A thin EVA layer, laminated over the silicon cells inside each panel, is what keeps moisture and weather out for decades.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Children_of_the_Sun_Solar_Initiative_(48132850231).jpg",
+      "author": "U.S. Department of Energy",
+      "license": "Public domain"
+    }
+  ],
   "physical": {
     "density": {
       "value": 0.95,
