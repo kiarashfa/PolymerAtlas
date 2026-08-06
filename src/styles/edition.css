@@ -158,7 +158,7 @@ code {
   top: calc(100% + 0.7rem);
   right: 0;
   z-index: 40;
-  width: 17.5rem;
+  width: min(21rem, calc(100vw - 1.5rem));
   background: var(--paper-raised);
   border: 1px solid var(--rule-strong);
   border-radius: var(--radius);
@@ -175,16 +175,27 @@ code {
   transform: none;
   pointer-events: auto;
 }
+/* Six groups tall now — on a short window the reader's menu must scroll
+   inside itself rather than run off the bottom of the screen. Scoped away
+   from the search panel, which shares this class and already scrolls its
+   own results list. */
+.head-menu-panel:not(.search-panel) {
+  /* The panel hangs below the header, so the room it actually has is the
+     window minus the header and a little breathing space — not a flat 80vh,
+     which left it scrolling by a few pixels on a laptop-height window. */
+  max-height: min(calc(100vh - 8rem), 44rem);
+  overflow-y: auto;
+}
 .menu-group + .menu-group {
-  margin-top: var(--space-2);
+  margin-top: 0.5rem;
 }
 /* group labels sit between hairlines, like the narrative's section heads */
 .menu-group-label {
   display: flex;
   align-items: center;
   gap: 0.6em;
-  margin: 0 0 0.35rem;
-  font-size: 0.8rem;
+  margin: 0 0 0.28rem;
+  font-size: 0.76rem;
   font-weight: 600;
   color: var(--ink-muted);
 }
@@ -220,7 +231,7 @@ code {
   background: none;
   border: none;
   border-radius: var(--radius-small);
-  padding: 0.45rem 0.55rem;
+  padding: 0.3rem 0.55rem;
   color: var(--ink);
   cursor: pointer;
   transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
@@ -238,8 +249,8 @@ code {
 /* each style's name is typeset in the face it switches to */
 .menu-option-name {
   font-weight: 600;
-  font-size: 1.04rem;
-  line-height: 1.25;
+  font-size: 0.98rem;
+  line-height: 1.2;
   transition: color 0.25s var(--ease);
 }
 .menu-option-name--gilt {
@@ -247,13 +258,14 @@ code {
 }
 .menu-option-name--vellum {
   font-family: var(--font-vellum);
-  font-size: 1.13rem; /* Garamond runs small */
+  font-size: 1.06rem; /* Garamond runs small */
 }
 .menu-option-name--atelier {
   font-family: var(--font-atelier);
 }
 .menu-option-note {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
   font-style: italic;
   color: var(--ink-muted);
 }
@@ -284,7 +296,7 @@ code {
   width: 100%;
   text-decoration: none;
   border-radius: var(--radius-small);
-  padding: 0.45rem 0.55rem;
+  padding: 0.3rem 0.55rem;
   color: var(--ink);
   transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
     background 0.2s var(--ease);
@@ -296,11 +308,11 @@ code {
   display: grid;
   place-items: center;
   flex: none;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.55rem;
+  height: 1.55rem;
   border: 1px solid var(--rule);
   border-radius: 999px;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--ink-muted);
   transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
 }
@@ -310,8 +322,8 @@ code {
 }
 .menu-link-name {
   font-weight: 600;
-  font-size: 1.02rem;
-  line-height: 1.25;
+  font-size: 0.98rem;
+  line-height: 1.2;
   transition: color 0.25s var(--ease);
 }
 .menu-link:hover .menu-link-name {
@@ -332,7 +344,7 @@ code {
 .menu-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.45rem;
+  gap: 0.4rem;
 }
 .menu-pair-btn {
   display: inline-flex;
@@ -347,7 +359,7 @@ code {
   background: none;
   border: 1px solid var(--rule);
   border-radius: 999px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.26rem 0.55rem;
   cursor: pointer;
   transition: color 0.25s var(--ease), border-color 0.25s var(--ease),
     background 0.25s var(--ease);
@@ -3153,4 +3165,13 @@ a.tl-card:hover {
 }
 .tool-inline-action:hover {
   opacity: 0.8;
+}
+
+/* Which build of a model produced the number on screen. Absent until the
+   service reports it, so the line simply does not exist until then. */
+.predict-version {
+  margin: var(--space-2) 0 0;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  font-variant-numeric: lining-nums;
 }

@@ -167,11 +167,39 @@ const stagger = () => step++;
         </button>
       </div>
     </section>
+
+    {/* Where molecule structures are drawn. No glyphs on this pair: the two
+        words say it, and a symbol for "somewhere else" would be a puzzle. The
+        Molecule Lookup page carries the same choice with the full
+        explanation — both write one key and announce the change, so they can
+        never disagree. */}
+    <section class="menu-group" aria-label="Structures">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Structures</h2>
+      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
+        <button
+          class="menu-pair-btn"
+          type="button"
+          data-engine-set="server"
+          title="Molecules are drawn by the atlas's chemistry service"
+        >
+          Service
+        </button>
+        <button
+          class="menu-pair-btn"
+          type="button"
+          data-engine-set="local"
+          title="Molecules are drawn in this browser — about 6.6 MB downloads once, then it works offline"
+        >
+          In browser
+        </button>
+      </div>
+    </section>
   </div>
 </div>
 
 <script>
   import { imperialText, siText } from '../../lib/units';
+  import { storedEngine, setStoredEngine, ENGINE_CHANGE_EVENT } from '../../lib/chem-api';
 
   // All listeners delegated on document — they survive View Transitions.
   const VARIANT_IDS = ['gilt', 'vellum', 'atelier'];
@@ -258,6 +286,10 @@ const stagger = () => step++;
     document.querySelectorAll<HTMLElement>('[data-units-set]').forEach((b) => {
       b.classList.toggle('is-active', b.dataset.unitsSet === u);
     });
+    const e = storedEngine();
+    document.querySelectorAll<HTMLElement>('[data-engine-set]').forEach((b) => {
+      b.classList.toggle('is-active', b.dataset.engineSet === e);
+    });
   }
 
   function setOpen(menu: Element, open: boolean) {
@@ -323,6 +355,15 @@ const stagger = () => step++;
       return;
     }
 
+    const eBtn = el?.closest<HTMLElement>('[data-engine-set]');
+    if (eBtn?.dataset.engineSet) {
+      // Nothing is fetched here — the engine is only consulted on the next
+      // lookup, so switching costs nothing until it is used.
+      setStoredEngine(eBtn.dataset.engineSet === 'local' ? 'local' : 'server');
+      syncMenu();
+      return;
+    }
+
     // Anywhere else closes it.
     if (!el?.closest('[data-head-menu]')) setOpen(menu, false);
   });
@@ -350,4 +391,6 @@ const stagger = () => step++;
   }
   document.addEventListener('astro:page-load', restore);
   document.addEventListener('astro:after-swap', restore);
+  // The molecule tool has the same switch; keep the marks here in step.
+  document.addEventListener(ENGINE_CHANGE_EVENT, syncMenu);
 </script>

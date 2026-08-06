@@ -137,6 +137,7 @@ const blurbs: Record<string, string> = {
       <h2 class="tool-card-head u-caps">Predicted</h2>
       <div class="predict-values" data-values></div>
       <dl class="fact-table" data-inputs></dl>
+      <p class="predict-version" data-model-version hidden></p>
       <p class="tool-note tool-note--strong">
         A prediction from structure, not a measured value. It carries no uncertainty estimate and no
         check that your structure resembles anything the model was trained on. Treat it as a
@@ -277,6 +278,7 @@ const blurbs: Record<string, string> = {
     const result = document.querySelector<HTMLElement>('[data-result]')!;
     const values = result.querySelector<HTMLElement>('[data-values]')!;
     const inputsList = result.querySelector<HTMLElement>('[data-inputs]')!;
+    const version = result.querySelector<HTMLElement>('[data-model-version]')!;
 
     let model: ModelId = 'rr';
     // An example fills whichever field the reader was last in, so on the
@@ -478,7 +480,7 @@ const blurbs: Record<string, string> = {
       }
 
       values.replaceChildren(
-        ...Object.entries(response.data).map(([key, value]) => {
+        ...Object.entries(response.data.values).map(([key, value]) => {
           const meta = VALUE_META[key] ?? { label: key };
           const cell = document.createElement('div');
           cell.className = 'predict-value';
@@ -507,6 +509,13 @@ const blurbs: Record<string, string> = {
         ),
         ...(b && b.ok ? [factRow('M<sub>2</sub>', b.smiles)] : [])
       );
+
+      // Shown only when the service reports which build answered — a number
+      // on screen should be traceable to the model that produced it.
+      version.textContent = response.data.modelVersion
+        ? `Model version ${response.data.modelVersion}`
+        : '';
+      version.hidden = !response.data.modelVersion;
 
       result.hidden = false;
       setStatus(notes.length ? `Read as ${notes.join(' · ')}` : '', notes.length ? 'note' : 'none');

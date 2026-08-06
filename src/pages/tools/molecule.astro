@@ -144,6 +144,7 @@ const examples = [
     isMultiFragment,
     storedEngine,
     setStoredEngine,
+    ENGINE_CHANGE_EVENT,
   } from '../../lib/chem-api';
   import { isLocalEngineLoaded } from '../../lib/rdkit-local';
   import { descriptorRows } from '../../lib/descriptors';
@@ -197,7 +198,7 @@ const examples = [
         engine === 'local'
           ? isLocalEngineLoaded()
             ? 'RDKit is running in this browser — structures are drawn with no network at all. Looking a NAME up still needs the service, because the name has to be resolved somewhere.'
-            : 'RDKit will run in this browser. About 6.8 MB downloads once and is then cached, after which pasted structures work offline. Looking a NAME up still needs the service.'
+            : 'RDKit will run in this browser. About 6.6 MB downloads once and is then cached, after which pasted structures work offline. Looking a NAME up still needs the service.'
           : 'Structures are drawn by the service, so nothing is downloaded here.';
     }
 
@@ -356,6 +357,8 @@ const examples = [
       syncEngine();
     });
     syncEngine();
+    // The reader's menu carries the same switch; keep this one in step.
+    document.addEventListener(ENGINE_CHANGE_EVENT, syncEngine);
 
     // Deep link: /tools/molecule/?q=styrene
     const initial = new URLSearchParams(location.search).get('q');

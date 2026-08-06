@@ -1,6 +1,8 @@
 // Client for the two chemistry services behind the tool pages and the
-// in-narrative molecule popup. Pure and client-safe: no astro:content, no
-// DOM, so it can be imported from a component script or unit-tested.
+// in-narrative molecule popup. Client-safe: no astro:content, so it can be
+// imported from a component script or unit-tested under Node. The two browser
+// APIs it does touch — localStorage and one custom event — are guarded, so
+// importing this file outside a browser stays harmless.
 //
 // Both services are external and free-tier. Nothing in the reference content
 // depends on them — every caller here must handle failure as a normal
@@ -138,12 +140,21 @@ export function storedEngine(): Engine {
   }
 }
 
+/**
+ * Announced whenever the engine changes, so every control showing the choice
+ * can re-sync. There are two of them — the reader's menu and the molecule
+ * tool — and both can be on screen at once.
+ */
+export const ENGINE_CHANGE_EVENT = 'pa-engine-change';
+
 export function setStoredEngine(engine: Engine): void {
   try {
     localStorage.setItem('pa-engine', engine);
   } catch {
     /* storage unavailable — the choice still applies to this page */
   }
+  if (typeof document !== 'undefined')
+    document.dispatchEvent(new CustomEvent(ENGINE_CHANGE_EVENT, { detail: engine }));
 }
 
 async function fetchMolecule(
@@ -225,8 +236,16 @@ export interface PredictPayload {
   smiles2?: string;
 }
 
-/** Values only — the keys differ per model (r1/r2, kp/log_kp, tg, ws/log_ws). */
-export type PredictResult = Record<string, number>;
+export interface PredictResult {
+  /** The numbers themselves; keys differ per model (r1/r2, kp/log_kp, tg, …). */
+  values: Record<string, number>;
+  /**
+   * Which build of the model answered. Optional because the service does not
+   * return it yet — the page shows it only once it appears, so nothing has to
+   * change here when it does.
+   */
+  modelVersion?: string;
+}
 
 export async function predict(
   model: PredictModel,
@@ -263,11 +282,15 @@ export async function predict(
     };
   }
 
-  const values: PredictResult = {};
+  const values: Record<string, number> = {};
   for (const [key, value] of Object.entries(body)) {
     if (key !== 'success' && typeof value === 'number') values[key] = value;
   }
-  return { ok: true, data: values };
+  const version = body.model_version;
+  return {
+    ok: true,
+    data: { values, modelVersion: typeof version === 'string' ? version : undefined },
+  };
 }
 
 // --- input classification ------------------------------------------------
