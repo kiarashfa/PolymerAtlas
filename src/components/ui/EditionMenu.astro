@@ -59,6 +59,26 @@ const stagger = () => step++;
   </button>
 
   <div class="head-menu-panel" aria-label="Reading preferences" data-menu-panel>
+    <section class="menu-group" aria-label="Tools">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Tools</h2>
+      {
+        tools.map((t) => (
+          <a class="menu-link menu-stagger" style={`--i:${stagger()}`} href={t.href}>
+            <span class="menu-link-glyph" aria-hidden="true">
+              {t.glyph}
+            </span>
+            <span class="menu-option-text">
+              <span class="menu-link-name">{t.name}</span>
+              <span class="menu-option-note">{t.essence}</span>
+            </span>
+            <span class="menu-link-arrow" aria-hidden="true">
+              →
+            </span>
+          </a>
+        ))
+      }
+    </section>
+
     <section class="menu-group" aria-label="Presentation style">
       <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Presentation</h2>
       {
@@ -76,26 +96,6 @@ const stagger = () => step++;
             </span>
             <span class="menu-option-mark" aria-hidden="true">✦</span>
           </button>
-        ))
-      }
-    </section>
-
-    <section class="menu-group" aria-label="Tools">
-      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Tools</h2>
-      {
-        tools.map((t) => (
-          <a class="menu-link menu-stagger" style={`--i:${stagger()}`} href={t.href}>
-            <span class="menu-link-glyph" aria-hidden="true">
-              {t.glyph}
-            </span>
-            <span class="menu-option-text">
-              <span class="menu-link-name">{t.name}</span>
-              <span class="menu-option-note">{t.essence}</span>
-            </span>
-            <span class="menu-link-arrow" aria-hidden="true">
-              →
-            </span>
-          </a>
         ))
       }
     </section>

@@ -85,6 +85,15 @@ const examples = [
           ))
         }
       </div>
+
+      <div class="tool-engine" data-engine-control>
+        <span class="tool-engine-label u-caps">Engine</span>
+        <div class="tool-engine-pair">
+          <button class="menu-pair-btn" type="button" data-engine="server">Service</button>
+          <button class="menu-pair-btn" type="button" data-engine="local">In-browser</button>
+        </div>
+        <p class="tool-engine-note" data-engine-note></p>
+      </div>
     </form>
 
     <p class="tool-status" data-status role="status" aria-live="polite"></p>
@@ -112,17 +121,12 @@ const examples = [
     <section class="tool-card tool-colophon">
       <h2 class="tool-card-head u-caps">About this tool</h2>
       <p>
-        Structures are drawn and measured by <a href="https://www.rdkit.org/" rel="noopener">RDKit</a>,
-        running on a small service alongside this site. Name resolution goes to
-        <a href="https://pubchem.ncbi.nlm.nih.gov/" rel="noopener">PubChem</a> first and the
-        <a href="https://cactus.nci.nih.gov/chemical/structure" rel="noopener">NCI Chemical Identifier
-        Resolver</a> second, so a name you look up is sent to them to be resolved. There is no
-        account and nothing to sign in to.
-      </p>
-      <p>
-        This is the one corner of the Atlas that depends on an outside service, and it is kept
-        deliberately separate from the encyclopedia for that reason: if it is down, every polymer
-        page still reads exactly as it should.
+        Structures are drawn and measured by <a href="https://www.rdkit.org/" rel="noopener">RDKit</a
+        >. A name is resolved by <a href="https://pubchem.ncbi.nlm.nih.gov/" rel="noopener">PubChem</a
+        > first and the <a href="https://cactus.nci.nih.gov/chemical/structure" rel="noopener"
+          >NCI Chemical Identifier Resolver</a
+        > second, so whatever you type is sent to them to be looked up. There is no account and
+        nothing to sign in to.
       </p>
     </section>
   </div>
@@ -134,7 +138,14 @@ const examples = [
 </ToolPage>
 
 <script>
-  import { describeMolecule, isRepeatUnit, isMultiFragment } from '../../lib/chem-api';
+  import {
+    describeMolecule,
+    isRepeatUnit,
+    isMultiFragment,
+    storedEngine,
+    setStoredEngine,
+  } from '../../lib/chem-api';
+  import { isLocalEngineLoaded } from '../../lib/rdkit-local';
   import { descriptorRows } from '../../lib/descriptors';
 
   interface AtlasTarget {
@@ -168,9 +179,41 @@ const examples = [
     const identity = result.querySelector<HTMLElement>('[data-identity]')!;
     const descriptors = result.querySelector<HTMLElement>('[data-descriptors]')!;
 
+    const engineControl = document.querySelector<HTMLElement>('[data-engine-control]')!;
+    const engineNote = engineControl.querySelector<HTMLElement>('[data-engine-note]')!;
+
     function setStatus(text: string, kind: 'working' | 'error' | 'note' | 'none') {
       status.textContent = text;
       status.className = `tool-status${kind === 'none' ? '' : ` tool-status--${kind}`}`;
+    }
+
+    /** Say which engine is answering, and what that costs. */
+    function syncEngine() {
+      const engine = storedEngine();
+      engineControl.querySelectorAll<HTMLElement>('[data-engine]').forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.engine === engine);
+      });
+      engineNote.textContent =
+        engine === 'local'
+          ? isLocalEngineLoaded()
+            ? 'RDKit is running in this browser — structures are drawn with no network at all. Looking a NAME up still needs the service, because the name has to be resolved somewhere.'
+            : 'RDKit will run in this browser. About 6.8 MB downloads once and is then cached, after which pasted structures work offline. Looking a NAME up still needs the service.'
+          : 'Structures are drawn by the service, so nothing is downloaded here.';
+    }
+
+    /** Offer the other engine when the service is the thing that failed. */
+    function offerLocalEngine(query: string) {
+      if (storedEngine() === 'local') return;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'tool-inline-action';
+      button.textContent = 'Use the in-browser engine instead';
+      button.addEventListener('click', () => {
+        setStoredEngine('local');
+        syncEngine();
+        void lookup(query);
+      });
+      status.append(' ', button);
     }
 
     function row(label: string, value: string, options: { mono?: boolean; hint?: string } = {}) {
@@ -238,11 +281,16 @@ const examples = [
               : message,
           'error'
         );
+        if (code === 'upstream_unavailable' || code === 'network' || code === 'timeout')
+          offerLocalEngine(trimmed);
         return;
       }
 
       const data = response.data;
       setStatus('', 'none');
+      // The engine may have finished loading during this lookup, which changes
+      // what the note beneath the control can honestly claim.
+      syncEngine();
 
       draw.innerHTML = data.svg.trim().startsWith('<svg') ? data.svg : '';
       const notice = atlasNotice(trimmed, data.smiles);
@@ -300,6 +348,14 @@ const examples = [
       input.value = chip.dataset.example;
       void lookup(chip.dataset.example);
     });
+
+    engineControl.addEventListener('click', (e) => {
+      const button = (e.target as Element | null)?.closest<HTMLElement>('[data-engine]');
+      if (!button?.dataset.engine) return;
+      setStoredEngine(button.dataset.engine === 'local' ? 'local' : 'server');
+      syncEngine();
+    });
+    syncEngine();
 
     // Deep link: /tools/molecule/?q=styrene
     const initial = new URLSearchParams(location.search).get('q');

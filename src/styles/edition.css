@@ -2905,53 +2905,68 @@ a.tl-card:hover {
   word-break: break-all;
 }
 
-/* --- the predictor's model picker --- */
-.model-picker {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
-  gap: var(--space-2);
-}
-.model-btn {
+/* --- the predictor's model tabs --- */
+/* Tabs, not cards: choosing a model is a change of view, not a separate step,
+   so it lives at the head of the one form rather than in a card above it. */
+.model-tabs {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  text-align: left;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--space-2);
+}
+.model-tab {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
   background: none;
-  border: 1px solid var(--rule);
-  border-radius: var(--radius-small);
-  padding: 0.6rem 0.7rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.4rem 0.7rem;
+  margin-bottom: -1px;
+  color: var(--ink-muted);
   cursor: pointer;
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+.model-tab:hover {
+  color: var(--ink-soft);
+}
+.model-tab.is-active {
   color: var(--ink);
-  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+  border-bottom-color: var(--foil);
 }
-.model-btn:hover {
-  border-color: var(--rule-strong);
-}
-.model-btn.is-active {
-  border-color: var(--foil);
-  background: var(--wash);
-}
-.model-symbol {
-  font-size: 1.15rem;
+.model-tab-symbol {
+  font-size: 1.02rem;
   color: var(--foil);
   font-variant-numeric: lining-nums;
+  opacity: 0.55;
+  transition: opacity 0.25s var(--ease);
 }
-.model-name {
-  font-size: 0.96rem;
-  line-height: 1.25;
+.model-tab.is-active .model-tab-symbol {
+  opacity: 1;
 }
-.model-takes {
-  font-size: 0.72rem;
-  color: var(--ink-muted);
+.model-tab-name {
   font-family: var(--font-label);
   font-variant-caps: all-small-caps;
+  letter-spacing: 0.1em;
+  font-size: 0.94rem;
+}
+.variant-atelier .model-tab-name {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.7rem;
   letter-spacing: 0.13em;
+  font-weight: 600;
 }
 .model-blurb {
-  margin: var(--space-2) 0 0;
+  margin: 0 0 var(--space-3);
   font-size: 0.95rem;
   color: var(--ink-soft);
   line-height: 1.6;
+}
+.tool-chip-row {
+  display: contents;
 }
 .predict-field + .predict-field {
   margin-top: var(--space-2);
@@ -3088,4 +3103,54 @@ a.tl-card:hover {
 }
 .mol-pop-more:hover {
   text-decoration: underline;
+}
+
+/* --- which engine answers ------------------------------------------------
+   The service is the default and the in-browser engine is a deliberate
+   choice, so this control is quiet: a hairline above it, small type, and the
+   cost of the choice stated rather than hidden. It reuses the reader menu's
+   segmented .menu-pair-btn so a toggle looks like a toggle everywhere. */
+.tool-engine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-3);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+}
+.tool-engine-label {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+}
+.tool-engine-pair {
+  display: flex;
+  gap: 0.4rem;
+}
+.tool-engine-note {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+/* An action offered inside a sentence of status text — never a second
+   button competing with the form's own. */
+.tool-inline-action {
+  font: inherit;
+  font-style: normal;
+  color: var(--foil);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.tool-inline-action:hover {
+  opacity: 0.8;
 }

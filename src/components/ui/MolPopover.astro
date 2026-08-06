@@ -26,7 +26,7 @@ import { href } from '../../lib/content';
   // Only pure modules here: lib/content imports astro:content and cannot be
   // bundled for the client. The base-aware tool URL is already rendered into
   // the panel's link above, so the query string is appended to that.
-  import { describeMolecule } from '../../lib/chem-api';
+  import { describeMolecule, storedEngine, setStoredEngine } from '../../lib/chem-api';
 
   // Which of RDKit's numbers earn their place in a popup: enough to answer
   // "what is this, how big, how greasy, how polar" and nothing more. The
@@ -69,17 +69,32 @@ import { href } from '../../lib/content';
   function place(trigger: HTMLElement, panel: HTMLElement) {
     const rect = trigger.getBoundingClientRect();
     const width = panel.offsetWidth;
+    const height = panel.offsetHeight;
     const margin = 12;
     const left = Math.min(
       Math.max(margin, rect.left + rect.width / 2 - width / 2),
       window.innerWidth - width - margin
     );
-    const below = rect.bottom + window.scrollY + 8;
-    const above = rect.top + window.scrollY - panel.offsetHeight - 8;
-    const fitsBelow = rect.bottom + panel.offsetHeight + 8 < window.innerHeight;
+
+    // The header is sticky, so the space above the trigger ends at its lower
+    // edge, not at the top of the viewport — measured rather than assumed,
+    // because it is two rows tall on a narrow screen.
+    const header = document.querySelector<HTMLElement>('.site-head');
+    const headerBottom = header?.getBoundingClientRect().bottom ?? 0;
+    const roomBelow = window.innerHeight - rect.bottom - margin;
+    const roomAbove = rect.top - headerBottom - margin;
+
+    // Below by preference; above only when it genuinely fits; otherwise below
+    // anyway and let the page scroll, which beats hiding it under the header.
+    const goAbove = height > roomBelow && height <= roomAbove;
 
     panel.style.left = `${left + window.scrollX}px`;
-    panel.style.top = `${fitsBelow || above < window.scrollY ? below : above}px`;
+    panel.style.top = `${window.scrollY + (goAbove ? rect.top - height - 8 : rect.bottom + 8)}px`;
+
+    // When it fits neither way, bring it into view by the smallest amount that
+    // works, so it never simply opens off the bottom of the screen.
+    if (height > roomBelow && height > roomAbove)
+      panel.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 
   async function show(trigger: HTMLElement) {
@@ -108,6 +123,19 @@ import { href } from '../../lib/content';
     if (!response.ok) {
       parts.state.textContent =
         'The structure service is not reachable just now — the entry itself is unaffected.';
+      // The in-browser engine needs no network once fetched, so it is the one
+      // useful thing to offer here rather than a dead end.
+      if (storedEngine() === 'server') {
+        const retry = document.createElement('button');
+        retry.type = 'button';
+        retry.className = 'tool-inline-action';
+        retry.textContent = 'Draw it in this browser instead';
+        retry.addEventListener('click', () => {
+          setStoredEngine('local');
+          void show(trigger);
+        });
+        parts.state.append(' ', retry);
+      }
       place(trigger, parts.panel);
       return;
     }

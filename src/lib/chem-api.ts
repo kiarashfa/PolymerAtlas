@@ -113,6 +113,37 @@ export interface MoleculeOptions {
   /** Depiction size in px; the SVG keeps its viewBox and scales anyway. */
   width?: number;
   height?: number;
+  /** Overrides the reader's stored preference for this one call. */
+  engine?: Engine;
+}
+
+// --- which engine answers ------------------------------------------------
+//
+// The service is the default: nobody should download several MB of
+// WebAssembly to read an encyclopedia. A reader who wants the tools to work
+// offline — or who finds the service down — can switch to the in-browser
+// engine, and the choice is remembered like every other reading preference.
+//
+// The engine is a STRUCTURE concern only. The four prediction models exist
+// solely on the service and have no local counterpart, so predict() ignores
+// this entirely.
+
+export type Engine = 'server' | 'local';
+
+export function storedEngine(): Engine {
+  try {
+    return localStorage.getItem('pa-engine') === 'local' ? 'local' : 'server';
+  } catch {
+    return 'server';
+  }
+}
+
+export function setStoredEngine(engine: Engine): void {
+  try {
+    localStorage.setItem('pa-engine', engine);
+  } catch {
+    /* storage unavailable — the choice still applies to this page */
+  }
 }
 
 async function fetchMolecule(
@@ -145,7 +176,27 @@ export async function describeMolecule(
   kind: 'name' | 'smiles' | 'auto',
   options: MoleculeOptions = {}
 ): Promise<ApiResult<MoleculeResult>> {
-  const { width = 320, height = 240 } = options;
+  const { width = 320, height = 240, engine = storedEngine() } = options;
+
+  // The in-browser engine reads structures, not names: resolving a name means
+  // asking PubChem or NCI, which is a network call whichever engine is chosen.
+  // So a name always goes to the service, and only a structure stays local —
+  // and the WASM is not fetched at all for an input that plainly is a name.
+  if (engine === 'local' && (kind === 'smiles' || (kind === 'auto' && looksLikeSmiles(query)))) {
+    const cacheKey = `local:${query}:${width}x${height}`;
+    const hit = moleculeCache.get(cacheKey);
+    if (hit) return { ok: true, data: { ...hit, cached: true } };
+
+    const { describeLocally } = await import('./rdkit-local');
+    const local = await describeLocally(query, width, height);
+    if (local.ok) {
+      moleculeCache.set(cacheKey, local.data);
+      return local;
+    }
+    // A local parse failure on an 'auto' input still deserves the name route.
+    if (kind === 'smiles' || local.error.code !== 'bad_smiles') return local;
+  }
+
   if (kind !== 'auto') return fetchMolecule(query, kind, width, height);
 
   const first = looksLikeSmiles(query) ? 'smiles' : 'name';
