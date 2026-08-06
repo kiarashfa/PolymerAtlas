@@ -29,6 +29,9 @@ const isHome = title === 'Atlas of Polymers';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{isHome ? title : `${title} — Atlas of Polymers`}</title>
     <meta name="description" content={description} />
+    {/* One SVG mark, carrying both palettes and switching itself on
+        prefers-color-scheme, so the tab reads on light and dark chrome alike. */}
+    <link rel="icon" type="image/svg+xml" href={href('/favicon.svg')} />
     <link rel="canonical" href={Astro.url} />
     <meta property="og:site_name" content="Atlas of Polymers" />
     <meta property="og:title" content={title} />

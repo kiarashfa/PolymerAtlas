@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- A hexagonal compass: the case is a ring, the dial a four-point rose
+       folded into a lit facet and a shaded one per arm. Flat faceting rather
+       than gradients, so it stays sharp at 16px. Both palettes travel in the
+       file and prefers-color-scheme picks one, so the mark is dark on a light
+       browser and light on a dark one. -->
+  <style>
+    :root {
+      --face: #ffffff;
+      --ring: #1f2328;
+      --lit: #8c959f;
+      --shade: #1f2328;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --face: #161b22;
+        --ring: #f0f6fc;
+        --lit: #f0f6fc;
+        --shade: #6e7681;
+      }
+    }
+  </style>
+  <path d="M16 1 29 8.5 29 23.5 16 31 3 23.5 3 8.5Z" fill="var(--face)" />
+  <path
+    fill-rule="evenodd"
+    fill="var(--ring)"
+    d="M16 1 29 8.5 29 23.5 16 31 3 23.5 3 8.5ZM16 4 26.4 10 26.4 22 16 28 5.6 22 5.6 10Z"
+  />
+  <path d="M16 6.4 13.45 13.45 16 16Z" fill="var(--lit)" />
+  <path d="M16 6.4 18.55 13.45 16 16Z" fill="var(--shade)" />
+  <path d="M25.6 16 18.55 13.45 16 16Z" fill="var(--lit)" />
+  <path d="M25.6 16 18.55 18.55 16 16Z" fill="var(--shade)" />
+  <path d="M16 25.6 18.55 18.55 16 16Z" fill="var(--lit)" />
+  <path d="M16 25.6 13.45 18.55 16 16Z" fill="var(--shade)" />
+  <path d="M6.4 16 13.45 18.55 16 16Z" fill="var(--lit)" />
+  <path d="M6.4 16 13.45 13.45 16 16Z" fill="var(--shade)" />
+</svg>

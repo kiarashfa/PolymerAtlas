@@ -11,11 +11,12 @@ content_manifest.json
 polymer_document_inventory.md
 historical-milestones.txt
 
-# Authoring-only tooling 
+# Authoring-only tooling
 /scripts/
 /tests/
 /handbooks/
 /API/
+/design/
 
 # --- Node / Astro build ---
 node_modules/
