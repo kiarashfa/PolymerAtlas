@@ -1,0 +1,105 @@
+---
+// About: what the Atlas is, how to reach whoever keeps it, and — for anyone
+// who wants to — how to help pay for the next entries. Like the tool pages
+// it sits outside the chronological spine, so it wears the same quiet
+// chrome: neutral foil, no era strip, no rail, no chronological neighbours.
+//
+// The two brand glyphs are inlined from src/assets/icons rather than
+// referenced with <img>, for the same reason the structure drawings are:
+// they are drawn in `currentColor` and an <img> renders in its own document,
+// where there is no page colour to inherit.
+import ToolPage from '../components/templates/ToolPage.astro';
+import paypalGlyph from '../assets/icons/paypal.svg?raw';
+import coffeeGlyph from '../assets/icons/buy-me-a-coffee.svg?raw';
+
+const contacts = [
+  { label: 'Personal site', href: 'https://kiarashfa.github.io/website/' },
+  { label: 'kiarashfa@gmail.com', href: 'mailto:kiarashfa@gmail.com' },
+  { label: 'GitHub', href: 'https://github.com/kiarashfa' },
+];
+
+const support = [
+  {
+    label: 'Donate · PayPal',
+    href: 'https://www.paypal.com/donate/?hosted_button_id=S3BD5XFBMMWSJ',
+    glyph: paypalGlyph,
+  },
+  {
+    label: 'Buy Me a Coffee',
+    href: 'https://www.buymeacoffee.com/kiarashfa',
+    glyph: coffeeGlyph,
+  },
+];
+---
+
+<ToolPage
+  title="About"
+  description="What the Atlas of Polymers is, how to get in touch, and how to support the work."
+  eyebrow="Colophon"
+  lede="A free, history-narrated encyclopedia of the materials that made the modern world."
+>
+  <div class="tool-body">
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">The project</h2>
+      <p>
+        The Atlas is a reference work with a memory. Each entry opens in a particular year — usually
+        the year the material was first made — and tells that year's history alongside the polymer's
+        own, so the chemistry arrives attached to a place and a moment. What follows is the
+        encyclopedia proper: identity, classification, synthesis, structure, thermal and mechanical
+        properties, processing, applications and environmental fate, every value carrying its source
+        and its status, including the ones nobody has verified yet.
+      </p>
+      <p>
+        Ninety-six entries span seven eras, and there are four ways through them: a sortable
+        catalogue, a timeline along the era spine, a constellation chart you can pan across two
+        centuries, and family pages that gather a lineage in one place. Concept pages carry the
+        equations, person pages the chemists, and two tools — a molecule lookup and a property
+        predictor — sit deliberately to one side of the encyclopedia. The reading is yours to set:
+        three presentation styles, light or dark, SI or imperial.
+      </p>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">Contact</h2>
+      <p>Corrections, additions and arguments about attribution are all welcome.</p>
+      <div class="support-row">
+        {
+          contacts.map((c) => (
+            <a
+              class="support-link"
+              href={c.href}
+              target={c.href.startsWith('mailto:') ? undefined : '_blank'}
+              rel="noopener"
+            >
+              {c.label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">Support</h2>
+      <p>
+        Everything here is free to read: no advertising, no accounts, nothing following you from
+        page to page. If the Atlas has been useful, a contribution goes toward the next entries —
+        their sources, their photographs, and the evenings spent checking both.
+      </p>
+      <div class="support-row">
+        {
+          support.map((s) => (
+            <a
+              class="support-link support-link--give"
+              href={s.href}
+              target="_blank"
+              rel="noopener"
+            >
+              <Fragment set:html={s.glyph} />
+              {s.label}
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</ToolPage>

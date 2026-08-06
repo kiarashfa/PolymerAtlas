@@ -13,10 +13,10 @@
 // its own hairline-flanked label — future entries (links, tools) are added
 // as new groups, not squeezed into the header.
 //
-// The Tools group is the one set of rows here that NAVIGATES rather than
-// switches something. It is shaped to say so at a glance: full-width rows
-// with a glyph and a destination arrow, no segmented pair, and no active
-// mark — nothing in it is ever "on".
+// The Tools group and the About row are the rows here that NAVIGATE rather
+// than switch something. They are shaped to say so at a glance: full-width
+// rows with a glyph and a destination arrow, no segmented pair, and no
+// active mark — nothing in them is ever "on".
 import { VARIANTS } from '../../lib/variants';
 import { href } from '../../lib/content';
 
@@ -193,6 +193,21 @@ const stagger = () => step++;
           In browser
         </button>
       </div>
+    </section>
+
+    {/* Last, and the quietest: what the Atlas is, how to reach whoever keeps
+        it, and how to support it. Navigation, so it takes the Tools group's
+        row shape rather than a toggle's. */}
+    <section class="menu-group" aria-label="About">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>About</h2>
+      <a class="menu-link menu-stagger" style={`--i:${stagger()}`} href={href('/about/')}>
+        <span class="menu-link-glyph" aria-hidden="true">❦</span>
+        <span class="menu-option-text">
+          <span class="menu-link-name">About the Atlas</span>
+          <span class="menu-option-note">What this is, and how to get in touch</span>
+        </span>
+        <span class="menu-link-arrow" aria-hidden="true">→</span>
+      </a>
     </section>
   </div>
 </div>
