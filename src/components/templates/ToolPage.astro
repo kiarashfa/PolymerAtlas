@@ -1,0 +1,31 @@
+---
+// Shared chrome for the two tool pages. Deliberately quieter than a content
+// page: no era strip, no section rail, no chronological neighbours — a tool
+// sits outside the Atlas's spine and should not pretend otherwise. It wears
+// the neutral foil rather than an era hue for the same reason.
+//
+// Reuses the browse pages' header classes (.cat-head / .cat-title / .cat-sub)
+// rather than introducing a second page-header language.
+import Base from '../../layouts/Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Small line above the title. */
+  eyebrow: string;
+  /** One or two sentences under the title. */
+  lede: string;
+}
+const { title, description, eyebrow, lede } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <main class="tool">
+    <header class="cat-head">
+      <p class="tool-eyebrow u-caps">{eyebrow}</p>
+      <h1 class="cat-title">{title}</h1>
+      <p class="cat-sub">{lede}</p>
+    </header>
+    <slot />
+  </main>
+</Base>

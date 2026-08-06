@@ -7,6 +7,7 @@
 import { ClientRouter } from 'astro:transitions';
 import EditionMenu from '../components/ui/EditionMenu.astro';
 import SearchOverlay from '../components/ui/SearchOverlay.astro';
+import MolPopover from '../components/ui/MolPopover.astro';
 import { href } from '../lib/content';
 import '../styles/tokens.css';
 import '../styles/edition.css';
@@ -82,6 +83,7 @@ const isHome = title === 'Atlas of Polymers';
     <div id="main">
       <slot />
     </div>
+    <MolPopover />
     <footer class="site-foot">
       <span class="foot-ornament" aria-hidden="true"></span>
       <p>

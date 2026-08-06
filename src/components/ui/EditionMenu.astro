@@ -12,7 +12,33 @@
 // Extensible by design: each `.menu-group` is an independent section with
 // its own hairline-flanked label — future entries (links, tools) are added
 // as new groups, not squeezed into the header.
+//
+// The Tools group is the one set of rows here that NAVIGATES rather than
+// switches something. It is shaped to say so at a glance: full-width rows
+// with a glyph and a destination arrow, no segmented pair, and no active
+// mark — nothing in it is ever "on".
 import { VARIANTS } from '../../lib/variants';
+import { href } from '../../lib/content';
+
+const tools = [
+  {
+    href: href('/tools/molecule/'),
+    name: 'Molecule Lookup',
+    essence: 'Draw and measure any small molecule',
+    glyph: '⬡',
+  },
+  {
+    href: href('/tools/predictor/'),
+    name: 'Property Predictor',
+    essence: 'Four models, from structure alone',
+    glyph: '◈',
+  },
+];
+
+// The rows cascade in one beat apart when the panel unfolds; the index is
+// carried on each row so inserting a group cannot break the sequence.
+let step = 0;
+const stagger = () => step++;
 ---
 
 <div class="head-menu" data-head-menu>
@@ -34,11 +60,12 @@ import { VARIANTS } from '../../lib/variants';
 
   <div class="head-menu-panel" aria-label="Reading preferences" data-menu-panel>
     <section class="menu-group" aria-label="Presentation style">
-      <h2 class="menu-group-label u-caps menu-stagger">Presentation</h2>
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Presentation</h2>
       {
         VARIANTS.map((v) => (
           <button
             class="menu-option menu-stagger"
+            style={`--i:${stagger()}`}
             type="button"
             data-variant-btn={v.id}
             title={v.note}
@@ -53,9 +80,29 @@ import { VARIANTS } from '../../lib/variants';
       }
     </section>
 
+    <section class="menu-group" aria-label="Tools">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Tools</h2>
+      {
+        tools.map((t) => (
+          <a class="menu-link menu-stagger" style={`--i:${stagger()}`} href={t.href}>
+            <span class="menu-link-glyph" aria-hidden="true">
+              {t.glyph}
+            </span>
+            <span class="menu-option-text">
+              <span class="menu-link-name">{t.name}</span>
+              <span class="menu-option-note">{t.essence}</span>
+            </span>
+            <span class="menu-link-arrow" aria-hidden="true">
+              →
+            </span>
+          </a>
+        ))
+      }
+    </section>
+
     <section class="menu-group" aria-label="Theme">
-      <h2 class="menu-group-label u-caps menu-stagger">Light</h2>
-      <div class="menu-pair menu-stagger">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Light</h2>
+      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
         <button class="menu-pair-btn" type="button" data-theme-set="light">
           <svg
             width="15"
@@ -94,8 +141,8 @@ import { VARIANTS } from '../../lib/variants';
     </section>
 
     <section class="menu-group" aria-label="Glazing">
-      <h2 class="menu-group-label u-caps menu-stagger">Glazing</h2>
-      <div class="menu-pair menu-stagger">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Glazing</h2>
+      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
         <button class="menu-pair-btn" type="button" data-glaze-set="on">
           <span class="menu-pair-glyph" aria-hidden="true">◧</span>
           Glazed
@@ -108,8 +155,8 @@ import { VARIANTS } from '../../lib/variants';
     </section>
 
     <section class="menu-group" aria-label="Units">
-      <h2 class="menu-group-label u-caps menu-stagger">Units</h2>
-      <div class="menu-pair menu-stagger">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Units</h2>
+      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
         <button class="menu-pair-btn" type="button" data-units-set="si">
           <span class="menu-pair-glyph" aria-hidden="true">°C</span>
           SI

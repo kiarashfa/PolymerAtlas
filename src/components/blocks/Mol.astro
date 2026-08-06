@@ -1,0 +1,35 @@
+---
+// An inline molecule in a narrative: `<Mol name="ethylene" smiles="C=C" />`.
+// The name is what the reader sees, in the sentence, reading normally; the
+// structure and its numbers arrive only when they ask for them.
+//
+// Tagging is always explicit and always carries the SMILES, so nothing is
+// ever guessed from prose and no lookup is needed to draw it. Injected into
+// MDX scope by all four page templates — narratives need no import.
+//
+// The panel itself is a single shared element rendered once per page by
+// MolPopover (in Base.astro); this component is only the trigger.
+interface Props {
+  /** The molecule as the sentence names it. */
+  name: string;
+  /** SMILES for that molecule — required; small molecules only. */
+  smiles: string;
+  /** Optional override for the panel's heading, when the sentence uses a
+      shortened or inflected form of the name. */
+  title?: string;
+}
+const { name, smiles, title } = Astro.props;
+---
+
+<button
+  class="mol"
+  type="button"
+  data-mol
+  data-mol-smiles={smiles}
+  data-mol-name={title ?? name}
+  aria-haspopup="dialog"
+  aria-expanded="false"
+  title={`Show the structure of ${title ?? name}`}
+>
+  <span class="mol-text">{name}</span><span class="mol-mark" aria-hidden="true">⬡</span>
+</button>

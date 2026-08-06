@@ -15,6 +15,7 @@ historical-milestones.txt
 /scripts/
 /tests/
 /handbooks/
+/API/
 
 # --- Node / Astro build ---
 node_modules/

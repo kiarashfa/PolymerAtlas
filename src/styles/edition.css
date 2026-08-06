@@ -204,29 +204,12 @@ code {
   opacity: 1;
   transform: none;
 }
-.head-menu.is-open .menu-group:nth-child(1) .menu-stagger:nth-child(1) {
-  transition-delay: 0.03s;
-}
-.head-menu.is-open .menu-group:nth-child(1) .menu-stagger:nth-child(2) {
-  transition-delay: 0.07s;
-}
-.head-menu.is-open .menu-group:nth-child(1) .menu-stagger:nth-child(3) {
-  transition-delay: 0.11s;
-}
-.head-menu.is-open .menu-group:nth-child(1) .menu-stagger:nth-child(4) {
-  transition-delay: 0.15s;
-}
-.head-menu.is-open .menu-group:nth-child(2) .menu-stagger:nth-child(1) {
-  transition-delay: 0.19s;
-}
-.head-menu.is-open .menu-group:nth-child(2) .menu-stagger:nth-child(2) {
-  transition-delay: 0.23s;
-}
-.head-menu.is-open .menu-group:nth-child(3) .menu-stagger:nth-child(1) {
-  transition-delay: 0.27s;
-}
-.head-menu.is-open .menu-group:nth-child(3) .menu-stagger:nth-child(2) {
-  transition-delay: 0.31s;
+/* Each row carries its own position (--i, stamped by EditionMenu in document
+   order), so a group inserted anywhere in the panel keeps the cascade intact.
+   The search panel sets its own delays further down and still wins on
+   specificity. */
+.head-menu.is-open .menu-stagger {
+  transition-delay: calc(0.03s + var(--i, 0) * 0.035s);
 }
 .menu-option {
   display: flex;
@@ -289,6 +272,62 @@ code {
   opacity: 1;
   transform: none;
 }
+/* Tools: the rows in this menu that GO somewhere rather than switch
+   something. Same skeleton and spacing as .menu-option so the panel reads as
+   one object, but deliberately distinguished — a leading glyph in a ruled
+   well, a destination arrow that slides on hover, and no active mark at all,
+   because nothing here is ever "on". */
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  text-decoration: none;
+  border-radius: var(--radius-small);
+  padding: 0.45rem 0.55rem;
+  color: var(--ink);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease),
+    background 0.2s var(--ease);
+}
+.menu-link:hover {
+  background: var(--wash);
+}
+.menu-link-glyph {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  transition: color 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+.menu-link:hover .menu-link-glyph {
+  color: var(--foil);
+  border-color: var(--foil);
+}
+.menu-link-name {
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.25;
+  transition: color 0.25s var(--ease);
+}
+.menu-link:hover .menu-link-name {
+  color: var(--foil);
+}
+.menu-link-arrow {
+  margin-left: auto;
+  color: var(--rule-strong);
+  font-size: 0.9rem;
+  transition: color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.menu-link:hover .menu-link-arrow {
+  color: var(--foil);
+  transform: translateX(3px);
+}
+
 /* two-option segmented pairs (theme Day/Night, units SI/Imperial) */
 .menu-pair {
   display: grid;
@@ -2617,4 +2656,436 @@ a.tl-card:hover {
    an unglazed reader never sees a flash of glass. */
 .no-glaze .plate-glass::after {
   display: none;
+}
+
+/* ======================================================================= */
+/* Tools — the molecule lookup and the property predictor.                 */
+/* Two pages that sit outside the chronological spine, so they wear the    */
+/* neutral foil rather than an era hue, and carry no era strip, no rail    */
+/* and no chronological neighbours. Everything else is the same paper,     */
+/* the same card, the same rules.                                          */
+/* ======================================================================= */
+
+.tool-eyebrow {
+  color: var(--ink-muted);
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+}
+.tool-body {
+  max-width: var(--measure);
+  margin: var(--space-3) auto var(--space-5);
+  padding: 0 var(--page-pad);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.tool-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: 0 2px 14px var(--shadow);
+}
+.tool-card-head,
+.tool-subhead {
+  margin: 0 0 var(--space-2);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+}
+.tool-subhead {
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+/* --- the input --- */
+.tool-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.84rem;
+  color: var(--ink-muted);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+}
+.tool-input-row {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.tool-input {
+  flex: 1 1 14rem;
+  min-width: 0;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius-small);
+  padding: 0.55rem 0.7rem;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.tool-input:focus {
+  outline: none;
+  border-color: var(--foil);
+  box-shadow: 0 0 0 3px var(--wash);
+}
+.tool-submit {
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.11em;
+  font-size: 0.98rem;
+  color: var(--paper);
+  background: var(--foil);
+  border: 1px solid var(--foil);
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  transition: opacity 0.25s var(--ease), transform 0.15s var(--ease);
+}
+.tool-submit:hover:not(:disabled) {
+  opacity: 0.86;
+}
+.tool-submit:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.tool-submit:disabled {
+  opacity: 0.45;
+  cursor: progress;
+}
+.tool-submit--wide {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+.variant-atelier .tool-submit {
+  font-variant-caps: normal;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+.tool-hint {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+.tool-hint code,
+.tool-status code {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  font-style: normal;
+}
+
+/* --- example chips --- */
+.tool-examples {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: var(--space-2);
+}
+.tool-examples-label {
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+  margin-right: 0.2rem;
+}
+.tool-chip {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.tool-chip:hover {
+  color: var(--foil);
+  border-color: var(--foil);
+}
+
+/* --- states: always honest, never a blank --- */
+.tool-status {
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  text-align: center;
+}
+.tool-status--working,
+.tool-status--note {
+  font-style: italic;
+}
+.tool-status--error {
+  color: var(--ink-soft);
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: var(--space-2);
+  text-align: left;
+  font-style: normal;
+}
+.tool-note {
+  margin: var(--space-2) 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+.tool-note--strong {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-2);
+  color: var(--ink-soft);
+}
+.tool-colophon p {
+  margin: 0 0 var(--space-2);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.tool-colophon p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* --- the drawn molecule --- */
+.mol-card {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: start;
+}
+@media (max-width: 640px) {
+  .mol-card {
+    grid-template-columns: 1fr;
+  }
+}
+.mol-figure {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+/* The structure inherits the page's ink: the service draws it in
+   currentColor over a transparent ground, exactly as the ChemDraw assets are
+   normalised, so one drawing is correct in both themes. */
+.mol-draw {
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: var(--space-2);
+  display: grid;
+  place-items: center;
+  min-height: 9rem;
+}
+.mol-draw svg {
+  width: 100%;
+  height: auto;
+  max-height: 18rem;
+}
+.mol-caption {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+.mol-caption a {
+  color: var(--foil);
+}
+.mol-facts .fact {
+  grid-template-columns: minmax(7rem, 9rem) 1fr;
+}
+.fact-value--mono {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.88rem;
+  word-break: break-all;
+}
+
+/* --- the predictor's model picker --- */
+.model-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: var(--space-2);
+}
+.model-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-small);
+  padding: 0.6rem 0.7rem;
+  cursor: pointer;
+  color: var(--ink);
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+.model-btn:hover {
+  border-color: var(--rule-strong);
+}
+.model-btn.is-active {
+  border-color: var(--foil);
+  background: var(--wash);
+}
+.model-symbol {
+  font-size: 1.15rem;
+  color: var(--foil);
+  font-variant-numeric: lining-nums;
+}
+.model-name {
+  font-size: 0.96rem;
+  line-height: 1.25;
+}
+.model-takes {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  font-family: var(--font-label);
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.13em;
+}
+.model-blurb {
+  margin: var(--space-2) 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.predict-field + .predict-field {
+  margin-top: var(--space-2);
+}
+
+/* --- predicted values: set apart from anything measured --- */
+.predict-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+.predict-value {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  border-left: 2px solid var(--foil);
+  padding-left: var(--space-2);
+}
+.predict-value-label {
+  color: var(--ink-muted);
+  font-size: 1rem;
+}
+.predict-value-number {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--foil);
+}
+.predict-value-unit {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+}
+
+/* ======================================================================= */
+/* Mol — a tagged molecule inside a narrative, and the panel it opens.     */
+/* The trigger has to read as part of the sentence: no button chrome, just */
+/* a dotted underline and a small mark. The panel is one shared element.   */
+/* ======================================================================= */
+
+.mol {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mol-text {
+  border-bottom: 1px dotted var(--era-color, var(--foil));
+  transition: color 0.2s var(--ease);
+}
+.mol:hover .mol-text,
+.mol[aria-expanded='true'] .mol-text {
+  color: var(--era-color, var(--foil));
+}
+.mol-mark {
+  font-size: 0.62em;
+  vertical-align: 0.35em;
+  margin-left: 0.12em;
+  color: var(--era-color, var(--foil));
+  opacity: 0.75;
+}
+.mol-pop-panel {
+  position: absolute;
+  z-index: 60;
+  width: min(19rem, calc(100vw - 1.5rem));
+  background: var(--paper-raised);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 50px var(--shadow);
+  padding: var(--space-3) var(--space-3) var(--space-2);
+}
+.mol-pop-close {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--ink-muted);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.mol-pop-close:hover {
+  color: var(--foil);
+}
+.mol-pop-name {
+  margin: 0 0 var(--space-2);
+  font-size: 1.05rem;
+  font-weight: 600;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.05em;
+}
+.mol-pop-draw {
+  color: var(--ink);
+  min-height: 5rem;
+  display: grid;
+  place-items: center;
+}
+.mol-pop-draw svg {
+  width: 100%;
+  height: auto;
+  max-height: 11rem;
+}
+.mol-pop-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 0.7rem;
+  margin: var(--space-2) 0 0;
+  font-size: 0.88rem;
+}
+.mol-pop-facts dt {
+  color: var(--ink-muted);
+}
+.mol-pop-facts dd {
+  margin: 0;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.mol-pop-state {
+  margin: var(--space-2) 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+.mol-pop-more {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-size: 0.85rem;
+  color: var(--foil);
+  text-decoration: none;
+}
+.mol-pop-more:hover {
+  text-decoration: underline;
 }

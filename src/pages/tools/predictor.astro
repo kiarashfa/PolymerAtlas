@@ -1,0 +1,447 @@
+---
+// Property predictor: four machine-learning models, served by a separate
+// research service. Everything here is PREDICTED, and the page says so at
+// every turn — no model output appears anywhere else in the Atlas.
+//
+// The models do not agree about what they eat. Three take a MONOMER; Tg
+// takes a POLYMER REPEAT UNIT with * where the chain continues. Feeding a
+// monomer to the Tg model returns a confident, meaningless number, so that
+// distinction is the page's main job.
+import ToolPage from '../../components/templates/ToolPage.astro';
+import ReferencesList from '../../components/blocks/ReferencesList.astro';
+import { citationsFor, loadPolymers, splitTitle, bareName } from '../../lib/content';
+
+const cites = citationsFor([
+  'farajzadehahary-2023-reactivity-ratios',
+  'farajzadehahary-2026-multiproperty-models',
+]);
+
+// Repeat-unit examples come from the Atlas's own structure data rather than
+// being typed out here, so they cannot drift from what the site records.
+const polymers = await loadPolymers();
+const repeatUnitExample = (id: string) => {
+  const entry = polymers.find((p) => p.data.id === id);
+  if (!entry?.data.smiles_depiction) return null;
+  return {
+    label: bareName(splitTitle(entry.narrative.data.name).title),
+    smiles: entry.data.smiles_depiction,
+  };
+};
+const tgExamples = ['polystyrene', 'polymethyl-methacrylate', 'polyvinyl-chloride', 'polyethylene']
+  .map(repeatUnitExample)
+  .filter((e): e is { label: string; smiles: string } => e !== null && !e.smiles.includes('.'));
+
+const models = [
+  {
+    id: 'rr',
+    name: 'Reactivity ratios',
+    symbol: 'r<sub>1</sub> · r<sub>2</sub>',
+    takes: 'two monomers',
+    blurb:
+      'How strongly each of two monomers prefers to add its own kind rather than the other — the numbers that decide a copolymer’s composition and sequence.',
+  },
+  {
+    id: 'kp',
+    name: 'Propagation rate constant',
+    symbol: 'k<sub>p</sub>',
+    takes: 'one monomer',
+    blurb:
+      'How fast a growing radical chain adds the next monomer, the rate constant at the heart of any kinetic model of a radical polymerization.',
+  },
+  {
+    id: 'tg',
+    name: 'Glass transition',
+    symbol: 'T<sub>g</sub>',
+    takes: 'one repeat unit',
+    blurb:
+      'The temperature at which the polymer stops being glassy and starts being rubbery — the property that decides where a material can be used.',
+  },
+  {
+    id: 'ws',
+    name: 'Water solubility',
+    symbol: 'W<sub>s</sub>',
+    takes: 'one monomer',
+    blurb:
+      'How much of the monomer dissolves in water, which governs mass transfer and whether an emulsion process is feasible at all.',
+  },
+];
+---
+
+<ToolPage
+  title="Property Predictor"
+  description="Four machine-learning models for polymer chemistry: reactivity ratios, propagation rate constant, glass transition temperature and monomer water solubility."
+  eyebrow="Tools"
+  lede="Four machine-learning models, trained on experimental data, predicting properties from structure alone. Every number here is a prediction, not a measurement."
+>
+  <div class="tool-body">
+    <div class="tool-card">
+      <h2 class="tool-card-head u-caps">Choose a model</h2>
+      <div class="model-picker" data-model-picker>
+        {
+          models.map((m, i) => (
+            <button
+              class={`model-btn${i === 0 ? ' is-active' : ''}`}
+              type="button"
+              data-model={m.id}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+            >
+              <span class="model-symbol" set:html={m.symbol} />
+              <span class="model-name">{m.name}</span>
+              <span class="model-takes u-caps">{m.takes}</span>
+            </button>
+          ))
+        }
+      </div>
+      {
+        models.map((m, i) => (
+          <p class="model-blurb" data-blurb={m.id} hidden={i !== 0}>
+            {m.blurb}
+          </p>
+        ))
+      }
+    </div>
+
+    <form class="tool-card tool-form" data-predict-form>
+      <div class="predict-field" data-field="primary">
+        <label class="tool-label u-caps" for="pred-a" data-label-a>First monomer</label>
+        <input
+          class="tool-input"
+          id="pred-a"
+          type="text"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="a name or a SMILES string"
+        />
+      </div>
+
+      <div class="predict-field" data-field="second" hidden>
+        <label class="tool-label u-caps" for="pred-b">Second monomer</label>
+        <input
+          class="tool-input"
+          id="pred-b"
+          type="text"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="a name or a SMILES string"
+        />
+      </div>
+
+      <p class="tool-hint" data-input-hint></p>
+
+      <div class="tool-examples" data-examples hidden>
+        <span class="tool-examples-label u-caps">Repeat units from the Atlas</span>
+        {
+          tgExamples.map((e) => (
+            <button class="tool-chip" type="button" data-example={e.smiles}>
+              {e.label}
+            </button>
+          ))
+        }
+      </div>
+
+      <button class="tool-submit tool-submit--wide" type="submit">Predict</button>
+    </form>
+
+    <p class="tool-status" data-status role="status" aria-live="polite"></p>
+
+    <section class="tool-card predict-result" data-result hidden>
+      <h2 class="tool-card-head u-caps">Predicted</h2>
+      <div class="predict-values" data-values></div>
+      <dl class="fact-table" data-inputs></dl>
+      <p class="tool-note tool-note--strong">
+        A prediction from structure, not a measured value. It carries no uncertainty estimate and
+        no check that your structure resembles anything the model was trained on. Treat it as a
+        starting point for an experiment, never as data.
+      </p>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">About these models</h2>
+      <p>
+        The four models were developed at
+        <a href="https://www.polymat.eu/" rel="noopener">Polymat</a>, the Basque Center for
+        Macromolecular Design and Engineering, and are described in the two papers below. The
+        reactivity-ratio network was trained on more than 5,000 monomer pairs and outperforms the
+        classical Q–e scheme; the other three came out of a later framework aimed at assessing
+        bio-based monomers as replacements for conventional ones.
+      </p>
+      <p>
+        They run on a separate service from the encyclopedia and are reached only from this page.
+        No predicted value appears on any polymer page in the Atlas — measured, cited properties
+        and model output are kept apart on purpose.
+      </p>
+      <h3 class="tool-subhead u-caps">Papers</h3>
+      <ReferencesList refList={cites.list} />
+    </section>
+  </div>
+</ToolPage>
+
+<script>
+  import { predict, resolveName, looksLikeSmiles, isRepeatUnit } from '../../lib/chem-api';
+
+  type ModelId = 'rr' | 'kp' | 'tg' | 'ws';
+
+  interface ModelUi {
+    labelA: string;
+    labelB?: string;
+    hint: string;
+    /** Tg takes a repeat unit, so a name cannot be resolved into it. */
+    resolveNames: boolean;
+    examples: boolean;
+  }
+
+  const UI: Record<ModelId, ModelUi> = {
+    rr: {
+      labelA: 'First monomer (M<sub>1</sub>)',
+      labelB: 'Second monomer (M<sub>2</sub>)',
+      hint: 'Two monomers, by name or SMILES. Identical monomers are a homopolymerization, and both ratios are 1 by definition.',
+      resolveNames: true,
+      examples: false,
+    },
+    kp: {
+      labelA: 'Monomer',
+      hint: 'One monomer, by name or SMILES. The model was trained on radical polymerization.',
+      resolveNames: true,
+      examples: false,
+    },
+    tg: {
+      labelA: 'Polymer repeat unit',
+      hint: 'The REPEAT UNIT as SMILES, with * marking where the chain continues — for example *CC(c1ccccc1)* for polystyrene. A monomer is not the same thing and will give a wrong answer.',
+      resolveNames: false,
+      examples: true,
+    },
+    ws: {
+      labelA: 'Monomer',
+      hint: 'One monomer, by name or SMILES. Returns how much dissolves in water, in mol/L.',
+      resolveNames: true,
+      examples: false,
+    },
+  };
+
+  // How each model's returned keys are displayed. Extra keys the service
+  // starts returning are shown too, under their own name.
+  const VALUE_META: Record<string, { label: string; unit?: string; decimals?: number }> = {
+    r1: { label: 'r<sub>1</sub>', decimals: 3 },
+    r2: { label: 'r<sub>2</sub>', decimals: 3 },
+    kp: { label: 'k<sub>p</sub>', unit: 'L mol⁻¹ s⁻¹', decimals: 2 },
+    log_kp: { label: 'log<sub>10</sub> k<sub>p</sub>', decimals: 2 },
+    tg: { label: 'T<sub>g</sub>', unit: '°C', decimals: 1 },
+    ws: { label: 'W<sub>s</sub>', unit: 'mol L⁻¹', decimals: 4 },
+    log_ws: { label: 'log<sub>10</sub> W<sub>s</sub>', decimals: 2 },
+  };
+
+  function wire() {
+    const form = document.querySelector<HTMLFormElement>('[data-predict-form]');
+    if (!form || form.dataset.wired) return;
+    form.dataset.wired = 'true';
+
+    const picker = document.querySelector<HTMLElement>('[data-model-picker]')!;
+    const inputA = document.querySelector<HTMLInputElement>('#pred-a')!;
+    const inputB = document.querySelector<HTMLInputElement>('#pred-b')!;
+    const labelA = document.querySelector<HTMLElement>('[data-label-a]')!;
+    const secondField = document.querySelector<HTMLElement>('[data-field="second"]')!;
+    const hint = document.querySelector<HTMLElement>('[data-input-hint]')!;
+    const examples = document.querySelector<HTMLElement>('[data-examples]')!;
+    const submit = form.querySelector<HTMLButtonElement>('.tool-submit')!;
+    const status = document.querySelector<HTMLElement>('[data-status]')!;
+    const result = document.querySelector<HTMLElement>('[data-result]')!;
+    const values = result.querySelector<HTMLElement>('[data-values]')!;
+    const inputsList = result.querySelector<HTMLElement>('[data-inputs]')!;
+
+    let model: ModelId = 'rr';
+
+    function setStatus(text: string, kind: 'working' | 'error' | 'note' | 'none') {
+      status.innerHTML = text;
+      status.className = `tool-status${kind === 'none' ? '' : ` tool-status--${kind}`}`;
+    }
+
+    function selectModel(next: ModelId) {
+      model = next;
+      const ui = UI[next];
+      labelA.innerHTML = ui.labelA;
+      secondField.hidden = !ui.labelB;
+      hint.textContent = ui.hint;
+      examples.hidden = !ui.examples;
+      inputA.placeholder = ui.resolveNames ? 'a name or a SMILES string' : '*CC(c1ccccc1)*';
+      result.hidden = true;
+      setStatus('', 'none');
+
+      picker.querySelectorAll<HTMLElement>('[data-model]').forEach((b) => {
+        const active = b.dataset.model === next;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-pressed', String(active));
+      });
+      document.querySelectorAll<HTMLElement>('[data-blurb]').forEach((p) => {
+        p.hidden = p.dataset.blurb !== next;
+      });
+    }
+
+    function factRow(label: string, value: string) {
+      const wrap = document.createElement('div');
+      wrap.className = 'fact';
+      const dt = document.createElement('dt');
+      dt.className = 'fact-label';
+      dt.textContent = label;
+      const dd = document.createElement('dd');
+      dd.className = 'fact-value fact-value--mono';
+      dd.textContent = value;
+      wrap.append(dt, dd);
+      return wrap;
+    }
+
+    /** A typed name becomes SMILES; a SMILES is used as it stands. */
+    async function toSmiles(raw: string): Promise<{ smiles: string; note?: string } | null> {
+      const text = raw.trim();
+      if (!text) return null;
+      if (looksLikeSmiles(text)) return { smiles: text };
+
+      setStatus(`Resolving “${text}”…`, 'working');
+      const resolved = await resolveName(text);
+      if (!resolved.ok) {
+        setStatus(
+          resolved.error.code === 'not_found'
+            ? `No structure found for “${text}”. Paste a SMILES string instead.`
+            : resolved.error.message,
+          'error'
+        );
+        return null;
+      }
+      return { smiles: resolved.data.smiles, note: `${text} → ${resolved.data.smiles}` };
+    }
+
+    async function run() {
+      const ui = UI[model];
+      result.hidden = true;
+
+      const rawA = inputA.value.trim();
+      if (!rawA) {
+        setStatus('Enter a structure first.', 'error');
+        return;
+      }
+
+      // The Tg model is the one that cannot be rescued by resolving a name:
+      // it needs a repeat unit, and no database will give you one.
+      if (!ui.resolveNames && !looksLikeSmiles(rawA)) {
+        setStatus(
+          'This model needs the repeat unit as a SMILES string, not a name — try one of the examples above.',
+          'error'
+        );
+        return;
+      }
+
+      submit.disabled = true;
+      const notes: string[] = [];
+
+      const a = await toSmiles(rawA);
+      if (!a) {
+        submit.disabled = false;
+        return;
+      }
+      if (a.note) notes.push(a.note);
+
+      let b: { smiles: string; note?: string } | null = null;
+      if (ui.labelB) {
+        const rawB = inputB.value.trim();
+        if (!rawB) {
+          submit.disabled = false;
+          setStatus('This model needs both monomers.', 'error');
+          return;
+        }
+        b = await toSmiles(rawB);
+        if (!b) {
+          submit.disabled = false;
+          return;
+        }
+        if (b.note) notes.push(b.note);
+      }
+
+      // The hazard worth guarding: a monomer in the Tg box returns a
+      // confident number that means nothing.
+      const missingStar = model === 'tg' && !isRepeatUnit(a.smiles);
+
+      setStatus('Running the model…', 'working');
+      const response = await predict(
+        model,
+        b ? { smiles1: a.smiles, smiles2: b.smiles } : { smiles: a.smiles }
+      );
+      submit.disabled = false;
+
+      if (!response.ok) {
+        setStatus(
+          response.error.code === 'upstream_unavailable'
+            ? 'The model service is not answering. The encyclopedia itself is unaffected — only this page needs it.'
+            : response.error.message,
+          'error'
+        );
+        return;
+      }
+
+      values.replaceChildren(
+        ...Object.entries(response.data).map(([key, value]) => {
+          const meta = VALUE_META[key] ?? { label: key };
+          const cell = document.createElement('div');
+          cell.className = 'predict-value';
+          const name = document.createElement('span');
+          name.className = 'predict-value-label';
+          name.innerHTML = meta.label;
+          const num = document.createElement('span');
+          num.className = 'predict-value-number';
+          num.textContent =
+            meta.decimals !== undefined ? value.toFixed(meta.decimals) : String(value);
+          cell.append(name, num);
+          if (meta.unit) {
+            const unit = document.createElement('span');
+            unit.className = 'predict-value-unit';
+            unit.textContent = meta.unit;
+            cell.append(unit);
+          }
+          return cell;
+        })
+      );
+
+      inputsList.replaceChildren(
+        factRow(ui.labelB ? 'M₁' : 'Structure', a.smiles),
+        ...(b ? [factRow('M₂', b.smiles)] : [])
+      );
+
+      result.hidden = false;
+      setStatus(
+        missingStar
+          ? 'That structure carries no <code>*</code>, so it is almost certainly a monomer rather than a repeat unit. The model answered anyway — the number below is very likely wrong.'
+          : notes.length
+            ? `Resolved ${notes.join(' · ')}`
+            : '',
+        missingStar ? 'error' : notes.length ? 'note' : 'none'
+      );
+    }
+
+    picker.addEventListener('click', (e) => {
+      const btn = (e.target as Element | null)?.closest<HTMLElement>('[data-model]');
+      if (btn?.dataset.model) selectModel(btn.dataset.model as ModelId);
+    });
+
+    form.addEventListener('click', (e) => {
+      const chip = (e.target as Element | null)?.closest<HTMLElement>('[data-example]');
+      if (chip?.dataset.example) inputA.value = chip.dataset.example;
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      void run();
+    });
+
+    // Enter submits. Implicit form submission would usually cover this, but
+    // stating it removes any doubt: preventDefault first so the browser's own
+    // submission cannot also fire and run the request twice.
+    form.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter') return;
+      if (!(e.target as Element | null)?.closest('input')) return;
+      e.preventDefault();
+      form.requestSubmit();
+    });
+
+    selectModel('rr');
+  }
+
+  document.addEventListener('astro:page-load', wire);
+</script>
