@@ -4,6 +4,7 @@
 // Server-rendered chronologically so the full list exists without JS; the
 // controls only reorder/hide rows.
 import Base from '../layouts/Base.astro';
+import AtlasMark from '../components/ui/AtlasMark.astro';
 import { browseRowsByEra, eras, eraShortName, eraIndex } from '../lib/content';
 
 const byEra = await browseRowsByEra();
@@ -21,6 +22,7 @@ const description =
 <Base title="Atlas of Polymers" description={description} current="catalogue">
   <main>
     <header class="cat-head">
+      <AtlasMark class="cat-mark" size={56} />
       <h1 class="cat-title">Atlas of Polymers</h1>
       <p class="cat-sub">
         A history-narrated encyclopedia of the polymers that made the modern world — {total}

@@ -89,12 +89,27 @@ code {
   z-index: 20;
 }
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.10em;
   font-variant-caps: small-caps;
   white-space: nowrap;
+}
+/* The mark, wherever it sits: never let the flex row squeeze it, and never
+   let it inherit the line-height of the text beside it. */
+.atlas-mark {
+  flex: none;
+  display: block;
+}
+/* Home page: the emblem over the title, sized against it rather than fixed. */
+.cat-mark {
+  width: clamp(2.8rem, 7vw, 5rem);
+  height: auto;
+  margin: 0 auto auto;
 }
 .site-nav {
   display: flex;

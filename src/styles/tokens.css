@@ -65,6 +65,17 @@
   );
   --plate-gloss: light-dark(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
 
+  /* The Atlas mark — the compass rose in the header and on the home page,
+     the page-side twin of the favicon. Its lit facets take the page's own
+     foil, so the emblem changes with the presentation style; the shaded
+     facet has to fall on the dark side of that foil under a light theme and
+     on the dim side under a dark one, which is a pair, not one mix. */
+  --mark-lit: var(--foil);
+  --mark-shade: light-dark(
+    color-mix(in srgb, var(--foil) 62%, var(--ink)),
+    color-mix(in srgb, var(--foil) 55%, var(--paper))
+  );
+
   --radius: 14px;
   --radius-small: 8px;
   --space-1: 0.4rem;

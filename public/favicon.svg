@@ -1,15 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- A hexagonal compass: the case is a ring, the dial a four-point rose
-       folded into a lit facet and a shaded one per arm. Flat faceting rather
-       than gradients, so it stays sharp at 16px. Both palettes travel in the
-       file and prefers-color-scheme picks one, so the mark is dark on a light
-       browser and light on a dark one. -->
+  <!-- A hexagonal compass. The rose overlays the case: four long cardinal
+       points and four quieter minor ones, each arm folded into a lit facet
+       and a shaded one. Flat faceting, no gradients, so it stays sharp at
+       16px. The hairline under the star is the face colour — without it an
+       arm would merge into the ring where it crosses. Both palettes travel
+       in the file and prefers-color-scheme picks one, so the mark is dark on
+       a light browser and light on a dark one. -->
   <style>
     :root {
       --face: #ffffff;
       --ring: #1f2328;
       --lit: #8c959f;
       --shade: #1f2328;
+      --lit2: #b1b8c0;
+      --shade2: #6b747f;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -17,21 +21,38 @@
         --ring: #f0f6fc;
         --lit: #f0f6fc;
         --shade: #6e7681;
+        --lit2: #9198a1;
+        --shade2: #4d545c;
       }
     }
   </style>
-  <path d="M16 1 29 8.5 29 23.5 16 31 3 23.5 3 8.5Z" fill="var(--face)" />
+  <path d="M16 3.8 26.57 9.9 26.57 22.1 16 28.2 5.43 22.1 5.43 9.9Z" fill="var(--face)" />
   <path
     fill-rule="evenodd"
     fill="var(--ring)"
-    d="M16 1 29 8.5 29 23.5 16 31 3 23.5 3 8.5ZM16 4 26.4 10 26.4 22 16 28 5.6 22 5.6 10Z"
+    d="M16 3.8 26.57 9.9 26.57 22.1 16 28.2 5.43 22.1 5.43 9.9ZM16 5.6 25.01 10.8 25.01 21.2 16 26.4 6.99 21.2 6.99 10.8Z"
   />
-  <path d="M16 6.4 13.45 13.45 16 16Z" fill="var(--lit)" />
-  <path d="M16 6.4 18.55 13.45 16 16Z" fill="var(--shade)" />
-  <path d="M25.6 16 18.55 13.45 16 16Z" fill="var(--lit)" />
-  <path d="M25.6 16 18.55 18.55 16 16Z" fill="var(--shade)" />
-  <path d="M16 25.6 18.55 18.55 16 16Z" fill="var(--lit)" />
-  <path d="M16 25.6 13.45 18.55 16 16Z" fill="var(--shade)" />
-  <path d="M6.4 16 13.45 18.55 16 16Z" fill="var(--lit)" />
-  <path d="M6.4 16 13.45 13.45 16 16Z" fill="var(--shade)" />
+  <path
+    d="M16 1 17.53 12.3 24.91 7.09 19.7 14.47 31 16 19.7 17.53 24.91 24.91 17.53 19.7 16 31 14.47 19.7 7.09 24.91 12.3 17.53 1 16 12.3 14.47 7.09 7.09 14.47 12.3Z"
+    fill="var(--face)"
+    stroke="var(--face)"
+    stroke-width="1.1"
+    stroke-linejoin="round"
+  />
+  <path d="M24.91 7.09 17.53 12.3 16 16Z" fill="var(--lit2)" />
+  <path d="M24.91 7.09 19.7 14.47 16 16Z" fill="var(--shade2)" />
+  <path d="M24.91 24.91 19.7 17.53 16 16Z" fill="var(--lit2)" />
+  <path d="M24.91 24.91 17.53 19.7 16 16Z" fill="var(--shade2)" />
+  <path d="M7.09 24.91 14.47 19.7 16 16Z" fill="var(--lit2)" />
+  <path d="M7.09 24.91 12.3 17.53 16 16Z" fill="var(--shade2)" />
+  <path d="M7.09 7.09 12.3 14.47 16 16Z" fill="var(--lit2)" />
+  <path d="M7.09 7.09 14.47 12.3 16 16Z" fill="var(--shade2)" />
+  <path d="M16 1 14.47 12.3 16 16Z" fill="var(--lit)" />
+  <path d="M16 1 17.53 12.3 16 16Z" fill="var(--shade)" />
+  <path d="M31 16 19.7 14.47 16 16Z" fill="var(--lit)" />
+  <path d="M31 16 19.7 17.53 16 16Z" fill="var(--shade)" />
+  <path d="M16 31 17.53 19.7 16 16Z" fill="var(--lit)" />
+  <path d="M16 31 14.47 19.7 16 16Z" fill="var(--shade)" />
+  <path d="M1 16 12.3 17.53 16 16Z" fill="var(--lit)" />
+  <path d="M1 16 12.3 14.47 16 16Z" fill="var(--shade)" />
 </svg>

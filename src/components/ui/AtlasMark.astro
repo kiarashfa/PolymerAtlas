@@ -1,0 +1,59 @@
+---
+// The Atlas mark: a hexagonal compass whose rose overlays the case — the same
+// drawing as public/favicon.svg, but wearing the Edition palette instead of
+// the browser-chrome greys the favicon needs. Lit facets take the page's foil
+// and so change with the presentation style; the shaded facets take the
+// per-theme pair beside it in tokens.css. The four minor arms are the same
+// two colours at half strength, which is what keeps them a second layer.
+//
+// The hairline beneath the star is the paper: without it a foil facet would
+// merge into the foil ring wherever an arm crosses it.
+//
+// Decorative everywhere it is used — the site title and the page heading
+// carry the name — so it is always aria-hidden.
+interface Props {
+  /** Rendered size in px. CSS may override it (the home hero does). */
+  size?: number;
+  class?: string;
+}
+const { size = 22, class: className } = Astro.props;
+---
+
+<svg
+  class:list={['atlas-mark', className]}
+  width={size}
+  height={size}
+  viewBox="0 0 32 32"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    fill-rule="evenodd"
+    fill="var(--mark-lit)"
+    d="M16 3.8 26.57 9.9 26.57 22.1 16 28.2 5.43 22.1 5.43 9.9ZM16 5.6 25.01 10.8 25.01 21.2 16 26.4 6.99 21.2 6.99 10.8Z"
+  ></path>
+  <path
+    d="M16 1 17.53 12.3 24.91 7.09 19.7 14.47 31 16 19.7 17.53 24.91 24.91 17.53 19.7 16 31 14.47 19.7 7.09 24.91 12.3 17.53 1 16 12.3 14.47 7.09 7.09 14.47 12.3Z"
+    fill="var(--paper)"
+    stroke="var(--paper)"
+    stroke-width="1.1"
+    stroke-linejoin="round"></path>
+  <g opacity="0.5">
+    <path d="M24.91 7.09 17.53 12.3 16 16Z" fill="var(--mark-lit)"></path>
+    <path d="M24.91 7.09 19.7 14.47 16 16Z" fill="var(--mark-shade)"></path>
+    <path d="M24.91 24.91 19.7 17.53 16 16Z" fill="var(--mark-lit)"></path>
+    <path d="M24.91 24.91 17.53 19.7 16 16Z" fill="var(--mark-shade)"></path>
+    <path d="M7.09 24.91 14.47 19.7 16 16Z" fill="var(--mark-lit)"></path>
+    <path d="M7.09 24.91 12.3 17.53 16 16Z" fill="var(--mark-shade)"></path>
+    <path d="M7.09 7.09 12.3 14.47 16 16Z" fill="var(--mark-lit)"></path>
+    <path d="M7.09 7.09 14.47 12.3 16 16Z" fill="var(--mark-shade)"></path>
+  </g>
+  <path d="M16 1 14.47 12.3 16 16Z" fill="var(--mark-lit)"></path>
+  <path d="M16 1 17.53 12.3 16 16Z" fill="var(--mark-shade)"></path>
+  <path d="M31 16 19.7 14.47 16 16Z" fill="var(--mark-lit)"></path>
+  <path d="M31 16 19.7 17.53 16 16Z" fill="var(--mark-shade)"></path>
+  <path d="M16 31 17.53 19.7 16 16Z" fill="var(--mark-lit)"></path>
+  <path d="M16 31 14.47 19.7 16 16Z" fill="var(--mark-shade)"></path>
+  <path d="M1 16 12.3 17.53 16 16Z" fill="var(--mark-lit)"></path>
+  <path d="M1 16 12.3 14.47 16 16Z" fill="var(--mark-shade)"></path>
+</svg>

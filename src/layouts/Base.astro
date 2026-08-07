@@ -5,6 +5,7 @@
 // footer, View Transitions, and the three global behaviors (section
 // collapse, citation-click, rail scrollspy).
 import { ClientRouter } from 'astro:transitions';
+import AtlasMark from '../components/ui/AtlasMark.astro';
 import EditionMenu from '../components/ui/EditionMenu.astro';
 import SearchOverlay from '../components/ui/SearchOverlay.astro';
 import MolPopover from '../components/ui/MolPopover.astro';
@@ -57,7 +58,10 @@ const isHome = title === 'Atlas of Polymers';
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-head">
-      <a class="site-title" href={href('/')}>Atlas of Polymers</a>
+      <a class="site-title" href={href('/')}>
+        <AtlasMark class="site-mark" size={30} />
+        Atlas of Polymers
+      </a>
       <nav class="site-nav" aria-label="Site">
         <a href={href('/')} aria-current={current === 'catalogue' ? 'page' : undefined}>
           Catalogue
