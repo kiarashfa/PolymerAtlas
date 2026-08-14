@@ -55,7 +55,8 @@ versus trans, 1,2-vinyl addition -- carry a drawing and a model for each.
 
 ## License
 
-Text and data: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
 The 3D viewer is [3Dmol.js](https://3dmol.csb.pitt.edu/), bundled at
 `public/vendor/` under the BSD-3-Clause licence kept alongside it.
+
+© 2026 Kiarash Farajzadehahary.
+⚖ Licensed under the [KFA Source-Available License 1.0](LICENSE).
