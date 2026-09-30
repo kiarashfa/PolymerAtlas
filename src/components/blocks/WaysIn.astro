@@ -1,0 +1,40 @@
+---
+// The three ways through the Atlas beside the three tools, as two ruled
+// lists of equal length. Closes the home page and the not-found page.
+import LinkList from '../ui/LinkList.astro';
+import { href } from '../../lib/content';
+import { TOOLS } from '../../lib/tools';
+
+const ways = [
+  {
+    key: 'I',
+    name: 'The Catalogue',
+    note: 'Every entry in one sortable, filterable list',
+    href: href('/catalogue/'),
+  },
+  {
+    key: 'II',
+    name: 'The Timeline',
+    note: 'The era spine, one year at a time',
+    href: href('/timeline/'),
+  },
+  {
+    key: 'III',
+    name: 'The Constellation',
+    note: 'Two centuries on one chart you can pan and zoom',
+    href: href('/constellation/'),
+  },
+];
+const tools = TOOLS.map((t) => ({ key: t.glyph, name: t.name, note: t.essence, href: t.href }));
+---
+
+<section class="home-section home-annex">
+  <div>
+    <h2 class="rule-title">Three ways through the Atlas</h2>
+    <LinkList items={ways} />
+  </div>
+  <div>
+    <h2 class="rule-title">The Workshop</h2>
+    <LinkList items={tools} />
+  </div>
+</section>

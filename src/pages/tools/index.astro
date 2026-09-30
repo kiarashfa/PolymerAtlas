@@ -1,0 +1,32 @@
+---
+// The Workshop: the index of the Atlas's tools, the footer's "Tools"
+// destination. The list is the shared one the reader's menu and the home
+// page show, so the three can never disagree.
+import ToolPage from '../../components/templates/ToolPage.astro';
+import LinkList from '../../components/ui/LinkList.astro';
+import { TOOLS } from '../../lib/tools';
+
+const tools = TOOLS.map((t) => ({ key: t.glyph, name: t.name, note: t.essence, href: t.href }));
+---
+
+<ToolPage
+  title="The Workshop"
+  description="The Atlas of Polymers' tools: look up and draw any small molecule, predict four properties from structure, and compare up to three polymers side by side."
+  eyebrow="Tools"
+  lede="Three instruments that sit to one side of the encyclopedia: one draws molecules, one predicts, and one sets polymers side by side."
+>
+  <div class="tool-body">
+    <section class="tool-card">
+      <LinkList items={tools} />
+    </section>
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">How they relate to the Atlas</h2>
+      <p>
+        The molecule lookup and the property predictor work from chemical structure through the
+        Atlas's own chemistry services, so they depend on those services being up; the
+        encyclopedia never does. Their answers stay on their own pages and are never written into
+        an entry. Compare works entirely from the Atlas's cited values, in the browser.
+      </p>
+    </section>
+  </div>
+</ToolPage>

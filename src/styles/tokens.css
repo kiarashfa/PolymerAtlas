@@ -53,6 +53,15 @@
   --era-6: light-dark(#4d5bc9, #9ba8f0);
   --era-color: var(--foil); /* pages without one era (catalogue, timeline head) */
 
+  /* The Compare tool's three polymers: one hue each, on every chart and at
+     the head of each table column. Chosen as a set, and checked as a set for
+     colour-blind separation (every pair, not just neighbours) and contrast
+     against the raised paper in both themes. Deliberately not era hues: here
+     colour means "which polymer", never "which era". */
+  --series-1: light-dark(#2a6db5, #4a8ad8);
+  --series-2: light-dark(#d0662c, #d8743a);
+  --series-3: light-dark(#1a9a7c, #23a887);
+
   /* Museum glazing over a narrative photograph. Both are mixed FROM --paper,
      so each presentation style and each theme glazes with its own stock
      automatically: a warm veil on Gilt, a cooler one on Atelier, and a

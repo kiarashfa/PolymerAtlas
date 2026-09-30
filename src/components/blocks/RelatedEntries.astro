@@ -3,19 +3,29 @@
 // via weighted structured-field overlap (weights: src/data/related-weights.json),
 // deterministic top-N. Never hand-written. Renders between the data blocks
 // and the chronological prev/next.
+//
+// Its head also carries the way into the Compare tool with this polymer
+// already chosen: the measured values of this page beside any other entry's.
 import { relatedFor } from '../../lib/derived';
+import { href } from '../../lib/content';
 
 interface Props {
   id: string;
 }
 const { id } = Astro.props;
 const related = await relatedFor(id);
+const compare = href(`/tools/compare/?p=${encodeURIComponent(id)}`);
 ---
 
-{
-  related.length > 0 && (
-    <aside class="related" aria-label="Related polymers" data-pagefind-ignore>
-      <h2 class="related-head">Related in the Atlas</h2>
+<aside class="related" aria-label="Related polymers" data-pagefind-ignore>
+  <div class="related-top">
+    {related.length > 0 && <h2 class="related-head">Related in the Atlas</h2>}
+    <a class="related-compare" href={compare}>
+      <span aria-hidden="true">⇌</span> Compare with…
+    </a>
+  </div>
+  {
+    related.length > 0 && (
       <div class="related-cards">
         {related.map((r) => (
           <a class={`related-card era-c-${r.era.index}`} href={r.path}>
@@ -31,6 +41,6 @@ const related = await relatedFor(id);
           </a>
         ))}
       </div>
-    </aside>
-  )
-}
+    )
+  }
+</aside>

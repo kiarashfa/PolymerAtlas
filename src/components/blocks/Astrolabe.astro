@@ -1,0 +1,357 @@
+---
+// The home page's instrument: every entry of the Atlas as a mark on one dial,
+// grouped into its era's arc, with the compass mark as the pivot. A rule
+// turns to whichever mark the reader points at (hover, focus or a first tap)
+// and the centre reads that entry out; a click opens it. At rest the rule
+// points at the day's opening page, the same entry the spread below the dial
+// shows.
+//
+// Drawn at build time in one 800-unit square. Each mark is a real link with a
+// wedge-shaped hit area, so the thin strokes stay easy to reach; the era arcs
+// and numerals link to that era on the timeline.
+import AtlasMark from '../ui/AtlasMark.astro';
+import { catalogueIndex } from '../../lib/derived';
+import { eras, eraShortName, href } from '../../lib/content';
+import { openingPages, pageForDay } from '../../lib/featured';
+
+const records = await catalogueIndex();
+
+const C = 400;
+const GAP = 2; // empty slots between eras
+const slots = records.length + eras.length * GAP;
+const step = 360 / slots;
+const R = {
+  outer: 392,
+  numeral: 373,
+  arc: 352,
+  ringOut: 340,
+  tickOut: 334,
+  hubIn: 298,
+  variantIn: 306,
+  concept: 318,
+  ringIn: 296,
+  gradIn: 290,
+  year: 279,
+  foil: 258,
+  legend: 236,
+  inner: 214,
+  hitIn: 262,
+  hitOut: 346,
+};
+
+const f = (n: number) => Number(n.toFixed(2));
+const pol = (r: number, deg: number): [number, number] => {
+  const t = ((deg - 90) * Math.PI) / 180;
+  return [f(C + r * Math.cos(t)), f(C + r * Math.sin(t))];
+};
+const arc = (r: number, a0: number, a1: number, sweep = 1) => {
+  const [x0, y0] = pol(r, a0);
+  const [x1, y1] = pol(r, a1);
+  return `M${x0} ${y0}A${r} ${r} 0 ${Math.abs(a1 - a0) > 180 ? 1 : 0} ${sweep} ${x1} ${y1}`;
+};
+const wedge = (a0: number, a1: number) => {
+  const [ax, ay] = pol(R.hitOut, a0);
+  const [bx, by] = pol(R.hitOut, a1);
+  const [cx, cy] = pol(R.hitIn, a1);
+  const [dx, dy] = pol(R.hitIn, a0);
+  return `M${ax} ${ay}A${R.hitOut} ${R.hitOut} 0 0 1 ${bx} ${by}L${cx} ${cy}A${R.hitIn} ${R.hitIn} 0 0 0 ${dx} ${dy}Z`;
+};
+
+const ERA_NUMERALS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+
+interface Mark {
+  id: string;
+  path: string;
+  angle: number;
+  kind: 'hub' | 'variant' | 'concept';
+  era: number;
+  year: number;
+  title: string;
+  subtitle: string | null;
+  line?: [number, number, number, number];
+  diamond?: string;
+  hit: string;
+}
+const marks: Mark[] = [];
+const eraGeom: { i: number; arc: string; numeral: [number, number]; year: [number, number]; start: number; name: string }[] = [];
+
+let slot = 0;
+eras.forEach((era, i) => {
+  const members = records.filter((r) => r.era.index === i);
+  slot += GAP / 2;
+  const first = slot;
+  for (const r of members) {
+    const a = (slot + 0.5) * step;
+    const mark: Mark = {
+      id: r.id,
+      path: r.path,
+      angle: f(a),
+      kind: r.type,
+      era: i,
+      year: r.year,
+      title: r.title,
+      subtitle: r.subtitle,
+      hit: wedge(slot * step, (slot + 1) * step),
+    };
+    if (r.type === 'concept') {
+      const [x, y] = pol(R.concept, a);
+      mark.diamond = `translate(${x} ${y}) rotate(${f(a)})`;
+    } else {
+      const [x0, y0] = pol(r.type === 'hub' ? R.hubIn : R.variantIn, a);
+      const [x1, y1] = pol(R.tickOut, a);
+      mark.line = [x0, y0, x1, y1];
+    }
+    marks.push(mark);
+    slot += 1;
+  }
+  const last = slot;
+  slot += GAP / 2;
+  eraGeom.push({
+    i,
+    arc: arc(R.arc, first * step + 1, last * step - 1),
+    numeral: pol(R.numeral, ((first + last) / 2) * step),
+    year: pol(R.year, (first + 0.5) * step),
+    start: era.year_start,
+    name: eraShortName(era.name),
+  });
+});
+
+const graduations = Array.from({ length: slots }, (_, s) => [
+  ...pol(R.gradIn, s * step),
+  ...pol(R.ringIn - 1, s * step),
+]);
+
+// The lower legend is words, not a span of years: set in a seal's position,
+// a date reads as the year the Atlas was founded.
+const legendBottom = 'The polymers that made the modern world';
+const topArc = arc(R.legend, -70, 70);
+const bottomArc = arc(R.legend, 250, 110, 0);
+
+// At rest the rule points at the build day's opening page; in the browser
+// the script turns it to the reader's own day (the spread's choice) before
+// the rule and readout are revealed, so the two never disagree on screen.
+const pages = await openingPages();
+const now = new Date();
+const buildDay = Math.floor(
+  Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86_400_000
+);
+const restId = pages[pageForDay(buildDay, pages.length)]?.id;
+const rest = marks.find((m) => m.id === restId) ?? marks[0];
+const markSize = 96;
+---
+
+<div class="astro-dial" data-dial data-rest={rest.id}>
+  <svg
+    class="astro-svg"
+    viewBox="0 0 800 800"
+    role="group"
+    aria-label={`Every entry of the Atlas, ${records.length} marks around a dial, grouped by era`}
+  >
+    <defs>
+      <path id="dial-legend-top" d={topArc}></path>
+      <path id="dial-legend-bottom" d={bottomArc}></path>
+      <radialGradient id="dial-glow">
+        <stop offset="0" class="dial-glow-in"></stop>
+        <stop offset="1" class="dial-glow-out"></stop>
+      </radialGradient>
+    </defs>
+
+    <circle cx={C} cy={C} r="262" fill="url(#dial-glow)"></circle>
+    <circle cx={C} cy={C} r={R.outer} class="dial-hair"></circle>
+    <circle cx={C} cy={C} r={R.ringOut} class="dial-hair"></circle>
+    <circle cx={C} cy={C} r={R.ringIn} class="dial-hair"></circle>
+    <circle cx={C} cy={C} r={R.foil} class="dial-hair dial-hair--foil"></circle>
+    <circle cx={C} cy={C} r={R.inner} class="dial-hair"></circle>
+
+    <g class="dial-grad" aria-hidden="true">
+      {graduations.map(([x1, y1, x2, y2]) => <line x1={x1} y1={y1} x2={x2} y2={y2} />)}
+    </g>
+
+    {
+      eraGeom.map((e) => (
+        <a
+          class={`dial-era era-c-${e.i}`}
+          href={href(`/timeline/#era-${e.i}`)}
+          aria-label={`${e.name}, on the timeline`}
+        >
+          <path class="dial-era-arc" d={e.arc} />
+          <text
+            class="dial-era-num"
+            x={e.numeral[0]}
+            y={e.numeral[1]}
+            text-anchor="middle"
+            dominant-baseline="central"
+          >
+            {ERA_NUMERALS[e.i]}
+          </text>
+        </a>
+      ))
+    }
+    <g class="dial-years" aria-hidden="true">
+      {
+        eraGeom.map((e) => (
+          <text x={e.year[0]} y={e.year[1]} text-anchor="middle" dominant-baseline="central">
+            {e.start}
+          </text>
+        ))
+      }
+    </g>
+
+    <text class="dial-legend" aria-hidden="true">
+      <textPath href="#dial-legend-top" startOffset="50%" text-anchor="middle">Atlas of Polymers</textPath>
+    </text>
+    <text class="dial-legend dial-legend--sub" aria-hidden="true">
+      <textPath href="#dial-legend-bottom" startOffset="50%" text-anchor="middle">{legendBottom}</textPath>
+    </text>
+
+    <g class="dial-rule" data-rule style={`--turn:${rest.angle}deg`} aria-hidden="true">
+      <line x1={C} y1={C + 34} x2={C} y2={C - R.tickOut - 4}></line>
+      <circle cx={C} cy={C - R.tickOut - 4} r="4"></circle>
+    </g>
+
+    <g class="dial-marks">
+      {
+        marks.map((m) => (
+          <a
+            class={`dial-mark era-c-${m.era}`}
+            href={m.path}
+            aria-label={`${m.year}, ${m.title}`}
+            data-id={m.id}
+            data-angle={m.angle}
+            data-year={m.year}
+            data-title={m.title}
+            data-sub={m.subtitle ?? ''}
+            data-era={m.era}
+            data-era-name={eraGeom[m.era].name}
+          >
+            <path class="dial-hit" d={m.hit} />
+            {m.line ? (
+              <line
+                class="dial-tick"
+                x1={m.line[0]}
+                y1={m.line[1]}
+                x2={m.line[2]}
+                y2={m.line[3]}
+              />
+            ) : (
+              <path class="dial-tick dial-tick--concept" transform={m.diamond} d="M0 -6 4 0 0 6 -4 0Z" />
+            )}
+          </a>
+        ))
+      }
+    </g>
+
+    <g transform={`translate(${C - markSize / 2} ${C - markSize / 2})`} aria-hidden="true">
+      <AtlasMark size={markSize} />
+    </g>
+    <circle cx={C} cy={C} r="5" class="dial-pivot" aria-hidden="true"></circle>
+  </svg>
+
+  <noscript><style>.astro-dial .dial-rule, .astro-dial .dial-readout { opacity: 1; }</style></noscript>
+  <div
+    class={`dial-readout era-c-${rest.era}`}
+    data-readout
+    data-side={rest.angle > 90 && rest.angle < 270 ? 'top' : 'bottom'}
+  >
+    <p class="dial-readout-era u-caps" data-r-era>{eraGeom[rest.era].name}</p>
+    <p class="dial-readout-year" data-r-year>{rest.year}</p>
+    <p class="dial-readout-title" data-r-title>{rest.title}</p>
+    <p class="dial-readout-sub" data-r-sub>{rest.subtitle}</p>
+    <a class="dial-readout-link" href={rest.path} data-r-link>Read the entry →</a>
+  </div>
+</div>
+
+<script>
+  // One dial per page at most (the home page). Listeners are bound to the
+  // dial itself, which is replaced on every navigation, so nothing leaks.
+  function initDial() {
+    const dial = document.querySelector<HTMLElement>('[data-dial]');
+    if (!dial) return;
+    const rule = dial.querySelector<SVGGElement>('[data-rule]')!;
+    const readout = dial.querySelector<HTMLElement>('[data-readout]')!;
+    const marks = Array.from(dial.querySelectorAll<SVGAElement>('.dial-mark'));
+    const out = {
+      era: readout.querySelector<HTMLElement>('[data-r-era]')!,
+      year: readout.querySelector<HTMLElement>('[data-r-year]')!,
+      title: readout.querySelector<HTMLElement>('[data-r-title]')!,
+      sub: readout.querySelector<HTMLElement>('[data-r-sub]')!,
+      link: readout.querySelector<HTMLAnchorElement>('[data-r-link]')!,
+    };
+
+    // The rule keeps a running angle so it always turns the short way round
+    // instead of unwinding through 360°.
+    let lastPointer = 'mouse';
+    let moving: number | undefined;
+    function place(side: 'top' | 'bottom', animate: boolean) {
+      if (readout.dataset.side === side) return;
+      window.clearTimeout(moving);
+      if (!animate) {
+        readout.dataset.side = side;
+        return;
+      }
+      readout.classList.add('is-moving');
+      moving = window.setTimeout(() => {
+        readout.dataset.side = side;
+        readout.classList.remove('is-moving');
+      }, 170);
+    }
+    let turn = Number(marks.find((m) => m.dataset.id === dial.dataset.rest)?.dataset.angle ?? 0);
+    let current: SVGAElement | null = null;
+
+    function select(mark: SVGAElement, animate = true) {
+      if (mark === current) return;
+      current?.classList.remove('is-selected');
+      current = mark;
+      mark.classList.add('is-selected');
+      const target = Number(mark.dataset.angle);
+      let delta = (target - (((turn % 360) + 360) % 360)) % 360;
+      if (delta > 180) delta -= 360;
+      if (delta < -180) delta += 360;
+      turn += delta;
+      rule.classList.toggle('no-anim', !animate);
+      rule.style.setProperty('--turn', `${turn}deg`);
+      // The readout sits in whichever half of the centre the rule is not
+      // crossing, so the rule never runs through the words.
+      place(target > 90 && target < 270 ? 'top' : 'bottom', animate);
+      const d = mark.dataset;
+      readout.classList.remove(...Array.from(readout.classList).filter((c) => c.startsWith('era-c-')));
+      readout.classList.add(`era-c-${d.era}`);
+      out.era.textContent = d.eraName ?? '';
+      out.year.textContent = d.year ?? '';
+      out.title.textContent = d.title ?? '';
+      out.sub.textContent = d.sub ?? '';
+      out.link.href = mark.getAttribute('href') ?? '#';
+    }
+
+    // At rest: the day's opening page, if the spread below has chosen one.
+    const featured = document.querySelector<HTMLElement>('[data-opening]')?.dataset.chosen;
+    const restMark =
+      marks.find((m) => m.dataset.id === featured) ??
+      marks.find((m) => m.dataset.id === dial.dataset.rest);
+    if (restMark) select(restMark, false);
+    // Only now show the rule and the readout, already on the right entry.
+    setTimeout(() => dial.classList.add('is-live'), 40);
+
+    for (const m of marks) {
+      m.addEventListener('pointerenter', (e) => {
+        if (e.pointerType === 'mouse' || e.pointerType === 'pen') select(m);
+      });
+      // Keyboard focus reads a mark; a tap also focuses it on the way to the
+      // click, and that must not count as the first of the two taps below.
+      m.addEventListener('focus', () => {
+        if (lastPointer !== 'touch') select(m);
+      });
+    }
+    // On a touch screen there is no hover: the first tap on a mark turns the
+    // rule to it, and a second tap on the same mark opens it.
+    dial.addEventListener('pointerdown', (e) => (lastPointer = e.pointerType));
+    dial.addEventListener('keydown', () => (lastPointer = 'keyboard'));
+    dial.addEventListener('click', (e) => {
+      const mark = (e.target as Element).closest<SVGAElement>('.dial-mark');
+      if (!mark || lastPointer !== 'touch' || mark === current) return;
+      e.preventDefault();
+      select(mark);
+    });
+  }
+  document.addEventListener('astro:page-load', initDial);
+</script>

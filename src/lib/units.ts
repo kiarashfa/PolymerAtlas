@@ -98,3 +98,37 @@ export function imperialText(
   const fmt = (v: number) => (rule.format ?? sigFigs)(rule.convert(v));
   return assembleValue(value, min, max, rule.unit, fmt);
 }
+
+// ---------------------------------------------------------- the preference --
+export type UnitSystem = 'si' | 'imperial';
+
+/** Announced on `document` whenever the reader switches unit system, so
+ *  anything drawn from numbers (the Compare charts) can redraw. */
+export const UNITS_CHANGE_EVENT = 'pa:units-change';
+
+export function storedUnits(): UnitSystem {
+  try {
+    if (localStorage.getItem('pa-units') === 'imperial') return 'imperial';
+  } catch {
+    /* ignore */
+  }
+  return 'si';
+}
+
+/** One SI number in the reader's system: the number to plot and the unit to
+ *  print beside it. Units without an imperial form pass through unchanged. */
+export function inSystem(v: number, unit: string, system: UnitSystem): { v: number; unit: string } {
+  const rule = system === 'imperial' ? IMPERIAL_RULES[unit.trim()] : undefined;
+  return rule ? { v: rule.convert(v), unit: rule.unit } : { v, unit: unit.trim() };
+}
+
+/** The display string for a value in the reader's system. */
+export function valueText(
+  value: number | null,
+  min: number | null,
+  max: number | null,
+  unit: string,
+  system: UnitSystem
+): string | null {
+  return (system === 'imperial' ? imperialText(value, min, max, unit) : null) ?? siText(value, min, max, unit);
+}

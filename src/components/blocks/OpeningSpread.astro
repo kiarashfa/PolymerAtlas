@@ -1,0 +1,98 @@
+---
+// "A page to begin with": one entry opened like a book, its first photograph
+// on the left page and the opening of its story on the right. The entry
+// changes with the reader's calendar day.
+//
+// The server renders the build day's entry, so the page is whole without
+// JavaScript; every candidate travels with it as data, and the small inline
+// script below swaps in the reader's own day before the section is painted.
+// It also records its choice on the section, where the dial above reads it
+// to set its rule at rest.
+import { openingPages, pageForDay, dayStride } from '../../lib/featured';
+
+const pages = await openingPages();
+const now = new Date();
+const buildDay = Math.floor(
+  Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) / 86_400_000
+);
+const page = pages[pageForDay(buildDay, pages.length)];
+// Handed to the browser so it walks the same order.
+const stride = dayStride(pages.length);
+---
+
+<section
+  class={`home-section opening era-c-${page.era}`}
+  data-opening
+  data-chosen={page.id}
+  data-stride={stride}
+  aria-label="A page to begin with"
+>
+  <h2 class="rule-title">From the Atlas · a page to begin with</h2>
+  <div class="opening-spread">
+    <figure class="opening-page opening-page--plate">
+      <p class="plate-label" data-o-label hidden={!page.plate.label}>{page.plate.label}</p>
+      <span class="plate-glass">
+        <img
+          class="plate-img"
+          data-o-img
+          src={page.plate.src}
+          srcset={page.plate.srcset}
+          sizes="(max-width: 860px) 90vw, 30rem"
+          width={page.plate.width}
+          height={page.plate.height}
+          alt={page.plate.alt}
+          loading="lazy"
+          decoding="async"
+        />
+      </span>
+      <figcaption class="opening-caption" data-o-caption>{page.plate.caption}</figcaption>
+    </figure>
+    <div class="opening-page opening-page--text">
+      <p class="opening-era u-caps" data-o-era>{page.eraName}</p>
+      <p class="opening-year" data-o-year>{page.year}</p>
+      <h3 class="opening-title">
+        <a href={page.path} data-o-title>{page.title}</a>
+      </h3>
+      <p class="opening-sub" data-o-sub hidden={!page.subtitle}>{page.subtitle}</p>
+      <p class="opening-excerpt" data-o-excerpt set:html={page.excerpt} />
+      <a class="opening-more" href={page.path} data-o-link>Read the entry →</a>
+    </div>
+  </div>
+</section>
+
+{/* Data, not code: every candidate page, for the swap below. */}
+<script is:inline type="application/json" data-opening-pages set:html={JSON.stringify(pages)} />
+<script is:inline>
+  (() => {
+    const section = document.querySelector('[data-opening]');
+    const data = document.querySelector('[data-opening-pages]');
+    if (!section || !data) return;
+    const pages = JSON.parse(data.textContent);
+    const now = new Date();
+    const day = Math.floor(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) / 86400000);
+    const stride = Number(section.dataset.stride) || 1;
+    const n = pages.length;
+    const page = pages[(((day * stride) % n) + n) % n];
+    if (!page || page.id === section.dataset.chosen) return;
+    const $ = (k) => section.querySelector('[data-o-' + k + ']');
+    section.dataset.chosen = page.id;
+    section.className = section.className.replace(/era-c-\d+/, 'era-c-' + page.era);
+    const img = $('img');
+    img.srcset = page.plate.srcset;
+    img.src = page.plate.src;
+    img.width = page.plate.width;
+    img.height = page.plate.height;
+    img.alt = page.plate.alt;
+    $('label').textContent = page.plate.label || '';
+    $('label').hidden = !page.plate.label;
+    $('caption').textContent = page.plate.caption || '';
+    $('era').textContent = page.eraName;
+    $('year').textContent = page.year;
+    $('title').textContent = page.title;
+    $('title').href = page.path;
+    $('sub').textContent = page.subtitle || '';
+    $('sub').hidden = !page.subtitle;
+    $('excerpt').innerHTML = page.excerpt;
+    $('link').href = page.path;
+  })();
+</script>

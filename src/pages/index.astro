@@ -1,150 +1,61 @@
 ---
-// Homepage = the catalogue: the detailed sortable LIST presentation of the
-// whole archive (the timeline at /timeline/ is its chronological sibling).
-// Server-rendered chronologically so the full list exists without JS; the
-// controls only reorder/hide rows.
+// The home page: the Atlas as one instrument. The dial carries every entry in
+// its era; beneath it one entry opens as a spread for the day, and the page
+// closes on the three ways through the archive beside the three tools.
 import Base from '../layouts/Base.astro';
-import AtlasMark from '../components/ui/AtlasMark.astro';
-import { browseRowsByEra, eras, eraShortName, eraIndex } from '../lib/content';
+import Astrolabe from '../components/blocks/Astrolabe.astro';
+import OpeningSpread from '../components/blocks/OpeningSpread.astro';
+import WaysIn from '../components/blocks/WaysIn.astro';
+import { eras, href, loadFamilies, loadPeople } from '../lib/content';
+import { catalogueIndex } from '../lib/derived';
+import { SITE_TAGLINE } from '../lib/site';
 
-const byEra = await browseRowsByEra();
-const rows = byEra.flatMap((g) => g.rows);
-const total = rows.length;
-const haystack = (r: (typeof rows)[number]) =>
-  [r.title, r.subtitle ?? '', r.tagline ?? '', ...r.abbreviation, ...r.families]
-    .join(' ')
-    .toLowerCase();
+const records = await catalogueIndex();
+const families = (await loadFamilies()).filter((f) => f.data.membership.axis === 'chemical_family');
+const people = await loadPeople();
+
+const stats = [
+  { n: records.length, label: 'entries', href: href('/catalogue/') },
+  { n: eras.length, label: 'eras', href: href('/timeline/') },
+  { n: families.length, label: 'families', href: href('/families/') },
+  { n: people.length, label: 'pioneers', href: href('/families/#pioneers') },
+];
+
 const description =
-  'A free, history-narrated encyclopedia of the polymers that made the modern world, with ' +
-  `${total} entries across seven eras, from natural macromolecules to designed smart materials.`;
+  `Atlas of Polymers, ${SITE_TAGLINE}: ${records.length} entries across seven eras, ` +
+  'each opening with the history of its year and closing on cited property data.';
 ---
 
-<Base title="Atlas of Polymers" description={description} current="catalogue">
-  <main>
-    <header class="cat-head">
-      <AtlasMark class="cat-mark" size={56} />
-      <h1 class="cat-title">Atlas of Polymers</h1>
-      <p class="cat-sub">
-        A history-narrated encyclopedia of the polymers that made the modern world, with {total}
-        entries across seven eras, 1833–2015. Browse, filter, and sort the whole archive.
-      </p>
-    </header>
+<Base title="Atlas of Polymers" description={description} home>
+  <main class="home">
+    <section class="home-hero">
+      <div class="home-intro">
+        <p class="home-eyebrow u-caps">An encyclopedia with a memory</p>
+        <h1 class="home-title">Atlas <em>of</em> Polymers</h1>
+        <p class="home-sub">
+          A history-narrated encyclopedia of the polymers that made the modern world. Every mark on
+          the dial is an entry, set in its own era; point to one to read it.
+        </p>
+        <div class="home-actions">
+          <a class="btn btn--foil" href={href('/catalogue/')}>Open the catalogue</a>
+          <a class="btn" href={href('/constellation/')}>Explore the constellation</a>
+        </div>
+        <div class="home-stats">
+          {
+            stats.map((s) => (
+              <a class="home-stat" href={s.href}>
+                <span class="home-stat-n">{s.n}</span>
+                <span class="home-stat-label">{s.label}</span>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+      <Astrolabe />
+    </section>
 
-    <div class="cat-controls">
-      <input id="cat-search" type="search" placeholder="Search the archive…" autocomplete="off" />
-      <select id="cat-type" aria-label="Type">
-        <option value="all">All entries</option>
-        <option value="polymer">Polymers</option>
-        <option value="concept">Concepts</option>
-      </select>
-      <select id="cat-era" aria-label="Era">
-        <option value="all">Any era</option>
-        {eras.map((era, i) => <option value={String(i)}>{eraShortName(era.name)}</option>)}
-      </select>
-      <select id="cat-sort" aria-label="Sort">
-        <option value="year">Year, oldest first</option>
-        <option value="year-desc">Year, newest first</option>
-        <option value="title">Title A–Z</option>
-        <option value="family">Chemical family</option>
-        <option value="era">Era order</option>
-      </select>
-      <span class="cat-count" id="cat-count">{total} of {total} entries</span>
-    </div>
+    <OpeningSpread />
 
-    <div class="cat-rows" data-catalogue>
-      {
-        rows.map((row) => {
-          const eraI = eraIndex(row.era);
-          const shared = {
-            class: `cat-row era-c-${eraI}${row.concept ? ' cat-row--concept' : ''}`,
-            'data-title': row.title.toLowerCase(),
-            'data-year': String(row.year),
-            'data-era': String(eraI),
-            'data-type': row.concept ? 'concept' : 'polymer',
-            'data-family': (row.families[0] ?? '~').toLowerCase(),
-            'data-haystack': haystack(row),
-          };
-          return (
-            <a {...shared} href={row.path}>
-              <span class="cat-row-year">
-                <b>{row.year}</b>
-                <span class="type-badge">{row.concept ? 'concept' : 'polymer'}</span>
-              </span>
-              <span class="cat-row-main">
-                <span class="cat-row-title" transition:name={`ed-${row.id}`}>
-                  {row.title}
-                </span>
-                {row.subtitle && <span class="cat-row-sub">{row.subtitle}</span>}
-              </span>
-              <span class="cat-row-meta">
-                <span class="cat-row-era">{eraShortName(row.era)}</span>
-                <span>
-                  {row.families.map((f) => (
-                    <span class="chip chip--family">{f}</span>
-                  ))}
-                </span>
-              </span>
-            </a>
-          );
-        })
-      }
-    </div>
+    <WaysIn />
   </main>
 </Base>
-
-<script>
-  function initCatalogue() {
-    const wrap = document.querySelector<HTMLElement>('[data-catalogue]');
-    if (!wrap) return;
-    const rows = Array.from(wrap.querySelectorAll<HTMLElement>('.cat-row'));
-    const search = document.getElementById('cat-search') as HTMLInputElement | null;
-    const eraSel = document.getElementById('cat-era') as HTMLSelectElement | null;
-    const typeSel = document.getElementById('cat-type') as HTMLSelectElement | null;
-    const sortSel = document.getElementById('cat-sort') as HTMLSelectElement | null;
-    const count = document.getElementById('cat-count');
-    if (!search || !eraSel || !typeSel || !sortSel || !count) return;
-    const collator = new Intl.Collator('en');
-
-    function apply() {
-      const q = search!.value.trim().toLowerCase();
-      const era = eraSel!.value;
-      const type = typeSel!.value;
-      const sort = sortSel!.value;
-      let visible = 0;
-      for (const r of rows) {
-        const show =
-          (!q || (r.dataset.haystack ?? '').includes(q)) &&
-          (era === 'all' || r.dataset.era === era) &&
-          (type === 'all' || r.dataset.type === type);
-        r.classList.toggle('is-hidden', !show);
-        if (show) visible++;
-      }
-      const byTitle = (a: HTMLElement, b: HTMLElement) =>
-        collator.compare(a.dataset.title ?? '', b.dataset.title ?? '');
-      const byYear = (a: HTMLElement, b: HTMLElement) =>
-        Number(a.dataset.year) - Number(b.dataset.year);
-      const sorted = rows.slice().sort((a, b) => {
-        switch (sort) {
-          case 'title':
-            return byTitle(a, b);
-          case 'year-desc':
-            return byYear(b, a) || byTitle(a, b);
-          case 'family':
-            return (
-              collator.compare(a.dataset.family ?? '', b.dataset.family ?? '') || byTitle(a, b)
-            );
-          case 'era':
-            return Number(a.dataset.era) - Number(b.dataset.era) || byYear(a, b) || byTitle(a, b);
-          default:
-            return byYear(a, b) || byTitle(a, b);
-        }
-      });
-      for (const r of sorted) wrap!.appendChild(r);
-      count!.textContent = `${visible} of ${rows.length} entries`;
-    }
-
-    for (const el of [search, eraSel, typeSel, sortSel]) el.addEventListener('input', apply);
-    apply();
-  }
-  document.addEventListener('astro:page-load', initCatalogue);
-</script>

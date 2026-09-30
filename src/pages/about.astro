@@ -1,16 +1,36 @@
 ---
-// About: what the Atlas is, how to reach whoever keeps it, and — for anyone
-// who wants to — how to help pay for the next entries. Like the tool pages
-// it sits outside the chronological spine, so it wears the same quiet
-// chrome: neutral foil, no era strip, no rail, no chronological neighbours.
+// About: what the Atlas is, how to read an entry, where its material comes
+// from, how to reach whoever keeps it, and — for anyone who wants to — how
+// to help pay for the next entries. Like the tool pages it sits outside the
+// chronological spine, so it wears the same quiet chrome, but it opens on
+// the framed title plate: this is the book's colophon.
 //
 // The two brand glyphs are inlined from src/assets/icons rather than
 // referenced with <img>, for the same reason the structure drawings are:
 // they are drawn in `currentColor` and an <img> renders in its own document,
 // where there is no page colour to inherit.
 import ToolPage from '../components/templates/ToolPage.astro';
+import { catalogueIndex } from '../lib/derived';
+import { eras } from '../lib/content';
+import { TOOLS } from '../lib/tools';
 import paypalGlyph from '../assets/icons/paypal.svg?raw';
 import coffeeGlyph from '../assets/icons/buy-me-a-coffee.svg?raw';
+
+const records = await catalogueIndex();
+
+// Counts are written out in words, as a book would set them, and derived so
+// they never go stale as entries are added.
+const ONES = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+  'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+const TENS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+function words(n: number): string {
+  if (n < 20) return ONES[n];
+  if (n < 100) return TENS[Math.floor(n / 10)] + (n % 10 ? `-${ONES[n % 10]}` : '');
+  if (n < 1000)
+    return `${ONES[Math.floor(n / 100)]} hundred${n % 100 ? ` and ${words(n % 100)}` : ''}`;
+  return String(n);
+}
+const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
 
 const contacts = [
   { label: 'Personal site', href: 'https://kiarashfa.github.io/website/' },
@@ -33,12 +53,14 @@ const support = [
 ---
 
 <ToolPage
-  title="About"
-  description="What the Atlas of Polymers is, how to get in touch, and how to support the work."
+  title="About the Atlas"
+  description="What the Atlas of Polymers is, how to read an entry, where its material comes from, how to get in touch, and how to support the work."
   eyebrow="Colophon"
   lede="A free, history-narrated encyclopedia of the materials that made the modern world."
+  plate
+  colophon={`${cap(words(records.length))} entries · ${words(eras.length)} eras`}
 >
-  <div class="tool-body">
+  <div class="tool-body about-body">
     <section class="tool-card tool-colophon">
       <h2 class="tool-card-head u-caps">The project</h2>
       <p>
@@ -50,12 +72,43 @@ const support = [
         and its status, including the ones nobody has verified yet.
       </p>
       <p>
-        Ninety-six entries span seven eras, and there are four ways through them: a sortable
-        catalogue, a timeline along the era spine, a constellation chart you can pan across two
-        centuries, and family pages that gather a lineage in one place. Concept pages carry the
-        equations, person pages the chemists, and two tools (a molecule lookup and a property
-        predictor) sit deliberately to one side of the encyclopedia. The reading is yours to set:
-        three presentation styles, light or dark, SI or imperial.
+        {cap(words(records.length))} entries span {words(eras.length)} eras, and there are three
+        ways through them: a sortable catalogue, a timeline along the era spine, and a constellation
+        chart you can pan across two centuries. Family pages gather a lineage in one place, concept
+        pages carry the equations and person pages the chemists. {cap(words(TOOLS.length))} tools (a
+        molecule lookup, a property predictor and a side-by-side comparison) sit deliberately to one
+        side of the encyclopedia. The reading is yours to set: three presentation styles, light or
+        dark, SI or imperial.
+      </p>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">How to read an entry</h2>
+      <p>
+        Every property is a value with a history. A small number beside it points into the entry's
+        numbered references, and each value is in one of four states, which the page always shows
+        rather than hides:
+      </p>
+      <dl class="about-states">
+        <dt><span class="prop-value">1.14 g/cm³</span><sup class="cite">[1]</sup></dt>
+        <dd>Read in the cited source.</dd>
+        <dt><span class="prop-value">1.14 g/cm³</span><span class="prop-flag">estimate</span></dt>
+        <dd>Inferred from a family's typical range rather than measured, and marked as such.</dd>
+        <dt><span class="prop-empty">not yet available</span></dt>
+        <dd>Nobody has found a sourced value yet. It is a gap, and it says so.</dd>
+        <dt><span class="prop-empty">Not applicable</span></dt>
+        <dd>The property does not exist for this material, like a melting point for a thermoset.</dd>
+      </dl>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">Where it comes from</h2>
+      <p>
+        Property values are taken from two reference handbooks, Wypych's <em>Handbook of Polymers</em>
+        and Mark's <em>Polymer Data Handbook</em>, and from the literature and encyclopedias each entry
+        cites. The photographs are historical images from Wikimedia Commons, each credited with its
+        author and licence in the entry's Illustrations list. The chemical structures are drawn for
+        the Atlas in one house style, in two dimensions and in three.
       </p>
     </section>
 
@@ -81,9 +134,9 @@ const support = [
     <section class="tool-card tool-colophon">
       <h2 class="tool-card-head u-caps">Support</h2>
       <p>
-        Everything here is free to read: no advertising, no accounts, nothing following you from
-        page to page. If the Atlas has been useful, a contribution goes toward the next entries:
-        their sources, their photographs, and the evenings spent checking both.
+        Everything here is free to read: no advertising, no accounts, no membership. If the Atlas
+        has been useful, a contribution goes toward the next entries: their sources, their
+        photographs, and the evenings spent checking both.
       </p>
       <div class="support-row">
         {

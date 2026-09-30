@@ -1,0 +1,151 @@
+---
+// The catalogue: the detailed sortable LIST presentation of the whole
+// archive (the timeline at /timeline/ is its chronological sibling).
+// Server-rendered chronologically so the full list exists without JS; the
+// controls only reorder/hide rows.
+import Base from '../layouts/Base.astro';
+import { browseRowsByEra, eras, eraShortName, eraIndex } from '../lib/content';
+
+const byEra = await browseRowsByEra();
+const rows = byEra.flatMap((g) => g.rows);
+const total = rows.length;
+// True data range, never hardcoded, open-ended like the timeline's.
+const yearFirst = Math.min(...rows.map((r) => r.year));
+const yearLast = Math.max(...rows.map((r) => r.year));
+const haystack = (r: (typeof rows)[number]) =>
+  [r.title, r.subtitle ?? '', r.tagline ?? '', ...r.abbreviation, ...r.families]
+    .join(' ')
+    .toLowerCase();
+const description =
+  `Every entry of the Atlas of Polymers in one list: ${total} polymers and concepts across ` +
+  'seven eras, to browse, filter, and sort.';
+---
+
+<Base title="Catalogue" description={description} current="catalogue">
+  <main>
+    <header class="cat-head">
+      <h1 class="cat-title">The Catalogue</h1>
+      <p class="cat-sub">
+        {`Every entry in the Atlas, ${total} of them across seven eras, ${yearFirst} → ${yearLast}+.`}
+        Browse, filter, and sort the whole archive.
+      </p>
+    </header>
+
+    <div class="cat-controls">
+      <input id="cat-search" type="search" placeholder="Search the archive…" autocomplete="off" />
+      <select id="cat-type" aria-label="Type">
+        <option value="all">All entries</option>
+        <option value="polymer">Polymers</option>
+        <option value="concept">Concepts</option>
+      </select>
+      <select id="cat-era" aria-label="Era">
+        <option value="all">Any era</option>
+        {eras.map((era, i) => <option value={String(i)}>{eraShortName(era.name)}</option>)}
+      </select>
+      <select id="cat-sort" aria-label="Sort">
+        <option value="year">Year, oldest first</option>
+        <option value="year-desc">Year, newest first</option>
+        <option value="title">Title A–Z</option>
+        <option value="family">Chemical family</option>
+        <option value="era">Era order</option>
+      </select>
+      <span class="cat-count" id="cat-count">{total} of {total} entries</span>
+    </div>
+
+    <div class="cat-rows" data-catalogue>
+      {
+        rows.map((row) => {
+          const eraI = eraIndex(row.era);
+          const shared = {
+            class: `cat-row era-c-${eraI}${row.concept ? ' cat-row--concept' : ''}`,
+            'data-title': row.title.toLowerCase(),
+            'data-year': String(row.year),
+            'data-era': String(eraI),
+            'data-type': row.concept ? 'concept' : 'polymer',
+            'data-family': (row.families[0] ?? '~').toLowerCase(),
+            'data-haystack': haystack(row),
+          };
+          return (
+            <a {...shared} href={row.path}>
+              <span class="cat-row-year">
+                <b>{row.year}</b>
+                <span class="type-badge">{row.concept ? 'concept' : 'polymer'}</span>
+              </span>
+              <span class="cat-row-main">
+                <span class="cat-row-title" transition:name={`ed-${row.id}`}>
+                  {row.title}
+                </span>
+                {row.subtitle && <span class="cat-row-sub">{row.subtitle}</span>}
+              </span>
+              <span class="cat-row-meta">
+                <span class="cat-row-era">{eraShortName(row.era)}</span>
+                <span>
+                  {row.families.map((f) => (
+                    <span class="chip chip--family">{f}</span>
+                  ))}
+                </span>
+              </span>
+            </a>
+          );
+        })
+      }
+    </div>
+  </main>
+</Base>
+
+<script>
+  function initCatalogue() {
+    const wrap = document.querySelector<HTMLElement>('[data-catalogue]');
+    if (!wrap) return;
+    const rows = Array.from(wrap.querySelectorAll<HTMLElement>('.cat-row'));
+    const search = document.getElementById('cat-search') as HTMLInputElement | null;
+    const eraSel = document.getElementById('cat-era') as HTMLSelectElement | null;
+    const typeSel = document.getElementById('cat-type') as HTMLSelectElement | null;
+    const sortSel = document.getElementById('cat-sort') as HTMLSelectElement | null;
+    const count = document.getElementById('cat-count');
+    if (!search || !eraSel || !typeSel || !sortSel || !count) return;
+    const collator = new Intl.Collator('en');
+
+    function apply() {
+      const q = search!.value.trim().toLowerCase();
+      const era = eraSel!.value;
+      const type = typeSel!.value;
+      const sort = sortSel!.value;
+      let visible = 0;
+      for (const r of rows) {
+        const show =
+          (!q || (r.dataset.haystack ?? '').includes(q)) &&
+          (era === 'all' || r.dataset.era === era) &&
+          (type === 'all' || r.dataset.type === type);
+        r.classList.toggle('is-hidden', !show);
+        if (show) visible++;
+      }
+      const byTitle = (a: HTMLElement, b: HTMLElement) =>
+        collator.compare(a.dataset.title ?? '', b.dataset.title ?? '');
+      const byYear = (a: HTMLElement, b: HTMLElement) =>
+        Number(a.dataset.year) - Number(b.dataset.year);
+      const sorted = rows.slice().sort((a, b) => {
+        switch (sort) {
+          case 'title':
+            return byTitle(a, b);
+          case 'year-desc':
+            return byYear(b, a) || byTitle(a, b);
+          case 'family':
+            return (
+              collator.compare(a.dataset.family ?? '', b.dataset.family ?? '') || byTitle(a, b)
+            );
+          case 'era':
+            return Number(a.dataset.era) - Number(b.dataset.era) || byYear(a, b) || byTitle(a, b);
+          default:
+            return byYear(a, b) || byTitle(a, b);
+        }
+      });
+      for (const r of sorted) wrap!.appendChild(r);
+      count!.textContent = `${visible} of ${rows.length} entries`;
+    }
+
+    for (const el of [search, eraSel, typeSel, sortSel]) el.addEventListener('input', apply);
+    apply();
+  }
+  document.addEventListener('astro:page-load', initCatalogue);
+</script>

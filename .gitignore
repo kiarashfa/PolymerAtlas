@@ -11,6 +11,11 @@ content_manifest.json
 polymer_document_inventory.md
 historical-milestones.txt
 
+# --- Environment ---
+.env
+.env.*
+!.env.example
+
 # Authoring-only tooling
 /scripts/
 /tests/

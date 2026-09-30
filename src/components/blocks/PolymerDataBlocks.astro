@@ -20,6 +20,7 @@ import {
   SECTIONS,
   type PolymerData,
 } from '../../lib/content';
+import { NUMERIC, RATED, type NumericProp, type RatedProp } from '../../lib/properties';
 
 interface Props {
   data: PolymerData;
@@ -32,50 +33,24 @@ const { numberFor, list: refList } = citationsFor(data.references);
 const familyPage = await familyPathsByTag();
 const personPage = await personPathsByName();
 
-const physical = [
-  describeProperty('Density', data.physical.density),
-  describeProperty('Melt flow index', data.physical.melt_flow_index),
-  describeProperty('Refractive index', data.physical.refractive_index),
-  describeProperty('Transmittance', data.physical.transmittance),
-  describeProperty('Haze', data.physical.haze),
-  describeProperty('Gloss', data.physical.gloss),
-  describeProperty('Water absorption', data.physical.water_absorption),
-  describeProperty('Dielectric constant', data.physical.dielectric_constant),
-  describeProperty('Dielectric strength', data.physical.dielectric_strength),
-  describeProperty('Electrical conductivity', data.physical.electrical_conductivity),
-];
+// Rows come from the shared property catalogue, in its order and wording.
+const num = (props: NumericProp[]) =>
+  props.flatMap((p) => {
+    const v = p.get(data);
+    return v ? [describeProperty(p.label, v)] : [];
+  });
+const rated = (props: RatedProp[]) => props.map((p) => describeRated(p.label, p.get(data)));
 
-const thermal = [
-  describeProperty('Glass transition (Tg)', data.thermal.tg),
-  describeProperty('Melting temperature (Tm)', data.thermal.tm),
-  describeProperty('Crystallization (Tc)', data.thermal.tc),
-  describeProperty('Heat deflection (HDT)', data.thermal.hdt),
-  describeProperty('Decomposition onset', data.thermal.decomposition_onset),
-  describeProperty('Thermal conductivity', data.thermal.thermal_conductivity),
-];
-
-const mechanical = [
-  describeProperty('Tensile modulus', data.mechanical.tensile_modulus),
-  describeProperty('Yield strength', data.mechanical.yield_strength),
-  describeProperty('Tensile strength at break', data.mechanical.tensile_strength_at_break),
-  describeProperty('Elongation at break', data.mechanical.elongation_at_break),
-  describeProperty('Impact strength (Izod)', data.mechanical.impact_izod),
-  describeProperty('Impact strength (Charpy)', data.mechanical.impact_charpy),
-  describeProperty('Hardness', data.mechanical.hardness),
-  describeProperty('Flexural modulus', data.mechanical.flexural_modulus),
-  describeProperty("Poisson's ratio", data.mechanical.poissons_ratio),
-  describeProperty('Coefficient of friction', data.mechanical.coefficient_of_friction),
-];
+const physical = num(NUMERIC.physical);
+const thermal = num(NUMERIC.thermal);
+const mechanical = num(NUMERIC.mechanical);
 
 const resistance = [
   ...Object.entries(data.chemical_resistance.solvent_resistance).map(([solvent, rv]) =>
     describeRated(`Solvent: ${solvent}`, rv)
   ),
-  describeRated('Weathering / UV', data.chemical_resistance.weathering_uv),
-  describeRated('Hydrolysis resistance', data.chemical_resistance.hydrolysis_resistance),
-  describeRated('Flammability (UL94)', data.chemical_resistance.flammability_ul94),
-  describeProperty('Limiting oxygen index', data.chemical_resistance.limiting_oxygen_index),
-  describeProperty('Solubility parameter (δ)', data.chemical_resistance.solubility_parameter),
+  ...rated(RATED.resistance),
+  ...num(NUMERIC.resistance),
 ];
 
 // Formula-style labels: O2 -> O₂, CO2 -> CO₂. Left alone when the key is a
@@ -91,28 +66,14 @@ const chiValues = data.chemical_resistance.interaction_parameter_chi.map((c) =>
   describeProperty(c.key, c)
 );
 
-const molecularWeight = [
-  describeProperty('Number average (Mn)', data.structure_morphology.molecular_weight.mn),
-  describeProperty('Mass average (Mw)', data.structure_morphology.molecular_weight.mw),
-  describeProperty('Dispersity (Mw/Mn)', data.structure_morphology.molecular_weight.pdi),
-];
+const molecularWeight = num(NUMERIC.molecularWeight);
 
-const morphProps = data.structure_morphology.crystallinity_typical
-  ? [describeProperty('Typical crystallinity', data.structure_morphology.crystallinity_typical)]
-  : [];
+// Typical crystallinity is optional in the schema: no row when it is absent.
+const morphProps = num(NUMERIC.morphology);
 
-const toxicity = [
-  describeProperty('LD50 (oral, rat)', data.toxicity_safety.ld50_oral_rat),
-  describeProperty('NFPA health', data.toxicity_safety.nfpa_health_rating),
-  describeProperty('NFPA flammability', data.toxicity_safety.nfpa_flammability_rating),
-  describeProperty('NFPA reactivity', data.toxicity_safety.nfpa_reactivity_rating),
-  describeRated('Carcinogenic classification', data.toxicity_safety.carcinogenic_classification),
-];
+const toxicity = [...num(NUMERIC.toxicity), ...rated(RATED.toxicity)];
 
-const processingProps = [
-  describeProperty('Processing temperature', data.processing.processing_temp_range),
-  describeProperty('Shrinkage rate', data.processing.shrinkage_rate),
-];
+const processingProps = num(NUMERIC.processing);
 
 const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Yes' : 'No');
 ---

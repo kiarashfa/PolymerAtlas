@@ -1,0 +1,36 @@
+---
+// A ruled list of destinations: a key in the margin (a numeral or a tool's
+// glyph), a name with one line under it, and an arrow that moves on hover.
+// The home page, the tools index and the not-found page all use it.
+interface Item {
+  key: string;
+  name: string;
+  note: string;
+  href: string;
+}
+interface Props {
+  items: Item[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="home-list">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.href}>
+          <span class="home-list-key" aria-hidden="true">
+            {item.key}
+          </span>
+          <span class="home-list-name">
+            {item.name}
+            <span class="home-list-note">{item.note}</span>
+          </span>
+          <span class="home-list-arrow" aria-hidden="true">
+            →
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>

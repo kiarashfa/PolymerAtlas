@@ -1,0 +1,133 @@
+---
+// Compare: up to three polymers side by side. Every value is the one the
+// entry page shows, with the same status and the same source; nothing is
+// computed from structure and nothing is predicted. Four views of one
+// selection: the full table, a radar of chosen properties, the same
+// properties on atlas-wide scales, and a two-property map of the whole Atlas.
+//
+// The page is a shell; the data travels with it (build-time, inline) and the
+// client script draws the views. The selection lives in the URL, so a
+// comparison can be linked to.
+import ToolPage from '../../components/templates/ToolPage.astro';
+import { compareData } from '../../lib/compare-data';
+
+const data = await compareData();
+const known = new Set(data.polymers.map((p) => p.id));
+
+const examples = [
+  { label: 'The commodity three', ids: ['polyethylene', 'polypropylene', 'polyvinyl-chloride'] },
+  { label: 'Engineering plastics', ids: ['nylon', 'polycarbonate', 'polyether-ether-ketone'] },
+  {
+    label: 'Biodegradable polyesters',
+    ids: ['polylactic-acid', 'polyhydroxybutyrate', 'polycaprolactone'],
+  },
+  { label: 'Rubbers', ids: ['natural-rubber', 'styrene-butadiene-rubber', 'polychloroprene'] },
+].filter((e) => e.ids.every((id) => known.has(id)));
+
+const views = [
+  { id: 'table', symbol: '▤', name: 'Table' },
+  { id: 'radar', symbol: '✳', name: 'Radar' },
+  { id: 'range', symbol: '⟷', name: 'On the Atlas scale' },
+  { id: 'map', symbol: '⁘', name: 'Property map' },
+];
+---
+
+<ToolPage
+  title="Compare Polymers"
+  description={`Put up to three polymers side by side: every cited property in one table, a radar of the properties you choose, each on the scale of the whole Atlas, and a property map of all ${data.polymers.length} polymers.`}
+  eyebrow="Tools"
+  lede="Up to three polymers side by side. The same cited values their entries carry, laid out in one table, on a radar, on the scale of the whole Atlas, or on a map of any two properties."
+>
+  <div class="tool-body tool-body--wide" data-compare>
+    <section class="tool-card cmp-pick" aria-label="Polymers to compare">
+      <div class="cmp-slots" data-slots>
+        {
+          [0, 1, 2].map((i) => (
+            <div class={`cmp-slot cmp-s${i + 1}`} data-slot={i}>
+              <label class="tool-label u-caps" for={`cmp-in-${i}`}>
+                {['First', 'Second', 'Third'][i]} polymer
+              </label>
+              <div class="cmp-slot-body" data-slot-body>
+                <input
+                  class="tool-input cmp-input"
+                  id={`cmp-in-${i}`}
+                  type="text"
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Add a polymer…"
+                  disabled
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div class="tool-examples">
+        <span class="tool-examples-label u-caps">Try</span>
+        {
+          examples.map((e) => (
+            <button class="tool-chip" type="button" data-example={e.ids.join(',')}>
+              {e.label}
+            </button>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="tool-card cmp-view" data-view-card>
+      <div class="model-tabs" role="tablist" aria-label="View">
+        {
+          views.map((v, i) => (
+            <button
+              class:list={['model-tab', { 'is-active': i === 0 }]}
+              type="button"
+              role="tab"
+              aria-selected={i === 0 ? 'true' : 'false'}
+              data-view={v.id}
+            >
+              <span class="model-tab-symbol" aria-hidden="true">
+                {v.symbol}
+              </span>
+              <span class="model-tab-name">{v.name}</span>
+            </button>
+          ))
+        }
+      </div>
+      <div class="cmp-stage" data-stage>
+        <p class="cmp-empty">Choose a polymer above to begin, or try one of the sets.</p>
+      </div>
+      <div class="cmp-tip" data-tip hidden></div>
+    </section>
+
+    <section class="tool-card tool-colophon">
+      <h2 class="tool-card-head u-caps">About this tool</h2>
+      <p>
+        Every number here is the value its entry page carries, with the same source and the same
+        status: an estimate is flagged, a value nobody has found yet says so, and a property that
+        does not exist for a material says that instead. Nothing is predicted and nothing is
+        filled in to make a chart look complete, so a gap in a chart is a gap in the data.
+      </p>
+      <p>
+        The charts place each polymer against the whole Atlas: every axis runs from the lowest
+        value any entry records to the highest, and properties that span several orders of
+        magnitude are drawn on a logarithmic scale. Where a source gives a range rather than a
+        single figure, the range is drawn as well.
+      </p>
+    </section>
+  </div>
+
+  <noscript>
+    <p class="tool-body cmp-empty">
+      The comparison is drawn in the browser and needs JavaScript. Every value it shows is also on
+      the polymer's own page.
+    </p>
+  </noscript>
+
+  {/* Data, not code: the whole comparison dataset, built with the page. */}
+  <script is:inline type="application/json" data-compare-data set:html={JSON.stringify(data)} />
+</ToolPage>
+
+<script>
+  import { initCompare } from '../../lib/compare-view';
+  document.addEventListener('astro:page-load', initCompare);
+</script>

@@ -1,12 +1,15 @@
 ---
-// Shared chrome for the pages that sit outside the Atlas's spine — the two
-// tools and the About page. Deliberately quieter than a content page: no era
-// strip, no section rail, no chronological neighbours, and the neutral foil
-// rather than an era hue.
+// Shared chrome for the pages that sit outside the Atlas's spine — the tools,
+// the About page and the not-found page. Deliberately quieter than a content
+// page: no era strip, no section rail, no chronological neighbours, and the
+// neutral foil rather than an era hue.
 //
 // Reuses the browse pages' header classes (.cat-head / .cat-title / .cat-sub)
-// rather than introducing a second page-header language.
+// rather than introducing a second page-header language. The About page asks
+// for the grander form instead: a framed title plate, like the title page of
+// a fine edition, with the Atlas mark above the title.
 import Base from '../../layouts/Base.astro';
+import AtlasMark from '../ui/AtlasMark.astro';
 
 interface Props {
   title: string;
@@ -15,17 +18,40 @@ interface Props {
   eyebrow: string;
   /** One or two sentences under the title. */
   lede: string;
+  /** Set the heading as a framed title plate. */
+  plate?: boolean;
+  /** A short line of small capitals under the lede (plate only). */
+  colophon?: string;
 }
-const { title, description, eyebrow, lede } = Astro.props;
+const { title, description, eyebrow, lede, plate = false, colophon } = Astro.props;
 ---
 
 <Base title={title} description={description}>
   <main class="tool">
-    <header class="cat-head">
-      <p class="tool-eyebrow u-caps">{eyebrow}</p>
-      <h1 class="cat-title">{title}</h1>
-      <p class="cat-sub">{lede}</p>
-    </header>
+    {
+      plate ? (
+        <header class="title-plate-wrap">
+          <div class="title-plate">
+            <span class="title-plate-corner" aria-hidden="true" />
+            <p class="title-plate-eyebrow u-caps">{eyebrow}</p>
+            <AtlasMark class="title-plate-mark" size={112} />
+            <h1 class="title-plate-title">{title}</h1>
+            <div class="title-plate-rule" aria-hidden="true">
+              ❦
+            </div>
+            <p class="title-plate-lede">{lede}</p>
+            {colophon && <p class="title-plate-colophon u-caps">{colophon}</p>}
+            <slot name="plate-actions" />
+          </div>
+        </header>
+      ) : (
+        <header class="cat-head">
+          <p class="tool-eyebrow u-caps">{eyebrow}</p>
+          <h1 class="cat-title">{title}</h1>
+          <p class="cat-sub">{lede}</p>
+        </header>
+      )
+    }
     <slot />
   </main>
 </Base>

@@ -1,8 +1,9 @@
 ---
 // Site-wide chrome for the Atlas of Polymers ("Edition" design).
-// Owns: head metadata, theme + presentation-style pre-paint stamps, header
-// (title + nav on the left; search + EditionMenu icons on the right),
-// footer, View Transitions, and the three global behaviors (section
+// Owns: head metadata (incl. link-preview cards, icons, the web manifest and
+// analytics), theme + presentation-style pre-paint stamps, header (title on
+// the left; nav, then a hairline, then search + EditionMenu icons on the
+// right), footer, View Transitions, and the three global behaviors (section
 // collapse, citation-click, rail scrollspy).
 import { ClientRouter } from 'astro:transitions';
 import AtlasMark from '../components/ui/AtlasMark.astro';
@@ -10,6 +11,14 @@ import EditionMenu from '../components/ui/EditionMenu.astro';
 import SearchOverlay from '../components/ui/SearchOverlay.astro';
 import MolPopover from '../components/ui/MolPopover.astro';
 import { href } from '../lib/content';
+import {
+  SITE_NAME,
+  SITE_TAGLINE,
+  COPYRIGHT_HOLDER,
+  COPYRIGHT_YEARS,
+  GA_MEASUREMENT_ID,
+  PAPER_LIGHT,
+} from '../lib/site';
 import '../styles/tokens.css';
 import '../styles/edition.css';
 
@@ -18,9 +27,14 @@ interface Props {
   description: string;
   /** Marks the matching header nav link with aria-current. */
   current?: 'catalogue' | 'timeline' | 'constellation' | 'families';
+  /** The home page carries the bare site name as its title. */
+  home?: boolean;
 }
-const { title, description, current } = Astro.props;
-const isHome = title === 'Atlas of Polymers';
+const { title, description, current, home = false } = Astro.props;
+const pageTitle = home ? SITE_NAME : `${title} · ${SITE_NAME}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+// Link previews need absolute URLs; the card is the same for every page.
+const socialImage = new URL(href('/og-image.png'), Astro.site);
 ---
 
 <!doctype html>
@@ -28,16 +42,57 @@ const isHome = title === 'Atlas of Polymers';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{isHome ? title : `${title} · Atlas of Polymers`}</title>
+    <title>{pageTitle}</title>
     <meta name="description" content={description} />
     {/* One SVG mark, carrying both palettes and switching itself on
-        prefers-color-scheme, so the tab reads on light and dark chrome alike. */}
+        prefers-color-scheme, so the tab reads on light and dark chrome alike;
+        the .ico and PNGs are its rasters for places that cannot read SVG. */}
     <link rel="icon" type="image/svg+xml" href={href('/favicon.svg')} />
-    <link rel="canonical" href={Astro.url} />
-    <meta property="og:site_name" content="Atlas of Polymers" />
-    <meta property="og:title" content={title} />
+    <link rel="icon" href={href('/favicon.ico')} sizes="48x48" />
+    <link rel="apple-touch-icon" href={href('/apple-touch-icon.png')} />
+    <link rel="manifest" href={href('/site.webmanifest')} />
+    {/* Follows the resolved theme: the menu script rewrites it from the
+        page's own paper whenever the theme or presentation style changes. */}
+    <meta name="theme-color" content={PAPER_LIGHT} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:type" content={home ? 'website' : 'article'} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content={isHome ? 'website' : 'article'} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${SITE_NAME}: ${SITE_TAGLINE}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    {
+      home && (
+        <script
+          is:inline
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: SITE_NAME,
+            url: canonical.href,
+            description,
+          })}
+        />
+      )
+    }
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+    ></script>
+    <script is:inline define:vars={{ GA_MEASUREMENT_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+    </script>
     <script is:inline>
       (() => {
         try {
@@ -63,7 +118,7 @@ const isHome = title === 'Atlas of Polymers';
         Atlas of Polymers
       </a>
       <nav class="site-nav" aria-label="Site">
-        <a href={href('/')} aria-current={current === 'catalogue' ? 'page' : undefined}>
+        <a href={href('/catalogue/')} aria-current={current === 'catalogue' ? 'page' : undefined}>
           Catalogue
         </a>
         <span class="nav-sep" aria-hidden="true">·</span>
@@ -82,6 +137,7 @@ const isHome = title === 'Atlas of Polymers';
           Families
         </a>
       </nav>
+      <span class="head-divider" aria-hidden="true"></span>
       <div class="head-tools">
         <SearchOverlay />
         <EditionMenu />
@@ -92,11 +148,19 @@ const isHome = title === 'Atlas of Polymers';
     </div>
     <MolPopover />
     <footer class="site-foot">
-      <span class="foot-ornament" aria-hidden="true"></span>
-      <p>
-        Atlas of Polymers, a history-narrated encyclopedia of the polymers that made the modern
-        world. Text and data CC BY-SA 4.0 · free, no ads, no tracking.
-      </p>
+      <div class="foot-row">
+        <a class="foot-brand" href={href('/')}>
+          <AtlasMark size={18} />
+          {SITE_NAME}
+        </a>
+        <nav class="foot-links" aria-label="Footer">
+          <a href={href('/catalogue/')}>Catalogue</a>
+          <a href={href('/tools/')}>Tools</a>
+          <a href={href('/about/')}>About</a>
+        </nav>
+        <span class="foot-copy">© {COPYRIGHT_YEARS} {COPYRIGHT_HOLDER}</span>
+      </div>
+      <p class="foot-tag">{SITE_NAME}, {SITE_TAGLINE}.</p>
     </footer>
   </body>
 </html>

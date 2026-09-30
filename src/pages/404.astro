@@ -1,0 +1,24 @@
+---
+// Not found. GitHub Pages serves this for any address under the site that
+// matches no page (it is built to dist/404.html). It keeps the Atlas's own
+// chrome, offers search, and lays out the ways back in, rather than leaving
+// a reader at a dead end.
+import ToolPage from '../components/templates/ToolPage.astro';
+import { href } from '../lib/content';
+import WaysIn from '../components/blocks/WaysIn.astro';
+---
+
+<ToolPage
+  title="A Missing Page"
+  description="This page is not in the Atlas of Polymers. Search the Atlas, or find your way back in through the catalogue, the timeline or the constellation."
+  eyebrow="Not in the Atlas"
+  lede="There is no page at this address. It may have been mistyped, or it may have moved; everything the Atlas holds is still one search away."
+  plate
+>
+  <div class="home-actions" slot="plate-actions">
+    <button class="btn btn--foil" type="button" data-search-open>Search the Atlas</button>
+    <a class="btn" href={href('/')}>Go to the home page</a>
+  </div>
+
+  <WaysIn />
+</ToolPage>

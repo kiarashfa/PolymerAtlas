@@ -1,11 +1,12 @@
 ---
 // The reader's menu — a colophon-style dropdown behind an elegant trigger
 // (three stacked lozenges, the same diamond motif as the timeline's year
-// markers; deliberately not a hamburger). Holds the reading preferences
-// that used to crowd the header: the Gilt/Vellum/Atelier presentation
-// styles (each option typeset in the face it switches to), the Day/Night
-// theme pair, the glazing over narrative photographs, and the unit system.
-// Absorbs the former VariantToggle + ThemeToggle (same localStorage keys
+// markers; deliberately not a hamburger). Holds the tools and the reading
+// preferences that used to crowd the header: the Gilt/Vellum/Atelier
+// presentation styles (each option typeset in the face it switches to), and
+// one row of four two-way switches (theme, the glazing over narrative
+// photographs, the unit system, and where molecules are drawn). Absorbs the
+// former VariantToggle + ThemeToggle (same localStorage keys
 // 'pa-variant'/'pa-theme'; the Layout's pre-paint head script still applies
 // them, and 'pa-glaze', before first paint).
 //
@@ -17,21 +18,54 @@
 // than switch something. They are shaped to say so at a glance: full-width
 // rows with a glyph and a destination arrow, no segmented pair, and no
 // active mark — nothing in them is ever "on".
+//
+// The four switches each show their CURRENT state (icon and word) and flip
+// on a click. Each carries the same data-*-set attribute a two-button pair
+// would; the script keeps it pointed at the OTHER value, so one click
+// handler serves both shapes.
 import { VARIANTS } from '../../lib/variants';
 import { href } from '../../lib/content';
+import { TOOLS as tools } from '../../lib/tools';
 
-const tools = [
+// Every state a switch can show: its icon and its word.
+const SUN = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.6"></circle><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"></path></svg>`;
+const MOON = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 14.5A8.6 8.6 0 0 1 9.5 3.8a8.6 8.6 0 1 0 10.7 10.7z"></path></svg>`;
+const CLOUD = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18.5h10.2a4 4 0 0 0 .6-7.95A5.6 5.6 0 0 0 6.9 9.6 4.5 4.5 0 0 0 7 18.5z"></path></svg>`;
+const WINDOW = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2"></rect><path d="M3.5 9h17"></path><path d="M6.2 7h.01M8.4 7h.01" stroke-linecap="round" stroke-width="1.8"></path></svg>`;
+const glyph = (g: string) => `<span class="flip-glyph">${g}</span>`;
+
+const switches = [
   {
-    href: href('/tools/molecule/'),
-    name: 'Molecule Lookup',
-    essence: 'Draw and measure any small molecule',
-    glyph: '⬡',
+    label: 'Light',
+    attr: 'data-theme-set',
+    states: [
+      { value: 'light', word: 'Day', icon: SUN },
+      { value: 'dark', word: 'Night', icon: MOON },
+    ],
   },
   {
-    href: href('/tools/predictor/'),
-    name: 'Property Predictor',
-    essence: 'Four models, from structure alone',
-    glyph: '◈',
+    label: 'Glazing',
+    attr: 'data-glaze-set',
+    states: [
+      { value: 'on', word: 'Glazed', icon: glyph('◧') },
+      { value: 'off', word: 'Plain', icon: glyph('◫') },
+    ],
+  },
+  {
+    label: 'Units',
+    attr: 'data-units-set',
+    states: [
+      { value: 'si', word: 'SI', icon: glyph('°C') },
+      { value: 'imperial', word: 'Imperial', icon: glyph('°F') },
+    ],
+  },
+  {
+    label: 'Structures',
+    attr: 'data-engine-set',
+    states: [
+      { value: 'server', word: 'Service', icon: CLOUD },
+      { value: 'local', word: 'Browser', icon: WINDOW },
+    ],
   },
 ];
 
@@ -100,98 +134,36 @@ const stagger = () => step++;
       }
     </section>
 
-    <section class="menu-group" aria-label="Theme">
-      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Light</h2>
-      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
-        <button class="menu-pair-btn" type="button" data-theme-set="light">
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            aria-hidden="true"
-          >
-            <circle cx="12" cy="12" r="4.6"></circle>
-            <path
-              d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"
-            ></path>
-          </svg>
-          Day
-        </button>
-        <button class="menu-pair-btn" type="button" data-theme-set="dark">
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <path d="M20.2 14.5A8.6 8.6 0 0 1 9.5 3.8a8.6 8.6 0 1 0 10.7 10.7z"></path>
-          </svg>
-          Night
-        </button>
-      </div>
-    </section>
-
-    <section class="menu-group" aria-label="Glazing">
-      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Glazing</h2>
-      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
-        <button class="menu-pair-btn" type="button" data-glaze-set="on">
-          <span class="menu-pair-glyph" aria-hidden="true">◧</span>
-          Glazed
-        </button>
-        <button class="menu-pair-btn" type="button" data-glaze-set="off">
-          <span class="menu-pair-glyph" aria-hidden="true">◫</span>
-          Plain
-        </button>
-      </div>
-    </section>
-
-    <section class="menu-group" aria-label="Units">
-      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Units</h2>
-      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
-        <button class="menu-pair-btn" type="button" data-units-set="si">
-          <span class="menu-pair-glyph" aria-hidden="true">°C</span>
-          SI
-        </button>
-        <button class="menu-pair-btn" type="button" data-units-set="imperial">
-          <span class="menu-pair-glyph" aria-hidden="true">°F</span>
-          Imperial
-        </button>
-      </div>
-    </section>
-
-    {/* Where molecule structures are drawn. No glyphs on this pair: the two
-        words say it, and a symbol for "somewhere else" would be a puzzle. The
-        Molecule Lookup page carries the same choice with the full
-        explanation — both write one key and announce the change, so they can
-        never disagree. */}
-    <section class="menu-group" aria-label="Structures">
-      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Structures</h2>
-      <div class="menu-pair menu-stagger" style={`--i:${stagger()}`}>
-        <button
-          class="menu-pair-btn"
-          type="button"
-          data-engine-set="server"
-          title="Molecules are drawn by the atlas's chemistry service"
-        >
-          Service
-        </button>
-        <button
-          class="menu-pair-btn"
-          type="button"
-          data-engine-set="local"
-          title="Molecules are drawn in this browser: about 6.6 MB downloads once, then it works offline"
-        >
-          In browser
-        </button>
+    {/* The four two-way preferences as one row: each well shows the state
+        in force, and a click flips it. Structures says where molecules are
+        drawn; the Molecule Lookup page carries the same choice with the full
+        explanation, and both write one key and announce the change. */}
+    <section class="menu-group" aria-label="Reading">
+      <h2 class="menu-group-label u-caps menu-stagger" style={`--i:${stagger()}`}>Reading</h2>
+      <div class="flip-row menu-stagger" style={`--i:${stagger()}`}>
+        {
+          switches.map((sw) => (
+            <button
+              class="flip"
+              type="button"
+              {...{ [sw.attr]: sw.states[1].value }}
+              data-flip={sw.attr}
+              data-states={JSON.stringify(sw.states.map((st) => [st.value, st.word]))}
+            >
+              <span class="flip-well" aria-hidden="true">
+                {sw.states.map((st, i) => (
+                  <span class="flip-icon" data-when={st.value} hidden={i !== 0} set:html={st.icon} />
+                ))}
+              </span>
+              {sw.states.map((st, i) => (
+                <span class="flip-state" data-when={st.value} hidden={i !== 0}>
+                  {st.word}
+                </span>
+              ))}
+              <span class="flip-label u-caps">{sw.label}</span>
+            </button>
+          ))
+        }
       </div>
     </section>
 
@@ -213,7 +185,7 @@ const stagger = () => step++;
 </div>
 
 <script>
-  import { imperialText, siText } from '../../lib/units';
+  import { imperialText, siText, storedUnits, UNITS_CHANGE_EVENT } from '../../lib/units';
   import { storedEngine, setStoredEngine, ENGINE_CHANGE_EVENT } from '../../lib/chem-api';
 
   // All listeners delegated on document — they survive View Transitions.
@@ -253,15 +225,6 @@ const stagger = () => step++;
     document.documentElement.classList.toggle('no-glaze', state === 'off');
   }
 
-  function storedUnits(): string {
-    try {
-      if (localStorage.getItem('pa-units') === 'imperial') return 'imperial';
-    } catch {
-      /* ignore */
-    }
-    return 'si';
-  }
-
   // Rewrite every convertible property value in place. The SI numbers live
   // in data attributes stamped at build time (PropRow); SI text is
   // regenerated through the same assembler that produced the server HTML,
@@ -292,19 +255,32 @@ const stagger = () => step++;
     document.querySelectorAll<HTMLElement>('[data-variant-btn]').forEach((b) => {
       b.classList.toggle('is-active', b.dataset.variantBtn === v);
     });
-    document.querySelectorAll<HTMLElement>('[data-theme-set]').forEach((b) => {
-      b.classList.toggle('is-active', b.dataset.themeSet === t);
+    const now: Record<string, string> = {
+      'data-theme-set': t,
+      'data-glaze-set': g,
+      'data-units-set': u,
+      'data-engine-set': storedEngine(),
+    };
+    // Each switch shows the state in force and is armed with the other one.
+    document.querySelectorAll<HTMLElement>('[data-flip]').forEach((b) => {
+      const attr = b.dataset.flip!;
+      const states: [string, string][] = JSON.parse(b.dataset.states ?? '[]');
+      const current = states.find(([v]) => v === now[attr]) ?? states[0];
+      const next = states.find(([v]) => v !== current[0]) ?? current;
+      b.setAttribute(attr, next[0]);
+      b.title = `Switch to ${next[1]}`;
+      b.querySelectorAll<HTMLElement>('[data-when]').forEach((el) => {
+        el.hidden = el.dataset.when !== current[0];
+      });
     });
-    document.querySelectorAll<HTMLElement>('[data-glaze-set]').forEach((b) => {
-      b.classList.toggle('is-active', b.dataset.glazeSet === g);
-    });
-    document.querySelectorAll<HTMLElement>('[data-units-set]').forEach((b) => {
-      b.classList.toggle('is-active', b.dataset.unitsSet === u);
-    });
-    const e = storedEngine();
-    document.querySelectorAll<HTMLElement>('[data-engine-set]').forEach((b) => {
-      b.classList.toggle('is-active', b.dataset.engineSet === e);
-    });
+    syncThemeColor();
+  }
+
+  // The browser's own chrome (mobile address bar, installed-app title bar)
+  // takes the page's paper, whichever theme and style resolved it.
+  function syncThemeColor() {
+    const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    if (meta && document.body) meta.content = getComputedStyle(document.body).backgroundColor;
   }
 
   function setOpen(menu: Element, open: boolean) {
@@ -366,6 +342,7 @@ const stagger = () => step++;
         /* storage unavailable — conversion still applies to this page */
       }
       applyUnits(uBtn.dataset.unitsSet);
+      document.dispatchEvent(new CustomEvent(UNITS_CHANGE_EVENT, { detail: uBtn.dataset.unitsSet }));
       syncMenu();
       return;
     }
