@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "A structural/mechanistic class (crosslinked networks with associative dynamic covalent bond exchange) rather than one chemistry -- Leibler's original demonstration used a catalyzed epoxy/polyester network, but the vitrimer concept has since been applied to many different base chemistries; closely related to (but a distinct concept from) recyclable-thermosets.",
+  "notation_note": "A structural/mechanistic class (crosslinked networks with associative dynamic covalent bond exchange) rather than one chemistry: Leibler's original demonstration used a catalyzed epoxy/polyester network, but the vitrimer concept has since been applied to many different base chemistries; closely related to (but a distinct concept from) recyclable-thermosets.",
   "iupac_name": null,
   "synonyms": [
     "covalent adaptable network"
@@ -54,7 +54,7 @@
     {
       "src": "~/assets/polymers/vitrimers/european-patent-office-munich.webp",
       "alt": "A modern multi-storey office building clad in perforated green metal panels, photographed from a street corner with a lamp post and bare young trees in front.",
-      "caption": "The European Patent Office, Munich, whose annually awarded European Inventor Award went to Leibler for vitrimers in June 2015 — the ceremony itself was held in Paris that year.",
+      "caption": "The European Patent Office, Munich, whose annually awarded European Inventor Award went to Leibler for vitrimers in June 2015. The ceremony itself was held in Paris that year.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Europäisches_Patentamt,_München,_Grasserstraße.jpg",
       "author": "Richard Huber",
       "license": "CC BY-SA 3.0"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/vitrimers/glassblower-shaping-molten-glass.webp",
       "alt": "A black-and-white photograph of a man with glasses and a moustache seated at a workbench, shaping a glowing blob of molten glass on the end of a long metal blowpipe resting across wooden supports.",
-      "caption": "A glassblower working molten glass — the gradual, no-fixed-melting-point softening that gave vitrimers their name.",
+      "caption": "A glassblower working molten glass: the gradual, no-fixed-melting-point softening that gave vitrimers their name.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mr_Tony_Kuepfer,_glassblower_shaping_glass.jpg",
       "author": "Archives New Zealand",
       "license": "CC BY 2.0"
@@ -149,7 +149,7 @@
       "conditions": "Amorphous crosslinked network."
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "The defining mechanism: covalent bonds in the network exchange partners (associatively -- a new bond forms before the old one fully breaks) when heated, letting the network topology rearrange and flow like a viscous liquid while the total number of crosslinks, and thus network integrity, is preserved throughout. This differs from a conventional thermoset (irreversible crosslinks) and from a thermoplastic (no crosslinks at all).",
+    "chain_flexibility_notes": "The defining mechanism: covalent bonds in the network exchange partners (associatively, in that a new bond forms before the old one fully breaks) when heated, letting the network topology rearrange and flow like a viscous liquid while the total number of crosslinks, and thus network integrity, is preserved throughout. This differs from a conventional thermoset (irreversible crosslinks) and from a thermoplastic (no crosslinks at all).",
     "tg_relation_notes": "Below the topology-freezing temperature (Tv), the network is locked in place and behaves like a normal solid thermoset; above Tv, bond-exchange reactions become fast enough for the material to be reshaped/reprocessed like a viscous liquid, without ever fully melting or dissolving.",
     "molecular_weight": {
       "mn": {
@@ -174,7 +174,7 @@
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Vitrimers are characterized by a topology freezing transition (Tv), a distinct concept from a conventional Tg -- see structure_morphology."
+      "conditions": "Vitrimers are characterized by a topology freezing transition (Tv), a distinct concept from a conventional Tg. See structure_morphology."
     },
     "tm": {
       "value": null,
@@ -314,7 +314,7 @@
   "environmental": {
     "recyclable": true,
     "biodegradable": false,
-    "degradation_pathway": "Not biodegraded, but reprocessable/reshapable at elevated temperature via bond exchange -- giving thermoset-like materials a genuine reuse pathway instead of landfill/incineration.",
+    "degradation_pathway": "Not biodegraded, but reprocessable/reshapable at elevated temperature via bond exchange, giving thermoset-like materials a genuine reuse pathway instead of landfill/incineration.",
     "environmental_notes": null
   },
   "references": [

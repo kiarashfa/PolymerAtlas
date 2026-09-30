@@ -13,7 +13,7 @@
   },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@H](*)O[C@@H]1CO",
-  "notation_note": "Chemically regenerated cellulose -- the repeat unit is cellulose's own; what changes is the physical form, not the chemistry.",
+  "notation_note": "Chemically regenerated cellulose: the repeat unit is cellulose's own; what changes is the physical form, not the chemistry.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -41,7 +41,7 @@
     {
       "src": "~/assets/polymers/cellophane/titanic-departing-southampton-1912.webp",
       "alt": "A large four-funnelled ocean liner steaming through calm water, smoke trailing from its stacks, with a smaller vessel visible near its stern.",
-      "caption": "RMS Titanic departing Southampton, 10 April 1912 — the age's confidence in engineering, days before an iceberg tested it.",
+      "caption": "RMS Titanic departing Southampton, 10 April 1912. It was the age's confidence in engineering, days before an iceberg tested it.",
       "source_url": "https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg",
       "author": "Francis Godolphin Osbourne Stuart",
       "license": "Public domain"
@@ -49,15 +49,15 @@
     {
       "src": "~/assets/polymers/cellophane/stockholm-olympics-1912.webp",
       "alt": "A hand-labelled glass-plate photograph of a packed Olympic stadium, with ranks of white-clad athletes standing in formation on the field before a grandstand full of spectators.",
-      "caption": "Opening day of the 1912 Stockholm Olympics — the other kind of spectacle 1912 offered, orderly where the Titanic's story was not.",
+      "caption": "Opening day of the 1912 Stockholm Olympics. It was the other kind of spectacle 1912 offered, orderly where the Titanic's story was not.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Opening_Day,_Stockholm_Olympic_Games_LCCN2014691564.jpg",
       "author": "Bain News Service, publisher",
       "license": "Public domain"
     },
     {
       "src": "~/assets/polymers/cellophane/cellophane-sheet-closeup.webp",
-      "alt": "Tightly packed rolls of cellophane film in a rainbow of colors — blue, red, silver, gold, and pink — stacked upright and catching the light.",
-      "caption": "Modern cellophane rolls, dyed rather than left in its natural clear state — the same regenerated cellulose film Brandenberger patented in 1912.",
+      "alt": "Tightly packed rolls of cellophane film in a rainbow of colors (blue, red, silver, gold, and pink) stacked upright and catching the light.",
+      "caption": "Modern cellophane rolls, dyed rather than left in its natural clear state. This is the same regenerated cellulose film Brandenberger patented in 1912.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Cellophane.JPG",
       "author": "Itzuvit",
       "license": "CC BY-SA 3.0"
@@ -65,7 +65,7 @@
     {
       "src": "~/assets/polymers/cellophane/dupont-cellophane-advert.webp",
       "alt": "A magazine advertisement showing a stork carrying a swaddled baby in a transparent cellophane bundle, with the headline 'The best things in life come in Cellophane' and a Du Pont Cellophane logo below.",
-      "caption": "A Du Pont Cellophane advertisement built entirely on the material's clarity and cleanliness — the same qualities that first sold grocers on the wrap decades earlier.",
+      "caption": "A Du Pont Cellophane advertisement built entirely on the material's clarity and cleanliness. These are the same qualities that first sold grocers on the wrap decades earlier.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Dupont-baby-bag-advert_(8080777436).jpg",
       "author": "1950sUnlimited",
       "license": "CC BY 2.0"
@@ -210,7 +210,7 @@
       "range_min": 50,
       "range_max": 120,
       "unit": "MPa",
-      "conditions": "cellophane film, explicitly tagged in the handbook's cellulose chapter (distinct from viscose rayon fiber, 200-400 MPa dry, and generic \"regenerated cellulose,\" 69-170 MPa)",
+      "conditions": "cellophane film, explicitly tagged in the handbook's cellulose chapter (distinct from viscose rayon fiber, 200–400 MPa dry, and generic \"regenerated cellulose,\" 69–170 MPa)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -319,7 +319,7 @@
     "recyclable": false,
     "biodegradable": true,
     "degradation_pathway": "As regenerated cellulose, compostable and biodegradable via the same enzymatic hydrolysis pathway as native cellulose.",
-    "environmental_notes": "Manufacturing uses carbon disulfide, described as highly toxic to workers -- a real occupational/environmental concern distinct from the finished film's own biodegradability."
+    "environmental_notes": "Manufacturing uses carbon disulfide, described as highly toxic to workers. This is a real occupational/environmental concern distinct from the finished film's own biodegradability."
   },
   "references": [
     "wiki-cellophane",

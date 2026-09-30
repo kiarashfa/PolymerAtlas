@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/polyketones/cst-100-starliner-slc41-2022.webp",
       "alt": "An overhead view of a white, dome-topped space capsule being lifted by an overhead crane inside an industrial processing building, surrounded by scaffolding, work platforms, and technicians in hard hats.",
-      "caption": "Boeing's CST-100 Starliner spacecraft being moved onto its launch vehicle in 2022 — one of the vehicles PEKK components, made by additive manufacturing, fly aboard.",
+      "caption": "Boeing's CST-100 Starliner spacecraft being moved onto its launch vehicle in 2022. It is one of the vehicles PEKK components, made by additive manufacturing, fly aboard.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Boeing_CST-100_Starliner_for_OFT-2_Arrives_at_SLC-41_0095.jpg",
       "author": "Ben Smegelsky",
       "license": "Public domain"
@@ -78,7 +78,7 @@
     {
       "src": "~/assets/polymers/polyketones/pekk-hdd-part.webp",
       "alt": "A small, transparent amber-coloured injection-moulded plastic bracket with a metal cylindrical insert, photographed on a white background next to a centimetre ruler.",
-      "caption": "A PEKK part made for a hard-disk-drive assembly, shown against a centimetre scale — the natural amber colour and fine, stable moulding detail typical of the resin.",
+      "caption": "A PEKK part made for a hard-disk-drive assembly, shown against a centimetre scale. The part shows the natural amber colour and fine, stable moulding detail typical of the resin.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Polyetherketoneketone_HDD_part.jpg",
       "author": "Marián Hubinský",
       "license": "CC BY-SA 4.0"
@@ -86,7 +86,7 @@
     {
       "src": "~/assets/polymers/polyketones/oxford-performance-materials-south-windsor.webp",
       "alt": "A man in a suit speaks from a lectern bearing the seal of the Governor of Connecticut, standing in front of a 3D-printing machine and a wall sign reading OXFAB Industrial Solutions.",
-      "caption": "Connecticut's governor visiting Oxford Performance Materials in 2014 — the firm that spent the 2000s refining DuPont's aromatic polyketone chemistry toward the market.",
+      "caption": "Connecticut's governor visiting Oxford Performance Materials in 2014. Oxford Performance Materials was the firm that spent the 2000s refining DuPont's aromatic polyketone chemistry toward the market.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Oxford_Performance_Materials_in_South_Windsor_(11968143503).jpg",
       "author": "Dannel Malloy",
       "license": "CC BY 2.0"
@@ -167,14 +167,14 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, specimen thickness 0.6-0.8 mm"
+      "conditions": "PEKK, specimen thickness 0.6–0.8 mm"
     }
   },
   "synthesis": {
     "polymerization_type": "step-growth condensation",
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "PEKK is a semi-crystalline thermoplastic in the polyaryletherketone (PAEK) family, offering high heat, chemical, and mechanical load resistance. Increasingly manufactured via additive manufacturing (3D printing) for aerospace and medical parts -- e.g. Hexcel supplies PEKK components for Boeing's CST-100 Starliner spacecraft via this route.",
+    "industrial_process_notes": "PEKK is a semi-crystalline thermoplastic in the polyaryletherketone (PAEK) family, offering high heat, chemical, and mechanical load resistance. Increasingly manufactured via additive manufacturing (3D printing) for aerospace and medical parts, e.g. Hexcel supplies PEKK components for Boeing's CST-100 Starliner spacecraft via this route.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -187,7 +187,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK; varies with processing/cooling rate -- PEKK is notable among PAEK-family polymers for its tunable crystallinity. Maximum crystallinity is reached by processing at 340-350 °C with <3 °C/min cooling rate."
+      "conditions": "PEKK; varies with processing/cooling rate. PEKK is notable among PAEK-family polymers for its tunable crystallinity. Maximum crystallinity is reached by processing at 340–350 °C with <3 °C/min cooling rate."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Aromatic ketone/ether backbone gives PAEK-family polymers an unusual combination of high-temperature performance and (unlike many other high-performance polymers) genuine melt-processability.",
@@ -239,7 +239,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, rapid/cold crystallization temperature; crystallization half-time 7-9 min"
+      "conditions": "PEKK, rapid/cold crystallization temperature; crystallization half-time 7–9 min"
     },
     "hdt": {
       "value": null,
@@ -250,7 +250,7 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
       "test_standard": "1.8 MPa",
-      "conditions": "PEKK, unfilled; 20-40% glass fiber grades exceed 299-316 °C"
+      "conditions": "PEKK, unfilled; 20–40% glass fiber grades exceed 299–316 °C"
     },
     "decomposition_onset": {
       "value": null,
@@ -290,7 +290,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, unfilled grade; source reports an unqualified 'tensile strength' (ambiguous whether yield or break -- elongation at break is only about 12%, suggesting limited post-yield deformation)"
+      "conditions": "PEKK, unfilled grade; source reports an unqualified 'tensile strength' (ambiguous whether yield or break: elongation at break is only about 12%, suggesting limited post-yield deformation)"
     },
     "elongation_at_break": {
       "value": 12,
@@ -298,7 +298,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, unfilled grade; 20-40% glass fiber grades are 1.9-2.5%"
+      "conditions": "PEKK, unfilled grade; 20–40% glass fiber grades are 1.9–2.5%"
     },
     "impact_izod": {
       "value": null,
@@ -308,7 +308,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, notched, 23 °C, unfilled; unnotched (20-40% glass fiber grades only) is 480-900 J/m"
+      "conditions": "PEKK, notched, 23 °C, unfilled; unnotched (20–40% glass fiber grades only) is 480–900 J/m"
     },
     "impact_charpy": {
       "value": null,
@@ -349,7 +349,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, dynamic; static is higher, 0.26-0.28"
+      "conditions": "PEKK, dynamic; static is higher, 0.26–0.28"
     }
   },
   "chemical_resistance": {
@@ -428,7 +428,7 @@
     },
     "flammability_ul94": {
       "value": "V-0",
-      "conditions": "PEKK, unfilled; also V-0 for 20-40% glass fiber grades",
+      "conditions": "PEKK, unfilled; also V-0 for 20–40% glass fiber grades",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -461,7 +461,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PEKK, 20-40% glass fiber grade; no unfilled-grade figure reported"
+      "conditions": "PEKK, 20–40% glass fiber grade; no unfilled-grade figure reported"
     },
     "drying_required": true,
     "shrinkage_rate": {

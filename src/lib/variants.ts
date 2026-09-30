@@ -16,18 +16,18 @@ export const VARIANTS: EditionVariant[] = [
     id: 'gilt',
     name: 'Gilt',
     essence: 'Ivory & gold foil, justified',
-    note: 'Ivory paper, gold-foil detailing, justified book text with drop caps — the fine-press private edition.',
+    note: 'Ivory paper, gold-foil detailing, justified book text with drop caps. The fine-press private edition.',
   },
   {
     id: 'vellum',
     name: 'Vellum',
     essence: 'Warm parchment, era color leads',
-    note: 'Warmer parchment set in Garamond — no gold, each era’s own color is the only accent, left-set hero, ragged-right text.',
+    note: 'Warmer parchment set in Garamond, with no gold (each era’s own color is the only accent), a left-set hero and ragged-right text.',
   },
   {
     id: 'atelier',
     name: 'Atelier',
     essence: 'Cool gallery paper, modern labels',
-    note: 'Cool gallery paper set in Constantia, modern uppercase labels, era-color number medallions, softer shadows — the luxury art-book catalogue.',
+    note: 'Cool gallery paper set in Constantia, modern uppercase labels, era-color number medallions, softer shadows. The luxury art-book catalogue.',
   },
 ];

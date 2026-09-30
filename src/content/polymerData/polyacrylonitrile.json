@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][$]CC(C#N)[$][]}",
   "smiles_depiction": "*CC(C#N)*",
-  "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1-10% vinyl comonomers, so the pure-homopolymer repeat unit shown does not represent most commercial grades.",
+  "notation_note": "Commercial PAN typically copolymerizes acrylonitrile with 1–10% vinyl comonomers, so the pure-homopolymer repeat unit shown does not represent most commercial grades.",
   "iupac_name": "Polyacrylonitrile",
   "synonyms": [
     "acrylic fiber (textile form)",
@@ -75,7 +75,7 @@
     {
       "src": "~/assets/polymers/polyacrylonitrile/orlon-fashion-advertisement.webp",
       "alt": "A 1950s magazine advertisement illustration showing a teacher and two students examining a ball-and-stick molecular model at a classroom blackboard, with a young woman in a plaid skirt and white cardigan reading a chemistry textbook in the foreground.",
-      "caption": "A Du Pont advertisement for Orlon, the trade name under which acrylic fiber reached American closets in the 1950s — two decades after Fikentscher and Heuck's polymer had first been written off as useless.",
+      "caption": "A Du Pont advertisement for Orlon, the trade name under which acrylic fiber reached American closets in the 1950s, two decades after Fikentscher and Heuck's polymer had first been written off as useless.",
       "source_url": "https://commons.wikimedia.org/wiki/File:ORLON_teaches_new_fall_fashions_to_keep_their_figure_in_the_wash!_-_DPLA_-_271f0a1df97147140c0d25ae915a67df.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -83,7 +83,7 @@
     {
       "src": "~/assets/polymers/polyacrylonitrile/boeing-787-carbon-fiber-fuselage.webp",
       "alt": "A close-up interior view of a large curved carbon-fiber composite fuselage section, its dark woven surface reinforced along riveted structural frames.",
-      "caption": "A carbon fiber section of a Boeing 787 fuselage — PAN fiber's modern destination, spun, oxidized, and carbonized into a lattice that carries an airliner's structural load.",
+      "caption": "A carbon fiber section of a Boeing 787 fuselage: PAN fiber's modern destination, spun, oxidized, and carbonized into a lattice that carries an airliner's structural load.",
       "source_url": "https://commons.wikimedia.org/wiki/File:787fuselage.jpg",
       "author": "Cjboffoli at English Wikipedia",
       "license": "Public domain"
@@ -98,7 +98,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Experimental range 1.04-1.31 g/cm³; calculated range 1.112-1.177 g/cm³."
+      "conditions": "Experimental range 1.04–1.31 g/cm³; calculated range 1.112–1.177 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -175,7 +175,7 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Statistical mix from radical polymerization: isotactic 25-29%, heterotactic 47-51%, syndiotactic 22-27%.",
+    "tacticity": "Statistical mix from radical polymerization: isotactic 25–29%, heterotactic 47–51%, syndiotactic 22–27%.",
     "crystallinity_typical": {
       "value": 31.75,
       "range_min": 18.5,
@@ -207,7 +207,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Fiber-grade material reported narrower, 80,000-100,000 g/mol."
+        "conditions": "Fiber-grade material reported narrower, 80,000–100,000 g/mol."
       },
       "pdi": {
         "value": null,
@@ -261,7 +261,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Most commonly cited range 84-85 °C; wider experimental range 43.8-105 °C reflects measurement-method/sample variation."
+      "conditions": "Most commonly cited range 84–85 °C; wider experimental range 43.8–105 °C reflects measurement-method/sample variation."
     },
     "tm": {
       "value": 317,
@@ -271,7 +271,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Both handbooks report a real melting transition (Wypych DSC: 317 °C, range 297-341 °C; Mark calorimetry: 320 °C and 326 °C at different heating rates), lying close to PAN's thermal decomposition range."
+      "conditions": "Both handbooks report a real melting transition (Wypych DSC: 317 °C, range 297–341 °C; Mark calorimetry: 320 °C and 326 °C at different heating rates), lying close to PAN's thermal decomposition range."
     },
     "tc": {
       "value": null,
@@ -317,7 +317,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Bulk/unoriented material; oriented fiber form reaches 133-480 MPa, film form 115-117 MPa."
+      "conditions": "Bulk/unoriented material; oriented fiber form reaches 133–480 MPa, film form 115–117 MPa."
     },
     "elongation_at_break": {
       "value": 25,
@@ -362,7 +362,7 @@
   "chemical_resistance": {
     "solvent_resistance": {
       "common_industrial_solvents": {
-        "value": "Historically very poor -- did not dissolve in solvents available in the 1930s, delaying commercialization until dimethylformamide-type solvents were identified in 1938",
+        "value": "Historically very poor: did not dissolve in solvents available in the 1930s, delaying commercialization until dimethylformamide-type solvents were identified in 1938",
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-polyacrylonitrile"
@@ -548,6 +548,6 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
     },
-    "safety_notes": "Occupational exposure limits: TLV (ACGIH) 3 mg/m³, MAK/TRK (Germany) 3 ppm, OSHA 2 ppm. Aquatic toxicity (Daphnia magna, 48 h LC50): 1,000-185,000 mg/L."
+    "safety_notes": "Occupational exposure limits: TLV (ACGIH) 3 mg/m³, MAK/TRK (Germany) 3 ppm, OSHA 2 ppm. Aquatic toxicity (Daphnia magna, 48 h LC50): 1,000–185,000 mg/L."
   }
 }

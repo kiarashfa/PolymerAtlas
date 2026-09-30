@@ -61,7 +61,7 @@
     {
       "src": "~/assets/polymers/polyacrylic-acid/crowd-outside-nyse-1929.webp",
       "alt": "A high-angle photograph looking down a narrow street between tall stone office buildings, packed edge to edge with a crowd of people in coats and hats, automobiles stalled in the crush below.",
-      "caption": "Crowds outside the New York Stock Exchange on 29 October 1929 — weeks after Röhm &amp; Haas had been celebrating a production record for its acrylic-cored safety glass.",
+      "caption": "Crowds outside the New York Stock Exchange on 29 October 1929, weeks after Röhm &amp; Haas had been celebrating a production record for its acrylic-cored safety glass.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Crowd_outside_nyse.jpg",
       "author": "US-gov",
       "license": "Public domain"
@@ -85,7 +85,7 @@
     {
       "src": "~/assets/polymers/polyacrylic-acid/superabsorbent-polymer-crystals.webp",
       "alt": "A close-up photograph of a small heap of coarse white crystalline granules scattered against a black background.",
-      "caption": "Sodium polyacrylate granules — the lightly crosslinked, water-swelling form of the polymer that turned polyacrylic acid's least useful property into its greatest one.",
+      "caption": "Sodium polyacrylate granules, the lightly crosslinked, water-swelling form of the polymer that turned polyacrylic acid's least useful property into its greatest one.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Superabsorbent_Polymer.jpg",
       "author": "User:Ritchey",
       "license": "Public domain"
@@ -175,7 +175,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
     },
-    "crystal_structure": "Isotactic PAA can crystallize, with a crystallite spacing of 0.287-0.479 nm; commercial atactic PAA is amorphous.",
+    "crystal_structure": "Isotactic PAA can crystallize, with a crystallite spacing of 0.287–0.479 nm; commercial atactic PAA is amorphous.",
     "chain_flexibility_notes": "Highly hydrophilic due to pendant carboxylic acid groups; crosslinked variants swell dramatically in water (superabsorbent behavior).",
     "tg_relation_notes": null,
     "molecular_weight": {
@@ -204,7 +204,7 @@
       {
         "solvent": "1,4-dioxane",
         "temperature_k": 303,
-        "mw_range": "130-820 kg/mol",
+        "mw_range": "130–820 kg/mol",
         "k": {
           "value": 0.085,
           "unit": "mL/g",
@@ -449,7 +449,7 @@
     "recyclable": false,
     "biodegradable": false,
     "degradation_pathway": null,
-    "environmental_notes": "Aquatic toxicity: Daphnia magna LC50 (48 h) 168-280 mg/L; bluegill sunfish LC50 (48 h) 580-2,000 mg/L."
+    "environmental_notes": "Aquatic toxicity: Daphnia magna LC50 (48 h) 168–280 mg/L; bluegill sunfish LC50 (48 h) 580–2,000 mg/L."
   },
   "references": [
     "wiki-polyacrylic-acid",
@@ -490,7 +490,7 @@
     "nfpa_health_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -498,7 +498,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -506,7 +506,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

@@ -78,7 +78,7 @@
     {
       "src": "~/assets/polymers/polymethyl-methacrylate/bank-run-michigan-1933.webp",
       "alt": "A dense crowd of men and women in coats and hats gathered on a city sidewalk outside a bank building with shuttered windows.",
-      "caption": "Depositors outside a Detroit bank in February 1933, days before Roosevelt's inauguration — the banking panic that produced his first act in office.",
+      "caption": "Depositors outside a Detroit bank in February 1933, days before Roosevelt's inauguration. This was the banking panic that produced his first act in office.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Bank_Run_in_Michigan,_USA,_February_1933.jpg",
       "author": "Photographer not credited.",
       "license": "Public domain"
@@ -94,7 +94,7 @@
     {
       "src": "~/assets/polymers/polymethyl-methacrylate/ici-perspex-showroom.webp",
       "alt": "The glass-fronted ground floor of a modernist building, its window display arranged with pale blue and lime-green moulded fixtures.",
-      "caption": "A later showroom for ICI's Perspex — the acrylic sheet developed in Britain almost simultaneously with Röhm's Plexiglas.",
+      "caption": "A later showroom for ICI's Perspex, the acrylic sheet developed in Britain almost simultaneously with Röhm's Plexiglas.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Showroom_for_ICI_perspex_products_-_geograph.org.uk_-_922411.jpg",
       "author": "Alexander P Kapp",
       "license": "CC BY-SA 2.0"
@@ -131,7 +131,7 @@
     "dielectric_constant": {
       "value": 3.6,
       "unit": "",
-      "conditions": "100 Hz; 2.2-2.6 at 1 MHz",
+      "conditions": "100 Hz; 2.2–2.6 at 1 MHz",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -202,7 +202,7 @@
     },
     "crystal_structure": "Isotactic PMMA crystallizes in an orthorhombic unit cell (a:b:c ≈ 2.10:1.21:1.04 nm, 4 chains per cell); commercial atactic PMMA is amorphous.",
     "chain_flexibility_notes": "Unmodified PMMA is strong but brittle under load; impact modifiers are used to improve toughness in demanding applications.",
-    "tg_relation_notes": "Atactic/commercial-grade Tg ~105°C; commercial grades formulated across 85-165°C depending on application.",
+    "tg_relation_notes": "Atactic/commercial-grade Tg ~105°C; commercial grades formulated across 85–165°C depending on application.",
     "molecular_weight": {
       "mn": {
         "value": null,
@@ -235,7 +235,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Atactic (commercial) grade; wider literature range 105-122°C also reported for atactic samples."
+      "conditions": "Atactic (commercial) grade; wider literature range 105–122°C also reported for atactic samples."
     },
     "tm": {
       "value": null,
@@ -404,7 +404,7 @@
     },
     "weathering_uv": {
       "value": "Excellent; among the most weatherable commodity thermoplastics",
-      "conditions": "Primary photodegradation sensitivity at 290-320 nm",
+      "conditions": "Primary photodegradation sensitivity at 290–320 nm",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -559,7 +559,7 @@
     "nfpa_health_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -567,7 +567,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -575,7 +575,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

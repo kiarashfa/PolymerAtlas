@@ -78,7 +78,7 @@
     {
       "src": "~/assets/polymers/polyurethane/memory-foam-handprint-slow-release.webp",
       "alt": "A hand hovering just above a bright yellow block of foam that retains a deep, detailed impression of fingers and palm after the hand has lifted away.",
-      "caption": "Viscoelastic 'memory' polyurethane foam holds the same impression far longer — the slow recovery that gives the material its name.",
+      "caption": "Viscoelastic 'memory' polyurethane foam holds the same impression far longer: the slow recovery that gives the material its name.",
       "source_url": "https://commons.wikimedia.org/wiki/File:MemoryFoam-slow.jpg",
       "author": "Johan",
       "license": "CC BY-SA 3.0"
@@ -220,7 +220,7 @@
       "range_min": 141,
       "range_max": 157,
       "unit": "°C",
-      "conditions": "DSC, solid/cast form, general; Mark reports 123-225 °C across specific systems (HMDI/DEG, HMDI/OFHD, TDI/EG, MDI/EG)",
+      "conditions": "DSC, solid/cast form, general; Mark reports 123–225 °C across specific systems (HMDI/DEG, HMDI/OFHD, TDI/EG, MDI/EG)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -245,7 +245,7 @@
       "range_min": 120,
       "range_max": 126,
       "unit": "°C",
-      "conditions": "as reported; unusually low for typical PU thermal decomposition (commonly cited around 250-300 °C), possibly reflecting a specific low-stability formulation",
+      "conditions": "as reported; unusually low for typical PU thermal decomposition (commonly cited around 250–300 °C), possibly reflecting a specific low-stability formulation",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -308,7 +308,7 @@
       "range_min": 60,
       "range_max": 95,
       "unit": "Shore A",
-      "conditions": "solid/cast form; harder grades reported separately as Shore D 36-91",
+      "conditions": "solid/cast form; harder grades reported separately as Shore D 36–91",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -400,7 +400,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR -- a real, widely-cited distinction, but not independently confirmed with a source."
+      "conditions": "Ester-based PUR is known to be more hydrolysis-prone than ether-based PUR. This is a real, widely-cited distinction, but not independently confirmed with a source."
     },
     "flammability_ul94": {
       "value": "V-2",
@@ -420,7 +420,7 @@
     "solubility_parameter": {
       "value": 22.8,
       "unit": "MPa^0.5",
-      "conditions": "Hildebrand parameter, solid/cast form, general; Mark reports 21-27 MPa^0.5 across specific MDI/1,4-butanediol and MDI/ethylene glycol systems",
+      "conditions": "Hildebrand parameter, solid/cast form, general; Mark reports 21–27 MPa^0.5 across specific MDI/1,4-butanediol and MDI/ethylene glycol systems",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

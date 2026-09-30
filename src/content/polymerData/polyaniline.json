@@ -46,7 +46,7 @@
     {
       "src": "~/assets/polymers/polyaniline/deep-blue-computer.webp",
       "alt": "A tall black IBM RS/6000 SP server cabinet on display in a museum, beside a wall placard showing one of Deep Blue's custom chess chips and descriptive text.",
-      "caption": "Deep Blue, the IBM computer that beat world chess champion Garry Kasparov in May 1997 — a very public example of a machine crossing into territory everyone had assumed belonged to something else.",
+      "caption": "Deep Blue, the IBM computer that beat world chess champion Garry Kasparov in May 1997: a very public example of a machine crossing into territory everyone had assumed belonged to something else.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Say_hello_to_Deep_Blue_(2586059148).jpg",
       "author": "Erik Pitti from San Diego, CA, USA",
       "license": "CC BY 2.0"
@@ -62,7 +62,7 @@
     {
       "src": "~/assets/polymers/polyaniline/macdiarmid-portrait.webp",
       "alt": "A smiling elderly man with white hair and glasses, wearing a dark blazer and a maroon tie, standing outdoors in front of garden greenery.",
-      "caption": "Alan MacDiarmid, whose research group spent the 1980s turning that dye into a genuinely useful conductor, and who patented the corrosion-protection coating described above in 1997 — three years before sharing the Nobel Prize for the chemistry behind it.",
+      "caption": "Alan MacDiarmid, whose research group spent the 1980s turning that dye into a genuinely useful conductor, and who patented the corrosion-protection coating described above in 1997, three years before sharing the Nobel Prize for the chemistry behind it.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Alan_MacDiarmid_2005.017.004e_crop.tif",
       "author": "Unknown author",
       "license": "CC BY-SA 3.0",
@@ -122,7 +122,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Full span from undoped/lightly-doped emeraldine base (~10⁻⁸ S/cm) to CSA (camphorsulfonic acid)-doped emeraldine salt film cast from m-cresol (400 S/cm, room temperature) — conductivity depends strongly on dopant and doping level; other dopants reported: CH3SO3H 350 S/cm, HCl 24 S/cm, I2 11.4 S/cm, H2SO4 6.31 S/cm."
+      "conditions": "Full span from undoped/lightly-doped emeraldine base (~10⁻⁸ S/cm) to CSA (camphorsulfonic acid)-doped emeraldine salt film cast from m-cresol (400 S/cm, room temperature). Conductivity depends strongly on dopant and doping level; other dopants reported: CH3SO3H 350 S/cm, HCl 24 S/cm, I2 11.4 S/cm, H2SO4 6.31 S/cm."
     },
     "transmittance": {
       "value": 97,
@@ -255,7 +255,7 @@
     "tensile_modulus": {
       "value": 1300,
       "unit": "MPa",
-      "conditions": "PANI base (emeraldine); PANI·HCl (doped) 900 MPa, oriented fibers 1260-1750 MPa",
+      "conditions": "PANI base (emeraldine); PANI·HCl (doped) 900 MPa, oriented fibers 1260–1750 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -273,7 +273,7 @@
       "range_min": 40,
       "range_max": 168,
       "unit": "MPa",
-      "conditions": "non-crosslinked; crosslinked grades reach 60-430 MPa",
+      "conditions": "non-crosslinked; crosslinked grades reach 60–430 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -354,7 +354,7 @@
       }
     },
     "weathering_uv": {
-      "value": "UV-sensitive; spectral sensitivity at 290, 325, 350, 400 nm (emeraldine base sensitized at 331 nm); some grades photobleach at 380-400 nm and are stabilized with Tinuvin 213",
+      "value": "UV-sensitive; spectral sensitivity at 290, 325, 350, 400 nm (emeraldine base sensitized at 331 nm); some grades photobleach at 380–400 nm and are stabilized with Tinuvin 213",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -375,7 +375,7 @@
     "solubility_parameter": {
       "value": 22.2,
       "unit": "MPa^0.5",
-      "conditions": "emeraldine base form; emeraldine salt 23.6, leucoemeraldine base ~23-25",
+      "conditions": "emeraldine base form; emeraldine salt 23.6, leucoemeraldine base ~23–25",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][$]C/C=C\\C[$],[$]CC(C#N)[$][]}",
   "smiles_depiction": "*C/C=C\\C*.*CC(C#N)*",
-  "notation_note": "A statistical copolymer. Acrylonitrile content, commonly 18-50%, is the dial that trades oil resistance against low-temperature flexibility, so no single ratio represents the class.",
+  "notation_note": "A statistical copolymer. Acrylonitrile content, commonly 18–50%, is the dial that trades oil resistance against low-temperature flexibility, so no single ratio represents the class.",
   "iupac_name": null,
   "synonyms": [
     "nitrile rubber",
@@ -62,7 +62,7 @@
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/dday-sherman-tanks-1944.webp",
       "alt": "A hazy black-and-white photograph, taken from a landing craft, of tanks and vehicles disembarking onto a beach among rows of wooden anti-invasion stakes driven into the shallows.",
-      "caption": "Sherman tanks going ashore on Sword Beach, Normandy, 6 June 1944 - a landing that ran on fuel systems and seals built from a rubber invented in Germany fourteen years earlier.",
+      "caption": "Sherman tanks going ashore on Sword Beach, Normandy, 6 June 1944. This was a landing that ran on fuel systems and seals built from a rubber invented in Germany fourteen years earlier.",
       "source_url": "https://commons.wikimedia.org/wiki/File:D-day_-_British_Forces_during_the_Invasion_of_Normandy_6_June_1944_B5111.jpg",
       "author": "No 5 Army Film & Photographic Unit, Mapham J (Sgt)",
       "license": "Public domain"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/goodrich-synthetic-rubber-mill-1941.webp",
       "alt": "Two workers in overcoats and caps feeding a thick, wet white sheet of rubber into the rollers of an industrial mill, water spraying off the machinery.",
-      "caption": "Workers feed newly milled synthetic rubber through rollers at the B.F. Goodrich plant in Akron, Ohio, 1941 - one of the same wartime plants that would scale up oil-resistant nitrile rubber for the invasion fleet three years later.",
+      "caption": "Workers feed newly milled synthetic rubber through rollers at the B.F. Goodrich plant in Akron, Ohio, 1941. The plant was one of the same wartime plants that would scale up oil-resistant nitrile rubber for the invasion fleet three years later.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Sheet_of_synthetic_rubber_coming_off_the_rolling_mill_at_the_plant_of_Goodrich.jpg",
       "author": "Alfred T. Palmer",
       "license": "Public domain"
@@ -78,7 +78,7 @@
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/raw-nbr-bales.webp",
       "alt": "Six plastic-wrapped rectangular bales of pale tan rubber crumb, stacked two high on a wooden pallet, the wrapping torn open at one corner to show the granular material inside.",
-      "caption": "Raw NBR delivered as wrapped bales of crumb rubber - the coagulated latex, still unvulcanised, that a compounder mills with carbon black before it becomes a finished seal or hose.",
+      "caption": "Raw NBR delivered as wrapped bales of crumb rubber. It is the coagulated latex, still unvulcanised, that a compounder mills with carbon black before it becomes a finished seal or hose.",
       "source_url": "https://commons.wikimedia.org/wiki/File:NBR_balles.jpg",
       "author": "Cjp24",
       "license": "CC BY-SA 3.0"
@@ -86,7 +86,7 @@
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-rubber/nitrile-glove-modern.webp",
       "alt": "A single blue disposable glove, palm facing the camera, photographed against a plain light background.",
-      "caption": "A modern disposable nitrile glove - the same oil- and chemical-resistant copolymer that once sealed wartime fuel tanks, now standard in laboratories and hospitals precisely because it tolerates so much of what a latex glove cannot.",
+      "caption": "A modern disposable nitrile glove. It is made of the same oil- and chemical-resistant copolymer that once sealed wartime fuel tanks, and is now standard in laboratories and hospitals precisely because it tolerates so much of what a latex glove cannot.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Disposable_nitrile_glove.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -158,7 +158,7 @@
     "catalysts": [
       "radical activators/persulfate-type initiators"
     ],
-    "industrial_process_notes": "Developed in 1931 at BASF and Bayer, with commercial German production from 1935. Produced via emulsion polymerization at 30-40°C ('hot' NBR) or 5-15°C ('cold' NBR): emulsifier, acrylonitrile, butadiene, radical activators, and catalyst combined in water; reaction is halted at ~70% conversion by termination agents, followed by monomer recovery and coagulation into crumb rubber.",
+    "industrial_process_notes": "Developed in 1931 at BASF and Bayer, with commercial German production from 1935. Produced via emulsion polymerization at 30–40°C ('hot' NBR) or 5–15°C ('cold' NBR): emulsifier, acrylonitrile, butadiene, radical activators, and catalyst combined in water; reaction is halted at ~70% conversion by termination agents, followed by monomer recovery and coagulation into crumb rubber.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -214,7 +214,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wide range reflects acrylonitrile content 15-51%; Tg rises with increasing ACN content."
+      "conditions": "Wide range reflects acrylonitrile content 15–51%; Tg rises with increasing ACN content."
     },
     "tm": {
       "value": null,
@@ -254,7 +254,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Reported as Young's modulus, unfilled gum stock. Wypych separately lists an unqualified 'tensile modulus' of 20.1-29.4 MPa, likely a higher-strain secant value for a different formulation."
+      "conditions": "Reported as Young's modulus, unfilled gum stock. Wypych separately lists an unqualified 'tensile modulus' of 20.1–29.4 MPa, likely a higher-strain secant value for a different formulation."
     },
     "yield_strength": {
       "value": null,
@@ -270,7 +270,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Unfilled (pure rubber) gum vulcanizate; carbon-black-filled compounds test substantially higher (13-20 MPa)."
+      "conditions": "Unfilled (pure rubber) gum vulcanizate; carbon-black-filled compounds test substantially higher (13–20 MPa)."
     },
     "elongation_at_break": {
       "value": 450,
@@ -460,7 +460,7 @@
       "status": "verified",
       "evidence_level": "tertiary",
       "source": "wiki-nbr",
-      "conditions": "'Hot' NBR polymerization temperature; 'cold' NBR uses 5-15°C."
+      "conditions": "'Hot' NBR polymerization temperature; 'cold' NBR uses 5–15°C."
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -542,7 +542,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -550,7 +550,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -558,7 +558,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

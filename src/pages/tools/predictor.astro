@@ -77,9 +77,9 @@ const models = [
 ];
 
 const blurbs: Record<string, string> = {
-  rr: 'How strongly each of two monomers prefers to add its own kind rather than the other — the numbers that decide a copolymer’s composition and sequence.',
+  rr: 'How strongly each of two monomers prefers to add its own kind rather than the other. These are the numbers that decide a copolymer’s composition and sequence.',
   kp: 'How fast a growing radical chain adds the next monomer: the rate constant at the heart of any kinetic model of a radical polymerization.',
-  tg: 'The temperature at which a polymer stops being glassy and starts being rubbery — the property that decides where a material can be used.',
+  tg: 'The temperature at which a polymer stops being glassy and starts being rubbery. It is the property that decides where a material can be used.',
   ws: 'How much of a monomer dissolves in water, which governs mass transfer and whether an emulsion process is feasible at all.',
 };
 ---
@@ -207,13 +207,13 @@ const blurbs: Record<string, string> = {
       takes: 'monomer',
       labelA: 'First monomer (M<sub>1</sub>)',
       labelB: 'Second monomer (M<sub>2</sub>)',
-      hint: 'Two monomers, by name or SMILES — not polymers. Identical monomers are a homopolymerization, and both ratios are 1 by definition.',
+      hint: 'Two monomers, by name or SMILES, not polymers. Identical monomers are a homopolymerization, and both ratios are 1 by definition.',
       placeholder: 'styrene, or C=Cc1ccccc1',
     },
     kp: {
       takes: 'monomer',
       labelA: 'Monomer',
-      hint: 'One monomer, by name or SMILES — not a polymer. The model was trained on radical polymerization.',
+      hint: 'One monomer, by name or SMILES, not a polymer. The model was trained on radical polymerization.',
       placeholder: 'methyl methacrylate, or COC(=O)C(C)=C',
     },
     tg: {
@@ -225,7 +225,7 @@ const blurbs: Record<string, string> = {
     ws: {
       takes: 'monomer',
       labelA: 'Monomer',
-      hint: 'One monomer, by name or SMILES — not a polymer. Returns how much of it dissolves in water.',
+      hint: 'One monomer, by name or SMILES, not a polymer. Returns how much of it dissolves in water.',
       placeholder: 'acrylonitrile, or C=CC#N',
     },
   };
@@ -361,7 +361,7 @@ const blurbs: Record<string, string> = {
               ok: false,
               message:
                 'That is a discrete molecule, not a repeat unit. This model needs the repeat unit, ' +
-                'with <code>*</code> marking where the chain continues — polystyrene is ' +
+                'with <code>*</code> marking where the chain continues: polystyrene is ' +
                 '<code>*CC(c1ccccc1)*</code>, not <code>C=Cc1ccccc1</code>.',
             };
           if (isMultiFragment(text))
@@ -379,7 +379,7 @@ const blurbs: Record<string, string> = {
             ok: false,
             message:
               'The <code>*</code> marks where a chain continues, so that is a polymer repeat unit. ' +
-              'This model was trained on monomers — enter the monomer it is made from.',
+              'This model was trained on monomers; enter the monomer it is made from.',
           };
         return { ok: true, smiles: text };
       }
@@ -399,19 +399,19 @@ const blurbs: Record<string, string> = {
         if (entry)
           return {
             ok: false,
-            message: `The Atlas records no single repeat unit for ${entry.title} — there is no one unit that repeats. Paste a repeat-unit SMILES if you have one.`,
+            message: `The Atlas records no single repeat unit for ${entry.title}: there is no one unit that repeats. Paste a repeat-unit SMILES if you have one.`,
           };
         return {
           ok: false,
           message: namedLikeAPolymer
-            ? `“${text}” is not in the Atlas, and chemical databases answer a polymer name with its monomer — which would give a wrong answer here. Paste its repeat unit as SMILES instead, with <code>*</code> where the chain continues.`
+            ? `“${text}” is not in the Atlas, and chemical databases answer a polymer name with its monomer, which would give a wrong answer here. Paste its repeat unit as SMILES instead, with <code>*</code> where the chain continues.`
             : 'This model needs a polymer. Enter a polymer name from the Atlas, or paste a repeat unit as SMILES.',
         };
       }
 
       if (entry || namedLikeAPolymer) {
         const suggestion = entry?.monomers.length
-          ? ` It is made from ${entry.monomers.join(' and ')} — try that instead.`
+          ? ` It is made from ${entry.monomers.join(' and ')}; try that instead.`
           : ' Enter the monomer it is made from instead.';
         return {
           ok: false,
@@ -472,7 +472,7 @@ const blurbs: Record<string, string> = {
       if (!response.ok) {
         setStatus(
           response.error.code === 'upstream_unavailable'
-            ? 'The model service is not answering. The encyclopedia itself is unaffected — only this page needs it.'
+            ? 'The model service is not answering. The encyclopedia itself is unaffected; only this page needs it.'
             : response.error.message,
           'error'
         );

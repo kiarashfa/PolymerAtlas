@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/polyacetal/tat1-cable-cross-section.webp",
       "alt": "A museum display of a short vertical section of transatlantic telephone cable with its layers of coating progressively stripped back from top to bottom, exposing a central copper conductor, then successive layers of insulation, steel armour wires, and an outer wrapped jacket labelled TRANSATLANTIC TELEPHONE, DEEP SEA TYPE, SUBMARINE CABLES LIMITED.",
-      "caption": "A section of TAT-1 cable, its layers stripped back to show the engineering underneath — the same autumn a DuPont chemist was patenting a plastic built for exactly this kind of unforgiving precision, if at a much smaller scale.",
+      "caption": "A section of TAT-1 cable, its layers stripped back to show the engineering underneath: the same autumn a DuPont chemist was patenting a plastic built for exactly this kind of unforgiving precision, if at a much smaller scale.",
       "source_url": "https://commons.wikimedia.org/wiki/File:TAT_1_cable.JPG",
       "author": "Geni",
       "license": "CC BY-SA 4.0"
@@ -72,7 +72,7 @@
     {
       "src": "~/assets/polymers/polyacetal/tat1-ieee-milestone-plaque.webp",
       "alt": "A bronze plaque mounted on a granite boulder, reading IEEE MILESTONE IN ELECTRICAL ENGINEERING AND COMPUTING, THE FIRST SUBMARINE TRANSATLANTIC TELEPHONE CABLE SYSTEM (TAT-1), 1956, with a paragraph of explanatory text below.",
-      "caption": "The IEEE marker at Kerrera, Scotland, the cable's eastern landing point — installed to mark an engineering achievement whose whole point was that nobody would ever need to visit the actual hardware again.",
+      "caption": "The IEEE marker at Kerrera, Scotland, the cable's eastern landing point. It was installed to mark an engineering achievement whose whole point was that nobody would ever need to visit the actual hardware again.",
       "source_url": "https://commons.wikimedia.org/wiki/File:2024-09-03_Kerrera_IEEE_Milestone_02.jpg",
       "author": "Xdrio",
       "license": "CC BY-SA 4.0"
@@ -88,7 +88,7 @@
     {
       "src": "~/assets/polymers/polyacetal/keck-clips-acetal-resin.webp",
       "alt": "Three plastic Keck clips shaped like the letter C with a locking tooth, in red, green and yellow, of decreasing size, lying on a white surface, each stamped with a size code and 'Made in Germany' or 'Swiss made'.",
-      "caption": "Keck clips for laboratory glassware, a small everyday object almost always moulded from acetal resin — chosen for the same dimensional stability and chemical resistance that put POM into automotive and industrial gears.",
+      "caption": "Keck clips for laboratory glassware, a small everyday object almost always moulded from acetal resin, chosen for the same dimensional stability and chemical resistance that put POM into automotive and industrial gears.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Keck_clips.jpg",
       "author": "Edgar181",
       "license": "Public domain"
@@ -102,7 +102,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
       "test_standard": "ASTM D792",
-      "conditions": "Homopolymer, amorphous density; copolymer grades ~1.41 g/cm³. Crystalline-phase density is higher, 1.49-1.53 g/cm³."
+      "conditions": "Homopolymer, amorphous density; copolymer grades ~1.41 g/cm³. Crystalline-phase density is higher, 1.49–1.53 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -166,7 +166,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "equilibrium, immersion in water at 23 °C; equilibrium moisture uptake at 23 °C/50% RH is 0.2-0.4%"
+      "conditions": "equilibrium, immersion in water at 23 °C; equilibrium moisture uptake at 23 °C/50% RH is 0.2–0.4%"
     },
     "dielectric_strength": {
       "value": null,
@@ -176,7 +176,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "specimen thickness 0.6-0.8 mm"
+      "conditions": "specimen thickness 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -198,10 +198,10 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "homopolymer, unoriented; up to 72-92% in highly-oriented fiber. Copolymer grades run lower, ~56-59% (handbook-mark-1999)."
+      "conditions": "homopolymer, unoriented; up to 72–92% in highly-oriented fiber. Copolymer grades run lower, ~56–59% (handbook-mark-1999)."
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "High chain regularity and crystallinity give POM its combination of stiffness, low friction, and dimensional stability -- ideal for precision parts.",
+    "chain_flexibility_notes": "High chain regularity and crystallinity give POM its combination of stiffness, low friction, and dimensional stability, ideal for precision parts.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -242,7 +242,7 @@
       {
         "solvent": "p-chlorophenol, 2% α-pinene",
         "temperature_k": 333,
-        "mw_range": "62-129 kg/mol",
+        "mw_range": "62–129 kg/mol",
         "k": { "value": 0.0413, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.724, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
@@ -255,14 +255,14 @@
       {
         "solvent": "dimethylformamide",
         "temperature_k": 423,
-        "mw_range": "89-285 kg/mol",
+        "mw_range": "89–285 kg/mol",
         "k": { "value": 0.044, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.66, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "dimethylformamide",
         "temperature_k": 403,
-        "mw_range": "1.5-15 kg/mol",
+        "mw_range": "1.5–15 kg/mol",
         "k": { "value": 0.0224, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.71, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       }
@@ -308,7 +308,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "in air; in nitrogen, 277-326 °C"
+      "conditions": "in air; in nitrogen, 277–326 °C"
     },
     "thermal_conductivity": {
       "value": 0.303,
@@ -318,7 +318,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "solid state; melt state is lower, 0.13-0.15 W/(m·K)"
+      "conditions": "solid state; melt state is lower, 0.13–0.15 W/(m·K)"
     }
   },
   "mechanical": {
@@ -359,7 +359,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
       "test_standard": "ASTM D638",
-      "conditions": "Homopolymer, 296 K, maximum extensibility; copolymer grades 40-75%"
+      "conditions": "Homopolymer, 296 K, maximum extensibility; copolymer grades 40–75%"
     },
     "impact_izod": {
       "value": null,
@@ -370,7 +370,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
       "test_standard": "ASTM D256, notched",
-      "conditions": "Homopolymer, 296 K, 3.175 mm; copolymer grades 53-80 J/m. At 233 K, homopolymer is 53-95 J/m."
+      "conditions": "Homopolymer, 296 K, 3.175 mm; copolymer grades 53–80 J/m. At 233 K, homopolymer is 53–95 J/m."
     },
     "impact_charpy": {
       "value": null,
@@ -415,7 +415,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "against steel; against itself 0.10-0.38, dynamic 0.11"
+      "conditions": "against steel; against itself 0.10–0.38, dynamic 0.11"
     }
   },
   "chemical_resistance": {
@@ -528,7 +528,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "injection molding, recommended 205-215 °C; film/profile extrusion 175-180 °C"
+      "conditions": "injection molding, recommended 205–215 °C; film/profile extrusion 175–180 °C"
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -552,7 +552,7 @@
         "zippers",
         "ski bindings"
       ],
-      "notes": "Coefficient of friction against steel 0.31-0.37 -- low friction plus high stiffness makes POM a common metal-replacement engineering plastic."
+      "notes": "Coefficient of friction against steel 0.31–0.37. Low friction plus high stiffness makes POM a common metal-replacement engineering plastic."
     },
     {
       "sector": "Automotive & electronics",
@@ -610,7 +610,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -618,7 +618,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -626,7 +626,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP (thermal decomposition releases formaldehyde, an IARC Group 1 carcinogen)",

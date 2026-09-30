@@ -10,21 +10,21 @@ import { href, eras } from '../lib/content';
 
 <Base
   title="Constellation"
-  description="The whole history of polymers on one chart — pan across seven eras, zoom from the full sweep of time down to a single material, and follow each chemical family's strand."
+  description="The whole history of polymers on one chart. Pan across seven eras, zoom from the full sweep of time down to a single material, and follow each chemical family's strand."
   current="constellation"
 >
   <main>
     <header class="const-head">
       <h1 class="const-title">The Constellation</h1>
       <p class="const-sub">
-        Two centuries of polymers on one chart — zoom from the sweep of eras down to a single
+        Two centuries of polymers on one chart. Zoom from the sweep of eras down to a single
         material, and follow each family's strand through time.
       </p>
     </header>
     <Constellation client:only="react" catalogueUrl={href('/catalogue.json')} eras={eras} />
     <noscript>
       <p class="const-status">
-        The chart needs JavaScript — the <a href={href('/')}>catalogue</a> and
+        The chart needs JavaScript; the <a href={href('/')}>catalogue</a> and
         <a href={href('/timeline/')}>timeline</a> hold the same archive.
       </p>
     </noscript>

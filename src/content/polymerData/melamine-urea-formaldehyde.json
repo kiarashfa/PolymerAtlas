@@ -15,7 +15,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "This entry covers two related aminoplast condensation resins -- melamine-formaldehyde (MF) and urea-formaldehyde (UF) -- both crosslinked thermoset networks with no single linear repeat unit; UF's idealized repeat is [(O)CNHCH2NH]n before crosslinking.",
+  "notation_note": "This entry covers two related aminoplast condensation resins, melamine-formaldehyde (MF) and urea-formaldehyde (UF), both crosslinked thermoset networks with no single linear repeat unit; UF's idealized repeat is [(O)CNHCH2NH]n before crosslinking.",
   "iupac_name": null,
   "synonyms": [
     "aminoplast resins"
@@ -63,14 +63,14 @@
     {
       "src": "~/assets/polymers/melamine-urea-formaldehyde/flapper-fashion-1922.webp",
       "alt": "A young woman in a fur-collared tweed coat and cloche hat, hands in her pockets, posing for a studio photograph captioned 'A Flapper Girl'.",
-      "caption": "The flapper silhouette of the early 1920s: straight, light, and unweighted — the opposite of the heavy silk that had kept British Cyanides in the thiourea business.",
+      "caption": "The flapper silhouette of the early 1920s: straight, light, and unweighted, the opposite of the heavy silk that had kept British Cyanides in the thiourea business.",
       "source_url": "https://commons.wikimedia.org/wiki/File:A_flapper_girl_LCCN2012645724.jpg",
       "author": "Turner, C. W., photographer",
       "license": "Public domain"
     },
     {
       "src": "~/assets/polymers/melamine-urea-formaldehyde/urea-formaldehyde-objects-colours.webp",
-      "alt": "A museum display case of small urea-formaldehyde household objects — cigarette cases, cups, an owl figurine, salt and pepper shakers, cup-and-saucer sets and trinket boxes — in yellow, green, blue, pink, cream and black.",
+      "alt": "A museum display case of small urea-formaldehyde household objects (cigarette cases, cups, an owl figurine, salt and pepper shakers, cup-and-saucer sets and trinket boxes) in yellow, green, blue, pink, cream and black.",
       "caption": "The palette Bakelite could never offer: urea-formaldehyde objects on museum display, ranging across colors a phenolic mold could not hold.",
       "source_url": "https://commons.wikimedia.org/wiki/File:A_selection_of_urea_formaldehyde_objects_at_the_science_museum.JPG",
       "author": "Geni",
@@ -86,7 +86,7 @@
     },
     {
       "src": "~/assets/polymers/melamine-urea-formaldehyde/melmac-dinnerware-museum.webp",
-      "alt": "A museum display shelf of pale blue Melmac dinnerware — plates, bowls, cups, a creamer and a covered butter dish — with vintage Melmac advertisements pinned to the wall behind.",
+      "alt": "A museum display shelf of pale blue Melmac dinnerware (plates, bowls, cups, a creamer and a covered butter dish) with vintage Melmac advertisements pinned to the wall behind.",
       "caption": "A Melmac place setting on museum display. American Cyanamid's melamine tableware, sold from the 1940s onward, became the material's best-known consumer face.",
       "source_url": "https://commons.wikimedia.org/wiki/File:MelmacDinnerware.jpg",
       "author": "DanielPenfield",
@@ -99,7 +99,7 @@
       "range_min": 1.0,
       "range_max": 1.31,
       "unit": "g/cm³",
-      "conditions": "20 °C; MF resin 1-1.14 g/cm³, UF resin 1.2-1.31 g/cm³",
+      "conditions": "20 °C; MF resin 1–1.14 g/cm³, UF resin 1.2–1.31 g/cm³",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -122,7 +122,7 @@
       "range_min": 4.7,
       "range_max": 10.9,
       "unit": "",
-      "conditions": "100 Hz unless noted; MF 4.7-10.9 (100 Hz), 7.9 (1 MHz); UF approx. 5",
+      "conditions": "100 Hz unless noted; MF 4.7–10.9 (100 Hz), 7.9 (1 MHz); UF approx. 5",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -155,7 +155,7 @@
     "water_absorption": {
       "value": 3,
       "unit": "%",
-      "conditions": "UF resin, equilibrium immersion at 23 °C; alpha-cellulose-filled molding compounds are much lower (Mark): UF 0.4-0.8%, MF 0.1-0.6%, 24 h",
+      "conditions": "UF resin, equilibrium immersion at 23 °C; alpha-cellulose-filled molding compounds are much lower (Mark): UF 0.4–0.8%, MF 0.1–0.6%, 24 h",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -165,7 +165,7 @@
       "range_min": 11,
       "range_max": 16,
       "unit": "kV/mm",
-      "conditions": "MF resin, d = 0.6-0.8 mm, K20/P50 test; no UF value found",
+      "conditions": "MF resin, d = 0.6–0.8 mm, K20/P50 test; no UF value found",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -239,7 +239,7 @@
       "range_min": 90,
       "range_max": 119,
       "unit": "°C",
-      "conditions": "uncured (B-stage) resin melting/softening range, DSC; MF 90-101 °C, UF 119 °C; once cured, the crosslinked network does not melt",
+      "conditions": "uncured (B-stage) resin melting/softening range, DSC; MF 90–101 °C, UF 119 °C; once cured, the crosslinked network does not melt",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -275,7 +275,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "alpha-cellulose-filled molding compounds: UF 0.423, MF 0.293-0.423; foam insulation (UFFI) is much lower, around 0.036 (tertiary source, not the solid resin)."
+      "conditions": "alpha-cellulose-filled molding compounds: UF 0.423, MF 0.293–0.423; foam insulation (UFFI) is much lower, around 0.036 (tertiary source, not the solid resin)."
     }
   },
   "mechanical": {
@@ -284,7 +284,7 @@
       "range_min": 9000,
       "range_max": 9700,
       "unit": "MPa",
-      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,000-9,700 MPa, MF 9,300 MPa",
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,000–9,700 MPa, MF 9,300 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -304,7 +304,7 @@
       "range_min": 45,
       "range_max": 55,
       "unit": "MPa",
-      "conditions": "MF 45-52 MPa, UF 55 MPa",
+      "conditions": "MF 45–52 MPa, UF 55 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -314,7 +314,7 @@
       "range_min": 0.5,
       "range_max": 1.0,
       "unit": "%",
-      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 0.5-1.0%, MF 0.6-0.9%",
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 0.5–1.0%, MF 0.6–0.9%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -324,7 +324,7 @@
       "range_min": 13,
       "range_max": 19,
       "unit": "J/m",
-      "conditions": "notched; alpha-cellulose-filled molding compounds (Mark); UF 14-18 J/m, MF 13-19 J/m",
+      "conditions": "notched; alpha-cellulose-filled molding compounds (Mark); UF 14–18 J/m, MF 13–19 J/m",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -334,7 +334,7 @@
       "range_min": 1.1,
       "range_max": 1.6,
       "unit": "kJ/m²",
-      "conditions": "UF resin, notched, 23 °C; unnotched reported separately at 5-12 kJ/m²; no MF value found",
+      "conditions": "UF resin, notched, 23 °C; unnotched reported separately at 5–12 kJ/m²; no MF value found",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -354,7 +354,7 @@
       "range_min": 7600,
       "range_max": 10300,
       "unit": "MPa",
-      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,700-10,300 MPa, MF 7,600 MPa",
+      "conditions": "alpha-cellulose-filled molding compounds (Mark); UF 9,700–10,300 MPa, MF 7,600 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -422,7 +422,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds -- a real limitation in exterior wood-composite use, not independently confirmed with a source."
+      "conditions": "UF adhesive bonds are known to be more moisture-sensitive than phenolic (Bakelite-type) bonds, a real limitation in exterior wood-composite use, not independently confirmed with a source."
     },
     "flammability_ul94": {
       "value": "V-0",
@@ -436,7 +436,7 @@
       "range_min": 30,
       "range_max": 60,
       "unit": "%",
-      "conditions": "MF 30-60%, UF 30%",
+      "conditions": "MF 30–60%, UF 30%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -461,7 +461,7 @@
       "range_min": 95,
       "range_max": 188,
       "unit": "°C",
-      "conditions": "UF (Wypych): 95-115 °C nozzle, 145-150 °C mold, injection molding; alpha-cellulose-filled compounds (Mark): UF 135-177 °C, MF 138-188 °C",
+      "conditions": "UF (Wypych): 95–115 °C nozzle, 145–150 °C mold, injection molding; alpha-cellulose-filled compounds (Mark): UF 135–177 °C, MF 138–188 °C",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -472,7 +472,7 @@
       "range_min": 0.6,
       "range_max": 1.8,
       "unit": "%",
-      "conditions": "MF (Wypych): 1.5-1.8% general, 0.6-0.8% as molded; UF (Mark, alpha-cellulose-filled): 0.6-1.4% mold shrinkage",
+      "conditions": "MF (Wypych): 1.5–1.8% general, 0.6–0.8% as molded; UF (Mark, alpha-cellulose-filled): 0.6–1.4% mold shrinkage",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

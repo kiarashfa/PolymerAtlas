@@ -14,7 +14,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "MOFs are hybrid organic-inorganic coordination networks (metal-ion clusters/secondary building units linked by organic di- or tricarboxylic-acid ligands), not a classical covalent polymer -- included in this atlas as a bordering/hybrid material class per the manifest's own framing. No single repeat unit represents the class; composition is defined by metal-node + linker choice (e.g. MOF-5 uses Zn4O clusters with terephthalate linkers).",
+  "notation_note": "MOFs are hybrid organic-inorganic coordination networks (metal-ion clusters/secondary building units linked by organic di- or tricarboxylic-acid ligands), not a classical covalent polymer, but included in this atlas as a bordering/hybrid material class per the manifest's own framing. No single repeat unit represents the class; composition is defined by metal-node + linker choice (e.g. MOF-5 uses Zn4O clusters with terephthalate linkers).",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -46,7 +46,7 @@
     {
       "src": "~/assets/polymers/metal-organic-framework-polymers/fermilab-higgs-announcement-2012.webp",
       "alt": "An overhead, fisheye view of a packed university auditorium, with more than two hundred people seated and standing to watch a projection screen at the front displaying a scientific slide.",
-      "caption": "Fermilab researchers crowd a lecture hall at 2 a.m. on 4 July 2012, watching CERN announce the discovery of the Higgs boson — a triumph of predicting, then finding, an exact and specific thing.",
+      "caption": "Fermilab researchers crowd a lecture hall at 2 a.m. on 4 July 2012, watching CERN announce the discovery of the Higgs boson: a triumph of predicting, then finding, an exact and specific thing.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Photo_of_the_Week-_July_6,_2012_(7652236802).jpg",
       "author": "ENERGY.GOV",
       "license": "Public domain"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/metal-organic-framework-polymers/northwestern-university-evanston-campus.webp",
       "alt": "A tree-lined stone footpath on a university campus, leading toward a Gothic-style building with pointed arched windows, flanked by another stone building on the left.",
-      "caption": "Northwestern University's Evanston campus, home to the Farha and Hupp laboratories where NU-110 set its 2012 surface-area record — and, that same year, the site of NuMat Technologies, a spin-out company founded to move MOF chemistry from the laboratory bench toward industrial gas storage and separation.",
+      "caption": "Northwestern University's Evanston campus, home to the Farha and Hupp laboratories where NU-110 set its 2012 surface-area record, and, that same year, the site of NuMat Technologies, a spin-out company founded to move MOF chemistry from the laboratory bench toward industrial gas storage and separation.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Northwestern_University_campus,_Evanston,_IL.jpg",
       "author": "~delta",
       "license": "CC BY-SA 4.0"
@@ -258,7 +258,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "Water/moisture stability varies hugely by MOF chemistry -- some (e.g. zeolitic imidazolate frameworks) are quite stable, others degrade readily; not a single answer for the class."
+      "conditions": "Water/moisture stability varies hugely by MOF chemistry: some (e.g. zeolitic imidazolate frameworks) are quite stable, others degrade readily; not a single answer for the class."
     },
     "flammability_ul94": {
       "value": null,

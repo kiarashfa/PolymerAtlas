@@ -56,7 +56,7 @@
     {
       "src": "~/assets/polymers/viscose-rayon/brooklyn-bridge-1883.webp",
       "alt": "A colour print of the Brooklyn Bridge viewed from below, its stone towers and web of suspension cables spanning a busy harbour full of sailing ships and steamers.",
-      "caption": "The Brooklyn Bridge, completed in May 1883 — an age confident it could reshape steel and stone into whatever it needed.",
+      "caption": "The Brooklyn Bridge, completed in May 1883: an age confident it could reshape steel and stone into whatever it needed.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Currier_and_Ives_Brooklyn_Bridge2.jpg",
       "author": "Currier and Ives",
       "license": "Public domain"
@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/viscose-rayon/krakatoa-eruption-1883.webp",
       "alt": "A lithograph of a volcanic island erupting at night, a dark ash column rising from a glowing red base and trailing ash across the sky.",
-      "caption": "Krakatoa's 1883 eruption, illustrated a few years later — a reminder of how small even the age's proudest engineering still was.",
+      "caption": "Krakatoa's 1883 eruption, illustrated a few years later: a reminder of how small even the age's proudest engineering still was.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Krakatoa_eruption_lithograph.jpg",
       "author": "Lithograph: Parker & Coward, Britain",
       "license": "Public domain"
@@ -80,7 +80,7 @@
     {
       "src": "~/assets/polymers/viscose-rayon/chardonnet-bust.webp",
       "alt": "A white marble bust of a balding, bearded man in formal dress with a bow tie and a decoration on his lapel, on a plinth reading 'Cte de Chardonnet, 1839-1924.'",
-      "caption": "Hilaire de Chardonnet, sculpted by his own daughter — the man who turned an accidental thread into a textile industry.",
+      "caption": "Hilaire de Chardonnet, sculpted by his own daughter: the man who turned an accidental thread into a textile industry.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Comte_de_Chardonnay.jpg",
       "author": "User:Arnaud 25",
       "license": "Public domain"
@@ -88,7 +88,7 @@
     {
       "src": "~/assets/polymers/viscose-rayon/viscose-spinning-machine.webp",
       "alt": "A small brass and glass demonstration spinning apparatus in a museum display case, with two large grooved pulleys, a drive shaft, and a glass bobbin mounted at one end.",
-      "caption": "An early viscose spinning bobbin mechanism, preserved at London's Science Museum — the descendant of Swan's and Chardonnet's extrusion experiments, scaled down to a museum case.",
+      "caption": "An early viscose spinning bobbin mechanism, preserved at London's Science Museum: the descendant of Swan's and Chardonnet's extrusion experiments, scaled down to a museum case.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Viscose_Rayon_spinning_machine.JPG",
       "author": "Geni",
       "license": "CC BY-SA 4.0"
@@ -157,7 +157,7 @@
     "catalysts": [
       "carbon disulfide (xanthation agent)"
     ],
-    "industrial_process_notes": "The viscose process: wood-pulp cellulose is treated with aqueous sodium hydroxide to form alkali cellulose, reacted with carbon disulfide to form soluble sodium cellulose xanthate, then extruded through spinnerets into an acid bath, which regenerates solid cellulose fiber. Louis Marie Hilaire Bernigaut (de Chardonnet) developed an early nitrocellulose-based rayon in 1884; Charles Frederick Cross and Edward John Bevan patented the viscose process in 1892-1894; commercial viscose rayon production began in the UK (Courtaulds) in 1905.",
+    "industrial_process_notes": "The viscose process: wood-pulp cellulose is treated with aqueous sodium hydroxide to form alkali cellulose, reacted with carbon disulfide to form soluble sodium cellulose xanthate, then extruded through spinnerets into an acid bath, which regenerates solid cellulose fiber. Louis Marie Hilaire Bernigaut (de Chardonnet) developed an early nitrocellulose-based rayon in 1884; Charles Frederick Cross and Edward John Bevan patented the viscose process in 1892–1894; commercial viscose rayon production began in the UK (Courtaulds) in 1905.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -165,7 +165,7 @@
     "crystallinity_typical": {
       "value": 25,
       "unit": "%",
-      "conditions": "viscose specifically; a broader \"regenerated cellulose\" figure of 35% is also reported, versus 40-60% typical for native cellulose",
+      "conditions": "viscose specifically; a broader \"regenerated cellulose\" figure of 35% is also reported, versus 40–60% typical for native cellulose",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -247,7 +247,7 @@
       "range_min": 200,
       "range_max": 400,
       "unit": "MPa",
-      "conditions": "dry viscose rayon fiber; wet strength 100-200 MPa; highly oriented rayon reaches 610 MPa dry / 520 MPa wet; Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 69-170 MPa",
+      "conditions": "dry viscose rayon fiber; wet strength 100–200 MPa; highly oriented rayon reaches 610 MPa dry / 520 MPa wet; Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 69–170 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -257,7 +257,7 @@
       "range_min": 8,
       "range_max": 26,
       "unit": "%",
-      "conditions": "dry viscose rayon fiber; wet elongation 13-43%; highly oriented rayon ~9% (dry and wet); Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 22-70%",
+      "conditions": "dry viscose rayon fiber; wet elongation 13–43%; highly oriented rayon ~9% (dry and wet); Wypych Handbook of Polymers separately reports a broader \"regenerated cellulose\" figure of 22–70%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"

@@ -68,7 +68,7 @@
     {
       "src": "~/assets/polymers/polyetherimide/kapton-polyimide-tape-rolls.webp",
       "alt": "Several rolls of amber, semi-transparent Kapton polyimide tape, still shrink-wrapped with barcode labels, stacked together.",
-      "caption": "Rolls of Kapton polyimide tape — the rigid, unmeltable chemistry that polyetherimide shares an imide ring with, but that it alone among this family can also melt and mold.",
+      "caption": "Rolls of Kapton polyimide tape, the rigid, unmeltable chemistry that polyetherimide shares an imide ring with, but that it alone among this family can also melt and mold.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kapton_tapes,_three_rolls_of_different_widths.jpg",
       "author": "Dsimic",
       "license": "CC BY-SA 3.0"
@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polyetherimide/boeing-787-cabin-interior.webp",
       "alt": "A close-up view inside an aircraft cabin showing two rows of blue upholstered economy seats beside oval windows, with white overhead panelling and ventilation nozzles visible above.",
-      "caption": "An aircraft cabin interior — the kind of environment where Ultem-family resins are chosen for panels and ducting precisely because they resist fire and produce little smoke.",
+      "caption": "An aircraft cabin interior, the kind of environment where Ultem-family resins are chosen for panels and ducting precisely because they resist fire and produce little smoke.",
       "source_url": "https://commons.wikimedia.org/wiki/File:B-787-LAN-interior.jpg",
       "author": "FDV",
       "license": "CC BY-SA 4.0"
@@ -164,7 +164,7 @@
       "range_min": 14,
       "range_max": 33,
       "unit": "kV/mm",
-      "conditions": "K20/P50 electrodes, d=0.6-0.8 mm (Wypych); Mark reports 33 kV/mm at 1.6 mm in air, dropping to 20 kV/mm at 3.2 mm in oil",
+      "conditions": "K20/P50 electrodes, d=0.6–0.8 mm (Wypych); Mark reports 33 kV/mm at 1.6 mm in air, dropping to 20 kV/mm at 3.2 mm in oil",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -188,7 +188,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Amorphous -- underlies its amber transparency."
+      "conditions": "Amorphous, which underlies its amber transparency."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Combines aromatic imide rigidity (heat/chemical resistance) with ether linkages that improve melt-processability relative to fully rigid polyimides like Kapton.",
@@ -274,7 +274,7 @@
       "range_min": 3000,
       "range_max": 3700,
       "unit": "MPa",
-      "conditions": "Wypych 3,420-3,700 MPa; Mark reports 3,000 MPa for Ultem 1000 (ASTM D638)",
+      "conditions": "Wypych 3,420–3,700 MPa; Mark reports 3,000 MPa for Ultem 1000 (ASTM D638)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -284,7 +284,7 @@
       "range_min": 96,
       "range_max": 105,
       "unit": "MPa",
-      "conditions": "tensile stress at yield; Wypych 96-103 MPa, Mark 105 MPa for Ultem 1000 (ASTM D638)",
+      "conditions": "tensile stress at yield; Wypych 96–103 MPa, Mark 105 MPa for Ultem 1000 (ASTM D638)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -304,7 +304,7 @@
       "range_min": 14,
       "range_max": 60,
       "unit": "%",
-      "conditions": "Wypych 14-50%; Mark reports 60% ultimate elongation at break for Ultem 1000 (ASTM D638)",
+      "conditions": "Wypych 14–50%; Mark reports 60% ultimate elongation at break for Ultem 1000 (ASTM D638)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -573,7 +573,7 @@
     "nfpa_health_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -581,7 +581,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -589,7 +589,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

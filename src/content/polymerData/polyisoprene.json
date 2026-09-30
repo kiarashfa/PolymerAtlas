@@ -28,11 +28,11 @@
       "label": "trans-1,4",
       "repeat_unit": "{[][$]C/C(C)=C/C[$][]}",
       "smiles_depiction": "*C/C(C)=C/C*",
-      "note": "The trans-1,4 chain packs into a crystalline solid instead of an elastomer -- this is the configuration of gutta-percha and balata.",
+      "note": "The trans-1,4 chain packs into a crystalline solid instead of an elastomer; this is the configuration of gutta-percha and balata.",
       "is_default": false
     }
   ],
-  "notation_note": "The cis-1,4 unit is shown -- chemically the same repeat unit as natural rubber, but manufactured. cis-content varies by catalyst (90-92% via anionic Li-initiation vs. ~98.5% via Ziegler-Natta), which is why the synthetic route is treated as its own entry.",
+  "notation_note": "The cis-1,4 unit is shown, chemically the same repeat unit as natural rubber, but manufactured. cis-content varies by catalyst (90–92% via anionic Li-initiation vs. ~98.5% via Ziegler-Natta), which is why the synthetic route is treated as its own entry.",
   "iupac_name": null,
   "synonyms": [
     "synthetic natural rubber",
@@ -71,7 +71,7 @@
     {
       "src": "~/assets/polymers/polyisoprene/brusilov-offensive-red-cross-1916.webp",
       "alt": "A black-and-white photograph of a wartime camp clearing among birch and pine trees, with a group of soldiers gathered at a tent in the middle distance and wooden crosses marking graves at the right.",
-      "caption": "A Red Cross camp on the Eastern Front during the Brusilov Offensive, summer 1916 - the same war whose blockade of Russian trade was pushing the country's own chemists toward a rubber substitute.",
+      "caption": "A Red Cross camp on the Eastern Front during the Brusilov Offensive, summer 1916. The same war's blockade of Russian trade was pushing the country's own chemists toward a rubber substitute.",
       "source_url": "https://commons.wikimedia.org/wiki/File:The_Brusilov_Offensive,_June-september_1916_Q97848.jpg",
       "author": "Florence Farmborough",
       "license": "Public domain"
@@ -87,7 +87,7 @@
     {
       "src": "~/assets/polymers/polyisoprene/giulio-natta-portrait.webp",
       "alt": "A black-and-white photograph of a man with swept-back grey hair, reading a document at a desk, a signature visible in the corner of the page.",
-      "caption": "Giulio Natta, who extended Ziegler's chemistry to stereoregular polymers the following year - the work that eventually made a true synthetic match for natural rubber possible.",
+      "caption": "Giulio Natta, who extended Ziegler's chemistry to stereoregular polymers the following year. This was the work that eventually made a true synthetic match for natural rubber possible.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Giulio_Natta_Nobel.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -95,7 +95,7 @@
     {
       "src": "~/assets/polymers/polyisoprene/synthetic-polyisoprene-samples.webp",
       "alt": "Several irregular chunks of translucent amber and pale tan solid rubber inside a labelled glass specimen jar on a wooden shelf, the label reading 'Poly-Isoprene'.",
-      "caption": "Raw synthetic polyisoprene, as it comes out of the reactor before compounding - chemically the same monomer natural rubber is built from, arranged by a catalyst rather than a tree.",
+      "caption": "Raw synthetic polyisoprene, as it comes out of the reactor before compounding. It is built from chemically the same monomer as natural rubber, arranged by a catalyst rather than a tree.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Polyisoprene.jpg",
       "author": "Gradstudentscholar",
       "license": "CC BY-SA 4.0"
@@ -171,7 +171,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "d = 0.6-0.8 mm, unvulcanized; vulcanized grade tests to 50 kV/mm."
+      "conditions": "d = 0.6–0.8 mm, unvulcanized; vulcanized grade tests to 50 kV/mm."
     }
   },
   "synthesis": {
@@ -183,11 +183,11 @@
       "n-butyllithium (anionic, ~90-92% cis)",
       "Ziegler-Natta TiCl4/Al or VCl3/Al (coordination, up to ~98.5% cis)"
     ],
-    "industrial_process_notes": "Shell Chemical began the first commercially viable stereoregular cis-polyisoprene production in 1960 using alkyllithium catalysts (90-92% cis, insufficiently crystalline for some uses); Goodyear achieved 98.5% cis polyisoprene in 1962 using a Ziegler-Natta catalyst, reaching commercial viability as a true natural-rubber substitute. ~16 million tonnes produced globally in 2020 (figure covers isoprene rubber broadly).",
+    "industrial_process_notes": "Shell Chemical began the first commercially viable stereoregular cis-polyisoprene production in 1960 using alkyllithium catalysts (90–92% cis, insufficiently crystalline for some uses); Goodyear achieved 98.5% cis polyisoprene in 1962 using a Ziegler-Natta catalyst, reaching commercial viability as a true natural-rubber substitute. ~16 million tonnes produced globally in 2020 (figure covers isoprene rubber broadly).",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "cis-1,4 (90-98.5% depending on catalyst system), closely mimicking natural rubber's stereochemistry.",
+    "tacticity": "cis-1,4 (90–98.5% depending on catalyst system), closely mimicking natural rubber's stereochemistry.",
     "crystallinity_typical": {
       "value": 30,
       "unit": "%",
@@ -212,7 +212,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Synthetic cis-polyisoprene (IR); Wypych separately reports 40,000-1,240,000 g/mol for natural rubber."
+        "conditions": "Synthetic cis-polyisoprene (IR); Wypych separately reports 40,000–1,240,000 g/mol for natural rubber."
       },
       "pdi": {
         "value": 1.03,
@@ -228,7 +228,7 @@
       {
         "solvent": "hexane",
         "temperature_k": 293,
-        "mw_range": "50-800 kg/mol",
+        "mw_range": "50–800 kg/mol",
         "k": {
           "value": 0.0684,
           "unit": "mL/g",
@@ -249,7 +249,7 @@
       {
         "solvent": "toluene",
         "temperature_k": 303,
-        "mw_range": "200-1,000 kg/mol",
+        "mw_range": "200–1,000 kg/mol",
         "k": {
           "value": 0.00851,
           "unit": "mL/g",
@@ -371,7 +371,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Vulcanized; unvulcanized gum ranges 30-90 Shore A. A vulcanized Shore D range of 30-45 is also reported."
+      "conditions": "Vulcanized; unvulcanized gum ranges 30–90 Shore A. A vulcanized Shore D range of 30–45 is also reported."
     },
     "flexural_modulus": {
       "value": null,
@@ -482,7 +482,7 @@
         "range_min": 0.40,
         "range_max": 0.43,
         "unit": "",
-        "conditions": "25 °C, polymer volume fraction 0-1, several literature values.",
+        "conditions": "25 °C, polymer volume fraction 0–1, several literature values.",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -493,7 +493,7 @@
         "range_min": 0.32,
         "range_max": 0.36,
         "unit": "",
-        "conditions": "25-55 °C, polymer volume fraction 1 (bulk solvent limit).",
+        "conditions": "25–55 °C, polymer volume fraction 1 (bulk solvent limit).",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"

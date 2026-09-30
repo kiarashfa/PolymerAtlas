@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "Hydrogels are a broad structural/functional class -- a crosslinked hydrophilic polymer network holding at least 10% water or biological fluid -- not a single chemistry. Base polymers vary widely (poly-HEMA, PVA, alginate, PNIPAM, etc., several of which have their own entries); crosslinking can be chemical (covalent) or physical (hydrogen bonds, hydrophobic association, chain entanglement).",
+  "notation_note": "Hydrogels are a broad structural/functional class (a crosslinked hydrophilic polymer network holding at least 10% water or biological fluid), not a single chemistry. Base polymers vary widely (poly-HEMA, PVA, alginate, PNIPAM, etc., several of which have their own entries); crosslinking can be chemical (covalent) or physical (hydrogen bonds, hydrophobic association, chain entanglement).",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -31,7 +31,7 @@
     {
       "src": "~/assets/polymers/hydrogels/berlin-wall-construction-1961.webp",
       "alt": "Black-and-white photograph of construction workers and cranes building a low concrete wall topped with barbed wire, on a frosty morning.",
-      "caption": "East German crews building the Berlin Wall in late 1961 — the year's hardest, most literal new boundary.",
+      "caption": "East German crews building the Berlin Wall in late 1961: the year's hardest, most literal new boundary.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_1961-11-20.jpg",
       "author": "National Archives",
       "license": "Public domain"
@@ -47,7 +47,7 @@
     {
       "src": "~/assets/polymers/hydrogels/wichterle-lens-casting-apparatus.webp",
       "alt": "A tabletop machine built entirely from red, blue, green and yellow perforated toy-construction-kit strips, with a small motor, a row of small moulds along one crossbar, and thin tubes feeding down to them.",
-      "caption": "A reconstruction of Wichterle's home-built casting apparatus, assembled from the same kind of children's construction kit — the original device is held by Prague's National Technical Museum.",
+      "caption": "A reconstruction of Wichterle's home-built casting apparatus, assembled from the same kind of children's construction kit. The original device is held by Prague's National Technical Museum.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Merkur_based_apparatus_for_centrifugal_casting_of_contact_lenses_by_wichterle.jpg",
       "author": "JanSuchy",
       "license": "Public domain"
@@ -55,7 +55,7 @@
     {
       "src": "~/assets/polymers/hydrogels/soft-contact-lens-macro.webp",
       "alt": "An extreme close-up of a human eye wearing a patterned soft contact lens, its printed iris design visible around the wearer's own pupil, with eyelashes framing the shot.",
-      "caption": "A soft contact lens on the eye today — the direct descendant of Wichterle's kitchen-table gel, now made in both corrective and cosmetic forms.",
+      "caption": "A soft contact lens on the eye today: the direct descendant of Wichterle's kitchen-table gel, now made in both corrective and cosmetic forms.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Contact_Lens_Macro.JPG",
       "author": "Clarisselitiatco",
       "license": "CC BY-SA 3.0"
@@ -118,7 +118,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Not a single synthesis route -- crosslinking method depends on base polymer: PVA hydrogels typically use freeze-thaw cycles, alginate gels form via ionic crosslinking with divalent cations (e.g. Ca2+), and photopolymerization (UV + photoinitiator) enables precise in-situ gelation for tissue engineering. The term 'hydrogel' dates to 1907, but the modern field began with Otto Wichterle and Drahoslav Lim's 1960 publication on hydrophilic gels, which enabled poly(2-hydroxyethyl methacrylate) (poly-HEMA) soft contact lenses.",
+    "industrial_process_notes": "Not a single synthesis route. Crosslinking method depends on base polymer: PVA hydrogels typically use freeze-thaw cycles, alginate gels form via ionic crosslinking with divalent cations (e.g. Ca2+), and photopolymerization (UV + photoinitiator) enables precise in-situ gelation for tissue engineering. The term 'hydrogel' dates to 1907, but the modern field began with Otto Wichterle and Drahoslav Lim's 1960 publication on hydrophilic gels, which enabled poly(2-hydroxyethyl methacrylate) (poly-HEMA) soft contact lenses.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -129,7 +129,7 @@
       "status": "not_applicable"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Two structural categories: chemical hydrogels (covalent crosslinks, permanent network) and physical hydrogels (non-covalent crosslinks -- hydrogen bonds, hydrophobic effects, chain entanglement -- often reversible/thermoresponsive).",
+    "chain_flexibility_notes": "Two structural categories: chemical hydrogels (covalent crosslinks, permanent network) and physical hydrogels (non-covalent crosslinks such as hydrogen bonds, hydrophobic effects, chain entanglement; often reversible/thermoresponsive).",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -315,7 +315,7 @@
     "recyclable": false,
     "biodegradable": null,
     "degradation_pathway": null,
-    "environmental_notes": "Biodegradability depends entirely on the base polymer chemistry -- not a single answer for the class."
+    "environmental_notes": "Biodegradability depends entirely on the base polymer chemistry, not a single answer for the class."
   },
   "references": [
     "wiki-hydrogel"

@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][>]OCC(=O)[<][]}",
   "smiles_depiction": "*OCC(=O)*",
-  "notation_note": "Glycolic acid has no stereocentre, so unlike PLA or PHB there is no isomer to specify -- the chain repeat shown is unambiguous.",
+  "notation_note": "Glycolic acid has no stereocentre, so unlike PLA or PHB there is no isomer to specify; the chain repeat shown is unambiguous.",
   "iupac_name": "Polyglycolide",
   "synonyms": [
     "polyglycolide"
@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/polyglycolic-acid/laparoscopic-instruments.webp",
       "alt": "An overhead photograph of surgical instruments laid out on green cloth, including several long, thin metal rods with pistol-grip handles, trocar sheaths, curved forceps, and coiled cables for light and insufflation.",
-      "caption": "A laparoscopic instrument tray. The keyhole technique that swept through American surgery around 1990 could reach almost anywhere inside the body — but not back out again to pull a stitch.",
+      "caption": "A laparoscopic instrument tray. The keyhole technique that swept through American surgery around 1990 could reach almost anywhere inside the body, but not back out again to pull a stitch.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Instruments_for_laparoscopic_Hernia_Operation.jpg",
       "author": "Anpol42",
       "license": "CC BY-SA 3.0"
@@ -80,7 +80,7 @@
     {
       "src": "~/assets/polymers/polyglycolic-acid/pga-dexon-suture.webp",
       "alt": "A pale blue braided suture thread coiled loosely on dark green cloth, with a curved metal needle swaged onto one end.",
-      "caption": "Polyglycolic acid suture in its original form — the Dexon-type braided thread that replaced catgut from 1970 onward.",
+      "caption": "Polyglycolic acid suture in its original form, the Dexon-type braided thread that replaced catgut from 1970 onward.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Polyglycolic_acid_suture_(_PGA-Dexon).JPG",
       "author": "آرمین",
       "license": "CC0"
@@ -190,10 +190,10 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "46-52% reported specifically for Dexon suture fiber."
+      "conditions": "46–52% reported specifically for Dexon suture fiber."
     },
     "crystal_structure": "Orthorhombic, a:b:c = 0.522:0.619:0.702 nm, 2 chains per unit cell; planar zig-zag chain conformation.",
-    "chain_flexibility_notes": "Fibers exhibit high strength and modulus relative to other resorbable polyesters, but degrade fully within a predictable few-month window -- the basis of its use as a temporary/absorbable material.",
+    "chain_flexibility_notes": "Fibers exhibit high strength and modulus relative to other resorbable polyesters, but degrade fully within a predictable few-month window, the basis of its use as a temporary/absorbable material.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -369,7 +369,7 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": "Fully biodegradable via hydrolysis; completely resorbed by the body in 4-6 months",
+      "value": "Fully biodegradable via hydrolysis; completely resorbed by the body in 4–6 months",
       "status": "verified",
       "evidence_level": "tertiary",
       "source": "wiki-pga"
@@ -435,7 +435,7 @@
   "environmental": {
     "recyclable": false,
     "biodegradable": true,
-    "degradation_pathway": "Hydrolysis of ester linkages; fully resorbed in the body within 4-6 months.",
+    "degradation_pathway": "Hydrolysis of ester linkages; fully resorbed in the body within 4–6 months.",
     "environmental_notes": null
   },
   "references": [
@@ -478,7 +478,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -486,7 +486,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -494,7 +494,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

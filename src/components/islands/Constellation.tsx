@@ -573,7 +573,7 @@ export default function Constellation({
 
   // ---------------------------------------------------------------- render --
   if (error)
-    return <p className="const-status">Could not load the catalogue index — try reloading.</p>;
+    return <p className="const-status">Could not load the catalogue index. Try reloading.</p>;
   if (!layout) return <p className="const-status">Drawing the chart…</p>;
 
   const filtered = eraFilter !== null || familyFilter !== null;

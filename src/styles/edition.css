@@ -1202,7 +1202,7 @@ a.figure-link:hover {
 }
 .ref-pub::before,
 .ref-note::before {
-  content: ' — ';
+  content: ' · ';
   color: var(--ink-muted);
 }
 .ref-pub,

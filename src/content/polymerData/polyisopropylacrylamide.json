@@ -52,7 +52,7 @@
     {
       "src": "~/assets/polymers/polyisopropylacrylamide/disneyland-opening-day-1955.webp",
       "alt": "Children running along a tree-lined walkway toward a fairy-tale castle with turrets and a drawbridge, past costumed performers on horseback.",
-      "caption": "Opening day at Disneyland, 17 July 1955 — engineered wonder, announced to the world months in advance.",
+      "caption": "Opening day at Disneyland, 17 July 1955: engineered wonder, announced to the world months in advance.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Opening_Day_at_Disneyland.jpg",
       "author": "Unknown author Unknown author",
       "license": "Public domain"
@@ -60,7 +60,7 @@
     {
       "src": "~/assets/polymers/polyisopropylacrylamide/rohm-haas-varnish-laboratory.webp",
       "alt": "A vintage photograph of a chemistry laboratory workbench crowded with cans, bottles, and glass apparatus, with shelves of labelled tins along the back wall, captioned 'Varnish Laboratory, 222 West Washington Sq., Phila. Pa.'",
-      "caption": "A laboratory at Röhm & Haas's Philadelphia home office — the company whose chemists patented the first synthesis of the monomer behind PNIPAM.",
+      "caption": "A laboratory at Röhm & Haas's Philadelphia home office. Röhm & Haas was the company whose chemists patented the first synthesis of the monomer behind PNIPAM.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Rohm_and_Haas_Varnish_Laboratory_-_DPLA_-_ea64c4dc36d918bd8bbbcbe0ee67c9a0.jpg",
       "author": "Rohm and Haas Company",
       "license": "No restrictions"
@@ -165,7 +165,7 @@
       "status": "placeholder"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Exhibits a lower critical solution temperature (LCST) around 32°C: the chain is hydrophilic and extended below this temperature, then collapses into a hydrophobic globule above it. The exact transition temperature can shift 5-10°C or more depending on concentration, molar mass, dispersity, and end-group chemistry -- see the-ucst-lcst-concept for the general phenomenon.",
+    "chain_flexibility_notes": "Exhibits a lower critical solution temperature (LCST) around 32°C: the chain is hydrophilic and extended below this temperature, then collapses into a hydrophobic globule above it. The exact transition temperature can shift 5–10°C or more depending on concentration, molar mass, dispersity, and end-group chemistry. See the-ucst-lcst-concept for the general phenomenon.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -361,7 +361,7 @@
         "controlled drug delivery systems",
         "tissue engineering scaffolds"
       ],
-      "notes": "Intramuscular formulations show 48-66 day half-life depending on molecular weight."
+      "notes": "Intramuscular formulations show 48–66 day half-life depending on molecular weight."
     },
     {
       "sector": "Materials",

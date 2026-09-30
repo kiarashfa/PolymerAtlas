@@ -51,7 +51,7 @@
     {
       "src": "~/assets/polymers/polyether-ether-ketone/voskhod2-spacewalk-stamp-1965.webp",
       "alt": "A 1965 Soviet postage stamp illustrating a cosmonaut in an orange spacesuit floating outside the cylindrical Voskhod 2 spacecraft against a starry blue background, with Cyrillic text and the date 18 March 1965.",
-      "caption": "A Soviet stamp marking Alexei Leonov's spacewalk from Voskhod 2 in March 1965 — the same year the aerospace and nuclear industries' hunger for extreme-environment materials was pushing several major chemical companies toward a new class of aromatic engineering plastics.",
+      "caption": "A Soviet stamp marking Alexei Leonov's spacewalk from Voskhod 2 in March 1965, the same year the aerospace and nuclear industries' hunger for extreme-environment materials was pushing several major chemical companies toward a new class of aromatic engineering plastics.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Soviet_Union-1965-Stamp-0.10._Voskhod-2._First_Spacewalk.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/polyether-ether-ketone/ed-white-gemini4-spacewalk-1965.webp",
       "alt": "An astronaut in a white spacesuit floating in space above the curve of the blue Earth, tethered by a gold-coloured umbilical line, holding a hand-held manoeuvring unit.",
-      "caption": "Ed White during America's first spacewalk, June 1965 — the same decade's demand for materials that could take extreme heat and chemical stress without adding weight is what set ICI, Phillips Petroleum and Union Carbide chasing new aromatic polymer chemistry.",
+      "caption": "Ed White during America's first spacewalk, June 1965. The same decade's demand for materials that could take extreme heat and chemical stress without adding weight is what set ICI, Phillips Petroleum and Union Carbide chasing new aromatic polymer chemistry.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ed_White_performs_first_U.S._spacewalk_-_GPN-2006-000025.jpg",
       "author": "NASA",
       "license": "Public domain"
@@ -67,7 +67,7 @@
     {
       "src": "~/assets/polymers/polyether-ether-ketone/peek-resin-pellets.webp",
       "alt": "A close-up photograph of a person's cupped hand holding a large quantity of small black cylindrical plastic pellets.",
-      "caption": "PEEK resin pellets, ready for melt-processing — the raw form of a material whose real story is not a single dramatic discovery but a decade of parallel corporate research into polymers that could survive where ordinary plastics could not.",
+      "caption": "PEEK resin pellets, ready for melt-processing, the raw form of a material whose real story is not a single dramatic discovery but a decade of parallel corporate research into polymers that could survive where ordinary plastics could not.",
       "source_url": "https://commons.wikimedia.org/wiki/File:PEEK_resin.jpg",
       "author": "Acheolg",
       "license": "CC BY-SA 4.0"
@@ -75,7 +75,7 @@
     {
       "src": "~/assets/polymers/polyether-ether-ketone/victrex-peek-cable-tie.webp",
       "alt": "A single moulded plastic cable tie in a warm amber-brown colour, curled into a loop with its locking head at the top, photographed against a plain white background and embossed with a manufacturer's web address.",
-      "caption": "A cable tie moulded from Victrex PEEK — one of the least glamorous applications of a polymer otherwise associated with jet engines and spinal implants, and a reminder that most of PEEK's working life is spent on jobs nobody notices.",
+      "caption": "A cable tie moulded from Victrex PEEK, one of the least glamorous applications of a polymer otherwise associated with jet engines and spinal implants, and a reminder that most of PEEK's working life is spent on jobs nobody notices.",
       "source_url": "https://commons.wikimedia.org/wiki/File:EXM_cable_tie.jpg",
       "author": "T. Krivec / IB Steiner",
       "license": "CC BY-SA 4.0"
@@ -90,7 +90,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20 °C; amorphous 1.260-1.267 g/cm³, crystalline 1.384-1.401 g/cm³ (handbook-mark-1999)"
+      "conditions": "20 °C; amorphous 1.260–1.267 g/cm³, crystalline 1.384–1.401 g/cm³ (handbook-mark-1999)"
     },
     "melt_flow_index": {
       "value": null,
@@ -108,7 +108,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Wypych reports a broader range, 1.65-1.77, across orientation states"
+      "conditions": "Wypych reports a broader range, 1.65–1.77, across orientation states"
     },
     "dielectric_constant": {
       "value": null,
@@ -144,7 +144,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "equilibrium, 23 °C/50% RH; 24 h immersion at 23 °C gives 0.1-0.5%"
+      "conditions": "equilibrium, 23 °C/50% RH; 24 h immersion at 23 °C gives 0.1–0.5%"
     },
     "dielectric_strength": {
       "value": 19,
@@ -152,7 +152,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "specimen thickness 0.6-0.8 mm"
+      "conditions": "specimen thickness 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -162,7 +162,7 @@
       "hydroquinone disodium salt"
     ],
     "catalysts": [],
-    "industrial_process_notes": "PEEK polymers were invented in November 1978 and commercialized in the early 1980s by Imperial Chemical Industries (later acquired by Victrex PLC) -- notably later than the 1965 milestone year used for this entry's chronological placement, which may reference earlier related PEK/PAEK aromatic-ketone chemistry rather than PEEK itself. Synthesized via step-growth polymerization of 4,4'-difluorobenzophenone with hydroquinone's disodium salt at ~300°C in aprotic solvents.",
+    "industrial_process_notes": "PEEK polymers were invented in November 1978 and commercialized in the early 1980s by Imperial Chemical Industries (later acquired by Victrex PLC). This is notably later than the 1965 milestone year used for this entry's chronological placement, which may reference earlier related PEK/PAEK aromatic-ketone chemistry rather than PEEK itself. Synthesized via step-growth polymerization of 4,4'-difluorobenzophenone with hydroquinone's disodium salt at ~300°C in aprotic solvents.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -175,7 +175,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "typical; maximum reported 48%. Wypych reports a broader observed range of 16-47% across processing conditions (handbook-wypych-2016)."
+      "conditions": "typical; maximum reported 48%. Wypych reports a broader observed range of 16–47% across processing conditions (handbook-wypych-2016)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Rigid aromatic backbone with ether/ketone linkages gives PEEK an unusual combination of high-temperature performance and semi-crystalline melt-processability (unlike many high-performance thermosets).",
@@ -215,7 +215,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC; Mark reports 136.85-151.85 °C depending on method/thermal history (handbook-mark-1999)"
+      "conditions": "DSC; Mark reports 136.85–151.85 °C depending on method/thermal history (handbook-mark-1999)"
     },
     "tm": {
       "value": 343,
@@ -225,7 +225,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC; equilibrium (extrapolated) melting point is higher, 383.85-394.85 °C (handbook-mark-1999)"
+      "conditions": "DSC; equilibrium (extrapolated) melting point is higher, 383.85–394.85 °C (handbook-mark-1999)"
     },
     "tc": {
       "value": null,
@@ -266,7 +266,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
       "test_standard": "ASTM D638",
-      "conditions": "unfilled grade; Wypych reports a broader range of 3500-4400 MPa (handbook-wypych-2016)"
+      "conditions": "unfilled grade; Wypych reports a broader range of 3500–4400 MPa (handbook-wypych-2016)"
     },
     "yield_strength": {
       "value": 91,
@@ -282,7 +282,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "23 °C; falls with temperature (50 MPa at 100 °C, 12 MPa at 200 °C, 10 MPa at 300 °C). Wypych reports an unfilled-grade range of 75-100 MPa."
+      "conditions": "23 °C; falls with temperature (50 MPa at 100 °C, 12 MPa at 200 °C, 10 MPa at 300 °C). Wypych reports an unfilled-grade range of 75–100 MPa."
     },
     "elongation_at_break": {
       "value": null,
@@ -301,7 +301,7 @@
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
       "test_standard": "ASTM D256, notched",
-      "conditions": "unnotched Izod is no break; Wypych reports a notched range of 77-91 J/m for the unfilled grade"
+      "conditions": "unnotched Izod is no break; Wypych reports a notched range of 77–91 J/m for the unfilled grade"
     },
     "impact_charpy": {
       "value": 55,
@@ -325,7 +325,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "23 °C; drops with temperature (3600 MPa at 100 °C, 500 MPa at 200 °C, 300 MPa at 300 °C). Wypych reports an unfilled-grade range of 3700-4300 MPa."
+      "conditions": "23 °C; drops with temperature (3600 MPa at 100 °C, 500 MPa at 200 °C, 300 MPa at 300 °C). Wypych reports an unfilled-grade range of 3700–4300 MPa."
     },
     "poissons_ratio": {
       "value": 0.405,
@@ -342,7 +342,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "general/unspecified counterface; 0.08-0.09 lubricated, 0.25-0.3 dry conditions"
+      "conditions": "general/unspecified counterface; 0.08–0.09 lubricated, 0.25–0.3 dry conditions"
     }
   },
   "chemical_resistance": {
@@ -445,7 +445,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Mark reports a calculated range of 21.2-22.6 MPa^0.5 (handbook-mark-1999)"
+      "conditions": "Mark reports a calculated range of 21.2–22.6 MPa^0.5 (handbook-mark-1999)"
     },
     "gas_permeability": [
       {
@@ -467,7 +467,7 @@
         "source": "handbook-mark-1999"
       },
       {
-        "key": "CO2, 26-30% crystalline",
+        "key": "CO2, 26–30% crystalline",
         "value": 2.4e-14,
         "unit": "cm³(STP)·cm/(cm²·s·Pa)",
         "conditions": "converted from 2.4×10⁻¹⁸ m³(STP)·m/(m²·s·Pa)",

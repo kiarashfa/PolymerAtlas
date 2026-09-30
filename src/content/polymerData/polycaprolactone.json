@@ -63,7 +63,7 @@
     {
       "src": "~/assets/polymers/polycaprolactone/pcl-beads.webp",
       "alt": "A close-up photograph of translucent, off-white plastic pellets, oval and pearl-like, densely packed together and catching the light unevenly.",
-      "caption": "Polycaprolactone resin pellets — the raw form in which the polymer is sold before it is melted into filament, coatings, or medical devices.",
+      "caption": "Polycaprolactone resin pellets, the raw form in which the polymer is sold before it is melted into filament, coatings, or medical devices.",
       "source_url": "https://commons.wikimedia.org/wiki/File:PCL_beads.jpg",
       "author": "Prosthetic Head",
       "license": "CC BY-SA 4.0"
@@ -71,7 +71,7 @@
     {
       "src": "~/assets/polymers/polycaprolactone/shapelock-bike-light.webp",
       "alt": "A close-up of a bicycle handlebar stem where two flashlight torches are clamped in place by a lump of hand-shaped white plastic moulded around the metal fittings.",
-      "caption": "A bicycle light mount, hand-moulded from softened PCL pellets — the same low melting point that made it a slow-release drug implant also makes it workable with nothing hotter than tap water.",
+      "caption": "A bicycle light mount, hand-moulded from softened PCL pellets. The same low melting point that made it a slow-release drug implant also makes it workable with nothing hotter than tap water.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Shapelock_bike_light.png",
       "author": "Catsmeat",
       "license": "Public domain"
@@ -252,7 +252,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "A narrower 210-440 MPa is also reported under 'Young's modulus' in the same source."
+      "conditions": "A narrower 210–440 MPa is also reported under 'Young's modulus' in the same source."
     },
     "yield_strength": {
       "value": null,

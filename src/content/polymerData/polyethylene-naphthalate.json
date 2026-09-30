@@ -61,7 +61,7 @@
     {
       "src": "~/assets/polymers/polyethylene-naphthalate/lto-tape-cartridge-pen-film.webp",
       "alt": "An opened data-tape cartridge shown from above, its reel of thin metallic-grey magnetic tape wound around a central hub, beside the cartridge's disassembled outer casing and a small pile of screws.",
-      "caption": "An opened LTO data-tape cartridge. The tape itself is wound on a thin polyester film base — PEN's stiffness and dimensional stability suit it well to this role.",
+      "caption": "An opened LTO data-tape cartridge. The tape itself is wound on a thin polyester film base; PEN's stiffness and dimensional stability suit it well to this role.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Sony_LTO_Ultrium_3_Data_cartridge_LTX400G_-_details.jpg",
       "author": "Mister rf",
       "license": "CC BY-SA 4.0"
@@ -147,7 +147,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Film, d = 0.6-0.8 mm"
+      "conditions": "Film, d = 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -170,7 +170,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Strongly processing-dependent: 1-4.2% as-amorphous, 6.8-49.6% annealed (123-170°C), 31-38% drawn (ratio 3.6-6.1), 50.6% biaxially oriented; up to 62.5-87.2% under high-pressure crystallization."
+      "conditions": "Strongly processing-dependent: 1–4.2% as-amorphous, 6.8–49.6% annealed (123–170°C), 31–38% drawn (ratio 3.6–6.1), 50.6% biaxially oriented; up to 62.5–87.2% under high-pressure crystallization."
     },
     "crystal_structure": "Triclinic, two polymorphs (α: a≈0.651, b≈0.575, c≈1.32 nm; β: a≈0.926, b≈1.559, c≈1.273 nm), 1 chain per unit cell; nearly planar chain conformation.",
     "chain_flexibility_notes": "The bulkier naphthalate ring (vs. PET's terephthalate) restricts chain mobility, improving strength, modulus, chemical/hydrolytic resistance, gas barrier, thermal/thermo-oxidative resistance, and UV-light barrier relative to PET.",
@@ -202,7 +202,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Mark's Polymer Data Handbook reports 117-121°C (DSC), closely matching."
+      "conditions": "Mark's Polymer Data Handbook reports 117–121°C (DSC), closely matching."
     },
     "tm": {
       "value": 275.5,
@@ -212,7 +212,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC. Mark's Polymer Data Handbook reports 265-266°C (DSC)."
+      "conditions": "DSC. Mark's Polymer Data Handbook reports 265–266°C (DSC)."
     },
     "tc": {
       "value": 200.35,
@@ -222,7 +222,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "DSC; Wypych's Handbook of Polymers reports a closely matching rapid crystallization temperature of 198-203°C."
+      "conditions": "DSC; Wypych's Handbook of Polymers reports a closely matching rapid crystallization temperature of 198–203°C."
     },
     "hdt": {
       "value": null,

@@ -65,7 +65,7 @@
     {
       "src": "~/assets/polymers/polysulfone-polyethersulfone/kolff-artificial-kidney-1955.webp",
       "alt": "Two masked, capped medical staff in a hospital ward standing beside a stand of glass bottles and rubber tubing connected to an artificial kidney machine, partially visible at the lower edge of the frame.",
-      "caption": "A Kolff-type artificial kidney in operation at a field hospital, 1955 — two decades before a membrane material existed that could survive being sterilized and reused indefinitely.",
+      "caption": "A Kolff-type artificial kidney in operation at a field hospital, 1955, two decades before a membrane material existed that could survive being sterilized and reused indefinitely.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Artificial_kidney_(Kolff_type)_in_operation.jpg",
       "author": "United States Army",
       "license": "Public domain"
@@ -73,7 +73,7 @@
     {
       "src": "~/assets/polymers/polysulfone-polyethersulfone/hemodialysis-machine.webp",
       "alt": "A tall white hemodialysis machine with a control panel of dials, buttons and a small screen, alongside pump mechanisms and tubing, in a tiled clinical room.",
-      "caption": "A modern hemodialysis machine. The membrane cartridge it drives — the part actually touching the patient's blood — is where polysulfone and polyethersulfone do their work.",
+      "caption": "A modern hemodialysis machine. The membrane cartridge it drives (the part actually touching the patient's blood) is where polysulfone and polyethersulfone do their work.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Hemodialysismachine.jpg",
       "author": "Unknown author",
       "license": "CC BY-SA 3.0"
@@ -104,7 +104,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU (bisphenol A polysulfone), 20 °C; matches 1.24 g/cm³ per handbook-mark-1999. PES (polyethersulfone) is denser, 1.37-1.43 g/cm³ (handbook-wypych-2016)."
+      "conditions": "PSU (bisphenol A polysulfone), 20 °C; matches 1.24 g/cm³ per handbook-mark-1999. PES (polyethersulfone) is denser, 1.37–1.43 g/cm³ (handbook-wypych-2016)."
     },
     "melt_flow_index": {
       "value": null,
@@ -114,7 +114,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU, 343 °C/3.8 kg (Mark reports 6.5 g/10 min for PSU without stated conditions). PES is 12-30 g/10 min at 380 °C/2.16 kg (handbook-wypych-2016)."
+      "conditions": "PSU, 343 °C/3.8 kg (Mark reports 6.5 g/10 min for PSU without stated conditions). PES is 12–30 g/10 min at 380 °C/2.16 kg (handbook-wypych-2016)."
     },
     "refractive_index": {
       "value": 1.633,
@@ -122,7 +122,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU, 20 °C; PES is 1.545-1.65 (handbook-wypych-2016), 1.545 per handbook-mark-1999"
+      "conditions": "PSU, 20 °C; PES is 1.545–1.65 (handbook-wypych-2016), 1.545 per handbook-mark-1999"
     },
     "dielectric_constant": {
       "value": 3.03,
@@ -171,7 +171,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU, equilibrium 23 °C/50% RH; 24 h immersion at 23 °C gives 0.22-0.3%. PES equilibrium moisture is higher, 0.8% (24 h immersion: 2.2% per handbook-wypych-2016, or 0.43% per handbook-mark-1999)."
+      "conditions": "PSU, equilibrium 23 °C/50% RH; 24 h immersion at 23 °C gives 0.22–0.3%. PES equilibrium moisture is higher, 0.8% (24 h immersion: 2.2% per handbook-wypych-2016, or 0.43% per handbook-mark-1999)."
     },
     "dielectric_strength": {
       "value": null,
@@ -181,7 +181,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU, specimen thickness 0.6-0.8 mm; matches 14.6 kV/mm per handbook-mark-1999. PES is 15 kV/mm (handbook-wypych-2016)."
+      "conditions": "PSU, specimen thickness 0.6–0.8 mm; matches 14.6 kV/mm per handbook-mark-1999. PES is 15 kV/mm (handbook-wypych-2016)."
     }
   },
   "synthesis": {
@@ -216,7 +216,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "PSU; PES is lower, 8,600-28,700 g/mol (handbook-wypych-2016)"
+        "conditions": "PSU; PES is lower, 8,600–28,700 g/mol (handbook-wypych-2016)"
       },
       "mw": {
         "value": null,
@@ -226,7 +226,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "PSU; PES is lower, 10,100-38,800 g/mol (handbook-wypych-2016)"
+        "conditions": "PSU; PES is lower, 10,100–38,800 g/mol (handbook-wypych-2016)"
       },
       "pdi": {
         "value": 1.6,
@@ -234,7 +234,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "PSU; PES is 1.17-1.55 (handbook-wypych-2016)"
+        "conditions": "PSU; PES is 1.17–1.55 (handbook-wypych-2016)"
       }
     }
   },
@@ -247,13 +247,13 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU (bisphenol A polysulfone); matches 185.85 °C by DSC (handbook-mark-1999). PES (polyethersulfone) is substantially higher, 220-246 °C (handbook-wypych-2016), matching 224.85 °C by DSC (handbook-mark-1999)."
+      "conditions": "PSU (bisphenol A polysulfone); matches 185.85 °C by DSC (handbook-mark-1999). PES (polyethersulfone) is substantially higher, 220–246 °C (handbook-wypych-2016), matching 224.85 °C by DSC (handbook-mark-1999)."
     },
     "tm": {
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Both PSU and PES are explicitly reported as amorphous (both handbooks), with no true melting point. Wypych's tables do list a 'Melting temperature, DSC' row for each (185 °C for PSU, 220-238 °C for PES), but these coincide almost exactly with each material's own Tg range and are judged to be a mislabeled duplicate of Tg rather than a real crystalline melting transition."
+      "conditions": "Both PSU and PES are explicitly reported as amorphous (both handbooks), with no true melting point. Wypych's tables do list a 'Melting temperature, DSC' row for each (185 °C for PSU, 220–238 °C for PES), but these coincide almost exactly with each material's own Tg range and are judged to be a mislabeled duplicate of Tg rather than a real crystalline melting transition."
     },
     "tc": {
       "value": null,
@@ -269,7 +269,7 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
       "test_standard": "ASTM D648, 1.8 MPa",
-      "conditions": "PSU; matches 173.85 °C per handbook-mark-1999. PES (polyethersulfone) is substantially higher, 204-207 °C (handbook-wypych-2016), or 233.85 °C per handbook-mark-1999."
+      "conditions": "PSU; matches 173.85 °C per handbook-mark-1999. PES (polyethersulfone) is substantially higher, 204–207 °C (handbook-wypych-2016), or 233.85 °C per handbook-mark-1999."
     },
     "decomposition_onset": {
       "value": 550,
@@ -277,7 +277,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; PES is 400-584 °C (handbook-wypych-2016)"
+      "conditions": "PSU; PES is 400–584 °C (handbook-wypych-2016)"
     },
     "thermal_conductivity": {
       "value": 0.26,
@@ -285,7 +285,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; matches handbook-mark-1999. PES is lower, 0.18-0.24 W/(m·K) depending on source (handbook-wypych-2016, handbook-mark-1999)."
+      "conditions": "PSU; matches handbook-mark-1999. PES is lower, 0.18–0.24 W/(m·K) depending on source (handbook-wypych-2016, handbook-mark-1999)."
     }
   },
   "mechanical": {
@@ -315,7 +315,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; matches 69.0 MPa per handbook-mark-1999. PES is higher, 83-95 MPa (handbook-wypych-2016) or 82.8 MPa (handbook-mark-1999)."
+      "conditions": "PSU; matches 69.0 MPa per handbook-mark-1999. PES is higher, 83–95 MPa (handbook-wypych-2016) or 82.8 MPa (handbook-mark-1999)."
     },
     "elongation_at_break": {
       "value": null,
@@ -325,7 +325,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; Mark reports a much lower maximum extensibility of 3.0% for the neat resin (handbook-mark-1999), a notable discrepancy, possibly a different test or grade. PES is lower, 25-75% (handbook-wypych-2016), or 40-80% per handbook-mark-1999."
+      "conditions": "PSU; Mark reports a much lower maximum extensibility of 3.0% for the neat resin (handbook-mark-1999), a notable discrepancy, possibly a different test or grade. PES is lower, 25–75% (handbook-wypych-2016), or 40–80% per handbook-mark-1999."
     },
     "impact_izod": {
       "value": 69,
@@ -375,7 +375,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU, in air; 0.4 in water. PES is 0.15-0.45 in air, 0.3 in water (handbook-wypych-2016)."
+      "conditions": "PSU, in air; 0.4 in water. PES is 0.15–0.45 in air, 0.3 in water (handbook-wypych-2016)."
     }
   },
   "chemical_resistance": {
@@ -452,7 +452,7 @@
       }
     },
     "weathering_uv": {
-      "value": "PSU retains 93-100% of tensile strength and impact strength after exposure to 50-100 kGy gamma radiation",
+      "value": "PSU retains 93–100% of tensile strength and impact strength after exposure to 50–100 kGy gamma radiation",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -486,7 +486,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; a second reported value is 21.5 MPa^0.5. Matches 20.26 MPa^0.5 per handbook-mark-1999. PES is higher, 21.0-22.9 MPa^0.5 experimental / 23.12-24.4 MPa^0.5 calculated (handbook-wypych-2016)."
+      "conditions": "PSU; a second reported value is 21.5 MPa^0.5. Matches 20.26 MPa^0.5 per handbook-mark-1999. PES is higher, 21.0–22.9 MPa^0.5 experimental / 23.12–24.4 MPa^0.5 calculated (handbook-wypych-2016)."
     },
     "gas_permeability": [
       {
@@ -550,7 +550,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; PES is 340-390 °C, injection molding (handbook-wypych-2016)"
+      "conditions": "PSU; PES is 340–390 °C, injection molding (handbook-wypych-2016)"
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -561,7 +561,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PSU; PES is higher, 0.8-1.4% (handbook-wypych-2016)"
+      "conditions": "PSU; PES is higher, 0.8–1.4% (handbook-wypych-2016)"
     }
   },
   "applications": [
@@ -637,7 +637,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+      "conditions": "PES (polyethersulfone); HMIS rating, 0–4 scale. No rating reported for PSU."
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -645,7 +645,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+      "conditions": "PES (polyethersulfone); HMIS rating, 0–4 scale. No rating reported for PSU."
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -653,7 +653,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "PES (polyethersulfone); HMIS rating, 0-4 scale. No rating reported for PSU."
+      "conditions": "PES (polyethersulfone); HMIS rating, 0–4 scale. No rating reported for PSU."
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

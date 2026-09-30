@@ -40,7 +40,7 @@
     {
       "src": "~/assets/polymers/keratin/edison-carbon-bulb-1879.webp",
       "alt": "An early Edison incandescent light bulb with a pear-shaped glass envelope, a looped carbon filament, and a screw-style base, mounted against a dark green background.",
-      "caption": "An original Edison carbon-filament bulb. By the time Edison's Pearl Street Station switched electric light on in 1882, keratin — named, but still structurally a mystery — was still doing the job synthetic plastics would later take over.",
+      "caption": "An original Edison carbon-filament bulb. By the time Edison's Pearl Street Station switched electric light on in 1882, keratin (named, but still structurally a mystery) was still doing the job synthetic plastics would later take over.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Edison_Carbon_Bulb.jpg",
       "author": "Terren",
       "license": "CC BY 2.0"
@@ -48,7 +48,7 @@
     {
       "src": "~/assets/polymers/keratin/rhino-horns-closeup.webp",
       "alt": "A close-up side view of a rhinoceros's two horns, tapered and ridged, growing from its snout.",
-      "caption": "A rhinoceros's horns — pure keratin, with no bony core at all, packed and compressed into one of the hardest structures any mammal grows.",
+      "caption": "A rhinoceros's horns: pure keratin, with no bony core at all, packed and compressed into one of the hardest structures any mammal grows.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ceratotherium_simum-horns-Lisbon_07.JPG",
       "author": "Salix",
       "license": "CC BY-SA 3.0"
@@ -225,7 +225,7 @@
       "value": null,
       "unit": "Shore",
       "status": "placeholder",
-      "conditions": "Varies hugely between soft hair keratin and rigid hoof/nail keratin -- no single value applies."
+      "conditions": "Varies hugely between soft hair keratin and rigid hoof/nail keratin. No single value applies."
     },
     "flexural_modulus": {
       "value": null,

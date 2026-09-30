@@ -51,7 +51,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-alcohol/graumans-chinese-theatre-1977.webp",
       "alt": "Color photograph of the ornate ticket booth outside Grauman's Chinese Theatre in 1977, its window displaying a hand-lettered 'Star Wars' screening schedule and a poster.",
-      "caption": "Grauman's Chinese Theatre, 1977, mid-run of Star Wars — the year's most visible reminder that an audience will queue for something genuinely new.",
+      "caption": "Grauman's Chinese Theatre, 1977, mid-run of Star Wars. This was the year's most visible reminder that an audience will queue for something genuinely new.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Grauman's_Chinese_Theater,_Hollywood,_California_LCCN2017707846.tif",
       "author": "John Margolies",
       "license": "Public domain"
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-alcohol/space-shuttle-enterprise-first-flight-1977.webp",
       "alt": "The wingless-looking Space Shuttle prototype Enterprise gliding above cloud cover, having just separated from the NASA 747 carrier aircraft flying below it.",
-      "caption": "The shuttle Enterprise glides free of its 747 carrier during 1977's Approach and Landing Tests — an incomplete vehicle, built to solve one problem before the real one could be attempted.",
+      "caption": "The shuttle Enterprise glides free of its 747 carrier during 1977's Approach and Landing Tests; it was an incomplete vehicle, built to solve one problem before the real one could be attempted.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Enterprise_First_Free_Flight_(19669327824).jpg",
       "author": "NASA",
       "license": "Public domain"
@@ -67,7 +67,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-alcohol/laundry-detergent-pod.webp",
       "alt": "Clear plastic tubs of Tide Pods laundry detergent capsules on a store shelf, each capsule visible as a multicolored gel unit wrapped in a thin transparent film.",
-      "caption": "Laundry detergent pods — PVA's most visible role, dissolving on contact with wash water and releasing the detergent sealed inside.",
+      "caption": "Laundry detergent pods: PVA's most visible role, dissolving on contact with wash water and releasing the detergent sealed inside.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Tide_Pods_Laundry_Detergent_Capsules_(8422844630).jpg",
       "author": "Austin Kirk",
       "license": "CC BY 2.0"
@@ -125,7 +125,7 @@
       "range_min": 2.63e-6,
       "range_max": 3.23e-6,
       "unit": "S/m",
-      "conditions": "Reciprocal of reported volume resistivity, (3.1-3.8)×10⁵ Ω·m",
+      "conditions": "Reciprocal of reported volume resistivity, (3.1–3.8)×10⁵ Ω·m",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -165,7 +165,7 @@
       "vinyl acetate"
     ],
     "catalysts": [],
-    "industrial_process_notes": "PVA is never made by direct polymerization of its own monomer (vinyl alcohol tautomerizes to acetaldehyde) -- instead, polyvinyl acetate is polymerized first, then base-catalyzed transesterified with ethanol to give PVA, with the degree of hydrolysis a controllable process variable. Over 1 million metric tonnes consumed worldwide in 2006.",
+    "industrial_process_notes": "PVA is never made by direct polymerization of its own monomer (vinyl alcohol tautomerizes to acetaldehyde); instead, polyvinyl acetate is polymerized first, then base-catalyzed transesterified with ethanol to give PVA, with the degree of hydrolysis a controllable process variable. Over 1 million metric tonnes consumed worldwide in 2006.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -175,12 +175,12 @@
       "range_min": 30,
       "range_max": 60,
       "unit": "%",
-      "conditions": "Atactic (commercial) grade; syndiotactic 25-35%, isotactic 18-24%.",
+      "conditions": "Atactic (commercial) grade; syndiotactic 25–35%, isotactic 18–24%.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Predominantly 1,3-diol linkages with trace 1,2-diol units, the ratio depending on the precursor polyvinyl acetate's polymerization conditions. Crystallizes in a monoclinic lattice (a:b:c ≈ 0.78:0.55:0.25 nm, angles ≈ 91-93°).",
+    "crystal_structure": "Predominantly 1,3-diol linkages with trace 1,2-diol units, the ratio depending on the precursor polyvinyl acetate's polymerization conditions. Crystallizes in a monoclinic lattice (a:b:c ≈ 0.78:0.55:0.25 nm, angles ≈ 91–93°).",
     "chain_flexibility_notes": null,
     "tg_relation_notes": null,
     "molecular_weight": {
@@ -264,7 +264,7 @@
     "tm": {
       "value": 230,
       "unit": "°C",
-      "conditions": "Fully hydrolyzed grade; partially hydrolyzed grades 180-190 °C",
+      "conditions": "Fully hydrolyzed grade; partially hydrolyzed grades 180–190 °C",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -447,7 +447,7 @@
       "range_min": 21.7,
       "range_max": 25.78,
       "unit": "MPa^0.5",
-      "conditions": "Handbook of Polymers reports a range of 21.7-25.78 MPa^0.5.",
+      "conditions": "Handbook of Polymers reports a range of 21.7–25.78 MPa^0.5.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -638,7 +638,7 @@
       "range_min": 0,
       "range_max": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -646,7 +646,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -654,7 +654,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

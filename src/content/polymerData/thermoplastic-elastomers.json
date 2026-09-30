@@ -14,7 +14,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "TPEs are a structural class (phase-separated hard/soft block copolymers or polymer blends combining rubber-like elasticity with thermoplastic melt-processability) rather than one chemistry -- member families include SBS/SEBS, TPU, TPO, TPV, and copolyester/copolyamide TPEs, several of which have their own entries.",
+  "notation_note": "TPEs are a structural class (phase-separated hard/soft block copolymers or polymer blends combining rubber-like elasticity with thermoplastic melt-processability) rather than one chemistry: member families include SBS/SEBS, TPU, TPO, TPV, and copolyester/copolyamide TPEs, several of which have their own entries.",
   "iupac_name": null,
   "synonyms": [
     "thermoplastic rubber"
@@ -47,7 +47,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-elastomers/charles-goodyear-portrait.webp",
       "alt": "A sepia-toned daguerreotype-style portrait of a middle-aged man with tousled dark hair and a bow tie, looking slightly off-camera.",
-      "caption": "Charles Goodyear, whose 1839 discovery of vulcanization gave rubber its stretch and recovery by locking its chains into a permanent chemical network — the very permanence a later generation of chemists had to find a way around.",
+      "caption": "Charles Goodyear, whose 1839 discovery of vulcanization gave rubber its stretch and recovery by locking its chains into a permanent chemical network: the very permanence a later generation of chemists had to find a way around.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Southworth_and_Hawes_-_Charles_Goodyear_(Zeno_Fotografie)_crop.png",
       "author": "Southworth & Hawes",
       "license": "Public domain"
@@ -55,7 +55,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-elastomers/running-shoe-soles.webp",
       "alt": "A pair of black-and-grey knit running shoes with white ridged outsoles, standing on a sunlit paved surface.",
-      "caption": "A pair of running shoes. Cushioned midsoles and outsoles like these are among the most common everyday homes for thermoplastic elastomer compounds — soft enough to spring back underfoot, meltable enough to injection-mould by the million.",
+      "caption": "A pair of running shoes. Cushioned midsoles and outsoles like these are among the most common everyday homes for thermoplastic elastomer compounds, soft enough to spring back underfoot, meltable enough to injection-mould by the million.",
       "source_url": "https://commons.wikimedia.org/wiki/File:New_shoes_(13519423543).jpg",
       "author": "Mark Bonica from Durham, NH, USA",
       "license": "CC BY 2.0"
@@ -63,7 +63,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-elastomers/sbs-block-copolymer-tem-micrograph.webp",
       "alt": "A black-and-white transmission electron micrograph showing a dense field of small pale dots scattered across a dark background, with a 0.2 micrometre scale bar in the corner.",
-      "caption": "A transmission electron micrograph of styrene-butadiene-styrene block copolymer (Kraton), one member of the thermoplastic elastomer family. The pale dots are hard polystyrene domains dispersed through a soft polybutadiene matrix — the physical microstructure, not any chemical crosslink, that holds the material together at room temperature.",
+      "caption": "A transmission electron micrograph of styrene-butadiene-styrene block copolymer (Kraton), one member of the thermoplastic elastomer family. The pale dots are hard polystyrene domains dispersed through a soft polybutadiene matrix: the physical microstructure, not any chemical crosslink, that holds the material together at room temperature.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Sbs_block_copolymer.jpg",
       "author": "Peter R Lewis",
       "license": "Public domain"
@@ -71,7 +71,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-elastomers/amc-matador-kraton-bumper-fascia.webp",
       "alt": "Close-up of the front bumper and grille of a glossy tan 1974 AMC Matador, showing a chrome strip over a moulded elastic bumper fascia and a Rambler Ranch dealer plate frame.",
-      "caption": "The front bumper fascia of a 1974 AMC Matador, moulded from Shell's Kraton SBS block copolymer — one member of the thermoplastic elastomer family, and one of the earliest large-scale automotive uses of the idea in place of chrome-plated steel.",
+      "caption": "The front bumper fascia of a 1974 AMC Matador, moulded from Shell's Kraton SBS block copolymer, one member of the thermoplastic elastomer family. It was one of the earliest large-scale automotive uses of the idea in place of chrome-plated steel.",
       "source_url": "https://commons.wikimedia.org/wiki/File:1974_AMC_Matador_sedan_in_Golden_Tan_standard_interior_at_Rambler_Ranch_bumper.jpg",
       "author": "CZmarlin — Christopher Ziemnowicz, releases rights, but a photo credit would be appreciated if this image is used anywhere other than Wikipedia. Please leave a note at Wikipedia here . Thank you!",
       "license": "CC BY-SA 4.0"
@@ -134,7 +134,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Not a single synthesis route -- TPEs are unified by structure (microphase-separated hard/soft domains, or a rubber phase dispersed in a thermoplastic matrix) rather than chemistry. Major families: styrenic block copolymers (SBS/SEBS), thermoplastic polyurethanes (TPU), thermoplastic polyolefins (TPO, rubber-PP blends), thermoplastic vulcanizates (TPV, dynamically crosslinked rubber-PP blends), and copolyester/copolyamide TPEs (e.g. PEBA).",
+    "industrial_process_notes": "Not a single synthesis route: TPEs are unified by structure (microphase-separated hard/soft domains, or a rubber phase dispersed in a thermoplastic matrix) rather than chemistry. Major families: styrenic block copolymers (SBS/SEBS), thermoplastic polyurethanes (TPU), thermoplastic polyolefins (TPO, rubber-PP blends), thermoplastic vulcanizates (TPV, dynamically crosslinked rubber-PP blends), and copolyester/copolyamide TPEs (e.g. PEBA).",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -145,7 +145,7 @@
       "status": "not_applicable"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Common structural principle: glassy or semi-crystalline 'hard' domains act as physical (reversible, meltable) crosslinks holding together rubbery 'soft' domains -- unlike a chemically crosslinked thermoset rubber, a TPE can be re-melted and reprocessed.",
+    "chain_flexibility_notes": "Common structural principle: glassy or semi-crystalline 'hard' domains act as physical (reversible, meltable) crosslinks holding together rubbery 'soft' domains; unlike a chemically crosslinked thermoset rubber, a TPE can be re-melted and reprocessed.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -320,7 +320,7 @@
     "recyclable": true,
     "biodegradable": null,
     "degradation_pathway": null,
-    "environmental_notes": "The defining environmental advantage over thermoset (chemically crosslinked) rubber: TPEs can be re-melted and reprocessed rather than only ground down as filler -- hence the title 'When Rubber Learned to Recycle'."
+    "environmental_notes": "The defining environmental advantage over thermoset (chemically crosslinked) rubber: TPEs can be re-melted and reprocessed rather than only ground down as filler, hence the title 'When Rubber Learned to Recycle'."
   },
   "references": [
     "wiki-tpe"

@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][$]CC(CC)[$][]}",
   "smiles_depiction": "*CC(CC)*",
-  "notation_note": "The bracketed unit is the chain's repeat unit and does not indicate which polymorphic crystal form is present. Isotactic poly(1-butene) is polymorphic, with at least four crystal forms, so a single crystal structure or density value does not represent the material across its post-molding aging timeline (form II converts to form I over ~2-14 days).",
+  "notation_note": "The bracketed unit is the chain's repeat unit and does not indicate which polymorphic crystal form is present. Isotactic poly(1-butene) is polymorphic, with at least four crystal forms, so a single crystal structure or density value does not represent the material across its post-molding aging timeline (form II converts to form I over ~2–14 days).",
   "iupac_name": "Poly(1-butene)",
   "synonyms": [
     "polybutene-1",
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/polybutylene/earth-day-1970-rally.webp",
       "alt": "A large crowd of young people, many in winter coats, gathered outdoors around a speaker at a podium with a microphone, seen from behind the speaker.",
-      "caption": "A 1970 environmental teach-in at the University of Michigan, part of the wave of activism that led to the first Earth Day that April — the same year a new plastic pipe was being pitched as the practical alternative to mined and smelted copper.",
+      "caption": "A 1970 environmental teach-in at the University of Michigan, part of the wave of activism that led to the first Earth Day that April, the same year a new plastic pipe was being pitched as the practical alternative to mined and smelted copper.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Earth_Day_-_Enact_1970.jpg",
       "author": "University of Michigan School for Environment and Sustainability from Ann Arbor",
       "license": "CC BY 2.0"
@@ -67,7 +67,7 @@
     {
       "src": "~/assets/polymers/polybutylene/copper-pipe-soldering.webp",
       "alt": "A close-up of a blue propane-torch flame heating a joint between two copper pipes, with a bright bead of melted solder running around the fitting.",
-      "caption": "Sweating a copper joint — the skilled, torch-and-solder trade that PB-1 pipe, joined instead with plastic fittings, was sold as a faster and cheaper alternative to.",
+      "caption": "Sweating a copper joint, the skilled, torch-and-solder trade that PB-1 pipe, joined instead with plastic fittings, was sold as a faster and cheaper alternative to.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Propane_torch_soldering_copper_pipe.jpg",
       "author": "neffk (talk)",
       "license": "CC BY 2.0"
@@ -83,7 +83,7 @@
     {
       "src": "~/assets/polymers/polybutylene/pex-installation-tools.webp",
       "alt": "A flat-lay photograph of plumbing tools and brass fittings on a cloth surface: a crimping tool, a pipe cutter, push-fit couplings, a tee fitting and several stainless steel clamp rings.",
-      "caption": "The tools of PEX plumbing — the cross-linked polyethylene tubing that took over the market polybutylene lost.",
+      "caption": "The tools of PEX plumbing, the cross-linked polyethylene tubing that took over the market polybutylene lost.",
       "source_url": "https://commons.wikimedia.org/wiki/File:PEX_installation_tools_and_fittings.jpg",
       "author": "Tomwsulcer",
       "license": "CC BY-SA 3.0"
@@ -98,7 +98,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20°C, general 0.87-0.92 g/cm³ (0.95 g/cm³ crystalline); Mark reports crystalline density by polymorph: Form I (hexagonal, stable) 0.951, Form II (tetragonal, metastable) 0.902, Form III (orthorhombic) 0.905 g/cm³ -- consistent with the Form II -> Form I density increase on aging"
+      "conditions": "20°C, general 0.87–0.92 g/cm³ (0.95 g/cm³ crystalline); Mark reports crystalline density by polymorph: Form I (hexagonal, stable) 0.951, Form II (tetragonal, metastable) 0.902, Form III (orthorhombic) 0.905 g/cm³, consistent with the Form II -> Form I density increase on aging"
     },
     "melt_flow_index": {
       "value": null,
@@ -108,7 +108,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "190°C/10 kg; Mark separately reports 0.4 g/10min under ASTM D1238 condition E (190°C/2.16 kg) -- different load, not directly comparable"
+      "conditions": "190°C/10 kg; Mark separately reports 0.4 g/10min under ASTM D1238 condition E (190°C/2.16 kg): different load, not directly comparable"
     },
     "refractive_index": {
       "value": null,
@@ -184,9 +184,9 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych: 45-55% conventional (47-58% form I, 38% form II); Mark: 48-55% (form I, after extrusion)"
+      "conditions": "Wypych: 45–55% conventional (47–58% form I, 38% form II); Mark: 48–55% (form I, after extrusion)"
     },
-    "crystal_structure": "Polymorphic with at least four crystal forms. Melt-solidified PB-1 first forms a metastable tetragonal phase (Form II), which irreversibly transforms to a thermodynamically stable hexagonal phase (Form I) over roughly 2-14 days at room temperature -- a slow solid-state transition that is the defining quirk of this material.",
+    "crystal_structure": "Polymorphic with at least four crystal forms. Melt-solidified PB-1 first forms a metastable tetragonal phase (Form II), which irreversibly transforms to a thermodynamically stable hexagonal phase (Form I) over roughly 2–14 days at room temperature. This is a slow solid-state transition that is the defining quirk of this material.",
     "chain_flexibility_notes": null,
     "tg_relation_notes": "Tg ~-21°C.",
     "molecular_weight": {
@@ -198,7 +198,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Wypych; Mark's typical commercial range is narrower at ~70,000-75,000 g/mol"
+        "conditions": "Wypych; Mark's typical commercial range is narrower at ~70,000–75,000 g/mol"
       },
       "mw": {
         "value": null,
@@ -208,7 +208,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Wypych; Mark's typical commercial range is narrower at ~725,000-750,000 g/mol"
+        "conditions": "Wypych; Mark's typical commercial range is narrower at ~725,000–750,000 g/mol"
       },
       "pdi": {
         "value": null,
@@ -218,7 +218,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Wypych (Ziegler-Natta); Mark reports 10-11 for Ziegler-Natta, 1.02 for anionic polymerization"
+        "conditions": "Wypych (Ziegler-Natta); Mark reports 10–11 for Ziegler-Natta, 1.02 for anionic polymerization"
       }
     },
     "mark_houwink": [
@@ -273,7 +273,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "exp.; form I -20.5°C, form II -26.9°C; Mark's DMA measurement gives -25.2 to -17.2°C (248-256 K), consistent"
+      "conditions": "exp.; form I -20.5°C, form II -26.9°C; Mark's DMA measurement gives -25.2 to -17.2°C (248–256 K), consistent"
     },
     "tm": {
       "value": null,
@@ -283,7 +283,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC, isotactic (Wypych 97-142°C general; by form: I 120-135°C, I' 90-100°C, II 110-120°C, III 90-100°C). Mark gives higher form-specific values: I 138-142°C, II 120-130°C, III 101-110°C; syndiotactic ~50°C (both agree)"
+      "conditions": "DSC, isotactic (Wypych 97–142°C general; by form: I 120–135°C, I' 90–100°C, II 110–120°C, III 90–100°C). Mark gives higher form-specific values: I 138–142°C, II 120–130°C, III 101–110°C; syndiotactic ~50°C (both agree)"
     },
     "tc": {
       "value": 72,
@@ -319,7 +319,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "ASTM C177; Wypych separately reports 0.1344-0.22 W/(m·K) for the melt"
+      "conditions": "ASTM C177; Wypych separately reports 0.1344–0.22 W/(m·K) for the melt"
     }
   },
   "mechanical": {
@@ -331,7 +331,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych 150-295 MPa; Mark's ASTM D638 measurement gives 290-295 MPa (matches Wypych's upper bound and its separately reported \"elastic modulus\" of 290-295 MPa)"
+      "conditions": "Wypych 150–295 MPa; Mark's ASTM D638 measurement gives 290–295 MPa (matches Wypych's upper bound and its separately reported \"elastic modulus\" of 290–295 MPa)"
     },
     "yield_strength": {
       "value": null,
@@ -341,7 +341,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych 12-15 MPa; Mark's ASTM D638 measurement gives 16-18 MPa"
+      "conditions": "Wypych 12–15 MPa; Mark's ASTM D638 measurement gives 16–18 MPa"
     },
     "tensile_strength_at_break": {
       "value": null,
@@ -351,7 +351,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych 27-45 MPa; Mark's ASTM D638 measurement gives 32-35 MPa"
+      "conditions": "Wypych 27–45 MPa; Mark's ASTM D638 measurement gives 32–35 MPa"
     },
     "elongation_at_break": {
       "value": null,
@@ -361,7 +361,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych 200-400%; Mark's ASTM D638 measurement gives 275-320%"
+      "conditions": "Wypych 200–400%; Mark's ASTM D638 measurement gives 275–320%"
     },
     "impact_izod": {
       "value": null,
@@ -396,7 +396,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wypych 250-450 MPa; Mark's ASTM D790 measurement gives 375-380 MPa"
+      "conditions": "Wypych 250–450 MPa; Mark's ASTM D790 measurement gives 375–380 MPa"
     },
     "poissons_ratio": {
       "value": 0.47,
@@ -497,7 +497,7 @@
         "key": "n-decane",
         "value": 0.30,
         "unit": "",
-        "conditions": "115-135°C; tacticity not specified in source",
+        "conditions": "115–135°C; tacticity not specified in source",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -606,7 +606,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -614,7 +614,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 2,
@@ -622,7 +622,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

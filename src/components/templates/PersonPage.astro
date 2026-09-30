@@ -44,7 +44,7 @@ const lifespans = data.people.map((p) => `${p.born.year}–${p.died.year}`).join
 const description =
   narrative.data.tagline ??
   subtitle ??
-  `${title} — a pioneer of polymer science. Life, milestones, and their entries in the Atlas.`;
+  `${title}, a pioneer of polymer science. Life, milestones, and their entries in the Atlas.`;
 ---
 
 <Base title={title} description={description}>
@@ -120,7 +120,7 @@ const description =
                     )}
                     {person.nobel && (
                       <FactRow label="Nobel Prize">
-                        {person.nobel.year} — <em>“{person.nobel.citation}”</em>
+                        {person.nobel.year}: <em>“{person.nobel.citation}”</em>
                       </FactRow>
                     )}
                     <FactRow label="Wikipedia">

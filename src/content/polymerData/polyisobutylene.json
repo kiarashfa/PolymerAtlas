@@ -53,14 +53,14 @@
     {
       "src": "~/assets/polymers/polyisobutylene/union-carbide-building-1960.webp",
       "alt": "A very tall, narrow, glass-and-metal skyscraper viewed from street level looking straight up, its curtain-wall façade reflecting the sky, flanked by older stone buildings.",
-      "caption": "The Union Carbide Building at 270 Park Avenue, completed in 1960 — one of the wave of all-glass towers whose sealed double-glazing depended on polyisobutylene.",
+      "caption": "The Union Carbide Building at 270 Park Avenue, completed in 1960. It was one of the wave of all-glass towers whose sealed double-glazing depended on polyisobutylene.",
       "source_url": "https://commons.wikimedia.org/wiki/File:270_Park_Avenue_before_demolition.jpg",
       "author": "Mathias Beinling",
       "license": "CC BY-SA 4.0"
     },
     {
       "src": "~/assets/polymers/polyisobutylene/basf-ludwigshafen-site.webp",
-      "alt": "An aerial photograph looking down a wide river bend crowded on one bank with dense industrial plant — storage tanks, pipe racks and processing units — surrounded by farmland.",
+      "alt": "An aerial photograph looking down a wide river bend crowded on one bank with dense industrial plant (storage tanks, pipe racks and processing units) surrounded by farmland.",
       "caption": "BASF's Ludwigshafen site on the Rhine, where Michael Otto first polymerized isobutylene in 1931 and where Oppanol production began in 1938.",
       "source_url": "https://commons.wikimedia.org/wiki/File:LudwigshafenBASF2017-07-29-12-44-06.jpg",
       "author": "Rolf Kickuth",
@@ -92,7 +92,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "20°C, amorphous, high-MW PIB (Mark; matches the formula 0.9171-30/Mn extrapolated to high Mn); Wypych reports 0.788-0.921 across the oligomer MW range, 0.972 crystalline; Mark separately reports crystalline density 0.964"
+      "conditions": "20°C, amorphous, high-MW PIB (Mark; matches the formula 0.9171-30/Mn extrapolated to high Mn); Wypych reports 0.788–0.921 across the oligomer MW range, 0.972 crystalline; Mark separately reports crystalline density 0.964"
     },
     "melt_flow_index": {
       "value": null,
@@ -112,7 +112,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20°C, high-MW PIB; oligomers range lower at 1.445-1.508; Mark's high-Mn extrapolated value is 1.5092"
+      "conditions": "20°C, high-MW PIB; oligomers range lower at 1.445–1.508; Mark's high-Mn extrapolated value is 1.5092"
     },
     "dielectric_constant": {
       "value": 2.4,
@@ -160,7 +160,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "d=0.6-0.8mm"
+      "conditions": "d=0.6–0.8mm"
     }
   },
   "synthesis": {
@@ -182,7 +182,7 @@
       "status": "placeholder"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Fully saturated, methyl-substituted backbone gives PIB very low gas permeability and excellent chemical inertness -- the properties underlying its 'invisible sealant' role in insulating glass.",
+    "chain_flexibility_notes": "Fully saturated, methyl-substituted backbone gives PIB very low gas permeability and excellent chemical inertness; these are the properties underlying its 'invisible sealant' role in insulating glass.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -193,7 +193,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "oligomer range (Wypych); Mark gives a wider application-dependent range: 500-5,000 (dispersants) up to 5,000-6,000,000 (blends/viscosity modifiers/chewing gum), 100,000-600,000 (elastomer grades)"
+        "conditions": "oligomer range (Wypych); Mark gives a wider application-dependent range: 500–5,000 (dispersants) up to 5,000–6,000,000 (blends/viscosity modifiers/chewing gum), 100,000–600,000 (elastomer grades)"
       },
       "mw": {
         "value": null,
@@ -212,7 +212,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Wypych; Mark reports a broader 2.0-4.0"
+        "conditions": "Wypych; Mark reports a broader 2.0–4.0"
       }
     },
     "mark_houwink": [
@@ -275,7 +275,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "PIB crystallizes below 20°C or under mechanical stress; Mark reports melting points of 275 K and 317 K (~2°C and ~44°C, depending on annealing conditions) for this stress-/cold-crystallized form, with a heat of fusion of 52 cal/g at the melting point -- not a melt transition of the material in its normal amorphous gum state."
+      "conditions": "PIB crystallizes below 20°C or under mechanical stress; Mark reports melting points of 275 K and 317 K (~2°C and ~44°C, depending on annealing conditions) for this stress-/cold-crystallized form, with a heat of fusion of 52 cal/g at the melting point. This is not a melt transition of the material in its normal amorphous gum state."
     },
     "tc": {
       "value": null,
@@ -287,7 +287,7 @@
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "No ASTM D648 heat-deflection-under-load result exists for this uncrosslinked gum elastomer; Mark separately reports a low-temperature deflection value of <210 K (<-63°C) tied to its glass transition (202-208 K), a different quantity from heat deflection under load."
+      "conditions": "No ASTM D648 heat-deflection-under-load result exists for this uncrosslinked gum elastomer; Mark separately reports a low-temperature deflection value of <210 K (<-63°C) tied to its glass transition (202–208 K), a different quantity from heat deflection under load."
     },
     "decomposition_onset": {
       "value": 120,
@@ -303,7 +303,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "20°C, gum vulcanizate; rises to 0.23 with 50 phr carbon black filler; Wypych separately reports 0.19-0.26 for the melt"
+      "conditions": "20°C, gum vulcanizate; rises to 0.23 with 50 phr carbon black filler; Wypych separately reports 0.19–0.26 for the melt"
     }
   },
   "mechanical": {
@@ -311,7 +311,7 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable",
-      "conditions": "Uncrosslinked PIB gum has no stable equilibrium tensile modulus in the conventional solid sense; Mark's only reported figure (0.5-50 MPa) is explicitly stated to depend on compounding ingredients, i.e. it describes compounded/vulcanized rubber rather than the neat homopolymer."
+      "conditions": "Uncrosslinked PIB gum has no stable equilibrium tensile modulus in the conventional solid sense; Mark's only reported figure (0.5–50 MPa) is explicitly stated to depend on compounding ingredients, i.e. it describes compounded/vulcanized rubber rather than the neat homopolymer."
     },
     "yield_strength": {
       "value": null,
@@ -327,7 +327,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "excludes Mark's much broader compounded-rubber range (0.5-50 MPa), which reflects filled/vulcanized IIR formulations rather than neat PIB"
+      "conditions": "excludes Mark's much broader compounded-rubber range (0.5–50 MPa), which reflects filled/vulcanized IIR formulations rather than neat PIB"
     },
     "elongation_at_break": {
       "value": null,
@@ -354,7 +354,7 @@
       "value": null,
       "unit": "Shore",
       "status": "not_applicable",
-      "conditions": "Uncrosslinked, unvulcanized PIB gum lacks the stable elastic network a durometer reading needs; Mark's only reported figure (Shore A 5-100) is explicitly compounding-dependent, reflecting finished vulcanized rubber goods rather than the neat homopolymer."
+      "conditions": "Uncrosslinked, unvulcanized PIB gum lacks the stable elastic network a durometer reading needs; Mark's only reported figure (Shore A 5–100) is explicitly compounding-dependent, reflecting finished vulcanized rubber goods rather than the neat homopolymer."
     },
     "flexural_modulus": {
       "value": null,
@@ -572,7 +572,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale (health reported as a 0-1 range)"
+      "conditions": "HMIS rating, 0–4 scale (health reported as a 0–1 range)"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -580,7 +580,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -588,7 +588,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

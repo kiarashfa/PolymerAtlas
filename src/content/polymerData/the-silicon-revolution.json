@@ -65,7 +65,7 @@
     {
       "src": "~/assets/polymers/the-silicon-revolution/b17-contrails-high-altitude-1943.webp",
       "alt": "A formation of B-17 bombers and P-47 fighter escorts seen from below, trailing long white vapor contrails against a dark sky.",
-      "caption": "A bomber formation over Europe in September 1943, high enough for the cold, thin air to write itself across the sky as contrails — the same conditions that made ordinary ignition insulation fail.",
+      "caption": "A bomber formation over Europe in September 1943, high enough for the cold, thin air to write itself across the sky as contrails: the same conditions that made ordinary ignition insulation fail.",
       "source_url": "https://commons.wikimedia.org/wiki/File:II_World_War_contrails.jpg",
       "author": "Sgt. Stanley M. Smith",
       "license": "Public domain"
@@ -81,7 +81,7 @@
     {
       "src": "~/assets/polymers/the-silicon-revolution/eugene-rochow-1965.webp",
       "alt": "A balding man in a black bow tie and tuxedo, smiling broadly at the camera at an evening event, with another figure visible in a dark doorway behind him.",
-      "caption": "Eugene G. Rochow, photographed at an American Chemical Society meeting in 1965 — more than two decades after his direct-process discovery had already gone into wartime production.",
+      "caption": "Eugene G. Rochow, photographed at an American Chemical Society meeting in 1965, more than two decades after his direct-process discovery had already gone into wartime production.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Rochow.jpg",
       "author": "Peter Geymayer",
       "license": "Public domain"
@@ -89,7 +89,7 @@
     {
       "src": "~/assets/polymers/the-silicon-revolution/silicone-pastry-brush.webp",
       "alt": "A kitchen basting brush with an orange silicone bristle head and a clear molded silicone handle, photographed against a white background.",
-      "caption": "A silicone pastry brush — heat resistance and water repellence developed for a wartime ignition compound, doing the same job at a stovetop.",
+      "caption": "A silicone pastry brush: heat resistance and water repellence developed for a wartime ignition compound, doing the same job at a stovetop.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kitchen-Silicone-Brush.jpg",
       "author": "Evan-Amos",
       "license": "Public domain"
@@ -164,7 +164,7 @@
       "range_min": 12,
       "range_max": 27,
       "unit": "kV/mm",
-      "conditions": "K20/P50 electrode configuration, 0.6-0.8 mm specimen thickness",
+      "conditions": "K20/P50 electrode configuration, 0.6–0.8 mm specimen thickness",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -188,7 +188,7 @@
       "range_min": 24,
       "range_max": 95,
       "unit": "%",
-      "conditions": "depends on cooling rate; unfilled PDMS (drops to 0-14% with 10-40% fumed silica)",
+      "conditions": "depends on cooling rate; unfilled PDMS (drops to 0–14% with 10–40% fumed silica)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -277,7 +277,7 @@
       "range_min": -127,
       "range_max": -123,
       "unit": "°C",
-      "conditions": "unfilled PDMS (-121 to -122°C with 10-40% fumed silica)",
+      "conditions": "unfilled PDMS (-121 to -122°C with 10–40% fumed silica)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -320,7 +320,7 @@
       "range_min": 0.151,
       "range_max": 0.167,
       "unit": "W/(m·K)",
-      "conditions": "15-80°C, unfilled fluid/gum",
+      "conditions": "15–80°C, unfilled fluid/gum",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -457,7 +457,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "degradation activated mainly at 300-360 nm; sensitizers include benzophenone, ozone, mechanical stress"
+      "conditions": "degradation activated mainly at 300–360 nm; sensitizers include benzophenone, ozone, mechanical stress"
     },
     "hydrolysis_resistance": {
       "value": null,
@@ -516,7 +516,7 @@
       "range_min": 200,
       "range_max": 316,
       "unit": "°C",
-      "conditions": "vulcanization; other cure routes reported separately (moisture cure 0-50°C, extrusion vulcanization 250-500°C, peroxide cure 60-90°C then 130-200°C)",
+      "conditions": "vulcanization; other cure routes reported separately (moisture cure 0–50°C, extrusion vulcanization 250–500°C, peroxide cure 60–90°C then 130–200°C)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

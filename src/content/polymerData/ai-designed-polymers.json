@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "A design methodology (machine-learning-guided property prediction and generative molecular design applied to polymers) rather than a single chemistry -- the polymers ultimately produced/recommended by these methods are conventional polymer chemistries (existing or novel), so there is no repeat unit for the methodology itself.",
+  "notation_note": "A design methodology (machine-learning-guided property prediction and generative molecular design applied to polymers) rather than a single chemistry. The polymers ultimately produced/recommended by these methods are conventional polymer chemistries (existing or novel), so there is no repeat unit for the methodology itself.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -42,7 +42,7 @@
     {
       "src": "~/assets/polymers/ai-designed-polymers/demis-hassabis-2024-nobel-chemistry.webp",
       "alt": "A smiling bald man wearing glasses and a dark suit with a blue tie stands beside a banner reading 'Kungl. Vetenskapsakademien — The Royal Swedish Academy of Sciences'.",
-      "caption": "Demis Hassabis at the 2024 Nobel Prize week in Stockholm. He and John Jumper shared that year's Chemistry Prize for AlphaFold, four years after CASP14 — the clearest sign yet that data-driven structure prediction had become a recognised branch of chemistry rather than a curiosity.",
+      "caption": "Demis Hassabis at the 2024 Nobel Prize week in Stockholm. He and John Jumper shared that year's Chemistry Prize for AlphaFold, four years after CASP14. That was the clearest sign yet that data-driven structure prediction had become a recognised branch of chemistry rather than a curiosity.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis,_2024_Nobel_Prize_Laureate_in_Chemistry_6.jpg",
       "author": "John Sears",
       "license": "CC BY-SA 4.0"
@@ -50,7 +50,7 @@
     {
       "src": "~/assets/polymers/ai-designed-polymers/summit-supercomputer-oak-ridge.webp",
       "alt": "A long aisle between tall black server cabinets with angular blue accent panels, cables running along an overhead yellow gantry, with the word 'Summit' printed vertically on the nearest cabinet.",
-      "caption": "Oak Ridge National Laboratory's Summit, unveiled in 2018 as the world's most powerful scientific supercomputer — the scale of machine that the quantum-mechanical calculations behind polymer property databases, and the neural networks trained on them, actually require.",
+      "caption": "Oak Ridge National Laboratory's Summit, unveiled in 2018 as the world's most powerful scientific supercomputer. It is the scale of machine that the quantum-mechanical calculations behind polymer property databases, and the neural networks trained on them, actually require.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Summit_supercomputer_(44552257460).jpg",
       "author": "Oak Ridge National Laboratory",
       "license": "CC BY 2.0"
@@ -297,7 +297,7 @@
     "recyclable": null,
     "biodegradable": null,
     "degradation_pathway": null,
-    "environmental_notes": "By deliberate editorial policy, no ML-predicted property values are shown on any polymer page of this atlas -- this entry documents the methodology as a historical/technical topic, not as a source of predicted numbers for other entries."
+    "environmental_notes": "By deliberate editorial policy, no ML-predicted property values are shown on any polymer page of this atlas; this entry documents the methodology as a historical/technical topic, not as a source of predicted numbers for other entries."
   },
   "references": [
     "search-ai-designed-polymers"

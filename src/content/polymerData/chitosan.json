@@ -80,7 +80,7 @@
     {
       "src": "~/assets/polymers/chitosan/chitosan-formed-objects.webp",
       "alt": "An arrangement of small brightly coloured translucent cups and moulded trays with egg-carton-style indentations, in red, yellow, green and blue, laid out on a white tabletop.",
-      "caption": "Cups and moulded trays cast from chitosan — a demonstration of how far the material can be shaped once it has been processed into a workable form.",
+      "caption": "Cups and moulded trays cast from chitosan: a demonstration of how far the material can be shaped once it has been processed into a workable form.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Objects_made_of_chitosan.png",
       "author": "Jgfermart",
       "license": "CC BY-SA 3.0"
@@ -92,7 +92,7 @@
       "range_min": 1.4,
       "range_max": 1.42,
       "unit": "g/cm³",
-      "conditions": "20 °C, solid; bulk (powder) density is much lower, 0.4-0.68 g/cm³.",
+      "conditions": "20 °C, solid; bulk (powder) density is much lower, 0.4–0.68 g/cm³.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -157,7 +157,7 @@
     "catalysts": [
       "sodium hydroxide (deacetylation reagent)"
     ],
-    "industrial_process_notes": "Chitin was first isolated in 1799 by Charles Hatchett; deacetylated chitin was named 'chitosan' in 1894 by Felix Hoppe-Seyler. Commercial production deacetylates chitin using excess sodium hydroxide in water, giving average molecular weights of 3,800-20,000 Da. Renewed research interest emerged in the 1970s driven by shellfish-waste disposal regulations.",
+    "industrial_process_notes": "Chitin was first isolated in 1799 by Charles Hatchett; deacetylated chitin was named 'chitosan' in 1894 by Felix Hoppe-Seyler. Commercial production deacetylates chitin using excess sodium hydroxide in water, giving average molecular weights of 3,800–20,000 Da. Renewed research interest emerged in the 1970s driven by shellfish-waste disposal regulations.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -173,7 +173,7 @@
       "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Orthorhombic unit cell (a = 0.895 nm, b = 1.697 nm, c = 1.037 nm), 4 chains per unit cell with 8 associated water molecules; chains adopt a 2-fold helix conformation.",
-    "chain_flexibility_notes": "Degree of deacetylation (65-95%, commonly ~90% in commercial grades) governs solubility and reactivity.",
+    "chain_flexibility_notes": "Degree of deacetylation (65–95%, commonly ~90% in commercial grades) governs solubility and reactivity.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -190,7 +190,7 @@
         "range_min": 20000,
         "range_max": 375000,
         "unit": "g/mol",
-        "conditions": "Spans low-Mw (20,000-190,000) and high-Mw (190,000-375,000) commercial grades; a representative Mw of 150,000 is also cited.",
+        "conditions": "Spans low-Mw (20,000–190,000) and high-Mw (190,000–375,000) commercial grades; a representative Mw of 150,000 is also cited.",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016"
@@ -325,7 +325,7 @@
       },
       "acids": {
         "value": "poor",
-        "conditions": "dilute and concentrated; soluble below pH 6 (forms soluble salts with organic acid anions) -- acetic acid, formic acid and concentrated mineral acids are listed as good solvents",
+        "conditions": "dilute and concentrated; soluble below pH 6 (forms soluble salts with organic acid anions). Acetic acid, formic acid and concentrated mineral acids are listed as good solvents",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016"
@@ -366,7 +366,7 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": "moderate -- susceptible to lysozyme and specific glycosidase hydrolysis",
+      "value": "moderate: susceptible to lysozyme and specific glycosidase hydrolysis",
       "conditions": "Enzymes hydrolyzing glucosamine-glucosamine and N-acetylglucosamine-N-acetylglucosamine linkages degrade chitosan; also degraded by lysozyme.",
       "status": "verified",
       "evidence_level": "handbook",

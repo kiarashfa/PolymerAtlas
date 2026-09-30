@@ -69,7 +69,7 @@ const mechanical = [
 
 const resistance = [
   ...Object.entries(data.chemical_resistance.solvent_resistance).map(([solvent, rv]) =>
-    describeRated(`Solvent — ${solvent}`, rv)
+    describeRated(`Solvent: ${solvent}`, rv)
   ),
   describeRated('Weathering / UV', data.chemical_resistance.weathering_uv),
   describeRated('Hydrolysis resistance', data.chemical_resistance.hydrolysis_resistance),
@@ -103,9 +103,9 @@ const morphProps = data.structure_morphology.crystallinity_typical
 
 const toxicity = [
   describeProperty('LD50 (oral, rat)', data.toxicity_safety.ld50_oral_rat),
-  describeProperty('NFPA — health', data.toxicity_safety.nfpa_health_rating),
-  describeProperty('NFPA — flammability', data.toxicity_safety.nfpa_flammability_rating),
-  describeProperty('NFPA — reactivity', data.toxicity_safety.nfpa_reactivity_rating),
+  describeProperty('NFPA health', data.toxicity_safety.nfpa_health_rating),
+  describeProperty('NFPA flammability', data.toxicity_safety.nfpa_flammability_rating),
+  describeProperty('NFPA reactivity', data.toxicity_safety.nfpa_reactivity_rating),
   describeRated('Carcinogenic classification', data.toxicity_safety.carcinogenic_classification),
 ];
 
@@ -145,7 +145,7 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
         {data.parent && <span class="fact-note">part of the {data.parent} family</span>}
       </FactRow>
       <FactRow label="CAS number">
-        {data.cas_number ?? <span class="none">none — heterogeneous class or not assigned</span>}
+        {data.cas_number ?? <span class="none">None (heterogeneous class or not assigned)</span>}
       </FactRow>
       <FactRow label="Resin ID code">
         {data.resin_id_code ?? <span class="none">none assigned</span>}
@@ -235,7 +235,7 @@ const bool = (v: boolean | null) => (v === null ? 'not yet determined' : v ? 'Ye
               </a>
             ))
           ) : (
-            <span class="none">— (no single constitutional monomer)</span>
+            <span class="none">None (no single constitutional monomer)</span>
           )
         }
       </FactRow>

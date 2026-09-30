@@ -40,7 +40,7 @@
     {
       "src": "~/assets/polymers/proteins/blackfoot-hide-tanning-1928.webp",
       "alt": "A black-and-white photograph of a woman kneeling outdoors, scraping the flesh side of an animal hide staked to the ground with a bone tool.",
-      "caption": "Fleshing a hide by hand — a craft built entirely on collagen chemistry, practiced for millennia before anyone had a name for the molecule involved.",
+      "caption": "Fleshing a hide by hand, a craft built entirely on collagen chemistry, practiced for millennia before anyone had a name for the molecule involved.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Blackfoot_Women_tanning.jpg",
       "author": "Edward Sheriff Curtis (1868-1954)",
       "license": "Public domain"
@@ -56,7 +56,7 @@
     {
       "src": "~/assets/polymers/proteins/liebig-laboratory-1840.webp",
       "alt": "A hand-colored illustration of a long, high-windowed chemistry laboratory around 1840, crowded with students in coats and top hats working at benches lined with glassware and furnaces.",
-      "caption": "Justus von Liebig's laboratory at Giessen, around 1840 — the year his textbook made 'protein' central to the emerging science of nutrition.",
+      "caption": "Justus von Liebig's laboratory at Giessen, around 1840, the year his textbook made 'protein' central to the emerging science of nutrition.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Justus_von_Liebigs_Labor,_1840.jpg",
       "author": "Wilhelm Trautschold (1815 – 1877)",
       "license": "Public domain"
@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/proteins/spider-silk-dew.webp",
       "alt": "A large, densely woven sheet spider web, beaded all over with fine water droplets, spread across green shrubbery.",
-      "caption": "A sheet-web spider's silk, another structural protein whose engineering — strong, light, and self-spun — modern materials science is still trying to match.",
+      "caption": "A sheet-web spider's silk, another structural protein whose engineering (strong, light, and self-spun) modern materials science is still trying to match.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Spinsel_bedekt_met_dauw_02.JPG",
       "author": "Dominicus Johannes Bergsma",
       "license": "CC BY-SA 3.0"
@@ -153,7 +153,7 @@
         "range_min": 50000,
         "range_max": 300000,
         "unit": "g/mol",
-        "conditions": "Processed soy-protein-based material (Wypych 'PR' entry). Individual proteins vary enormously: raw soy protein 30,000-1,000,000, casein 19,000-25,200, albumins 10,000-15,000, globulins 150,000-450,000.",
+        "conditions": "Processed soy-protein-based material (Wypych 'PR' entry). Individual proteins vary enormously: raw soy protein 30,000–1,000,000, casein 19,000–25,200, albumins 10,000–15,000, globulins 150,000–450,000.",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016"
@@ -223,7 +223,7 @@
       "range_min": 40,
       "range_max": 50,
       "unit": "MPa",
-      "conditions": "Soy protein (as processed, Wypych 'PR' entry); drawn soy protein (2.5 draw ratio) reaches 99 MPa, zein 12.7 MPa (5-6 MPa cast).",
+      "conditions": "Soy protein (as processed, Wypych 'PR' entry); drawn soy protein (2.5 draw ratio) reaches 99 MPa, zein 12.7 MPa (5–6 MPa cast).",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -231,7 +231,7 @@
     "elongation_at_break": {
       "value": 4.6,
       "unit": "%",
-      "conditions": "Soy protein (Wypych 'PR' entry); zein reported much higher, 61-122%.",
+      "conditions": "Soy protein (Wypych 'PR' entry); zein reported much higher, 61–122%.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -343,7 +343,7 @@
       "range_min": 70,
       "range_max": 165,
       "unit": "°C",
-      "conditions": "Soy protein-based industrial material (Wypych 'PR' entry): 70-105 °C extrusion, 130 °C molding, 135-165 °C compression molding.",
+      "conditions": "Soy protein-based industrial material (Wypych 'PR' entry): 70–105 °C extrusion, 130 °C molding, 135–165 °C compression molding.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

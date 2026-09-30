@@ -52,7 +52,7 @@
     {
       "src": "~/assets/polymers/polyimide/ranger-7-first-moon-image-1964.webp",
       "alt": "A grainy black-and-white photograph of the Moon's cratered surface, densely pocked with craters of many sizes, with small crosshair calibration marks along the frame's edges.",
-      "caption": "One of the last images Ranger 7 transmitted before impact, taken from roughly a thousand miles up on 31 July 1964 — the first close-up photographs of the Moon in history.",
+      "caption": "One of the last images Ranger 7 transmitted before impact, taken from roughly a thousand miles up on 31 July 1964. These were the first close-up photographs of the Moon in history.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ranger7_PIA02975.jpg",
       "author": "NASA",
       "license": "Public domain"
@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polyimide/kapton-thermal-pads.webp",
       "alt": "Four rectangular insulating pads laid out for comparison, one pink and three shades of amber-orange, each with a small mounting hole punched through the centre and hand-written labels identifying coating types beside them.",
-      "caption": "Kapton thermal pads used to electrically insulate a power transistor from its heat sink — the same imide chemistry doing quiet, unglamorous work far from any spacecraft.",
+      "caption": "Kapton thermal pads used to electrically insulate a power transistor from its heat sink. This is the same imide chemistry doing quiet, unglamorous work far from any spacecraft.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kaptonpads.jpg",
       "author": "Ulfbastel",
       "license": "Public domain"
@@ -114,7 +114,7 @@
       "range_min": 1.61,
       "range_max": 1.8,
       "unit": "",
-      "conditions": "Wypych exp. 1.61-1.68; Mark reports 1.70-1.80 (visible range) for Kapton film",
+      "conditions": "Wypych exp. 1.61–1.68; Mark reports 1.70–1.80 (visible range) for Kapton film",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -124,7 +124,7 @@
       "range_min": 2.74,
       "range_max": 3.64,
       "unit": "",
-      "conditions": "wide range reflects different PI grades/frequencies; Kapton film ~3.0-3.4, Vespel SP-1 ~3.55-3.64 (Mark)",
+      "conditions": "wide range reflects different PI grades/frequencies; Kapton film ~3.0–3.4, Vespel SP-1 ~3.55–3.64 (Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -159,7 +159,7 @@
       "range_min": 0.39,
       "range_max": 2.9,
       "unit": "%",
-      "conditions": "24 h water immersion, 23 °C; at 50% RH equilibrium, 1-1.8%. Similarly 1.8%/2.8% for Kapton film and 1.0-1.3%/0.24% for Vespel (immersion/RH, Mark)",
+      "conditions": "24 h water immersion, 23 °C; at 50% RH equilibrium, 1–1.8%. Similarly 1.8%/2.8% for Kapton film and 1.0–1.3%/0.24% for Vespel (immersion/RH, Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -199,7 +199,7 @@
     },
     "crystal_structure": "Orthorhombic unit cell, a:b:c = 0.635:0.405:3.26 nm (c = chain axis), planar zig-zag chain conformation; a monoclinic polymorph is also reported (Mark).",
     "chain_flexibility_notes": "Rigid aromatic imide backbone gives exceptional thermal and dimensional stability, maintaining useful properties up to ~232°C in continuous service.",
-    "tg_relation_notes": "Tg varies widely by grade and measurement method -- Wypych reports 190-385 °C for the broader PI class (some grades, e.g. Vespel, show no distinct Tg); Kapton HN film specifically clusters at 360-410 °C (633-683 K, DSC/thermomechanical, Mark).",
+    "tg_relation_notes": "Tg varies widely by grade and measurement method: Wypych reports 190–385 °C for the broader PI class (some grades, e.g. Vespel, show no distinct Tg); Kapton HN film specifically clusters at 360–410 °C (633–683 K, DSC/thermomechanical, Mark).",
     "molecular_weight": {
       "mn": {
         "value": null,
@@ -236,7 +236,7 @@
       "range_min": 190,
       "range_max": 410,
       "unit": "°C",
-      "conditions": "wide grade dependence; some forms (e.g. Vespel) show no distinct Tg. Kapton HN film specifically: 360-410 °C (633-683 K, DSC/thermomechanical, Mark)",
+      "conditions": "wide grade dependence; some forms (e.g. Vespel) show no distinct Tg. Kapton HN film specifically: 360–410 °C (633–683 K, DSC/thermomechanical, Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -245,7 +245,7 @@
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "PMDA-ODA (Kapton) itself shows no distinct melting point (confirmed absent, ASTM E-794, in Mark's dedicated chapter). Some other polyimide chemistries within the broader PI class exhibit DSC melting endotherms around 340-408 °C (Wypych)."
+      "conditions": "PMDA-ODA (Kapton) itself shows no distinct melting point (confirmed absent, ASTM E-794, in Mark's dedicated chapter). Some other polyimide chemistries within the broader PI class exhibit DSC melting endotherms around 340–408 °C (Wypych)."
     },
     "tc": {
       "value": null,
@@ -319,7 +319,7 @@
       "range_min": 7,
       "range_max": 95,
       "unit": "%",
-      "conditions": "Kapton HN film ~72-83%, Vespel SP-1 ~6-7.5% (Mark) -- differs substantially by form/grade",
+      "conditions": "Kapton HN film ~72–83%, Vespel SP-1 ~6–7.5% (Mark), which differs substantially by form/grade",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -347,7 +347,7 @@
     "hardness": {
       "value": 112,
       "unit": "Rockwell M",
-      "conditions": "Vespel-specific grades range M92-102, or Rockwell E 45-60 (Mark)",
+      "conditions": "Vespel-specific grades range M92-102, or Rockwell E 45–60 (Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -377,7 +377,7 @@
       "range_min": 0.29,
       "range_max": 0.63,
       "unit": "",
-      "conditions": "kinetic 0.29-0.48, static 0.35-0.63; Vespel (unlubricated, in air) at the low end, Kapton film-to-film at the high end (Mark)",
+      "conditions": "kinetic 0.29–0.48, static 0.35–0.63; Vespel (unlubricated, in air) at the low end, Kapton film-to-film at the high end (Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -500,7 +500,7 @@
       "range_min": 0.004,
       "range_max": 1.3,
       "unit": "%",
-      "conditions": "molding; also reported as 0.03-0.17% (30 min/150 °C) and 1.25% (120 min/400 °C) -- both figures corroborated for Kapton film by Mark",
+      "conditions": "molding; also reported as 0.03–0.17% (30 min/150 °C) and 1.25% (120 min/400 °C), both figures corroborated for Kapton film by Mark",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

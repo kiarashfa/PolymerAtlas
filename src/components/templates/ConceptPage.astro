@@ -56,7 +56,7 @@ const equations = data.key_equations.map((eq) => ({
 const description =
   narrative.data.tagline ??
   subtitle ??
-  `${title} — a foundational concept of polymer science, ${data.year_of_origin}.`;
+  `${title}, a foundational concept of polymer science (${data.year_of_origin}).`;
 ---
 
 <Base title={title} description={description}>
@@ -174,7 +174,7 @@ const description =
                 </div>
               ) : (
                 <p class="none">
-                  No governing equations recorded — this concept is treated qualitatively.
+                  No governing equations recorded. This concept is treated qualitatively.
                 </p>
               )
             }

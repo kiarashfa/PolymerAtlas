@@ -29,7 +29,7 @@ export interface DescriptorMeta {
 export const DESCRIPTOR_META: Record<string, DescriptorMeta> = {
   logp: {
     label: 'LogP',
-    hint: 'Crippen estimate of the octanol–water partition coefficient — higher is more oily, lower more water-friendly',
+    hint: 'Crippen estimate of the octanol–water partition coefficient (higher is more oily, lower more water-friendly)',
     decimals: 2,
   },
   tpsa: {
@@ -42,7 +42,7 @@ export const DESCRIPTOR_META: Record<string, DescriptorMeta> = {
   hba: { label: 'H-bond acceptors', hint: 'Groups able to accept a hydrogen bond' },
   rotatable_bonds: {
     label: 'Rotatable bonds',
-    hint: 'Single bonds free to turn — a measure of how floppy the molecule is',
+    hint: 'Single bonds free to turn (a measure of how floppy the molecule is)',
   },
   rings: { label: 'Rings' },
   aromatic_rings: { label: 'Aromatic rings' },
@@ -50,7 +50,7 @@ export const DESCRIPTOR_META: Record<string, DescriptorMeta> = {
   formal_charge: { label: 'Formal charge' },
   fraction_csp3: {
     label: 'Fraction Csp³',
-    hint: 'Share of carbons that are fully saturated — 0 is entirely flat and aromatic, 1 entirely tetrahedral',
+    hint: 'Share of carbons that are fully saturated (0 is entirely flat and aromatic, 1 entirely tetrahedral)',
     decimals: 3,
   },
 };

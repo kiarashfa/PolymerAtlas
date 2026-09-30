@@ -60,7 +60,7 @@
     },
     {
       "src": "~/assets/polymers/polytetrafluoroethylene/nuclear-fission-apparatus-1938.webp",
-      "alt": "A wooden laboratory bench crowded with 1930s electronic apparatus — vacuum tubes, wired boxes, batteries and glass vessels — displayed behind museum glass, with a diagram of the layout on the wall behind.",
+      "alt": "A wooden laboratory bench crowded with 1930s electronic apparatus (vacuum tubes, wired boxes, batteries and glass vessels) displayed behind museum glass, with a diagram of the layout on the wall behind.",
       "caption": "The apparatus with which Otto Hahn and Fritz Strassmann split the uranium atom in Berlin in 1938, now in the Deutsches Museum. The same year, a DuPont chemist in New Jersey found a molecule that resisted being taken apart by anything at all.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Nuclear_Fission_Experimental_Apparatus_1938_-_Deutsches_Museum_-_Munich.jpg",
       "author": "J Brew",
@@ -69,7 +69,7 @@
     {
       "src": "~/assets/polymers/polytetrafluoroethylene/zepel-teflon-fabric-ad-1963.webp",
       "alt": "A 1963 DuPont magazine advertisement showing a man in a raincoat standing behind a screen of falling rain, with the text 'Even if it rains pea soup' and the Zepel fabric fluoridizer branding below.",
-      "caption": "DuPont spent the 1950s and 60s finding fluorochemistry a life beyond the laboratory bench — Zepel, a fabric treatment built on the same chemistry as Teflon, is one of many trade names PTFE and its relatives wore into the consumer market.",
+      "caption": "DuPont spent the 1950s and 60s finding fluorochemistry a life beyond the laboratory bench; Zepel, a fabric treatment built on the same chemistry as Teflon, is one of many trade names PTFE and its relatives wore into the consumer market.",
       "source_url": "https://commons.wikimedia.org/wiki/File:1963_Zepel_advertisement.jpg",
       "author": "DuPont Corporation",
       "license": "Public domain"
@@ -77,7 +77,7 @@
     {
       "src": "~/assets/polymers/polytetrafluoroethylene/k25-gaseous-diffusion-plant.webp",
       "alt": "An aerial black-and-white photograph of the enormous U-shaped K-25 gaseous diffusion building at Oak Ridge, Tennessee, surrounded by smaller support buildings and roads.",
-      "caption": "The K-25 gaseous diffusion plant at Oak Ridge, where PTFE gaskets and seals held back uranium hexafluoride gas that would have destroyed almost any other material — a use classified for years after the war.",
+      "caption": "The K-25 gaseous diffusion plant at Oak Ridge, where PTFE gaskets and seals held back uranium hexafluoride gas that would have destroyed almost any other material. The use stayed classified for years after the war.",
       "source_url": "https://commons.wikimedia.org/wiki/File:K-25_aerial_view_cropped.jpg",
       "author": "James E. Westcott, official US Army Manhattan Project photographer",
       "license": "Public domain"
@@ -157,7 +157,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "specimen thickness 0.6-0.8 mm"
+      "conditions": "specimen thickness 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -172,7 +172,7 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Not applicable -- the CF2-CF2 repeat unit has no stereocenter.",
+    "tacticity": "Not applicable: the CF2-CF2 repeat unit has no stereocenter.",
     "crystallinity_typical": {
       "value": 78,
       "range_min": 58,
@@ -182,9 +182,9 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Polymorphic helical chain packing: Form II below 19 °C (triclinic/pseudohexagonal, a=b≈0.559 nm, c≈1.688 nm, β≈119.3°, 13/6 helix); Form IV 19-30 °C and Form I above 30 °C (trigonal, a=b≈0.566-0.567 nm, c>1.95 nm, 15/7 helix); Form III at high pressure (orthorhombic, 2/1 helix).",
+    "crystal_structure": "Polymorphic helical chain packing: Form II below 19 °C (triclinic/pseudohexagonal, a=b≈0.559 nm, c≈1.688 nm, β≈119.3°, 13/6 helix); Form IV 19–30 °C and Form I above 30 °C (trigonal, a=b≈0.566–0.567 nm, c>1.95 nm, 15/7 helix); Form III at high pressure (orthorhombic, 2/1 helix).",
     "chain_flexibility_notes": "The fully fluorinated backbone gives PTFE its extremely low surface energy and low coefficient of friction.",
-    "tg_relation_notes": "PTFE has several sub-Tg crystalline transitions in addition to its amorphous glass transition, most notably the ~19-30 °C crystal-disordering transitions (β 292 K, β″ 303 K) that cause a characteristic small volume change near room temperature.",
+    "tg_relation_notes": "PTFE has several sub-Tg crystalline transitions in addition to its amorphous glass transition, most notably the ~19–30 °C crystal-disordering transitions (β 292 K, β″ 303 K) that cause a characteristic small volume change near room temperature.",
     "molecular_weight": {
       "mn": {
         "value": null,
@@ -338,7 +338,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "static 0.08, dynamic 0.06; against polished steel 0.05-0.08 per Mark 1999"
+      "conditions": "static 0.08, dynamic 0.06; against polished steel 0.05–0.08 per Mark 1999"
     }
   },
   "chemical_resistance": {

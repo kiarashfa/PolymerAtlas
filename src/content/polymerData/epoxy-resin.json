@@ -65,7 +65,7 @@
     {
       "src": "~/assets/polymers/epoxy-resin/sydney-opera-house-construction-1965.webp",
       "alt": "An aerial view of the Sydney Opera House under construction in 1965, showing the ribbed skeletal framework of the shell roofs partly clad in white tile panels, surrounded by tower cranes.",
-      "caption": "The Sydney Opera House shells under construction, 1965 — precast concrete segments bonded with an Araldite epoxy adhesive rather than mechanical fasteners.",
+      "caption": "The Sydney Opera House shells under construction, 1965: precast concrete segments bonded with an Araldite epoxy adhesive rather than mechanical fasteners.",
       "source_url": "https://commons.wikimedia.org/wiki/File:SYDNEY_OPERA_HOUSE_under_construction_1965.tif",
       "author": "Len Stone photograph collection",
       "license": "CC BY 4.0"
@@ -73,7 +73,7 @@
     {
       "src": "~/assets/polymers/epoxy-resin/fr4-printed-circuit-board.webp",
       "alt": "A green printed circuit board densely populated with electronic components, resistors, capacitors and connectors, mounted on a wooden surface.",
-      "caption": "An epoxy-glass laminate circuit board — FR-4 — the rigid, insulating substrate epoxy resin has provided the electronics industry since the 1950s.",
+      "caption": "An epoxy-glass laminate circuit board (FR-4), the rigid, insulating substrate epoxy resin has provided the electronics industry since the 1950s.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Printed_Circuit_Board_2.jpg",
       "author": "Balurbala",
       "license": "CC BY-SA 3.0"
@@ -108,7 +108,7 @@
     "dielectric_constant": {
       "value": 3.6,
       "unit": "",
-      "conditions": "1 MHz, unfilled; 3.5-5.0 at 100 Hz",
+      "conditions": "1 MHz, unfilled; 3.5–5.0 at 100 Hz",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -141,7 +141,7 @@
       "range_min": 0.04,
       "range_max": 4.0,
       "unit": "%",
-      "conditions": "equilibrium immersion, 23 °C, uncured/thermoplastic-stage resin as tabulated; cured adhesive formulations reported separately at 2-5%",
+      "conditions": "equilibrium immersion, 23 °C, uncured/thermoplastic-stage resin as tabulated; cured adhesive formulations reported separately at 2–5%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -149,7 +149,7 @@
     "dielectric_strength": {
       "value": 15,
       "unit": "kV/mm",
-      "conditions": "d = 0.6-0.8 mm, K20/P50 test, unfilled",
+      "conditions": "d = 0.6–0.8 mm, K20/P50 test, unfilled",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -208,7 +208,7 @@
       "range_min": 54.5,
       "range_max": 62,
       "unit": "°C",
-      "conditions": "commercial cured bisphenol-A/amine systems; uncured/thermoplastic-stage resin reported at 37-127 °C, high-performance cured adhesive systems at 130-246 °C, in the same source",
+      "conditions": "commercial cured bisphenol-A/amine systems; uncured/thermoplastic-stage resin reported at 37–127 °C, high-performance cured adhesive systems at 130–246 °C, in the same source",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -233,7 +233,7 @@
       "range_min": 46,
       "range_max": 187,
       "unit": "°C",
-      "conditions": "1.8 MPa; Mark reports a similarly wide 47-287 °C for unfilled casting resins under 1.82 MPa flexural load, reflecting hardener/cure-schedule dependence",
+      "conditions": "1.8 MPa; Mark reports a similarly wide 47–287 °C for unfilled casting resins under 1.82 MPa flexural load, reflecting hardener/cure-schedule dependence",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -280,7 +280,7 @@
       "range_min": 28,
       "range_max": 90,
       "unit": "MPa",
-      "conditions": "unfilled casting resin; unfilled stress-at-break reported separately at 30-90 MPa; Wypych's broader thermoplastic-stage range is 27-200 MPa",
+      "conditions": "unfilled casting resin; unfilled stress-at-break reported separately at 30–90 MPa; Wypych's broader thermoplastic-stage range is 27–200 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -290,7 +290,7 @@
       "range_min": 1,
       "range_max": 6,
       "unit": "%",
-      "conditions": "unfilled cured resin: 1-2%; unfilled casting resins: 3-6%",
+      "conditions": "unfilled cured resin: 1–2%; unfilled casting resins: 3–6%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -419,7 +419,7 @@
       "range_min": 18.3,
       "range_max": 23,
       "unit": "%",
-      "conditions": "reported 18.3-19% and 23% across cited studies",
+      "conditions": "reported 18.3–19% and 23% across cited studies",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -446,7 +446,7 @@
       "range_min": 120,
       "range_max": 160,
       "unit": "°C",
-      "conditions": "cure temperature, baking-cure systems; adhesive-cure systems cure over a much broader 5-150 °C range depending on hardener",
+      "conditions": "cure temperature, baking-cure systems; adhesive-cure systems cure over a much broader 5–150 °C range depending on hardener",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -457,7 +457,7 @@
       "range_min": 0.001,
       "range_max": 0.13,
       "unit": "%",
-      "conditions": "Mark reports linear mold shrinkage of 0.05-1.0% for unfilled casting resins, a wider range",
+      "conditions": "Mark reports linear mold shrinkage of 0.05–1.0% for unfilled casting resins, a wider range",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -538,7 +538,7 @@
     "nfpa_health_rating": {
       "value": 2,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -546,7 +546,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -554,7 +554,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

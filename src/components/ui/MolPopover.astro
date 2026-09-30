@@ -122,7 +122,7 @@ import { href } from '../../lib/content';
 
     if (!response.ok) {
       parts.state.textContent =
-        'The structure service is not reachable just now — the entry itself is unaffected.';
+        'The structure service is not reachable just now; the entry itself is unaffected.';
       // The in-browser engine needs no network once fetched, so it is the one
       // useful thing to offer here rather than a dead end.
       if (storedEngine() === 'server') {

@@ -65,7 +65,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-fluoride/chuck-yeager-bell-x1-cockpit-1947.webp",
       "alt": "A close-up photograph looking into the open cockpit window of the bright orange Bell X-1 rocket plane, with pilot Chuck Yeager visible inside in flight gear; the aircraft is marked 'Glamorous Glennis', and a later autograph reading 'Good Luck! Chuck Yeager' is written across the lower part of the photograph.",
-      "caption": "Chuck Yeager in the cockpit of the Bell X-1 in 1947 — a breakthrough the world understood within hours, unlike the quiet fluoropolymer patent DuPont had pending that same year.",
+      "caption": "Chuck Yeager in the cockpit of the Bell X-1 in 1947: a breakthrough the world understood within hours, unlike the quiet fluoropolymer patent DuPont had pending that same year.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Chuck_Yeager_X-1_(color).jpg",
       "author": "Jack Ridley",
       "license": "Public domain"
@@ -73,7 +73,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-fluoride/transistor-inventors-bardeen-shockley-brattain.webp",
       "alt": "A black-and-white photograph of three men in shirtsleeves and ties gathered around a laboratory bench crowded with electronic test equipment, dials, wires and a small mounted device, with one man seated and two standing behind him.",
-      "caption": "John Bardeen, William Shockley and Walter Brattain with the apparatus behind the first transistor, in a Bell Labs publicity photograph — an invention the public understood as revolutionary within months, not decades.",
+      "caption": "John Bardeen, William Shockley and Walter Brattain with the apparatus behind the first transistor, in a Bell Labs publicity photograph: an invention the public understood as revolutionary within months, not decades.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Bardeen_Shockley_Brattain_1948.JPG",
       "author": "AT&T; photographer: Jack St. (last part of name not stamped well enough to read), New York, New York.",
       "license": "Public domain"
@@ -81,7 +81,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-fluoride/pvdf-ultrapure-water-piping.webp",
       "alt": "An indoor industrial installation of white plastic piping racks with numerous blue and orange valves, flow meters and fittings, arranged in parallel rows connected by overhead pipework.",
-      "caption": "A PVDF piping installation carrying ultrapure water in a semiconductor fabrication plant — the kind of unglamorous, highly corrosive-resistant service the material has quietly filled since the 1960s, well before anyone cared about its piezoelectricity.",
+      "caption": "A PVDF piping installation carrying ultrapure water in a semiconductor fabrication plant: the kind of unglamorous, highly corrosive-resistant service the material has quietly filled since the 1960s, well before anyone cared about its piezoelectricity.",
       "source_url": "https://commons.wikimedia.org/wiki/File:A_UPW_Installation_using_PVDF_Piping.png",
       "author": "Wikikart99",
       "license": "CC0"
@@ -89,7 +89,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-fluoride/lithium-battery-electrode-calendering.webp",
       "alt": "An industrial calendering machine with a dark, thin electrode film threaded between polished metal and red rubber rollers, control panel and hydraulic fittings visible behind it.",
-      "caption": "A calendering line compressing lithium-ion battery electrode film to its final thickness - the kind of production step where a PVDF binder holds the electrode's active particles onto the foil through repeated rolling and handling.",
+      "caption": "A calendering line compressing lithium-ion battery electrode film to its final thickness: the kind of production step where a PVDF binder holds the electrode's active particles onto the foil through repeated rolling and handling.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Calander_Machine.JPG",
       "author": "RudolfSimon",
       "license": "CC BY-SA 3.0"
@@ -104,7 +104,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20 °C; amorphous 1.68, crystalline 1.92-1.98 g/cm³"
+      "conditions": "20 °C; amorphous 1.68, crystalline 1.92–1.98 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -134,7 +134,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "1 kHz; at 1 MHz: 7-9.9"
+      "conditions": "1 kHz; at 1 MHz: 7–9.9"
     },
     "electrical_conductivity": {
       "value": null,
@@ -144,7 +144,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "reciprocal of reported volume resistivity, 1.5-2.3×10¹² Ω·m"
+      "conditions": "reciprocal of reported volume resistivity, 1.5–2.3×10¹² Ω·m"
     },
     "transmittance": {
       "value": null,
@@ -190,7 +190,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "specimen thickness 0.6-0.8 mm"
+      "conditions": "specimen thickness 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -203,7 +203,7 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Predominantly head-to-tail (isoregic) addition, ~95-97%; head-to-head/tail-to-tail defects ~3.5-6%.",
+    "tacticity": "Predominantly head-to-tail (isoregic) addition, ~95–97%; head-to-head/tail-to-tail defects ~3.5–6%.",
     "crystallinity_typical": {
       "value": 54,
       "range_min": 32,
@@ -212,7 +212,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "41-46% by DSC, 33-41% by WAXS"
+      "conditions": "41–46% by DSC, 33–41% by WAXS"
     },
     "crystal_structure": "Polymorphic: the beta (β) phase has the highest dipolar moment per unit cell and dominates PVDF's piezoelectric/ferroelectric behavior once poled. Four crystal forms are documented: Form I/α (orthorhombic, a=0.858, b=0.491, c=0.256 nm), Form II/β (monoclinic, a=0.496, b=0.964, c=0.462 nm, β≈90°), Form III/γ (orthorhombic, a=0.497, b=0.966, c=0.966 nm), Form IV/δ (orthorhombic, same cell as β).",
     "chain_flexibility_notes": null,
@@ -301,7 +301,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC; main melting peak 167-169 °C"
+      "conditions": "DSC; main melting peak 167–169 °C"
     },
     "tc": {
       "value": 116,
@@ -350,7 +350,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "commercial grade; Wypych 2016 reports a broader range of 420-2,200 MPa across grades"
+      "conditions": "commercial grade; Wypych 2016 reports a broader range of 420–2,200 MPa across grades"
     },
     "yield_strength": {
       "value": null,
@@ -360,7 +360,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "tensile stress at yield; Mark 1999 reports 38-52 MPa at 25 °C, 42.8 MPa for a commercial grade"
+      "conditions": "tensile stress at yield; Mark 1999 reports 38–52 MPa at 25 °C, 42.8 MPa for a commercial grade"
     },
     "tensile_strength_at_break": {
       "value": 50,
@@ -378,7 +378,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "commercial grade; Wypych 2016 reports a broader range of 20-600% across grades"
+      "conditions": "commercial grade; Wypych 2016 reports a broader range of 20–600% across grades"
     },
     "impact_izod": {
       "value": null,
@@ -577,7 +577,7 @@
         "strain gauges",
         "acoustic transducers"
       ],
-      "notes": "Piezoelectric coefficient of poled thin films ~6-7 pC/N, about 10x larger than other polymers; exhibits a negative d33 (compresses under applied field)."
+      "notes": "Piezoelectric coefficient of poled thin films ~6–7 pC/N, about 10x larger than other polymers; exhibits a negative d33 (compresses under applied field)."
     },
     {
       "sector": "Energy storage",

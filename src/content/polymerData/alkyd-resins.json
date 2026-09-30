@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "Fatty-acid-modified polyester -- composition (polyol + dibasic acid/anhydride + oil type and loading) varies by formulation, so no single repeat unit represents the class.",
+  "notation_note": "Fatty-acid-modified polyester. Its composition (polyol + dibasic acid/anhydride + oil type and loading) varies by formulation, so no single repeat unit represents the class.",
   "iupac_name": null,
   "synonyms": [
     "Glyptal (original trade name)"
@@ -53,7 +53,7 @@
     {
       "src": "~/assets/polymers/alkyd-resins/lindbergh-spirit-of-st-louis-1927.webp",
       "alt": "Charles Lindbergh standing in flight jacket and tie in front of the nose of the Spirit of St Louis, the words 'Spirit of' and 'Louis' visible on the fuselage.",
-      "caption": "Lindbergh in front of the Spirit of St. Louis, May 1927 — the year's most photographed symbol of a country building bigger, faster things than its finishing technology could keep up with.",
+      "caption": "Lindbergh in front of the Spirit of St. Louis, May 1927. He was the year's most photographed symbol of a country building bigger, faster things than its finishing technology could keep up with.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Lindbergh_and_the_Spirit_of_Saint_Louis_(Crisco_restoration,_with_wings).jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -69,7 +69,7 @@
     {
       "src": "~/assets/polymers/alkyd-resins/mountain-paint-varnish-factory-1925.webp",
       "alt": "A brick paint and varnish factory with four tall, narrow chimney stacks of varying heights standing above the main building, a water tower visible behind.",
-      "caption": "The Mountain Paint and Varnish Company, Toledo, Ohio, around 1925 — the kind of works, dependent on cooked natural oils and resins, that alkyd chemistry would spend the next generation displacing.",
+      "caption": "The Mountain Paint and Varnish Company, Toledo, Ohio, around 1925. It was the kind of works, dependent on cooked natural oils and resins, that alkyd chemistry would spend the next generation displacing.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mountain_Paint_and_Varnish_Company,_Toledo,_Ohio_(approximately_1925)_-_DPLA_-_302d85746114021bae65854c05490944.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -77,7 +77,7 @@
     {
       "src": "~/assets/polymers/alkyd-resins/ford-model-a-1928.webp",
       "alt": "A restored 1928 Ford Model A touring car in pale green and black, with a folded black canvas top, on display in a museum with an informational placard in front of it.",
-      "caption": "A Ford Model A, the car that in December 1927 gave Ford buyers a choice of colors for the first time in nearly two decades — the appetite for color on manufactured goods that alkyd enamels went on to satisfy for the rest of the century.",
+      "caption": "A Ford Model A, the car that in December 1927 gave Ford buyers a choice of colors for the first time in nearly two decades. Alkyd enamels went on to satisfy that appetite for color on manufactured goods for the rest of the century.",
       "source_url": "https://commons.wikimedia.org/wiki/File:1928_Ford_Model_A_front_left.jpg",
       "author": "TTTNIS",
       "license": "CC0"
@@ -92,7 +92,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "At 20°C, resin/coating grade. Mark's Polymer Data Handbook reports 1.2 g/cm³ for a coating grade specifically; mineral- or glass-fiber-filled molding compounds (a different product form) run much higher, 1.6-2.3 g/cm³."
+      "conditions": "At 20°C, resin/coating grade. Mark's Polymer Data Handbook reports 1.2 g/cm³ for a coating grade specifically; mineral- or glass-fiber-filled molding compounds (a different product form) run much higher, 1.6–2.3 g/cm³."
     },
     "melt_flow_index": {
       "value": null,
@@ -142,7 +142,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "60° Gardner gloss (ASTM D523), coating; specific formulations measured 85.2-90.9%."
+      "conditions": "60° Gardner gloss (ASTM D523), coating; specific formulations measured 85.2–90.9%."
     },
     "water_absorption": {
       "value": 2,
@@ -150,7 +150,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Coating grade. Mineral-filled/glass-fiber-reinforced molding compounds (a different product form) report 0.03-0.5% (1/8 in. specimen, 24 h)."
+      "conditions": "Coating grade. Mineral-filled/glass-fiber-reinforced molding compounds (a different product form) report 0.03–0.5% (1/8 in. specimen, 24 h)."
     },
     "dielectric_strength": {
       "value": null,
@@ -167,7 +167,7 @@
       "unsaturated fatty acid / triglyceride oil"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Two main industrial routes: the fatty-acid process (acid anhydride + polyol + unsaturated fatty acid combined directly, giving controlled composition) and the alcoholysis/monoglyceride process (raw vegetable oil transesterified with polyol, more economical). The original alkyds -- glycerol/phthalic-acid compounds marketed as 'Glyptal' -- served as lighter-colored substitutes for darker copal resins in varnishes. ~200,000 tonnes produced annually.",
+    "industrial_process_notes": "Two main industrial routes: the fatty-acid process (acid anhydride + polyol + unsaturated fatty acid combined directly, giving controlled composition) and the alcoholysis/monoglyceride process (raw vegetable oil transesterified with polyol, more economical). The original alkyds (glycerol/phthalic-acid compounds marketed as 'Glyptal') served as lighter-colored substitutes for darker copal resins in varnishes. ~200,000 tonnes produced annually.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -192,7 +192,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 2,550-6,611 g/mol."
+        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 2,550–6,611 g/mol."
       },
       "mw": {
         "value": 27100,
@@ -202,7 +202,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 8,125-19,537 g/mol."
+        "conditions": "Conventional (non-hyperbranched) resin; hyperbranched variants reported 8,125–19,537 g/mol."
       },
       "pdi": {
         "value": 10,
@@ -210,7 +210,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": ">10 (reported as a lower bound), conventional resin; hyperbranched variants reported 1.94-2.58 or 2.16-295 depending on formulation."
+        "conditions": ">10 (reported as a lower bound), conventional resin; hyperbranched variants reported 1.94–2.58 or 2.16–295 depending on formulation."
       }
     }
   },
@@ -223,7 +223,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Typical cured film; uncrosslinked ≈2°C; naturally aged 25 years 20-40°C (further crosslinking/oxidation)."
+      "conditions": "Typical cured film; uncrosslinked ≈2°C; naturally aged 25 years 20–40°C (further crosslinking/oxidation)."
     },
     "tm": {
       "value": null,
@@ -249,7 +249,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Onset of peroxide decomposition; oxidative decomposition follows at 250-400°C, volatilization above 400°C."
+      "conditions": "Onset of peroxide decomposition; oxidative decomposition follows at 250–400°C, volatilization above 400°C."
     },
     "thermal_conductivity": {
       "value": null,
@@ -274,7 +274,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Coating (cured film) grade. Mineral/glass-fiber-filled molding compounds (a different product form) report 20-66 MPa."
+      "conditions": "Coating (cured film) grade. Mineral/glass-fiber-filled molding compounds (a different product form) report 20–66 MPa."
     },
     "elongation_at_break": {
       "value": 65,

@@ -14,7 +14,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "A structural class (pi-conjugated aromatic building blocks linked into a permanently microporous 3-D network) rather than one chemistry -- building blocks and linking chemistry vary by synthesis route (Suzuki, Sonogashira, Yamamoto, Schiff base, cyclotrimerization), so no single repeat unit represents the class.",
+  "notation_note": "A structural class (pi-conjugated aromatic building blocks linked into a permanently microporous 3-D network) rather than one chemistry. Building blocks and linking chemistry vary by synthesis route (Suzuki, Sonogashira, Yamamoto, Schiff base, cyclotrimerization), so no single repeat unit represents the class.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -40,7 +40,7 @@
     {
       "src": "~/assets/polymers/conjugated-microporous-polymers/lehman-brothers-hq-2008.webp",
       "alt": "A dark New York skyscraper at night, its lower floors covered in illuminated electronic screens reading 'LEHMAN BROTHERS' and the date 'SEP 15', photographed from street level looking up.",
-      "caption": "Lehman Brothers' Times Square building on the night of 15 September 2008, still lit with its own name as the firm entered bankruptcy — the opening of a downturn that sharpened the case for materials able to do two jobs with one structure.",
+      "caption": "Lehman Brothers' Times Square building on the night of 15 September 2008, still lit with its own name as the firm entered bankruptcy, the opening of a downturn that sharpened the case for materials able to do two jobs with one structure.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers-20080915.jpg",
       "author": "Robert Scoble",
       "license": "CC BY 2.0"
@@ -141,7 +141,7 @@
       "unit": "%",
       "status": "not_applicable"
     },
-    "crystal_structure": "Rigid aromatic building blocks (often alkyne-containing) linked through pi-conjugated pathways into a 3-D network with permanent, tunable microporosity -- surface areas typically 500-1000 m²/g, with related conjugated porous materials exceeding 5500 m²/g.",
+    "crystal_structure": "Rigid aromatic building blocks (often alkyne-containing) linked through pi-conjugated pathways into a 3-D network with permanent, tunable microporosity. Surface areas typically 500–1000 m²/g, with related conjugated porous materials exceeding 5500 m²/g.",
     "chain_flexibility_notes": "Extended pi-conjugation (unlike a typical porous polymer network) enables light absorption/energy transfer, giving CMPs optoelectronic function beyond pure gas adsorption.",
     "tg_relation_notes": null,
     "molecular_weight": {

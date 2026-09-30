@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "A hybrid nanocomposite -- inorganic semiconductor quantum dots (a few nanometers, e.g. CdSe, InP) dispersed/embedded in a polymer host matrix -- rather than a polymer chemistry itself; the host polymer varies by application (encapsulant resins, printable matrices) and the quantum dots are not a polymeric species at all.",
+  "notation_note": "A hybrid nanocomposite rather than a polymer chemistry itself: inorganic semiconductor quantum dots (a few nanometers, e.g. CdSe, InP) dispersed/embedded in a polymer host matrix; the host polymer varies by application (encapsulant resins, printable matrices) and the quantum dots are not a polymeric species at all.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -35,8 +35,8 @@
   "historical_images": [
     {
       "src": "~/assets/polymers/quantum-dot-polymers/plasmachem-quantum-dots-vials.webp",
-      "alt": "Eight small glass vials in a row, each glowing a different vivid colour under ultraviolet light — from pale violet through cyan, green, yellow, orange, and two shades of red — against a black background.",
-      "caption": "Colloidal quantum dots of the same core semiconductor, each vial a different size, photographed under ultraviolet light. Size alone sets the colour — nothing about the chemistry changes between one vial and the next.",
+      "alt": "Eight small glass vials in a row, each glowing a different vivid colour under ultraviolet light (from pale violet through cyan, green, yellow, orange, and two shades of red) against a black background.",
+      "caption": "Colloidal quantum dots of the same core semiconductor, each vial a different size, photographed under ultraviolet light. Size alone sets the colour; nothing about the chemistry changes between one vial and the next.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Quantum_Dots_with_emission_maxima_in_a_10-nm_step_are_being_produced_at_PlasmaChem_in_a_kg_scale.jpg",
       "author": "Antipoff",
       "license": "CC BY-SA 3.0"
@@ -44,7 +44,7 @@
     {
       "src": "~/assets/polymers/quantum-dot-polymers/moungi-bawendi-nobel-reception-2023.webp",
       "alt": "A group of people in formal evening dress talking at a reception; the central figure, an older man with grey hair wearing a Nobel medal pin on his lapel, gestures with one hand while holding a champagne glass in the other.",
-      "caption": "Moungi Bawendi (centre) at the US Embassy's reception for the 2023 Nobel laureates in Stockholm. His 1993 synthesis method is why quantum dots could be manufactured to a reliable size at all — the step that turned Ekimov's and Brus's discovery into an industry.",
+      "caption": "Moungi Bawendi (centre) at the US Embassy's reception for the 2023 Nobel laureates in Stockholm. His 1993 synthesis method is why quantum dots could be manufactured to a reliable size at all. That was the step that turned Ekimov's and Brus's discovery into an industry.",
       "source_url": "https://commons.wikimedia.org/wiki/File:US_Embassy_Sweden_2023_Nobel_Reception_(53390303343).jpg",
       "author": "US Embassy Sweden",
       "license": "CC BY 2.0"
@@ -52,7 +52,7 @@
     {
       "src": "~/assets/polymers/quantum-dot-polymers/samsung-qled-tv-8k.webp",
       "alt": "A large flat-screen television on a showroom floor, illuminated 'QLED 8K' lettering above it, displaying a vivid, saturated image of root vegetables against a black background.",
-      "caption": "A Samsung QLED television on display, its quantum-dot film delivering the saturated colour these sets are marketed on — the display application quantum dots reached shop floors through years before the 2020 blue breakthrough closed out the cadmium-free set.",
+      "caption": "A Samsung QLED television on display, its quantum-dot film delivering the saturated colour these sets are marketed on: the display application quantum dots reached shop floors through years before the 2020 blue breakthrough closed out the cadmium-free set.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Samsung_QLED_TV_8K_-_75_inches_-_2018-11-02.jpg",
       "author": "Bretwa",
       "license": "CC BY-SA 4.0"
@@ -123,7 +123,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Quantum dots are colloidally synthesized semiconductor nanocrystals, typically surface-passivated with organic ligands (e.g. oleic acid), then dispersed into a polymer matrix or ink via solution processing techniques such as spin coating or inkjet printing. Their defining property is size-tunable fluorescence from quantum confinement: larger dots (5-6 nm) emit longer wavelengths (orange/red), smaller dots (2-3 nm) emit shorter wavelengths (blue/green), independent of chemical composition.",
+    "industrial_process_notes": "Quantum dots are colloidally synthesized semiconductor nanocrystals, typically surface-passivated with organic ligands (e.g. oleic acid), then dispersed into a polymer matrix or ink via solution processing techniques such as spin coating or inkjet printing. Their defining property is size-tunable fluorescence from quantum confinement: larger dots (5–6 nm) emit longer wavelengths (orange/red), smaller dots (2–3 nm) emit shorter wavelengths (blue/green), independent of chemical composition.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {

@@ -68,7 +68,7 @@
     {
       "src": "~/assets/polymers/polybenzimidazole/apollo-1-command-module-interior-fire-1967.webp",
       "alt": "A close view into the scorched interior of a spacecraft command module, its wiring bundles, hoses, and metal fittings charred black and coated in soot.",
-      "caption": "The interior of the Apollo 1 command module, photographed the day after the January 1967 fire — the disaster that turned PBI from a published curiosity into a funded, urgent program.",
+      "caption": "The interior of the Apollo 1 command module, photographed the day after the January 1967 fire, the disaster that turned PBI from a published curiosity into a funded, urgent program.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Apollo_1_fire.jpg",
       "author": "NASA",
       "license": "Public domain"
@@ -96,7 +96,7 @@
       "range_min": 1.3,
       "range_max": 1.43,
       "unit": "g/cm³",
-      "conditions": "Mark breaks this down by form: stabilized fiber 1.43, unstabilized fiber 1.39, film 1.2-1.4 g/cm³",
+      "conditions": "Mark breaks this down by form: stabilized fiber 1.43, unstabilized fiber 1.39, film 1.2–1.4 g/cm³",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -124,7 +124,7 @@
     "electrical_conductivity": {
       "value": 1e-11,
       "unit": "S/m",
-      "conditions": "reciprocal of volume resistivity (1×10¹¹ Ω·m), dry film. Hydrated PBI shows much higher bulk protonic conductivity, 8×10⁻⁵ S/cm at 100% RH (Mark) -- relevant to its use as a fuel-cell membrane",
+      "conditions": "reciprocal of volume resistivity (1×10¹¹ Ω·m), dry film. Hydrated PBI shows much higher bulk protonic conductivity, 8×10⁻⁵ S/cm at 100% RH (Mark), relevant to its use as a fuel-cell membrane",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -149,7 +149,7 @@
       "range_min": 0.4,
       "range_max": 15,
       "unit": "%",
-      "conditions": "24 h immersion, 23 °C: 0.4-0.5%; at saturation: 5-15%",
+      "conditions": "24 h immersion, 23 °C: 0.4–0.5%; at saturation: 5–15%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -159,7 +159,7 @@
       "range_min": 21,
       "range_max": 23,
       "unit": "kV/mm",
-      "conditions": "K20/P50 electrodes, d=0.6-0.8 mm",
+      "conditions": "K20/P50 electrodes, d=0.6–0.8 mm",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -185,8 +185,8 @@
       "source": "wiki-pbi",
       "conditions": "Amorphous."
     },
-    "crystal_structure": "Reported as both monoclinic (a:b:c = 0.992:1.868:1.422 nm) and triclinic (a:b:c = 1.070:1.199:1.371 nm) unit cells; crystallite size 9.5-12.4 nm -- some crystalline order is present despite PBI commonly being described as amorphous.",
-    "chain_flexibility_notes": "Benzimidazole linkages give exceptionally high thermal stability -- formulations from isophthalic acid resist melting even at 770°C.",
+    "crystal_structure": "Reported as both monoclinic (a:b:c = 0.992:1.868:1.422 nm) and triclinic (a:b:c = 1.070:1.199:1.371 nm) unit cells; crystallite size 9.5–12.4 nm. Some crystalline order is present despite PBI commonly being described as amorphous.",
+    "chain_flexibility_notes": "Benzimidazole linkages give exceptionally high thermal stability; formulations from isophthalic acid resist melting even at 770°C.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -224,7 +224,7 @@
       "range_min": 399,
       "range_max": 510,
       "unit": "°C",
-      "conditions": "Mark reports 427 °C unannealed, rising to 500 °C after annealing -- within this range",
+      "conditions": "Mark reports 427 °C unannealed, rising to 500 °C after annealing; both fall within this range",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -271,7 +271,7 @@
     "tensile_modulus": {
       "value": 5900,
       "unit": "MPa",
-      "conditions": "molded/bulk; Mark reports 2,270-3,790 MPa for various film forms",
+      "conditions": "molded/bulk; Mark reports 2,270–3,790 MPa for various film forms",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -288,7 +288,7 @@
       "range_min": 94,
       "range_max": 160,
       "unit": "MPa",
-      "conditions": "unqualified 'tensile strength' row; Mark reports 96-186 MPa for various film forms",
+      "conditions": "unqualified 'tensile strength' row; Mark reports 96–186 MPa for various film forms",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -298,7 +298,7 @@
       "range_min": 3,
       "range_max": 8,
       "unit": "%",
-      "conditions": "molded/bulk; fiber form is much higher, 9-30% (Wypych, Mark)",
+      "conditions": "molded/bulk; fiber form is much higher, 9–30% (Wypych, Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -533,7 +533,7 @@
     "nfpa_health_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -541,7 +541,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -549,7 +549,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

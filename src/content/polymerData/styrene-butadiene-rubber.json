@@ -56,7 +56,7 @@
     {
       "src": "~/assets/polymers/styrene-butadiene-rubber/cadillac-eldorado-tailfins-1959.webp",
       "alt": "The rear end of a bright orange-red 1959 Cadillac Eldorado, showing its towering chrome-edged tailfins and twin bullet tail-lights, displayed in a museum gallery.",
-      "caption": "A 1959 Cadillac Eldorado Biarritz, its tailfins the tallest ever fitted to a production car - the flamboyant end of a decade whose tires had quietly gone synthetic.",
+      "caption": "A 1959 Cadillac Eldorado Biarritz, its tailfins the tallest ever fitted to a production car: the flamboyant end of a decade whose tires had quietly gone synthetic.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Eldorado-biarritz-guggenheim-237.jpg",
       "author": "Luistxo",
       "license": "CC BY-SA 4.0"
@@ -72,7 +72,7 @@
     {
       "src": "~/assets/polymers/styrene-butadiene-rubber/radial-tire-cutaway-1964.webp",
       "alt": "Two cutaway diagrams of tires side by side, showing coloured internal ply layers in blue, red and green beneath the tread, comparing a conventional tyre construction to a radial one.",
-      "caption": "A 1964 comparison of conventional and radial tyre construction - a reminder that the rubber compound sits inside a specific engineered structure of plies and belts, not just a block of tread.",
+      "caption": "A 1964 comparison of conventional and radial tyre construction: a reminder that the rubber compound sits inside a specific engineered structure of plies and belts, not just a block of tread.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pirelli_Cinturato_Tire_cutaway.jpg",
       "author": "Pirelli",
       "license": "Public domain"
@@ -80,7 +80,7 @@
     {
       "src": "~/assets/polymers/styrene-butadiene-rubber/used-tire-stockpile.webp",
       "alt": "A large outdoor pile of worn car and tractor tires stacked against a corrugated metal fence, with bare trees in the background.",
-      "caption": "A stockpile of worn tires - the scale a single rubber, invented for a war that ended in 1945, now operates at in ordinary peacetime traffic.",
+      "caption": "A stockpile of worn tires: the scale a single rubber, invented for a war that ended in 1945, now operates at in ordinary peacetime traffic.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Stack_pile_batch_of_old_used_car_and_tractor_tires.jpg",
       "author": "photosteve101",
       "license": "CC BY-SA 4.0"
@@ -162,7 +162,7 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Predominantly 1,4-addition in emulsion SBR: cis-1,4 9-38%, trans-1,4 53-75%, remainder vinyl (1,2-addition).",
+    "tacticity": "Predominantly 1,4-addition in emulsion SBR: cis-1,4 9–38%, trans-1,4 53–75%, remainder vinyl (1,2-addition).",
     "crystallinity_typical": {
       "value": null,
       "unit": "%",
@@ -278,7 +278,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Vulcanized SBR, typically compounded with reinforcing filler; a raw carbon-black-free gum vulcanizate is markedly weaker (~1.4-2.8 MPa)."
+      "conditions": "Vulcanized SBR, typically compounded with reinforcing filler; a raw carbon-black-free gum vulcanizate is markedly weaker (~1.4–2.8 MPa)."
     },
     "elongation_at_break": {
       "value": 565,
@@ -488,6 +488,6 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
     },
-    "safety_notes": "Aquatic toxicity (48 h LC50): Daphnia magna 23 mg/L, bluegill sunfish 25.05 mg/L, fathead minnow 46.4-59.3 mg/L."
+    "safety_notes": "Aquatic toxicity (48 h LC50): Daphnia magna 23 mg/L, bluegill sunfish 25.05 mg/L, fathead minnow 46.4–59.3 mg/L."
   }
 }

@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][>]N1C(=O)c2ccc(cc2C1=O)C(=O)Nc1ccc(cc1)Cc1ccc(cc1)[<][]}",
   "smiles_depiction": "*N1C(=O)c2ccc(cc2C1=O)C(=O)Nc1ccc(cc1)Cc1ccc(cc1)*",
-  "notation_note": "Each repeat carries both an imide ring and an amide link -- the imide for thermal stability, the amide for enough chain mobility to be processable.",
+  "notation_note": "Each repeat carries both an imide ring and an amide link: the imide for thermal stability, the amide for enough chain mobility to be processable.",
   "iupac_name": null,
   "synonyms": [
     "Torlon"
@@ -55,7 +55,7 @@
     {
       "src": "~/assets/polymers/polyamideimide/gps-satellite-space-chamber-test-1977.webp",
       "alt": "A satellite with a foil-wrapped body and two extended solar panel wings hangs suspended by cables inside a large space-simulation chamber, a technician in white coveralls standing beside it.",
-      "caption": "A full-scale GPS satellite undergoing environmental testing in 1977, ahead of the first Navstar launch in February 1978 — proving it could survive extremes no repair crew could ever reach.",
+      "caption": "A full-scale GPS satellite undergoing environmental testing in 1977, ahead of the first Navstar launch in February 1978. The testing proved it could survive extremes no repair crew could ever reach.",
       "source_url": "https://commons.wikimedia.org/wiki/File:150710-F-0000U-002_2_(cropped).jpg",
       "author": "US Air Force",
       "license": "Public domain"
@@ -71,7 +71,7 @@
     {
       "src": "~/assets/polymers/polyamideimide/amoco-gas-poplar-bluff-1979.webp",
       "alt": "A whitewashed 1920s-style brick filling station with tiled eaves and soda vending machines out front, a partial AMOCO sign visible on the adjoining building, photographed in color.",
-      "caption": "An Amoco filling station, photographed in 1979 — the public face of the same company whose chemicals division, far from any gas pump, had spent nearly two decades turning a laboratory curiosity into Torlon.",
+      "caption": "An Amoco filling station, photographed in 1979: the public face of the same company whose chemicals division, far from any gas pump, had spent nearly two decades turning a laboratory curiosity into Torlon.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Amoco_Gas,_Poplar_Bluff,_Missouri_LCCN2017707396.tif",
       "author": "John Margolies",
       "license": "Public domain"
@@ -182,7 +182,7 @@
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Combined amide and imide linkages give PAI an unusually high strength-to-weight ratio among unreinforced thermoplastics.",
-    "tg_relation_notes": "Tg is highly sensitive to the aromatic diamine used in synthesis: reported values for trimellitic-anhydride-derived amide-imides span roughly 206-326 °C, while commercial Torlon itself clusters around 260-285 °C depending on test method.",
+    "tg_relation_notes": "Tg is highly sensitive to the aromatic diamine used in synthesis: reported values for trimellitic-anhydride-derived amide-imides span roughly 206–326 °C, while commercial Torlon itself clusters around 260–285 °C depending on test method.",
     "molecular_weight": {
       "mn": {
         "value": null,
@@ -219,7 +219,7 @@
       "range_min": 206,
       "range_max": 326,
       "unit": "°C",
-      "conditions": "wide range reflects different amide-imide backbone chemistries; commercial Torlon itself is reported at 260-285 °C (533-558 K, Mark) across different test methods",
+      "conditions": "wide range reflects different amide-imide backbone chemistries; commercial Torlon itself is reported at 260–285 °C (533–558 K, Mark) across different test methods",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -242,7 +242,7 @@
       "range_min": 252,
       "range_max": 278,
       "unit": "°C",
-      "conditions": "1.8 MPa; Wypych reports 278 °C, Mark reports 252-260 °C for unfilled Torlon 4000T",
+      "conditions": "1.8 MPa; Wypych reports 278 °C, Mark reports 252–260 °C for unfilled Torlon 4000T",
       "test_standard": "ASTM D648",
       "status": "verified",
       "evidence_level": "handbook",
@@ -269,7 +269,7 @@
       "range_min": 4480,
       "range_max": 5200,
       "unit": "MPa",
-      "conditions": "unfilled; Wypych 4,480-4,900 MPa, Mark 5,200 MPa for Torlon 4000T (ASTM D638)",
+      "conditions": "unfilled; Wypych 4,480–4,900 MPa, Mark 5,200 MPa for Torlon 4000T (ASTM D638)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -284,7 +284,7 @@
       "range_min": 117.2,
       "range_max": 192,
       "unit": "MPa",
-      "conditions": "unfilled; Wypych 147-192 MPa, Mark reports 117.2 MPa for Torlon 4000T (ASTM D638, break)",
+      "conditions": "unfilled; Wypych 147–192 MPa, Mark reports 117.2 MPa for Torlon 4000T (ASTM D638, break)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -294,7 +294,7 @@
       "range_min": 10,
       "range_max": 35,
       "unit": "%",
-      "conditions": "unfilled; Wypych 15-35%, Mark 10-18% for Torlon 4000T (ASTM D638)",
+      "conditions": "unfilled; Wypych 15–35%, Mark 10–18% for Torlon 4000T (ASTM D638)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -304,7 +304,7 @@
       "range_min": 136,
       "range_max": 144,
       "unit": "J/m",
-      "conditions": "notched, 23 °C, unfilled; Wypych 138-144 J/m, Mark 136 J/m for Torlon 4000T (ASTM D256)",
+      "conditions": "notched, 23 °C, unfilled; Wypych 138–144 J/m, Mark 136 J/m for Torlon 4000T (ASTM D256)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -319,7 +319,7 @@
       "range_min": 78,
       "range_max": 127,
       "unit": "Rockwell E",
-      "conditions": "unfilled; Wypych 86-127, Mark 78 for Torlon 4000T (ASTM D785)",
+      "conditions": "unfilled; Wypych 86–127, Mark 78 for Torlon 4000T (ASTM D785)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -329,7 +329,7 @@
       "range_min": 3590,
       "range_max": 5030,
       "unit": "MPa",
-      "conditions": "unfilled; Wypych 3,620-5,030 MPa, Mark 3,590 MPa for Torlon 4000T (ASTM D790)",
+      "conditions": "unfilled; Wypych 3,620–5,030 MPa, Mark 3,590 MPa for Torlon 4000T (ASTM D790)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -412,7 +412,7 @@
       }
     },
     "weathering_uv": {
-      "value": "good -- 93% tensile strength retention and 100% elongation retention after 10,000 h carbon-arc Weather-O-Meter exposure",
+      "value": "good: 93% tensile strength retention and 100% elongation retention after 10,000 h carbon-arc Weather-O-Meter exposure",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

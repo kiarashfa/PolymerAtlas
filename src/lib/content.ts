@@ -356,7 +356,7 @@ const EMPTY_TEXT: Record<Status, string> = {
   verified: '',
   estimated: '',
   placeholder: 'not yet available',
-  not_applicable: 'N/A — not applicable',
+  not_applicable: 'Not applicable',
 };
 
 interface NumericValue {

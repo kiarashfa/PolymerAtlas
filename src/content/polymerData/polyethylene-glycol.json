@@ -69,7 +69,7 @@
     {
       "src": "~/assets/polymers/polyethylene-glycol/peg-4000-solid-flakes.webp",
       "alt": "A small heap of translucent white waxy flakes on an orange card beside a ruler, showing the flakes span roughly five centimetres in width.",
-      "caption": "Polyethylene glycol 4000, a mid-range molecular weight sold as flakes — solid at room temperature, but still a long way from the tough fiber-forming grades sold as polyethylene oxide.",
+      "caption": "Polyethylene glycol 4000, a mid-range molecular weight sold as flakes, solid at room temperature, but still a long way from the tough fiber-forming grades sold as polyethylene oxide.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Polyethylene_glycol_4000.jpg",
       "author": "Anypodetos",
       "license": "CC0"
@@ -104,7 +104,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20 °C, experimental; calculated range is 1.4418-1.4468. Rises with molecular weight -- Mark reports 1.4563 for low MW rising to 1.51-1.54 for high MW (handbook-mark-1999)."
+      "conditions": "20 °C, experimental; calculated range is 1.4418–1.4468. Rises with molecular weight: Mark reports 1.4563 for low MW rising to 1.51–1.54 for high MW (handbook-mark-1999)."
     },
     "dielectric_constant": {
       "value": null,
@@ -204,28 +204,28 @@
       {
         "solvent": "acetone",
         "temperature_k": 298,
-        "mw_range": "70-1,000 kg/mol",
+        "mw_range": "70–1,000 kg/mol",
         "k": { "value": 0.032, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.67, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "benzene",
         "temperature_k": 298,
-        "mw_range": "80-5,200 kg/mol",
+        "mw_range": "80–5,200 kg/mol",
         "k": { "value": 0.0307, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.686, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "carbon tetrachloride",
         "temperature_k": 298,
-        "mw_range": "70-1,000 kg/mol",
+        "mw_range": "70–1,000 kg/mol",
         "k": { "value": 0.062, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.64, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "chloroform",
         "temperature_k": 298,
-        "mw_range": "200-1,500 kg/mol",
+        "mw_range": "200–1,500 kg/mol",
         "k": { "value": 0.206, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.5, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
@@ -238,14 +238,14 @@
       {
         "solvent": "toluene",
         "temperature_k": 308,
-        "mw_range": "400-4,000 kg/mol",
+        "mw_range": "400–4,000 kg/mol",
         "k": { "value": 0.0145, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.7, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "water",
         "temperature_k": 308,
-        "mw_range": "30,000-7,000,000 g/mol",
+        "mw_range": "30,000–7,000,000 g/mol",
         "k": { "value": 0.0064, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.82, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       }
@@ -270,7 +270,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "rises steeply with molecular weight: PEG 400 approx. 4-8 °C, PEG 600 approx. 20-25 °C, PEG 1500 approx. 44-48 °C, PEG 4000 approx. 54-58 °C, PEG 6000 approx. 56-63 °C; very low-MW grades range -23 to 12 °C (DSC)."
+      "conditions": "rises steeply with molecular weight: PEG 400 approx. 4–8 °C, PEG 600 approx. 20–25 °C, PEG 1500 approx. 44–48 °C, PEG 4000 approx. 54–58 °C, PEG 6000 approx. 56–63 °C; very low-MW grades range -23 to 12 °C (DSC)."
     },
     "tc": {
       "value": null,
@@ -303,7 +303,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "solid, high-molecular-weight PEO; low-MW PEG grades are liquids/waxes with no meaningful modulus. High-MW oriented fibers reach 500-1,000 MPa; theoretical ultimate modulus is 10,000 MPa."
+      "conditions": "solid, high-molecular-weight PEO; low-MW PEG grades are liquids/waxes with no meaningful modulus. High-MW oriented fibers reach 500–1,000 MPa; theoretical ultimate modulus is 10,000 MPa."
     },
     "yield_strength": {
       "value": null,
@@ -319,7 +319,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "solid, high-molecular-weight PEO; oriented fibers reach 100-200 MPa. Low-MW PEG grades are liquids with no meaningful tensile strength."
+      "conditions": "solid, high-molecular-weight PEO; oriented fibers reach 100–200 MPa. Low-MW PEG grades are liquids with no meaningful tensile strength."
     },
     "elongation_at_break": {
       "value": null,
@@ -413,7 +413,7 @@
     "flammability_ul94": {
       "value": null,
       "status": "placeholder",
-      "conditions": "No UL94 classification found in either handbook; ignition temperature (182-287 °C) and limiting oxygen index are reported instead."
+      "conditions": "No UL94 classification found in either handbook; ignition temperature (182–287 °C) and limiting oxygen index are reported instead."
     },
     "limiting_oxygen_index": {
       "value": 18.5,
@@ -538,7 +538,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -546,7 +546,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -554,7 +554,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

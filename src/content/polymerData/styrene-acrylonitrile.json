@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][$]CC(c1ccccc1)[$],[$]CC(C#N)[$][]}",
   "smiles_depiction": "*CC(c1ccccc1)*.*CC(C#N)*",
-  "notation_note": "A statistical (random) copolymer, typically 70-80% styrene by weight; the two brackets show the two monomer units and their approximate ratio, not a block sequence, since the two are mixed at random along the chain.",
+  "notation_note": "A statistical (random) copolymer, typically 70–80% styrene by weight; the two brackets show the two monomer units and their approximate ratio, not a block sequence, since the two are mixed at random along the chain.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -54,7 +54,7 @@
     {
       "src": "~/assets/polymers/styrene-acrylonitrile/scrap-rubber-drive-1942.webp",
       "alt": "A donkey pulling a two-wheeled cart heaped with old tires past a filling station, with two men seated among the load.",
-      "caption": "Old tires collected for a wartime scrap rubber drive — the shortage reached rural roads as well as city streets.",
+      "caption": "Old tires collected for a wartime scrap rubber drive: the shortage reached rural roads as well as city streets.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Scrap_Rubber_Drive_-_NARA_-_196503.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/styrene-acrylonitrile/scrap-rubber-poster-wpb.webp",
       "alt": "A four-panel wartime poster illustrating a gas mask, a life raft, a scout car and a heavy bomber, each labelled with the pounds of rubber it required, above the headline 'America needs your scrap rubber'.",
-      "caption": "A 1942 War Production Board poster spelling out, item by item, just how much of the war effort ran on rubber - the shortage that pushed acrylonitrile into bulk American production in the first place.",
+      "caption": "A 1942 War Production Board poster spelling out, item by item, just how much of the war effort ran on rubber. That shortage pushed acrylonitrile into bulk American production in the first place.",
       "source_url": "https://commons.wikimedia.org/wiki/File:America_needs_your_scrap_rubber.jpg",
       "author": "Boston Public Library",
       "license": "CC BY 2.0"
@@ -164,7 +164,7 @@
       "acrylonitrile"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Random copolymerization of styrene (70-80 wt%) and acrylonitrile (20-30 wt%). Higher acrylonitrile content improves mechanical strength and chemical resistance but introduces a yellowish tint. SAN itself later became the base resin for ABS, when polybutadiene rubber particles (10-20 micrometers) are dispersed/grafted into it to add toughness.",
+    "industrial_process_notes": "Random copolymerization of styrene (70–80 wt%) and acrylonitrile (20–30 wt%). Higher acrylonitrile content improves mechanical strength and chemical resistance but introduces a yellowish tint. SAN itself later became the base resin for ABS, when polybutadiene rubber particles (10–20 micrometers) are dispersed/grafted into it to add toughness.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -262,7 +262,7 @@
       "value": null,
       "unit": "MPa",
       "status": "not_applicable",
-      "conditions": "Rigid, brittle copolymer with no distinct yield region reported (low elongation at break, 2.5-4%); see tensile_strength_at_break."
+      "conditions": "Rigid, brittle copolymer with no distinct yield region reported (low elongation at break, 2.5–4%); see tensile_strength_at_break."
     },
     "tensile_strength_at_break": {
       "value": 70,
@@ -382,7 +382,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Injection molding; extrusion runs 220-240 °C."
+      "conditions": "Injection molding; extrusion runs 220–240 °C."
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -467,7 +467,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale."
+      "conditions": "HMIS rating, 0–4 scale."
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -475,7 +475,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale."
+      "conditions": "HMIS rating, 0–4 scale."
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -483,7 +483,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale."
+      "conditions": "HMIS rating, 0–4 scale."
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

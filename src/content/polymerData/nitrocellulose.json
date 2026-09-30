@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/nitrocellulose/mexican-war-volunteers-1846.webp",
       "alt": "A daguerreotype of a company of volunteer soldiers in dark uniforms and tall shakos, muskets shouldered, standing in formation on a street in front of a colonnaded building, with a drummer at the rear of the line.",
-      "caption": "Volunteers mustering for the Mexican-American War, 1846 — an army still fighting with muzzle-loaded muskets and black powder, the technology this chemistry would eventually replace.",
+      "caption": "Volunteers mustering for the Mexican-American War, 1846: an army still fighting with muzzle-loaded muskets and black powder, the technology this chemistry would eventually replace.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Volunteers_leaving_for_the_Mexican_War,_Exeter,_New_Hampshire,_daguerreotype_by_E._Punderson,_ca.1846.jpg",
       "author": "E. Punderson",
       "license": "Public domain"
@@ -88,7 +88,7 @@
     {
       "src": "~/assets/polymers/nitrocellulose/guncotton-press-1909.webp",
       "alt": "A workman leaning over a thick woven rope screen to reach a guncotton press, with the pressing machinery visible through a doorway beyond the screen.",
-      "caption": "A guncotton press shielded by a rope screen — the operator protected in case of accident, decades after Abel's stabilization made the material merely dangerous instead of unpredictable.",
+      "caption": "A guncotton press shielded by a rope screen: the operator protected in case of accident, decades after Abel's stabilization made the material merely dangerous instead of unpredictable.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Workman_operating_a_guncotton_press_behind_protective_rope_screen.tiff",
       "author": "Philip, James Charles, 1873-1941",
       "license": "Public domain"
@@ -100,7 +100,7 @@
       "range_min": 1.35,
       "range_max": 1.40,
       "unit": "g/cm³",
-      "conditions": "20°C; Mark Polymer Data Handbook separately reports specific gravity 1.58-1.65 for DS 2.20-2.32",
+      "conditions": "20°C; Mark Polymer Data Handbook separately reports specific gravity 1.58–1.65 for DS 2.20–2.32",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -125,7 +125,7 @@
       "range_min": 6,
       "range_max": 7,
       "unit": "",
-      "conditions": "100 Hz (7) to 1 MHz (6); Mark Polymer Data Handbook separately reports 7-7.5 (60 Hz), 7 (1000 Hz), 6 (10^6 Hz)",
+      "conditions": "100 Hz (7) to 1 MHz (6); Mark Polymer Data Handbook separately reports 7–7.5 (60 Hz), 7 (1000 Hz), 6 (10^6 Hz)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -196,7 +196,7 @@
         "range_min": 20000,
         "range_max": 312000,
         "unit": "g/mol",
-        "conditions": "non-explosive (lacquer/collodion) grade; higher-nitrogen dynamite/explosive grade reported separately at 750,000-875,000 g/mol; further literature ranges of 125,000-150,000 and 69,000-200,000 g/mol also reported",
+        "conditions": "non-explosive (lacquer/collodion) grade; higher-nitrogen dynamite/explosive grade reported separately at 750,000–875,000 g/mol; further literature ranges of 125,000–150,000 and 69,000–200,000 g/mol also reported",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016"
@@ -211,7 +211,7 @@
       {
         "solvent": "acetone",
         "temperature_k": 298,
-        "k": { "value": 0.011, "unit": "mL/g", "conditions": "Mw ≈ 1,000,000 g/mol; multiple K/a pairs reported across Mw range ~220,000-4,000,000 g/mol depending on method/source", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
+        "k": { "value": 0.011, "unit": "mL/g", "conditions": "Mw ≈ 1,000,000 g/mol; multiple K/a pairs reported across Mw range ~220,000–4,000,000 g/mol depending on method/source", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.91, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
@@ -259,7 +259,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC; the material ignites within this range rather than showing a clean melt endotherm; a narrower literature value of 169-170°C is also reported. Overwrites an earlier not_applicable judgement -- the handbook reports a real measured transition here."
+      "conditions": "DSC; the material ignites within this range rather than showing a clean melt endotherm; a narrower literature value of 169–170°C is also reported. Overwrites an earlier not_applicable judgement; the handbook reports a real measured transition here."
     },
     "tc": {
       "value": null,
@@ -300,7 +300,7 @@
       "range_min": 1310,
       "range_max": 1520,
       "unit": "MPa",
-      "conditions": "Wypych Handbook of Polymers separately reports flexural modulus 1,300-1,500 MPa",
+      "conditions": "Wypych Handbook of Polymers separately reports flexural modulus 1,300–1,500 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -315,7 +315,7 @@
       "range_min": 35,
       "range_max": 70,
       "unit": "MPa",
-      "conditions": "no distinct yield point (brittle failure); Mark Polymer Data Handbook separately reports 48.3-110 MPa at 296 K, 50% RH, depending on source",
+      "conditions": "no distinct yield point (brittle failure); Mark Polymer Data Handbook separately reports 48.3–110 MPa at 296 K, 50% RH, depending on source",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -325,7 +325,7 @@
       "range_min": 10,
       "range_max": 40,
       "unit": "%",
-      "conditions": "Mark Polymer Data Handbook separately reports 13-14% and 40-45% maximum extensibility at 296 K, 50% RH, depending on source",
+      "conditions": "Mark Polymer Data Handbook separately reports 13–14% and 40–45% maximum extensibility at 296 K, 50% RH, depending on source",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -335,7 +335,7 @@
       "range_min": 270,
       "range_max": 370,
       "unit": "J/m",
-      "conditions": "notched, 23°C; matches Mark Polymer Data Handbook value (267-374 J/m, ASTM D256)",
+      "conditions": "notched, 23°C; matches Mark Polymer Data Handbook value (267–374 J/m, ASTM D256)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -350,7 +350,7 @@
       "range_min": 95,
       "range_max": 115,
       "unit": "Rockwell R",
-      "conditions": "matches Mark Polymer Data Handbook (Rockwell R scale, 95-115)",
+      "conditions": "matches Mark Polymer Data Handbook (Rockwell R scale, 95–115)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -457,7 +457,7 @@
       "range_min": 21.4,
       "range_max": 23.5,
       "unit": "MPa^0.5",
-      "conditions": "Mark Polymer Data Handbook separately reports 21.4-23.5 depending on degree of substitution (one outlier value of 30.39 MPa^0.5 also reported for a different substitution level)",
+      "conditions": "Mark Polymer Data Handbook separately reports 21.4–23.5 depending on degree of substitution (one outlier value of 30.39 MPa^0.5 also reported for a different substitution level)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -577,7 +577,7 @@
     "ld50_oral_rat": {
       "value": 5000,
       "unit": "mg/kg",
-      "conditions": "reported as >5,000 mg/kg; a no-observable-adverse-effect range of 8,798-10,373 mg/kg is also reported",
+      "conditions": "reported as >5,000 mg/kg; a no-observable-adverse-effect range of 8,798–10,373 mg/kg is also reported",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

@@ -43,7 +43,7 @@
     {
       "src": "~/assets/polymers/polyphenylene-sulfide/no-gas-oregon-1973.webp",
       "alt": "A hand-lettered orange sign reading Sorry... No Gas Today, propped in the window of a filling station.",
-      "caption": "A gas station sign in Oregon, autumn 1973, during the Arab oil embargo — the same year an Oklahoma oil company was bringing a new plastic to market.",
+      "caption": "A gas station sign in Oregon, autumn 1973, during the Arab oil embargo. This was the same year an Oklahoma oil company was bringing a new plastic to market.",
       "source_url": "https://commons.wikimedia.org/wiki/File:%22NO_GAS%22_SIGNS_WERE_A_COMMON_SIGHT_IN_OREGON_DURING_THE_FALL_OF_1973,_SUCH_AS_AT_THIS_STATION_IN_LINCOLN_CITY_ALONG..._-_NARA_-_555416.jpg",
       "author": "David Falconer",
       "license": "Public domain"
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/polyphenylene-sulfide/frank-phillips-tower-bartlesville.webp",
       "alt": "A tall early-twentieth-century brick and terracotta office tower with arched upper-floor windows, photographed from street level against a clear blue sky.",
-      "caption": "The Frank Phillips Tower in downtown Bartlesville, Oklahoma, once part of Phillips Petroleum's headquarters complex — the same company, in the same small city, where Edmonds and Hill developed Ryton.",
+      "caption": "The Frank Phillips Tower in downtown Bartlesville, Oklahoma, once part of Phillips Petroleum's headquarters complex. This was the same company, in the same small city, where Edmonds and Hill developed Ryton.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Frank_Phillips_Tower,_Keeler_Avenue_and_4th_Street,_Bartlesville,_OK.jpg",
       "author": "Warren LeMay",
       "license": "CC BY-SA 2.0"
@@ -67,7 +67,7 @@
     {
       "src": "~/assets/polymers/polyphenylene-sulfide/coal-power-plant-cooling-tower-1973.webp",
       "alt": "An aerial view of a coal-fired power plant's cooling tower venting a large plume of steam, with coal stockpiles, rail lines and a river visible in the surrounding landscape.",
-      "caption": "A coal-fired power plant photographed in September 1973, the same year Ryton reached the market — the kind of plant whose exhaust, decades later, would be filtered through baghouses lined with woven PPS fabric.",
+      "caption": "A coal-fired power plant photographed in September 1973, the same year Ryton reached the market. It was the kind of plant whose exhaust, decades later, would be filtered through baghouses lined with woven PPS fabric.",
       "source_url": "https://commons.wikimedia.org/wiki/File:CLOUD_OF_STEAM_RISES_FROM_ONE_OF_THE_MASSIVE_COOLING_TOWERS_OF_THE_JOHN_AMOS_POWER_PLANT_NEAR_NITRO_ON_THE_KANAWHA..._-_NARA_-_551184.jpg",
       "author": "Schaefer, Harry, Photographer ( NARA record: 8464469 )",
       "license": "Public domain"
@@ -82,7 +82,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20 °C, unfilled; amorphous 1.32 g/cm³, crystalline 1.425-1.44 g/cm³"
+      "conditions": "20 °C, unfilled; amorphous 1.32 g/cm³, crystalline 1.425–1.44 g/cm³"
     },
     "melt_flow_index": {
       "value": null,
@@ -105,7 +105,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "100 Hz; at 1 MHz, 3.8-4.9"
+      "conditions": "100 Hz; at 1 MHz, 3.8–4.9"
     },
     "electrical_conductivity": {
       "value": 1e-9,
@@ -146,7 +146,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "specimen thickness 0.6-0.8 mm, unfilled; 40% glass fiber grade reaches 28 kV/mm"
+      "conditions": "specimen thickness 0.6–0.8 mm, unfilled; 40% glass fiber grade reaches 28 kV/mm"
     }
   },
   "synthesis": {
@@ -215,7 +215,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "DSC (358 K); Wypych reports a broader range of 74-92 °C across grades (handbook-wypych-2016)"
+      "conditions": "DSC (358 K); Wypych reports a broader range of 74–92 °C across grades (handbook-wypych-2016)"
     },
     "tm": {
       "value": null,
@@ -225,7 +225,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC; equilibrium (extrapolated) melting point is higher, ~303-315 °C depending on molecular weight (handbook-mark-1999)"
+      "conditions": "DSC; equilibrium (extrapolated) melting point is higher, ~303–315 °C depending on molecular weight (handbook-mark-1999)"
     },
     "tc": {
       "value": null,
@@ -267,7 +267,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "unfilled grade; 40% glass fiber grades reach 14,500-19,100 MPa"
+      "conditions": "unfilled grade; 40% glass fiber grades reach 14,500–19,100 MPa"
     },
     "yield_strength": {
       "value": 80,
@@ -293,7 +293,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "unfilled grade; Mark reports 1.6-2% for cured/feedstock grades and up to 21% for some linear-type samples, depending on test method (handbook-mark-1999)"
+      "conditions": "unfilled grade; Mark reports 1.6–2% for cured/feedstock grades and up to 21% for some linear-type samples, depending on test method (handbook-mark-1999)"
     },
     "impact_izod": {
       "value": null,
@@ -328,7 +328,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "unfilled grade; Mark reports 3400-4130 MPa for various unfilled grades (handbook-mark-1999)"
+      "conditions": "unfilled grade; Mark reports 3400–4130 MPa for various unfilled grades (handbook-mark-1999)"
     },
     "poissons_ratio": {
       "value": null,
@@ -463,7 +463,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "injection molding; extrusion 285-310 °C"
+      "conditions": "injection molding; extrusion 285–310 °C"
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -554,7 +554,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 0,
@@ -562,7 +562,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -570,7 +570,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": null,

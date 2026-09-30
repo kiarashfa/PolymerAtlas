@@ -51,7 +51,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-chloride/bonus-army-camp-burning-1932.webp",
       "alt": "Black-and-white photograph of wooden shacks engulfed in flames and thick smoke, with the U.S. Capitol dome visible through the haze in the background.",
-      "caption": "The Bonus Army's camp on the Anacostia Flats burns after federal troops cleared it, July 1932 — the year's clearest snapshot of a country with almost nothing left to spend.",
+      "caption": "The Bonus Army's camp on the Anacostia Flats burns after federal troops cleared it, July 1932. This was the year's clearest snapshot of a country with almost nothing left to spend.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Evictbonusarmy.jpg",
       "author": "U.S. Army Signal Corps",
       "license": "Public domain"
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-chloride/pure-pvc-powder.webp",
       "alt": "A small glass vial, capped with a metal screw lid, half filled with a fine white powder.",
-      "caption": "Raw polyvinyl chloride resin, with no plasticizer added — the rigid, unworkable form both Baumann and Klatte abandoned before Semon found a way in.",
+      "caption": "Raw polyvinyl chloride resin, with no plasticizer added: the rigid, unworkable form both Baumann and Klatte abandoned before Semon found a way in.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pure_Polyvinyl_Chloride_powder.jpg",
       "author": "LHcheM",
       "license": "CC BY-SA 3.0"
@@ -67,7 +67,7 @@
     {
       "src": "~/assets/polymers/polyvinyl-chloride/pvc-sewer-pipe-installation.webp",
       "alt": "A construction worker in a hard hat kneels in a trench, fitting together large orange-brown ribbed plastic pipe sections, with an excavator bucket visible above.",
-      "caption": "PVC sewer pipe being laid — the low-cost, corrosion-proof role that now consumes roughly half of all PVC resin produced.",
+      "caption": "PVC sewer pipe being laid: the low-cost, corrosion-proof role that now consumes roughly half of all PVC resin produced.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Laying_sewer_hi_res_(2).jpg",
       "author": "Steve Tan",
       "license": "Attribution"
@@ -164,11 +164,11 @@
       "vinyl chloride monomer (VCM)"
     ],
     "catalysts": [],
-    "industrial_process_notes": "First synthesized by Eugen Baumann in 1872, but commercially impractical until Waldo Semon (B.F. Goodrich) developed plasticization techniques in 1926, enabling flexible PVC products by 1933 (e.g. with dibutyl phthalate). ~80% of global production uses suspension polymerization (particles ~100-180 micrometers), with emulsion (~12%) and bulk (~8%) polymerization making up the rest.",
+    "industrial_process_notes": "First synthesized by Eugen Baumann in 1872, but commercially impractical until Waldo Semon (B.F. Goodrich) developed plasticization techniques in 1926, enabling flexible PVC products by 1933 (e.g. with dibutyl phthalate). ~80% of global production uses suspension polymerization (particles ~100–180 micrometers), with emulsion (~12%) and bulk (~8%) polymerization making up the rest.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Predominantly atactic with a syndiotactic bias from free-radical polymerization: syndiotactic dyad content ~28-44% (up to 55-68% at low polymerization temperature), isotactic ~5-22%, heterotactic ~31-52%.",
+    "tacticity": "Predominantly atactic with a syndiotactic bias from free-radical polymerization: syndiotactic dyad content ~28–44% (up to 55–68% at low polymerization temperature), isotactic ~5–22%, heterotactic ~31–52%.",
     "crystallinity_typical": {
       "value": 7,
       "range_min": 4,
@@ -179,7 +179,7 @@
       "source": "handbook-wypych-2016",
       "conditions": "commercial PVC"
     },
-    "crystal_structure": "Orthorhombic unit cell (a≈1.01-1.08 nm, b≈0.53-0.54 nm, c≈0.510-0.512 nm, 2 chains/cell); lamellar, fringed-micelle crystalline morphology; planar zigzag chain conformation.",
+    "crystal_structure": "Orthorhombic unit cell (a≈1.01–1.08 nm, b≈0.53–0.54 nm, c≈0.510–0.512 nm, 2 chains/cell); lamellar, fringed-micelle crystalline morphology; planar zigzag chain conformation.",
     "chain_flexibility_notes": "Exists in two families with very different behavior: rigid/unplasticized PVC (uPVC) and flexible PVC (can be >85% plasticizer by mass).",
     "tg_relation_notes": "Rigid PVC's Tg (82°C) is well above room temperature, giving unplasticized PVC its stiffness; plasticizer addition lowers the effective Tg dramatically, producing flexible PVC.",
     "molecular_weight": {
@@ -224,21 +224,21 @@
       {
         "solvent": "chlorobenzene",
         "temperature_k": 303,
-        "mw_range": "30-190 kg/mol (Mn)",
+        "mw_range": "30–190 kg/mol (Mn)",
         "k": { "value": 0.0712, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.59, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "cyclohexane",
         "temperature_k": 298,
-        "mw_range": "30-190 kg/mol (Mn)",
+        "mw_range": "30–190 kg/mol (Mn)",
         "k": { "value": 0.0138, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.78, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       },
       {
         "solvent": "tetrahydrofuran (25 °C)",
         "temperature_k": 298,
-        "mw_range": "30-190 kg/mol (Mn)",
+        "mw_range": "30–190 kg/mol (Mn)",
         "k": { "value": 0.0163, "unit": "mL/g", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" },
         "a": { "value": 0.78, "unit": "", "status": "verified", "evidence_level": "handbook", "source": "handbook-mark-1999" }
       }
@@ -352,7 +352,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "rigid PVC; also reported as Shore A 30-96 / Shore D 22-25 depending on grade"
+      "conditions": "rigid PVC; also reported as Shore A 30–96 / Shore D 22–25 depending on grade"
     },
     "flexural_modulus": {
       "value": 2945,
@@ -380,7 +380,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "static, on steel; dynamic 0.72-0.93"
+      "conditions": "static, on steel; dynamic 0.72–0.93"
     }
   },
   "chemical_resistance": {
@@ -479,7 +479,7 @@
         "range_min": 0.41,
         "range_max": 0.45,
         "unit": "",
-        "conditions": "125-140 °C",
+        "conditions": "125–140 °C",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -490,7 +490,7 @@
         "range_min": 0.97,
         "range_max": 1.1,
         "unit": "",
-        "conditions": "125-140 °C",
+        "conditions": "125–140 °C",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -501,7 +501,7 @@
         "range_min": 1.24,
         "range_max": 1.42,
         "unit": "",
-        "conditions": "125-140 °C",
+        "conditions": "125–140 °C",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -512,7 +512,7 @@
         "range_min": 0.53,
         "range_max": 0.77,
         "unit": "",
-        "conditions": "125-140 °C",
+        "conditions": "125–140 °C",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-mark-1999"
@@ -660,7 +660,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -668,7 +668,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -676,7 +676,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

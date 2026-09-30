@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "A structural/functional class (any polymer engineered to autonomously or triggerably repair damage) rather than one chemistry -- mechanisms include microcapsule-based, vascular, and intrinsic/reversible-bonding systems, each built on a different host polymer.",
+  "notation_note": "A structural/functional class (any polymer engineered to autonomously or triggerably repair damage) rather than one chemistry; mechanisms include microcapsule-based, vascular, and intrinsic/reversible-bonding systems, each built on a different host polymer.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -35,7 +35,7 @@
     {
       "src": "~/assets/polymers/self-healing-polymers/human-genome-project-bookcase.webp",
       "alt": "A tall white bookcase holding more than a hundred identical spine-labelled volumes, each printed with a run of chromosome numbers, standing against a red wall in a museum gallery.",
-      "caption": "The human genome, printed out as a shelf of a hundred-odd books for a London exhibition — three billion letters of code that include the cell's own instructions for repairing itself.",
+      "caption": "The human genome, printed out as a shelf of a hundred-odd books for a London exhibition: three billion letters of code that include the cell's own instructions for repairing itself.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Wellcome_genome_bookcase.png",
       "author": "Russ London",
       "license": "CC BY-SA 3.0"
@@ -43,7 +43,7 @@
     {
       "src": "~/assets/polymers/self-healing-polymers/wikipedia-homepage-2001.webp",
       "alt": "A plain text-heavy webpage titled 'HomePage', listing subject categories separated by double hyphens, with a note that the project started work in January 2001 and had over a thousand pages.",
-      "caption": "Wikipedia's homepage a few weeks after its January 2001 launch — a project with no way to prevent damage, only a fast way to reverse it.",
+      "caption": "Wikipedia's homepage a few weeks after its January 2001 launch: a project with no way to prevent damage, only a fast way to reverse it.",
       "source_url": "https://commons.wikimedia.org/wiki/File:HomePage_of_WikiPedia_on_3_March_2001.png",
       "author": "Wikipedia users; see history of Main Page at Wikipedia:Main Page history",
       "license": "CC BY-SA 3.0"
@@ -59,7 +59,7 @@
     {
       "src": "~/assets/polymers/self-healing-polymers/robert-grubbs-portrait.webp",
       "alt": "A formal portrait of an older man with a grey beard and wire-rimmed glasses, wearing a dark suit and patterned tie, against a plain grey background.",
-      "caption": "Robert Grubbs, whose ruthenium catalysts — developed for a different purpose, and later recognised with a share of the 2005 Nobel Prize in Chemistry — turned out to be exactly what a rupturing microcapsule needed to trigger repair.",
+      "caption": "Robert Grubbs, whose ruthenium catalysts (developed for a different purpose, and later recognised with a share of the 2005 Nobel Prize in Chemistry) turned out to be exactly what a rupturing microcapsule needed to trigger repair.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Robert_Grubbs_Royal_Society.jpg",
       "author": "Duncan.Hull",
       "license": "CC BY-SA 4.0"
@@ -130,7 +130,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Three main mechanism families: (1) microcapsule-based -- microscopic vessels containing a healing agent (e.g. dicyclopentadiene monomer) and a catalyst (e.g. Grubbs' catalyst) embedded in a host resin (e.g. epoxy) rupture when a crack reaches them, releasing monomer that polymerizes in the crack, achieving ~67% strength recovery; (2) vascular -- hollow channels analogous to blood vessels deliver healing agent continuously and can support repeated healing cycles; (3) intrinsic/reversible bonding -- the polymer network itself uses reversible chemistry (commonly Diels-Alder) to break down and reform under an external stimulus (heat, light). Scott White and Nancy Sottos published the foundational microcapsule-based approach in Nature in 2001; the field's first international conference was held in 2007.",
+    "industrial_process_notes": "Three main mechanism families: (1) microcapsule-based, in which microscopic vessels containing a healing agent (e.g. dicyclopentadiene monomer) and a catalyst (e.g. Grubbs' catalyst) embedded in a host resin (e.g. epoxy) rupture when a crack reaches them, releasing monomer that polymerizes in the crack, achieving ~67% strength recovery; (2) vascular, in which hollow channels analogous to blood vessels deliver healing agent continuously and can support repeated healing cycles; (3) intrinsic/reversible bonding, in which the polymer network itself uses reversible chemistry (commonly Diels-Alder) to break down and reform under an external stimulus (heat, light). Scott White and Nancy Sottos published the foundational microcapsule-based approach in Nature in 2001; the field's first international conference was held in 2007.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -141,7 +141,7 @@
       "status": "not_applicable"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Structural principle varies entirely by mechanism family (embedded microcapsules vs. vascular channels vs. reversible covalent chemistry throughout the network) -- see industrial_process_notes.",
+    "chain_flexibility_notes": "Structural principle varies entirely by mechanism family (embedded microcapsules vs. vascular channels vs. reversible covalent chemistry throughout the network). See industrial_process_notes.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {

@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "Lignin is an irregular, highly cross-linked aromatic network built from three phenylpropanoid monomers (coniferyl, sinapyl, and p-coumaryl alcohol) in ratios that vary by plant species and tissue -- there is no single repeat unit, only a family of monomers and an irregular crosslinking pattern.",
+  "notation_note": "Lignin is an irregular, highly cross-linked aromatic network built from three phenylpropanoid monomers (coniferyl, sinapyl, and p-coumaryl alcohol) in ratios that vary by plant species and tissue; there is no single repeat unit, only a family of monomers and an irregular crosslinking pattern.",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -46,7 +46,7 @@
     {
       "src": "~/assets/polymers/lignin/vanilla-beans.webp",
       "alt": "Several long, dark brown, cured vanilla bean pods, twisted and curling, laid out against a plain white background.",
-      "caption": "Cured vanilla pods. The search for a cheaper substitute for their flavor led Ferdinand Tiemann, in 1874 and 1875, straight to coniferyl alcohol — one of lignin's own building blocks.",
+      "caption": "Cured vanilla pods. The search for a cheaper substitute for their flavor led Ferdinand Tiemann, in 1874 and 1875, straight to coniferyl alcohol, one of lignin's own building blocks.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Vanilla_6beans.JPG",
       "author": "B.navez",
       "license": "CC BY-SA 3.0"
@@ -54,7 +54,7 @@
     {
       "src": "~/assets/polymers/lignin/pine-trunk-cross-section.webp",
       "alt": "A storm-toppled pine tree lying on a forest floor, its rootball and soil-covered roots exposed, with a freshly sawn cross-section of the trunk visible in the foreground.",
-      "caption": "A storm-felled pine. The tree came down when its roots gave way — the wood itself, bound by lignin, held its shape through the fall.",
+      "caption": "A storm-felled pine. The tree came down when its roots gave way; the wood itself, bound by lignin, held its shape through the fall.",
       "source_url": "https://commons.wikimedia.org/wiki/File:2022-03-26_pine_tree_trunk_02.JPG",
       "author": "Bärbel Miemietz",
       "license": "CC BY-SA 4.0"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/lignin/woven-carbon-fiber.webp",
       "alt": "A close-up of tightly woven black carbon fiber fabric, its diagonal twill pattern catching the light, with loose frayed strands along one cut edge.",
-      "caption": "Woven carbon fiber. Most carbon fiber today is spun from petroleum-derived precursors, but lignin — already rich in the aromatic carbon rings carbon fiber is made of — is a leading renewable candidate to replace them.",
+      "caption": "Woven carbon fiber. Most carbon fiber today is spun from petroleum-derived precursors, but lignin (already rich in the aromatic carbon rings carbon fiber is made of) is a leading renewable candidate to replace them.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Woven_carbon_fiber_fabric.jpg",
       "author": "Acheolg",
       "license": "CC BY-SA 4.0"
@@ -132,7 +132,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Not industrially polymerized -- biosynthesized in plant cell walls and obtained as a byproduct of kraft and sulfite chemical pulping (delignification) in the paper industry. The Swiss botanist A. P. de Candolle first described lignin in 1813, naming it from the Latin 'lignum' (wood); it is the third most abundant natural polymer after cellulose and chitin.",
+    "industrial_process_notes": "Not industrially polymerized: biosynthesized in plant cell walls and obtained as a byproduct of kraft and sulfite chemical pulping (delignification) in the paper industry. The Swiss botanist A. P. de Candolle first described lignin in 1813, naming it from the Latin 'lignum' (wood); it is the third most abundant natural polymer after cellulose and chitin.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -143,7 +143,7 @@
       "status": "estimated",
       "evidence_level": "tertiary",
       "source": "wiki-lignin",
-      "conditions": "Irregular, cross-linked, amorphous network -- essentially non-crystalline."
+      "conditions": "Irregular, cross-linked, amorphous network, essentially non-crystalline."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Hydrophobic, rigid aromatic network resistant to both acid- and base-catalyzed hydrolysis.",
@@ -258,7 +258,7 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": "Highly resistant -- immune to both acid- and base-catalyzed hydrolysis",
+      "value": "Highly resistant: immune to both acid- and base-catalyzed hydrolysis",
       "status": "verified",
       "evidence_level": "tertiary",
       "source": "wiki-lignin"

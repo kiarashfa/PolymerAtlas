@@ -153,7 +153,7 @@
       "terephthalic acid"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Developed to address environmental concerns about PET plastic persistence -- roughly 30% of global PET production becomes bottles, of which only 15-35% is recycled. Major manufacturers: BASF (ecoflex), Novamont (Origo-Bi), Eastman Chemical (Eastar Bio), and numerous Chinese suppliers.",
+    "industrial_process_notes": "Developed to address environmental concerns about PET plastic persistence: roughly 30% of global PET production becomes bottles, of which only 15–35% is recycled. Major manufacturers: BASF (ecoflex), Novamont (Origo-Bi), Eastman Chemical (Eastar Bio), and numerous Chinese suppliers.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -165,7 +165,7 @@
       "conditions": "Random copolymer structure prevents significant crystallization, giving a wide melting range rather than a sharp Tm."
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Low elastic modulus and stiffness, but high flexibility and toughness -- properties comparable to LDPE, which is what makes it a practical drop-in replacement for LDPE film in compostable applications.",
+    "chain_flexibility_notes": "Low elastic modulus and stiffness, but high flexibility and toughness, properties comparable to LDPE, which is what makes it a practical drop-in replacement for LDPE film in compostable applications.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -347,7 +347,7 @@
     "recyclable": false,
     "biodegradable": true,
     "degradation_pathway": "Butylene adipate groups enable biodegradation under composting conditions (~90% degradation after 80 days per BASF ecoflex testing).",
-    "environmental_notes": "Does not degrade in marine and fresh water -- an important caveat similar to PLA's marine-litter limitation."
+    "environmental_notes": "Does not degrade in marine and fresh water. This is an important caveat similar to PLA's marine-litter limitation."
   },
   "references": [
     "wiki-pbat"

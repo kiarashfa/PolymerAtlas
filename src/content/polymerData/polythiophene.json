@@ -52,7 +52,7 @@
     {
       "src": "~/assets/polymers/polythiophene/human-genome-draft-announcement-2000.webp",
       "alt": "Bill Clinton speaking at a lectern bearing the Presidential seal, flanked by two other men, with screens behind them reading a headline about decoding the book of life.",
-      "caption": "President Clinton announces the completed working draft of the human genome, 26 June 2000 — one kind of polymer making headlines the same year a very different one made the Nobel Prize.",
+      "caption": "President Clinton announces the completed working draft of the human genome, 26 June 2000: one kind of polymer making headlines the same year a very different one made the Nobel Prize.",
       "source_url": "https://commons.wikimedia.org/wiki/File:IHGSC_Human_Genome_Project_Draft_Completion_Announcement_-_June_2000.jpg",
       "author": "National Human Genome Research Institute (NHGRI)",
       "license": "Public domain"
@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polythiophene/polymer-organic-solar-cell.webp",
       "alt": "A man in a suit holds up and flexes a large, flexible reddish-brown striped solar panel sheet at a press event.",
-      "caption": "A commercially made polymer solar cell, flexible enough to bend by hand — the kind of application that turned thiophene chemistry from a specialist's material into an industrial one.",
+      "caption": "A commercially made polymer solar cell, flexible enough to bend by hand. This is the kind of application that turned thiophene chemistry from a specialist's material into an industrial one.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Polymer_organische_Solarzelle_01.jpg",
       "author": "Kuebi = Armin Kübelbeck",
       "license": "CC BY-SA 3.0"
@@ -121,7 +121,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Strongly dopant-dependent: iodine-doped 6-8 S/cm, FeCl3-doped 0.5 S/cm, NOSbF6-doped 9×10⁻⁵ S/cm, NOPF6-doped 2×10⁻⁵ S/cm, triflate (SO3CF3⁻)-doped 50-100 S/cm."
+      "conditions": "Strongly dopant-dependent: iodine-doped 6–8 S/cm, FeCl3-doped 0.5 S/cm, NOSbF6-doped 9×10⁻⁵ S/cm, NOPF6-doped 2×10⁻⁵ S/cm, triflate (SO3CF3⁻)-doped 50–100 S/cm."
     },
     "transmittance": {
       "value": null,
@@ -174,7 +174,7 @@
       "source": "handbook-mark-1999"
     },
     "crystal_structure": "Predominantly amorphous; ordered/doped domains reported as hexagonal (a ≈ 0.95 nm, c ≈ 1.22 nm). Thin films show a fibrillar (\"noodle-like\") TEM morphology, with fibril diameter increasing with doping level.",
-    "chain_flexibility_notes": "Conjugated backbone (alternating single/double bonds along the thiophene rings) is what enables electrical conductivity upon doping -- unlike a conventional saturated-backbone polymer.",
+    "chain_flexibility_notes": "Conjugated backbone (alternating single/double bonds along the thiophene rings) is what enables electrical conductivity upon doping, unlike a conventional saturated-backbone polymer.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -251,7 +251,7 @@
       "range_min": 3200,
       "range_max": 6800,
       "unit": "MPa",
-      "conditions": "PEDOT (a substituted polythiophene), unblended; PEDOT/PSS blend 1100-2800 MPa, PEDOT/PSS microfiber 2500-4000 MPa",
+      "conditions": "PEDOT (a substituted polythiophene), unblended; PEDOT/PSS blend 1100–2800 MPa, PEDOT/PSS microfiber 2500–4000 MPa",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -266,7 +266,7 @@
       "range_min": 84,
       "range_max": 178,
       "unit": "MPa",
-      "conditions": "PEDOT (a substituted polythiophene), unblended; no distinct yield point reported. PEDOT/PSS blend 17.2-53.2 MPa, PEDOT/PSS microfiber 94-130 MPa.",
+      "conditions": "PEDOT (a substituted polythiophene), unblended; no distinct yield point reported. PEDOT/PSS blend 17.2–53.2 MPa, PEDOT/PSS microfiber 94–130 MPa.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -476,7 +476,7 @@
     "nfpa_health_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -484,7 +484,7 @@
     "nfpa_flammability_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -492,7 +492,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0-4 scale",
+      "conditions": "PEDOT (substituted polythiophene); HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

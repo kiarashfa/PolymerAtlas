@@ -30,7 +30,7 @@
     {
       "src": "~/assets/concepts/the-carothers-equation/carothers-in-the-lab.webp",
       "alt": "Wallace Carothers in a suit and round spectacles, in a laboratory, holding up a strand of material stretched between his hands, with glass apparatus and a Bunsen burner beside him.",
-      "caption": "Carothers demonstrating a synthetic fibre's cold-drawing — the practical payoff of knowing in advance exactly how far a reaction needed to run.",
+      "caption": "Carothers demonstrating a synthetic fibre's cold-drawing (the practical payoff of knowing in advance exactly how far a reaction needed to run).",
       "source_url": "https://commons.wikimedia.org/wiki/File:Wallace_Carothers,_in_the_lab.jpg",
       "author": "Unknown photographer",
       "license": "Public domain"
@@ -38,14 +38,14 @@
     {
       "src": "~/assets/concepts/the-carothers-equation/paul-flory-1973.webp",
       "alt": "An elderly Paul Flory, in a tweed jacket and dark-framed glasses with a patterned tie, photographed outdoors.",
-      "caption": "Paul Flory, photographed in 1973, the year before his own Nobel Prize — the twenty-six-year-old kinetics specialist Carothers had hired in 1934 to work out the mathematics no one else in the lab could do.",
+      "caption": "Paul Flory, photographed in 1973, the year before his own Nobel Prize. He was the twenty-six-year-old kinetics specialist Carothers had hired in 1934 to work out the mathematics no one else in the lab could do.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Paul_Flory_1973.jpg",
       "author": "Unknown (Associated Press)",
       "license": "Public domain"
     }
   ],
 
-  "summary": "Working at DuPont's Experimental Station from 1928, Wallace Carothers worked out the mathematical theory of step-growth polymerization. The Carothers equation relates the average degree of polymerization (Xn) to the fractional monomer conversion (p): Xn = 1/(1-p). Its central, non-obvious insight is that step-growth polymerization requires extremely high conversion to reach useful molecular weights -- at 95% conversion Xn is only 20, and it takes 99%+ conversion to reach chain lengths of 100 or more. This theoretical framework guided Carothers' own team to two landmark materials: neoprene (the first synthetic rubber, synthesized April 1930) and, after Carothers shifted to polyamide research in 1934, nylon 6,6 (first made February 28, 1935; publicly announced October 27, 1938, after Carothers' death).",
+  "summary": "Working at DuPont's Experimental Station from 1928, Wallace Carothers worked out the mathematical theory of step-growth polymerization. The Carothers equation relates the average degree of polymerization (Xn) to the fractional monomer conversion (p): Xn = 1/(1-p). Its central, non-obvious insight is that step-growth polymerization requires extremely high conversion to reach useful molecular weights: at 95% conversion Xn is only 20, and it takes 99%+ conversion to reach chain lengths of 100 or more. This theoretical framework guided Carothers' own team to two landmark materials: neoprene (the first synthetic rubber, synthesized April 1930) and, after Carothers shifted to polyamide research in 1934, nylon 6,6 (first made February 28, 1935; publicly announced October 27, 1938, after Carothers' death).",
   "key_equations": [
     {
       "name": "Carothers equation",

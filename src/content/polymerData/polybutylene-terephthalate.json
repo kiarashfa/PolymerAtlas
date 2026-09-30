@@ -86,7 +86,7 @@
     {
       "src": "~/assets/polymers/polybutylene-terephthalate/heavy-duty-vehicle-connector.webp",
       "alt": "A close-up of a black, threaded, cylindrical electrical connector plug with nine gold pins set into a red insert, attached to a thick coiled cable.",
-      "caption": "A heavy-duty vehicle wiring connector — the class of rigid, weatherproof, precisely molded part that engineering polyesters like PBT were built to fill.",
+      "caption": "A heavy-duty vehicle wiring connector, the class of rigid, weatherproof, precisely molded part that engineering polyesters like PBT were built to fill.",
       "source_url": "https://commons.wikimedia.org/wiki/File:J1939-Stecker.jpg",
       "author": "Florian-schäffer",
       "license": "CC BY-SA 3.0"
@@ -101,7 +101,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "At 20°C, unfilled resin. Mark's Polymer Data Handbook reports measured densities of 1.33-1.34 g/cm³."
+      "conditions": "At 20°C, unfilled resin. Mark's Polymer Data Handbook reports measured densities of 1.33–1.34 g/cm³."
     },
     "melt_flow_index": {
       "value": 34,
@@ -161,7 +161,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.2-0.25%."
+      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.2–0.25%."
     },
     "dielectric_strength": {
       "value": 77.5,
@@ -171,7 +171,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Film, d = 0.6-0.8 mm. Mark's Polymer Data Handbook reports 15.8 kV/mm (ASTM D149)."
+      "conditions": "Film, d = 0.6–0.8 mm. Mark's Polymer Data Handbook reports 15.8 kV/mm (ASTM D149)."
     }
   },
   "synthesis": {
@@ -216,7 +216,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Mark's Polymer Data Handbook reports a narrower 30,000-80,000 g/mol range by light scattering."
+        "conditions": "Mark's Polymer Data Handbook reports a narrower 30,000–80,000 g/mol range by light scattering."
       },
       "pdi": {
         "value": 2.59,
@@ -258,7 +258,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC value 46°C; wider reported range 31-60°C. Mark's Polymer Data Handbook reports 30-60°C (ASTM D3418)."
+      "conditions": "DSC value 46°C; wider reported range 31–60°C. Mark's Polymer Data Handbook reports 30–60°C (ASTM D3418)."
     },
     "tm": {
       "value": 215.15,
@@ -268,7 +268,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Mark's Polymer Data Handbook reports 222-232°C (ASTM D3418)."
+      "conditions": "Mark's Polymer Data Handbook reports 222–232°C (ASTM D3418)."
     },
     "tc": {
       "value": null,
@@ -283,7 +283,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "1.8 MPa, unfilled resin; at 0.45 MPa: 130-165°C. Replaces an earlier unsourced figure that conflated the two test loads."
+      "conditions": "1.8 MPa, unfilled resin; at 0.45 MPa: 130–165°C. Replaces an earlier unsourced figure that conflated the two test loads."
     },
     "decomposition_onset": {
       "value": 288,
@@ -327,7 +327,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (47-59 MPa). Mark reports 55 MPa breaking strength."
+      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (47–59 MPa). Mark reports 55 MPa breaking strength."
     },
     "elongation_at_break": {
       "value": 167.5,
@@ -498,7 +498,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Injection molding; other methods (coating, pipe extrusion) 230-290°C."
+      "conditions": "Injection molding; other methods (coating, pipe extrusion) 230–290°C."
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -581,7 +581,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -589,7 +589,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -597,7 +597,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

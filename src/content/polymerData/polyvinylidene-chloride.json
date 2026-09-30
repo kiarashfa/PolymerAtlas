@@ -52,7 +52,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-chloride/king-kong-1933-poster.webp",
       "alt": "Illustrated 1933 movie poster showing a giant ape clutching a woman atop a building, swatting at biplanes, with the New York skyline below.",
-      "caption": "The King Kong poster, March 1933 — a fantasy of an oversized creature nobody could contain, the same season a much smaller, equally unshakeable substance turned up in a Dow beaker.",
+      "caption": "The King Kong poster, March 1933: a fantasy of an oversized creature nobody could contain, the same season a much smaller, equally unshakeable substance turned up in a Dow beaker.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Kingkongposter.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -60,7 +60,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-chloride/prohibition-repeal-celebration-1933.webp",
       "alt": "Black-and-white photograph of men in formal evening dress crowded around a piano, drinking beer straight from a keg and from large glasses and mugs.",
-      "caption": "Celebrating the end of Prohibition, December 1933 — the same year a Dow lab worker discovered a film so impervious that nothing, including a dishwashing brush, could get through it either.",
+      "caption": "Celebrating the end of Prohibition, December 1933, the same year a Dow lab worker discovered a film so impervious that nothing, including a dishwashing brush, could get through it either.",
       "source_url": "https://commons.wikimedia.org/wiki/File:After_End_of_Prohibition_New_York_Times_1933_3.jpg",
       "author": "Unknown, via New York Times",
       "license": "Public domain"
@@ -68,7 +68,7 @@
     {
       "src": "~/assets/polymers/polyvinylidene-chloride/pharmaceutical-blister-pack.webp",
       "alt": "Several sheets of pharmaceutical blister packaging, holding rows of round tablets and dark capsules, stacked and overlapping on a table.",
-      "caption": "Pharmaceutical blister packaging — a use for the same barrier property that keeps oxygen and moisture-sensitive tablets stable until the foil is peeled back.",
+      "caption": "Pharmaceutical blister packaging: a use for the same barrier property that keeps oxygen and moisture-sensitive tablets stable until the foil is peeled back.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Pills_in_blister_pack.jpg",
       "author": "Unknown author",
       "license": "CC0"
@@ -162,8 +162,8 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
     },
-    "crystal_structure": "Monoclinic unit cell (a≈0.672 nm, b≈1.252 nm, c≈0.468 nm, β≈123°); rapid crystallization around 140-150°C.",
-    "chain_flexibility_notes": "Densely packed chlorine substituents give PVDC exceptionally low permeability to water, oxygen, and aroma compounds -- its defining property.",
+    "crystal_structure": "Monoclinic unit cell (a≈0.672 nm, b≈1.252 nm, c≈0.468 nm, β≈123°); rapid crystallization around 140–150°C.",
+    "chain_flexibility_notes": "Densely packed chlorine substituents give PVDC exceptionally low permeability to water, oxygen, and aroma compounds, which is its defining property.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -271,7 +271,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "tensile stress at yield; Mark also reports 69 MPa (machine direction, oriented film) and 19.3-36.2 MPa (molding resin grade)"
+      "conditions": "tensile stress at yield; Mark also reports 69 MPa (machine direction, oriented film) and 19.3–36.2 MPa (molding resin grade)"
     },
     "tensile_strength_at_break": {
       "value": 46.5,
@@ -281,7 +281,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "unoriented; oriented (drawn) film/fiber reaches 207-414 MPa"
+      "conditions": "unoriented; oriented (drawn) film/fiber reaches 207–414 MPa"
     },
     "elongation_at_break": {
       "value": 15,
@@ -291,7 +291,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "unoriented; oriented film/fiber 15-40%"
+      "conditions": "unoriented; oriented film/fiber 15–40%"
     },
     "impact_izod": {
       "value": 37.4,
@@ -314,7 +314,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "also reported as Rockwell M 50-65 for molding resin grade"
+      "conditions": "also reported as Rockwell M 50–65 for molding resin grade"
     },
     "flexural_modulus": {
       "value": 500,

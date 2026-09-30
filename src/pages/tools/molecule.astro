@@ -52,7 +52,7 @@ const examples = [
 
 <ToolPage
   title="Molecule Lookup"
-  description="Draw any small molecule and read its descriptors — by name, CAS number, InChIKey, or a pasted SMILES string."
+  description="Draw any small molecule from its name, CAS number, InChIKey, or a pasted SMILES string, and read its descriptors."
   eyebrow="Tools"
   lede="Give it a name, a CAS number, an InChIKey or a SMILES string, and it returns the structure drawn, along with what RDKit can measure about it."
 >
@@ -112,7 +112,7 @@ const examples = [
         <dl class="fact-table" data-descriptors></dl>
         <p class="tool-note">
           Calculated from the structure by RDKit, not measured. They describe the small molecule
-          shown, never a polymer made from it — chain length, tacticity and morphology decide bulk
+          shown, never a polymer made from it: chain length, tacticity and morphology decide bulk
           behaviour, and none of them is visible here.
         </p>
       </section>
@@ -197,7 +197,7 @@ const examples = [
       engineNote.textContent =
         engine === 'local'
           ? isLocalEngineLoaded()
-            ? 'RDKit is running in this browser — structures are drawn with no network at all. Looking a NAME up still needs the service, because the name has to be resolved somewhere.'
+            ? 'RDKit is running in this browser, so structures are drawn with no network at all. Looking a NAME up still needs the service, because the name has to be resolved somewhere.'
             : 'RDKit will run in this browser. About 6.6 MB downloads once and is then cached, after which pasted structures work offline. Looking a NAME up still needs the service.'
           : 'Structures are drawn by the service, so nothing is downloaded here.';
     }
@@ -238,7 +238,7 @@ const examples = [
       const polymer = polymerIndex[key];
       if (polymer) {
         return (
-          `“${query}” is a polymer in this Atlas, and what you are looking at is its monomer — ` +
+          `“${query}” is a polymer in this Atlas, and what you are looking at is its monomer: ` +
           `the small molecule chemical databases answer that name with. ` +
           `<a href="${polymer.path}">Read the ${polymer.title} entry</a> for the polymer itself.`
         );
@@ -278,7 +278,7 @@ const examples = [
           code === 'not_found'
             ? `Nothing found for “${trimmed}”. Try another spelling, a CAS number, or paste a SMILES string.`
             : code === 'upstream_unavailable' || code === 'network' || code === 'timeout'
-              ? `${message} The encyclopedia itself is unaffected — only this tool needs that service.`
+              ? `${message} The encyclopedia itself is unaffected; only this tool needs that service.`
               : message,
           'error'
         );
@@ -314,7 +314,7 @@ const examples = [
         identity.append(
           row(
             'Note',
-            'Several disconnected fragments — the values below describe all of them together.'
+            'Several disconnected fragments. The values below describe all of them together.'
           )
         );
       }

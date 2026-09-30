@@ -60,7 +60,7 @@
     {
       "src": "~/assets/polymers/polyether-block-amide/steve-jobs-macintosh-january-1984.webp",
       "alt": "Steve Jobs, in a dark suit, leans over an original beige Macintosh computer with hands clasped, its screen displaying a line drawing of a woman combing her hair, against a plain red background.",
-      "caption": "Steve Jobs with the newly launched Macintosh, January 1984 — one of a wave of compact electronic products whose cables, connectors and housings needed a plastic that could flex without cracking.",
+      "caption": "Steve Jobs with the newly launched Macintosh, January 1984, one of a wave of compact electronic products whose cables, connectors and housings needed a plastic that could flex without cracking.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_and_Macintosh_computer,_January_1984,_by_Bernard_Gotfryd_-_edited.jpg",
       "author": "Photo: Bernard Gotfryd - Edited from tif by Cart",
       "license": "Public domain"
@@ -164,7 +164,7 @@
       "status": "placeholder"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Hard polyamide blocks provide strength and chemical resistance; soft polyether blocks give flexibility and low-temperature performance (functional below -40°C) -- ratio between the two is tuned across a wide hardness range (25-72 Shore D).",
+    "chain_flexibility_notes": "Hard polyamide blocks provide strength and chemical resistance; soft polyether blocks give flexibility and low-temperature performance (functional below -40°C); ratio between the two is tuned across a wide hardness range (25–72 Shore D).",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -292,7 +292,7 @@
   "chemical_resistance": {
     "solvent_resistance": {
       "water": {
-        "value": "Low absorption, 0.4-0.7% under standard conditions",
+        "value": "Low absorption, 0.4–0.7% under standard conditions",
         "status": "verified",
         "evidence_level": "tertiary",
         "source": "wiki-peba"

@@ -62,7 +62,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-polyurethane/gogo-boots-fashion-1968.webp",
       "alt": "A black-and-white snapshot of a girl in a short shift dress and a shoulder bag, standing indoors and wearing pale knee-high go-go boots.",
-      "caption": "A girl photographed in 1968 wearing go-go boots, the kind of glossy, synthetic-coated footwear that rode the 'wet look' fashion craze — and with it, sales of polyurethane coating resins like Estane.",
+      "caption": "A girl photographed in 1968 wearing go-go boots, the kind of glossy, synthetic-coated footwear that rode the 'wet look' fashion craze, and with it, sales of polyurethane coating resins like Estane.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Girl_in_1968.jpg",
       "author": "jeanne (Wikimedia Commons user)",
       "license": "Public domain"
@@ -70,7 +70,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-polyurethane/cordless-drill-tpu-overmold-grip.webp",
       "alt": "An orange and black cordless power drill standing upright on its battery pack, showing a textured black rubberized grip panel set into the orange handle.",
-      "caption": "A cordless drill with a soft-touch overmolded grip — the kind of comfort-and-durability detail that TPU's combination of flexibility and abrasion resistance was built for.",
+      "caption": "A cordless drill with a soft-touch overmolded grip, the kind of comfort-and-durability detail that TPU's combination of flexibility and abrasion resistance was built for.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Black_%26_Decker_Cordless_20V_Drill.jpg",
       "author": "TaurusEmerald",
       "license": "CC BY-SA 4.0"
@@ -78,7 +78,7 @@
     {
       "src": "~/assets/polymers/thermoplastic-polyurethane/adidas-boost-etpu-midsole.webp",
       "alt": "Close-up of a white, textured foam midsole strip made of small fused granules, set into the side of a grey and white knit running shoe.",
-      "caption": "Adidas's Boost midsole, made from expanded thermoplastic polyurethane beads fused together — a foam form of the same hard-segment/soft-segment chemistry Schollenberger patented, developed with BASF and brought to market in 2013.",
+      "caption": "Adidas's Boost midsole, made from expanded thermoplastic polyurethane beads fused together: a foam form of the same hard-segment/soft-segment chemistry Schollenberger patented, developed with BASF and brought to market in 2013.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Adidas_Boost_Material_in_focus_on_Adidas_Sesame-Trace_Green_NMD_R1s.jpg",
       "author": "Bn.andrsn",
       "license": "CC BY-SA 4.0"
@@ -144,7 +144,7 @@
     "dielectric_strength": {
       "value": 15,
       "unit": "kV/mm",
-      "conditions": "d = 0.6-0.8 mm, K20/P50 test",
+      "conditions": "d = 0.6–0.8 mm, K20/P50 test",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -158,7 +158,7 @@
       "polyether polyols (tetrahydrofuran-based soft segments)"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Formed from two reaction types combined in one system: diisocyanate + short-chain diol (forming rigid 'hard segments') and diisocyanate + long-chain diol (forming flexible 'soft segments'), which microphase-separate to give TPU its combination of elastomeric behavior and thermoplastic (melt-)processability -- unlike the thermoset polyurethane it succeeds.",
+    "industrial_process_notes": "Formed from two reaction types combined in one system: diisocyanate + short-chain diol (forming rigid 'hard segments') and diisocyanate + long-chain diol (forming flexible 'soft segments'), which microphase-separate to give TPU its combination of elastomeric behavior and thermoplastic (melt-)processability, unlike the thermoset polyurethane it succeeds.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -168,7 +168,7 @@
       "range_min": 2.7,
       "range_max": 18.3,
       "unit": "%",
-      "conditions": "Hard segments can crystallize/order while soft segments remain amorphous -- a microphase-separated morphology; source labels this range specifically \"(TPU)\", and reports a more crystalline \"(TSPU)\" variant separately at 45.7-47.8%",
+      "conditions": "Hard segments can crystallize/order while soft segments remain amorphous (a microphase-separated morphology); source labels this range specifically \"(TPU)\", and reports a more crystalline \"(TSPU)\" variant separately at 45.7–47.8%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -299,7 +299,7 @@
       "range_min": 62,
       "range_max": 98,
       "unit": "Shore A",
-      "conditions": "harder grades reported separately as Shore D 28-73",
+      "conditions": "harder grades reported separately as Shore D 28–73",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -370,7 +370,7 @@
     "hydrolysis_resistance": {
       "value": null,
       "status": "placeholder",
-      "conditions": "Polyester-soft-segment TPU is known to be more hydrolysis-prone than polyether-soft-segment TPU -- a real, widely-cited distinction, but not independently confirmed with a source."
+      "conditions": "Polyester-soft-segment TPU is known to be more hydrolysis-prone than polyether-soft-segment TPU; this is a real, widely-cited distinction, but not independently confirmed with a source."
     },
     "flammability_ul94": {
       "value": null,
@@ -384,7 +384,7 @@
     "solubility_parameter": {
       "value": 23,
       "unit": "MPa^0.5",
-      "conditions": "polyether (PPG) soft-segment/MDI/1,4-butanediol systems, consistent across polyol Mw 1,000-3,000",
+      "conditions": "polyether (PPG) soft-segment/MDI/1,4-butanediol systems, consistent across polyol Mw 1,000–3,000",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -478,7 +478,7 @@
       "range_min": 170,
       "range_max": 240,
       "unit": "°C",
-      "conditions": "injection molding 185-240 °C, extrusion 170-235 °C",
+      "conditions": "injection molding 185–240 °C, extrusion 170–235 °C",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

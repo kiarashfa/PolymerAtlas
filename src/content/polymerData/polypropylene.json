@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][$]CC(C)[$][]}",
   "smiles_depiction": "*CC(C)*",
-  "notation_note": "Tacticity (isotactic/syndiotactic/atactic) is a configurational property that drastically changes behavior despite an identical repeat unit -- see the configuration-vs-conformation concept entry. The 3D model shows an isotactic triad.",
+  "notation_note": "Tacticity (isotactic/syndiotactic/atactic) is a configurational property that drastically changes behavior despite an identical repeat unit. See the configuration-vs-conformation concept entry. The 3D model shows an isotactic triad.",
   "iupac_name": "Poly(propylene)",
   "synonyms": [
     "polypropene"
@@ -56,7 +56,7 @@
     {
       "src": "~/assets/polymers/polypropylene/uss-nautilus-launch-1954.webp",
       "alt": "A submarine, decorated with bunting, sliding stern-first down a shipyard slipway into a river as a large crowd watches from the dock.",
-      "caption": "USS Nautilus launched at Groton, Connecticut, 21 January 1954 — the same year, on a molecular scale, chemists learned to arrange a polymer chain just as deliberately.",
+      "caption": "USS Nautilus launched at Groton, Connecticut, 21 January 1954. That same year, on a molecular scale, chemists learned to arrange a polymer chain just as deliberately.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Nautiluscore.jpg",
       "author": "U.S. Navy photo/Released",
       "license": "Public domain"
@@ -72,7 +72,7 @@
     {
       "src": "~/assets/polymers/polypropylene/montecatini-ferrara-petrochemical-1962.webp",
       "alt": "A colour photograph of an industrial petrochemical plant with tall distillation columns, storage tanks and pipework, photographed from ground level.",
-      "caption": "Montecatini's Ferrara petrochemical works, photographed in 1962 — part of the industrial buildout that carried isotactic polypropylene from Natta's laboratory to the world market after 1957.",
+      "caption": "Montecatini's Ferrara petrochemical works, photographed in 1962. It was part of the industrial buildout that carried isotactic polypropylene from Natta's laboratory to the world market after 1957.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Il_petrolchimico_di_Ferrara_nel_1962_(particolare).jpg",
       "author": "Claudio Doliana",
       "license": "CC0"
@@ -80,7 +80,7 @@
     {
       "src": "~/assets/polymers/polypropylene/tic-tac-living-hinge.webp",
       "alt": "An open white plastic mint box, photographed against a black background, showing its thin moulded lid folded back on a single integral hinge.",
-      "caption": "A living hinge, moulded as a single thinned strip of isotactic polypropylene — the trick that makes this the least noticed remarkable plastic in most kitchens.",
+      "caption": "A living hinge, moulded as a single thinned strip of isotactic polypropylene. This is the trick that makes this the least noticed remarkable plastic in most kitchens.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mint_box_polypropylene_lid.JPG",
       "author": "en:User:Polyparadig",
       "license": "Public domain"
@@ -95,7 +95,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "20°C, isotactic (commercial form); generic Wypych PP entry gives 0.84-0.91"
+      "conditions": "20°C, isotactic (commercial form); generic Wypych PP entry gives 0.84–0.91"
     },
     "melt_flow_index": {
       "value": null,
@@ -135,7 +135,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "reciprocal of reported volume resistivity, 1x10^14-1x10^15 ohm-m, isotactic (Mark chapter corroborates with 10^16-10^17 ohm-cm = 10^14-10^15 ohm-m)"
+      "conditions": "reciprocal of reported volume resistivity, 1x10^14-1x10^15 ohm-m, isotactic (Mark chapter corroborates with 10^16–10^17 ohm-cm = 10^14–10^15 ohm-m)"
     },
     "transmittance": {
       "value": null,
@@ -145,7 +145,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic film; quenched 60-90%, slowly cooled 50-65%"
+      "conditions": "isotactic film; quenched 60–90%, slowly cooled 50–65%"
     },
     "haze": {
       "value": 0.3,
@@ -155,7 +155,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic; biaxially oriented metallocene grade 0.2-0.9%"
+      "conditions": "isotactic; biaxially oriented metallocene grade 0.2–0.9%"
     },
     "gloss": {
       "value": 99,
@@ -165,7 +165,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "60°, Gardner (ASTM D523), isotactic; biaxially oriented metallocene grade 94-98%"
+      "conditions": "60°, Gardner (ASTM D523), isotactic; biaxially oriented metallocene grade 94–98%"
     },
     "water_absorption": {
       "value": null,
@@ -185,7 +185,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "298 K (ASTM D149), isotactic; a second cited source gives 21.7-30 kV/mm at 298 K, 17 kV/mm at 393 K"
+      "conditions": "298 K (ASTM D149), isotactic; a second cited source gives 21.7–30 kV/mm at 298 K, 17 kV/mm at 393 K"
     }
   },
   "synthesis": {
@@ -210,7 +210,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic (Wypych); Mark reports 50-70% as typical commercial (DSC); generic Wypych PP entry spans 3.2-67% across tacticities"
+      "conditions": "isotactic (Wypych); Mark reports 50–70% as typical commercial (DSC); generic Wypych PP entry spans 3.2–67% across tacticities"
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
@@ -244,7 +244,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "isotactic; 3.0-3.9 for metallocene-catalyzed grades"
+        "conditions": "isotactic; 3.0–3.9 for metallocene-catalyzed grades"
       }
     }
   },
@@ -255,7 +255,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic (dedicated Wypych PP,iso entry); generic Wypych PP entry reports exp.=-8 (-3.2 for isotactic specifically); Mark's DMA measurement gives a positive Tg of 2-11°C (283.7 K at 30 Hz, 275.5 K at 1 Hz) -- sources disagree"
+      "conditions": "isotactic (dedicated Wypych PP,iso entry); generic Wypych PP entry reports exp.=-8 (-3.2 for isotactic specifically); Mark's DMA measurement gives a positive Tg of 2–11°C (283.7 K at 30 Hz, 275.5 K at 1 Hz). Sources disagree"
     },
     "tm": {
       "value": null,
@@ -265,7 +265,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC, isotactic; commercial grade 151-166°C, high-isotacticity material 157-171°C, biaxially oriented metallocene 148-151°C"
+      "conditions": "DSC, isotactic; commercial grade 151–166°C, high-isotacticity material 157–171°C, biaxially oriented metallocene 148–151°C"
     },
     "tc": {
       "value": null,
@@ -275,7 +275,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "generic PP entry, labeled \"Crystallization temperature\"; isotactic-specific entry separately reports a \"rapid crystallization temperature\" of 138-144°C"
+      "conditions": "generic PP entry, labeled \"Crystallization temperature\"; isotactic-specific entry separately reports a \"rapid crystallization temperature\" of 138–144°C"
     },
     "hdt": {
       "value": 55,
@@ -291,7 +291,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "generic PP entry (explicitly labeled onset); isotactic-specific Wypych entry separately reports 240°C, Mark reports 350°C (TGA, helium) -- criteria not directly comparable"
+      "conditions": "generic PP entry (explicitly labeled onset); isotactic-specific Wypych entry separately reports 240°C, Mark reports 350°C (TGA, helium), criteria not directly comparable"
     },
     "thermal_conductivity": {
       "value": null,
@@ -318,7 +318,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic (33-36 MPa, Wypych); Mark's isotactic homopolymer entry gives 34.5 MPa; generic Wypych PP entry close at 31-35.2 MPa"
+      "conditions": "isotactic (33–36 MPa, Wypych); Mark's isotactic homopolymer entry gives 34.5 MPa; generic Wypych PP entry close at 31–35.2 MPa"
     },
     "tensile_strength_at_break": {
       "value": 30,
@@ -328,7 +328,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic, commercial unoriented grade (30 MPa); generic Wypych PP unfilled range 26-32 MPa; oriented film values are much higher (130-300 MPa MD/TD, biaxially stretched)"
+      "conditions": "isotactic, commercial unoriented grade (30 MPa); generic Wypych PP unfilled range 26–32 MPa; oriented film values are much higher (130–300 MPa MD/TD, biaxially stretched)"
     },
     "elongation_at_break": {
       "value": null,
@@ -338,7 +338,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic entry 90-500%; generic Wypych PP unfilled entry narrower at 10-140%"
+      "conditions": "isotactic entry 90–500%; generic Wypych PP unfilled entry narrower at 10–140%"
     },
     "impact_izod": {
       "value": 27,
@@ -348,7 +348,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "notched, 23°C; isotactic entry 25-39 J/m (Mark's isotactic homopolymer 27 J/m); generic Wypych PP entry wider at 18-69 J/m"
+      "conditions": "notched, 23°C; isotactic entry 25–39 J/m (Mark's isotactic homopolymer 27 J/m); generic Wypych PP entry wider at 18–69 J/m"
     },
     "impact_charpy": {
       "value": null,
@@ -373,7 +373,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic 1,150-1,570 MPa (Wypych); Mark's isotactic homopolymer 1,389 MPa; generic Wypych PP entry 1,240-1,600 MPa"
+      "conditions": "isotactic 1,150–1,570 MPa (Wypych); Mark's isotactic homopolymer 1,389 MPa; generic Wypych PP entry 1,240–1,600 MPa"
     },
     "poissons_ratio": {
       "value": 0.38,
@@ -391,7 +391,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "ASTM D1894, generic PP entry; vs chrome steel 0.27-0.29, vs aluminum 0.35-0.36"
+      "conditions": "ASTM D1894, generic PP entry; vs chrome steel 0.27–0.29, vs aluminum 0.35–0.36"
     }
   },
   "chemical_resistance": {
@@ -477,7 +477,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic reports 17% (Mark corroborates at 17.4%); generic Wypych PP entry 17-19%"
+      "conditions": "isotactic reports 17% (Mark corroborates at 17.4%); generic Wypych PP entry 17–19%"
     },
     "solubility_parameter": {
       "value": null,
@@ -487,7 +487,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "isotactic 17.2-18.8 (Wypych; Mark reports 17.3-18.8 by inverse-phase GC); generic Wypych PP entry 18.0-19.2"
+      "conditions": "isotactic 17.2–18.8 (Wypych; Mark reports 17.3–18.8 by inverse-phase GC); generic Wypych PP entry 18.0–19.2"
     },
     "gas_permeability": [
       {
@@ -628,7 +628,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+      "conditions": "HMIS rating, 0–4 scale; isotactic and generic PP entries agree"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -636,7 +636,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+      "conditions": "HMIS rating, 0–4 scale; isotactic and generic PP entries agree"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -644,7 +644,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale; isotactic and generic PP entries agree"
+      "conditions": "HMIS rating, 0–4 scale; isotactic and generic PP entries agree"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

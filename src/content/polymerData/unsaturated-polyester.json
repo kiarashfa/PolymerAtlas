@@ -55,7 +55,7 @@
     {
       "src": "~/assets/polymers/unsaturated-polyester/stalingrad-german-pows-1943.webp",
       "alt": "A long column of German prisoners of war, heavily bundled against the cold, walking past the bombed and shell-pocked ruins of a large grain elevator building in the snow.",
-      "caption": "German prisoners marched through Stalingrad after the February 1943 surrender — one of the two fronts on which the war's balance visibly shifted that year.",
+      "caption": "German prisoners marched through Stalingrad after the February 1943 surrender. Stalingrad was one of the two fronts on which the war's balance visibly shifted that year.",
       "source_url": "https://commons.wikimedia.org/wiki/File:German_pows_stalingrad_1943.jpg",
       "author": "Soviet military personnel (uncredited)",
       "license": "Public domain"
@@ -63,7 +63,7 @@
     {
       "src": "~/assets/polymers/unsaturated-polyester/uboat-u200-attack-1943.webp",
       "alt": "An aerial view of the ocean surface with a German U-boat under attack, a large plume of white water and spray thrown up beside its hull from a depth-charge or bomb strike.",
-      "caption": "A U-boat under attack from an RAF Coastal Command aircraft, 24 June 1943 — the kind of aircraft-borne radar sortie that closed the mid-Atlantic gap, and the kind of housing problem that unsaturated polyester and glass fiber were pressed into service to solve.",
+      "caption": "A U-boat under attack from an RAF Coastal Command aircraft, 24 June 1943: the kind of aircraft-borne radar sortie that closed the mid-Atlantic gap, and the kind of housing problem that unsaturated polyester and glass fiber were pressed into service to solve.",
       "source_url": "https://commons.wikimedia.org/wiki/File:U-200_Luftangriff.jpg",
       "author": "Australian armed forces",
       "license": "Public domain"
@@ -79,7 +79,7 @@
     {
       "src": "~/assets/polymers/unsaturated-polyester/grp-timber-folkboats-comparison.webp",
       "alt": "A white fiberglass sailboat moored beside an older varnished wooden sailboat of the identical hull design, in a marina with other boats in the background.",
-      "caption": "A fiberglass and a timber-built Folkboat, same hull design, side by side — the direct comparison unsaturated polyester eventually made possible for an entire category of small craft.",
+      "caption": "A fiberglass and a timber-built Folkboat, same hull design, side by side: the direct comparison unsaturated polyester eventually made possible for an entire category of small craft.",
       "source_url": "https://commons.wikimedia.org/wiki/File:GRP_%26_Timber_Folkboats.jpg",
       "author": "Packhorse",
       "license": "CC BY 3.0"
@@ -94,7 +94,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "At 20°C, cured base resin. Mark's Polymer Data Handbook reports a broader specific-gravity range for cast forms (rigid 1.04-1.46, flexible 1.01-1.20)."
+      "conditions": "At 20°C, cured base resin. Mark's Polymer Data Handbook reports a broader specific-gravity range for cast forms (rigid 1.04–1.46, flexible 1.01–1.20)."
     },
     "melt_flow_index": {
       "value": null,
@@ -114,7 +114,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "1 MHz, cast (unfilled) resin; molded compounds 3.2-4.5, glass-fiber-reinforced ≈5."
+      "conditions": "1 MHz, cast (unfilled) resin; molded compounds 3.2–4.5, glass-fiber-reinforced ≈5."
     },
     "electrical_conductivity": {
       "value": 1e-12,
@@ -145,7 +145,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Equilibrium, immersion in water at 23°C. Mark's Polymer Data Handbook reports 0.15-0.6% for cast rigid forms (24 h, 1/8 in. sample)."
+      "conditions": "Equilibrium, immersion in water at 23°C. Mark's Polymer Data Handbook reports 0.15–0.6% for cast rigid forms (24 h, 1/8 in. sample)."
     },
     "dielectric_strength": {
       "value": null,
@@ -229,7 +229,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "1.82 MPa, cast rigid (unfilled) grade; glass-fiber-reinforced grades reach 157-287°C."
+      "conditions": "1.82 MPa, cast rigid (unfilled) grade; glass-fiber-reinforced grades reach 157–287°C."
     },
     "decomposition_onset": {
       "value": null,
@@ -242,7 +242,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Base/cast resin. Glass-fiber-reinforced grades reported far higher (2.6-8.4 W/(m·K)) per Mark's Polymer Data Handbook, reflecting filler content."
+      "conditions": "Base/cast resin. Glass-fiber-reinforced grades reported far higher (2.6–8.4 W/(m·K)) per Mark's Polymer Data Handbook, reflecting filler content."
     }
   },
   "mechanical": {
@@ -254,7 +254,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports a broader cast-rigid range (2,100-4,400 MPa) and much higher glass-fiber-reinforced values (5,500-31,000 MPa)."
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports a broader cast-rigid range (2,100–4,400 MPa) and much higher glass-fiber-reinforced values (5,500–31,000 MPa)."
     },
     "yield_strength": {
       "value": null,
@@ -269,7 +269,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 4.1-90 MPa for cast rigid and up to 340 MPa for glass-fiber-reinforced (woven cloth) grades."
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 4.1–90 MPa for cast rigid and up to 340 MPa for glass-fiber-reinforced (woven cloth) grades."
     },
     "elongation_at_break": {
       "value": 3.1,
@@ -279,7 +279,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports <2.6% for cast rigid and 40-310% for cast flexible grades."
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports <2.6% for cast rigid and 40–310% for cast flexible grades."
     },
     "impact_izod": {
       "value": 16,
@@ -289,7 +289,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Cast, rigid (unfilled); cast, flexible >370 J/m; glass-fiber-reinforced 80-1,600 J/m."
+      "conditions": "Cast, rigid (unfilled); cast, flexible >370 J/m; glass-fiber-reinforced 80–1,600 J/m."
     },
     "impact_charpy": {
       "value": null,
@@ -304,7 +304,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Cast, rigid (unfilled); cast, flexible Shore D84-94; glass-fiber-reinforced Barcol 40-80."
+      "conditions": "Cast, rigid (unfilled); cast, flexible Shore D84-94; glass-fiber-reinforced Barcol 40–80."
     },
     "flexural_modulus": {
       "value": 4050,
@@ -314,7 +314,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 3,400-4,200 MPa for cast rigid (296 K) and 7,000-21,000+ MPa for glass-fiber-reinforced grades."
+      "conditions": "Cast base resin. Mark's Polymer Data Handbook reports 3,400–4,200 MPa for cast rigid (296 K) and 7,000–21,000+ MPa for glass-fiber-reinforced grades."
     },
     "poissons_ratio": {
       "value": null,
@@ -411,7 +411,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Glass-fiber-reinforced compression/injection/transfer molding compounds (SMC/BMC/prepreg); wide range reflects different molding forms and process types. Hand lay-up/cast UP without heated molding is typically cured near room temperature with a peroxide catalyst. Replaces an earlier not-applicable judgement -- heated molding is a real process for glass-fiber-reinforced UP compounds."
+      "conditions": "Glass-fiber-reinforced compression/injection/transfer molding compounds (SMC/BMC/prepreg); wide range reflects different molding forms and process types. Hand lay-up/cast UP without heated molding is typically cured near room temperature with a peroxide catalyst. Replaces an earlier not-applicable judgement: heated molding is a real process for glass-fiber-reinforced UP compounds."
     },
     "drying_required": null,
     "shrinkage_rate": {
@@ -422,7 +422,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "Unfilled resin, linear mold shrinkage. Glass-fiber-reinforced 0.02-1.2%; SMC as low as 0.002%."
+      "conditions": "Unfilled resin, linear mold shrinkage. Glass-fiber-reinforced 0.02–1.2%; SMC as low as 0.002%."
     }
   },
   "applications": [

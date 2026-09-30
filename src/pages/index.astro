@@ -15,7 +15,7 @@ const haystack = (r: (typeof rows)[number]) =>
     .join(' ')
     .toLowerCase();
 const description =
-  'A free, history-narrated encyclopedia of the polymers that made the modern world — ' +
+  'A free, history-narrated encyclopedia of the polymers that made the modern world, with ' +
   `${total} entries across seven eras, from natural macromolecules to designed smart materials.`;
 ---
 
@@ -25,7 +25,7 @@ const description =
       <AtlasMark class="cat-mark" size={56} />
       <h1 class="cat-title">Atlas of Polymers</h1>
       <p class="cat-sub">
-        A history-narrated encyclopedia of the polymers that made the modern world — {total}
+        A history-narrated encyclopedia of the polymers that made the modern world, with {total}
         entries across seven eras, 1833–2015. Browse, filter, and sort the whole archive.
       </p>
     </header>

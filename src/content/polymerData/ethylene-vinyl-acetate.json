@@ -56,7 +56,7 @@
     {
       "src": "~/assets/polymers/ethylene-vinyl-acetate/elvis-ed-sullivan-1956.webp",
       "alt": "Black-and-white photograph of Elvis Presley, in a dark shirt with an open collar, standing beside Ed Sullivan, who holds a lit cigarette, backstage.",
-      "caption": "Elvis Presley with Ed Sullivan, October 1956 — the year America's restlessness was as visible on television as it was on its new highways.",
+      "caption": "Elvis Presley with Ed Sullivan, October 1956: the year America's restlessness was as visible on television as it was on its new highways.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Elvis_Presley_and_Ed_Sullivan_October_1956.jpg",
       "author": "CBS",
       "license": "Public domain"
@@ -64,7 +64,7 @@
     {
       "src": "~/assets/polymers/ethylene-vinyl-acetate/interstate-highway-cloverleaf-1957.webp",
       "alt": "Aerial black-and-white photograph of a newly built cloverleaf highway interchange cutting through a grid of suburban houses and small factories.",
-      "caption": "A new cloverleaf interchange on the Golden State Freeway, 1957 — the interstate system authorized the year DuPont filed its ethylene-vinyl acetate patent.",
+      "caption": "A new cloverleaf interchange on the Golden State Freeway, 1957: the interstate system authorized the year DuPont filed its ethylene-vinyl acetate patent.",
       "source_url": "https://commons.wikimedia.org/wiki/File:CA_58_I5_FHWA_1957_5776_14.jpg",
       "author": "Federal Highway Administration",
       "license": "Public domain"
@@ -182,7 +182,7 @@
       "vinyl acetate"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Made via high-pressure bulk (chain-growth) copolymerization of ethylene and vinyl acetate in tubular or autoclave reactors, typically at 40-80°C.",
+    "industrial_process_notes": "Made via high-pressure bulk (chain-growth) copolymerization of ethylene and vinyl acetate in tubular or autoclave reactors, typically at 40–80°C.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -339,7 +339,7 @@
       "range_min": 65,
       "range_max": 96,
       "unit": "Shore A",
-      "conditions": "Softer grades; harder grades read 15-43 on Shore D.",
+      "conditions": "Softer grades; harder grades read 15–43 on Shore D.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -663,7 +663,7 @@
     "nfpa_health_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -671,7 +671,7 @@
     "nfpa_flammability_rating": {
       "value": 1,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -679,7 +679,7 @@
     "nfpa_reactivity_rating": {
       "value": 0,
       "unit": "",
-      "conditions": "HMIS rating, 0-4 scale",
+      "conditions": "HMIS rating, 0–4 scale",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

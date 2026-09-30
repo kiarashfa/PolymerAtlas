@@ -12,7 +12,7 @@
     "structural": null
   },
   "repeat_unit": null,
-  "notation_note": "Natural gums are a heterogeneous class of branched polysaccharide/glycoprotein complexes whose exact composition depends on botanical source (e.g. gum arabic, tragacanth, karaya, guar, locust bean gum) -- there is no single repeat unit for the hub as a whole. Gum arabic, the most historically significant member, is illustrated via its constituent monosaccharides in the monomer[] field below.",
+  "notation_note": "Natural gums are a heterogeneous class of branched polysaccharide/glycoprotein complexes whose exact composition depends on botanical source (e.g. gum arabic, tragacanth, karaya, guar, locust bean gum); there is no single repeat unit for the hub as a whole. Gum arabic, the most historically significant member, is illustrated via its constituent monosaccharides in the monomer[] field below.",
   "iupac_name": null,
   "synonyms": [
     "plant exudate gums",
@@ -84,7 +84,7 @@
     {
       "src": "~/assets/polymers/natural-gums/gum-arabic-exuding.webp",
       "alt": "A close-up of a tree branch with rough, reddish bark, from which a translucent amber-colored bead of gum is oozing.",
-      "caption": "Gum exuding from a wounded branch — the raw material, unchanged from how it was collected in antiquity.",
+      "caption": "Gum exuding from a wounded branch: the raw material, unchanged from how it was collected in antiquity.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Gum_Arabic_exuding.jpg",
       "author": "Ashwin Baindur (User:AshLin)",
       "license": "CC BY-SA 4.0"
@@ -92,7 +92,7 @@
     {
       "src": "~/assets/polymers/natural-gums/gum-trade-bakel-senegal.webp",
       "alt": "A nineteenth-century engraving of a group of West African traders and their pack donkeys gathered near tents on open grassland, negotiating a sale.",
-      "caption": "Gum traders at the river port of Bakel, Senegal, in an 1890 engraving — the same overland trade network, still running six decades after Dumas first analyzed its product.",
+      "caption": "Gum traders at the river port of Bakel, Senegal, in an 1890 engraving: the same overland trade network, still running six decades after Dumas first analyzed its product.",
       "source_url": "https://commons.wikimedia.org/wiki/File:GommeBakel.jpg",
       "author": "Jeanniot (grav.)",
       "license": "Public domain"
@@ -100,7 +100,7 @@
     {
       "src": "~/assets/polymers/natural-gums/gouache-paint-gum-binder.webp",
       "alt": "Tubes of gouache paint arranged around a ceramic mixing palette with dabs of red, yellow, blue, green and black paint, alongside two paintbrushes and a water dish.",
-      "caption": "Modern gouache paint, still bound with gum arabic — the same job the material did for an Egyptian artisan four and a half thousand years earlier.",
+      "caption": "Modern gouache paint, still bound with gum arabic: the same job the material did for an Egyptian artisan four and a half thousand years earlier.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Gouache.jpg",
       "author": "Jeff Dahl",
       "license": "CC BY-SA 3.0"
@@ -112,7 +112,7 @@
       "range_min": 1.3,
       "range_max": 1.48,
       "unit": "g/cm³",
-      "conditions": "For carrageenan specifically (20 °C) -- a different gum in this class, not gum arabic. Tertiary sources separately suggest roughly 1.35-1.49 g/cm³ for gum arabic, unconfirmed against a primary source.",
+      "conditions": "For carrageenan specifically (20 °C). This is a different gum in this class, not gum arabic. Tertiary sources separately suggest roughly 1.35–1.49 g/cm³ for gum arabic, unconfirmed against a primary source.",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -157,7 +157,7 @@
       "range_min": 8,
       "range_max": 15,
       "unit": "%",
-      "conditions": "Xanthan gum, equilibrium in water at 23 °C. Carrageenan separately reported at 8-10% typical water content (75% reported maximum).",
+      "conditions": "Xanthan gum, equilibrium in water at 23 °C. Carrageenan separately reported at 8–10% typical water content (75% reported maximum).",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -172,7 +172,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Natural gums are not industrially polymerized -- they are biosynthesized in planta and then harvested. For gum arabic, the dominant commercial gum, production involves tapping Senegalia senegal / Vachellia seyal trees (stripping sections of bark to induce gum exudation), hand or mechanical collection of the hardened nodules, sun-drying, and industrial processing (cleaning, grinding, spray-drying) into standardized food/pharma-grade powders. Sudan supplies roughly 70% of global gum arabic exports.",
+    "industrial_process_notes": "Natural gums are not industrially polymerized; they are biosynthesized in planta and then harvested. For gum arabic, the dominant commercial gum, production involves tapping Senegalia senegal / Vachellia seyal trees (stripping sections of bark to induce gum exudation), hand or mechanical collection of the hardened nodules, sun-drying, and industrial processing (cleaning, grinding, spray-drying) into standardized food/pharma-grade powders. Sudan supplies roughly 70% of global gum arabic exports.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -182,7 +182,7 @@
       "unit": "%",
       "status": "not_applicable"
     },
-    "crystal_structure": "Structure is very gum-specific. Carrageenan: trigonal unit cell, double-helix chain conformation (kappa/iota forms), several polymorph families (kappa/iota/lambda). Xanthan gum: right-handed, fivefold-helix chain conformation. Gum tragacanth: extended molecules approx. 320-420 nm long, 1.45-1.9 nm wide. Not representative of the class as a whole (e.g. gum arabic).",
+    "crystal_structure": "Structure is very gum-specific. Carrageenan: trigonal unit cell, double-helix chain conformation (kappa/iota forms), several polymorph families (kappa/iota/lambda). Xanthan gum: right-handed, fivefold-helix chain conformation. Gum tragacanth: extended molecules approx. 320–420 nm long, 1.45–1.9 nm wide. Not representative of the class as a whole (e.g. gum arabic).",
     "chain_flexibility_notes": "Highly branched, largely amorphous architecture (no regular crystallizable backbone); behavior in solution is dominated by branching pattern and molecular weight rather than chain packing.",
     "tg_relation_notes": null,
     "molecular_weight": {
@@ -196,7 +196,7 @@
         "range_min": 2000000,
         "range_max": 20000000,
         "unit": "g/mol",
-        "conditions": "Xanthan gum specifically -- other gums in this class differ substantially, e.g. gum tragacanth 180,000-1,600,000 g/mol, carrageenan 20,000-913,000 g/mol.",
+        "conditions": "Xanthan gum specifically; other gums in this class differ substantially, e.g. gum tragacanth 180,000–1,600,000 g/mol, carrageenan 20,000–913,000 g/mol.",
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016"
@@ -324,7 +324,7 @@
         "source": "wiki-gum-arabic"
       },
       "ethanol": {
-        "value": "Poor -- incompatible, tends to precipitate/coagulate",
+        "value": "Poor: incompatible, tends to precipitate/coagulate",
         "status": "estimated",
         "evidence_level": "tertiary",
         "source": "wiki-gum-arabic"
@@ -398,7 +398,7 @@
       "status": "placeholder"
     },
     "hydrolysis_resistance": {
-      "value": "poor -- susceptible to enzymatic cleavage",
+      "value": "poor: susceptible to enzymatic cleavage",
       "conditions": "Xanthan gum; fungal cellulases catalyze cleavage of the main chain.",
       "status": "verified",
       "evidence_level": "handbook",

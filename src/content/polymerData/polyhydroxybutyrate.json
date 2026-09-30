@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][>]O[C@@H](C)CC(=O)[<][]}",
   "smiles_depiction": "*O[C@@H](C)CC(=O)*",
-  "notation_note": "Bacterially synthesized PHB is stereochemically pure R, which is why it crystallizes so readily -- and why it is stiff and brittle compared with the copolymers.",
+  "notation_note": "Bacterially synthesized PHB is stereochemically pure R, which is why it crystallizes so readily, and why it is stiff and brittle compared with the copolymers.",
   "iupac_name": null,
   "synonyms": [
     "poly-3-hydroxybutyrate",
@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polyhydroxybutyrate/bacillus-megaterium.webp",
       "alt": "A close-up photograph of a blood-agar petri dish, dark pink-red in colour, streaked with pale cream bacterial colonies of varying size.",
-      "caption": "*Bacillus megaterium* growing on blood agar — the species in which Lemoigne first found PHB granules.",
+      "caption": "*Bacillus megaterium* growing on blood agar. It is the species in which Lemoigne first found PHB granules.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Bacillus_megaterium_bacteria.jpg",
       "author": "Department of Health and Human Services",
       "license": "Public domain"
@@ -84,7 +84,7 @@
     {
       "src": "~/assets/polymers/polyhydroxybutyrate/cupriavidus-necator-cultures.webp",
       "alt": "Two gloved hands holding a petri dish with several small orange and cream colonies, while a pipette held by a second gloved hand touches one colony.",
-      "caption": "*Cupriavidus necator* — better known under its older name, *Alcaligenes eutrophus* — the species industry actually uses to grow PHB at scale.",
+      "caption": "*Cupriavidus necator* (better known under its older name, *Alcaligenes eutrophus*), the species industry actually uses to grow PHB at scale.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Cupriavidus_necator.jpg",
       "author": "Pontificia Universidad Católica de Chile",
       "license": "CC BY-SA 2.0"
@@ -157,7 +157,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Discovered by French microbiologist Maurice Lemoigne in 1926; remained largely experimental until ICI's pilot-scale work in the 1980s, commercialized as 'Biopol' but facing market challenges on cost and performance versus conventional plastics. Produced by bacterial fermentation -- microorganisms such as Cupriavidus necator synthesize and store PHB intracellularly as a carbon/energy reserve.",
+    "industrial_process_notes": "Discovered by French microbiologist Maurice Lemoigne in 1926; remained largely experimental until ICI's pilot-scale work in the 1980s, commercialized as 'Biopol' but facing market challenges on cost and performance versus conventional plastics. Produced by bacterial fermentation: microorganisms such as Cupriavidus necator synthesize and store PHB intracellularly as a carbon/energy reserve.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -172,7 +172,7 @@
       "source": "handbook-wypych-2016"
     },
     "crystal_structure": "Orthorhombic (space group P2₁2₁2₁), a:b:c = 0.576:1.320:0.596 nm, cell angles 90°.",
-    "chain_flexibility_notes": "Water-insoluble and relatively resistant to hydrolytic degradation -- unusual for a biodegradable plastic, most of which degrade primarily via hydrolysis rather than needing microbial action.",
+    "chain_flexibility_notes": "Water-insoluble and relatively resistant to hydrolytic degradation, which is unusual for a biodegradable plastic, most of which degrade primarily via hydrolysis rather than needing microbial action.",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -346,7 +346,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Young's modulus (corroborated at the same value in a separate source). 1,400-2,200 MPa also reported elsewhere as 'tensile modulus'."
+      "conditions": "Young's modulus (corroborated at the same value in a separate source). 1,400–2,200 MPa also reported elsewhere as 'tensile modulus'."
     },
     "yield_strength": {
       "value": null,
@@ -361,7 +361,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Source reports unqualified 'tensile strength'; corroborated by a separate 40-60 MPa range for unmodified material."
+      "conditions": "Source reports unqualified 'tensile strength'; corroborated by a separate 40–60 MPa range for unmodified material."
     },
     "elongation_at_break": {
       "value": 31.5,
@@ -371,7 +371,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "A narrower 6-8% is reported elsewhere for unmodified, untreated film."
+      "conditions": "A narrower 6–8% is reported elsewhere for unmodified, untreated film."
     },
     "impact_izod": {
       "value": 42.5,
@@ -401,7 +401,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "A separate source reports 3,500-4,000 MPa for unmodified material."
+      "conditions": "A separate source reports 3,500–4,000 MPa for unmodified material."
     },
     "poissons_ratio": {
       "value": null,
@@ -569,7 +569,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -577,7 +577,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -585,7 +585,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

@@ -13,7 +13,7 @@
   },
   "repeat_unit": "{[][>]O[C@H]1[C@H](O)[C@@H](O)[C@H]([<])O[C@@H]1CO[]}",
   "smiles_depiction": "*O[C@H]1[C@H](O)[C@@H](O)[C@H](*)O[C@@H]1CO",
-  "notation_note": "The anhydroglucose unit is shown in condensed form (ring core plus three hydroxyls) as the constitutional repeat unit; the crystallographic repeat is cellobiose, two glucose units, because alternate rings are rotated 180 degrees. Degree of polymerization varies hugely by source (wood pulp ~300-1700 units, cotton and plant fibers ~800-10,000, bacterial cellulose up to ~10,000).",
+  "notation_note": "The anhydroglucose unit is shown in condensed form (ring core plus three hydroxyls) as the constitutional repeat unit; the crystallographic repeat is cellobiose, two glucose units, because alternate rings are rotated 180 degrees. Degree of polymerization varies hugely by source (wood pulp ~300–1700 units, cotton and plant fibers ~800–10,000, bacterial cellulose up to ~10,000).",
   "iupac_name": null,
   "synonyms": [],
   "aliases": [],
@@ -42,7 +42,7 @@
     {
       "src": "~/assets/polymers/cellulose/egyptian-papyrus-scroll.webp",
       "alt": "A section of an ancient Egyptian papyrus scroll covered in rows of painted hieroglyphs and figures, including a long serpent motif, mounted under glass.",
-      "caption": "A papyrus scroll from ancient Egypt — plant fiber pressed and dried into a writing surface, long before anyone knew to call the material inside it cellulose.",
+      "caption": "A papyrus scroll from ancient Egypt: plant fiber pressed and dried into a writing surface, long before anyone knew to call the material inside it cellulose.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Ancient_Egypt_Papyrus_Scroll_of_the_Dead_(28748821475).jpg",
       "author": "Gary Todd from Xinzheng, China",
       "license": "CC0"
@@ -50,7 +50,7 @@
     {
       "src": "~/assets/polymers/cellulose/payen-lithograph-maurin.webp",
       "alt": "A lithographed half-length portrait of a clean-shaven, side-whiskered man in a dark coat and cravat, signed 'Payen' beneath the image.",
-      "caption": "Anselme Payen, around the time of his cellulose work. The formula he measured for the fibrous residue of wood matched the one he had already found in starch — the first clue that the two materials were built from the same sugar.",
+      "caption": "Anselme Payen, around the time of his cellulose work. The formula he measured for the fibrous residue of wood matched the one he had already found in starch. This was the first clue that the two materials were built from the same sugar.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Anselm_Payen._Lithograph_by_N._E._Maurin._Wellcome_V0004564.jpg",
       "author": "Unknown author",
       "license": "CC BY 2.0"
@@ -58,7 +58,7 @@
     {
       "src": "~/assets/polymers/cellulose/cotton-boll-open.webp",
       "alt": "A cotton plant with an open white boll of fiber, an unopened green seed pod, and a pale yellow flower, growing among green leaves.",
-      "caption": "Raw cotton fiber on the plant — cellulose in close to its purest natural form, at roughly ninety percent of the fiber's dry weight.",
+      "caption": "Raw cotton fiber on the plant: cellulose in close to its purest natural form, at roughly ninety percent of the fiber's dry weight.",
       "source_url": "https://commons.wikimedia.org/wiki/File:COTTON_open_boll_bloom_(48948371196).jpg",
       "author": "Alabama Extension",
       "license": "CC0"
@@ -66,7 +66,7 @@
     {
       "src": "~/assets/polymers/cellulose/cellulose-nanocrystal-film.webp",
       "alt": "A shallow glass petri dish containing a thin, dried film that shimmers in bands of blue, green and purple, resting on a dark surface.",
-      "caption": "A self-assembled film of cellulose nanocrystals. The iridescent color comes entirely from how the nanocrystals stack — no dye or pigment is involved.",
+      "caption": "A self-assembled film of cellulose nanocrystals. The iridescent color comes entirely from how the nanocrystals stack; no dye or pigment is involved.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Macroscopic_picture_of_a_film_of_cellulose_nanocrystal_suspension_cast_on_a_Petri_dish_(diameter_3.5cm)..jpg",
       "author": "Yapadaryko",
       "license": "CC BY-SA 4.0"
@@ -78,7 +78,7 @@
       "range_min": 1.54,
       "range_max": 1.57,
       "unit": "g/cm³",
-      "conditions": "20°C, typical solid cellulose; crystalline regions 1.59-1.63 g/cm³, amorphous regions 1.482-1.489 g/cm³",
+      "conditions": "20°C, typical solid cellulose; crystalline regions 1.59–1.63 g/cm³, amorphous regions 1.482–1.489 g/cm³",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -93,7 +93,7 @@
       "range_min": 1.534,
       "range_max": 1.618,
       "unit": "",
-      "conditions": "20°C; birefringent, n∥ 1.595-1.618 and n⊥ 1.527-1.534 across fiber types",
+      "conditions": "20°C; birefringent, n∥ 1.595–1.618 and n⊥ 1.527–1.534 across fiber types",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -143,7 +143,7 @@
       "range_min": 30,
       "range_max": 50,
       "unit": "kV/mm",
-      "conditions": "specimen thickness 0.6-0.8 mm",
+      "conditions": "specimen thickness 0.6–0.8 mm",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -153,7 +153,7 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Not industrially polymerized -- biosynthesized by plants (and some bacteria) and extracted from wood pulp (kraft/sulfite pulping) or cotton fiber (~90% cellulose by mass; wood ~40-50%). Regeneration processes (viscose, cuprammonium) convert extracted cellulose into rayon/cellophane -- see viscose-rayon and cellophane entries.",
+    "industrial_process_notes": "Not industrially polymerized: biosynthesized by plants (and some bacteria) and extracted from wood pulp (kraft/sulfite pulping) or cotton fiber (~90% cellulose by mass; wood ~40–50%). Regeneration processes (viscose, cuprammonium) convert extracted cellulose into rayon/cellophane. See viscose-rayon and cellophane entries.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -163,7 +163,7 @@
       "range_min": 40,
       "range_max": 60,
       "unit": "%",
-      "conditions": "typical range across native cellulose sources; cotton ~75%, wood pulp ~60%; regenerated cellulose is markedly lower (~25-35%, see viscose-rayon)",
+      "conditions": "typical range across native cellulose sources; cotton ~75%, wood pulp ~60%; regenerated cellulose is markedly lower (~25–35%, see viscose-rayon)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -238,7 +238,7 @@
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "Decomposes at 260-270°C rather than melting under ambient pressure; melting near 467°C has only been observed under pulse-heating conditions."
+      "conditions": "Decomposes at 260–270°C rather than melting under ambient pressure; melting near 467°C has only been observed under pulse-heating conditions."
     },
     "tc": {
       "value": null,
@@ -275,7 +275,7 @@
       "range_min": 3000,
       "range_max": 5000,
       "unit": "MPa",
-      "conditions": "bulk/aggregate native cellulose; individual native bast fibers show much higher axial modulus (flax 78,000-108,000 MPa, hemp 59,000-78,000 MPa, ramie 48,000-69,000 MPa)",
+      "conditions": "bulk/aggregate native cellulose; individual native bast fibers show much higher axial modulus (flax 78,000–108,000 MPa, hemp 59,000–78,000 MPa, ramie 48,000–69,000 MPa)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -290,7 +290,7 @@
       "range_min": 2.2,
       "range_max": 5.9,
       "unit": "MPa",
-      "conditions": "pulp handsheets (native, non-regenerated cellulose fiber network); individual fibers test much higher (e.g. cotton 200-800 MPa per Mark Polymer Data Handbook); regenerated cellulose (rayon) and cellophane report substantially different values, recorded on their own entries",
+      "conditions": "pulp handsheets (native, non-regenerated cellulose fiber network); individual fibers test much higher (e.g. cotton 200–800 MPa per Mark Polymer Data Handbook); regenerated cellulose (rayon) and cellophane report substantially different values, recorded on their own entries",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -300,7 +300,7 @@
       "range_min": 6,
       "range_max": 10,
       "unit": "%",
-      "conditions": "native cellulose fiber; cast film 18-70%, regenerated forms 22-70% reported separately",
+      "conditions": "native cellulose fiber; cast film 18–70%, regenerated forms 22–70% reported separately",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -434,7 +434,7 @@
       "range_min": 18,
       "range_max": 20,
       "unit": "%",
-      "conditions": "untreated cellulose; flame-retardant treated forms show 22.8-30.3%",
+      "conditions": "untreated cellulose; flame-retardant treated forms show 22.8–30.3%",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

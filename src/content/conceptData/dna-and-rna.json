@@ -11,7 +11,7 @@
     {
       "src": "~/assets/concepts/dna-and-rna/hillary-norgay-everest-1953.webp",
       "alt": "Two mountaineers in cold-weather climbing gear and oxygen masks smiling at each other, oxygen cylinders and equipment visible on their backs.",
-      "caption": "Edmund Hillary and Tenzing Norgay after the first ascent of Everest, 29 May 1953 — the same year Watson and Crick reached their own kind of summit, a working structure for DNA.",
+      "caption": "Edmund Hillary and Tenzing Norgay after the first ascent of Everest, 29 May 1953 (the same year Watson and Crick reached their own kind of summit, a working structure for DNA).",
       "source_url": "https://commons.wikimedia.org/wiki/File:Edmund_Hillary_and_Tenzing_Norgay.jpg",
       "author": "Jamling Tenzing Norgay",
       "license": "CC BY-SA 3.0"
@@ -19,7 +19,7 @@
     {
       "src": "~/assets/concepts/dna-and-rna/crick-watson-dna-model.webp",
       "alt": "A tall double-helix-shaped model built from wire rods and flat metal plates, displayed in a museum glass case, with the blurred figures of visitors passing in front of it.",
-      "caption": "A surviving Crick-Watson DNA model on display at the Science Museum, London — the physical embodiment of the 1953 structure.",
+      "caption": "A surviving Crick-Watson DNA model on display at the Science Museum, London (the physical embodiment of the 1953 structure).",
       "source_url": "https://commons.wikimedia.org/wiki/File:DNA_Model_Crick-Watson.jpg",
       "author": "User:Alkivar",
       "license": "Public domain"
@@ -27,7 +27,7 @@
     {
       "src": "~/assets/concepts/dna-and-rna/dna-model-thymine-template.webp",
       "alt": "A single flat aluminium plate stamped with the letter A and hand-written atom-numbering marks, with two thin brass rods projecting from one edge, photographed against a plain background.",
-      "caption": "One of the individual base templates cut for that model, marked up by hand — the physical unit the whole structure was assembled from, piece by piece.",
+      "caption": "One of the individual base templates cut for that model, marked up by hand (the physical unit the whole structure was assembled from, piece by piece).",
       "source_url": "https://commons.wikimedia.org/wiki/File:Template_from_Crick_and_Watson%E2%80%99s_DNA_molecular_model,_1953._(9660573227).jpg",
       "author": "Science Museum, London / Science and Society Picture Library",
       "license": "CC BY-SA 2.0"
@@ -50,7 +50,7 @@
     }
   ],
 
-  "summary": "DNA is a natural information-encoding biopolymer: two antiparallel polynucleotide chains coiling around each other into a double helix (pitch 34 angstroms per turn, ~10 angstrom radius), each chain a backbone of alternating phosphate and 2-deoxyribose sugar groups linked by phosphodiester bonds, with one of four nitrogenous bases (adenine, guanine, cytosine, thymine) hanging off each sugar. Complementary base pairing (A-T via two hydrogen bonds, C-G via three) both holds the two strands together and gives DNA a built-in mechanism for replication -- each strand serves as a template for a new complementary strand. James Watson and Francis Crick published the double-helix structure in 1953, building on X-ray diffraction data from other researchers (notably Rosalind Franklin and Maurice Wilkins). RNA, the polymer's single-stranded cousin (uracil replacing thymine, ribose replacing deoxyribose), carries out the actual decoding of DNA's information into proteins. In 1983, Kary Mullis invented the polymerase chain reaction (PCR), a technique using repeated heating/cooling cycles and a heat-stable DNA polymerase to copy a specific DNA sequence billions of times in a few hours -- work recognized with the 1993 Nobel Prize in Chemistry and foundational to essentially all of modern molecular biology, forensics, and diagnostics (including PCR-based COVID-19 testing).",
+  "summary": "DNA is a natural information-encoding biopolymer: two antiparallel polynucleotide chains coiling around each other into a double helix (pitch 34 angstroms per turn, ~10 angstrom radius), each chain a backbone of alternating phosphate and 2-deoxyribose sugar groups linked by phosphodiester bonds, with one of four nitrogenous bases (adenine, guanine, cytosine, thymine) hanging off each sugar. Complementary base pairing (A-T via two hydrogen bonds, C-G via three) both holds the two strands together and gives DNA a built-in mechanism for replication: each strand serves as a template for a new complementary strand. James Watson and Francis Crick published the double-helix structure in 1953, building on X-ray diffraction data from other researchers (notably Rosalind Franklin and Maurice Wilkins). RNA, the polymer's single-stranded cousin (uracil replacing thymine, ribose replacing deoxyribose), carries out the actual decoding of DNA's information into proteins. In 1983, Kary Mullis invented the polymerase chain reaction (PCR), a technique using repeated heating/cooling cycles and a heat-stable DNA polymerase to copy a specific DNA sequence billions of times in a few hours; the work was recognized with the 1993 Nobel Prize in Chemistry and is foundational to essentially all of modern molecular biology, forensics, and diagnostics (including PCR-based COVID-19 testing).",
   "key_equations": [],
 
   "references": ["wiki-dna", "search-kary-mullis-pcr"]

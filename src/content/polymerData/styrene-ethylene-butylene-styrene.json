@@ -50,7 +50,7 @@
     {
       "src": "~/assets/polymers/styrene-ethylene-butylene-styrene/armstrong-on-moon-1969.webp",
       "alt": "An astronaut in a white spacesuit working beside the gold-foil-wrapped leg of a lunar module on the grey, cratered surface of the Moon, an American flag patch visible on the strut.",
-      "caption": "Neil Armstrong at the Apollo 11 lunar module, 20 July 1969 — the only photograph taken of him on the Moon's surface, since he was holding the camera in most of the others.",
+      "caption": "Neil Armstrong at the Apollo 11 lunar module, 20 July 1969: the only photograph taken of him on the Moon's surface, since he was holding the camera in most of the others.",
       "source_url": "https://commons.wikimedia.org/wiki/File:As11-40-5886.jpg",
       "author": "Buzz Aldrin / NASA",
       "license": "Public domain"
@@ -160,7 +160,7 @@
       "status": "placeholder"
     },
     "crystal_structure": null,
-    "chain_flexibility_notes": "Microphase-separated triblock structure: glassy polystyrene end-blocks act as physical crosslinks, while the rubbery ethylene/butylene mid-block provides elasticity -- giving SEBS its thermoplastic-elastomer behavior (rubber-like at use temperature, moldable when hot).",
+    "chain_flexibility_notes": "Microphase-separated triblock structure: glassy polystyrene end-blocks act as physical crosslinks, while the rubbery ethylene/butylene mid-block provides elasticity, giving SEBS its thermoplastic-elastomer behavior (rubber-like at use temperature, moldable when hot).",
     "tg_relation_notes": null,
     "molecular_weight": {
       "mn": {
@@ -220,7 +220,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Not a standard HDT (ASTM D648) figure -- source instead reports a continuous-use (long-term service temperature) range of -50 °C to +125 °C; brittleness point (ASTM D746) is -60 to -21 °C."
+      "conditions": "Not a standard HDT (ASTM D648) figure: source instead reports a continuous-use (long-term service temperature) range of -50 °C to +125 °C; brittleness point (ASTM D746) is -60 to -21 °C."
     },
     "decomposition_onset": {
       "value": 400,

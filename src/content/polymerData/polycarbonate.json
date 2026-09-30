@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polycarbonate/riot-police-polycarbonate-shields.webp",
       "alt": "Six police officers in helmets and dark uniforms stand in a line against a stone wall, each holding a large transparent shield printed with the word POLICE in white capital letters.",
-      "caption": "Riot police with transparent polycarbonate shields — by the 1990s the material had become the standard, replacing the wood and metal shields used before it.",
+      "caption": "Riot police with transparent polycarbonate shields. By the 1990s the material had become the standard, replacing the wood and metal shields used before it.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_riot_police-1.JPG",
       "author": "Abasaa",
       "license": "Public domain"
@@ -170,7 +170,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.09-0.3%."
+      "conditions": "Equilibrium, immersion in water at 23°C; equilibrium at 23°C/50% RH: 0.09–0.3%."
     },
     "dielectric_strength": {
       "value": 41,
@@ -180,7 +180,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Film, d = 0.6-0.8 mm"
+      "conditions": "Film, d = 0.6–0.8 mm"
     }
   },
   "synthesis": {
@@ -201,7 +201,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Typically amorphous (rigid backbone) in commercial resin, underlying its transparency; crystallinity of 20-42% has been reported under special processing (e.g. solvent-induced or long-term annealing)."
+      "conditions": "Typically amorphous (rigid backbone) in commercial resin, underlying its transparency; crystallinity of 20–42% has been reported under special processing (e.g. solvent-induced or long-term annealing)."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": "Bulky bisphenol A units and carbonate linkages give PC an unusual combination of high stiffness, high impact toughness, and optical clarity.",
@@ -255,7 +255,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC, measured on crystallized/annealed PC -- commercial resin is normally amorphous with no distinct melting point."
+      "conditions": "DSC, measured on crystallized/annealed PC; commercial resin is normally amorphous with no distinct melting point."
     },
     "tc": {
       "value": null,
@@ -296,7 +296,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Reported 'Young's modulus' 2,390-2,600 MPa also given; Mark's Polymer Data Handbook reports 2,380 MPa (ASTM D638)."
+      "conditions": "Reported 'Young's modulus' 2,390–2,600 MPa also given; Mark's Polymer Data Handbook reports 2,380 MPa (ASTM D638)."
     },
     "yield_strength": {
       "value": 65.5,
@@ -316,7 +316,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (57-74 MPa). Mark's Polymer Data Handbook reports 65.5 MPa 'at ultimate'."
+      "conditions": "Unqualified 'tensile strength' row, distinct from reported yield stress (57–74 MPa). Mark's Polymer Data Handbook reports 65.5 MPa 'at ultimate'."
     },
     "elongation_at_break": {
       "value": 103,
@@ -471,7 +471,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Flame-retardant grades reach 30-43%."
+      "conditions": "Flame-retardant grades reach 30–43%."
     },
     "solubility_parameter": {
       "value": 22.2,

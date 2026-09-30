@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/polybutadiene/ypres-aerial-1915.webp",
       "alt": "A grainy aerial reconnaissance photograph of a war-damaged town, its streets and building outlines visible from directly above, with handwritten annotations in the margins.",
-      "caption": "Ypres, photographed from a German aircraft during the battle that opened with the war's first large gas attack in April 1915 - the same national mobilisation of chemistry that was, that same year, being pointed at rubber.",
+      "caption": "Ypres, photographed from a German aircraft during the battle that opened with the war's first large gas attack in April 1915: the same national mobilisation of chemistry that was, that same year, being pointed at rubber.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Ypres_during_the_Second_Battle_of_Ypres_(1915).jpg",
       "author": "Leutnant Eichler, spotter for the Imperial German Flying Corps",
       "license": "Public domain"
@@ -84,7 +84,7 @@
     {
       "src": "~/assets/polymers/polybutadiene/german-gas-mask-ww1.webp",
       "alt": "A corroded metal filter canister attached by a corrugated rubber hose to a leather and fabric head harness, laid out on a plain cloth background.",
-      "caption": "A German gas mask of the type issued after Ypres - its breathing hose was one more everyday object that depended on rubber Germany could no longer import by sea.",
+      "caption": "A German gas mask of the type issued after Ypres: its breathing hose was one more everyday object that depended on rubber Germany could no longer import by sea.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Mask,_gas_(AM_612860-1).jpg",
       "author": "Draeger",
       "license": "CC BY 4.0"
@@ -92,7 +92,7 @@
     {
       "src": "~/assets/polymers/polybutadiene/grand-fleet-scapa-flow-1915.webp",
       "alt": "A watercolour of two British battlecruisers riding at anchor in a calm, hazy harbour, seen across open water past a red mooring buoy.",
-      "caption": "Battlecruisers of the Grand Fleet at Scapa Flow, painted around 1915 - the ships that kept German merchant traffic, and German rubber imports, off the high seas for the length of the war.",
+      "caption": "Battlecruisers of the Grand Fleet at Scapa Flow, painted around 1915: the ships that kept German merchant traffic, and German rubber imports, off the high seas for the length of the war.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Two_'Invincible'-class_battlecruisers_at_Scapa_Flow,_1915-17,_with_a_red_cone_buoy_in_the_foreground_RMG_PU9907.jpg",
       "author": "William Lionel Wyllie",
       "license": "Public domain"
@@ -108,7 +108,7 @@
     {
       "src": "~/assets/polymers/polybutadiene/sergei-lebedev-portrait.webp",
       "alt": "A black-and-white studio portrait of a bearded man with short combed-back hair, wearing a dark suit and striped tie, photographed from the shoulders up.",
-      "caption": "Sergei Lebedev, the chemist who actually first polymerised butadiene, in the 1920s - the decade his 1910 laboratory result became Soviet industrial policy.",
+      "caption": "Sergei Lebedev, the chemist who actually first polymerised butadiene, in the 1920s, the decade his 1910 laboratory result became Soviet industrial policy.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Sergey_Lebedev.jpg",
       "author": "Unknown author (Mondadori publishers)",
       "license": "Public domain"
@@ -194,7 +194,7 @@
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "Microstructure-dependent: high-cis grades (neodymium/cobalt/nickel catalysts, ~96-98% cis-1,4) are highly stereoregular; lithium-catalyzed grades are a mixed cis/trans/vinyl microstructure (10-30% cis, 20-60% trans, 10-70% vinyl).",
+    "tacticity": "Microstructure-dependent: high-cis grades (neodymium/cobalt/nickel catalysts, ~96–98% cis-1,4) are highly stereoregular; lithium-catalyzed grades are a mixed cis/trans/vinyl microstructure (10–30% cis, 20–60% trans, 10–70% vinyl).",
     "crystallinity_typical": {
       "value": 21,
       "range_min": 18,
@@ -300,7 +300,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Low, broad melting endotherm typical of imperfect crystallites in high-cis material; trans-1,4 form (more crystallizable) melts far higher, around 80-145 °C."
+      "conditions": "Low, broad melting endotherm typical of imperfect crystallites in high-cis material; trans-1,4 form (more crystallizable) melts far higher, around 80–145 °C."
     },
     "tc": {
       "value": -26,
@@ -600,7 +600,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -608,7 +608,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -616,7 +616,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

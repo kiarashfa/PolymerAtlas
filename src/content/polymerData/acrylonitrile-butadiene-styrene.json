@@ -61,7 +61,7 @@
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/1948-cadillac.webp",
       "alt": "A black 1948 Cadillac sedan with chrome bumpers and grille, parked among other vintage cars at an outdoor car show.",
-      "caption": "A 1948 Cadillac — the kind of consumer-facing peacetime product American manufacturing was turning back toward that same year.",
+      "caption": "A 1948 Cadillac, the kind of consumer-facing peacetime product American manufacturing was turning back toward that same year.",
       "source_url": "https://commons.wikimedia.org/wiki/File:1948_Cadillac_Series_62_(24673004996).jpg",
       "author": "Jeremy (Sydney, Australia)",
       "license": "CC BY 2.0"
@@ -76,7 +76,7 @@
     },
     {
       "src": "~/assets/polymers/acrylonitrile-butadiene-styrene/lego-bricks.webp",
-      "alt": "Three plastic interlocking building blocks of different sizes — a small red brick and two larger blue and yellow blocks with rounded studs on top — on a plain light background.",
+      "alt": "Three plastic interlocking building blocks of different sizes (a small red brick and two larger blue and yellow blocks with rounded studs on top) on a plain light background.",
       "caption": "Interlocking bricks of the kind ABS has been molded into since 1963, chosen for a clutch fit that survives years of assembly and disassembly.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Lego_%26_Lego_Duplo_by_Christian_Ursilva.jpg",
       "author": "Christian Ursilva",
@@ -157,7 +157,7 @@
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
       "test_standard": "ASTM D523",
-      "conditions": "60° geometry, glossy grade (matte finish reads 1.8-6.6%)."
+      "conditions": "60° geometry, glossy grade (matte finish reads 1.8–6.6%)."
     },
     "water_absorption": {
       "value": 0.865,
@@ -177,7 +177,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "K20/P50, 0.6-0.8 mm specimen thickness."
+      "conditions": "K20/P50, 0.6–0.8 mm specimen thickness."
     }
   },
   "synthesis": {
@@ -430,7 +430,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Injection molding; general processing range 190-275 °C."
+      "conditions": "Injection molding; general processing range 190–275 °C."
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -477,7 +477,7 @@
     "recyclable": true,
     "biodegradable": false,
     "degradation_pathway": null,
-    "environmental_notes": "Degrades under UV exposure and high temperatures, potentially releasing carcinogenic monomers above 400°C -- a real end-of-life/fire-safety consideration."
+    "environmental_notes": "Degrades under UV exposure and high temperatures, potentially releasing carcinogenic monomers above 400°C. This is a real end-of-life/fire-safety consideration."
   },
   "references": [
     "wiki-abs",

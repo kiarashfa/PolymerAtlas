@@ -15,7 +15,7 @@
   },
   "repeat_unit": "{[][>]O[C@@H](C)C(=O)[<][]}",
   "smiles_depiction": "*O[C@@H](C)C(=O)*",
-  "notation_note": "The L unit is shown. Commercial PLA is made from L-lactide, D-lactide or their mixtures, and the L:D ratio governs how crystalline -- and how heat-resistant -- the material is.",
+  "notation_note": "The L unit is shown. Commercial PLA is made from L-lactide, D-lactide or their mixtures, and the L:D ratio governs how crystalline, and how heat-resistant, the material is.",
   "iupac_name": "Poly(2-hydroxypropanoic acid)",
   "synonyms": [
     "polylactide"
@@ -84,7 +84,7 @@
     {
       "src": "~/assets/polymers/polylactic-acid/pla-filament-spool.webp",
       "alt": "A spool of bright orange plastic filament wound in front of its retail box, the box printed with the text 'PLA filament 1.75 mm, 1 kg' and small icons for storage and printing conditions.",
-      "caption": "PLA sold as filament — the form in which most people encounter it today, corn's least likely destination in 1982.",
+      "caption": "PLA sold as filament, the form in which most people encounter it today, corn's least likely destination in 1982.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Bobina_PLA.jpg",
       "author": "RaquelRendo",
       "license": "CC BY-SA 4.0"
@@ -184,7 +184,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Depends on the L-/D-lactide stereochemical ratio; PLLA can be semi-crystalline, PDLLA is amorphous. Reported as 25-70% for L-PLA specifically (65% in fiber form, 10-20% in film); 20-44% by WAXD."
+      "conditions": "Depends on the L-/D-lactide stereochemical ratio; PLLA can be semi-crystalline, PDLLA is amorphous. Reported as 25–70% for L-PLA specifically (65% in fiber form, 10–20% in film); 20–44% by WAXD."
     },
     "crystal_structure": null,
     "chain_flexibility_notes": null,
@@ -207,7 +207,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "General range; ~4,000-6,000 reported for D,L-PLA and ~100,000 for L-PLA specifically."
+        "conditions": "General range; ~4,000–6,000 reported for D,L-PLA and ~100,000 for L-PLA specifically."
       },
       "pdi": {
         "value": null,
@@ -317,7 +317,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "DSC. 180-184 °C reported for L-PLA specifically; lower range for mixed-stereochemistry grades."
+      "conditions": "DSC. 180–184 °C reported for L-PLA specifically; lower range for mixed-stereochemistry grades."
     },
     "tc": {
       "value": null,
@@ -337,7 +337,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999",
-      "conditions": "L-PLA, Mw (0.5-3)×10⁵; reported as 508-528 K. D,L-PLA reported as 528 K (255 °C)."
+      "conditions": "L-PLA, Mw (0.5–3)×10⁵; reported as 508–528 K. D,L-PLA reported as 528 K (255 °C)."
     },
     "thermal_conductivity": {
       "value": null,
@@ -354,7 +354,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Wide range reflects stereochemistry/crystallinity/molecular weight variation. A narrower 3,700-4,100 MPa is also reported under 'Young's modulus' in the same source."
+      "conditions": "Wide range reflects stereochemistry/crystallinity/molecular weight variation. A narrower 3,700–4,100 MPa is also reported under 'Young's modulus' in the same source."
     },
     "yield_strength": {
       "value": 71.3,
@@ -374,7 +374,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "General grade; 27-41 MPa reported for D,L-PLA, 55-82 MPa for L-PLA."
+      "conditions": "General grade; 27–41 MPa reported for D,L-PLA, 55–82 MPa for L-PLA."
     },
     "elongation_at_break": {
       "value": 5,
@@ -384,7 +384,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "General grade; 3-10% reported for D,L-PLA, 5-10% for L-PLA."
+      "conditions": "General grade; 3–10% reported for D,L-PLA, 5–10% for L-PLA."
     },
     "impact_izod": {
       "value": 18.8,
@@ -491,7 +491,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Unmodified grade; 23-26% with flame retardant additives."
+      "conditions": "Unmodified grade; 23–26% with flame retardant additives."
     },
     "solubility_parameter": {
       "value": 20,
@@ -501,7 +501,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "exp.=19.0-21.0; calc.=19.2-20.3"
+      "conditions": "exp.=19.0–21.0; calc.=19.2–20.3"
     }
   },
   "processing": {
@@ -518,7 +518,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "Extrusion; 280-300 °C for fiber spinning."
+      "conditions": "Extrusion; 280–300 °C for fiber spinning."
     },
     "drying_required": true,
     "shrinkage_rate": {
@@ -554,7 +554,7 @@
     "recyclable": true,
     "biodegradable": true,
     "degradation_pathway": "Hydrolysis to lactic acid; requires industrial composting conditions (58°C minimum) for effective degradation within a practical timeframe.",
-    "environmental_notes": "Does not fully disintegrate under normal marine conditions and degrades at rates comparable to conventional plastics in ocean environments -- a real limitation on its 'biodegradable' marketing when it ends up as marine litter rather than industrial compost."
+    "environmental_notes": "Does not fully disintegrate under normal marine conditions and degrades at rates comparable to conventional plastics in ocean environments. This is a real limitation on its 'biodegradable' marketing when it ends up as marine litter rather than industrial compost."
   },
   "references": [
     "wiki-pla",
@@ -599,7 +599,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_flammability_rating": {
       "value": 1,
@@ -607,7 +607,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "nfpa_reactivity_rating": {
       "value": 0,
@@ -615,7 +615,7 @@
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016",
-      "conditions": "HMIS rating, 0-4 scale"
+      "conditions": "HMIS rating, 0–4 scale"
     },
     "carcinogenic_classification": {
       "value": "not listed by ACGIH, NIOSH, NTP",

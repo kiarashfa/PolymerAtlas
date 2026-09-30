@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/natural-rubber/codex-borgia-rubber-ball-offering.webp",
       "alt": "A page from an Aztec painted manuscript showing the deity Xiuhtecuhtli seated beside a round black ball, a bundle of sticks and a feather offered before him.",
-      "caption": "A rubber ball offered to Xiuhtecuhtli, Lord of Fire, in the Codex Borgia - rubber as a ritual material centuries before it was ever a chemical one.",
+      "caption": "A rubber ball offered to Xiuhtecuhtli, Lord of Fire, in the Codex Borgia: rubber as a ritual material centuries before it was ever a chemical one.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Xiuhtecuhtli,_Codex_Borgia,_14,_w_rubber_balls_offering.jpg",
       "author": "cleaned up and touched up by User:Madman2001",
       "license": "Public domain"
@@ -84,7 +84,7 @@
     {
       "src": "~/assets/polymers/natural-rubber/liverpool-manchester-railway-1831.webp",
       "alt": "A hand-coloured print of an early steam train pulling open carriages of passengers along a raised embankment, with a horse-drawn carriage on a road below.",
-      "caption": "The Liverpool and Manchester Railway, the model every one of 1836's thirty-five new lines was chasing - proof that steam and iron could out-run anything the natural world offered.",
+      "caption": "The Liverpool and Manchester Railway, the model every one of 1836's thirty-five new lines was chasing: proof that steam and iron could out-run anything the natural world offered.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Coloured_View_on_the_Liverpool_and_Manchester_Railway,_1831.jpg",
       "author": "plates by S.G. Hughes and H. Pyall after T. Bury, plates watermarked \"J. Whatman, 1831\"",
       "license": "Public domain"
@@ -92,7 +92,7 @@
     {
       "src": "~/assets/polymers/natural-rubber/battle-of-san-jacinto-1895.webp",
       "alt": "A large history painting of chaotic hand-to-hand fighting between mounted and dismounted soldiers on an open plain, smoke rising in the background.",
-      "caption": "The Battle of San Jacinto, fought in eighteen minutes in April 1836 - one of two new frontiers, an ocean apart, being claimed by force that same year.",
+      "caption": "The Battle of San Jacinto, fought in eighteen minutes in April 1836: one of two new frontiers, an ocean apart, being claimed by force that same year.",
       "source_url": "https://commons.wikimedia.org/wiki/File:The_Battle_of_San_Jacinto_(1895).jpg",
       "author": "Henry Arthur McArdle",
       "license": "Public domain"
@@ -100,7 +100,7 @@
     {
       "src": "~/assets/polymers/natural-rubber/rubber-galoshes-1830s.webp",
       "alt": "A pair of dark, glossy rubber overshoes with rounded toes, photographed against a plain background.",
-      "caption": "Rubber overshoes from the 1830s, the exact decade of the India-rubber fever - waterproof in the showroom, and prone to arriving home as a puddle.",
+      "caption": "Rubber overshoes from the 1830s, the exact decade of the India-rubber fever: waterproof in the showroom, and prone to arriving home as a puddle.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Galoshes_MET_CP485_CP2.jpg",
       "author": "Unknown author",
       "license": "CC0"
@@ -108,7 +108,7 @@
     {
       "src": "~/assets/polymers/natural-rubber/hevea-tapping-1911.webp",
       "alt": "A black-and-white photograph of a rubber tree trunk scored with a spiral cutting pattern, with a collecting cup fixed to the bark at the base of the cut.",
-      "caption": "Spiral tapping of a Hevea trunk, photographed around 1911 - the same basic cut, refined but not reinvented, that every tapper before and since has made.",
+      "caption": "Spiral tapping of a Hevea trunk, photographed around 1911: the same basic cut, refined but not reinvented, that every tapper before and since has made.",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CSpiral_tapping_of_Hevea_Brasiliensis%E2%80%9D.jpg",
       "author": "Unknown photographer, photograph provided by Henry C. Pearson.",
       "license": "CC BY-SA 4.0"
@@ -170,11 +170,11 @@
     "polymerization_type": null,
     "common_monomers": [],
     "catalysts": [],
-    "industrial_process_notes": "Not industrially polymerized -- biosynthesized as latex in Hevea brasiliensis (Para rubber tree) and harvested by tapping (bark incisions collected in cups). A skilled tapper processes several hundred trees daily; collected latex is coagulated (acid or ammoniation, developed c. 1920, to preserve colloidal state) into cup lump, tree lace, or technically-specified block rubber grades (SVR/TSR).",
+    "industrial_process_notes": "Not industrially polymerized: biosynthesized as latex in Hevea brasiliensis (Para rubber tree) and harvested by tapping (bark incisions collected in cups). A skilled tapper processes several hundred trees daily; collected latex is coagulated (acid or ammoniation, developed c. 1920, to preserve colloidal state) into cup lump, tree lace, or technically-specified block rubber grades (SVR/TSR).",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
-    "tacticity": "cis-1,4 (near-exclusively) -- gives natural rubber its elastomeric behavior; the synthetic all-cis analogue is polyisoprene (IR).",
+    "tacticity": "cis-1,4 (near-exclusively), which gives natural rubber its elastomeric behavior; the synthetic all-cis analogue is polyisoprene (IR).",
     "crystallinity_typical": {
       "value": null,
       "unit": "%",
@@ -198,7 +198,7 @@
         "status": "verified",
         "evidence_level": "handbook",
         "source": "handbook-wypych-2016",
-        "conditions": "Value specifically labeled 'natural rubber' in the source table; contrasted there with 1,500,000-2,500,000 g/mol for synthetic polyisoprene."
+        "conditions": "Value specifically labeled 'natural rubber' in the source table; contrasted there with 1,500,000–2,500,000 g/mol for synthetic polyisoprene."
       },
       "pdi": {
         "value": null,
@@ -210,7 +210,7 @@
       {
         "solvent": "benzene",
         "temperature_k": 303,
-        "mw_range": "80-280 kg/mol",
+        "mw_range": "80–280 kg/mol",
         "k": {
           "value": 0.0185,
           "unit": "mL/g",
@@ -251,7 +251,7 @@
       {
         "solvent": "4-methyl-2-pentanone",
         "temperature_k": 308,
-        "mw_range": "50-1,000 kg/mol",
+        "mw_range": "50–1,000 kg/mol",
         "k": {
           "value": 0.0607,
           "unit": "mL/g",
@@ -272,7 +272,7 @@
       {
         "solvent": "2-pentanone",
         "temperature_k": 288,
-        "mw_range": "80-280 kg/mol",
+        "mw_range": "80–280 kg/mol",
         "k": {
           "value": 0.119,
           "unit": "mL/g",
@@ -293,7 +293,7 @@
       {
         "solvent": "toluene",
         "temperature_k": 298,
-        "mw_range": "70-1,000 kg/mol",
+        "mw_range": "70–1,000 kg/mol",
         "k": {
           "value": 0.0502,
           "unit": "mL/g",

@@ -72,7 +72,7 @@
     {
       "src": "~/assets/polymers/bakelite/wright-flyer-fort-myer.webp",
       "alt": "A Wright Flyer biplane standing on grass, a crowd of soldiers and officials gathered along one wing.",
-      "caption": "The Wright Flyer on Army trials. Powered flight was four years old and still built from spruce and cloth — the whole technological ambition of the age was running up against the same short list of natural materials.",
+      "caption": "The Wright Flyer on Army trials. Powered flight was four years old and still built from spruce and cloth; the whole technological ambition of the age was running up against the same short list of natural materials.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Wright_Flyer_Test_Flights_at_Fort_Myer,_VA_-_GPN-2002-000124.jpg",
       "author": "Unknown author",
       "license": "Public domain"
@@ -101,7 +101,7 @@
       "range_min": 1.24,
       "range_max": 1.32,
       "unit": "g/cm³",
-      "conditions": "unfilled resin, 20 °C; wood-flour/cotton-flock-filled molding compounds (period-typical Bakelite) 1.32-1.45, paper-base laminates 1.28-1.4, glass-fabric laminates 1.4-1.9",
+      "conditions": "unfilled resin, 20 °C; wood-flour/cotton-flock-filled molding compounds (period-typical Bakelite) 1.32–1.45, paper-base laminates 1.28–1.4, glass-fabric laminates 1.4–1.9",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -125,7 +125,7 @@
       "range_min": 3.5,
       "range_max": 5.0,
       "unit": "",
-      "conditions": "unfilled resin, 100 Hz-1 MHz; wood-flour-filled molding compounds 4.0-7.0, laminates 3.6-6.0 (Mark, at 1 MHz)",
+      "conditions": "unfilled resin, 100 Hz-1 MHz; wood-flour-filled molding compounds 4.0–7.0, laminates 3.6–6.0 (Mark, at 1 MHz)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -160,7 +160,7 @@
       "range_min": 0.1,
       "range_max": 0.4,
       "unit": "%",
-      "conditions": "unfilled resin, 24 h at 23 °C; wood-flour-filled molding compounds 0.3-1.0% (24 h), laminates 0.2-4.5% (Mark)",
+      "conditions": "unfilled resin, 24 h at 23 °C; wood-flour-filled molding compounds 0.3–1.0% (24 h), laminates 0.2–4.5% (Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -168,7 +168,7 @@
     "dielectric_strength": {
       "value": 16,
       "unit": "kV/mm",
-      "conditions": "d = 0.6-0.8 mm, K20/P50 test, unfilled resin",
+      "conditions": "d = 0.6–0.8 mm, K20/P50 test, unfilled resin",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -321,7 +321,7 @@
       "range_min": 1.3,
       "range_max": 1.5,
       "unit": "kJ/m²",
-      "conditions": "notched, 23 °C, unfilled resin; unnotched reported separately at 6-7 kJ/m²",
+      "conditions": "notched, 23 °C, unfilled resin; unnotched reported separately at 6–7 kJ/m²",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -466,7 +466,7 @@
       "range_min": 143,
       "range_max": 193,
       "unit": "°C",
-      "conditions": "compression molding, wood-flour/cotton-flock-filled compound (period-typical Bakelite); laminating (paper- or glass-fabric-base) 135-177 °C",
+      "conditions": "compression molding, wood-flour/cotton-flock-filled compound (period-typical Bakelite); laminating (paper- or glass-fabric-base) 135–177 °C",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-mark-1999"
@@ -477,7 +477,7 @@
       "range_min": 0.35,
       "range_max": 0.9,
       "unit": "%",
-      "conditions": "unfilled resin; wood-flour/cotton-flock-filled molding compound reported separately at 0.4-0.9% (Mark)",
+      "conditions": "unfilled resin; wood-flour/cotton-flock-filled molding compound reported separately at 0.4–0.9% (Mark)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"

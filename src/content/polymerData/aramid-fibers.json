@@ -68,7 +68,7 @@
     {
       "src": "~/assets/polymers/aramid-fibers/flak-jacket-vietnam-1971.webp",
       "alt": "A young U.S. Army soldier stands in a doorway between head-high stacks of corrugated metal sheeting, wearing a bulky fabric flak vest over his fatigues and holding a shotgun, Vietnam, 1971.",
-      "caption": "A nylon-and-fiberglass flak jacket, standard body armor for American soldiers in Vietnam in 1971 — heavy and hot, and exactly the kind of protection an Army researcher was about to describe to a federal body-armor program.",
+      "caption": "A nylon-and-fiberglass flak jacket, standard body armor for American soldiers in Vietnam in 1971. It was heavy and hot, and exactly the kind of protection an Army researcher was about to describe to a federal body-armor program.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Flak_Jacket.jpg",
       "author": "Dwight Burdette",
       "license": "CC BY 3.0"
@@ -76,7 +76,7 @@
     {
       "src": "~/assets/polymers/aramid-fibers/attica-prison-riot-1971.webp",
       "alt": "State troopers in gas masks stand over rows of prisoners lying face down in the mud of a prison yard, after retaking a New York correctional facility by force.",
-      "caption": "New York state police retake Attica Correctional Facility in September 1971 — the same year a federal researcher first requested a sample of DuPont's new fiber to test in a soft vest.",
+      "caption": "New York state police retake Attica Correctional Facility in September 1971. That was the same year a federal researcher first requested a sample of DuPont's new fiber to test in a soft vest.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Attica_Prison_Riot,_1971.jpg",
       "author": "Unknown author Unknown author",
       "license": "Public domain"
@@ -100,7 +100,7 @@
     {
       "src": "~/assets/polymers/aramid-fibers/aramid-fiber-filaments-macro.webp",
       "alt": "A dense clump of fine, bright yellow-green fibers cut short and photographed in close-up against a black background.",
-      "caption": "Aramid staple fiber in its natural golden-yellow color — no dye involved, and the same fiber that ends up woven into a vest or braided into a marine rope.",
+      "caption": "Aramid staple fiber in its natural golden-yellow color, with no dye involved. It is the same fiber that ends up woven into a vest or braided into a marine rope.",
       "source_url": "https://commons.wikimedia.org/wiki/File:Aramid_fiber2.jpg",
       "author": "Cjp24",
       "license": "CC BY-SA 3.0"
@@ -112,7 +112,7 @@
       "range_min": 1.44,
       "range_max": 1.48,
       "unit": "g/cm³",
-      "conditions": "PPTA (Kevlar); as-spun 1.44-1.47, up to 1.48 fully crystalline",
+      "conditions": "PPTA (Kevlar); as-spun 1.44–1.47, up to 1.48 fully crystalline",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -127,7 +127,7 @@
       "range_min": 1.61,
       "range_max": 2.12,
       "unit": "",
-      "conditions": "highly birefringent fiber: n⊥≈2.05-2.12 (perpendicular to fiber axis), n∥≈1.59-1.65 (parallel), PPTA",
+      "conditions": "highly birefringent fiber: n⊥≈2.05–2.12 (perpendicular to fiber axis), n∥≈1.59–1.65 (parallel), PPTA",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -162,7 +162,7 @@
       "range_min": 3.5,
       "range_max": 7,
       "unit": "%",
-      "conditions": "PPTA yarn, as shipped; 3.5-4.5% regained from dried state",
+      "conditions": "PPTA yarn, as shipped; 3.5–4.5% regained from dried state",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -180,7 +180,7 @@
       "terephthaloyl chloride"
     ],
     "catalysts": [],
-    "industrial_process_notes": "Stephanie Kwolek developed the first para-aramid fiber at DuPont, commercialized as Kevlar in 1973; the term 'aramid' was introduced in 1972 and formally recognized as a generic fiber category by the US Federal Trade Commission in 1974. Akzo introduced the competing fiber Twaron in 1978. World para-aramid production was estimated at 41,000 tonnes/year in 2002, growing 5-10% annually.",
+    "industrial_process_notes": "Stephanie Kwolek developed the first para-aramid fiber at DuPont, commercialized as Kevlar in 1973; the term 'aramid' was introduced in 1972 and formally recognized as a generic fiber category by the US Federal Trade Commission in 1974. Akzo introduced the competing fiber Twaron in 1978. World para-aramid production was estimated at 41,000 tonnes/year in 2002, growing 5–10% annually.",
     "synthesis_scheme_image": null
   },
   "structure_morphology": {
@@ -244,7 +244,7 @@
       "value": null,
       "unit": "°C",
       "status": "not_applicable",
-      "conditions": "PPTA's melting point lies beyond its decomposition temperature (Mark's dedicated Kevlar chapter); Wypych's entry additionally reports a DSC endotherm at 551-554 °C."
+      "conditions": "PPTA's melting point lies beyond its decomposition temperature (Mark's dedicated Kevlar chapter); Wypych's entry additionally reports a DSC endotherm at 551–554 °C."
     },
     "tc": {
       "value": null,
@@ -261,7 +261,7 @@
       "range_min": 427,
       "range_max": 482,
       "unit": "°C",
-      "conditions": "PPTA, in air; Wypych and Mark agree closely (427-482 °C / 700-755 K)",
+      "conditions": "PPTA, in air; Wypych and Mark agree closely (427–482 °C / 700–755 K)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -269,7 +269,7 @@
     "thermal_conductivity": {
       "value": 5.03,
       "unit": "W/(m·K)",
-      "conditions": "PPTA, temperature-dependent (decays from this value over ~7-290 K); Mark reports higher figures via phonon propagation (10 W/(m·K)) and axial conductivity 20-30 W/(m·K) at 125-250 K -- measurement-method dependent",
+      "conditions": "PPTA, temperature-dependent (decays from this value over ~7–290 K); Mark reports higher figures via phonon propagation (10 W/(m·K)) and axial conductivity 20–30 W/(m·K) at 125–250 K, measurement-method dependent",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -297,7 +297,7 @@
       "range_min": 2920,
       "range_max": 3600,
       "unit": "MPa",
-      "conditions": "PPTA yarns; Mark reports 2,000-3,000 MPa for LC-solution-spun fiber and grade-specific fracture stress of 1,700-2,500 MPa (Kevlar 149/29/49)",
+      "conditions": "PPTA yarns; Mark reports 2,000–3,000 MPa for LC-solution-spun fiber and grade-specific fracture stress of 1,700–2,500 MPa (Kevlar 149/29/49)",
       "status": "verified",
       "evidence_level": "handbook",
       "source": "handbook-wypych-2016"
@@ -399,7 +399,7 @@
       }
     },
     "weathering_uv": {
-      "value": "50% tensile strength loss after 900 h Fadeometer (accelerated UV) exposure; most photosensitive in the 300-450 nm range",
+      "value": "50% tensile strength loss after 900 h Fadeometer (accelerated UV) exposure; most photosensitive in the 300–450 nm range",
       "conditions": "PPTA",
       "status": "verified",
       "evidence_level": "handbook",
