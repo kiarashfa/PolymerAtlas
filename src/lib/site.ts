@@ -22,7 +22,7 @@ export const COPYRIGHT_YEARS =
 
 // Google Analytics 4 measurement ID. Public by design (it is visible in every
 // page's source); this is the only file that holds it.
-export const GA_MEASUREMENT_ID = 'G-4LSS274FZ6';
+export const GA_MEASUREMENT_ID = 'G-XXNG3ZJ41S';
 
 // The page colour, read out of tokens.css rather than restated here, for the
 // places that need a literal colour before any CSS has loaded: the browser's
